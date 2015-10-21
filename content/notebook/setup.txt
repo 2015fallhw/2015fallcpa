@@ -1,0 +1,2 @@
+已經在系統透過 pip install deap 安裝 deap 模組
+目前系統採用可攜設計, 並沒有轉為 Windows Service
