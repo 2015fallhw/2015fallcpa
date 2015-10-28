@@ -66,6 +66,18 @@
 </v>
 </v>
 </v>
+<v t="leo.20151029001650.1"><vh>@path 40423129</vh>
+<v t="leo.20151029001650.2"><vh>以下為投影片 ------------</vh></v>
+<v t="leo.20151029001650.3"><vh>@edit 40423129_cp_w1_p.html</vh></v>
+<v t="leo.20151029001650.4" a="E"><vh>@path pelican</vh>
+<v t="leo.20151029001650.5"><vh>以下為設定檔 ------------</vh></v>
+<v t="leo.20151029001650.6"><vh>@edit publishconf.py</vh></v>
+<v t="leo.20151029001650.7" a="E"><vh>@path content</vh>
+<v t="leo.20151029001650.8"><vh>以下為網誌 md 檔案 ------------</vh></v>
+<v t="leo.20151029001650.9"><vh>@edit 40423129_cp_w1.md</vh></v>
+</v>
+</v>
+</v>
 <v t="leo.20151027190618.1"><vh>@path 40423141</vh>
 <v t="leo.20151027190618.2"><vh>以下為投影片 ------------</vh></v>
 <v t="leo.20151027190618.3"><vh>@edit 40423141_cp_w1_p.html</vh></v>
@@ -573,5 +585,127 @@ g.es("admin pelican 執行完畢")</t>
 <t tx="leo.20151027190618.5"></t>
 <t tx="leo.20151027190618.7"></t>
 <t tx="leo.20151027190618.8"></t>
+<t tx="leo.20151029001650.1"></t>
+<t tx="leo.20151029001650.2"></t>
+<t tx="leo.20151029001650.3">@language html
+&lt;!--
+這個檔案展示了 reveal.js 投影片資料的基本架構
+其中使用 "reveal" class 與 "slides" class 來界定投影片的資料範圍
+而各投影片則以 &lt;section&gt;&lt;/section&gt; 標示
+且支援平行與垂直的投影片配置方法
+--&gt;
+&lt;!doctype html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+&lt;meta charset="utf-8"&gt;
+&lt;title&gt;最簡單的 reveal 超文件&lt;/title&gt;
+&lt;link rel="stylesheet" href="css/reveal.min.css"&gt;
+	&lt;link rel="stylesheet" href="css/theme/default.css" id="theme"&gt;	
+	&lt;!--增加對於 IE 早期版本的支援 --&gt;
+	&lt;!--[if lt IE 9]&gt;
+	&lt;script src="lib/js/html5shiv.js"&gt;&lt;/script&gt;
+	&lt;![endif]--&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;!-- 將整個投影片包在 "reveal" class 中 --&gt;
+&lt;div class="reveal"&gt;
+&lt;!-- 將所有投影片包在 "slides" class 中 --&gt;
+&lt;div class="slides"&gt;
+&lt;!-- 以下為投影片 --&gt;
+&lt;!-- 每一個 section 都代表一張投影片,  --&gt;
+&lt;!-- section 標註中的多 section 標註, 將往下垂直延伸 --&gt;
+&lt;section&gt;
+    &lt;h1&gt;有關我的作業&lt;/h1&gt;
+    &lt;p&gt;學號姓名與日期&lt;/p&gt;		
+&lt;/section&gt;
+	
+&lt;section id="hw-task-one"&gt;
+    &lt;h1&gt;作業任務一&lt;/h1&gt;
+    &lt;p&gt;有關作業任務一的說明&lt;/p&gt;
+    &lt;p&gt;請參考 &lt;a href="http://www.google.com"&gt;Google&lt;/a&gt;
+&lt;/section&gt;
+				
+&lt;section&gt;
+    &lt;h1&gt;第3張投影片&lt;/h1&gt;
+    &lt;p&gt;成績自評分數的量化依據?&lt;/p&gt;
+    &lt;p&gt;可以連結到內部投影片&lt;a href="#/hw-task-one"&gt;作業任務一&lt;/a&gt;
+&lt;/section&gt;
+				
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;script src="lib/js/head.min.js"&gt;&lt;/script&gt;
+&lt;script src="js/reveal.min.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+    // 啟動 Reveal.
+    Reveal.initialize({
+    });
+&lt;/script&gt;
+	
+&lt;/body&gt;
+
+</t>
+<t tx="leo.20151029001650.4"></t>
+<t tx="leo.20151029001650.5"></t>
+<t tx="leo.20151029001650.6">@language python
+#!/usr/bin/env python
+# -*- coding: utf-8 -*- #
+from __future__ import unicode_literals
+
+# This file is only used if you use `make publish` or
+# explicitly specify it as your config file.
+
+import os
+
+AUTHOR = '40423129'
+SITENAME = '2015FALL 40423129 CPA 作業'
+SITEURL = ''
+
+PATH = 'content'
+
+TIMEZONE = 'Asia/Taipei'
+
+DEFAULT_LANG = 'en'
+
+# Feed generation is usually not desired when developing
+FEED_ALL_ATOM = None
+CATEGORY_FEED_ATOM = None
+TRANSLATION_FEED_ATOM = None
+AUTHOR_FEED_ATOM = None
+AUTHOR_FEED_RSS = None
+
+# Blogroll
+LINKS = (('2015課程網頁', 'http://wordpress-2015course.rhcloud.com/'),
+         ('Python', 'http://python.org/'),('2015作業主頁', '../../'))
+
+# Social widget
+SOCIAL = (('twitter', 'http://twitter.com/ametaireau'),
+          ('github', 'http://github.com/ametaireau'),)
+          
+DEFAULT_PAGINATION = 10
+
+SITEURL = 'http://coursemdetw.github.io/reveal'
+RELATIVE_URLS = True
+
+FEED_ALL_ATOM = 'feeds/all.atom.xml'
+CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
+
+DELETE_OUTPUT_DIRECTORY = True
+
+# Following items are often useful when publishing
+
+#DISQUS_SITENAME = ""
+DISQUS_SITENAME = "2015fall"
+#GOOGLE_ANALYTICS = ""
+
+# 必須絕對目錄或相對於設定檔案所在目錄
+PLUGIN_PATHS = ['./../../../plugin']
+PLUGINS = ['liquid_tags.notebook']
+# 目錄設定相對於 reveal 下的 content 目錄
+NOTEBOOK_DIR = 'notebook'
+
+
+</t>
+<t tx="leo.20151029001650.7"></t>
+<t tx="leo.20151029001650.8"></t>
 </tnodes>
 </leo_file>
