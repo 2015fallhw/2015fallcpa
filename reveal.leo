@@ -10,16 +10,16 @@
 <preferences/>
 <find_panel_settings/>
 <vnodes>
-<v t="amd.20150913232631.1" a="E"><vh>@settings</vh>
+<v t="amd.20150913232631.1"><vh>@settings</vh>
 <v t="amd.20150913232631.2"><vh>@data qt-gui-plugin-style-sheet</vh></v>
 <v t="amd.20150913232631.3"><vh>@string initial_split_orientation = horizontal</vh></v>
 </v>
-<v t="amd.20150919102739.1" a="E"><vh>專案架構</vh>
+<v t="amd.20150919102739.1"><vh>專案架構</vh>
 <v t="amd.20150919113520.1"><vh>@edit .gitignore</vh></v>
 <v t="amd.20151007224830.1"><vh>Jupyter 安裝與執行</vh></v>
 <v t="amd.20150919103357.1"><vh>pelican 設定</vh></v>
 </v>
-<v t="amd.20150919113957.1" a="E"><vh>以下為 pelican 文章</vh>
+<v t="amd.20150919113957.1"><vh>以下為 pelican 文章</vh>
 <v t="amd.20151021120245.1"><vh>@button admin pelican</vh></v>
 <v t="amd.20150919124128.1"><vh>@button user pelican</vh></v>
 <v t="amd.20150919114010.1" a="E"><vh>@path pelican</vh>
@@ -30,7 +30,7 @@
 </v>
 </v>
 </v>
-<v t="amd.20150919120205.1" a="E"><vh>以下為 reveal 投影片</vh>
+<v t="amd.20150919120205.1"><vh>以下為 reveal 投影片</vh>
 <v t="amd.20150915211341.1"><vh>@clean simplest.html</vh>
 <v t="amd.20150917085040.1"><vh>檔案說明</vh></v>
 <v t="amd.20150915211351.1" a="E"><vh>html 標註</vh>
@@ -66,7 +66,19 @@
 </v>
 </v>
 </v>
-<v t="leo.20151029223849.1" a="E"><vh>@path 40423108</vh>
+<v t="leo.20151029232218.1" a="E"><vh>@path 40423106</vh>
+<v t="leo.20151029232218.2"><vh>以下為投影片 ------------</vh></v>
+<v t="leo.20151029232218.3"><vh>@edit 40423106_cp_w1_p.html</vh></v>
+<v t="leo.20151029232218.4" a="E"><vh>@path pelican</vh>
+<v t="leo.20151029232218.5"><vh>以下為設定檔 ------------</vh></v>
+<v t="leo.20151029232218.6"><vh>@edit publishconf.py</vh></v>
+<v t="leo.20151029232218.7" a="E"><vh>@path content</vh>
+<v t="leo.20151029232218.8"><vh>以下為網誌 md 檔案 ------------</vh></v>
+<v t="leo.20151029232218.9"><vh>@edit 40423106_cp_w1.md</vh></v>
+</v>
+</v>
+</v>
+<v t="leo.20151029223849.1"><vh>@path 40423108</vh>
 <v t="leo.20151029223849.2"><vh>以下為投影片 ------------</vh></v>
 <v t="leo.20151029223849.3"><vh>@edit 40423108_cp_w1_p.html</vh></v>
 <v t="leo.20151029223849.4" a="E"><vh>@path pelican</vh>
@@ -609,5 +621,11 @@ g.es("admin pelican 執行完畢")</t>
 <t tx="leo.20151029223849.5"></t>
 <t tx="leo.20151029223849.7"></t>
 <t tx="leo.20151029223849.8"></t>
+<t tx="leo.20151029232218.1"></t>
+<t tx="leo.20151029232218.2"></t>
+<t tx="leo.20151029232218.4"></t>
+<t tx="leo.20151029232218.5"></t>
+<t tx="leo.20151029232218.7"></t>
+<t tx="leo.20151029232218.8"></t>
 </tnodes>
 </leo_file>
