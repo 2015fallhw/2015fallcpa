@@ -1,0 +1,103 @@
+<!--
+這個檔案展示了 reveal.js 投影片資料的基本架構
+其中使用 "reveal" class 與 "slides" class 來界定投影片的資料範圍
+而各投影片則以 <section></section> 標示
+且支援平行與垂直的投影片配置方法
+-->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>40423128-2</title>
+<link rel="stylesheet" href="css/reveal.min.css">
+	<link rel="stylesheet" href="css/theme/default.css" id="theme">	
+	<!--增加對於 IE 早期版本的支援 -->
+	<!--[if lt IE 9]>
+	<script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+<body>
+<!-- 將整個投影片包在 "reveal" class 中 -->
+<div class="reveal">
+<!-- 將所有投影片包在 "slides" class 中 -->
+<div class="slides">
+<!-- 以下為投影片 -->
+<!-- 每一個 section 都代表一張投影片,  -->
+<!-- section 標註中的多 section 標註, 將往下垂直延伸 -->
+<section>
+    <h1>python教學 </h1>
+    <p>40423128 四設一甲</p>		
+</section>
+	
+<section id="hw-task-one">
+    <h1>引號的使用規則</h1>
+    <p>在前面我們學會了最簡單的輸出手段"print('___')",之後我們提到的是關於引號的使用,單引號跟雙引號其實都能把裡面的字做輸出,但不能任意的切換這兩個引號,這點在輸出英文字串的時候尤其需要注意</p>
+</section>
+
+<section>
+如前面所說,我們輸入這兩個字串讓他運行,結果是一樣的:
+</br>
+print("第二份作業")
+</br>
+print('第二份作業')
+</br>
+都可以得到"第二份作業"
+</section>
+<section>
+但我們絕對不允許混著用,例如:
+</br>
+print("第二份作業')
+</br>
+也盡量要避免在引號內使用引號,例如:
+</br>
+print('I'm a student')
+</br>
+這樣他會把框框指向I這個字上
+</br>
+所以我們這個時候使用雙引號就可以避免這個衝突
+</br>
+print("I'm a student")
+</section>
+
+<section>
+我們可以把兩個字串"相加"
+<br />
+print("我正在"+"使用leo editor寫作業")
+之後很明顯是得到:我正在使用leo editor寫作業
+<br />
+也可以在引號間附上反斜線來達成空行的效果,例如:
+</br>
+print("我的CAMSTUDIO/老是出狀況")
+</br>
+得到:我的CAMSTUDIO
+</br>
+老是出狀況
+</br>
+還有個很特別的方法做空行:3個引號
+</br>
+print("""我的CAMSTUDIO
+</br>
+老是出狀況""")
+得到的結果跟反斜線是一樣的
+</section>
+<section>
+<h1>心得</h1>
+電腦語言的字串不一定太困難,但不可否認的,字非常多,如果中間有了失誤,得到的結果相差甚大,一個工程師必須再三檢查自己的電腦語言是否出現錯誤,否則後果相當尷尬
+</section>
+<section>
+    <h1>自評</h1>
+    <p>多看幾次zero to hero的python教學之後,原本對此很畏懼的我,慢慢開始發現就算他們是全英語的教學,還是能很清楚的知道他們教的東西,希望能藉此越來越熟悉python語法,個人給自己68分</p>
+</section>
+				
+</div>
+</div>
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.min.js"></script>
+<script>
+    // 啟動 Reveal.
+    Reveal.initialize({
+    });
+</script>
+	
+</body>
+
