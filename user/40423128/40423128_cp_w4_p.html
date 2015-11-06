@@ -1,0 +1,151 @@
+<!--
+這個檔案展示了 reveal.js 投影片資料的基本架構
+其中使用 "reveal" class 與 "slides" class 來界定投影片的資料範圍
+而各投影片則以 <section></section> 標示
+且支援平行與垂直的投影片配置方法
+-->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>40423128-4</title>
+<link rel="stylesheet" href="css/reveal.min.css">
+	<link rel="stylesheet" href="css/theme/default.css" id="theme">	
+	<!--增加對於 IE 早期版本的支援 -->
+	<!--[if lt IE 9]>
+	<script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+<body>
+<!-- 將整個投影片包在 "reveal" class 中 -->
+<div class="reveal">
+<!-- 將所有投影片包在 "slides" class 中 -->
+<div class="slides">
+<!-- 以下為投影片 -->
+<!-- 每一個 section 都代表一張投影片,  -->
+<!-- section 標註中的多 section 標註, 將往下垂直延伸 -->
+<section>
+    <h1> python教學</h1>
+    <p>40423128 四設一甲 吳秉駿</p>		
+</section>
+	
+<section id="hw-task-five">
+    <h1>作業四-任務說明</h1>
+    <p>10/23 作業: 完成 [02:20:00] Storing Numbers 課程研習(up to [03:14:26]), 必須在 10/30 上課前完成內容與自評</p>   
+</section>
+  
+<section>
+    <h1>有關"storing numbers"</h1>
+  sorting=存儲,number=數字
+    影片指導我們使用python指令來做出一個簡易的函數方便我們帶入數字得到答案
+    像收入,BMI,等等生活常用且簡易的加減乘除都可以用相關的指令做計算
+</section>
+  
+<section>
+以面積舉例,如果要讓電腦知道"長","寬"是代表代數還是文字,我們只要打入:
+.長=5,   
+<br />
+.寬=20,   
+<br />
+.面積=長*寬,   
+<br />
+.print(面積),   
+    <br />
+就會顯示出其面積
+</section>
+				
+<section>
+.我們要讓答案顯示出文字,輸入
+print("四方形的面積為"+面積),   
+    <br />
+.然而出錯了,這是為何呢?   
+</section>
+  
+<section>
+我們print裡面的字串不能同時存在文字(四方形的面積為)及代數(面積),所以我們要把代數轉換為文字,有幾個規則:   
+    <br />
+.print("四方形的面積為%f" % 面積)>>四方形的面積為100.000000 ,   
+    <br />
+.print("四方形的面積為%.2f" % 面積)>>四方形的面積為100.00 ,   
+    <br />
+.print("四方形的面積為%d" % 100)>>四方形的面積為100,   
+    <br />
+.print("四方形的面積為%3d "% 100)>>四方形的面積為(三個空格)100,   
+    <br />
+.print("四方形的面積為%03f "%100)>>四方形的面積為100   
+</section>
+  
+<section>
+1.%d不能用於代數,   
+    <br />
+ .2.%f會讓答案默認為6個小數位,   
+    <br />
+ .3.%.n會讓小數位變n位,   
+    <br />
+ .4.%0n會用0把答案填到第n位,   
+    <br />
+ .5.%n可以讓答案距離前面的文字n個空格
+</section>
+  
+<section>
+還有另外一種表示方法,規則如下:   
+print("四方形的面積為{0:d}".format(100))>>四方形的面積為100   
+    .<br />
+ .print("四方形的面積{0:3d}".format(100))>>四方形的面積為   100   
+    .<br />
+ print("四方形的面積為{0:f}".format(100))>>四方形的面積為100.000000   
+    .<br />
+ "0:"後面的代碼與前面規則相同   
+ .同樣地,d不能用在代數上   
+</section>
+  
+<section>
+如果要讓答案顯示多個數字,我們可以:
+ .print("四方形的長為{0:d},寬為{1:3d},面積 為{2:d}".format(5,20,100)),   
+    <br />
+ 可以得到:四方形的長為5,寬為20,面積為100
+</section>
+  
+<section>
+也可以把這個代數弄成互動式的,運行之後輸入你要的數字,最後得到答案:   
+    <br />
+ .長=input("長是多少"),   
+    <br />
+ .寬=input("寬是多少"),   
+     <br />
+ .周長=2*(長+寬),   
+    <br />
+ .print(周長),   
+    <br />
+ .但如果我們拿上面的5,20做示範我們得到的答案卻是1040  
+</section>
+  
+<section>
+這個方法也不能讀取代數,所以我們可以在代數前面加個"format":   
+ .周長=2*(長+寬)>>>>面積=format(長)*format(寬)   
+    <br />
+ .終於,我們得到了50
+</section>
+  
+<section>
+<h1>對課程的一些感想</h1>
+在簡單的算術上用這個軟體可能有點大材小用,但如果再進行大規模運算了話,輸入好"規則"後只要改變代數就可以輕易運算出需要的答案,而且都是純文字檔,在檔案更新上比較不會有這麼多麻煩
+</section>
+  
+<section>
+<h1>自評</h1>
+這是個人第一次使用這套系統來做簡報檔,可能少用了不少字串,但這套用python系統做的簡報相當新穎,希望以後能善加利用它
+個人給這份報告70分
+</section>
+</div>
+</div>
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.min.js"></script>
+<script>
+    // 啟動 Reveal.
+    Reveal.initialize({
+    });
+</script>
+	
+</body>
+
