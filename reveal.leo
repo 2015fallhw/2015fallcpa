@@ -308,13 +308,13 @@
 </v>
 </v>
 </v>
-<v t="leo.20151027141423.1"><vh>@path 40423115</vh>
+<v t="leo.20151027141423.1" a="E"><vh>@path 40423115</vh>
 <v t="leo.20151027141423.2"><vh>以下為投影片 ------------</vh></v>
 <v t="leo.20151027141423.3"><vh>@edit 40423115_cp_w1_p.html</vh></v>
-<v t="leo.20151027141423.4"><vh>@path pelican</vh>
+<v t="leo.20151027141423.4" a="E"><vh>@path pelican</vh>
 <v t="leo.20151027141423.5"><vh>以下為設定檔 ------------</vh></v>
 <v t="leo.20151027141423.6"><vh>@edit publishconf.py</vh></v>
-<v t="leo.20151027141423.7"><vh>@path content</vh>
+<v t="leo.20151027141423.7" a="E"><vh>@path content</vh>
 <v t="leo.20151027141423.8"><vh>以下為網誌 md 檔案 ------------</vh></v>
 <v t="leo.20151027141423.9"><vh>@edit 40423115_cp_w1.md</vh></v>
 </v>
