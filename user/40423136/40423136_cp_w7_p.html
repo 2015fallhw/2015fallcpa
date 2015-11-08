@@ -1,0 +1,75 @@
+<!--
+這個檔案展示了 reveal.js 投影片資料的基本架構
+其中使用 "reveal" class 與 "slides" class 來界定投影片的資料範圍
+而各投影片則以 <section></section> 標示
+且支援平行與垂直的投影片配置方法
+-->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>40423136-7</title>
+<link rel="stylesheet" href="css/reveal.min.css">
+	<link rel="stylesheet" href="css/theme/default.css" id="theme">	
+	<!--增加對於 IE 早期版本的支援 -->
+	<!--[if lt IE 9]>
+	<script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+<body>
+<!-- 將整個投影片包在 "reveal" class 中 -->
+<div class="reveal">
+<!-- 將所有投影片包在 "slides" class 中 -->
+<div class="slides">
+<!-- 以下為投影片 -->
+<!-- 每一個 section 都代表一張投影片,  -->
+<!-- section 標註中的多 section 標註, 將往下垂直延伸 -->
+<section>
+    <h1>初步 python教學 </h1>
+    <p>40423136 四設一甲 陳柏維</p>		
+</section>
+	
+<section id="hw-task-one">
+    <h1>何謂python?</h1>
+    <p>Python是一種物件導向、直譯式的電腦程式語言，具有近二十年的發展歷史。它包含了一組功能完備的標準庫，能夠輕鬆完成很多常見的任務。它的語法簡單容易上手，與其它大多數程式設計語言使用大括弧不一樣，它使用縮進來定義語句塊。最重要的是,大部分的python軟體都免付費的!</p>
+</section>
+
+
+<section>
+<h1>W1上課內容:</h1>
+
+print:輸出
+<br />
+在後面加一個小括弧跟引號,可以輸出引號內的內容:
+<br />
+print("hello ")
+<br />
+螢幕上就會輸出:hello 
+<br />
+#:的使用方法
+<br />
+不會把#後面的字串當作是程式語言,方便作為標註
+<br />
+EX:#這是W1課程內容介紹介紹 (螢幕上就不會顯示該字串)
+</section>
+<section>
+<h1>心得</h1>
+第一次接觸到程式語言感覺蠻有趣的，不過上課時有點跟不上老師的腳步，相信在隻齁的課程能夠改善
+</section>
+<section>
+    <h1>自評</h1>
+    <p>雖然照著老師做是免強可以,不過還是有許多需改善的部分,個人對這周學習表現給65分</p>
+</section>
+				
+</div>
+</div>
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.min.js"></script>
+<script>
+    // 啟動 Reveal.
+    Reveal.initialize({
+    });
+</script>
+	
+</body>
+
