@@ -1,0 +1,101 @@
+<!--
+這個檔案展示了 reveal.js 投影片資料的基本架構
+其中使用 "reveal" class 與 "slides" class 來界定投影片的資料範圍
+而各投影片則以 <section></section> 標示
+且支援平行與垂直的投影片配置方法
+-->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>最簡單的 reveal 超文件</title>
+<link rel="stylesheet" href="css/reveal.min.css">
+	<link rel="stylesheet" href="css/theme/default.css" id="theme">	
+	<!--增加對於 IE 早期版本的支援 -->
+	<!--[if lt IE 9]>
+	<script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+<body>
+<!-- 將整個投影片包在 "reveal" class 中 -->
+<div class="reveal">
+<!-- 將所有投影片包在 "slides" class 中 -->
+<div class="slides">
+<!-- 以下為投影片 -->
+<!-- 每一個 section 都代表一張投影片,  -->
+<!-- section 標註中的多 section 標註, 將往下垂直延伸 -->
+<section>
+    <h1>~~嗚啦啦~~</h1>
+        <h1>第三週</h1>
+    <p>40423131許承恩</p>
+</section>
+	
+<section id="hw-task-one">
+    <h1>課程內容</h1>
+    <h1>  Github</h1>
+    </br>
+    <p>
+    GitHub 同時提供付費帳戶和免費帳戶。
+    </br>
+    這兩種帳戶都可以建立公開的倉庫，
+    </br>
+    但是付費享有建立私人的倉庫。
+    </p>
+</section>
+				
+<section>
+    <h1>Github指令</h1>
+    <p>........超多</p>
+    <p>git clone :複製一個專案</p>
+    <p>git branch :列出所有近端分支</p>
+    <p>git branch (分支名稱) :建立近端分支</p>
+    <p>git checkout (分支名稱) :切換近端分支</p>
+    <p>git add :將現有檔案暫存=(拍快照)</p>
+    <p>git commit :將暫存檔案建立在一個*節點。</p>
+    <p>(節點:就是未來你可以回朔及追蹤的參考)</p>
+    <p>git pull (遠端名稱) (分支名稱)  :下載一個遠端分支並合併於近端</p>
+    <p>git push :推送分支</p>  
+</section>
+
+<section>
+    <h1>心得</h1>
+    </br>
+    <p>
+    這次學了Github的東西，經過老師的講解之後
+    </br>
+    才發現其實Github是很方便的，更讓我感受不
+    </br>
+    一樣的是，全程都是用程式語言來推送資料，
+    </br>
+    跟以往使用網站做事不同，顯得更專業了一點
+    </br>
+    又是學到了一課。
+    </br>
+    另外，在家裡實做不清楚時都會找
+    </br>
+    <a href="https://backlogtool.com/git-guide/tw/">連猴子都能懂的Git入門指南</a>
+    </br>
+    這個網頁，裡面的講解淺顯易懂很實用。</p>
+</section>
+
+<section>
+    <h1>自評</h1>
+    </br>
+    <p>
+    這次上課超專心，畢竟教的東西超多，更何況
+    </br>
+    這次做出成果的成就感超大，給自己評個83分。</p>
+</section>
+				
+</div>
+</div>
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.min.js"></script>
+<script>
+    // 啟動 Reveal.
+    Reveal.initialize({
+    });
+</script>
+	
+</body>
+
