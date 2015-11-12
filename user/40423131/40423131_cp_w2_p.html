@@ -1,0 +1,106 @@
+<!--
+這個檔案展示了 reveal.js 投影片資料的基本架構
+其中使用 "reveal" class 與 "slides" class 來界定投影片的資料範圍
+而各投影片則以 <section></section> 標示
+且支援平行與垂直的投影片配置方法
+-->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>最簡單的 reveal 超文件</title>
+<link rel="stylesheet" href="css/reveal.min.css">
+	<link rel="stylesheet" href="css/theme/default.css" id="theme">	
+	<!--增加對於 IE 早期版本的支援 -->
+	<!--[if lt IE 9]>
+	<script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+<body>
+<!-- 將整個投影片包在 "reveal" class 中 -->
+<div class="reveal">
+<!-- 將所有投影片包在 "slides" class 中 -->
+<div class="slides">
+<!-- 以下為投影片 -->
+<!-- 每一個 section 都代表一張投影片,  -->
+<!-- section 標註中的多 section 標註, 將往下垂直延伸 -->
+<section>
+    <h1>~~嗚啦啦~~</h1>
+        <h1>第二週</h1>
+    <p>40423131許承恩</p>
+</section>
+	
+<section id="hw-task-one">
+    <h1>  課程內容</h1>
+    <h1>如何用引號?</h1>
+    </br>
+    <p>上課學了指令"print('___')",這是引號的用法,單、雙引號
+          皆可輸出裡面的指令,在使用英文字串時也要特別小心。</p>
+</section>
+				
+<section>
+    <h1>例如</h1>
+    </br>
+    <p>
+    print('HANAKO') 
+    </br>
+    print("HANAKO") 
+    </br>
+    得到 HANAKO 
+    </br>
+    </br>
+    兩組字串皆相同，只在
+    </br>
+    於單、雙引號的差別。</p>
+</section>
+
+<section>
+    <section>
+    <h1>但是</h1>
+    </br>
+    <p>
+    print('There's a dog')
+    </br>
+    </br>
+    在單引號輸出時，因為There's的字串上有一
+    </br>
+    個  '  會產生衝突，而視為無效的程式語言，
+    </br>
+    所以我們應該將單引號改成雙引號即可成功。
+    </br>
+    </br>
+    print("There's a dog")
+    </br>
+    得到 There's a dog </p>
+    </section>
+    
+    <section>
+    <h1>心得</h1>
+    </br>
+    <p>這次學到的感覺還不錯，而且課堂上
+    </br>
+    jupyter密碼是共通的，所以我可以查別人
+    </br>
+    的IP並在別人的板上留言，滿好玩的哈哈~~</p>
+    </section>
+    
+    <section>
+    <h1>自評</h1>
+    </br>
+    <p>有學到東西XD，這次給自己打70分。</p>
+    </section>
+</section>
+	
+</div>
+</div>
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.min.js"></script>
+<script>
+    // 啟動 Reveal.
+    Reveal.initialize({
+    });
+</script>
+	
+</body>
+
+
