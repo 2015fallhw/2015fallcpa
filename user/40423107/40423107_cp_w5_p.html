@@ -1,0 +1,59 @@
+<!--
+這個檔案展示了 reveal.js 投影片資料的基本架構
+其中使用 "reveal" class 與 "slides" class 來界定投影片的資料範圍
+而各投影片則以 <section></section> 標示
+且支援平行與垂直的投影片配置方法
+-->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>最簡單的 reveal 超文件</title>
+<link rel="stylesheet" href="css/reveal.min.css">
+	<link rel="stylesheet" href="css/theme/default.css" id="theme">	
+	<!--增加對於 IE 早期版本的支援 -->
+	<!--[if lt IE 9]>
+	<script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+<body>
+<!-- 將整個投影片包在 "reveal" class 中 -->
+<div class="reveal">
+<!-- 將所有投影片包在 "slides" class 中 -->
+<div class="slides">
+<!-- 以下為投影片 -->
+<!-- 每一個 section 都代表一張投影片,  -->
+<!-- section 標註中的多 section 標註, 將往下垂直延伸 -->
+<section>
+    <h1>四設計一甲</h1>
+    <p>40423107史育澤10/16</p>		
+</section>
+	
+<section id="hw-task-one">
+    <h1>影片心得</h1>
+    <p>一開始嘗試去看這個影片時，全部都是英文，而且還沒有字幕，突然懊悔過去沒有好好學習英文，導致兵要用時方恨少的情形出現，這也讓我們深深的體悟到英文的重要，還好這次因為放假，讓我們多了一個禮拜的時間可以準備，我們花費了許多時間看影片，有很多不會的單字，也都一個個的查翻譯，最後終於勉強地把短短30分鐘的影片看完，有稍微的了解到一些python的東西。</p>
+</section>
+
+<section>
+    <h1>課程心得</h1>
+    <p>已經上課一個月了，一開始的我完全不知道要幹嘛，也覺得幹嘛要學這麼難的東西，但聽到老師說的:"來學校就是要學難得阿，學簡單的要幹嘛"，突然覺得我應該要改變一下，不要只是想著結果才去做，而是做了才知道結果。</p>
+</section>
+
+<section>
+    <h1>自評</h1>
+    <p>這次的分數我給70分，因為我覺得進步空間還非常的大，所以70就足夠了。</p>
+    
+</section>
+				
+</div>
+</div>
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.min.js"></script>
+<script>
+    // 啟動 Reveal.
+    Reveal.initialize({
+    });
+</script>
+	
+</body>
+
