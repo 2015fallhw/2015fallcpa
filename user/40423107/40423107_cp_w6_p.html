@@ -1,0 +1,58 @@
+<!--
+這個檔案展示了 reveal.js 投影片資料的基本架構
+其中使用 "reveal" class 與 "slides" class 來界定投影片的資料範圍
+而各投影片則以 <section></section> 標示
+且支援平行與垂直的投影片配置方法
+-->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>最簡單的 reveal 超文件</title>
+<link rel="stylesheet" href="css/reveal.min.css">
+	<link rel="stylesheet" href="css/theme/default.css" id="theme">	
+	<!--增加對於 IE 早期版本的支援 -->
+	<!--[if lt IE 9]>
+	<script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+<body>
+<!-- 將整個投影片包在 "reveal" class 中 -->
+<div class="reveal">
+<!-- 將所有投影片包在 "slides" class 中 -->
+<div class="slides">
+<!-- 以下為投影片 -->
+<!-- 每一個 section 都代表一張投影片,  -->
+<!-- section 標註中的多 section 標註, 將往下垂直延伸 -->
+<section>
+    <h1>四設計一甲</h1>
+    <p>40423107史育澤10/23</p>		
+</section>
+	
+<section id="hw-task-one">
+    <h1>影片心得</h1>
+    <p>每次要翻譯影片對我們來說就是一大工程，翻譯出來後還不見得看得懂，不過我們盡力去的了解這次影片主要是在說，只要我們知道今天的日期 就能計算從現在到未來的日期要多久。</p>
+</section>
+
+<section>
+    <h1>課程心得</h1>
+    <p>這禮拜上的是全班協同倉儲，這算是新接觸到的東西，說真的有一點搞不懂，而且後面還會有衝突的部分要去改，這真是新的挑戰。</p>
+</section>
+
+<section>
+    <h1>自評</h1>
+    <p>這次的分數我給75分，因為我每週都有去上課，不管吸收了多少，都有進步了一點點。</p>
+</section>
+				
+</div>
+</div>
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.min.js"></script>
+<script>
+    // 啟動 Reveal.
+    Reveal.initialize({
+    });
+</script>
+	
+</body>
+
