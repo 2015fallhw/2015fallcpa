@@ -1,0 +1,82 @@
+<!--
+這個檔案展示了 reveal.js 投影片資料的基本架構
+其中使用 "reveal" class 與 "slides" class 來界定投影片的資料範圍
+而各投影片則以 <section></section> 標示
+且支援平行與垂直的投影片配置方法
+-->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>最簡單的 reveal 超文件</title>
+<link rel="stylesheet" href="css/reveal.min.css">
+	<link rel="stylesheet" href="css/theme/default.css" id="theme">	
+	<!--增加對於 IE 早期版本的支援 -->
+	<!--[if lt IE 9]>
+	<script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+<body>
+<!-- 將整個投影片包在 "reveal" class 中 -->
+<div class="reveal">
+<!-- 將所有投影片包在 "slides" class 中 -->
+<div class="slides">
+<!-- 以下為投影片 -->
+<!-- 每一個 section 都代表一張投影片,  -->
+<!-- section 標註中的多 section 標註, 將往下垂直延伸 -->
+<section>
+    <section>
+        <h1>welcome ~welcome~ welcome!!!!!</h1>
+    </section>	
+    <section>
+        <h1>張俊鴻</h1>	
+        <p>40423129</p>
+        <p>2015.11.5</p>
+    </section>	
+</section>
+	
+<section id="hw-task-one">
+    <h1>個人學習心得報告</h1>
+    <p>關於python和github</p>
+</section>
+
+<section>
+    <section>
+    <h1>python的產生原因</h1>
+    </section>
+    <section>
+    <p>python的創始人 吉多·范羅蘇姆,1989年,為了在阿姆斯特丹打發時間,決心開發一個新的腳本解釋程式,而python這個名子取自"Monty Python's Flying Circus"這個BBC電視劇</p>
+    </section>
+</section>
+		
+				
+<section>
+    <section>
+    <h1>python的優點</h1>
+    </section>
+    <section>
+    <p>Python本身被設計為可擴充的,並非所有的特性和功能都整合到語言核心。Python提供了豐富的API和工具,以便程式設計師能夠輕鬆地使用C、C++、Cython來編寫擴充模組,且Python編譯器本身也可以被整合到其它需要腳本語言的程式內,所以許多工程師在快速開發階段都較偏好使用Python</p>
+    <p>有興趣知道差別的人可以看看~ <a href="http://www.chinesepython.org/pythonfoundry/marrpydoc/python1.htm">p和其他程式比較</a>
+</section>
+    
+    <section>
+    <section>
+        <h1>github簡介</h1>
+    </section>	
+    <section>
+        <h1>Github</h1>	
+        <p>由Github公司開發的一個 共享虛擬主機服務﹐系統建立於網路平台﹐且會自動進行版次管理﹐對於產品開發等等瑣事</p>
+    </section>	
+</section>
+				
+</div>
+</div>
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.min.js"></script>
+<script>
+    // 啟動 Reveal.
+    Reveal.initialize({
+    });
+</script>
+	
+</body>
