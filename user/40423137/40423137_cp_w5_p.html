@@ -8,7 +8,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>40423128-3</title>
+<title>40423137-4</title>
 <link rel="stylesheet" href="css/reveal.min.css">
 	<link rel="stylesheet" href="css/theme/default.css" id="theme">	
 	<!--增加對於 IE 早期版本的支援 -->
@@ -26,74 +26,73 @@
 <!-- section 標註中的多 section 標註, 將往下垂直延伸 -->
 <section>
     <h1>zero to hero python心得 </h1>
-    <p>40423128 四設一甲徐聖倫</p>		
+    <p>40423137 四設一甲陳慶豪</p>		
 </section>
 	
 <section id="hw-task-one">
-    <h1>input指令的使用</h1>
-    <p>輸入字串讓python進行簡單的互動,輸入後輸出的指令</p>
-</section>
-<section>
-開頭程式格式限制:
-</br>
-1.最開頭不能是數字
-</br>
-2.開頭不能有空白鍵
-</br>
-3.大小寫的不同會視為兩個代數
-</br>
 
-</section>
-
-<section>
-簡單的程式範例:
-</br>
-x=input('2+2=')
-</br>
-print(4)
-</br>
-此時在螢幕顯示的就是2+2=
-</br>
-隨意輸入任何字串都只會顯示"4"
+<h1>使用python指令做數學運算</h1>
+ <p> 使用python指令來做出一個簡易的函數方便我們帶入數字得到答案
+像力學公式,BMI值,等等簡易的加減乘除都可以用相關的指令做計算</p>
 </section>
 <section>
-加入英文字串,製作互動介面例如:
+以面積舉例,如果要讓電腦知道"長","寬"是代表代數還是文字,我們只要打入:
 </br>
-x=input("what's your name?")
-print("Hello"+x)
+長=5
 </br>
-就會先顯示what's your name?,如果我打入"Sam"他就會顯示:
+寬=20
 </br>
-Hello Sam
+面積=長*寬
+</br>
+print("面積") 
+</br>
+螢幕上就會輸出:100
 </section>
 
 <section>
-可輸入多個代數，讓程式做數學運算
-<br />
-x=input('數字x輸入')
-y=input('數字y輸入')
-print(y*x)
-我們輸入x=2,y=1
+print代數輸出有幾個規則:
 </br>
-就能得到數字2*1=2
+1.%d不能用於代數,   
+</br>
+2.%f會讓答案默認為6個小數位,   
+</br>
+3.%.n會讓小數位變n位,   
+</br>
+4.%0n會用0把答案填到第n位,   
+</br>
+5.%n可以讓答案距離前面的文字n個空格   
 </section>
 
 <section>
-<h1>W3上課內容:</h1>
+還有另外一種表示方法,規則如下:  
+<br /> 
+print("四方形的面積為{0:d}".format(100))>>四方形的面積為100   
+<br />
+print("四方形的面積{0:3d}".format(100))>>四方形的面積為   100   
+<br />
+ print("四方形的面積為{0:f}".format(100))>>四方形的面積為100.000000   
+<br />
+ "0:"後面的代碼與前面規則相同
+ 
+</section>
+<section>
+<h1>W5上課內容:</h1>
 
-修正記事本字體錯誤
+使用Leo編輯器
 <br />
-在資料夾找到notebook.py檔案→拉進SciTE→檢視行數→
+先下載fix資料夾(增加安裝Leo程序)→執行fix.bat→啟動Ana3_lite2裡的start.bat
 <br />
-296行修改為 open(nb-path.encoding="utf-8")→314行修改為open(-nb-header.html."w"encoding="utf-8")
+這時程式會自動安裝並執行Leo Editor→打開reveal.leo→將作業一改成(學號)作業
 <br />
-修改完save→END
+→修改完save→END
 <br />
 
 </section>
+
+
 <section>
 <h1>心得</h1>
-這周zero to hero python的內容我覺得蠻有趣的，可以用python寫出和使用者互動的初步介面
+zero to hero python讓我學到了數值儲存，和使用Leo製作簡報
 </section>
 <section>
     <h1>自評</h1>
