@@ -220,7 +220,6 @@
 </v>
 <v t="leo.20151106113258.1" a="E"><vh>@path 40423104</vh>
 <v t="leo.20151106113258.2"><vh>以下為投影片 ------------</vh></v>
-<v t="leo.20151106113258.3"><vh>@edit 40423104_cp_w0_p.html</vh></v>
 <v t="leo.20151117024751.1"><vh>@edit 40423104_cp_w8_p.html</vh></v>
 <v t="leo.20151117024752.1"><vh>@edit 40423104_cp_w7_p.html</vh></v>
 <v t="leo.20151117024726.1"><vh>@edit 40423104_cp_w6_p.html</vh></v>
@@ -234,7 +233,6 @@
 <v t="leo.20151106113258.6"><vh>@edit publishconf.py</vh></v>
 <v t="leo.20151106113258.7" a="E"><vh>@path content</vh>
 <v t="leo.20151106113258.8"><vh>以下為網誌 md 檔案 ------------</vh></v>
-<v t="leo.20151106113258.9"><vh>@edit 40423104_cp_w0.md</vh></v>
 <v t="leo.20151117031338.1"><vh>@edit 2015cphww1.md</vh></v>
 <v t="leo.20151117031354.1"><vh>@edit 2015cphww2.md</vh></v>
 <v t="leo.20151117031408.1"><vh>@edit 2015cphww3.md</vh></v>
