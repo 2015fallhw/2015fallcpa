@@ -1,0 +1,67 @@
+<!--
+這個檔案展示了 reveal.js 投影片資料的基本架構
+其中使用 "reveal" class 與 "slides" class 來界定投影片的資料範圍
+而各投影片則以 <section></section> 標示
+且支援平行與垂直的投影片配置方法
+-->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>40423217 作業二</title>
+<link rel="stylesheet" href="css/reveal.min.css">
+	<link rel="stylesheet" href="css/theme/default.css" id="theme">	
+	<!--增加對於 IE 早期版本的支援 -->
+	<!--[if lt IE 9]>
+	<script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+<body>
+<!-- 將整個投影片包在 "reveal" class 中 -->
+<div class="reveal">
+<!-- 將所有投影片包在 "slides" class 中 -->
+<div class="slides">
+<!-- 以下為投影片 -->
+<!-- 每一個 section 都代表一張投影片,  -->
+<!-- section 標註中的多 section 標註, 將往下垂直延伸 -->
+<section>
+    <h1>零基礎學Python</h1>
+    <p>40423217 四設一甲 李國豪</p>		
+</section>
+	
+<section id="hw-task-one">
+    <h1>use 引號</h1>
+    <p>print 簡單列印字串方法</p>
+    <ul>
+           <li>print("40423117 so good") or print('40423117 so good')</li>
+           <li>print("40423117 so good\ n加入下一行")</li>
+           <li>文字中若有夾雜單引號則必須使用雙引號包圍前後</li>
+           <li>print("40423117 so good"+"皆在後面的句子")</li>
+           <li>print("40423117 so good/我是空行效果")</li>
+    </ul>
+</section>
+
+<section>
+<h1>心得</h1>
+<p>再厲害的程式工程師，也不可能保證在第一次運行程式就會成功</p>
+<p>所有錯誤將是最美的禮物，唯有把錯誤記住不再犯才會持續進步</p>
+</section>
+
+<section>
+    <h1>自評</h1>
+    <p>老師給的零基礎影片真的是給零基礎的新手觀看，對於有基礎的工程師來說不適用</p>
+    <p>本周 自評分數 : 70</p>
+</section>
+				
+</div>
+</div>
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.min.js"></script>
+<script>
+    // 啟動 Reveal.
+    Reveal.initialize({
+    });
+</script>
+	
+</body>
+
