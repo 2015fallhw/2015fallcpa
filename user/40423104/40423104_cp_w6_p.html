@@ -1,0 +1,129 @@
+<!--
+這個檔案展示了 reveal.js 投影片資料的基本架構
+其中使用 "reveal" class 與 "slides" class 來界定投影片的資料範圍
+而各投影片則以 <section></section> 標示
+且支援平行與垂直的投影片配置方法
+-->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>最簡單的 reveal 超文件</title>
+<link rel="stylesheet" href="css/reveal.min.css">
+	<link rel="stylesheet" href="css/theme/default.css" id="theme">	
+	<!--增加對於 IE 早期版本的支援 -->
+	<!--[if lt IE 9]>
+	<script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+<body>
+<!-- 將整個投影片包在 "reveal" class 中 -->
+<div class="reveal">
+<!-- 將所有投影片包在 "slides" class 中 -->
+<div class="slides">
+<!-- 以下為投影片 -->
+<!-- 每一個 section 都代表一張投影片,  -->
+<!-- section 標註中的多 section 標註, 將往下垂直延伸 -->
+<section>
+    <section>
+
+    <h1>第六週</h1>
+    <p>學號:40423104</p>
+    <p>姓名:Yan Syuan</p>
+    	
+  </section>
+    
+  <section>
+
+    <h1>加油!!!!!!</h1>
+    
+  </section>		
+</section>
+	
+<section>
+    <h1>內容大綱</h1>
+    <p>補充與問題統整</p>
+    <ul>
+    <li>補充Python</li>
+    <li>問題與討論</li>
+    <li>心得感想</li>
+    <li>自評成績</li>
+    </ul>
+</section>
+				
+<section>
+    <section>
+    <h1>補充Python</h1>
+    <p>有關Python的For迴圈</p>
+    <ul>
+    <li>重複迴圈
+    for : for i in range(5):
+              print(i)按run cell就會跑出
+              0
+              1
+              2
+              3
+              4</li>
+    </ul>
+    </section>
+    
+    <section>
+    <ul>
+    <p>限制迴圈範圍</p>
+    <li>for i in range(2, 6):
+                print(i)按run cell就會跑出
+                2
+                3
+                4
+                5</li>
+     </section>
+     
+     <section>
+     <p>總和程式基本概念</p>
+     <ul>
+     <li>資料呈現 : 命名規則、保留關鍵字</li>
+     <li>資料呈現 : print()→整數、浮點數、字串</li>
+     <li>數列 (list) - [1, 2, 3] [1, 2, 3, [1, 2, [1, 2, 3] ] ]</li>
+     <li>元組 (tuple) - (1, 2, 3)</li>
+     <li>字典 (dictionary) - {"a": 1, "b": 2}</li>
+     <li>重複迴圈 for</li>
+     <li>邏輯判斷 if, while</li>
+     </ul>
+     </section>
+</section>
+
+<section>
+
+    <h1>問題與討論</h1>
+    <p>在上完課後遇到許多問題</p>
+    <ul>
+    <li>下載camstudio時，或一些軟體時，會下載到一些不明軟體，造成開網頁時，會有很多廣告出現。所以在下在時，資料記得要做過塞選，或使用cmd打入netstat -no的指令，可以看到目前在運作的資料</li>
+    <li>因為開啟不明的檔案，可能造成leo編輯器開補起來。例如:我下載老師的reveal2的檔案，打開leo檔，因為檔案已經壞了，導致我的leo當掉，在強制關閉後，再重開leo，就打開了。</li>
+    <li>為什麼我們在電腦教室使用的電腦有時候會ㄅㄧㄅㄧ叫呢?因為在開啟電腦時，主機板 FLASH RAM 或 EPROM 錯誤（ BIOS 損壞），這是一部份原因，網路上有許多原因，可以上網查詢。</li>
+    <p>這是我個人比較常遇到的問題喔~。</p>
+    </ul>
+</section>
+
+<section>
+    <h1>心得感想</h1>
+    <p>這週將之前說認識的python再深入介紹一下，也將自己的問題做了紀錄，雖然在做其他軟體與程式介紹，因為我都是淺學，所以有很多的不足，因為老師給的資料很多都是英文，雖然都不是能了解得很徹底，但是我會努力的完成每週作業，提高自己的價值，做一個不一樣的工程師。</p>
+</section>
+
+<section>
+    <h1>自評成績</h1>
+    <p>還在前進中</p>
+    <p>這週給自己的成績:64分</p>
+</section>
+				
+</div>
+</div>
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.min.js"></script>
+<script>
+    // 啟動 Reveal.
+    Reveal.initialize({
+    });
+</script>
+	
+</body>
+
