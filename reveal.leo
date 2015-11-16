@@ -484,13 +484,12 @@
 <v t="leo.20151107212519.1"><vh>@edit 40423128_cp_w2_p.html</vh></v>
 <v t="leo.20151107212523.1"><vh>@edit 40423128_cp_w3_p.html</vh></v>
 <v t="leo.20151107212527.1"><vh>@edit 40423128_cp_w4_p.html</vh></v>
-<<<<<<< HEAD
 <v t="leo.20151116232242.1"><vh>@edit 40423128_cp_w5_p.html</vh></v>
 <v t="leo.20151107212530.1"><vh>@edit 40423128_cp_w6_p.html</vh></v>
 <v t="leo.20151107212533.1"><vh>@edit 40423128_cp_w7_p.html</vh></v>
 <v t="leo.20151107212538.1"><vh>@edit 40423128_cp_w8_p.html</vh></v>
-<v t="leo.20151027142138.4" a="E"><vh>@path pelican</vh>
-=======
+<v t="leo.20151027142138.4"><vh>@path pelican</vh>
+</v>
 <v t="leo.20151107212530.1"><vh>@edit 40423128_cp_w5_p.html</vh></v>
 <v t="leo.20151107212533.1"><vh>@edit 40423128_cp_w6_p.html</vh></v>
 <v t="leo.20151107212538.1"><vh>@edit 40423128_cp_w7_p.html</vh></v>
