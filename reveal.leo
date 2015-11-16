@@ -234,7 +234,7 @@
 <v t="leo.20151106113258.7" a="E"><vh>@path content</vh>
 <v t="leo.20151106113258.8"><vh>以下為網誌 md 檔案 ------------</vh></v>
 <v t="leo.20151117032341.1"><vh>@edit 40423104_cp_w1.md</vh></v>
-<v t="leo.20151117032335.1"><vh>@edit40423104_cp_w2.md</vh></v>
+<v t="leo.20151117032335.1"><vh>@edit 40423104_cp_w2.md</vh></v>
 <v t="leo.20151117032329.1"><vh>@edit 40423104_cp_w3.md</vh></v>
 <v t="leo.20151117032319.1"><vh>@edit 40423104_cp_w4.md</vh></v>
 <v t="leo.20151117032307.1"><vh>@edit 40423104_cp_w5.md</vh></v>
@@ -1235,22 +1235,6 @@ g.es("admin pelican 執行完畢")</t>
 <t tx="leo.20151116234254.5"></t>
 <t tx="leo.20151116234254.7"></t>
 <t tx="leo.20151116234254.8"></t>
-<t tx="leo.20151117032335.1">@language md
-Title: 2015 計算機程式 第二週
-Date: 2015-09-25
-Category: Python
-Tags: pelican, publishing
-Slug: 2015cp_hw_w2
-Authors: coursemdetw
-Summary: 作業一摘要
-
-以下為作業一內容
-
-Engineers投影片:
-
-&lt;iframe src="40423104_cp_w2_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
-
-</t>
 <t tx="lys86212.20151113203218.1"></t>
 <t tx="lys86212.20151113203218.2"></t>
 <t tx="lys86212.20151113203218.4"></t>
