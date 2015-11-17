@@ -8,7 +8,7 @@ from __future__ import unicode_literals
 import os
 
 AUTHOR = '40423145'
-SITENAME = '2015FALL 40423145 CADPA 作業'
+SITENAME = '2015FALL 40423145 cpa 作業'
 SITEURL = ''
 
 PATH = 'content'
@@ -53,5 +53,4 @@ PLUGIN_PATHS = ['./../../../plugin']
 PLUGINS = ['liquid_tags.notebook']
 # 目錄設定相對於 reveal 下的 content 目錄
 NOTEBOOK_DIR = 'notebook'
-
 
