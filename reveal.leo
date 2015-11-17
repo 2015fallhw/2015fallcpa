@@ -66,7 +66,7 @@
 </v>
 </v>
 </v>
-<v t="leo.20151117170142.1" a="E"><vh>@path 40423154</vh>
+<v t="leo.20151117170142.1"><vh>@path 40423154</vh>
 <v t="leo.20151117170142.2"><vh>以下為投影片 ------------</vh></v>
 <v t="leo.20151117170142.3"><vh>@edit 40423154_cp_w1_p.html</vh></v>
 <v t="leo.20151117170142.4" a="E"><vh>@path pelican</vh>
@@ -423,7 +423,7 @@
 </v>
 </v>
 </v>
-<v t="leo.20151106192057.1"><vh>@path 40423105</vh>
+<v t="leo.20151106192057.1" a="E"><vh>@path 40423105</vh>
 <v t="leo.20151106192057.2"><vh>以下為投影片 ------------</vh></v>
 <v t="leo.20151106192057.3"><vh>@edit 40423105_cp_w2_p.html</vh></v>
 <v t="leo.20151106192057.4"><vh>@edit 40423105_cp_w1_p.html</vh></v>
@@ -745,7 +745,7 @@
 <v t="leo.20151116223649.1"><vh>@edit 40423117_cp_w4_p.html</vh></v>
 <v t="leo.20151116223649.2"><vh>@edit 40423117_cp_w5_p.html</vh></v>
 <v t="leo.20151116223649.3"><vh>@edit 40423117_cp_w6_p.html</vh></v>
-<v t="leo.20151026193315.4" a="E"><vh>@path pelican</vh>
+<v t="leo.20151026193315.4"><vh>@path pelican</vh>
 <v t="leo.20151026193315.5"><vh>以下為設定檔 ------------</vh></v>
 <v t="leo.20151026193315.6"><vh>@edit publishconf.py</vh></v>
 <v t="leo.20151026193315.7" a="E"><vh>@path content</vh>
@@ -863,11 +863,14 @@
 </v>
 </v>
 </v>
-<v t="leo.20151026195003.1"><vh>@path 40423144</vh>
+<v t="leo.20151026195003.1" a="E"><vh>@path 40423144</vh>
 <v t="leo.20151026195003.2"><vh>以下為投影片 ------------</vh></v>
 <v t="leo.20151116232138.1"><vh>@edit 40423144_cp_w1_p.html</vh></v>
 <v t="leo.20151116230753.1"><vh>@edit 40423144_cp_w2_p.html</vh></v>
 <v t="leo.20151116231303.1"><vh>@edit 40423144_cp_w3_p.html</vh></v>
+<v t="leo.20151117180324.1"><vh>@edit 40423144_cp_w4_p.html</vh></v>
+<v t="leo.20151117180342.1"><vh>@edit 40423144_cp_w5_p.html</vh></v>
+<v t="leo.20151117181838.1"><vh>@edit 40423144_cp_w6_p.html</vh></v>
 <v t="leo.20151026195003.4" a="E"><vh>@path pelican</vh>
 <v t="leo.20151026195003.5"><vh>以下為設定檔 ------------</vh></v>
 <v t="leo.20151026195003.6"><vh>@edit publishconf.py</vh></v>
@@ -876,6 +879,9 @@
 <v t="leo.20151026195003.9"><vh>@edit 40423144_cp_w1.md</vh></v>
 <v t="leo.20151116230912.1"><vh>@edit 40423144_cp_w2.md</vh></v>
 <v t="leo.20151116231315.1"><vh>@edit 40423144_cp_w3.md</vh></v>
+<v t="leo.20151117180355.1"><vh>@edit 40423144_cp_w4.md</vh></v>
+<v t="leo.20151117180426.1"><vh>@edit 40423144_cp_w5.md</vh></v>
+<v t="leo.20151117181848.1"><vh>@edit 40423144_cp_w6.md</vh></v>
 </v>
 </v>
 </v>
