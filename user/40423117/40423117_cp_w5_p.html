@@ -8,7 +8,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>40423217 作業五</title>
+<title>40423217 10/23</title>
 <link rel="stylesheet" href="css/reveal.min.css">
 	<link rel="stylesheet" href="css/theme/default.css" id="theme">	
 	<!--增加對於 IE 早期版本的支援 -->
@@ -30,45 +30,51 @@
 </section>
 	
 <section id="hw-task-five">
-<section>
-  
+    <h1>Storing Numbers </h1>
 </section>
-    <h1>日期計算</h1>
-<p> python互動的進階模式,可以直接取電腦上的時間來進行計算</p>
+  
+<section>
+    <h1>about "storing numbers"</h1>
+        <ul>
+           <li>sorting=存儲,number=數字</li>
+           <li>使用python指令來做出一個簡易的函數方便我們帶入數字得到答案</li>
+           <li>ex.收入,BMI,等等生活常用且簡易的加減乘除都可以用相關的指令做計算</li>
+    </ul>
+</section>
+  
+<section>
+  <h1>print 淺規則</h1>
+  <p>我們print裡面的字串不能同時存在文字及代數(100),所以我們要把代數轉換為文字,有幾個規則:   </p>
+        <ul>
+           <li>.print("文字%f" % 代數)>>文字100.000000 </li>
+           <li>.print("文字%.2f" % 代數)>>文字100.00 </li>
+           <li>.print("文字%d" % 100)>>文字100</li>
+           <li>.print("文字%3d "% 100)>>文字(三個空格)100</li>
+           <li>.print("文字%03f "%100)>>文字100  </li>
+    </ul>
 </section>
   
 <section>
   <h1>語法說明</h1>
   <hr>
     <ul>
-           <li>%b :是月縮寫，%B :是完整的月份名稱</li>
-           <li>%d :是該月的天 ，%y :是兩位數的年份</li>
-           <li>%A :是一周中的天，%a :是一周中的天(簡短的)</li>
-           <li>%Y :是4位數年，%H :小時（ 24小時制）</li>
-           <li>%p :上午或下午 ，%m :分鐘 ， %s :秒</li>
+           <li>1.%d不能用於代數</li>
+           <li>2.%f會讓答案默認為6個小數位 </li>
+           <li>3.%.n會讓小數位變n位</li>
+           <li>4.%0n會用0把答案填到第n位</li>
+           <li>5.%n可以讓答案距離前面的文字n個空格</li>
     </ul>
-</section>
-				
-<section>
-<h1>strftime指令</h1>
-<p> strftime可以把後續的代數指令變簡單一些,但非常難以記憶,通常是以書本或網路來記載:</p> 
-    <ul>
-           <li> print(currentDate.strftime('%d %b, %Y'))</li>
-    </ul>
-<br>
-<a href="http://strftime.org/">【更多關於strftime語法的使用】</a>
 </section>
   
 <section>
 <h1>心得</h1>
-<p>python語法下,兩種不同的語法也可能產生一樣的結果</p>
-<p>雖strftime指令又是另一種完全不一樣的指令,但在部份情況下,這個指令或許可以讓工作處理得更效率</p>
+<p>本次課程可以瞭解到很多語法上的限制，同時更多元化</p>
 </section>
   
 <section>
 <h1>自評</h1>
-<p>這篇相較於之前的比較有用處，像是驗證程式版本諸如此類都可套用</p>
-<p>本周 自評分數 : 70</p>
+<p>本周學習到很多print上的用法，進而提升自己的語言</p>
+     <p>本周 自評分數 : 70</p>
 </section>
 </div>
 </div>
