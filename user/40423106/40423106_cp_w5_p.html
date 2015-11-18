@@ -1,0 +1,72 @@
+<!--
+這個檔案展示了 reveal.js 投影片資料的基本架構
+其中使用 "reveal" class 與 "slides" class 來界定投影片的資料範圍
+而各投影片則以 <section></section> 標示
+且支援平行與垂直的投影片配置方法
+-->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>最簡單的 reveal 超文件</title>
+<link rel="stylesheet" href="css/reveal.min.css">
+	<link rel="stylesheet" href="css/theme/default.css" id="theme">	
+	<!--增加對於 IE 早期版本的支援 -->
+	<!--[if lt IE 9]>
+	<script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+<body>
+<!-- 將整個投影片包在 "reveal" class 中 -->
+<div class="reveal">
+<!-- 將所有投影片包在 "slides" class 中 -->
+<div class="slides">
+<!-- 以下為投影片 -->
+<!-- 每一個 section 都代表一張投影片,  -->
+<!-- section 標註中的多 section 標註, 將往下垂直延伸 -->
+<section>
+    <h1>四設計一甲</h1>
+    <p>40423106王翔佑10/16</p>		
+</section>
+	
+<section id="hw-task-one">
+    <h1>影片心得</h1>
+    <p>name = input("What is your name? ")</p>
+    <p>What is your name?  _</p>
+    <p>在 _ 上輸入任何字後,print(name)會出現我們之前輸入的那個字</p>
+    <p>例如</p>
+    <p>name = input("What is your name? ")</p>
+    <p>例如</p>
+    <p>What is your name?  123</p>
+    <p>print(name)</p>
+    <p>123</p>
+    <p></p>
+    <p> <a 
+   href=""></a>
+</section>
+				
+<section>
+    <h1>心得與自評</h1>
+    <p>git config --global user.email "倉儲信箱"</p>
+    <p>git add 追蹤並暫存</p>
+    <p>git push 推送</p>
+    <p>git branch reveal2-gh-pages 建立reveal2-gh-pages分支</p>
+    <p>git checkout reveal2-gh-pages 轉換到reveal2-gh-pages分支</p>
+    <p>git push origin reveal2-gh-pages 推送到reveal2-gh-pages分支</p>
+    <p>經過老師上課的內容以及影片的介紹,我學習到了python的指令和python的便利性,自評:70</p>
+    <p><a href=""></a>
+   
+</section>
+				
+</div>
+</div>
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.min.js"></script>
+<script>
+    // 啟動 Reveal.
+    Reveal.initialize({
+    });
+</script>
+	
+</body>
+
