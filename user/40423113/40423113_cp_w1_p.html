@@ -1,0 +1,64 @@
+<!--
+這個檔案展示了 reveal.js 投影片資料的基本架構
+其中使用 "reveal" class 與 "slides" class 來界定投影片的資料範圍
+而各投影片則以 <section></section> 標示
+且支援平行與垂直的投影片配置方法
+-->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>最簡單的 reveal 超文件</title>
+<link rel="stylesheet" href="css/reveal.min.css">
+	<link rel="stylesheet" href="css/theme/default.css" id="theme">	
+	<!--增加對於 IE 早期版本的支援 -->
+	<!--[if lt IE 9]>
+	<script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+<body>
+<!-- 將整個投影片包在 "reveal" class 中 -->
+<div class="reveal">
+<!-- 將所有投影片包在 "slides" class 中 -->
+<div class="slides">
+<!-- 以下為投影片 -->
+<!-- 每一個 section 都代表一張投影片,  -->
+<!-- section 標註中的多 section 標註, 將往下垂直延伸 -->
+<section>
+    <h1>作業</h1>
+    <p>40423113 吳冠毅</p>		
+</section>
+	
+<section id="hw-task-one">
+    <h1>PYTHON</h1>
+    <p>Python 與 shell scripts 相似，是直譯式程式。互動式程式，執行過程中可與程式互動。跨平台，未經修改下可在Linux，Windows，MacOS X 和其他平台上使用。易讀、易學、易維護，適合初學者。可設計各種應用程式，從文字處理、www 網頁瀏覽器、管理倉儲都可完成</p>
+</section>
+			
+<section>
+    <h1>連yee都會的PYTHON</h1>
+    <p>上網尋找有關PYTHON使用方法</p>
+    <p>可以連結到內部投影片<a href="http://pydoing.blogspot.tw/2012/10/python-tutorial.html">程式語言 python</a>
+</section>
+
+<section>
+    <h1>python控制結構</h1>
+     <p> for 為 Python 的關鍵字之一，後面緊接一個取得元素的變數，此例中用 i ，然後接另一個關鍵字 in ，其後就是複合資料型態的資料，最後接冒號，底下縮排就是迴圈所要重複的工作。這一行用中文來解釋，就是從 a 中取出元素放到 i 裡，迴圈直接取得複合資料型態的元素，若是沒有元素，迴圈自動結束。</p>
+</section>
+
+<section>
+    <h1>自評</h1>
+    <p>剛開始接觸這門課時就對計概有興趣，所以上課用心也很認真抄筆記，在做完作業也會幫助有問題的同學，一方面可以解決同學的問題，另一方面更可以提升自己的能力，所以我覺得自己應該有 "80"分 </p>
+</section>
+				
+</div>
+</div>
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.min.js"></script>
+<script>
+    // 啟動 Reveal.
+    Reveal.initialize({
+    });
+</script>
+	
+</body>
+
