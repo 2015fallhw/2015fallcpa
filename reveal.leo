@@ -449,7 +449,7 @@
 </v>
 </v>
 </v>
-<v t="leo.20151106192057.1" a="E"><vh>@path 40423105</vh>
+<v t="leo.20151106192057.1"><vh>@path 40423105</vh>
 <v t="leo.20151106192057.2"><vh>以下為投影片 ------------</vh></v>
 <v t="leo.20151106192057.3"><vh>@edit 40423105_cp_w2_p.html</vh></v>
 <v t="leo.20151106192057.4"><vh>@edit 40423105_cp_w1_p.html</vh></v>
@@ -771,7 +771,6 @@
 <v t="leo.20151116223649.1"><vh>@edit 40423117_cp_w4_p.html</vh></v>
 <v t="leo.20151116223649.2"><vh>@edit 40423117_cp_w5_p.html</vh></v>
 <v t="leo.20151116223649.3"><vh>@edit 40423117_cp_w6_p.html</vh></v>
-<v t="leo.20151118210712.1"><vh>@edit 40423117_cp_w7_p.html</vh></v>
 <v t="leo.20151026193315.4"><vh>@path pelican</vh>
 <v t="leo.20151026193315.5"><vh>以下為設定檔 ------------</vh></v>
 <v t="leo.20151026193315.6"><vh>@edit publishconf.py</vh></v>
@@ -783,7 +782,6 @@
 <v t="leo.20151116223641.1"><vh>@edit 40423117_cp_w4.md</vh></v>
 <v t="leo.20151116223641.2"><vh>@edit 40423117_cp_w5.md</vh></v>
 <v t="leo.20151116223642.1"><vh>@edit 40423117_cp_w6.md</vh></v>
-<v t="leo.20151118210719.1"><vh>@edit 40423117_cp_w7.md</vh></v>
 </v>
 </v>
 </v>
@@ -912,7 +910,7 @@
 <v t="leo.20151117180342.1"><vh>@edit 40423144_cp_w5_p.html</vh></v>
 <v t="leo.20151117181838.1"><vh>@edit 40423144_cp_w6_p.html</vh></v>
 <v t="leo.20151117233607.1"><vh>@edit 40423144_cp_w7_p.html</vh></v>
-<v t="leo.20151117234106.1"><vh>@edit 40423144_cp_w8_p.html</vh></v>
+<v t="leo.20151117234106.1"><vh>@edit 40423105_cp_w8_p.html</vh></v>
 <v t="leo.20151026195003.4" a="E"><vh>@path pelican</vh>
 <v t="leo.20151026195003.5"><vh>以下為設定檔 ------------</vh></v>
 <v t="leo.20151026195003.6"><vh>@edit publishconf.py</vh></v>
