@@ -25,12 +25,9 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (('2015課程網頁', 'http://wordpress-2015course.rhcloud.com/'),
-<<<<<<< HEAD
-         ('Python', 'http://python.org/'),('4023144個人倉儲', ''),('2015作業主頁', 'https://github.com/40423144'))
-=======
-         ('Python', 'http://python.org/'),('4023144個人倉儲','https://github.com/40423144'),('2015作業主頁', ''))
->>>>>>> ae4f974ec09dab5c1e6a48dfe8c4727f78afcdb4
+LINKS = (('2015課程網頁', 'http://wordpress-2015course.rhcloud.com/'),('Python', 'http://python.org/'),('4023144個人倉儲', 'https://40423144.github.io/cpaw2'),('40423144作業倉儲', 'https://github.com/40423144'))
+
+
 
 # Social widget
 SOCIAL = (('twitter', 'http://twitter.com/ametaireau'),
@@ -57,8 +54,3 @@ PLUGIN_PATHS = ['./../../../plugin']
 PLUGINS = ['liquid_tags.notebook']
 # 目錄設定相對於 reveal 下的 content 目錄
 NOTEBOOK_DIR = 'notebook'
-
-<<<<<<< HEAD
-=======
-
->>>>>>> ae4f974ec09dab5c1e6a48dfe8c4727f78afcdb4
