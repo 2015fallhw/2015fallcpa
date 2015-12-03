@@ -1,0 +1,78 @@
+<!--
+這個檔案展示了 reveal.js 投影片資料的基本架構
+其中使用 "reveal" class 與 "slides" class 來界定投影片的資料範圍
+而各投影片則以 <section></section> 標示
+且支援平行與垂直的投影片配置方法
+-->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>最簡單的 reveal 超文件</title>
+<link rel="stylesheet" href="css/reveal.min.css">
+	<link rel="stylesheet" href="css/theme/default.css" id="theme">	
+	<!--增加對於 IE 早期版本的支援 -->
+	<!--[if lt IE 9]>
+	<script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+<body>
+<!-- 將整個投影片包在 "reveal" class 中 -->
+<div class="reveal">
+<!-- 將所有投影片包在 "slides" class 中 -->
+<div class="slides">
+<!-- 以下為投影片 -->
+<!-- 每一個 section 都代表一張投影片,  -->
+<!-- section 標註中的多 section 標註, 將往下垂直延伸 -->
+<section>
+    <h1>w11猜猜猜數字</h1>
+    <p>40423118阮柏宗11/27</p>		
+</section>
+	
+<section id="hw-task-one">
+    <h1>今天上什麼呢啦</h1>
+    <p>今天教我們怎麼不用每次上課都要更新到最新的工作環境,把有最新版的leo-editor放到隨身碟裡帶著到處跑,</p>
+    
+</section>
+
+<section>
+    <h1>猜數字講解~</h1>
+    <p>1.#:單行註解 but 後面加coding</p>
+    <p>3.import:關鍵字 +random :導入亂數模組</p>
+    <p>5.random.{randint(整數)}{(1,100)(產生的答案在1~100的整數間)}
+       (.是呼叫random的方法)</p>
+       
+    
+</section>
+
+<section>
+    <h1>猜數字講解~</h1>
+    <p>''' :多行註解,前後都要加,後面東西都不會執行</p>
+    <p>integer整數(int):函式,把後面input轉成整數</p>
+    <p>string:字串</p>
+    <p>float:符點數</p>
+    <p>9.猜測次數不能為1</p>
+    <p>10.while:迴圈  !:不等於  :底下要縮排(4個spase)) 若是程式還沒寫玩都要加:</p>
+    <p>16.(猜測次數 += 1)  =  (猜測次數=猜測次數+1)</p>
+        
+</section>
+				
+				
+<section>
+    <h1>自評一下</h1>
+    <p>我覺得我的噴火龍畫得不錯,就65分吧</p>
+    
+</section>
+				
+</div>
+</div>
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.min.js"></script>
+<script>
+    // 啟動 Reveal.
+    Reveal.initialize({
+    });
+</script>
+	
+</body>
+
