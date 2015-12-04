@@ -4,8 +4,10 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Authors &mdash; 2015FALL 40423116 CADPA 作業</title>
+  <title>2015 計算機程式 w12 &mdash; 2015FALL 40423116 CADPA 作業</title>
   <meta name="author" content="40423116">
+
+
 
 
 
@@ -36,20 +38,80 @@
 
 
 <ul class="main-navigation">
-      <li >
+      <li class="active">
         <a href="./category/python.html">Python</a>
       </li>
 </ul></nav>
   <div id="main">
     <div id="content">
 <div>
-	<article role="article">
-    	<header>
-    		<h1 class="entry-title">Blog Authors</h1>
-    	</header>
+  <article class="hentry" role="article">
+<header>
+      <h1 class="entry-title">2015 計算機程式 w12</h1>
+    <p class="meta">
+<time datetime="2015-12-04T11:41:00+08:00" pubdate>週五 04 十二月 2015</time>    </p>
+</header>
 
-		<p><a href="./author/40423116.html">40423116</a> (3)</p>
-	</article>
+  <div class="entry-content"><p>以下為作業12內容內容</p>
+<p>利用 iframe 嵌入投影片:</p>
+<iframe src="40423116_cp_w12_p.html" width="500" height="300"></iframe>
+
+<p><a href="40423116_cp_w12_p.html" target="_blank">作業十一投影片</a></p>
+<h1>coding: utf-8</h1>
+<h1>猜數字遊戲</h1>
+<p>import random
+執行次數 = 100
+總猜測次數 = 0
+for i in range(執行次數):
+    下限 = 1
+    上限 = 100
+    標準答案 = random.randint(下限, 上限)
+    pc猜的數字 = random.randint(下限, 上限)
+    #print(標準答案, pc猜的數字)
+    #integer
+    #string
+    #float
+    #你猜的數字 = int(input("請輸入您所猜的整數:"))
+    猜測次數 = 1
+    while 標準答案 != pc猜的數字:
+        if 標準答案 &lt; pc猜的數字:
+            #print("太大了，再猜一次 :)加油")
+            # 因此已經確定"pc猜的數字"不是答案, 因此 - 1
+            上限 = pc猜的數字 - 1
+        else:
+            #print("太小了，再猜一次 :)加油")
+            # 因此已經確定"pc猜的數字"不是答案, 因此 + 1
+            下限 = pc猜的數字 + 1
+        #pc猜的數字 = int(input("請輸入您所猜的整數:"))
+        pc猜的數字 = random.randint(下限, 上限)
+        猜測次數 += 1</p>
+<div class="highlight"><pre>#print(&quot;猜對了！總共猜了&quot;, 猜測次數, &quot;次&quot;)
+總猜測次數 += 猜測次數
+</pre></div>
+
+
+<p>平均猜測次數 = int(總猜測次數/執行次數)
+print("平均次數", 平均猜測次數)</p></div>
+    <footer>
+<p class="meta">
+  <span class="byline author vcard">
+    Posted by <span class="fn">
+        40423116
+    </span>
+  </span>
+<time datetime="2015-12-04T11:41:00+08:00" pubdate>週五 04 十二月 2015</time>  <span class="categories">
+    <a class='category' href='./category/python.html'>Python</a>
+  </span>
+  <span class="categories">
+    <a class="category" href="./tag/pelican.html">pelican</a>,    <a class="category" href="./tag/publishing.html">publishing</a>  </span>
+</p><div class="sharing">
+</div>    </footer>
+  </article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+  </section>
 </div>
 <aside class="sidebar">
   <section>
@@ -108,6 +170,9 @@
   <script src="./theme/js/octopress.js" type="text/javascript"></script>
   <script type="text/javascript">
     var disqus_shortname = '2015fall';
+    var disqus_identifier = '/2015cp_hw_w12.html';
+    var disqus_url = './2015cp_hw_w12.html';
+    var disqus_title = '2015 計算機程式 w12';
     (function() {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
       dsq.src = "//" + disqus_shortname + '.disqus.com/embed.js';
