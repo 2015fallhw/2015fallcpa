@@ -1,432 +1,114 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>2015FALL 40123237 CPA 作業</title><link href="http://coursemdetw.github.io/reveal/" rel="alternate"></link><link href="http://coursemdetw.github.io/reveal/feeds/python.atom.xml" rel="self"></link><id>http://coursemdetw.github.io/reveal/</id><updated>2015-09-19T11:41:00+08:00</updated><entry><title>2015 計算機程式 第一週</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w1.html" rel="alternate"></link><updated>2015-09-19T11:41:00+08:00</updated><author><name>40123237</name></author><id>tag:coursemdetw.github.io,2015-09-19:reveal/2015cp_hw_w1.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>2015FALL 40123237 CPA 作業</title><link href="http://coursemdetw.github.io/reveal/" rel="alternate"></link><link href="http://coursemdetw.github.io/reveal/feeds/python.atom.xml" rel="self"></link><id>http://coursemdetw.github.io/reveal/</id><updated>2015-09-19T11:41:00+08:00</updated><entry><title>2015 計算機程式 作業一</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w1.html" rel="alternate"></link><updated>2015-09-19T11:41:00+08:00</updated><author><name>40123237</name></author><id>tag:coursemdetw.github.io,2015-09-19:reveal/2015cp_hw_w1.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
 &lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
 &lt;iframe src="40123237_cp_w1_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
 &lt;p&gt;&lt;a href="40123237_cp_w1_p.html" target="_blank"&gt;作業一投影片&lt;/a&gt;&lt;/p&gt;
-&lt;h1&gt;python3&lt;/h1&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;#first:&lt;/span&gt;
-&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;hello&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;hi&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-
-&lt;span class="c"&gt;#second:&lt;/span&gt;
-&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;hello&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-
-&lt;span class="c"&gt;#third: example program&lt;/span&gt;
-&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;hello&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;h1&gt;Jupyter&lt;/h1&gt;
-&lt;p&gt;run and save to &lt;code&gt;Y:\notebook\print1.ipynb&lt;/code&gt;&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;1.  run: example program
-2.  save as: `File &amp;gt;&amp;gt; Rename... &amp;gt;&amp;gt; save as &amp;quot;print1&amp;quot;`
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;h1&gt;SciTE&lt;/h1&gt;
-&lt;p&gt;run and save to &lt;code&gt;Y:\tmp\print1.py&lt;/code&gt;&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;1.  run: example program
-2.  save as: `File &amp;gt;&amp;gt; Save As... &amp;gt;&amp;gt; rename &amp;quot;print1.py&amp;quot;`
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;h1&gt;cmd.exe&lt;/h1&gt;
-&lt;p&gt;test run "print1.py" &lt;code&gt;Y:\tmp&amp;gt;python print1.py&lt;/code&gt;&lt;/p&gt;
-&lt;h1&gt;github&lt;/h1&gt;
-&lt;p&gt;4 step &lt;code&gt;git clone &amp;gt;&amp;gt; add &amp;gt;&amp;gt; commit &amp;gt;&amp;gt; push&lt;/code&gt;&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;* step 1: copy cpbw1 HTTPS clone URL `&amp;quot;https://github.com/學號/cpbw1.git&amp;quot;`
-* step 2: cmd `Y:\tmp&amp;gt;git clone https://github.com/學號/cpbw1.git`
-* step 3: copy 2 file to `Y:\tmp\cpbw1` paste
-    * 2 file: `&amp;quot;print1.ipynb&amp;quot; &amp;amp; &amp;quot;print1.py&amp;quot;`
-* step 4: git
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;h1&gt;note: cmd.exe 指令&lt;/h1&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;* 查詢指令: dir
-* 更換目錄: cd
-* 回上一層: cd ..
-* 跳上一個: 上鍵
-* 跳下一個: 下鍵
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;h1&gt;python&lt;/h1&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;#[step 4.1] go to cpbw1
-Y:\tmp&amp;gt;cd cpbw1
-
-#[step 4.2] submit update
-Y:\tmp\cpbw1&amp;gt;git add -A
-
-#[step 4.3] submit message
-Y:\tmp\cpbw1&amp;gt;git commit -m &amp;quot;add two files&amp;quot;
-
-#cmd.exe: Please tell me who you are.
-Run
-  git config --global user.email &amp;quot;you@example.com&amp;quot;
-  git config --global user.name &amp;quot;Your Name&amp;quot;
-
-#[step 4.4] user.email
-Y:\tmp\cpbw1&amp;gt;git config --global user.email &amp;quot;學號@nfu.edu.tw&amp;quot;
-
-#[step 4.5] user.name
-Y:\tmp\cpbw1&amp;gt;git config --global user.name &amp;quot;學號&amp;quot;
-
-#check user email &amp;amp; name Y:\home\.gitconfig open
-[user]
-    email = 學號@gm.nfu.edu.tw
-    name = 學號
-
-#[step 4.6] submit message again
-Y:\tmp\cpbw1&amp;gt;git commit -m &amp;quot;add two files&amp;quot;
-
-#cmd.exe:
-[master 版次編號] add two files
- 2 files changed, 115 insertions(+)
- create mode 100644 print1.ipynb
- create mode 100644 print1.py
-
-#[step 4.7] push to github
-Y:\tmp\cpbw1&amp;gt;git push
-
-#[step 4.8] cmd.exe: 輸入帳密
-Username: 學校信箱
-Password: github密碼
-
-#update github\學號\cpbw1 success
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;~~~&lt;/p&gt;
+&lt;h1&gt;使用 H1 標題&lt;/h1&gt;
+&lt;p&gt;文字段落間若要跳行, 必須插入空白行, 否則將會被 Markdown 視為連續的資料&lt;/p&gt;
+&lt;p&gt;使用. &lt;em&gt;斜體文字&lt;/em&gt;, &lt;strong&gt;黑體文字&lt;/strong&gt;, 以及 &lt;code&gt;單線文字&lt;/code&gt;. 表列資料可以寫為:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;網頁嵌入畫質會比較低，可以按下面的viemo點進去看!!!! &lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;第1項說明&lt;/li&gt;
+&lt;li&gt;第2項說明&lt;/li&gt;
+&lt;li&gt;第3項說明&lt;/li&gt;
 &lt;/ul&gt;
-&lt;iframe src="https://player.vimeo.com/video/130728724" width="500" height="375" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/130728724"&gt;40123237&lt;/a&gt; from &lt;a href="https://vimeo.com/user40271183"&gt;40123237&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第二週</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w2.html" rel="alternate"></link><updated>2015-09-19T11:41:00+08:00</updated><author><name>40123237</name></author><id>tag:coursemdetw.github.io,2015-09-19:reveal/2015cp_hw_w2.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
-&lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
-&lt;iframe src="40123237_cp_w2_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;a href="40123237_cp_w2_p.html" target="_blank"&gt;作業一投影片&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;課程網站&lt;/strong&gt;: &lt;a href="https://wordpress-2015course.rhcloud.com" target="_blank"&gt;wordpress-2015course&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;Category: 2015 計算機程式 (教材專用)&lt;/li&gt;
-&lt;li&gt;課程vimeo: &lt;a href="https://vimeo.com/user24079973" target="_blank"&gt;虎尾科大機械設計工程&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;隨身可攜程式系統&lt;/strong&gt;: 隨插隨用, 協同加值&lt;ul&gt;
-&lt;li&gt;完整版: Ana3_2015&lt;/li&gt;
-&lt;li&gt;精簡版: Ana3_lite2.7z&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1&gt;程式語言&lt;/h1&gt;
-&lt;p&gt;Python 3&lt;/p&gt;
-&lt;h1&gt;工程模擬運算&lt;/h1&gt;
-&lt;p&gt;Anaconda 3&lt;/p&gt;
-&lt;p&gt;*影片錄製: CamStudio&lt;/p&gt;
-&lt;p&gt;*影片轉檔: FormatFactory (from avi to flv)&lt;/p&gt;
-&lt;p&gt;*影片撥放器: VLCPortable&lt;/p&gt;
-&lt;p&gt;*IPython Notebook 功能: Jupyter (6人協作平台, 筆記與網誌編輯)&lt;/p&gt;
-&lt;p&gt;*文字編輯器: SciTE (處理設定)&lt;/p&gt;
-&lt;p&gt;*大綱管理系統: Leo Editor 5.1 final (Markdown節點架構, pelican靜態網誌)&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;檔案說明:fix.bat: 點選執行 (閃一下, 執行完三個複製)&lt;ul&gt;
-&lt;li&gt;launchLeo.py: 啟動Leo Editor管理系統&lt;/li&gt;
-&lt;li&gt;python.properties: 解譯python程式&lt;/li&gt;
-&lt;li&gt;start: 安裝模組Leo Editor, pelican, Markdown (pip: 安裝/卸除模組)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Enter Leo id: leo (產生唯一節點序號, 3個字以上的字串)&lt;/p&gt;
-&lt;h1&gt;Leo操作&lt;/h1&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;* Ctrl I: 新增節點
-* Ctrl R: 子節點(下一層)
-* Ctrl L: 母節點(上一層)
-* 右鍵選擇 Refresh from disk: 更新資料內容(雙向)
-* 藍色小框框: 表示此節點有資料內容
+&lt;p&gt;特別注意 --- 不包括星號 --- 表列文字從第四欄位開始.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;引用的內容寫在這裡
+主要是以大於的符號開頭.&lt;/p&gt;
+&lt;p&gt;其中也可以利用空白行隔開,
+整區都是引用內容的範圍.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;em-dash 符號是3個 dashes. 利用兩個 dashes 來連接開始與結束 (ex., "這個禮拜要閱讀章節 12--14"). 3個逗點 ... 則會被轉為 ellipsis.
+pelican 可以支援 unicode. ☺&lt;/p&gt;
+&lt;h2&gt;H2 標題&lt;/h2&gt;
+&lt;p&gt;有數字的表列資料:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;第1項&lt;/li&gt;
+&lt;li&gt;第2項&lt;/li&gt;
+&lt;li&gt;第3項&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;跟前面一樣, 文字從第四個欄位開始.&lt;/p&gt;
+&lt;p&gt;程式碼的表達:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;# for 重複迴圈 ...
+for i in 1 .. 10 { 呼叫特定函式(i) }
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;h1&gt;GitHub倉儲推送流程&lt;/h1&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;* git branch: 查尋分支
-* git branch gh-pages: 建立分支
-* git checkout gh-pages: 切換分支
-* git add -A: 拍快照
-* git commit -m &amp;quot;提交訊息&amp;quot;
-* git config --global user.email     &amp;quot;40123237@nfu.edu.tw&amp;quot;
-* git config --global user.name &amp;quot;40123237&amp;quot;
-* git commit -m &amp;quot;提交訊息&amp;quot;
-* git push 
-* Username: 40123237@nfu.edu.tw
-* Password: GitHub密碼
+&lt;p&gt;這裡也是要空4個 space 鍵. &lt;/p&gt;
+&lt;p&gt;除了每一行空4個空白, 也可以使用 delimited 來界定程式碼範圍, 就像這樣:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;define foobar() {
+    print(&amp;quot;歡迎進入程式的世界!&amp;quot;)
+}
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;h1&gt;GitHub倉儲下載&lt;/h1&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;* Download ZIP: 僅下載所選分支資料
-* HTTPS clone URL: 下載包含所有分支資料
+&lt;p&gt;(這樣的表達比較容易用來複製程式碼內容).&lt;/p&gt;
+&lt;p&gt;python 的程式碼, 可以寫成下列格式&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;time&lt;/span&gt;
+&lt;span class="c"&gt;# 以下會從 0 數到 9&lt;/span&gt;
+&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="c"&gt;# 稍微暫停一下&lt;/span&gt;
+    &lt;span class="n"&gt;time&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sleep&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mf"&gt;0.5&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;ul&gt;
+&lt;p&gt;以下為另外一種嵌入程式碼的方法:&lt;/p&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1
+2
+3
+4
+5
+6&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;time&lt;/span&gt;
+&lt;span class="c"&gt;# 以下會從 0 數到 9&lt;/span&gt;
+&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="c"&gt;# 稍微暫停一下&lt;/span&gt;
+    &lt;span class="n"&gt;time&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sleep&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mf"&gt;0.5&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;h3&gt;H3 標題&lt;/h3&gt;
+&lt;p&gt;以下則為內嵌式的表列法t:&lt;/p&gt;
+&lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;coursemdetw/reveal: reveal-gh-pages (網誌基本架構)&lt;/p&gt;
+&lt;p&gt;首先, 將完成下列元件的設計:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;index.html: 網誌首頁
-reveal.leo
-============&lt;/li&gt;
-&lt;li&gt;@button pelican content: 滑鼠停留在此節點上, 點按 pelican-content 按鈕&lt;ul&gt;
-&lt;li&gt;將.md檔資料轉為pelican靜態網誌&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;@settings: Leo設定&lt;/li&gt;
-&lt;li&gt;@path pelican\content: 網誌文章 (.md檔: Markdown)&lt;/li&gt;
-&lt;li&gt;@edit 2015cphww1.md&lt;/li&gt;
-&lt;li&gt;Slug: 2015cp_hw_w1 (.md檔轉超文件存檔名稱)&lt;/li&gt;
-&lt;li&gt;Summary: 文章摘要&lt;/li&gt;
-&lt;li&gt;iframe: 視窗嵌入&lt;/li&gt;
-&lt;li&gt;:target="_blank": 視窗另啟分頁&lt;/li&gt;
+&lt;li&gt;轉向機構&lt;/li&gt;
+&lt;li&gt;煞車系統&lt;/li&gt;
+&lt;li&gt;踩踏機構&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;網頁嵌入畫質會比較低，可以按下面的viemo點進去看!!!! &lt;/strong&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;iframe src="https://player.vimeo.com/video/130728724" width="500" height="375" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/130728724"&gt;40123237&lt;/a&gt; from &lt;a href="https://vimeo.com/user40271183"&gt;40123237&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第三週</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w3.html" rel="alternate"></link><updated>2015-09-19T11:41:00+08:00</updated><author><name>40123237</name></author><id>tag:coursemdetw.github.io,2015-09-19:reveal/2015cp_hw_w3.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
-&lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
-&lt;iframe src="40123237_cp_w3_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;a href="40123237_cp_w3_p.html" target="_blank"&gt;作業一投影片&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;reveal&lt;/strong&gt;:&lt;ul&gt;
-&lt;li&gt;reveal.leo架構&lt;/li&gt;
-&lt;li&gt;reveal.js投影片: .html檔&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;pelican網誌文章&lt;/strong&gt;: .md檔 -&amp;gt; pelican轉檔 -&amp;gt; .html檔&lt;ul&gt;
-&lt;li&gt;.md檔: 編寫人性化, .html檔: 不易閱讀&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;ERROR: 轉notebook時出現編碼錯誤 (C:\reveal-gh-pages\plugin\liquid_tags\notebook.py)&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;SciTE編輯器&lt;/strong&gt;:&lt;ul&gt;
-&lt;li&gt;View -&amp;gt; Line Numbers: 顯示行數&lt;/li&gt;
-&lt;li&gt;Ctrl F: 搜尋 "open"&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;encoding="utf-8"編碼: 處理中文&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;start&lt;/strong&gt;:&lt;/li&gt;
-&lt;li&gt;已完成fix.bat即可關閉start時啟動安裝 (remark)&lt;ul&gt;
-&lt;li&gt;rem pip install pelican Markdown&lt;/li&gt;
-&lt;li&gt;rem pip install leo editor&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;更換notebook目錄: 為了Jupyter程式編寫轉網誌文章&lt;ul&gt;
-&lt;li&gt;原設定: data\notebook&lt;/li&gt;
-&lt;li&gt;新設定: data\tmp\reveal\content\notebook&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;**※網頁嵌入畫質會比較低，可以按下面的viemo點進去看!!!!&lt;/p&gt;
-&lt;iframe src="https://player.vimeo.com/video/130728724" width="500" height="375" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/130728724"&gt;40123237&lt;/a&gt; from &lt;a href="https://vimeo.com/user40271183"&gt;40123237&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第五週</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w5.html" rel="alternate"></link><updated>2015-09-19T11:41:00+08:00</updated><author><name>40123237</name></author><id>tag:coursemdetw.github.io,2015-09-19:reveal/2015cp_hw_w5.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
-&lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
-&lt;iframe src="40123237_cp_w5_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;a href="40123237_cp_w5_p.html" target="_blank"&gt;作業一投影片&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;階段複習:&lt;ul&gt;
-&lt;li&gt;reveal2: 修復notebook編碼錯誤&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Leo Editor&lt;/strong&gt;: Python 3, PyQt(圖形介面)&lt;ul&gt;
-&lt;li&gt;節點: 架構 -&amp;gt; 細節&lt;ul&gt;
-&lt;li&gt;標題&lt;/li&gt;
-&lt;li&gt;內容&lt;/li&gt;
-&lt;li&gt;位置與從屬架構&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;用法: &lt;ul&gt;
-&lt;li&gt;@edit(雙向)&lt;/li&gt;
-&lt;li&gt;@path(對應目錄)&lt;/li&gt;
-&lt;li&gt;@button(命令)&lt;/li&gt;
-&lt;li&gt;@clean(架構)&lt;/li&gt;
-&lt;li&gt;@language&lt;/li&gt;
-&lt;li&gt;@others(所有子節點內容)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;GitHub&lt;/strong&gt;: 倉儲&lt;ul&gt;
-&lt;li&gt;新增 -&amp;gt; git clone -&amp;gt; download -&amp;gt; setting -&amp;gt; collaborator(協同者)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Python 3&lt;/strong&gt;: 語法&lt;ul&gt;
-&lt;li&gt;IPython Notebook: Jupyter&lt;/li&gt;
-&lt;li&gt;reveal.js: 全球資訊網投影片&lt;/li&gt;
-&lt;li&gt;pelican: 靜態網誌產生器&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;**※網頁嵌入畫質會比較低，可以按下面的viemo點進去看!!!!&lt;/p&gt;
-&lt;iframe src="https://player.vimeo.com/video/130728724" width="500" height="375" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/130728724"&gt;40123237&lt;/a&gt; from &lt;a href="https://vimeo.com/user40271183"&gt;40123237&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第六週</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w6.html" rel="alternate"></link><updated>2015-09-19T11:41:00+08:00</updated><author><name>40123237</name></author><id>tag:coursemdetw.github.io,2015-09-19:reveal/2015cp_hw_w6.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
-&lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
-&lt;iframe src="40123237_cp_w6_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;a href="40123237_cp_w6_p.html" target="_blank"&gt;作業一投影片&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Zero to Hero&lt;/strong&gt; with Python:&lt;ul&gt;
-&lt;li&gt;C:\Ana3_2015\data\project\cp\zero_to_hero(有字幕說明)&lt;/li&gt;
-&lt;li&gt;學習建議: 第一次練習盲聽, 第二次字幕對應(查單字)學習&lt;/li&gt;
-&lt;li&gt;影片撥放器: VLCPortable (支援flv,mp4播放)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;解決新舊版本衝突: 關閉頭尾對應程式&lt;/p&gt;
-&lt;p&gt;git pull: 拉回倉儲最新版本資料&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;SciTE&lt;/strong&gt;: &lt;ul&gt;
-&lt;li&gt;Ctrl F: 搜尋錯誤代碼"&amp;lt;", "=", "&amp;gt;"(7個)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;**※網頁嵌入畫質會比較低，可以按下面的viemo點進去看!!!!&lt;/p&gt;
-&lt;iframe src="https://player.vimeo.com/video/130728724" width="500" height="375" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/130728724"&gt;40123237&lt;/a&gt; from &lt;a href="https://vimeo.com/user40271183"&gt;40123237&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第七週</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w7.html" rel="alternate"></link><updated>2015-09-19T11:41:00+08:00</updated><author><name>40123237</name></author><id>tag:coursemdetw.github.io,2015-09-19:reveal/2015cp_hw_w7.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
-&lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
-&lt;iframe src="40123237_cp_w7_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;a href="40123237_cp_w7_p.html" target="_blank"&gt;作業一投影片&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;機械設計工程師: Ana3_2015 (專用可攜程式系統, 業界主流: Python 2.7)&lt;/p&gt;
-&lt;p&gt;程式方法管理: 分散式版次管理系統 (個人, 團隊, 協同, 分享, 效率)&lt;/p&gt;
-&lt;p&gt;程式能力: 線上教學系統&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Python 3&lt;/strong&gt;: 程式基本概念&lt;ul&gt;
-&lt;li&gt;變數: 命名規則, 保留關鍵字&lt;/li&gt;
-&lt;li&gt;資料呈現: print(), 整數, 浮點數, 字串&lt;/li&gt;
-&lt;li&gt;數列(list): [1, 2, 3]&lt;/li&gt;
-&lt;li&gt;元組(tuple): (1, 2, 3)&lt;/li&gt;
-&lt;li&gt;字典(dictionary): {"a":1, "b":2}&lt;ul&gt;
-&lt;li&gt;重複迴圈: for&lt;/li&gt;
-&lt;li&gt;邏輯判斷: if, while&lt;/li&gt;
-&lt;li&gt;檔案輸出入(file IO)&lt;/li&gt;
-&lt;li&gt;檔案與操作系統(windows, Mac, Linux...)&lt;/li&gt;
-&lt;li&gt;資料編碼&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;函式(function)&lt;/li&gt;
-&lt;li&gt;模組(module)&lt;/li&gt;
-&lt;li&gt;物件導向(OOP)&lt;/li&gt;
-&lt;li&gt;網際程式: javascript, html5, webgl&lt;/li&gt;
-&lt;li&gt;資料庫: database, sql,nosql&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;基本程式練習: SciTE, Jupyter (print("*"), notebook網誌)&lt;/p&gt;
-&lt;p&gt;切換倉儲版本資料: git reset -- hard 1234567(版本代號7碼)&lt;/p&gt;
-&lt;p&gt;**※網頁嵌入畫質會比較低，可以按下面的viemo點進去看!!!!&lt;/p&gt;
-&lt;iframe src="https://player.vimeo.com/video/130728724" width="500" height="375" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/130728724"&gt;40123237&lt;/a&gt; from &lt;a href="https://vimeo.com/user40271183"&gt;40123237&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第八週</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w8.html" rel="alternate"></link><updated>2015-09-19T11:41:00+08:00</updated><author><name>40123237</name></author><id>tag:coursemdetw.github.io,2015-09-19:reveal/2015cp_hw_w8.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
-&lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
-&lt;iframe src="40123237_cp_w8_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;a href="40123237_cp_w8_p.html" target="_blank"&gt;作業一投影片&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;GitHub倉儲推送流程&lt;/strong&gt;:&lt;ul&gt;
-&lt;li&gt;git branch: 查尋分支&lt;/li&gt;
-&lt;li&gt;git branch gh-pages: 建立分支&lt;/li&gt;
-&lt;li&gt;git checkout gh-pages: 切換分支&lt;/li&gt;
-&lt;li&gt;git add -A: 拍快照&lt;/li&gt;
-&lt;li&gt;git commit -m "提交訊息"&lt;ul&gt;
-&lt;li&gt;身分設定: 檔案儲存在home.gitconfig&lt;/li&gt;
-&lt;li&gt;git config --global user.email "學號@nfu.edu.tw"&lt;/li&gt;
-&lt;li&gt;git config --global user.name "學號"&lt;/li&gt;
-&lt;li&gt;認證完成, 再次提交&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;git commit -m "提交訊息"&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;git push origin gh-pages  #網址代號: origin&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Username: 學號@nfu.edu.tw&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Password: GitHub密碼&lt;/p&gt;
+&lt;p&gt;接著連繫工業設計部門.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;note: cmd.exe 指令:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;查詢指令: dir&lt;/li&gt;
-&lt;li&gt;更換目錄: cd&lt;/li&gt;
-&lt;li&gt;回上一層: cd ..&lt;/li&gt;
-&lt;li&gt;跳上一個: 上鍵&lt;/li&gt;
-&lt;li&gt;跳下一個: 下鍵&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;python
-    #[step 4.1] go to cpbw1
-    Y:\tmp&amp;gt;cd cpbw1&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;#[step 4.2] submit update
-Y:\tmp\cpbw1&amp;gt;git add -A
-
-#[step 4.3] submit message
-Y:\tmp\cpbw1&amp;gt;git commit -m &amp;quot;add two files&amp;quot;
-
-#cmd.exe: Please tell me who you are.
-Run
-  git config --global user.email &amp;quot;you@example.com&amp;quot;
-  git config --global user.name &amp;quot;Your Name&amp;quot;
-
-#[step 4.4] user.email
-Y:\tmp\cpbw1&amp;gt;git config --global user.email &amp;quot;學號@nfu.edu.tw&amp;quot;
-
-#[step 4.5] user.name
-Y:\tmp\cpbw1&amp;gt;git config --global user.name &amp;quot;學號&amp;quot;
-
-#check user email &amp;amp; name Y:\home\.gitconfig open
-[user]
-    email = 學號@gm.nfu.edu.tw
-    name = 學號
-
-#[step 4.6] submit message again
-Y:\tmp\cpbw1&amp;gt;git commit -m &amp;quot;add two files&amp;quot;
-
-#cmd.exe:
-[master 版次編號] add two files
- 2 files changed, 115 insertions(+)
- create mode 100644 print1.ipynb
- create mode 100644 print1.py
-
-#[step 4.7] push to github
-Y:\tmp\cpbw1&amp;gt;git push
-
-#[step 4.8] cmd.exe: 輸入帳密
-Username: 學校信箱
-Password: github密碼
-
-#update github\學號\cpbw1 success
+&lt;p&gt;確定上述元件的各項設計與用料都符合原始設計規格的要求
+    查驗表:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;各元件材質
+車蓋顏色
+機構調校流程
+需要熱處理的元件列表
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;**※網頁嵌入畫質會比較低，可以按下面的viemo點進去看!!!!&lt;/p&gt;
+&lt;p&gt;完成上述查驗後, 請通知品保部門, 以便接續處理.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;特別注意各階資料都以內縮4個空白鍵來加以區隔, 包含最後一行.&lt;/p&gt;
+&lt;p&gt;Markdown 的超文件連結寫法 &lt;a href="http://www.google.com" target="_blank"&gt;連到 Google&lt;/a&gt;, 也可以連到同目錄下的檔案 &lt;a href="cadpbw1.html" target="_blank"&gt;cadpbw1.html&lt;/a&gt;, 也能使用註腳 &lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="#fn:1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;放入圖檔, 可以直接利用 html 的 img 標註:&lt;/p&gt;
+&lt;p&gt;&lt;img src="images/spur.png" width="500" alt="正齒輪繪圖"&gt;&lt;/img&gt;&lt;/p&gt;
+&lt;p&gt;Vimeo 影片嵌入(直接從 Vimeo 影片上的 Share 複製 html 碼):&lt;/p&gt;
 &lt;iframe src="https://player.vimeo.com/video/130728724" width="500" height="375" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 
-&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/130728724"&gt;40123237&lt;/a&gt; from &lt;a href="https://vimeo.com/user40271183"&gt;40123237&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry></feed>
+&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/130728724"&gt;40123237&lt;/a&gt; from &lt;a href="https://vimeo.com/user40271183"&gt;40123237&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;
+&lt;div class="footnote"&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id="fn:1"&gt;
+&lt;p&gt;註腳會連結到這裡.&amp;#160;&lt;a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry></feed>
