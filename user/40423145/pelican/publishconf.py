@@ -5,10 +5,17 @@ from __future__ import unicode_literals
 # This file is only used if you use `make publish` or
 # explicitly specify it as your config file.
 
+#!/usr/bin/env python
+# -*- coding: utf-8 -*- #
+from __future__ import unicode_literals
+
+# This file is only used if you use `make publish` or
+# explicitly specify it as your config file.
+
 import os
 
 AUTHOR = '40423145'
-SITENAME = '2015FALL 40423145 CADPA 作業'
+SITENAME = '2015FALL 40423145 CPA 作業'
 SITEURL = ''
 
 PATH = 'content'
@@ -26,7 +33,7 @@ AUTHOR_FEED_RSS = None
 
 # Blogroll
 LINKS = (('2015課程網頁', 'http://wordpress-2015course.rhcloud.com/'),
-         ('Python', 'http://python.org/'),('2015作業主頁', '../../'))
+         ('Python', 'http://python.org/'),('40423145作業倉儲','https://h2itw.github.io/cpw2/'))
 
 # Social widget
 SOCIAL = (('twitter', 'http://twitter.com/ametaireau'),
@@ -53,5 +60,4 @@ PLUGIN_PATHS = ['./../../../plugin']
 PLUGINS = ['liquid_tags.notebook']
 # 目錄設定相對於 reveal 下的 content 目錄
 NOTEBOOK_DIR = 'notebook'
-
 

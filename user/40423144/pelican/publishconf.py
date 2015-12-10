@@ -8,7 +8,7 @@ from __future__ import unicode_literals
 import os
 
 AUTHOR = '40423144'
-SITENAME = '2015FALL 40423144 CADPA 作業'
+SITENAME = '2015FALL 40423144 CPA 作業'
 SITEURL = ''
 
 PATH = 'content'
@@ -25,8 +25,9 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (('2015課程網頁', 'http://wordpress-2015course.rhcloud.com/'),
-         ('Python', 'http://python.org/'),('2015作業主頁', '../../'))
+LINKS = (('2015課程網頁', 'http://wordpress-2015course.rhcloud.com/'),('Python', 'http://python.org/'),('4023144個人倉儲', 'https://40423144.github.io/cpaw2'),('40423144作業倉儲', 'https://github.com/40423144'))
+
+
 
 # Social widget
 SOCIAL = (('twitter', 'http://twitter.com/ametaireau'),
@@ -53,5 +54,3 @@ PLUGIN_PATHS = ['./../../../plugin']
 PLUGINS = ['liquid_tags.notebook']
 # 目錄設定相對於 reveal 下的 content 目錄
 NOTEBOOK_DIR = 'notebook'
-
-
