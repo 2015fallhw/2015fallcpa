@@ -1,0 +1,56 @@
+<!--
+這個檔案展示了 reveal.js 投影片資料的基本架構
+其中使用 "reveal" class 與 "slides" class 來界定投影片的資料範圍
+而各投影片則以 <section></section> 標示
+且支援平行與垂直的投影片配置方法
+-->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>最簡單的 reveal 超文件</title>
+<link rel="stylesheet" href="css/reveal.min.css">
+	<link rel="stylesheet" href="css/theme/default.css" id="theme">	
+	<!--增加對於 IE 早期版本的支援 -->
+	<!--[if lt IE 9]>
+	<script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+<body>
+<!-- 將整個投影片包在 "reveal" class 中 -->
+<div class="reveal">
+<!-- 將所有投影片包在 "slides" class 中 -->
+<div class="slides">
+<!-- 以下為投影片 -->
+<!-- 每一個 section 都代表一張投影片,  -->
+<!-- section 標註中的多 section 標註, 將往下垂直延伸 -->
+<section>
+    <h1>做作業的心酸</h1>
+    <p>一到了涼爽的秋天，虎尾科大的學生總是特別上進，遇到不會的課程，虛心與老師學長指教，利用其他人在打球娛樂的時間，努力把該完成的作業完成，雖然辛苦，但也充實。</p>		
+</section>
+	
+		
+<section>
+    <h1>猜數字</h1>
+    <p>猜數字遊戲中有許多不同的指令，雖然難記，但是時時刻刻複習著筆記還是可以越做越好。做出能玩的遊戲是我最大的動力</p>
+
+</section>
+
+<section>
+    <h1>結尾</h1>
+    <p>接觸了許多以前沒接觸到的新東西，雖然辛苦，作業常常遲交，但是一直有學到新的東西真的很開心，希望我的努力可以感動老師讓我及格。60分</p>
+
+</section>
+				
+</div>
+</div>
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.min.js"></script>
+<script>
+    // 啟動 Reveal.
+    Reveal.initialize({
+    });
+</script>
+	
+</body>
+
