@@ -252,14 +252,14 @@ ctx = canvas.getContext("2d")
 
 # 開始畫直線
 ctx.beginPath()
-ctx.lineWidth = 5
+ctx.lineWidth = 1
 ctx.moveTo(0, 0)
 ctx.lineTo(100, 100)
 ctx.strokeStyle = "#FF0000"
 ctx.stroke()
 
 ctx.beginPath()
-ctx.lineWidth = 5
+ctx.lineWidth = 1
 ctx.moveTo(100, 0)
 ctx.lineTo(0, 100)
 ctx.strokeStyle = "#0000ff"
@@ -270,15 +270,39 @@ y = 100
 
 # 利用 browser 模組中的 console.log 將資料列印在 console 區, 可以用來確認程式中各變數的值, 用法等同 print
 console.log("x 值為"+str(x)+", y 值為"+str(y))
-
+'''
 # 利用迴圈畫水平線
 for i in range(5):
     ctx.beginPath()
-    ctx.lineWidth = 5
+    ctx.lineWidth = 1
     ctx.moveTo(0, 10+i*20)
     ctx.lineTo(100, 10+i*20)
     ctx.strokeStyle = "#0000ff"
     ctx.stroke()
+
+ctx.beginPath()
+ctx.moveTo(20,20)
+ctx.bezierCurveTo(20,100,200,100,200,20)
+ctx.stroke()
+
+ctx.beginPath()
+ctx.moveTo(20,0)
+ctx.quadraticCurveTo(20,100,200,20)
+ctx.stroke()
+'''
+
+ctx.beginPath()
+points = [(0, 0), (10, 3), (20, 15), (30, 30), (70, 25), (100, 200)]
+ctx.moveTo(points[0][0], points[0][1])
+for i in range(1, len(points)-1):
+    console.log(str(points[i][0])+", "+str(points[i ][1]))
+    xc = (points[i][0] + points[i + 1][0]) / 2
+    yc = (points[i][1] + points[i + 1][1]) / 2
+    ctx.quadraticCurveTo(points[i][0], points[i][1], xc, yc)
+
+#curve through the last two points
+ctx.quadraticCurveTo(points[i][0], points[i][1], points[i+1][0],points[i+1][1])
+ctx.stroke()
 &lt;/script&gt;
 
 &lt;p&gt;上列繪圖的程式碼:&lt;/p&gt;
