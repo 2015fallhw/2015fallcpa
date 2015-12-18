@@ -60,6 +60,45 @@
 &lt;h3&gt;自評分數：&lt;strong&gt;70&lt;/strong&gt;&lt;/h3&gt;
 &lt;p&gt;雖然只是簡單的幾個步驟，但是影片製作也花了點時間呀~&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第三週</title><link href="http://coursemdetw.github.io/reveal/2015cpa_hw_w3.html" rel="alternate"></link><updated>2015-09-19T11:41:00+08:00</updated><author><name>coursemdetw</name></author><id>tag:coursemdetw.github.io,2015-09-19:reveal/2015cpa_hw_w3.html</id><summary type="html">&lt;iframe src="40423103_cp_w3_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
+&lt;p&gt;&lt;a href="40423103_cp_w4_p.html" target="_blank"&gt;_投影片&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;============&lt;/p&gt;
+&lt;!-- 以下利用 Brython 程式執行繪圖 --&gt;
+
+&lt;canvas id="plotarea" width="300" height="200"&gt;&lt;/canvas&gt;
+
+&lt;script type="text/python3"&gt;
+# 導入 doc
+from browser import document as doc
+import math
+
+# 準備繪圖畫布
+canvas = doc["plotarea"]
+ctx = canvas.getContext("2d")
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(0, 0)
+ctx.lineTo(100, 100)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(100, 0)
+ctx.lineTo(0, 100)
+ctx.strokeStyle = "#0000ff"
+ctx.stroke()
+
+&lt;/script&gt;
+
+&lt;/div&gt;
+
+&lt;h3&gt;影片解說&lt;/h3&gt;
+&lt;h2&gt;心得&lt;/h2&gt;
+&lt;h2&gt;自評&lt;/h2&gt;
+&lt;h3&gt;自評分數：****&lt;/h3&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第三週</title><link href="http://coursemdetw.github.io/reveal/2015cpa_hw_w3.html" rel="alternate"></link><updated>2015-09-19T11:41:00+08:00</updated><author><name>coursemdetw</name></author><id>tag:coursemdetw.github.io,2015-09-19:reveal/2015cpa_hw_w3.html</id><summary type="html">&lt;iframe src="40423103_cp_w3_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
+
 &lt;p&gt;&lt;a href="40423103_cp_w3_p.html" target="_blank"&gt;建立分支與推送資料_投影片&lt;/a&gt;&lt;/p&gt;
 &lt;h1&gt;建立分支與推送資料&lt;/h1&gt;
 &lt;ol&gt;
@@ -98,4 +137,83 @@
 &lt;p&gt;也越來越跟得上老師的腳步~&lt;/p&gt;
 &lt;h2&gt;自評&lt;/h2&gt;
 &lt;h3&gt;自評分數：&lt;strong&gt;70&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;這個影片拍超多次的~剪輯也花了很多時間&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry></feed>
+&lt;p&gt;這個影片拍超多次的~剪輯也花了很多時間&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第三週</title><link href="http://coursemdetw.github.io/reveal/2015cpa_hw_w3.html" rel="alternate"></link><updated>2015-09-19T11:41:00+08:00</updated><author><name>coursemdetw</name></author><id>tag:coursemdetw.github.io,2015-09-19:reveal/2015cpa_hw_w3.html</id><summary type="html">&lt;iframe src="40423103_cp_w3_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="40423103_cp_w3_p.html" target="_blank"&gt;建立分支與推送資料_投影片&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;建立分支與推送資料&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;打開小黑窗&lt;/li&gt;
+&lt;li&gt;輸入cd tmp&lt;/li&gt;
+&lt;li&gt;倉儲網頁右下角複製倉儲網址&lt;/li&gt;
+&lt;li&gt;輸入git clone 貼上網址&lt;/li&gt;
+&lt;li&gt;輸入cd cpahww2&lt;/li&gt;
+&lt;li&gt;輸入git branch gh-pages&lt;/li&gt;
+&lt;li&gt;輸入git checkout gh-pages&lt;/li&gt;
+&lt;li&gt;到老師提供的倉儲&lt;/li&gt;
+&lt;li&gt;切換至gh-pages分支&lt;/li&gt;
+&lt;li&gt;右下角下載壓縮檔&lt;/li&gt;
+&lt;li&gt;解壓縮&lt;/li&gt;
+&lt;li&gt;control+A檔案全選，不要選取 READ ME檔&lt;/li&gt;
+&lt;li&gt;複製檔案&lt;/li&gt;
+&lt;li&gt;到Y:/tmp/cpahww2貼上&lt;/li&gt;
+&lt;li&gt;打開小黑窗&lt;/li&gt;
+&lt;li&gt;輸入git add -A&lt;/li&gt;
+&lt;li&gt;輸入git commit -m "initail add"
+18.輸入github使用者信箱及使用者名稱
+     指令為git global --user.email "..@.."
+                 git global --user.name ".."&lt;/li&gt;
+&lt;li&gt;再次輸入git commit -m "initail add"&lt;/li&gt;
+&lt;li&gt;輸入git push origin gh-pages&lt;/li&gt;
+&lt;li&gt;輸入github使用者名稱及密碼&lt;/li&gt;
+&lt;li&gt;至倉儲網頁重新整理&lt;/li&gt;
+&lt;li&gt;成功推送~~&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;影片解說&lt;/h3&gt;
+&lt;iframe src="https://player.vimeo.com/video/145229545" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/145229545"&gt;推送影片&lt;/a&gt; from &lt;a href="https://vimeo.com/user45467634"&gt;劉怡萱&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;
+&lt;h2&gt;心得&lt;/h2&gt;
+&lt;p&gt;重複了好多次同樣的步驟才大概了解每個指令的意義，&lt;/p&gt;
+&lt;p&gt;也越來越跟得上老師的腳步~&lt;/p&gt;
+&lt;h2&gt;自評&lt;/h2&gt;
+&lt;h3&gt;自評分數：&lt;strong&gt;70&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;這個影片拍超多次的~剪輯也花了很多時間&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第三週</title><link href="http://coursemdetw.github.io/reveal/2015cpa_hw_w3.html" rel="alternate"></link><updated>2015-09-19T11:41:00+08:00</updated><author><name>coursemdetw</name></author><id>tag:coursemdetw.github.io,2015-09-19:reveal/2015cpa_hw_w3.html</id><summary type="html">&lt;iframe src="40423103_cp_w3_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="40423103_cp_w4_p.html" target="_blank"&gt;_投影片&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;============&lt;/p&gt;
+&lt;!-- 以下利用 Brython 程式執行繪圖 --&gt;
+
+&lt;canvas id="plotarea" width="300" height="200"&gt;&lt;/canvas&gt;
+
+&lt;script type="text/python3"&gt;
+# 導入 doc
+from browser import document as doc
+import math
+
+# 準備繪圖畫布
+canvas = doc["plotarea"]
+ctx = canvas.getContext("2d")
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(0, 0)
+ctx.lineTo(100, 100)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(100, 0)
+ctx.lineTo(0, 100)
+ctx.strokeStyle = "#0000ff"
+ctx.stroke()
+
+&lt;/script&gt;
+
+&lt;/div&gt;
+
+&lt;h3&gt;影片解說&lt;/h3&gt;
+&lt;h2&gt;心得&lt;/h2&gt;
+&lt;h2&gt;自評&lt;/h2&gt;
+&lt;h3&gt;自評分數：****&lt;/h3&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry></feed>
