@@ -1,5 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>2015FALL 40423117 CADPA 作業</title><link href="http://coursemdetw.github.io/reveal/" rel="alternate"></link><link href="http://coursemdetw.github.io/reveal/feeds/all.atom.xml" rel="self"></link><id>http://coursemdetw.github.io/reveal/</id><updated>2015-11-06T11:41:00+08:00</updated><entry><title>2015 計算機程式 11/06</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w7.html" rel="alternate"></link><updated>2015-11-06T11:41:00+08:00</updated><author><name>40423117</name></author><id>tag:coursemdetw.github.io,2015-11-06:reveal/2015cp_hw_w7.html</id><summary type="html">&lt;p&gt;以下為作業七內容&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>2015FALL 40423117 CADPA 作業</title><link href="http://coursemdetw.github.io/reveal/" rel="alternate"></link><link href="http://coursemdetw.github.io/reveal/feeds/all.atom.xml" rel="self"></link><id>http://coursemdetw.github.io/reveal/</id><updated>2015-12-18T14:20:00+08:00</updated><entry><title>2015 計算機程式 12/18</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w14.html" rel="alternate"></link><updated>2015-12-18T14:20:00+08:00</updated><author><name>40423117</name></author><id>tag:coursemdetw.github.io,2015-12-18:reveal/2015cp_hw_w14.html</id><summary type="html">&lt;p&gt;以下利用 Brython 在網頁寫 Python 繪圖&lt;/p&gt;
+&lt;!-- 導入 brython.js --&gt;
+
+&lt;script type="text/javascript" src="js/Brython3.2.3-20151122-082712/brython.js"&gt;&lt;/script&gt;
+
+&lt;!-- 啟動 brython() --&gt;
+
+&lt;script&gt;
+window.onload=function(){
+brython(1);
+}
+&lt;/script&gt;
+
+&lt;!-- 以下利用 Brython 程式執行繪圖 --&gt;
+
+&lt;canvas id="plotarea" width="300" height="200"&gt;&lt;/canvas&gt;
+
+&lt;script type="text/python3"&gt;
+# 導入 doc
+from browser import document as doc
+from browser import console
+import math
+
+# 準備繪圖畫布
+canvas = doc["plotarea"]
+ctx = canvas.getContext("2d")
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(0, 0)
+ctx.lineTo(100, 100)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(100, 0)
+ctx.lineTo(0, 100)
+ctx.strokeStyle = "#0000ff"
+ctx.stroke()
+
+x = 100
+y = 100
+
+# 利用 browser 模組中的 console.log 將資料列印在 console 區, 可以用來確認程式中各變數的值, 用法等同 print
+console.log("x 值為"+str(x)+", y 值為"+str(y))
+
+# 利用迴圈畫水平線
+for i in range(5):
+    ctx.beginPath()
+    ctx.lineWidth = 5
+    ctx.moveTo(0, 10+i*20)
+    ctx.lineTo(100, 10+i*20)
+    ctx.strokeStyle = "#0000ff"
+    ctx.stroke()
+&lt;/script&gt;
+
+&lt;/script&gt;
+
+&lt;h3&gt;影片解說&lt;/h3&gt;
+&lt;h2&gt;心得&lt;/h2&gt;
+&lt;h2&gt;自評&lt;/h2&gt;
+&lt;h3&gt;自評分數：****&lt;/h3&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 11/06</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w7.html" rel="alternate"></link><updated>2015-11-06T11:41:00+08:00</updated><author><name>40423117</name></author><id>tag:coursemdetw.github.io,2015-11-06:reveal/2015cp_hw_w7.html</id><summary type="html">&lt;p&gt;以下為作業七內容&lt;/p&gt;
 &lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
 &lt;iframe src="40423117_cp_w7_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
