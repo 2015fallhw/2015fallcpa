@@ -1,5 +1,178 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>2015FALL 作業主頁</title><link href="http://coursemdetw.github.io/reveal/" rel="alternate"></link><link href="http://coursemdetw.github.io/reveal/feeds/all.atom.xml" rel="self"></link><id>http://coursemdetw.github.io/reveal/</id><updated>2015-12-18T12:00:00+08:00</updated><entry><title>G3_w14_1</title><link href="http://coursemdetw.github.io/reveal/G3_w14_1.html" rel="alternate"></link><updated>2015-12-18T12:00:00+08:00</updated><author><name>40423117</name></author><id>tag:coursemdetw.github.io,2015-12-18:reveal/G3_w14_1.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>2015FALL 作業主頁</title><link href="http://coursemdetw.github.io/reveal/" rel="alternate"></link><link href="http://coursemdetw.github.io/reveal/feeds/all.atom.xml" rel="self"></link><id>http://coursemdetw.github.io/reveal/</id><updated>2015-12-25T11:00:00+08:00</updated><entry><title>g2 w1</title><link href="http://coursemdetw.github.io/reveal/g2_w1.html" rel="alternate"></link><updated>2015-12-25T11:00:00+08:00</updated><author><name>40423105</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/g2_w1.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
+&lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
+&lt;iframe src="simplest.html" width="500" height="300"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="simplest.html" target="_blank"&gt;作業一投影片&lt;/a&gt;&lt;/p&gt;
+&lt;div class="entry-content"&gt;&lt;p&gt;以下利用 Brython 在網頁寫 Python 繪圖&lt;/p&gt; 
+&lt;!-- 導入 brython_dist.js --&gt;
+
+&lt;script type="text/javascript" src="js/Brython3.2.3-20151122-082712/brython.js"&gt;&lt;/script&gt; 
+
+&lt;!-- 啟動 brython() --&gt; 
+
+&lt;script&gt; 
+window.onload=function(){ 
+brython(1); 
+} 
+&lt;/script&gt; 
+
+&lt;!-- 以下利用 Brython 程式執行繪圖 --&gt; 
+
+&lt;canvas id="plotarea" width="500" height="500"&gt;&lt;/canvas&gt; 
+
+&lt;script type="text/python3"&gt; 
+# 導入 doc 
+from browser import document as doc 
+import math 
+
+# 準備繪圖畫布 
+canvas = doc["plotarea"] 
+ctx = canvas.getContext("2d") 
+
+# 開始畫直線 
+
+ctx.beginPath() 
+ctx.lineWidth = 20 
+ctx.moveTo(40, 0) 
+ctx.lineTo(40, 360) 
+ctx.strokeStyle = "#FF0000" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 20 
+ctx.moveTo(80, 0) 
+ctx.lineTo(80, 360) 
+ctx.strokeStyle = "#FF0000" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 20 
+ctx.moveTo(120, 0) 
+ctx.lineTo(120, 360) 
+ctx.strokeStyle = "#FF0000" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 20 
+ctx.moveTo(160, 0) 
+ctx.lineTo(160, 360) 
+ctx.strokeStyle = "#FF0000" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 20 
+ctx.moveTo(200, 0) 
+ctx.lineTo(200, 360) 
+ctx.strokeStyle = "#FF0000" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 20 
+ctx.moveTo(240, 0) 
+ctx.lineTo(240, 360) 
+ctx.strokeStyle = "#FF0000" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 20 
+ctx.moveTo(280, 0) 
+ctx.lineTo(280, 360) 
+ctx.strokeStyle = "#FF0000" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 20 
+ctx.moveTo(320, 0) 
+ctx.lineTo(320, 360) 
+ctx.strokeStyle = "#FF0000" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 20 
+ctx.moveTo(360, 0) 
+ctx.lineTo(360, 360) 
+ctx.strokeStyle = "#FF0000" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 20 
+ctx.moveTo(400, 0) 
+ctx.lineTo(400, 360) 
+ctx.strokeStyle = "#FF0000" 
+ctx.stroke() 
+
+
+ctx.beginPath() 
+ctx.lineWidth = 20 
+ctx.moveTo(30, 10) 
+ctx.lineTo(410, 10) 
+ctx.strokeStyle = "#0000ff" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 20 
+ctx.moveTo(30, 50) 
+ctx.lineTo(410, 50) 
+ctx.strokeStyle = "#0000ff" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 20 
+ctx.moveTo(30, 90) 
+ctx.lineTo(410, 90) 
+ctx.strokeStyle = "#0000ff" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 20 
+ctx.moveTo(30, 130) 
+ctx.lineTo(410, 130) 
+ctx.strokeStyle = "#0000ff" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 20 
+ctx.moveTo(30, 170) 
+ctx.lineTo(410, 170) 
+ctx.strokeStyle = "#0000ff" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 20 
+ctx.moveTo(30, 210) 
+ctx.lineTo(410, 210) 
+ctx.strokeStyle = "#0000ff" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 20 
+ctx.moveTo(30, 250) 
+ctx.lineTo(410, 250) 
+ctx.strokeStyle = "#0000ff" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 20 
+ctx.moveTo(30, 290) 
+ctx.lineTo(410, 290) 
+ctx.strokeStyle = "#0000ff" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth =20 
+ctx.moveTo(30, 330) 
+ctx.lineTo(410, 330) 
+ctx.strokeStyle = "#0000ff" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 20 
+ctx.moveTo(30, 370) 
+ctx.lineTo(410, 370) 
+ctx.strokeStyle = "#0000ff" 
+ctx.stroke() 
+&lt;/script&gt;&lt;/div&gt;</summary><category term="w14"></category></entry><entry><title>g2 w1-1</title><link href="http://coursemdetw.github.io/reveal/g2_w1_1.html" rel="alternate"></link><updated>2015-12-25T11:00:00+08:00</updated><author><name>40423105</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/g2_w1_1.html</id><summary type="html">&lt;p&gt;g2 w1_1摘要&lt;/p&gt;</summary><category term="w14"></category></entry><entry><title>G3_w14_1</title><link href="http://coursemdetw.github.io/reveal/G3_w14_1.html" rel="alternate"></link><updated>2015-12-18T12:00:00+08:00</updated><author><name>40423117</name></author><id>tag:coursemdetw.github.io,2015-12-18:reveal/G3_w14_1.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
 &lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
 &lt;iframe src="simplest.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
