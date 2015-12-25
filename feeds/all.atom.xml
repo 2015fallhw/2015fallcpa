@@ -42,8 +42,7 @@ if X==Y   如果X等於Y&lt;/p&gt;
 顏色選項=["R","Y","W"]&lt;/p&gt;
 &lt;p&gt;亂數random,例如
 標準答案=random.sample(顏色選項,2)
-標準答案為顏色選項內亂數選兩個&lt;/p&gt;
-&lt;p&gt;猜測次數+=1&lt;/p&gt;</summary><category term="G3"></category></entry><entry><title>g2 w1</title><link href="http://coursemdetw.github.io/reveal/g2_w1.html" rel="alternate"></link><updated>2015-12-25T11:00:00+08:00</updated><author><name>40423105</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/g2_w1.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
+標準答案為顏色選項內亂數選兩個&lt;/p&gt;</summary><category term="G3"></category></entry><entry><title>g2 w1</title><link href="http://coursemdetw.github.io/reveal/g2_w1.html" rel="alternate"></link><updated>2015-12-25T11:00:00+08:00</updated><author><name>40423105</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/g2_w1.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
 &lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
 &lt;iframe src="simplest.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
