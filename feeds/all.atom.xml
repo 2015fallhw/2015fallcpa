@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>2015FALL 作業主頁</title><link href="http://coursemdetw.github.io/reveal/" rel="alternate"></link><link href="http://coursemdetw.github.io/reveal/feeds/all.atom.xml" rel="self"></link><id>http://coursemdetw.github.io/reveal/</id><updated>2015-12-25T11:00:00+08:00</updated><entry><title>g2 w1</title><link href="http://coursemdetw.github.io/reveal/g2_w1.html" rel="alternate"></link><updated>2015-12-25T11:00:00+08:00</updated><author><name>40423105</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/g2_w1.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>2015FALL 作業主頁</title><link href="http://coursemdetw.github.io/reveal/" rel="alternate"></link><link href="http://coursemdetw.github.io/reveal/feeds/all.atom.xml" rel="self"></link><id>http://coursemdetw.github.io/reveal/</id><updated>2015-12-25T12:00:00+08:00</updated><entry><title>G3_w15_1</title><link href="http://coursemdetw.github.io/reveal/G3_w15_1.html" rel="alternate"></link><updated>2015-12-25T12:00:00+08:00</updated><author><name>40423108</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/G3_w15_1.html</id><summary type="html">&lt;p&gt;1.利用fix.bat複製leo安裝擋與start.bat和python.properties到Ana3,並修改start.bat讓leo在近端安裝。&lt;/p&gt;</summary><category term="G3"></category></entry><entry><title>g2 w1</title><link href="http://coursemdetw.github.io/reveal/g2_w1.html" rel="alternate"></link><updated>2015-12-25T11:00:00+08:00</updated><author><name>40423105</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/g2_w1.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
 &lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
 &lt;iframe src="simplest.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
@@ -172,7 +172,171 @@ ctx.moveTo(30, 370)
 ctx.lineTo(410, 370) 
 ctx.strokeStyle = "#0000ff" 
 ctx.stroke() 
-&lt;/script&gt;&lt;/div&gt;</summary><category term="w14"></category></entry><entry><title>g2 w1-1</title><link href="http://coursemdetw.github.io/reveal/g2_w1_1.html" rel="alternate"></link><updated>2015-12-25T11:00:00+08:00</updated><author><name>40423105</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/g2_w1_1.html</id><summary type="html">&lt;p&gt;g2 w1_1摘要&lt;/p&gt;</summary><category term="w14"></category></entry><entry><title>G1_w15</title><link href="http://coursemdetw.github.io/reveal/G1_w15.html" rel="alternate"></link><updated>2015-12-25T09:55:00+08:00</updated><author><name>40423103</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/G1_w15.html</id><summary type="html">&lt;h1&gt;1. Python3 的近端程式開發系統如何建立? 如何啟動?&lt;/h1&gt;
+&lt;/script&gt;&lt;/div&gt;</summary><category term="w14"></category></entry><entry><title>g2 w1-1</title><link href="http://coursemdetw.github.io/reveal/g2_w1_1.html" rel="alternate"></link><updated>2015-12-25T11:00:00+08:00</updated><author><name>40423105</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/g2_w1_1.html</id><summary type="html">&lt;p&gt;g2 w1_1摘要&lt;/p&gt;</summary><category term="w14"></category></entry><entry><title>第十五週報告示範</title><link href="http://coursemdetw.github.io/reveal/g99_w15.html" rel="alternate"></link><updated>2015-12-25T10:48:00+08:00</updated><author><name>9999</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/g99_w15.html</id><summary type="html">&lt;p&gt;先抄一下題目:&lt;/p&gt;
+&lt;p&gt;CP W15 分組報告:&lt;/p&gt;
+&lt;p&gt;請以組為單位, 利用 &lt;a href="http://2015fallhw.github.io/2015fallcpa/"&gt;http://2015fallhw.github.io/2015fallcpa/&lt;/a&gt; 上的 pelican 文章, 回答下列問題:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Python3 的近端程式開發系統如何建立? 如何啟動?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;目前已經熟悉的 Python3 指令及語法有哪些? 請舉例說明.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;請利用流程圖, 簡要說明近端猜數字遊戲與猜顏色遊戲程式碼如何設計與運作.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;請各組員利用 Brython, 分別在各分組的 pelican 網頁文章中, 繪製一個歡慶耶誕的 2D 圖形.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;要提交推送之前, 先檢查 md 檔案有無唯一性, 因為若無唯一性, 怕會與其他組的 md 檔案彼此覆蓋.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;因為 md 檔名為 g99_w15.md, 有冠上組別與週次, 所以不會與他組的 md 檔案衝突, 所有應該 ok&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;slug 設為 g99_w15, 所以 pelican 轉檔後, 會位於班上網誌根目錄,  而且檔案名稱為 g99_w15.html, 所以也沒有問題&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;檢查 Date, 確定為今天的日期與製作時間, 且 Category 為 g99&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;開始利用 @button admin pelican 轉檔, 然後在近端先檢查, 若沒有問題, 推送到遠端&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;另外, 在近端檢查內容時, 採用 Firefox 開啟, 顯示的速度會比 Chrome 快,  切記!!!&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;提交與推送步驟:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;git add -A&lt;/li&gt;
+&lt;li&gt;git commit -m "w15 report from g99"&lt;/li&gt;
+&lt;li&gt;git push origin gh-pages&lt;/li&gt;
+&lt;li&gt;輸入帳號與密碼後, 推送到遠端&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;這裡進行 W15 第一次提交推送&lt;/h1&gt;
+&lt;p&gt;推送過程, 因為距離上次 git clone 到推送期間, 已經有其他組推送新的資料, 此時 g99 近端並沒有遠端上其他組已經完成推送的資料, 因此要透過 git pull, 取回這些新的版本資料, 然後再利用 @button admin pelican 重新要求 pelican 再轉一次檔案 (why? 有誰知道?)
+並且在近端, 利用 Firefox 確定一切資料都正確無誤後, 再次提交推送.&lt;/p&gt;
+&lt;p&gt;接下來, g99 想要利用 Jupyter, 讓處於同一區域網路的組員可以同步編寫報告, 所以就必須確認以下幾件準備工作:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;我們該如何啟動 Jupyter?, 在哪裡啟動 , 各組的 ipython notebook 才不會彼此覆蓋?&lt;/li&gt;
+&lt;li&gt;啟動後, 各組員要如何編寫?&lt;/li&gt;
+&lt;li&gt;各組員在正確的位置建立 ipython notebook 後, 組長又該如何將這些資料引入報告中?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;首先看一下 start.bat 中, 我們如何啟動 Jupyter:&lt;/p&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1
+2
+3&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;cd&lt;/span&gt; tmp
+start &lt;span class="nv"&gt;%Disk%&lt;/span&gt;:\Anaconda&lt;span class="m"&gt;3&lt;/span&gt;\python.exe &lt;span class="s2"&gt;&amp;quot;%Disk%:\Anaconda3\Scripts\ipython-script.py&amp;quot;&lt;/span&gt; \ 
+notebook --ip&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nv"&gt;%thisip%&lt;/span&gt; --certfile&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nv"&gt;%Disk%&lt;/span&gt;:\home\ssl_cert.pem --profile&lt;span class="o"&gt;=&lt;/span&gt;nbserver
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;p&gt;很顯然, 根據第 1 行, 我們是在 tmp 目錄下啟動 Jupyter, 而且我們也把全班倉儲放在 tmp 目錄下, 所以一旦各組員透過瀏覽器, 連線到組長所開啟的 Jupyter, 就可以在全班倉儲下的 ipython notebook 對應目錄下建立檔案, 但是所謂 pelican 內建的所謂 ipython notebook 對應目錄在哪???&lt;/p&gt;
+&lt;p&gt;就在 2015fallcpa/content/notebook 目錄下!!!&lt;/p&gt;
+&lt;p&gt;所以現在假設 g99 共有兩位組員, 希望透過 Jupyter 來同步編寫報告, 所以就必須到 2015fallcpa/content/notebook 目錄下, 建立g99 目錄, 然後兩位組員再將 ipython notebook 存在這個目錄, 那麼, 組員就可以利用 pelican liquid_tags 的語法, 將這些組員所建立的 ipython notebook 給整合到分組報告中.&lt;/p&gt;
+&lt;p&gt;所以, 要使用 Jupyter 建立分組報告的步驟:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;在組長的  y:\tmp\2015fallcpa/content/notebook 目錄下, 建立 g99 子目錄 (必須在操作系統執行)&lt;/li&gt;
+&lt;li&gt;各組員設法在 g99 目錄下編寫 ipython notebook, 然後用下列語法將這些 notebook 內容導進分組報告&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;以下導入位於組長電腦 y:\tmp\2015fallcpa\content\notebook\g99 目錄下的 9901_w15.ipynb 檔案:&lt;/p&gt;
+&lt;p&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;%%%%%  這裡是學號 9901 組員針對 W15 所寫的分組報告內容 %%%%%&lt;/p&gt;
+&lt;p&gt;可以請組長在 .md 檔案中引入這個檔案的內容&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;當然是測試看看, 能否正確導入 9901 組員所編寫的 9901_w15 ipython notebook 內容.&lt;/p&gt;
+&lt;h1&gt;經過測試無誤後, 再次提交推送&lt;/h1&gt;
+&lt;p&gt;提交推送過程, 有發現遠端有新的版本 ,所以又執行 git pull, 拉回遠端的新資料後, 再 @button admin pelican 後, 檢查近端資料, 正確無誤後再行提交推送.&lt;/p&gt;
+&lt;h1&gt;接下來由 9902 組員利用 notebook 貢獻一張圖&lt;/h1&gt;
+&lt;p&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;!-- 導入 brython_dist.js --&gt;
+
+&lt;script type="text/javascript" src="http://brython.info/src/brython_dist.js"&gt;&lt;/script&gt;
+
+&lt;!-- 啟動 brython() --&gt;
+
+&lt;script&gt;
+window.onload=function(){
+brython(1);
+}
+&lt;/script&gt;
+
+&lt;!-- 以下利用 Brython 程式執行繪圖 --&gt;
+
+&lt;canvas id="plotarea" width="300" height="200"&gt;&lt;/canvas&gt;
+
+&lt;script type="text/python3"&gt;
+# 導入 doc
+from browser import document as doc
+import math
+
+# 準備繪圖畫布
+canvas = doc["plotarea"]
+ctx = canvas.getContext("2d")
+# 進行座標轉換, x 軸不變, y 軸反向且移動 canvas.height 單位光點
+# ctx.setTransform(1, 0, 0, -1, 0, canvas.height)
+# 以下採用 canvas 原始座標繪圖
+flag_w = canvas.width
+flag_h = canvas.height
+circle_x = flag_w/4
+circle_y = flag_h/4
+# 先畫滿地紅
+ctx.fillStyle='rgb(255, 0, 0)'
+ctx.fillRect(0,0,flag_w,flag_h)
+# 再畫青天
+ctx.fillStyle='rgb(0, 0, 150)'
+ctx.fillRect(0,0,flag_w/2,flag_h/2)
+# 畫十二道光芒白日
+ctx.beginPath()
+star_radius = flag_w/8
+angle = 0
+for i in range(24):
+    angle += 5*math.pi*2/12
+    toX = circle_x + math.cos(angle)*star_radius
+    toY = circle_y + math.sin(angle)*star_radius
+    # 只有 i 為 0 時移動到 toX, toY, 其餘都進行 lineTo
+    if (i):
+        ctx.lineTo(toX, toY)
+    else:
+        ctx.moveTo(toX, toY)
+ctx.closePath()
+# 將填色設為白色
+ctx.fillStyle = '#fff'
+ctx.fill()
+# 白日:藍圈
+ctx.beginPath()
+ctx.arc(circle_x, circle_y, flag_w*17/240, 0, math.pi*2, True)
+ctx.closePath()
+# 填色設為藍色
+ctx.fillStyle = 'rgb(0, 0, 149)'
+ctx.fill()
+# 白日:白心
+ctx.beginPath()
+ctx.arc(circle_x, circle_y, flag_w/16, 0, math.pi*2, True)
+ctx.closePath()
+# 填色設為白色
+ctx.fillStyle = '#fff'
+ctx.fill()
+&lt;/script&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;測試看看, 上面有沒有顯示一面國旗???&lt;/p&gt;
+&lt;h1&gt;答案是有, 那麼各組員就可以利用相同的架構, 把耶誕卡繪圖整合進分組報告了&lt;/h1&gt;</summary><category term="w15"></category></entry><entry><title>G1_w15</title><link href="http://coursemdetw.github.io/reveal/G1_w15.html" rel="alternate"></link><updated>2015-12-25T09:55:00+08:00</updated><author><name>40423103</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/G1_w15.html</id><summary type="html">&lt;h1&gt;1. Python3 的近端程式開發系統如何建立? 如何啟動?&lt;/h1&gt;
 &lt;h2&gt;安裝及啟動&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;從教學網站下載"Ana3_lite2.7"及"fix"&lt;/li&gt;
@@ -391,7 +555,7 @@ for i in range(5):
     ctx.stroke()
 &lt;/script&gt;
 
-&lt;/script&gt;</summary><category term="G3"></category></entry><entry><title>G1_w14_1</title><link href="http://coursemdetw.github.io/reveal/G1_w14_1.html" rel="alternate"></link><updated>2015-12-18T11:41:00+08:00</updated><author><name>40423103</name></author><id>tag:coursemdetw.github.io,2015-12-18:reveal/G1_w14_1.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
+&lt;/script&gt;</summary><category term="G3"></category></entry><entry><title>G10_w14_1</title><link href="http://coursemdetw.github.io/reveal/G10_w14_1.html" rel="alternate"></link><updated>2015-12-18T11:41:00+08:00</updated><author><name>40123237</name></author><id>tag:coursemdetw.github.io,2015-12-18:reveal/G10_w14_1.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
 &lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
 &lt;iframe src="simplest.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
@@ -503,7 +667,119 @@ for i in 1 .. 10 { 呼叫特定函式(i) }
 &lt;p&gt;註腳會連結到這裡.&amp;#160;&lt;a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</summary><category term="G1"></category></entry><entry><title>G1_w14_2</title><link href="http://coursemdetw.github.io/reveal/G1_w14_2.html" rel="alternate"></link><updated>2015-12-18T11:41:00+08:00</updated><author><name>40423103</name></author><id>tag:coursemdetw.github.io,2015-12-18:reveal/G1_w14_2.html</id><summary type="html">&lt;!-- 導入 brython.js --&gt;
+&lt;/div&gt;</summary><category term="G10"></category></entry><entry><title>G10_w14_2</title><link href="http://coursemdetw.github.io/reveal/G10_w14_2.html" rel="alternate"></link><updated>2015-12-18T11:41:00+08:00</updated><author><name>40123237</name></author><id>tag:coursemdetw.github.io,2015-12-18:reveal/G10_w14_2.html</id><summary type="html"></summary><category term="G10"></category></entry><entry><title>G1_w14_1</title><link href="http://coursemdetw.github.io/reveal/G1_w14_1.html" rel="alternate"></link><updated>2015-12-18T11:41:00+08:00</updated><author><name>40423104</name></author><id>tag:coursemdetw.github.io,2015-12-18:reveal/G1_w14_1.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
+&lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
+&lt;iframe src="simplest.html" width="500" height="300"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="simplest.html" target="_blank"&gt;作業一投影片&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;使用 H1 標題&lt;/h1&gt;
+&lt;p&gt;文字段落間若要跳行, 必須插入空白行, 否則將會被 Markdown 視為連續的資料&lt;/p&gt;
+&lt;p&gt;使用. &lt;em&gt;斜體文字&lt;/em&gt;, &lt;strong&gt;黑體文字&lt;/strong&gt;, 以及 &lt;code&gt;單線文字&lt;/code&gt;. 表列資料可以寫為:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;第1項說明&lt;/li&gt;
+&lt;li&gt;第2項說明&lt;/li&gt;
+&lt;li&gt;第3項說明&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;特別注意 --- 不包括星號 --- 表列文字從第四欄位開始.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;引用的內容寫在這裡
+主要是以大於的符號開頭.&lt;/p&gt;
+&lt;p&gt;其中也可以利用空白行隔開,
+整區都是引用內容的範圍.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;em-dash 符號是3個 dashes. 利用兩個 dashes 來連接開始與結束 (ex., "這個禮拜要閱讀章節 12--14"). 3個逗點 ... 則會被轉為 ellipsis.
+pelican 可以支援 unicode. ☺&lt;/p&gt;
+&lt;h2&gt;H2 標題&lt;/h2&gt;
+&lt;p&gt;有數字的表列資料:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;第1項&lt;/li&gt;
+&lt;li&gt;第2項&lt;/li&gt;
+&lt;li&gt;第3項&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;跟前面一樣, 文字從第四個欄位開始.&lt;/p&gt;
+&lt;p&gt;程式碼的表達:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;# for 重複迴圈 ...
+for i in 1 .. 10 { 呼叫特定函式(i) }
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;這裡也是要空4個 space 鍵. &lt;/p&gt;
+&lt;p&gt;除了每一行空4個空白, 也可以使用 delimited 來界定程式碼範圍, 就像這樣:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;define foobar() {
+    print(&amp;quot;歡迎進入程式的世界!&amp;quot;)
+}
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;(這樣的表達比較容易用來複製程式碼內容).&lt;/p&gt;
+&lt;p&gt;python 的程式碼, 可以寫成下列格式&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;time&lt;/span&gt;
+&lt;span class="c"&gt;# 以下會從 0 數到 9&lt;/span&gt;
+&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="c"&gt;# 稍微暫停一下&lt;/span&gt;
+    &lt;span class="n"&gt;time&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sleep&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mf"&gt;0.5&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;以下為另外一種嵌入程式碼的方法:&lt;/p&gt;
+&lt;table class="highlighttable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt;1
+2
+3
+4
+5
+6&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;time&lt;/span&gt;
+&lt;span class="c"&gt;# 以下會從 0 數到 9&lt;/span&gt;
+&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+    &lt;span class="c"&gt;# 稍微暫停一下&lt;/span&gt;
+    &lt;span class="n"&gt;time&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sleep&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mf"&gt;0.5&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;h3&gt;H3 標題&lt;/h3&gt;
+&lt;p&gt;以下則為內嵌式的表列法t:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;首先, 將完成下列元件的設計:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;轉向機構&lt;/li&gt;
+&lt;li&gt;煞車系統&lt;/li&gt;
+&lt;li&gt;踩踏機構&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;接著連繫工業設計部門.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;確定上述元件的各項設計與用料都符合原始設計規格的要求
+    查驗表:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;各元件材質
+車蓋顏色
+機構調校流程
+需要熱處理的元件列表
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;完成上述查驗後, 請通知品保部門, 以便接續處理.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;特別注意各階資料都以內縮4個空白鍵來加以區隔, 包含最後一行.&lt;/p&gt;
+&lt;p&gt;Markdown 的超文件連結寫法 &lt;a href="http://www.google.com" target="_blank"&gt;連到 Google&lt;/a&gt;, 也可以連到同目錄下的檔案 &lt;a href="cadpbw1.html" target="_blank"&gt;cadpbw1.html&lt;/a&gt;, 也能使用註腳 &lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="#fn:1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;放入圖檔, 可以直接利用 html 的 img 標註:&lt;/p&gt;
+&lt;p&gt;&lt;img src="images/spur.png" width="500" alt="正齒輪繪圖"&gt;&lt;/img&gt;&lt;/p&gt;
+&lt;p&gt;Vimeo 影片嵌入(直接從 Vimeo 影片上的 Share 複製 html 碼):&lt;/p&gt;
+&lt;iframe src="https://player.vimeo.com/video/137724068" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/137724068"&gt;Welcome Speech&lt;/a&gt; from &lt;a href="https://vimeo.com/user24079973"&gt;虎尾科大機械設計工程系 KMOL&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;
+&lt;div class="footnote"&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id="fn:1"&gt;
+&lt;p&gt;註腳會連結到這裡.&amp;#160;&lt;a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</summary><category term="G1"></category></entry><entry><title>G1_w14_2</title><link href="http://coursemdetw.github.io/reveal/G1_w14_2.html" rel="alternate"></link><updated>2015-12-18T11:41:00+08:00</updated><author><name>40423104</name></author><id>tag:coursemdetw.github.io,2015-12-18:reveal/G1_w14_2.html</id><summary type="html">&lt;!-- 導入 brython.js --&gt;
 
 &lt;script type="text/javascript" src="js/Brython3.2.3-20151122-082712/brython.js"&gt;&lt;/script&gt;
 
@@ -582,7 +858,7 @@ for i in range(1, len(points)-1):
 #curve through the last two points
 ctx.quadraticCurveTo(points[i][0], points[i][1], points[i+1][0],points[i+1][1])
 ctx.stroke()
-&lt;/script&gt;</summary><category term="G1"></category></entry><entry><title>g99 w14-1</title><link href="http://coursemdetw.github.io/reveal/g99_w14_1.html" rel="alternate"></link><updated>2015-12-18T09:48:00+08:00</updated><author><name>9999</name></author><id>tag:coursemdetw.github.io,2015-12-18:reveal/g99_w14_1.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
+&lt;/script&gt;</summary><category term="G1"></category></entry><entry><title>第十四週報告示範</title><link href="http://coursemdetw.github.io/reveal/g99_w14_1.html" rel="alternate"></link><updated>2015-12-18T09:48:00+08:00</updated><author><name>9999</name></author><id>tag:coursemdetw.github.io,2015-12-18:reveal/g99_w14_1.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
 &lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
 &lt;iframe src="simplest.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
