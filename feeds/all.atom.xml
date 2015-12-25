@@ -219,6 +219,7 @@ ctx.lineTo(410, 370)
 ctx.strokeStyle = "#0000ff" 
 ctx.stroke() 
 &lt;/script&gt;&lt;/div&gt;</summary><category term="w14"></category></entry><entry><title>g2 w1-1</title><link href="http://coursemdetw.github.io/reveal/g2_w1_1.html" rel="alternate"></link><updated>2015-12-25T11:00:00+08:00</updated><author><name>40423105</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/g2_w1_1.html</id><summary type="html">&lt;p&gt;g2 w1_1摘要&lt;/p&gt;</summary><category term="w14"></category></entry><entry><title>G5_w15</title><link href="http://coursemdetw.github.io/reveal/G5_w15.html" rel="alternate"></link><updated>2015-12-25T10:48:00+08:00</updated><author><name>40423125</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/G5_w15.html</id><summary type="html">&lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
+&lt;iframe src="g5_w15_1_p.html" width="500" height="300"&gt;&lt;/iframe&gt;</summary><category term="w15"></category></entry><entry><title>G5_w15_1</title><link href="http://coursemdetw.github.io/reveal/G5_w15_1.html" rel="alternate"></link><updated>2015-12-25T10:48:00+08:00</updated><author><name>40423131</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/G5_w15_1.html</id><summary type="html">&lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
 &lt;iframe src="g5_w15_1_p.html" width="500" height="300"&gt;&lt;/iframe&gt;</summary><category term="w15"></category></entry><entry><title>第十五週報告示範</title><link href="http://coursemdetw.github.io/reveal/g6_w15.html" rel="alternate"></link><updated>2015-12-25T10:48:00+08:00</updated><author><name>g6</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/g6_w15.html</id><summary type="html">&lt;p&gt;CP W15 g6分組報告:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Python3 的近端程式開發系統如何建立? 如何啟動?&lt;/li&gt;
@@ -963,7 +964,355 @@ for i in range(5):
     ctx.stroke()
 &lt;/script&gt;
 
-&lt;/script&gt;</summary><category term="G3"></category></entry><entry><title>G10_w14_1</title><link href="http://coursemdetw.github.io/reveal/G10_w14_1.html" rel="alternate"></link><updated>2015-12-18T11:41:00+08:00</updated><author><name>40123237</name></author><id>tag:coursemdetw.github.io,2015-12-18:reveal/G10_w14_1.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
+&lt;/script&gt;</summary><category term="G3"></category></entry><entry><title>G5_w15_2</title><link href="http://coursemdetw.github.io/reveal/G5_w15_2.html" rel="alternate"></link><updated>2015-12-18T12:00:00+08:00</updated><author><name>40423131</name></author><id>tag:coursemdetw.github.io,2015-12-18:reveal/G5_w15_2.html</id><summary type="html">&lt;p&gt;以下利用 Brython 在網頁寫 Python 繪圖&lt;/p&gt;
+&lt;!-- 導入 brython.js --&gt;
+
+&lt;script type="text/javascript" src="js/Brython3.2.3-20151122-082712/brython.js"&gt;&lt;/script&gt;
+
+&lt;!-- 啟動 brython() --&gt;
+
+&lt;script&gt;
+window.onload=function(){
+brython(1);
+}
+&lt;/script&gt;
+
+&lt;!-- 以下利用 Brython 程式執行繪圖 --&gt;
+
+&lt;canvas id="plotarea" width="400" height="400"&gt;&lt;/canvas&gt;
+
+&lt;script type="text/python3"&gt;
+# 導入 doc
+from browser import document as doc
+from browser import console
+import math
+
+# 準備繪圖畫布
+canvas = doc["plotarea"]
+ctx = canvas.getContext("2d")
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(175, 65)
+ctx.lineTo(120, 120)
+ctx.strokeStyle = "#008B00"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(225, 65)
+ctx.lineTo(280, 120)
+ctx.strokeStyle = "#008B00"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(280, 120)
+ctx.lineTo(240,120)
+ctx.strokeStyle ="#008B00"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(120,120)
+ctx.lineTo(160,120)
+ctx.strokeStyle = "#008B00"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(160,120)
+ctx.lineTo(80,200 )
+ctx.strokeStyle = "#008B00"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(80,200)
+ctx.lineTo(120, 200)
+ctx.strokeStyle = "#008B00"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(120, 200)
+ctx.lineTo(40,280)
+ctx.strokeStyle = "#008B00"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(40,280)
+ctx.lineTo(360,280)
+ctx.strokeStyle = "#008B00"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(240,120)
+ctx.lineTo(320,200)
+ctx.strokeStyle = "#008B00"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(320,200)
+ctx.lineTo(280,200)
+ctx.strokeStyle = "#008B00"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(280,200)
+ctx.lineTo(360,280)
+ctx.strokeStyle = "#008B00"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(160,280)
+ctx.lineTo(160,360 )
+ctx.strokeStyle = "#8B4726"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(240,280)
+ctx.lineTo(240, 360)
+ctx.strokeStyle = "#8B4726"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(160, 360)
+ctx.lineTo(240,360 )
+ctx.strokeStyle = "#8B4726"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(200,0)
+ctx.lineTo(170,80)
+ctx.strokeStyle = "#EE9A00"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(170, 80)
+ctx.lineTo(240,24 )
+ctx.strokeStyle = "#EE9A00"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(240,24)
+ctx.lineTo(160,24 )
+ctx.strokeStyle = "#EE9A00"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(160,24)
+ctx.lineTo(230,80 )
+ctx.strokeStyle = "#EE9A00"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(230,80)
+ctx.lineTo(200,0 )
+ctx.strokeStyle = "#EE9A00"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(102,308)
+ctx.lineTo(102,360 )
+ctx.strokeStyle = "#7D26CD"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(102,360)
+ctx.lineTo(154,360 )
+ctx.strokeStyle = "#7D26CD"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(154,360)
+ctx.lineTo(154,308 )
+ctx.strokeStyle = "#7D26CD"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(154,308)
+ctx.lineTo(102,308 )
+ctx.strokeStyle = "#7D26CD"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(128,308)
+ctx.lineTo(128,360 )
+ctx.strokeStyle = "#7D26CD"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(102,335)
+ctx.lineTo(154,335 )
+ctx.strokeStyle = "#7D26CD"
+ctx.stroke()
+
+x = 100
+y = 100
+
+&lt;/script&gt;
+
+&lt;p&gt;許承恩
+&lt;/script&gt;&lt;/p&gt;</summary><category term="w15"></category></entry><entry><title>G5_w15_3</title><link href="http://coursemdetw.github.io/reveal/G5_w15_3.html" rel="alternate"></link><updated>2015-12-18T12:00:00+08:00</updated><author><name>40423131</name></author><id>tag:coursemdetw.github.io,2015-12-18:reveal/G5_w15_3.html</id><summary type="html">&lt;p&gt;以下利用 Brython 在網頁寫 Python 繪圖&lt;/p&gt;
+&lt;!-- 導入 brython.js --&gt;
+
+&lt;script type="text/javascript" src="js/Brython3.2.3-20151122-082712/brython.js"&gt;&lt;/script&gt;
+
+&lt;!-- 啟動 brython() --&gt;
+
+&lt;script&gt;
+window.onload=function(){
+brython(1);
+}
+&lt;/script&gt;
+
+&lt;!-- 以下利用 Brython 程式執行繪圖 --&gt;
+
+&lt;canvas id="plotarea" width="400" height="400"&gt;&lt;/canvas&gt;
+
+&lt;script type="text/python3"&gt;
+# 導入 doc
+from browser import document as doc
+from browser import console
+import math
+
+# 準備繪圖畫布
+canvas = doc["plotarea"]
+ctx = canvas.getContext("2d")
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(200, 40)
+ctx.lineTo(120, 120)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(200, 40)
+ctx.lineTo(280, 120)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(280, 120)
+ctx.lineTo(240,120)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(120,120)
+ctx.lineTo(160,120)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(160,120)
+ctx.lineTo(80,200 )
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(80,200)
+ctx.lineTo(120, 200)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(120, 200)
+ctx.lineTo(40,280)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(240,120)
+ctx.lineTo(320,200)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(320,200)
+ctx.lineTo(280,200)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(280,200)
+ctx.lineTo(360,280)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(200, 40)
+ctx.lineTo(120, 120)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(200, 40)
+ctx.lineTo(120, 120)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(200, 40)
+ctx.lineTo(120, 120)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(200, 40)
+ctx.lineTo(120, 120)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(200, 40)
+ctx.lineTo(120, 120)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+x = 100
+y = 100
+
+
+&lt;/script&gt;
+
+&lt;/script&gt;</summary><category term="G5"></category></entry><entry><title>G10_w14_1</title><link href="http://coursemdetw.github.io/reveal/G10_w14_1.html" rel="alternate"></link><updated>2015-12-18T11:41:00+08:00</updated><author><name>40123237</name></author><id>tag:coursemdetw.github.io,2015-12-18:reveal/G10_w14_1.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
 &lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
 &lt;iframe src="simplest.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
@@ -1236,7 +1585,7 @@ for i in range(11):
 window.onload=function(){
 brython(1);
 }
-&lt;/script&gt;</summary><category term="G1"></category></entry><entry><title>G5_w14_1</title><link href="http://coursemdetw.github.io/reveal/G5_w14_1.html" rel="alternate"></link><updated>2015-12-18T09:48:00+08:00</updated><author><name>40423132</name></author><id>tag:coursemdetw.github.io,2015-12-18:reveal/G5_w14_1.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
+&lt;/script&gt;</summary><category term="G1"></category></entry><entry><title>G5_w14_1</title><link href="http://coursemdetw.github.io/reveal/G5_w14_1.html" rel="alternate"></link><updated>2015-12-18T09:48:00+08:00</updated><author><name>40423131</name></author><id>tag:coursemdetw.github.io,2015-12-18:reveal/G5_w14_1.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
 &lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
 &lt;iframe src="simplest.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
@@ -1348,7 +1697,7 @@ for i in 1 .. 10 { 呼叫特定函式(i) }
 &lt;p&gt;註腳會連結到這裡.&amp;#160;&lt;a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</summary><category term="w14"></category></entry><entry><title>G5_w14_2</title><link href="http://coursemdetw.github.io/reveal/G5_w14_2.html" rel="alternate"></link><updated>2015-12-18T09:48:00+08:00</updated><author><name>40423132</name></author><id>tag:coursemdetw.github.io,2015-12-18:reveal/G5_w14_2.html</id><summary type="html">&lt;p&gt;以下利用 Brython 在網頁寫 Python 繪圖&lt;/p&gt;
+&lt;/div&gt;</summary><category term="w14"></category></entry><entry><title>G5_w14_2</title><link href="http://coursemdetw.github.io/reveal/G5_w14_2.html" rel="alternate"></link><updated>2015-12-18T09:48:00+08:00</updated><author><name>40423131</name></author><id>tag:coursemdetw.github.io,2015-12-18:reveal/G5_w14_2.html</id><summary type="html">&lt;p&gt;以下利用 Brython 在網頁寫 Python 繪圖&lt;/p&gt;
 &lt;!-- 導入 brython.js --&gt;
 
 &lt;script type="text/javascript" src="js/Brython3.2.3-20151122-082712/brython.js"&gt;&lt;/script&gt;
@@ -1489,7 +1838,7 @@ ctx.stroke()
 &lt;span class="nt"&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
 
 &lt;span class="nt"&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</summary><category term="w14"></category><category term="Brython"></category></entry><entry><title>第十四週報告示範</title><link href="http://coursemdetw.github.io/reveal/g99_w14_1.html" rel="alternate"></link><updated>2015-12-18T09:48:00+08:00</updated><author><name>9999</name></author><id>tag:coursemdetw.github.io,2015-12-18:reveal/g99_w14_1.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="w14"></category></entry><entry><title>第十四週報告示範</title><link href="http://coursemdetw.github.io/reveal/g99_w14_1.html" rel="alternate"></link><updated>2015-12-18T09:48:00+08:00</updated><author><name>9999</name></author><id>tag:coursemdetw.github.io,2015-12-18:reveal/g99_w14_1.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
 &lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
 &lt;iframe src="simplest.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
