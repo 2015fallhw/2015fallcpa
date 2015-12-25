@@ -27,7 +27,10 @@
 &lt;p&gt;假設將上述兩個壓縮檔案下載後, 直接解開到 C:\Documents and Settings\amd\My Documents\Downloads\leoeditor, 然後就可以&lt;/p&gt;
 &lt;p&gt;點擊其中的 start.bat, 將會分別開啟兩個 cmd.exe 視窗, SciTE 編輯器與 Leo Editor, 這時進入 Y: 硬碟, 就可以看到 &lt;/p&gt;
 &lt;p&gt;commands, exammples, Python33, tcc 與 wscite 等五個目錄, 其中 Python33 為可攜的 Python 3.3.1, tcc 為 TinyC 編譯程式&lt;/p&gt;
-&lt;p&gt;, scite 則為 SciTE 編輯器.&lt;/p&gt;</summary><category term="G10"></category></entry><entry><title>G3_w15_1</title><link href="http://coursemdetw.github.io/reveal/G3_w15_1.html" rel="alternate"></link><updated>2015-12-25T12:00:00+08:00</updated><author><name>40423108</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/G3_w15_1.html</id><summary type="html">&lt;p&gt;1.利用fix.bat複製leo安裝擋與start.bat和python.properties到Ana3,並修改start.bat讓leo在近端安裝。&lt;/p&gt;
+&lt;p&gt;, scite 則為 SciTE 編輯器.
+3.請利用流程圖, 簡要說明近端猜數字遊戲與猜顏色遊戲程式碼如何設計與運作
+============
+&lt;a href="https://www.gliffy.com/go/html5/9703277?app=1b5094b0-6042-11e2-bcfd-0800200c9a66"&gt;https://www.gliffy.com/go/html5/9703277?app=1b5094b0-6042-11e2-bcfd-0800200c9a66&lt;/a&gt;&lt;/p&gt;</summary><category term="G10"></category></entry><entry><title>G3_w15_1</title><link href="http://coursemdetw.github.io/reveal/G3_w15_1.html" rel="alternate"></link><updated>2015-12-25T12:00:00+08:00</updated><author><name>40423108</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/G3_w15_1.html</id><summary type="html">&lt;p&gt;1.利用fix.bat複製leo安裝擋與start.bat和python.properties到Ana3,並修改start.bat讓leo在近端安裝。&lt;/p&gt;
 &lt;p&gt;2.#python指令
 print列印文字,如:print("hello")&lt;/p&gt;
 &lt;p&gt;迴圈指令,例如
@@ -215,8 +218,55 @@ ctx.moveTo(30, 370)
 ctx.lineTo(410, 370) 
 ctx.strokeStyle = "#0000ff" 
 ctx.stroke() 
+<<<<<<< HEAD
 &lt;/script&gt;&lt;/div&gt;</summary><category term="w14"></category></entry><entry><title>g2 w1-1</title><link href="http://coursemdetw.github.io/reveal/g2_w1_1.html" rel="alternate"></link><updated>2015-12-25T11:00:00+08:00</updated><author><name>40423105</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/g2_w1_1.html</id><summary type="html">&lt;p&gt;g2 w1_1摘要&lt;/p&gt;</summary><category term="w14"></category></entry><entry><title>G5_w15</title><link href="http://coursemdetw.github.io/reveal/G5_w15.html" rel="alternate"></link><updated>2015-12-25T10:48:00+08:00</updated><author><name>40423125</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/G5_w15.html</id><summary type="html">&lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
 &lt;iframe src="g5_w15_1_p.html" width="500" height="300"&gt;&lt;/iframe&gt;</summary><category term="w15"></category></entry><entry><title>第十五週報告示範</title><link href="http://coursemdetw.github.io/reveal/g99_w15.html" rel="alternate"></link><updated>2015-12-25T10:48:00+08:00</updated><author><name>9999</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/g99_w15.html</id><summary type="html">&lt;p&gt;先抄一下題目:&lt;/p&gt;
+=======
+&lt;/script&gt;&lt;/div&gt;</summary><category term="w14"></category></entry><entry><title>g2 w1-1</title><link href="http://coursemdetw.github.io/reveal/g2_w1_1.html" rel="alternate"></link><updated>2015-12-25T11:00:00+08:00</updated><author><name>40423105</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/g2_w1_1.html</id><summary type="html">&lt;p&gt;g2 w1_1摘要&lt;/p&gt;</summary><category term="w14"></category></entry><entry><title>G5_w15</title><link href="http://coursemdetw.github.io/reveal/G5_w15.html" rel="alternate"></link><updated>2015-12-25T10:48:00+08:00</updated><author><name>40423132</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/G5_w15.html</id><summary type="html">&lt;p&gt;先抄一下題目:&lt;/p&gt;
+&lt;p&gt;CP W15 分組報告:&lt;/p&gt;
+&lt;p&gt;請以組為單位, 利用 &lt;a href="http://2015fallhw.github.io/2015fallcpa/"&gt;http://2015fallhw.github.io/2015fallcpa/&lt;/a&gt; 上的 pelican 文章, 回答下列問題:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Python3 的近端程式開發系統如何建立? 如何啟動?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;目前已經熟悉的 Python3 指令及語法有哪些? 請舉例說明.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;請利用流程圖, 簡要說明近端猜數字遊戲與猜顏色遊戲程式碼如何設計與運作.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;請各組員利用 Brython, 分別在各分組的 pelican 網頁文章中, 繪製一個歡慶耶誕的 2D 圖形.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;要提交推送之前, 先檢查 md 檔案有無唯一性, 因為若無唯一性, 怕會與其他組的 md 檔案彼此覆蓋.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;因為 md 檔名為 g99_w15.md, 有冠上組別與週次, 所以不會與他組的 md 檔案衝突, 所有應該 ok&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;slug 設為 g99_w15, 所以 pelican 轉檔後, 會位於班上網誌根目錄,  而且檔案名稱為 g99_w15.html, 所以也沒有問題&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;檢查 Date, 確定為今天的日期與製作時間, 且 Category 為 g99&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;開始利用 @button admin pelican 轉檔, 然後在近端先檢查, 若沒有問題, 推送到遠端&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;另外, 在近端檢查內容時, 採用 Firefox 開啟, 顯示的速度會比 Chrome 快,  切記!!!&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;提交與推送步驟:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;git add -A&lt;/li&gt;
+&lt;li&gt;git commit -m "w15 report from g99"&lt;/li&gt;
+&lt;li&gt;git push origin gh-pages&lt;/li&gt;
+&lt;li&gt;輸入帳號與密碼後, 推送到遠端&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;推送過程, 因為距離上次 git clone 到推送期間, 已經有其他組推送新的資料, 此時 g99 近端並沒有遠端上其他組已經完成推送的資料, 因此要透過 git pull, 取回這些新的版本資料, 然後再利用 @button admin pelican 重新要求 pelican 再轉一次檔案 (why? 有誰知道?)
+並且在近端, 利用 Firefox 確定一切資料都正確無誤後, 再次提交推送.&lt;/p&gt;</summary><category term="w15"></category></entry><entry><title>第十五週報告示範</title><link href="http://coursemdetw.github.io/reveal/g99_w15.html" rel="alternate"></link><updated>2015-12-25T10:48:00+08:00</updated><author><name>9999</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/g99_w15.html</id><summary type="html">&lt;p&gt;先抄一下題目:&lt;/p&gt;
+>>>>>>> 06a6e4342ce59f52a2e62c312acec95d89912301
 &lt;p&gt;CP W15 分組報告:&lt;/p&gt;
 &lt;p&gt;請以組為單位, 利用 &lt;a href="http://2015fallhw.github.io/2015fallcpa/"&gt;http://2015fallhw.github.io/2015fallcpa/&lt;/a&gt; 上的 pelican 文章, 回答下列問題:&lt;/p&gt;
 &lt;ul&gt;
@@ -480,7 +530,188 @@ for i in range(5):
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;/p&gt;
-&lt;h1&gt;在推送 9903 資料時, 又碰到必須 pull, regenerage pelican&lt;/h1&gt;</summary><category term="w15"></category></entry><entry><title>G1_w15</title><link href="http://coursemdetw.github.io/reveal/G1_w15.html" rel="alternate"></link><updated>2015-12-25T09:55:00+08:00</updated><author><name>40423103</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/G1_w15.html</id><summary type="html">&lt;h1&gt;1. Python3 的近端程式開發系統如何建立? 如何啟動?&lt;/h1&gt;
+&lt;h1&gt;在推送 9903 資料時, 又碰到必須 pull, regenerage pelican&lt;/h1&gt;</summary><category term="w15"></category></entry><entry><title>g2 w15</title><link href="http://coursemdetw.github.io/reveal/g2_w15.html" rel="alternate"></link><updated>2015-12-25T10:00:00+08:00</updated><author><name>g2</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/g2_w15.html</id><summary type="html">&lt;p&gt;g2 w15分組報告&lt;/p&gt;
+&lt;p&gt;1.Python3 的近端程式開發系統如何建立? 如何啟動?
+&lt;p&gt;下載 fix和Ana3-lite2和leo-editor-broke-abbrev.zip==&amp;gt;解壓縮fix和Ana3-lite2==&amp;gt;把leo-editor-broke-abbrev.zip放到fix的資料夾==&amp;gt;修改fix.bat裡的路徑==&amp;gt;點fix然後再點start&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;2.目前已經熟悉的 Python3 指令及語法有哪些? 
+&lt;p&gt;print("""This is the strangest 
+    way to print over multiple lines i know""")可以取代\n,增加程式的美觀性,可以用+號將兩段字元加在一起&lt;/p&gt;
+ &lt;p&gt;print('hello word')打印hello word&lt;/p&gt;&lt;br /&gt;
+ &lt;p&gt;name = input("what is your name? ")輸入你的名字&lt;/p&gt; 
+ &lt;p&gt;%b :是月縮寫&lt;/p&gt;
+    &lt;p&gt;%B :是完整的月份名稱&lt;/p&gt;
+    &lt;p&gt;%y :是兩位數的年份&lt;/p&gt;
+    &lt;p&gt;%a :是一周中的天(簡短的)&lt;/p&gt;
+    &lt;p&gt;%A :是一周中的天&lt;/p&gt;
+    &lt;p&gt;%d :是該月的天  %Y :是4位數年&lt;/p&gt;
+    &lt;p&gt;%H :小時（ 24小時制）&lt;/p&gt;
+    &lt;p&gt;%I :小時（ 12小時制） %s :秒&lt;/p&gt;
+    &lt;p&gt;%p :上午或下午 %m :分鐘&lt;/p&gt;
+    &lt;p&gt;for i in range(5)重複迴圈5次&lt;/p&gt;
+    &lt;p&gt;if x&amp;gt;1;
+            y+1
+        else
+            y-1;
+            如果x大於1,y就加一,小於一,y就減一&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;3.請利用流程圖, 簡要說明近端猜數字遊戲與猜顏色遊戲程式碼如何設計與運作
+&lt;script src="https://www.gliffy.com/diagramEmbed.js" type="text/javascript"&gt;&lt;/script&gt;&lt;script type="text/javascript"&gt;gliffy_did="9703243";embedGliffy();&lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;4.請各組員利用 Brython, 分別在各分組的 pelican 網頁文章中, 繪製一個歡慶耶誕的 2D 圖形&lt;/p&gt;
+&lt;div class="entry-content"&gt;&lt;p&gt;以下利用 Brython 在網頁寫 Python 繪圖&lt;/p&gt; 
+&lt;!-- 導入 brython_dist.js --&gt;
+
+&lt;script type="text/javascript" src="js/Brython3.2.3-20151122-082712/brython.js"&gt;&lt;/script&gt; 
+
+&lt;!-- 啟動 brython() --&gt; 
+
+&lt;script&gt; 
+window.onload=function(){ 
+brython(1); 
+} 
+&lt;/script&gt; 
+
+&lt;!-- 以下利用 Brython 程式執行繪圖 --&gt; 
+
+&lt;canvas id="plotarea" width="500" height="500"&gt;&lt;/canvas&gt; 
+
+&lt;script type="text/python3"&gt; 
+# 導入 doc 
+from browser import document as doc 
+import math 
+
+# 準備繪圖畫布 
+canvas = doc["plotarea"] 
+ctx = canvas.getContext("2d") 
+
+# 開始畫直線 
+
+ctx.beginPath() 
+ctx.lineWidth = 10 
+ctx.moveTo(200,400) 
+ctx.lineTo(200,320 ) 
+ctx.strokeStyle = "#006000" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 10 
+ctx.moveTo(200, 400) 
+ctx.lineTo(240,400 ) 
+ctx.strokeStyle = "#006000" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 10 
+ctx.moveTo(240, 400) 
+ctx.lineTo(240,320) 
+ctx.strokeStyle = "#006000" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 10 
+ctx.moveTo(80,320) 
+ctx.lineTo(360,320 ) 
+ctx.strokeStyle = "#006000" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 10 
+ctx.moveTo(80,320) 
+ctx.lineTo(160,240 ) 
+ctx.strokeStyle = "#006000" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 10 
+ctx.moveTo(360,320) 
+ctx.lineTo(280,240 ) 
+ctx.strokeStyle = "#006000" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 10 
+ctx.moveTo(120,240) 
+ctx.lineTo(160,240 ) 
+ctx.strokeStyle = "#006000" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 10 
+ctx.moveTo(280,240) 
+ctx.lineTo(320,240 ) 
+ctx.strokeStyle = "#006000" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 10 
+ctx.moveTo(120,240) 
+ctx.lineTo(200,160 ) 
+ctx.strokeStyle = "#006000" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 10 
+ctx.moveTo(320,240) 
+ctx.lineTo(240,160 ) 
+ctx.strokeStyle = "#006000" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 10 
+ctx.moveTo(160,160) 
+ctx.lineTo(200,160 ) 
+ctx.strokeStyle = "#006000" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 10 
+ctx.moveTo(240,160) 
+ctx.lineTo(280,160 ) 
+ctx.strokeStyle = "#006000" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 10 
+ctx.moveTo(160,160) 
+ctx.lineTo(220,80 ) 
+ctx.strokeStyle = "#006000" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 10 
+ctx.moveTo(280,160) 
+ctx.lineTo(220,80 ) 
+ctx.strokeStyle = "#006000" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 10 
+ctx.moveTo(200,120) 
+ctx.lineTo(220,40 ) 
+ctx.strokeStyle = "#FFFF37" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 10 
+ctx.moveTo(220,40) 
+ctx.lineTo(260,120 ) 
+ctx.strokeStyle = "#FFFF37" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 10 
+ctx.moveTo(260,120) 
+ctx.lineTo(180,70 ) 
+ctx.strokeStyle = "#FFFF37" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 10 
+ctx.moveTo(180,70) 
+ctx.lineTo(270,70 ) 
+ctx.moveTo(270,70) 
+ctx.lineTo(200,120 ) 
+ctx.strokeStyle = "#FFFF37" 
+ctx.stroke() 
+&lt;/script&gt;&lt;/div&gt;</summary><category term="w15"></category></entry><entry><title>G1_w15</title><link href="http://coursemdetw.github.io/reveal/G1_w15.html" rel="alternate"></link><updated>2015-12-25T09:55:00+08:00</updated><author><name>40423103</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/G1_w15.html</id><summary type="html">&lt;h1&gt;1. Python3 的近端程式開發系統如何建立? 如何啟動?&lt;/h1&gt;
 &lt;h2&gt;安裝及啟動&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;從教學網站下載"Ana3_lite2.7"及"fix"&lt;/li&gt;
@@ -811,7 +1042,31 @@ for i in 1 .. 10 { 呼叫特定函式(i) }
 &lt;p&gt;註腳會連結到這裡.&amp;#160;&lt;a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
+<<<<<<< HEAD
 &lt;/div&gt;</summary><category term="G10"></category></entry><entry><title>G10_w14_2</title><link href="http://coursemdetw.github.io/reveal/G10_w14_2.html" rel="alternate"></link><updated>2015-12-18T11:41:00+08:00</updated><author><name>40123237</name></author><id>tag:coursemdetw.github.io,2015-12-18:reveal/G10_w14_2.html</id><summary type="html"></summary><category term="G10"></category></entry><entry><title>G1_w14_1</title><link href="http://coursemdetw.github.io/reveal/G1_w14_1.html" rel="alternate"></link><updated>2015-12-18T11:41:00+08:00</updated><author><name>40423104</name></author><id>tag:coursemdetw.github.io,2015-12-18:reveal/G1_w14_1.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
+=======
+&lt;/div&gt;</summary><category term="G10"></category></entry><entry><title>G10_w14_2</title><link href="http://coursemdetw.github.io/reveal/G10_w14_2.html" rel="alternate"></link><updated>2015-12-18T11:41:00+08:00</updated><author><name>40123237</name></author><id>tag:coursemdetw.github.io,2015-12-18:reveal/G10_w14_2.html</id><summary type="html"></summary><category term="G10"></category></entry><entry><title>G1_w14_1</title><link href="http://coursemdetw.github.io/reveal/G1_w14_1.html" rel="alternate"></link><updated>2015-12-18T11:41:00+08:00</updated><author><name>KMOL</name></author><id>tag:coursemdetw.github.io,2015-12-18:reveal/G1_w14_1.html</id><summary type="html">&lt;p&gt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt; HEAD
+Authors: 40423112
+=======
+Authors: 40423104&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;d8ba2ff83fc91f41e1c825c3bac92852c57fa0a8
+Summary: G1_w14_1 摘要&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;以下為作業一內容&lt;/p&gt;
+>>>>>>> 06a6e4342ce59f52a2e62c312acec95d89912301
 &lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
 &lt;iframe src="simplest.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
@@ -923,12 +1178,100 @@ for i in 1 .. 10 { 呼叫特定函式(i) }
 &lt;p&gt;註腳會連結到這裡.&amp;#160;&lt;a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
+<<<<<<< HEAD
 &lt;/div&gt;</summary><category term="G1"></category></entry><entry><title>G1_w14_2</title><link href="http://coursemdetw.github.io/reveal/G1_w14_2.html" rel="alternate"></link><updated>2015-12-18T11:41:00+08:00</updated><author><name>40423104</name></author><id>tag:coursemdetw.github.io,2015-12-18:reveal/G1_w14_2.html</id><summary type="html">&lt;!-- 導入 brython.js --&gt;
 
+=======
+&lt;/div&gt;</summary><category term="G1"></category></entry><entry><title>G1_w14_2</title><link href="http://coursemdetw.github.io/reveal/G1_w14_2.html" rel="alternate"></link><updated>2015-12-18T11:41:00+08:00</updated><author><name>KMOL</name></author><id>tag:coursemdetw.github.io,2015-12-18:reveal/G1_w14_2.html</id><summary type="html">&lt;p&gt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt; HEAD
+Authors: 40423112
+=======
+Authors: 40423104&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;d8ba2ff83fc91f41e1c825c3bac92852c57fa0a8
+Summary: G1_w14_2 內容&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;!-- 導入 brython.js --&gt;
+
+&lt;p&gt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt;&amp;lt; HEAD
+&lt;!-- 導入 brython.js --&gt;&lt;/p&gt;
+>>>>>>> 06a6e4342ce59f52a2e62c312acec95d89912301
 &lt;script type="text/javascript" src="js/Brython3.2.3-20151122-082712/brython.js"&gt;&lt;/script&gt;
 
 &lt;!-- 啟動 brython() --&gt;
 
+<<<<<<< HEAD
+=======
+&lt;p&gt;=======
+&lt;script type="text/javascript" src="js/Brython3.2.3-20151122-082712/brython.js"&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;!-- 啟動 brython() --&gt;
+
+&lt;script&gt;
+window.onload=function(){
+brython(1);
+}
+&lt;/script&gt;
+
+&lt;!-- 以下利用 Brython 程式執行繪圖 --&gt;
+
+&lt;canvas id="plotarea" width="200" height="200"&gt;&lt;/canvas&gt;
+
+&lt;script type="text/python3"&gt;
+# 導入 doc
+from browser import document as doc
+from browser import console
+import math
+
+# 準備繪圖畫布
+canvas = doc["plotarea"]
+ctx = canvas.getContext("2d")
+
+# 開始畫直線
+for i in range(11):
+    ctx.beginPath()
+    ctx.lineWidth = 5
+    ctx.moveTo(0,0+i*20 )
+    ctx.lineTo(200,0+i*20 )
+    ctx.strokeStyle = "#0000ff"
+    ctx.stroke()
+for i in range(11):
+    ctx.beginPath()
+    ctx.lineWidth = 5
+    ctx.moveTo(0+i*20, 0)
+    ctx.lineTo(0+i*20, 200)
+    ctx.strokeStyle = "#FF0000"
+    ctx.stroke()
+
+
+&lt;/script&gt;
+
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;d8ba2ff83fc91f41e1c825c3bac92852c57fa0a8&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+>>>>>>> 06a6e4342ce59f52a2e62c312acec95d89912301
 &lt;script&gt;
 window.onload=function(){
 brython(1);
@@ -1002,6 +1345,69 @@ for i in range(1, len(points)-1):
 #curve through the last two points
 ctx.quadraticCurveTo(points[i][0], points[i][1], points[i+1][0],points[i+1][1])
 ctx.stroke()
+<<<<<<< HEAD
+=======
+&lt;/script&gt;
+
+&lt;p&gt;上列繪圖的程式碼:&lt;/p&gt;
+&lt;p&gt;~~~html
+&lt;!-- 導入 brython.js --&gt;&lt;/p&gt;
+&lt;script type="text/javascript" src="js/Brython3.2.3-20151122-082712/brython.js"&gt;&lt;/script&gt;
+
+&lt;!-- 啟動 brython() --&gt;
+
+&lt;script&gt;
+window.onload=function(){
+brython(1);
+}
+&lt;/script&gt;
+
+&lt;!-- 以下利用 Brython 程式執行繪圖 --&gt;
+
+&lt;canvas id="plotarea" width="300" height="200"&gt;&lt;/canvas&gt;
+
+&lt;script type="text/python3"&gt;
+# 導入 doc
+from browser import document as doc
+from browser import console
+import math
+
+# 準備繪圖畫布
+canvas = doc["plotarea"]
+ctx = canvas.getContext("2d")
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(0, 0)
+ctx.lineTo(100, 100)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(100, 0)
+ctx.lineTo(0, 100)
+ctx.strokeStyle = "#0000ff"
+ctx.stroke()
+
+x = 100
+y = 100
+
+# 利用 browser 模組中的 console.log 將資料列印在 console 區, 可以用來確認程式中各變數的值, 用法等同 print
+console.log("x 值為"+str(x)+", y 值為"+str(y))
+
+# 利用迴圈畫水平線
+for i in range(5):
+    ctx.beginPath()
+    ctx.lineWidth = 5
+    ctx.moveTo(0, 10+i*20)
+    ctx.lineTo(100, 10+i*20)
+    ctx.strokeStyle = "#0000ff"
+    ctx.stroke()
+&lt;/script&gt;
+
+>>>>>>> 06a6e4342ce59f52a2e62c312acec95d89912301
 &lt;/script&gt;</summary><category term="G1"></category></entry><entry><title>G5_w14_1</title><link href="http://coursemdetw.github.io/reveal/G5_w14_1.html" rel="alternate"></link><updated>2015-12-18T09:48:00+08:00</updated><author><name>40423132</name></author><id>tag:coursemdetw.github.io,2015-12-18:reveal/G5_w14_1.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
 &lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
 &lt;iframe src="simplest.html" width="500" height="300"&gt;&lt;/iframe&gt;
