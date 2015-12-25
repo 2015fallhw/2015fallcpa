@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>2015FALL 40423112 cpa 作業</title><link href="http://coursemdetw.github.io/reveal/" rel="alternate"></link><link href="http://coursemdetw.github.io/reveal/feeds/g1.atom.xml" rel="self"></link><id>http://coursemdetw.github.io/reveal/</id><updated>2015-12-18T11:41:00+08:00</updated><entry><title>G1_w15_1</title><link href="http://coursemdetw.github.io/reveal/G1_w15_1.html" rel="alternate"></link><updated>2015-12-18T11:41:00+08:00</updated><author><name>40423112</name></author><id>tag:coursemdetw.github.io,2015-12-18:reveal/G1_w15_1.html</id><summary type="html">&lt;!-- 導入 brython.js --&gt;
+
+&lt;script type="text/javascript" src="js/Brython3.2.3-20151122-082712/brython.js"&gt;&lt;/script&gt;
+
+&lt;!-- 啟動 brython() --&gt;
+
+&lt;script&gt;
+window.onload=function(){
+brython(1);
+}
+&lt;/script&gt;
+
+&lt;!-- 以下利用 Brython 程式執行繪圖 --&gt;
+
+&lt;canvas id="plotarea" width="300" height="200"&gt;&lt;/canvas&gt;
+
+&lt;script type="text/python3"&gt;
+# 導入 doc
+from browser import document as doc
+from browser import console
+import math
+
+# 準備繪圖畫布
+canvas = doc["plotarea"]
+ctx = canvas.getContext("2d")
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 1
+ctx.moveTo(50, 0)
+ctx.lineTo(30, 30)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 1
+ctx.moveTo(50, 0)
+ctx.lineTo(70, 30)
+ctx.strokeStyle = "#0000ff"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 1
+ctx.moveTo(30,30)
+ctx.lineTo(45, 30)
+ctx.strokeStyle = "#0000ff"
+ctx.stroke() 
+
+ctx.beginPath()
+ctx.lineWidth = 1
+ctx.moveTo(70,30)
+ctx.lineTo(55, 30)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 1
+ctx.moveTo(45,30)
+ctx.lineTo(20, 65)
+ctx.strokeStyle = "#0000ff"
+ctx.stroke() 
+
+ctx.beginPath()
+ctx.lineWidth = 1
+ctx.moveTo(55,30)
+ctx.lineTo(80, 65)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke() 
+
+ctx.beginPath()
+ctx.lineWidth = 1
+ctx.moveTo(20,65)
+ctx.lineTo(40, 65)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke() 
+
+ctx.beginPath()
+ctx.lineWidth = 1
+ctx.moveTo(80,65)
+ctx.lineTo(60, 65)
+ctx.strokeStyle = "#0000ff"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 1
+ctx.moveTo(40,65)
+ctx.lineTo(10, 105)
+ctx.strokeStyle = "#0000ff"
+ctx.stroke() 
+
+ctx.beginPath()
+ctx.lineWidth = 1
+ctx.moveTo(60,65)
+ctx.lineTo(90, 105)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 1
+ctx.moveTo(10,105)
+ctx.lineTo(40, 105)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke() 
+
+ctx.beginPath()
+ctx.lineWidth = 1
+ctx.moveTo(90,105)
+ctx.lineTo(60, 105)
+ctx.strokeStyle = "#0000ff"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 1
+ctx.moveTo(40,105)
+ctx.lineTo(40, 135)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke() 
+
+ctx.beginPath()
+ctx.lineWidth = 1
+ctx.moveTo(60,105)
+ctx.lineTo(60, 135)
+ctx.strokeStyle = "#0000ff"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 1
+ctx.moveTo(60,135)
+ctx.lineTo(40, 135)
+ctx.strokeStyle = "#000000"
+ctx.stroke()
+
+x = 100
+y = 100
+
+&lt;/script&gt;</summary><category term="G1"></category></entry></feed>
