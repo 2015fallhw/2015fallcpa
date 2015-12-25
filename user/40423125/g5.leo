@@ -25,7 +25,7 @@
 </v>
 </v>
 <v t="leo.20151225104525.1"><vh>以下為投影片 ------------</vh></v>
-<v t="leo.20151225104454.1"><vh>@edit g5_w15_1_p.html</vh></v>
+<v t="leo.20151225104454.1" a="M"><vh>@edit g5_w15_1_p.html</vh></v>
 </v>
 <v t="leo.20151225095728.1"><vh>@button user pelican</vh></v>
 <v t="leo.20151225103805.1" a="E"><vh>@path ./</vh>
