@@ -4,8 +4,10 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Tags &mdash; 2015FALL 作業主頁</title>
+  <title>G5_w15 &mdash; 2015FALL 作業主頁</title>
   <meta name="author" content="KMOL">
+
+
 
 
 
@@ -48,7 +50,7 @@
       <li >
         <a href="./category/g3.html">G3</a>
       </li>
-      <li >
+      <li class="active">
         <a href="./category/g5.html">G5</a>
       </li>
       <li >
@@ -61,24 +63,77 @@
   <div id="main">
     <div id="content">
 <div>
-	<article role="article">
-    	<header>
-    		<h1 class="entry-title">Blog Tags</h1>
-    	</header>
+  <article class="hentry" role="article">
+<header>
+      <h1 class="entry-title">G5_w15</h1>
+    <p class="meta">
+<time datetime="2015-12-25T10:48:00+08:00" pubdate>週五 25 十二月 2015</time>    </p>
+</header>
 
-	<p>
-		<a href="./tag/brython.html">Brython</a> (2)<br>
-		<a href="./tag/g1.html">G1</a> (2)<br>
-		<a href="./tag/g10.html">G10</a> (2)<br>
-		<a href="./tag/g3.html">G3</a> (3)<br>
-		<a href="./tag/ipython.html">IPython</a> (2)<br>
-		<a href="./tag/jupyter.html">Jupyter</a> (2)<br>
-		<a href="./tag/pelican.html">pelican</a> (2)<br>
-		<a href="./tag/publishing.html">publishing</a> (2)<br>
-		<a href="./tag/w14.html">w14</a> (6)<br>
-		<a href="./tag/w15.html">w15</a> (2)<br>
-	</p>
-	</article>
+  <div class="entry-content"><p>先抄一下題目:</p>
+<p>CP W15 分組報告:</p>
+<p>請以組為單位, 利用 <a href="http://2015fallhw.github.io/2015fallcpa/">http://2015fallhw.github.io/2015fallcpa/</a> 上的 pelican 文章, 回答下列問題:</p>
+<ul>
+<li>
+<p>Python3 的近端程式開發系統如何建立? 如何啟動?</p>
+</li>
+<li>
+<p>目前已經熟悉的 Python3 指令及語法有哪些? 請舉例說明.</p>
+</li>
+<li>
+<p>請利用流程圖, 簡要說明近端猜數字遊戲與猜顏色遊戲程式碼如何設計與運作.</p>
+</li>
+<li>
+<p>請各組員利用 Brython, 分別在各分組的 pelican 網頁文章中, 繪製一個歡慶耶誕的 2D 圖形.</p>
+</li>
+</ul>
+<p>要提交推送之前, 先檢查 md 檔案有無唯一性, 因為若無唯一性, 怕會與其他組的 md 檔案彼此覆蓋.</p>
+<ul>
+<li>
+<p>因為 md 檔名為 g99_w15.md, 有冠上組別與週次, 所以不會與他組的 md 檔案衝突, 所有應該 ok</p>
+</li>
+<li>
+<p>slug 設為 g99_w15, 所以 pelican 轉檔後, 會位於班上網誌根目錄,  而且檔案名稱為 g99_w15.html, 所以也沒有問題</p>
+</li>
+<li>
+<p>檢查 Date, 確定為今天的日期與製作時間, 且 Category 為 g99</p>
+</li>
+<li>
+<p>開始利用 @button admin pelican 轉檔, 然後在近端先檢查, 若沒有問題, 推送到遠端</p>
+</li>
+<li>
+<p>另外, 在近端檢查內容時, 採用 Firefox 開啟, 顯示的速度會比 Chrome 快,  切記!!!</p>
+</li>
+</ul>
+<p>提交與推送步驟:</p>
+<ul>
+<li>git add -A</li>
+<li>git commit -m "w15 report from g99"</li>
+<li>git push origin gh-pages</li>
+<li>輸入帳號與密碼後, 推送到遠端</li>
+</ul>
+<p>推送過程, 因為距離上次 git clone 到推送期間, 已經有其他組推送新的資料, 此時 g99 近端並沒有遠端上其他組已經完成推送的資料, 因此要透過 git pull, 取回這些新的版本資料, 然後再利用 @button admin pelican 重新要求 pelican 再轉一次檔案 (why? 有誰知道?)
+並且在近端, 利用 Firefox 確定一切資料都正確無誤後, 再次提交推送.</p></div>
+    <footer>
+<p class="meta">
+  <span class="byline author vcard">
+    Posted by <span class="fn">
+        40423132
+    </span>
+  </span>
+<time datetime="2015-12-25T10:48:00+08:00" pubdate>週五 25 十二月 2015</time>  <span class="categories">
+    <a class='category' href='./category/g5.html'>G5</a>
+  </span>
+  <span class="categories">
+    <a class="category" href="./tag/w15.html">w15</a>  </span>
+</p><div class="sharing">
+</div>    </footer>
+  </article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+  </section>
 </div>
 <aside class="sidebar">
   <section>
@@ -147,6 +202,9 @@
   <script src="./theme/js/octopress.js" type="text/javascript"></script>
   <script type="text/javascript">
     var disqus_shortname = '2015fall';
+    var disqus_identifier = '/G5_w15.html';
+    var disqus_url = './G5_w15.html';
+    var disqus_title = 'G5_w15';
     (function() {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
       dsq.src = "//" + disqus_shortname + '.disqus.com/embed.js';
