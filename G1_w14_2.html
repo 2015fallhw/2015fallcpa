@@ -67,7 +67,86 @@
 <time datetime="2015-12-18T11:41:00+08:00" pubdate>週五 18 十二月 2015</time>    </p>
 </header>
 
-  <div class="entry-content"></div>
+  <div class="entry-content"><!-- 導入 brython.js -->
+
+<script type="text/javascript" src="js/Brython3.2.3-20151122-082712/brython.js"></script>
+
+<!-- 啟動 brython() -->
+
+<script>
+window.onload=function(){
+brython(1);
+}
+</script>
+
+<!-- 以下利用 Brython 程式執行繪圖 -->
+
+<canvas id="plotarea" width="300" height="200"></canvas>
+
+<script type="text/python3">
+# 導入 doc
+from browser import document as doc
+from browser import console
+import math
+
+# 準備繪圖畫布
+canvas = doc["plotarea"]
+ctx = canvas.getContext("2d")
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 1
+ctx.moveTo(0, 0)
+ctx.lineTo(100, 100)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 1
+ctx.moveTo(100, 0)
+ctx.lineTo(0, 100)
+ctx.strokeStyle = "#0000ff"
+ctx.stroke()
+
+x = 100
+y = 100
+
+# 利用 browser 模組中的 console.log 將資料列印在 console 區, 可以用來確認程式中各變數的值, 用法等同 print
+console.log("x 值為"+str(x)+", y 值為"+str(y))
+'''
+# 利用迴圈畫水平線
+for i in range(5):
+    ctx.beginPath()
+    ctx.lineWidth = 1
+    ctx.moveTo(0, 10+i*20)
+    ctx.lineTo(100, 10+i*20)
+    ctx.strokeStyle = "#0000ff"
+    ctx.stroke()
+
+ctx.beginPath()
+ctx.moveTo(20,20)
+ctx.bezierCurveTo(20,100,200,100,200,20)
+ctx.stroke()
+
+ctx.beginPath()
+ctx.moveTo(20,0)
+ctx.quadraticCurveTo(20,100,200,20)
+ctx.stroke()
+'''
+
+ctx.beginPath()
+points = [(0, 0), (10, 3), (20, 15), (30, 30), (70, 25), (100, 200)]
+ctx.moveTo(points[0][0], points[0][1])
+for i in range(1, len(points)-1):
+    console.log(str(points[i][0])+", "+str(points[i ][1]))
+    xc = (points[i][0] + points[i + 1][0]) / 2
+    yc = (points[i][1] + points[i + 1][1]) / 2
+    ctx.quadraticCurveTo(points[i][0], points[i][1], xc, yc)
+
+#curve through the last two points
+ctx.quadraticCurveTo(points[i][0], points[i][1], points[i+1][0],points[i+1][1])
+ctx.stroke()
+</script></div>
     <footer>
 <p class="meta">
   <span class="byline author vcard">
@@ -94,6 +173,9 @@
     <h1>Recent Posts</h1>
     <ul id="recent_posts">
       <li class="post">
+          <a href="./G10_w15.html">G10_w15</a>
+      </li>
+      <li class="post">
           <a href="./G3_w15_1.html">G3_w15_1</a>
       </li>
       <li class="post">
@@ -104,9 +186,6 @@
       </li>
       <li class="post">
           <a href="./g99_w15.html">第十五週報告示範</a>
-      </li>
-      <li class="post">
-          <a href="./G3_w14_1.html">G3_w14_1</a>
       </li>
     </ul>
   </section>
@@ -126,7 +205,7 @@
 
   <section>
   <h1>Tags</h1>
-    <a href="./tag/w14.html">w14</a>,    <a href="./tag/g10.html">G10</a>,    <a href="./tag/publishing.html">publishing</a>,    <a href="./tag/g1.html">G1</a>,    <a href="./tag/ipython.html">IPython</a>,    <a href="./tag/brython.html">Brython</a>,    <a href="./tag/jupyter.html">Jupyter</a>,    <a href="./tag/w15.html">w15</a>,    <a href="./tag/g3.html">G3</a>,    <a href="./tag/pelican.html">pelican</a>  </section>
+    <a href="./tag/brython.html">Brython</a>,    <a href="./tag/publishing.html">publishing</a>,    <a href="./tag/g3.html">G3</a>,    <a href="./tag/g10.html">G10</a>,    <a href="./tag/ipython.html">IPython</a>,    <a href="./tag/pelican.html">pelican</a>,    <a href="./tag/w14.html">w14</a>,    <a href="./tag/w15.html">w15</a>,    <a href="./tag/jupyter.html">Jupyter</a>,    <a href="./tag/g1.html">G1</a>  </section>
 
 
     <section>
