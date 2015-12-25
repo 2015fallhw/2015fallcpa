@@ -1,5 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>2015FALL 作業主頁</title><link href="http://coursemdetw.github.io/reveal/" rel="alternate"></link><link href="http://coursemdetw.github.io/reveal/feeds/all.atom.xml" rel="self"></link><id>http://coursemdetw.github.io/reveal/</id><updated>2015-12-25T12:00:00+08:00</updated><entry><title>G3_w15_1</title><link href="http://coursemdetw.github.io/reveal/G3_w15_1.html" rel="alternate"></link><updated>2015-12-25T12:00:00+08:00</updated><author><name>40423108</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/G3_w15_1.html</id><summary type="html">&lt;p&gt;1.利用fix.bat複製leo安裝擋與start.bat和python.properties到Ana3,並修改start.bat讓leo在近端安裝。&lt;/p&gt;</summary><category term="G3"></category></entry><entry><title>g2 w1</title><link href="http://coursemdetw.github.io/reveal/g2_w1.html" rel="alternate"></link><updated>2015-12-25T11:00:00+08:00</updated><author><name>40423105</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/g2_w1.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>2015FALL 作業主頁</title><link href="http://coursemdetw.github.io/reveal/" rel="alternate"></link><link href="http://coursemdetw.github.io/reveal/feeds/all.atom.xml" rel="self"></link><id>http://coursemdetw.github.io/reveal/</id><updated>2015-12-26T11:00:00+08:00</updated><entry><title>G10_w15</title><link href="http://coursemdetw.github.io/reveal/G10_w15.html" rel="alternate"></link><updated>2015-12-26T11:00:00+08:00</updated><author><name>40123237</name></author><id>tag:coursemdetw.github.io,2015-12-26:reveal/G10_w15.html</id><summary type="html">&lt;h1&gt;1-1. Python3的近端程式開發系統如何建立&lt;/h1&gt;
+&lt;p&gt;*1. 從 http://www.python.org/download/ 下載 Python 3.3.1, Doc 與 test scripts 不安裝, 容量大約 26 MB.&lt;/p&gt;
+&lt;p&gt;*2. 接著從 http://www.lfd.uci.edu/~gohlke/pythonlibs/#distribute 下載 distribute-0.6.36.win32-py3.3.‌exe, 安裝後約佔 &lt;/p&gt;
+&lt;p&gt;30MB.&lt;/p&gt;
+&lt;p&gt;*3. 接著從 http://www.lfd.uci.edu/~gohlke/pythonlibs/#pip 下載 pip-1.3.1.win32-py3.3.‌exe, 安裝後約佔 32MB.&lt;/p&gt;
+&lt;p&gt;*4. 接著從 http://sourceforge.net/projects/pywin32/files/pywin32/Build%20218/ 下載 pywin32-218.win32-py3.3.exe, 安裝&lt;/p&gt;
+&lt;p&gt;後約佔 58MB.&lt;/p&gt;
+&lt;p&gt;*5. 接著從 http://www.riverbankcomputing.com/software/pyqt/download 下載 PyQt4-4.10-gpl-Py3.3-Qt5.0.1-x32-2.exe, Doc &lt;/p&gt;
+&lt;p&gt;與 Examples 不安裝, 安裝後約佔 166MB.&lt;/p&gt;
+&lt;p&gt;註: 因為安裝 PyQt4/Qt5 必須要從 http://www.microsoft.com/en-us/download/search.aspx?q=directx 更新 directx, 對於沒&lt;/p&gt;
+&lt;p&gt;有更新的電腦就無法讓 Leo Editor 擷取到最新的 directx dll, 因為這不是 Leo 編輯器的問題, 而是 PyQt4 連結 Qt5 dll 所造&lt;/p&gt;
+&lt;p&gt;成的問題, 目前還不知道 PyQt5 是否可以在未更新 directx 的情況下讓 2014 年即將退役的 Windows XP 正常使用 Qt5 的 dll, &lt;/p&gt;
+&lt;p&gt;因此依賴 PyQt 的 Leo Editor 根本無法主動修改, 只有兩條路可以走, 就是在 PyQt4 配合 Qt5  的情況下, 更新 Windows 的 &lt;/p&gt;
+&lt;p&gt;directx, 或者是回到 PyQt4 與 Qt4 的搭配, 等待 PyQt5 與 Qt5 的版本到來, 然後再看是否能在未更新 dirextx 或更新 &lt;/p&gt;
+&lt;p&gt;directx 的操作系統中彼此相容.&lt;/p&gt;
+&lt;p&gt;這裡我們選擇在 PyQt4/Qt4 的模式下來啟動 Leo 編輯器, 也就從  &lt;/p&gt;
+&lt;p&gt;http://www.riverbankcomputing.com/software/pyqt/download 下載 PyQt4-4.10-gpl-Py3.3-Qt4.8.4-x32.exe, 而非 PyQt4-&lt;/p&gt;
+&lt;p&gt;4.10-gpl-Py3.3-Qt5.0.1-x32-2.exe.&lt;/p&gt;
+&lt;p&gt;*6. 接著從 http://www.lfd.uci.edu/~gohlke/pythonlibs/#docutils 下載 docutils-0.10.win32-py3.3.‌exe, 安裝後約佔 172MB.&lt;/p&gt;
+&lt;p&gt;*7. 接著從 http://www.greygreen.org/leo/ 下載 leo-editor-snapshot-20130408.zip, 解開後將 leo 目錄放到 C:&lt;/p&gt;
+&lt;p&gt;\Python33\Lib\site-packages\, 整個 C:\Python33 約為 190MB.&lt;/p&gt;
+&lt;h1&gt;1-2.Python3的近端程式開發系統如何建立&lt;/h1&gt;
+&lt;p&gt;*啟動:
+當使用者執行 start.bat 後, 系統會將 leoeditor 目錄中的 data 目錄與 Y: 硬碟對應, Y:\ 硬碟中的檔案其實就是 &lt;/p&gt;
+&lt;p&gt;leoeditor/data 目錄, 兩個目錄為同步對應.&lt;/p&gt;
+&lt;p&gt;假設將上述兩個壓縮檔案下載後, 直接解開到 C:\Documents and Settings\amd\My Documents\Downloads\leoeditor, 然後就可以&lt;/p&gt;
+&lt;p&gt;點擊其中的 start.bat, 將會分別開啟兩個 cmd.exe 視窗, SciTE 編輯器與 Leo Editor, 這時進入 Y: 硬碟, 就可以看到 &lt;/p&gt;
+&lt;p&gt;commands, exammples, Python33, tcc 與 wscite 等五個目錄, 其中 Python33 為可攜的 Python 3.3.1, tcc 為 TinyC 編譯程式&lt;/p&gt;
+&lt;p&gt;, scite 則為 SciTE 編輯器.&lt;/p&gt;</summary><category term="G10"></category></entry><entry><title>G3_w15_1</title><link href="http://coursemdetw.github.io/reveal/G3_w15_1.html" rel="alternate"></link><updated>2015-12-25T12:00:00+08:00</updated><author><name>40423108</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/G3_w15_1.html</id><summary type="html">&lt;p&gt;1.利用fix.bat複製leo安裝擋與start.bat和python.properties到Ana3,並修改start.bat讓leo在近端安裝。&lt;/p&gt;</summary><category term="G3"></category></entry><entry><title>g2 w1</title><link href="http://coursemdetw.github.io/reveal/g2_w1.html" rel="alternate"></link><updated>2015-12-25T11:00:00+08:00</updated><author><name>40423105</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/g2_w1.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
 &lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
 &lt;iframe src="simplest.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
@@ -336,7 +364,156 @@ ctx.fill()
 &lt;/div&gt;
 &lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;測試看看, 上面有沒有顯示一面國旗???&lt;/p&gt;
-&lt;h1&gt;答案是有, 那麼各組員就可以利用相同的架構, 把耶誕卡繪圖整合進分組報告了&lt;/h1&gt;</summary><category term="w15"></category></entry><entry><title>G3_w14_1</title><link href="http://coursemdetw.github.io/reveal/G3_w14_1.html" rel="alternate"></link><updated>2015-12-18T12:00:00+08:00</updated><author><name>40423117</name></author><id>tag:coursemdetw.github.io,2015-12-18:reveal/G3_w14_1.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
+&lt;h1&gt;答案是有, 那麼各組員就可以利用相同的架構, 把耶誕卡繪圖整合進分組報告了&lt;/h1&gt;
+&lt;p&gt;接下來要整合 9903 的報告內容:&lt;/p&gt;
+&lt;p&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;在以下的 Brython 繪圖, 我們首次運用函式, 也就是 def 的用法, 當某一個程是需要多次重複執行某一段程式, 就可以利用函式定義與呼叫來提升效率.&lt;/p&gt;
+&lt;p&gt;有關函式的使用說明, 可以參考: &lt;a href="http://pydoing.blogspot.tw/2011/01/python-function.html"&gt;http://pydoing.blogspot.tw/2011/01/python-function.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;特別注意到, 9903 的 Brython 繪圖, 是畫在 9903_plotarea 的獨特畫布上 (600x600 大小), 而非 9902 組員的 plotarea 畫布, 假如要協同繪圖, 則由某一位組員啟動 canvas 標註定義, 然後多人選擇在同一塊畫布上繪圖.&lt;/p&gt;
+&lt;!-- 導入 brython_dist.js --&gt;
+
+&lt;script type="text/javascript" src="http://brython.info/src/brython_dist.js"&gt;&lt;/script&gt;
+
+&lt;!-- 啟動 brython() --&gt;
+
+&lt;script&gt;
+window.onload=function(){
+brython(1);
+}
+&lt;/script&gt;
+
+&lt;!-- 以下利用 Brython 程式執行繪圖 --&gt;
+
+&lt;canvas id="9903_plotarea" width="600" height="600"&gt;&lt;/canvas&gt;
+
+&lt;script type="text/python3"&gt;
+import math
+from browser import html, doc
+# use plotarea as canvas
+canvas = doc["9903_plotarea"]
+# 準備在 canvas 中繪圖
+def draw_line(x1, y1, x2, y2, color="red"):
+    ctx.beginPath()
+    ctx.moveTo(x1, y1)
+    ctx.lineTo(x2, y2)
+    ctx.strokeStyle = color
+    ctx.stroke()
+# x, y 為中心,  r 為半徑, angle 旋轉角,  solid 空心或實心,  color 顏色
+def star(x, y, r, angle=0, solid=False, color="#f00"):
+    # 以 x, y 為圓心, 計算五個外點
+    deg = math.pi/180
+    # 圓心到水平線距離
+    a = r*math.cos(72*deg)
+    # a 頂點向右到內點距離
+    b = (r*math.cos(72*deg)/math.cos(36*deg))*math.sin(36*deg)
+    # 利用畢氏定理求內點半徑
+    rin = math.sqrt(a**2 + b**2)
+    # 查驗 a, b 與 rin
+    #print(a, b, rin)
+    if(solid):
+        ctx.beginPath()
+    for i in range(5):
+        xout = (x + r*math.sin((360/5)*deg*i+angle*deg))
+        yout = (y + r*math.cos((360/5)*deg*i+angle*deg))
+        # 外點增量 + 1
+        xout2 = x + r*math.sin((360/5)*deg*(i+1)+angle*deg)
+        yout2 = y + r*math.cos((360/5)*deg*(i+1)+angle*deg)
+        xin = x + rin*math.sin((360/5)*deg*i+36*deg+angle*deg)
+        yin = y + rin*math.cos((360/5)*deg*i+36*deg+angle*deg)
+        # 查驗外點與內點座標
+        #print(xout, yout, xin, yin)
+        if(solid):
+            # 填色
+            if(i==0):
+                ctx.moveTo(xout, yout)
+                ctx.lineTo(xin, yin)
+                ctx.lineTo(xout2, yout2)
+            else:
+                ctx.lineTo(xin, yin)
+                ctx.lineTo(xout2, yout2)
+        else:
+            # 空心
+            draw_line(xout, yout, xin, yin, color)
+            # 畫空心五芒星, 無關畫線次序, 若實心則與畫線次序有關
+            draw_line(xout2, yout2, xin, yin, color)
+    if(solid):
+        ctx.fillStyle = color
+        ctx.fill()
+
+ctx = canvas.getContext('2d')
+'''
+size = 30
+for i in range(size+1):
+    # 水平線
+    draw_line(100, 100+i*10, 100+size*10, 100+i*10, "black")
+    # 垂直線
+    draw_line(100+i*10, 100, 100+i*10, 100+size*10, "red")
+'''
+star(100, 100, 30, 0, True, "#f00")
+#star(300, 300, 50, 0, False, "#000")
+for i in range(5):
+    for j in range(5):
+        star(200+65*i, 200+65*j, 30, 0, False, "#000")
+
+&lt;/script&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;h1&gt;在推送 9903 資料時, 又碰到必須 pull, regenerage pelican&lt;/h1&gt;</summary><category term="w15"></category></entry><entry><title>G1_w15</title><link href="http://coursemdetw.github.io/reveal/G1_w15.html" rel="alternate"></link><updated>2015-12-25T09:55:00+08:00</updated><author><name>40423103</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/G1_w15.html</id><summary type="html">&lt;h1&gt;1. Python3 的近端程式開發系統如何建立? 如何啟動?&lt;/h1&gt;
+&lt;h2&gt;安裝及啟動&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;從教學網站下載"Ana3_lite2.7"及"fix"&lt;/li&gt;
+&lt;li&gt;將兩個檔案進行解壓縮&lt;/li&gt;
+&lt;li&gt;先開啟"fix"料夾&lt;/li&gt;
+&lt;li&gt;點選啟動"fix.bat"，畫面只會閃一下&lt;/li&gt;
+&lt;li&gt;再開啟"Anaconday"資料夾&lt;/li&gt;
+&lt;li&gt;點選"start.bat"&lt;/li&gt;
+&lt;li&gt;成功開啟&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;影片解說&lt;/h3&gt;
+&lt;iframe src="https://player.vimeo.com/video/145948723" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/145948723"&gt;安裝及啟動&lt;/a&gt; from &lt;a href="https://vimeo.com/user45467634"&gt;劉怡萱&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;
+&lt;h2&gt;修正fix&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;開啟教學網頁&lt;/li&gt;
+&lt;li&gt;點選2015fall課程&lt;/li&gt;
+&lt;li&gt;點選遠端(copy)下載fix&lt;/li&gt;
+&lt;li&gt;將檔案解壓縮&lt;/li&gt;
+&lt;li&gt;使用瀏覽器搜尋 leo editor github&lt;/li&gt;
+&lt;li&gt;點選進入網頁&lt;/li&gt;
+&lt;li&gt;點選leo-editor&lt;/li&gt;
+&lt;li&gt;點選release&lt;/li&gt;
+&lt;li&gt;點選broke-abbrev&lt;/li&gt;
+&lt;li&gt;點選Source code(zip)&lt;/li&gt;
+&lt;li&gt;將檔案移至fix資料夾&lt;/li&gt;
+&lt;li&gt;到Ana3_lite2\data\SciTE&lt;/li&gt;
+&lt;li&gt;開啟SciTe.exe &lt;/li&gt;
+&lt;li&gt;使用此編輯器開啟fix.bat&lt;/li&gt;
+&lt;li&gt;在最後增加一行指令
+      指令為  copy leo-editor-broke-abbrev.zip C:\Ana3_2015\data\                            &lt;/li&gt;
+&lt;li&gt;儲存檔案&lt;/li&gt;
+&lt;li&gt;使用此編輯器開啟start.bat&lt;/li&gt;
+&lt;li&gt;將原指令 (第35行) pip install http://140.130.17.17/public/leo-editor-master.zip         &lt;br /&gt;
+     更改為 pip install leo-editor-broke-abbrev.zip&lt;/li&gt;
+&lt;li&gt;儲存檔案&lt;/li&gt;
+&lt;li&gt;點選開啟fix.bat&lt;/li&gt;
+&lt;li&gt;點選開啟start.bat&lt;/li&gt;
+&lt;li&gt;成功開啟~~                &lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;###影片解說###&lt;/p&gt;
+&lt;iframe src="https://player.vimeo.com/video/147597320" width="1280" height="720" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/147597320"&gt;修正fix_leo-editor安裝&lt;/a&gt; from &lt;a href="https://vimeo.com/user45467634"&gt;劉怡萱&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;
+&lt;h1&gt;2. 目前已經熟悉的 Python3 指令及語法有哪些? 請舉例說明&lt;/h1&gt;
+&lt;p&gt;&lt;a href="http://imgur.com/FxIA2DT"&gt;&lt;img src="http://i.imgur.com/FxIA2DT.jpg" title="source: imgur.com" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;3.請利用流程圖, 簡要說明近端猜數字遊戲與猜顏色遊戲程式碼如何設計與運作&lt;/h1&gt;
+&lt;p&gt;&lt;a href="http://imgur.com/Vb0uBlB"&gt;&lt;img src="http://i.imgur.com/Vb0uBlB.jpg" title="source: imgur.com" /&gt;&lt;/a&gt;&lt;/p&gt;</summary><category term="G1"></category></entry><entry><title>G3_w14_1</title><link href="http://coursemdetw.github.io/reveal/G3_w14_1.html" rel="alternate"></link><updated>2015-12-18T12:00:00+08:00</updated><author><name>40423117</name></author><id>tag:coursemdetw.github.io,2015-12-18:reveal/G3_w14_1.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
 &lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
 &lt;iframe src="simplest.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
@@ -730,7 +907,86 @@ for i in 1 .. 10 { 呼叫特定函式(i) }
 &lt;p&gt;註腳會連結到這裡.&amp;#160;&lt;a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</summary><category term="G1"></category></entry><entry><title>G1_w14_2</title><link href="http://coursemdetw.github.io/reveal/G1_w14_2.html" rel="alternate"></link><updated>2015-12-18T11:41:00+08:00</updated><author><name>40423104</name></author><id>tag:coursemdetw.github.io,2015-12-18:reveal/G1_w14_2.html</id><summary type="html"></summary><category term="G1"></category></entry><entry><title>第十四週報告示範</title><link href="http://coursemdetw.github.io/reveal/g99_w14_1.html" rel="alternate"></link><updated>2015-12-18T09:48:00+08:00</updated><author><name>9999</name></author><id>tag:coursemdetw.github.io,2015-12-18:reveal/g99_w14_1.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
+&lt;/div&gt;</summary><category term="G1"></category></entry><entry><title>G1_w14_2</title><link href="http://coursemdetw.github.io/reveal/G1_w14_2.html" rel="alternate"></link><updated>2015-12-18T11:41:00+08:00</updated><author><name>40423104</name></author><id>tag:coursemdetw.github.io,2015-12-18:reveal/G1_w14_2.html</id><summary type="html">&lt;!-- 導入 brython.js --&gt;
+
+&lt;script type="text/javascript" src="js/Brython3.2.3-20151122-082712/brython.js"&gt;&lt;/script&gt;
+
+&lt;!-- 啟動 brython() --&gt;
+
+&lt;script&gt;
+window.onload=function(){
+brython(1);
+}
+&lt;/script&gt;
+
+&lt;!-- 以下利用 Brython 程式執行繪圖 --&gt;
+
+&lt;canvas id="plotarea" width="300" height="200"&gt;&lt;/canvas&gt;
+
+&lt;script type="text/python3"&gt;
+# 導入 doc
+from browser import document as doc
+from browser import console
+import math
+
+# 準備繪圖畫布
+canvas = doc["plotarea"]
+ctx = canvas.getContext("2d")
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 1
+ctx.moveTo(0, 0)
+ctx.lineTo(100, 100)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 1
+ctx.moveTo(100, 0)
+ctx.lineTo(0, 100)
+ctx.strokeStyle = "#0000ff"
+ctx.stroke()
+
+x = 100
+y = 100
+
+# 利用 browser 模組中的 console.log 將資料列印在 console 區, 可以用來確認程式中各變數的值, 用法等同 print
+console.log("x 值為"+str(x)+", y 值為"+str(y))
+'''
+# 利用迴圈畫水平線
+for i in range(5):
+    ctx.beginPath()
+    ctx.lineWidth = 1
+    ctx.moveTo(0, 10+i*20)
+    ctx.lineTo(100, 10+i*20)
+    ctx.strokeStyle = "#0000ff"
+    ctx.stroke()
+
+ctx.beginPath()
+ctx.moveTo(20,20)
+ctx.bezierCurveTo(20,100,200,100,200,20)
+ctx.stroke()
+
+ctx.beginPath()
+ctx.moveTo(20,0)
+ctx.quadraticCurveTo(20,100,200,20)
+ctx.stroke()
+'''
+
+ctx.beginPath()
+points = [(0, 0), (10, 3), (20, 15), (30, 30), (70, 25), (100, 200)]
+ctx.moveTo(points[0][0], points[0][1])
+for i in range(1, len(points)-1):
+    console.log(str(points[i][0])+", "+str(points[i ][1]))
+    xc = (points[i][0] + points[i + 1][0]) / 2
+    yc = (points[i][1] + points[i + 1][1]) / 2
+    ctx.quadraticCurveTo(points[i][0], points[i][1], xc, yc)
+
+#curve through the last two points
+ctx.quadraticCurveTo(points[i][0], points[i][1], points[i+1][0],points[i+1][1])
+ctx.stroke()
+&lt;/script&gt;</summary><category term="G1"></category></entry><entry><title>第十四週報告示範</title><link href="http://coursemdetw.github.io/reveal/g99_w14_1.html" rel="alternate"></link><updated>2015-12-18T09:48:00+08:00</updated><author><name>9999</name></author><id>tag:coursemdetw.github.io,2015-12-18:reveal/g99_w14_1.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
 &lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
 &lt;iframe src="simplest.html" width="500" height="300"&gt;&lt;/iframe&gt;
 

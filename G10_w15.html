@@ -4,8 +4,10 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>2015FALL 作業主頁</title>
+  <title>G10_w15 &mdash; 2015FALL 作業主頁</title>
   <meta name="author" content="KMOL">
+
+
 
 
 
@@ -39,7 +41,7 @@
       <li >
         <a href="./category/g1.html">G1</a>
       </li>
-      <li >
+      <li class="active">
         <a href="./category/g10.html">G10</a>
       </li>
       <li >
@@ -57,124 +59,64 @@
 </ul></nav>
   <div id="main">
     <div id="content">
-<div class="blog-index">
-  		<article>
+<div>
+  <article class="hentry" role="article">
 <header>
-      <h1 class="entry-title">
-        <a href="./G1_w14_1.html">G1_w14_1</a>
-      </h1>
+      <h1 class="entry-title">G10_w15</h1>
     <p class="meta">
-<time datetime="2015-12-18T11:41:00+08:00" pubdate>週五 18 十二月 2015</time>    </p>
+<time datetime="2015-12-26T11:00:00+08:00" pubdate>週六 26 十二月 2015</time>    </p>
 </header>
 
-  <div class="entry-content"><p>G1_w14_1 摘要</p></div>
-  <footer>
-    <a rel="full-article" href="./G1_w14_1.html">Read On &crarr;</a>
-  </footer>
-  		</article>
-  		<article>
-<header>
-      <h1 class="entry-title">
-        <a href="./G1_w14_2.html">G1_w14_2</a>
-      </h1>
-    <p class="meta">
-<time datetime="2015-12-18T11:41:00+08:00" pubdate>週五 18 十二月 2015</time>    </p>
-</header>
+  <div class="entry-content"><h1>1-1. Python3的近端程式開發系統如何建立</h1>
+<p>*1. 從 http://www.python.org/download/ 下載 Python 3.3.1, Doc 與 test scripts 不安裝, 容量大約 26 MB.</p>
+<p>*2. 接著從 http://www.lfd.uci.edu/~gohlke/pythonlibs/#distribute 下載 distribute-0.6.36.win32-py3.3.‌exe, 安裝後約佔 </p>
+<p>30MB.</p>
+<p>*3. 接著從 http://www.lfd.uci.edu/~gohlke/pythonlibs/#pip 下載 pip-1.3.1.win32-py3.3.‌exe, 安裝後約佔 32MB.</p>
+<p>*4. 接著從 http://sourceforge.net/projects/pywin32/files/pywin32/Build%20218/ 下載 pywin32-218.win32-py3.3.exe, 安裝</p>
+<p>後約佔 58MB.</p>
+<p>*5. 接著從 http://www.riverbankcomputing.com/software/pyqt/download 下載 PyQt4-4.10-gpl-Py3.3-Qt5.0.1-x32-2.exe, Doc </p>
+<p>與 Examples 不安裝, 安裝後約佔 166MB.</p>
+<p>註: 因為安裝 PyQt4/Qt5 必須要從 http://www.microsoft.com/en-us/download/search.aspx?q=directx 更新 directx, 對於沒</p>
+<p>有更新的電腦就無法讓 Leo Editor 擷取到最新的 directx dll, 因為這不是 Leo 編輯器的問題, 而是 PyQt4 連結 Qt5 dll 所造</p>
+<p>成的問題, 目前還不知道 PyQt5 是否可以在未更新 directx 的情況下讓 2014 年即將退役的 Windows XP 正常使用 Qt5 的 dll, </p>
+<p>因此依賴 PyQt 的 Leo Editor 根本無法主動修改, 只有兩條路可以走, 就是在 PyQt4 配合 Qt5  的情況下, 更新 Windows 的 </p>
+<p>directx, 或者是回到 PyQt4 與 Qt4 的搭配, 等待 PyQt5 與 Qt5 的版本到來, 然後再看是否能在未更新 dirextx 或更新 </p>
+<p>directx 的操作系統中彼此相容.</p>
+<p>這裡我們選擇在 PyQt4/Qt4 的模式下來啟動 Leo 編輯器, 也就從  </p>
+<p>http://www.riverbankcomputing.com/software/pyqt/download 下載 PyQt4-4.10-gpl-Py3.3-Qt4.8.4-x32.exe, 而非 PyQt4-</p>
+<p>4.10-gpl-Py3.3-Qt5.0.1-x32-2.exe.</p>
+<p>*6. 接著從 http://www.lfd.uci.edu/~gohlke/pythonlibs/#docutils 下載 docutils-0.10.win32-py3.3.‌exe, 安裝後約佔 172MB.</p>
+<p>*7. 接著從 http://www.greygreen.org/leo/ 下載 leo-editor-snapshot-20130408.zip, 解開後將 leo 目錄放到 C:</p>
+<p>\Python33\Lib\site-packages\, 整個 C:\Python33 約為 190MB.</p>
+<h1>1-2.Python3的近端程式開發系統如何建立</h1>
+<p>*啟動:
+當使用者執行 start.bat 後, 系統會將 leoeditor 目錄中的 data 目錄與 Y: 硬碟對應, Y:\ 硬碟中的檔案其實就是 </p>
+<p>leoeditor/data 目錄, 兩個目錄為同步對應.</p>
+<p>假設將上述兩個壓縮檔案下載後, 直接解開到 C:\Documents and Settings\amd\My Documents\Downloads\leoeditor, 然後就可以</p>
+<p>點擊其中的 start.bat, 將會分別開啟兩個 cmd.exe 視窗, SciTE 編輯器與 Leo Editor, 這時進入 Y: 硬碟, 就可以看到 </p>
+<p>commands, exammples, Python33, tcc 與 wscite 等五個目錄, 其中 Python33 為可攜的 Python 3.3.1, tcc 為 TinyC 編譯程式</p>
+<p>, scite 則為 SciTE 編輯器.</p></div>
+    <footer>
+<p class="meta">
+  <span class="byline author vcard">
+    Posted by <span class="fn">
+        40123237
+    </span>
+  </span>
+<time datetime="2015-12-26T11:00:00+08:00" pubdate>週六 26 十二月 2015</time>  <span class="categories">
+    <a class='category' href='./category/g10.html'>G10</a>
+  </span>
+  <span class="categories">
+    <a class="category" href="./tag/g10.html">G10</a>  </span>
+</p><div class="sharing">
+</div>    </footer>
+  </article>
 
-  <div class="entry-content"><p>G1_w14_2 內容</p></div>
-  <footer>
-    <a rel="full-article" href="./G1_w14_2.html">Read On &crarr;</a>
-  </footer>
-  		</article>
-  		<article>
-<header>
-      <h1 class="entry-title">
-        <a href="./g99_w14_1.html">第十四週報告示範</a>
-      </h1>
-    <p class="meta">
-<time datetime="2015-12-18T09:48:00+08:00" pubdate>週五 18 十二月 2015</time>    </p>
-</header>
-
-  <div class="entry-content"><p>示範如何將各組員的節點資料從全班 leo 中搬出, 存入 user 學號目錄下</p></div>
-  <footer>
-    <a rel="full-article" href="./g99_w14_1.html">Read On &crarr;</a>
-  </footer>
-  		</article>
-  		<article>
-<header>
-      <h1 class="entry-title">
-        <a href="./g99_w14_2.html">如何利用 Brython 在網頁繪圖</a>
-      </h1>
-    <p class="meta">
-<time datetime="2015-12-18T09:48:00+08:00" pubdate>週五 18 十二月 2015</time>    </p>
-</header>
-
-  <div class="entry-content"><p>在網頁繪圖的3個步驟, 導入 brython.js, 啟動 brython(), 編寫 Python 繪圖程式</p></div>
-  <footer>
-    <a rel="full-article" href="./g99_w14_2.html">Read On &crarr;</a>
-  </footer>
-  		</article>
-  		<article>
-<header>
-      <h1 class="entry-title">
-        <a href="./2015cp_hw_w7.html">2015 計算機程式甲班 W7 示範</a>
-      </h1>
-    <p class="meta">
-<time datetime="2015-10-30T00:00:00+08:00" pubdate>週五 30 十月 2015</time>    </p>
-</header>
-
-  <div class="entry-content"><p>第七週學員連結</p></div>
-  <footer>
-    <a rel="full-article" href="./2015cp_hw_w7.html">Read On &crarr;</a>
-  </footer>
-  		</article>
-  		<article>
-<header>
-      <h1 class="entry-title">
-        <a href="./2015cp_note6.html">2015 計算機程式 w6</a>
-      </h1>
-    <p class="meta">
-<time datetime="2015-10-19T21:41:00+08:00" pubdate>週一 19 十月 2015</time>    </p>
-</header>
-
-  <div class="entry-content"><p>導入 notebook 內容</p></div>
-  <footer>
-    <a rel="full-article" href="./2015cp_note6.html">Read On &crarr;</a>
-  </footer>
-  		</article>
-  		<article>
-<header>
-      <h1 class="entry-title">
-        <a href="./2015cp_note1.html">2015 計算機程式 Jupyter</a>
-      </h1>
-    <p class="meta">
-<time datetime="2015-09-19T21:41:00+08:00" pubdate>週六 19 九月 2015</time>    </p>
-</header>
-
-  <div class="entry-content"><p>導入 notebook 內容</p></div>
-  <footer>
-    <a rel="full-article" href="./2015cp_note1.html">Read On &crarr;</a>
-  </footer>
-  		</article>
-  		<article>
-<header>
-      <h1 class="entry-title">
-        <a href="./2015cp_hw_w1.html">2015 電腦輔助設計實習 作業示範</a>
-      </h1>
-    <p class="meta">
-<time datetime="2015-09-19T11:41:00+08:00" pubdate>週六 19 九月 2015</time>    </p>
-</header>
-
-  <div class="entry-content"><p>作業一摘要</p></div>
-  <footer>
-    <a rel="full-article" href="./2015cp_hw_w1.html">Read On &crarr;</a>
-  </footer>
-  		</article>
-<div class="pagination">
-
-    <a class="next" href="./index.html">Newer &rarr;</a>
-  <br />
-</div></div>
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+  </section>
+</div>
 <aside class="sidebar">
   <section>
     <h1>Recent Posts</h1>
@@ -241,6 +183,9 @@
   <script src="./theme/js/octopress.js" type="text/javascript"></script>
   <script type="text/javascript">
     var disqus_shortname = '2015fall';
+    var disqus_identifier = '/G10_w15.html';
+    var disqus_url = './G10_w15.html';
+    var disqus_title = 'G10_w15';
     (function() {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
       dsq.src = "//" + disqus_shortname + '.disqus.com/embed.js';

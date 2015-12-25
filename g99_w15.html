@@ -231,7 +231,107 @@ ctx.fill()
 </div>
 </div></p>
 <p>測試看看, 上面有沒有顯示一面國旗???</p>
-<h1>答案是有, 那麼各組員就可以利用相同的架構, 把耶誕卡繪圖整合進分組報告了</h1></div>
+<h1>答案是有, 那麼各組員就可以利用相同的架構, 把耶誕卡繪圖整合進分組報告了</h1>
+<p>接下來要整合 9903 的報告內容:</p>
+<p>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>在以下的 Brython 繪圖, 我們首次運用函式, 也就是 def 的用法, 當某一個程是需要多次重複執行某一段程式, 就可以利用函式定義與呼叫來提升效率.</p>
+<p>有關函式的使用說明, 可以參考: <a href="http://pydoing.blogspot.tw/2011/01/python-function.html">http://pydoing.blogspot.tw/2011/01/python-function.html</a></p>
+<p>特別注意到, 9903 的 Brython 繪圖, 是畫在 9903_plotarea 的獨特畫布上 (600x600 大小), 而非 9902 組員的 plotarea 畫布, 假如要協同繪圖, 則由某一位組員啟動 canvas 標註定義, 然後多人選擇在同一塊畫布上繪圖.</p>
+<!-- 導入 brython_dist.js -->
+
+<script type="text/javascript" src="http://brython.info/src/brython_dist.js"></script>
+
+<!-- 啟動 brython() -->
+
+<script>
+window.onload=function(){
+brython(1);
+}
+</script>
+
+<!-- 以下利用 Brython 程式執行繪圖 -->
+
+<canvas id="9903_plotarea" width="600" height="600"></canvas>
+
+<script type="text/python3">
+import math
+from browser import html, doc
+# use plotarea as canvas
+canvas = doc["9903_plotarea"]
+# 準備在 canvas 中繪圖
+def draw_line(x1, y1, x2, y2, color="red"):
+    ctx.beginPath()
+    ctx.moveTo(x1, y1)
+    ctx.lineTo(x2, y2)
+    ctx.strokeStyle = color
+    ctx.stroke()
+# x, y 為中心,  r 為半徑, angle 旋轉角,  solid 空心或實心,  color 顏色
+def star(x, y, r, angle=0, solid=False, color="#f00"):
+    # 以 x, y 為圓心, 計算五個外點
+    deg = math.pi/180
+    # 圓心到水平線距離
+    a = r*math.cos(72*deg)
+    # a 頂點向右到內點距離
+    b = (r*math.cos(72*deg)/math.cos(36*deg))*math.sin(36*deg)
+    # 利用畢氏定理求內點半徑
+    rin = math.sqrt(a**2 + b**2)
+    # 查驗 a, b 與 rin
+    #print(a, b, rin)
+    if(solid):
+        ctx.beginPath()
+    for i in range(5):
+        xout = (x + r*math.sin((360/5)*deg*i+angle*deg))
+        yout = (y + r*math.cos((360/5)*deg*i+angle*deg))
+        # 外點增量 + 1
+        xout2 = x + r*math.sin((360/5)*deg*(i+1)+angle*deg)
+        yout2 = y + r*math.cos((360/5)*deg*(i+1)+angle*deg)
+        xin = x + rin*math.sin((360/5)*deg*i+36*deg+angle*deg)
+        yin = y + rin*math.cos((360/5)*deg*i+36*deg+angle*deg)
+        # 查驗外點與內點座標
+        #print(xout, yout, xin, yin)
+        if(solid):
+            # 填色
+            if(i==0):
+                ctx.moveTo(xout, yout)
+                ctx.lineTo(xin, yin)
+                ctx.lineTo(xout2, yout2)
+            else:
+                ctx.lineTo(xin, yin)
+                ctx.lineTo(xout2, yout2)
+        else:
+            # 空心
+            draw_line(xout, yout, xin, yin, color)
+            # 畫空心五芒星, 無關畫線次序, 若實心則與畫線次序有關
+            draw_line(xout2, yout2, xin, yin, color)
+    if(solid):
+        ctx.fillStyle = color
+        ctx.fill()
+
+ctx = canvas.getContext('2d')
+'''
+size = 30
+for i in range(size+1):
+    # 水平線
+    draw_line(100, 100+i*10, 100+size*10, 100+i*10, "black")
+    # 垂直線
+    draw_line(100+i*10, 100, 100+i*10, 100+size*10, "red")
+'''
+star(100, 100, 30, 0, True, "#f00")
+#star(300, 300, 50, 0, False, "#000")
+for i in range(5):
+    for j in range(5):
+        star(200+65*i, 200+65*j, 30, 0, False, "#000")
+
+</script>
+</div>
+</div>
+</div></p>
+<h1>在推送 9903 資料時, 又碰到必須 pull, regenerage pelican</h1></div>
     <footer>
 <p class="meta">
   <span class="byline author vcard">
@@ -258,6 +358,9 @@ ctx.fill()
     <h1>Recent Posts</h1>
     <ul id="recent_posts">
       <li class="post">
+          <a href="./G10_w15.html">G10_w15</a>
+      </li>
+      <li class="post">
           <a href="./G3_w15_1.html">G3_w15_1</a>
       </li>
       <li class="post">
@@ -268,9 +371,6 @@ ctx.fill()
       </li>
       <li class="post">
           <a href="./g99_w15.html">第十五週報告示範</a>
-      </li>
-      <li class="post">
-          <a href="./G3_w14_1.html">G3_w14_1</a>
       </li>
     </ul>
   </section>
@@ -290,7 +390,7 @@ ctx.fill()
 
   <section>
   <h1>Tags</h1>
-    <a href="./tag/w14.html">w14</a>,    <a href="./tag/pelican.html">pelican</a>,    <a href="./tag/jupyter.html">Jupyter</a>,    <a href="./tag/g3.html">G3</a>,    <a href="./tag/ipython.html">IPython</a>,    <a href="./tag/publishing.html">publishing</a>,    <a href="./tag/g10.html">G10</a>,    <a href="./tag/w15.html">w15</a>,    <a href="./tag/brython.html">Brython</a>,    <a href="./tag/g1.html">G1</a>  </section>
+    <a href="./tag/brython.html">Brython</a>,    <a href="./tag/publishing.html">publishing</a>,    <a href="./tag/g3.html">G3</a>,    <a href="./tag/g10.html">G10</a>,    <a href="./tag/ipython.html">IPython</a>,    <a href="./tag/pelican.html">pelican</a>,    <a href="./tag/w14.html">w14</a>,    <a href="./tag/w15.html">w15</a>,    <a href="./tag/jupyter.html">Jupyter</a>,    <a href="./tag/g1.html">G1</a>  </section>
 
 
     <section>
