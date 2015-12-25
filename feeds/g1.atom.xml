@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
+<feed xmlns="http://www.w3.org/2005/Atom"><title>2015FALL 作業主頁</title><link href="http://coursemdetw.github.io/reveal/" rel="alternate"></link><link href="http://coursemdetw.github.io/reveal/feeds/g1.atom.xml" rel="self"></link><id>http://coursemdetw.github.io/reveal/</id><updated>2015-12-18T11:41:00+08:00</updated><entry><title>G1_w14_1</title><link href="http://coursemdetw.github.io/reveal/G1_w14_1.html" rel="alternate"></link><updated>2015-12-18T11:41:00+08:00</updated><author><name>40423104</name></author><id>tag:coursemdetw.github.io,2015-12-18:reveal/G1_w14_1.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
+=======
 <feed xmlns="http://www.w3.org/2005/Atom"><title>2015FALL 作業主頁</title><link href="http://coursemdetw.github.io/reveal/" rel="alternate"></link><link href="http://coursemdetw.github.io/reveal/feeds/g1.atom.xml" rel="self"></link><id>http://coursemdetw.github.io/reveal/</id><updated>2015-12-25T09:55:00+08:00</updated><entry><title>G1_w15</title><link href="http://coursemdetw.github.io/reveal/G1_w15.html" rel="alternate"></link><updated>2015-12-25T09:55:00+08:00</updated><author><name>40423103</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/G1_w15.html</id><summary type="html">&lt;h1&gt;1. Python3 的近端程式開發系統如何建立? 如何啟動?&lt;/h1&gt;
 &lt;h2&gt;安裝及啟動&lt;/h2&gt;
 &lt;ol&gt;
@@ -49,6 +52,7 @@
 &lt;p&gt;&lt;a href="http://imgur.com/FxIA2DT"&gt;&lt;img src="http://i.imgur.com/FxIA2DT.jpg" title="source: imgur.com" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h1&gt;3.請利用流程圖, 簡要說明近端猜數字遊戲與猜顏色遊戲程式碼如何設計與運作&lt;/h1&gt;
 &lt;p&gt;&lt;a href="http://imgur.com/Vb0uBlB"&gt;&lt;img src="http://i.imgur.com/Vb0uBlB.jpg" title="source: imgur.com" /&gt;&lt;/a&gt;&lt;/p&gt;</summary><category term="G1"></category></entry><entry><title>G1_w14_1</title><link href="http://coursemdetw.github.io/reveal/G1_w14_1.html" rel="alternate"></link><updated>2015-12-18T11:41:00+08:00</updated><author><name>40423104</name></author><id>tag:coursemdetw.github.io,2015-12-18:reveal/G1_w14_1.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
+>>>>>>> 7870b0a4e52a9e14c664b91ad1ff5086cc335267
 &lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
 &lt;iframe src="simplest.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
@@ -160,6 +164,9 @@ for i in 1 .. 10 { 呼叫特定函式(i) }
 &lt;p&gt;註腳會連結到這裡.&amp;#160;&lt;a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
+<<<<<<< HEAD
+&lt;/div&gt;</summary><category term="G1"></category></entry><entry><title>G1_w14_2</title><link href="http://coursemdetw.github.io/reveal/G1_w14_2.html" rel="alternate"></link><updated>2015-12-18T11:41:00+08:00</updated><author><name>40423104</name></author><id>tag:coursemdetw.github.io,2015-12-18:reveal/G1_w14_2.html</id><summary type="html"></summary><category term="G1"></category></entry></feed>
+=======
 &lt;/div&gt;</summary><category term="G1"></category></entry><entry><title>G1_w14_2</title><link href="http://coursemdetw.github.io/reveal/G1_w14_2.html" rel="alternate"></link><updated>2015-12-18T11:41:00+08:00</updated><author><name>40423104</name></author><id>tag:coursemdetw.github.io,2015-12-18:reveal/G1_w14_2.html</id><summary type="html">&lt;!-- 導入 brython.js --&gt;
 
 &lt;script type="text/javascript" src="js/Brython3.2.3-20151122-082712/brython.js"&gt;&lt;/script&gt;
@@ -240,3 +247,4 @@ for i in range(1, len(points)-1):
 ctx.quadraticCurveTo(points[i][0], points[i][1], points[i+1][0],points[i+1][1])
 ctx.stroke()
 &lt;/script&gt;</summary><category term="G1"></category></entry></feed>
+>>>>>>> 7870b0a4e52a9e14c664b91ad1ff5086cc335267
