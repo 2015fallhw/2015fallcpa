@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>2015FALL 作業主頁</title><link href="http://coursemdetw.github.io/reveal/" rel="alternate"></link><link href="http://coursemdetw.github.io/reveal/feeds/all.atom.xml" rel="self"></link><id>http://coursemdetw.github.io/reveal/</id><updated>2015-12-25T11:00:00+08:00</updated><entry><title>g2 w1</title><link href="http://coursemdetw.github.io/reveal/g2_w1.html" rel="alternate"></link><updated>2015-12-25T11:00:00+08:00</updated><author><name>40423105</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/g2_w1.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>2015FALL 作業主頁</title><link href="http://coursemdetw.github.io/reveal/" rel="alternate"></link><link href="http://coursemdetw.github.io/reveal/feeds/all.atom.xml" rel="self"></link><id>http://coursemdetw.github.io/reveal/</id><updated>2015-12-25T12:00:00+08:00</updated><entry><title>G3_w15_1</title><link href="http://coursemdetw.github.io/reveal/G3_w15_1.html" rel="alternate"></link><updated>2015-12-25T12:00:00+08:00</updated><author><name>40423108</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/G3_w15_1.html</id><summary type="html">&lt;p&gt;1.利用fix.bat複製leo安裝擋與start.bat和python.properties到Ana3,並修改start.bat讓leo在近端安裝。&lt;/p&gt;</summary><category term="G3"></category></entry><entry><title>g2 w1</title><link href="http://coursemdetw.github.io/reveal/g2_w1.html" rel="alternate"></link><updated>2015-12-25T11:00:00+08:00</updated><author><name>40423105</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/g2_w1.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
 &lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
 &lt;iframe src="simplest.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
@@ -254,7 +254,8 @@ notebook --ip&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nv"&gt;%thisip%
 &lt;/div&gt;
 &lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;當然是測試看看, 能否正確導入 9901 組員所編寫的 9901_w15 ipython notebook 內容.&lt;/p&gt;
-&lt;h1&gt;經過測試無誤後, 再次提交推送&lt;/h1&gt;</summary><category term="w15"></category></entry><entry><title>G3_w14_1</title><link href="http://coursemdetw.github.io/reveal/G3_w14_1.html" rel="alternate"></link><updated>2015-12-18T12:00:00+08:00</updated><author><name>40423117</name></author><id>tag:coursemdetw.github.io,2015-12-18:reveal/G3_w14_1.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
+&lt;h1&gt;經過測試無誤後, 再次提交推送&lt;/h1&gt;
+&lt;p&gt;提交推送過程, 有發現遠端有新的版本 ,所以又執行 git pull, 拉回遠端的新資料後, 再 @button admin pelican 後, 檢查近端資料, 正確無誤後再行提交推送.&lt;/p&gt;</summary><category term="w15"></category></entry><entry><title>G3_w14_1</title><link href="http://coursemdetw.github.io/reveal/G3_w14_1.html" rel="alternate"></link><updated>2015-12-18T12:00:00+08:00</updated><author><name>40423117</name></author><id>tag:coursemdetw.github.io,2015-12-18:reveal/G3_w14_1.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
 &lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
 &lt;iframe src="simplest.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
