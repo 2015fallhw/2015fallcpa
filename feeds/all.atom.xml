@@ -172,7 +172,188 @@ ctx.moveTo(30, 370)
 ctx.lineTo(410, 370) 
 ctx.strokeStyle = "#0000ff" 
 ctx.stroke() 
-&lt;/script&gt;&lt;/div&gt;</summary><category term="w14"></category></entry><entry><title>g2 w1-1</title><link href="http://coursemdetw.github.io/reveal/g2_w1_1.html" rel="alternate"></link><updated>2015-12-25T11:00:00+08:00</updated><author><name>40423105</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/g2_w1_1.html</id><summary type="html">&lt;p&gt;g2 w1_1摘要&lt;/p&gt;</summary><category term="w14"></category></entry><entry><title>G3_w14_1</title><link href="http://coursemdetw.github.io/reveal/G3_w14_1.html" rel="alternate"></link><updated>2015-12-18T12:00:00+08:00</updated><author><name>40423117</name></author><id>tag:coursemdetw.github.io,2015-12-18:reveal/G3_w14_1.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
+&lt;/script&gt;&lt;/div&gt;</summary><category term="w14"></category></entry><entry><title>g2 w1-1</title><link href="http://coursemdetw.github.io/reveal/g2_w1_1.html" rel="alternate"></link><updated>2015-12-25T11:00:00+08:00</updated><author><name>40423105</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/g2_w1_1.html</id><summary type="html">&lt;p&gt;g2 w1_1摘要&lt;/p&gt;</summary><category term="w14"></category></entry><entry><title>g2 w15</title><link href="http://coursemdetw.github.io/reveal/g2_w15.html" rel="alternate"></link><updated>2015-12-25T10:00:00+08:00</updated><author><name>g2</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/g2_w15.html</id><summary type="html">&lt;p&gt;g2 w15分組報告&lt;/p&gt;
+&lt;p&gt;1.Python3 的近端程式開發系統如何建立? 如何啟動?
+&lt;p&gt;下載 fix和Ana3-lite2和leo-editor-broke-abbrev.zip==&amp;gt;解壓縮fix和Ana3-lite2==&amp;gt;把leo-editor-broke-abbrev.zip放到fix的資料夾==&amp;gt;修改fix.bat裡的路徑==&amp;gt;點fix然後再點start&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;2.目前已經熟悉的 Python3 指令及語法有哪些? 
+&lt;p&gt;print("""This is the strangest 
+    way to print over multiple lines i know""")可以取代\n,增加程式的美觀性,可以用+號將兩段字元加在一起&lt;/p&gt;
+ &lt;p&gt;print('hello word')打印hello word&lt;/p&gt;&lt;br /&gt;
+ &lt;p&gt;name = input("what is your name? ")輸入你的名字&lt;/p&gt; 
+ &lt;p&gt;%b :是月縮寫&lt;/p&gt;
+    &lt;p&gt;%B :是完整的月份名稱&lt;/p&gt;
+    &lt;p&gt;%y :是兩位數的年份&lt;/p&gt;
+    &lt;p&gt;%a :是一周中的天(簡短的)&lt;/p&gt;
+    &lt;p&gt;%A :是一周中的天&lt;/p&gt;
+    &lt;p&gt;%d :是該月的天  %Y :是4位數年&lt;/p&gt;
+    &lt;p&gt;%H :小時（ 24小時制）&lt;/p&gt;
+    &lt;p&gt;%I :小時（ 12小時制） %s :秒&lt;/p&gt;
+    &lt;p&gt;%p :上午或下午 %m :分鐘&lt;/p&gt;
+    &lt;p&gt;for i in range(5)重複迴圈5次&lt;/p&gt;
+    &lt;p&gt;if x&amp;gt;1;
+            y+1
+        else
+            y-1;
+            如果x大於1,y就加一,小於一,y就減一&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;3.請利用流程圖, 簡要說明近端猜數字遊戲與猜顏色遊戲程式碼如何設計與運作
+&lt;script src="https://www.gliffy.com/diagramEmbed.js" type="text/javascript"&gt;&lt;/script&gt;&lt;script type="text/javascript"&gt;gliffy_did="9703243";embedGliffy();&lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;4.請各組員利用 Brython, 分別在各分組的 pelican 網頁文章中, 繪製一個歡慶耶誕的 2D 圖形&lt;/p&gt;
+&lt;div class="entry-content"&gt;&lt;p&gt;以下利用 Brython 在網頁寫 Python 繪圖&lt;/p&gt; 
+&lt;!-- 導入 brython_dist.js --&gt;
+
+&lt;script type="text/javascript" src="js/Brython3.2.3-20151122-082712/brython.js"&gt;&lt;/script&gt; 
+
+&lt;!-- 啟動 brython() --&gt; 
+
+&lt;script&gt; 
+window.onload=function(){ 
+brython(1); 
+} 
+&lt;/script&gt; 
+
+&lt;!-- 以下利用 Brython 程式執行繪圖 --&gt; 
+
+&lt;canvas id="plotarea" width="500" height="500"&gt;&lt;/canvas&gt; 
+
+&lt;script type="text/python3"&gt; 
+# 導入 doc 
+from browser import document as doc 
+import math 
+
+# 準備繪圖畫布 
+canvas = doc["plotarea"] 
+ctx = canvas.getContext("2d") 
+
+# 開始畫直線 
+
+ctx.beginPath() 
+ctx.lineWidth = 10 
+ctx.moveTo(200,400) 
+ctx.lineTo(200,320 ) 
+ctx.strokeStyle = "#006000" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 10 
+ctx.moveTo(200, 400) 
+ctx.lineTo(240,400 ) 
+ctx.strokeStyle = "#006000" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 10 
+ctx.moveTo(240, 400) 
+ctx.lineTo(240,320) 
+ctx.strokeStyle = "#006000" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 10 
+ctx.moveTo(80,320) 
+ctx.lineTo(360,320 ) 
+ctx.strokeStyle = "#006000" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 10 
+ctx.moveTo(80,320) 
+ctx.lineTo(160,240 ) 
+ctx.strokeStyle = "#006000" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 10 
+ctx.moveTo(360,320) 
+ctx.lineTo(280,240 ) 
+ctx.strokeStyle = "#006000" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 10 
+ctx.moveTo(120,240) 
+ctx.lineTo(160,240 ) 
+ctx.strokeStyle = "#006000" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 10 
+ctx.moveTo(280,240) 
+ctx.lineTo(320,240 ) 
+ctx.strokeStyle = "#006000" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 10 
+ctx.moveTo(120,240) 
+ctx.lineTo(200,160 ) 
+ctx.strokeStyle = "#006000" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 10 
+ctx.moveTo(320,240) 
+ctx.lineTo(240,160 ) 
+ctx.strokeStyle = "#006000" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 10 
+ctx.moveTo(160,160) 
+ctx.lineTo(200,160 ) 
+ctx.strokeStyle = "#006000" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 10 
+ctx.moveTo(240,160) 
+ctx.lineTo(280,160 ) 
+ctx.strokeStyle = "#006000" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 10 
+ctx.moveTo(160,160) 
+ctx.lineTo(220,80 ) 
+ctx.strokeStyle = "#006000" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 10 
+ctx.moveTo(280,160) 
+ctx.lineTo(220,80 ) 
+ctx.strokeStyle = "#006000" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 10 
+ctx.moveTo(200,120) 
+ctx.lineTo(220,40 ) 
+ctx.strokeStyle = "#FFFF37" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 10 
+ctx.moveTo(220,40) 
+ctx.lineTo(260,120 ) 
+ctx.strokeStyle = "#FFFF37" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 10 
+ctx.moveTo(260,120) 
+ctx.lineTo(180,70 ) 
+ctx.strokeStyle = "#FFFF37" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 10 
+ctx.moveTo(180,70) 
+ctx.lineTo(270,70 ) 
+ctx.moveTo(270,70) 
+ctx.lineTo(200,120 ) 
+ctx.strokeStyle = "#FFFF37" 
+ctx.stroke() 
+&lt;/script&gt;&lt;/div&gt;</summary><category term="w15"></category></entry><entry><title>G3_w14_1</title><link href="http://coursemdetw.github.io/reveal/G3_w14_1.html" rel="alternate"></link><updated>2015-12-18T12:00:00+08:00</updated><author><name>40423117</name></author><id>tag:coursemdetw.github.io,2015-12-18:reveal/G3_w14_1.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
 &lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
 &lt;iframe src="simplest.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
@@ -454,7 +635,7 @@ for i in 1 .. 10 { 呼叫特定函式(i) }
 &lt;p&gt;註腳會連結到這裡.&amp;#160;&lt;a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</summary><category term="G10"></category></entry><entry><title>G10_w14_2</title><link href="http://coursemdetw.github.io/reveal/G10_w14_2.html" rel="alternate"></link><updated>2015-12-18T11:41:00+08:00</updated><author><name>40123237</name></author><id>tag:coursemdetw.github.io,2015-12-18:reveal/G10_w14_2.html</id><summary type="html"></summary><category term="G10"></category></entry><entry><title>G1_w14_1</title><link href="http://coursemdetw.github.io/reveal/G1_w14_1.html" rel="alternate"></link><updated>2015-12-18T11:41:00+08:00</updated><author><name>40423103</name></author><id>tag:coursemdetw.github.io,2015-12-18:reveal/G1_w14_1.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
+&lt;/div&gt;</summary><category term="G10"></category></entry><entry><title>G10_w14_2</title><link href="http://coursemdetw.github.io/reveal/G10_w14_2.html" rel="alternate"></link><updated>2015-12-18T11:41:00+08:00</updated><author><name>40123237</name></author><id>tag:coursemdetw.github.io,2015-12-18:reveal/G10_w14_2.html</id><summary type="html"></summary><category term="G10"></category></entry><entry><title>G1_w14_1</title><link href="http://coursemdetw.github.io/reveal/G1_w14_1.html" rel="alternate"></link><updated>2015-12-18T11:41:00+08:00</updated><author><name>40423104</name></author><id>tag:coursemdetw.github.io,2015-12-18:reveal/G1_w14_1.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
 &lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
 &lt;iframe src="simplest.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
@@ -566,7 +747,7 @@ for i in 1 .. 10 { 呼叫特定函式(i) }
 &lt;p&gt;註腳會連結到這裡.&amp;#160;&lt;a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</summary><category term="G1"></category></entry><entry><title>G1_w14_2</title><link href="http://coursemdetw.github.io/reveal/G1_w14_2.html" rel="alternate"></link><updated>2015-12-18T11:41:00+08:00</updated><author><name>40423103</name></author><id>tag:coursemdetw.github.io,2015-12-18:reveal/G1_w14_2.html</id><summary type="html"></summary><category term="G1"></category></entry><entry><title>g99 w14-1</title><link href="http://coursemdetw.github.io/reveal/g99_w14_1.html" rel="alternate"></link><updated>2015-12-18T09:48:00+08:00</updated><author><name>9999</name></author><id>tag:coursemdetw.github.io,2015-12-18:reveal/g99_w14_1.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
+&lt;/div&gt;</summary><category term="G1"></category></entry><entry><title>G1_w14_2</title><link href="http://coursemdetw.github.io/reveal/G1_w14_2.html" rel="alternate"></link><updated>2015-12-18T11:41:00+08:00</updated><author><name>40423104</name></author><id>tag:coursemdetw.github.io,2015-12-18:reveal/G1_w14_2.html</id><summary type="html"></summary><category term="G1"></category></entry><entry><title>g99 w14-1</title><link href="http://coursemdetw.github.io/reveal/g99_w14_1.html" rel="alternate"></link><updated>2015-12-18T09:48:00+08:00</updated><author><name>9999</name></author><id>tag:coursemdetw.github.io,2015-12-18:reveal/g99_w14_1.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
 &lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
 &lt;iframe src="simplest.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
