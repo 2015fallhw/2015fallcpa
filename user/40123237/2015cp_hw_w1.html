@@ -4,8 +4,8 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>2015 計算機程式 第一週 &mdash; 2015FALL 40123237 CPA 作業</title>
-  <meta name="author" content="40123237">
+  <title>2015 計算機程式 作業一 &mdash; 2015FALL 40423137 CPA 作業</title>
+  <meta name="author" content="40423137">
 
 
 
@@ -31,7 +31,7 @@
 
 <body>
   <header role="banner"><hgroup>
-  <h1><a href="./">2015FALL 40123237 CPA 作業</a></h1>
+  <h1><a href="./">2015FALL 40423137 CPA 作業</a></h1>
 </hgroup></header>
   <nav role="navigation"><ul class="subscription" data-subscription="rss">
 </ul>
@@ -47,127 +47,42 @@
 <div>
   <article class="hentry" role="article">
 <header>
-      <h1 class="entry-title">2015 計算機程式 第一週</h1>
+      <h1 class="entry-title">2015 計算機程式 作業一</h1>
     <p class="meta">
-<time datetime="2015-09-19T11:41:00+08:00" pubdate>週六 19 九月 2015</time>    </p>
+<time datetime="2015-11-07T00:00:00+08:00" pubdate>週六 07 十一月 2015</time>    </p>
 </header>
 
   <div class="entry-content"><p>以下為作業一內容</p>
-<p>利用 iframe 嵌入投影片:</p>
-<iframe src="40123237_cp_w1_p.html" width="500" height="300"></iframe>
+<iframe src="40423137_cp_w1_p.html" width="500" height="300"></iframe>
 
-<p><a href="40123237_cp_w1_p.html" target="_blank">作業一投影片</a></p>
-<h1>python3</h1>
-<div class="highlight"><pre><span class="c">#first:</span>
-<span class="k">print</span><span class="p">(</span><span class="s">&quot;hello&quot;</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="s">&quot;hi&quot;</span><span class="p">)</span>
-
-<span class="c">#second:</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="s">&quot;hello&quot;</span><span class="p">)</span>
-
-<span class="c">#third: example program</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
-    <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">i</span><span class="o">*</span><span class="s">&quot;hello&quot;</span><span class="p">)</span>
-</pre></div>
-
-
-<h1>Jupyter</h1>
-<p>run and save to <code>Y:\notebook\print1.ipynb</code></p>
-<div class="highlight"><pre>1.  run: example program
-2.  save as: `File &gt;&gt; Rename... &gt;&gt; save as &quot;print1&quot;`
-</pre></div>
-
-
-<h1>SciTE</h1>
-<p>run and save to <code>Y:\tmp\print1.py</code></p>
-<div class="highlight"><pre>1.  run: example program
-2.  save as: `File &gt;&gt; Save As... &gt;&gt; rename &quot;print1.py&quot;`
-</pre></div>
-
-
-<h1>cmd.exe</h1>
-<p>test run "print1.py" <code>Y:\tmp&gt;python print1.py</code></p>
-<h1>github</h1>
-<p>4 step <code>git clone &gt;&gt; add &gt;&gt; commit &gt;&gt; push</code></p>
-<div class="highlight"><pre>* step 1: copy cpbw1 HTTPS clone URL `&quot;https://github.com/學號/cpbw1.git&quot;`
-* step 2: cmd `Y:\tmp&gt;git clone https://github.com/學號/cpbw1.git`
-* step 3: copy 2 file to `Y:\tmp\cpbw1` paste
-    * 2 file: `&quot;print1.ipynb&quot; &amp; &quot;print1.py&quot;`
-* step 4: git
-</pre></div>
-
-
-<h1>note: cmd.exe 指令</h1>
-<div class="highlight"><pre>* 查詢指令: dir
-* 更換目錄: cd
-* 回上一層: cd ..
-* 跳上一個: 上鍵
-* 跳下一個: 下鍵
-</pre></div>
-
-
-<h1>python</h1>
-<div class="highlight"><pre>#[step 4.1] go to cpbw1
-Y:\tmp&gt;cd cpbw1
-
-#[step 4.2] submit update
-Y:\tmp\cpbw1&gt;git add -A
-
-#[step 4.3] submit message
-Y:\tmp\cpbw1&gt;git commit -m &quot;add two files&quot;
-
-#cmd.exe: Please tell me who you are.
-Run
-  git config --global user.email &quot;you@example.com&quot;
-  git config --global user.name &quot;Your Name&quot;
-
-#[step 4.4] user.email
-Y:\tmp\cpbw1&gt;git config --global user.email &quot;學號@nfu.edu.tw&quot;
-
-#[step 4.5] user.name
-Y:\tmp\cpbw1&gt;git config --global user.name &quot;學號&quot;
-
-#check user email &amp; name Y:\home\.gitconfig open
-[user]
-    email = 學號@gm.nfu.edu.tw
-    name = 學號
-
-#[step 4.6] submit message again
-Y:\tmp\cpbw1&gt;git commit -m &quot;add two files&quot;
-
-#cmd.exe:
-[master 版次編號] add two files
- 2 files changed, 115 insertions(+)
- create mode 100644 print1.ipynb
- create mode 100644 print1.py
-
-#[step 4.7] push to github
-Y:\tmp\cpbw1&gt;git push
-
-#[step 4.8] cmd.exe: 輸入帳密
-Username: 學校信箱
-Password: github密碼
-
-#update github\學號\cpbw1 success
-</pre></div>
-
-
-<p>~~~</p>
-<ul>
-<li><strong>網頁嵌入畫質會比較低，可以按下面的viemo點進去看!!!! </strong></li>
-</ul>
-<iframe src="https://player.vimeo.com/video/130728724" width="500" height="375" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
-<p><p><a href="https://vimeo.com/130728724">40123237</a> from <a href="https://vimeo.com/user40271183">40123237</a> on <a href="https://vimeo.com">Vimeo</a>.</p></p></div>
+<p><a href="40423137_cp_w1_p.html" target="_blank">作業一投影片</a></p>
+<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+<iframe src="https://player.vimeo.com/video/146005325" width="500" height="333" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/146005325">建立倉儲</a> from <a href="https://vimeo.com/user45109608">TommyGWOW</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+=======
+<iframe width="560" height="315" src="https://www.youtube.com/embed/n1a7o44WxNo?list=RDn1a7o44WxNo" frameborder="0" allowfullscreen></iframe></p>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>ae4f974ec09dab5c1e6a48dfe8c4727f78afcdb4</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote></div>
     <footer>
 <p class="meta">
   <span class="byline author vcard">
     Posted by <span class="fn">
-        40123237
+        40423137
     </span>
   </span>
-<time datetime="2015-09-19T11:41:00+08:00" pubdate>週六 19 九月 2015</time>  <span class="categories">
+<time datetime="2015-11-07T00:00:00+08:00" pubdate>週六 07 十一月 2015</time>  <span class="categories">
     <a class='category' href='./category/python.html'>Python</a>
   </span>
   <span class="categories">
@@ -186,19 +101,19 @@ Password: github密碼
     <h1>Recent Posts</h1>
     <ul id="recent_posts">
       <li class="post">
+          <a href="./2015cp_hw_w1.html">2015 計算機程式 作業一</a>
+      </li>
+      <li class="post">
           <a href="./2015cp_hw_w1.html">2015 計算機程式 第一週</a>
       </li>
       <li class="post">
           <a href="./2015cp_hw_w2.html">2015 計算機程式 第二週</a>
       </li>
       <li class="post">
+          <a href="./2015cp_hw_w2.html">2015 計算機程式 作業二</a>
+      </li>
+      <li class="post">
           <a href="./2015cp_hw_w3.html">2015 計算機程式 第三週</a>
-      </li>
-      <li class="post">
-          <a href="./2015cp_hw_w5.html">2015 計算機程式 第五週</a>
-      </li>
-      <li class="post">
-          <a href="./2015cp_hw_w6.html">2015 計算機程式 第六週</a>
       </li>
     </ul>
   </section>
@@ -228,14 +143,15 @@ Password: github密碼
         <ul>
             <li><a href="http://wordpress-2015course.rhcloud.com/" target="_blank">2015課程網頁</a></li>
             <li><a href="http://python.org/" target="_blank">Python</a></li>
-            <li><a href="https://github.com/40123237" target="_blank">40123237作業主頁</a></li>
+            <li><a href="../../" target="_blank">2015作業主頁</a></li>
+            <li><a href="https://github.com/40423137" target="_blank">40423137作業倉儲</a></li>
         </ul>
     </section>
 
 </aside>    </div>
   </div>
   <footer role="contentinfo"><p>
-    Copyright &copy;  2015  40123237 &mdash;
+    Copyright &copy;  2015  40423137 &mdash;
   <span class="credit">Powered by <a href="http://getpelican.com">Pelican</a></span>
 </p></footer>
   <script src="./theme/js/modernizr-2.0.js"></script>
@@ -245,7 +161,7 @@ Password: github密碼
     var disqus_shortname = '2015fall';
     var disqus_identifier = '/2015cp_hw_w1.html';
     var disqus_url = './2015cp_hw_w1.html';
-    var disqus_title = '2015 計算機程式 第一週';
+    var disqus_title = '2015 計算機程式 作業一';
     (function() {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
       dsq.src = "//" + disqus_shortname + '.disqus.com/embed.js';
