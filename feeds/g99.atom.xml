@@ -40,7 +40,9 @@
 &lt;li&gt;git commit -m "w15 report from g99"&lt;/li&gt;
 &lt;li&gt;git push origin gh-pages&lt;/li&gt;
 &lt;li&gt;輸入帳號與密碼後, 推送到遠端&lt;/li&gt;
-&lt;/ul&gt;</summary><category term="w15"></category></entry><entry><title>第十四週報告示範</title><link href="http://coursemdetw.github.io/reveal/g99_w14_1.html" rel="alternate"></link><updated>2015-12-18T09:48:00+08:00</updated><author><name>9999</name></author><id>tag:coursemdetw.github.io,2015-12-18:reveal/g99_w14_1.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
+&lt;/ul&gt;
+&lt;p&gt;推送過程, 因為距離上次 git clone 到推送期間, 已經有其他組推送新的資料, 此時 g99 近端並沒有遠端上其他組已經完成推送的資料, 因此要透過 git pull, 取回這些新的版本資料, 然後再利用 @button admin pelican 重新要求 pelican 再轉一次檔案 (why? 有誰知道?)
+並且在近端, 利用 Firefox 確定一切資料都正確無誤後, 再次提交推送.&lt;/p&gt;</summary><category term="w15"></category></entry><entry><title>第十四週報告示範</title><link href="http://coursemdetw.github.io/reveal/g99_w14_1.html" rel="alternate"></link><updated>2015-12-18T09:48:00+08:00</updated><author><name>9999</name></author><id>tag:coursemdetw.github.io,2015-12-18:reveal/g99_w14_1.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
 &lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
 &lt;iframe src="simplest.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
