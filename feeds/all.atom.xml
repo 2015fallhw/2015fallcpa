@@ -219,7 +219,87 @@ ctx.lineTo(410, 370)
 ctx.strokeStyle = "#0000ff" 
 ctx.stroke() 
 &lt;/script&gt;&lt;/div&gt;</summary><category term="w14"></category></entry><entry><title>g2 w1-1</title><link href="http://coursemdetw.github.io/reveal/g2_w1_1.html" rel="alternate"></link><updated>2015-12-25T11:00:00+08:00</updated><author><name>40423105</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/g2_w1_1.html</id><summary type="html">&lt;p&gt;g2 w1_1摘要&lt;/p&gt;</summary><category term="w14"></category></entry><entry><title>G5_w15</title><link href="http://coursemdetw.github.io/reveal/G5_w15.html" rel="alternate"></link><updated>2015-12-25T10:48:00+08:00</updated><author><name>40423125</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/G5_w15.html</id><summary type="html">&lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
-&lt;iframe src="g5_w15_1_p.html" width="500" height="300"&gt;&lt;/iframe&gt;</summary><category term="w15"></category></entry><entry><title>第十五週報告示範</title><link href="http://coursemdetw.github.io/reveal/g99_w15.html" rel="alternate"></link><updated>2015-12-25T10:48:00+08:00</updated><author><name>9999</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/g99_w15.html</id><summary type="html">&lt;p&gt;先抄一下題目:&lt;/p&gt;
+&lt;iframe src="g5_w15_1_p.html" width="500" height="300"&gt;&lt;/iframe&gt;</summary><category term="w15"></category></entry><entry><title>第十五週報告示範</title><link href="http://coursemdetw.github.io/reveal/g6_w15.html" rel="alternate"></link><updated>2015-12-25T10:48:00+08:00</updated><author><name>g6</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/g6_w15.html</id><summary type="html">&lt;p&gt;CP W15 g6分組報告:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Python3 的近端程式開發系統如何建立? 如何啟動?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;1.先到Github.leo.editor的release下載最新版本，再來打開電腦上的scite.exe檔案，將fix.bat檔案移至以開啟的scite。新增一行為copy leo-editor-broke-abbrev.zip，然後按GO。&lt;/p&gt;
+&lt;p&gt;2.再將start.bat檔案移至scite，將其第35行的網址刪掉，並貼上leo-editor-broke-abbrev.zip，然後即完成並執行，即可開啟。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;目前已經熟悉的 Python3 指令及語法有哪些? 請舉例說明.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;:單行註解&lt;/h1&gt;
+&lt;p&gt;conding:編碼&lt;/p&gt;
+&lt;p&gt;import: 導入&lt;/p&gt;
+&lt;p&gt;random:亂數&lt;/p&gt;
+&lt;p&gt;integer:轉成整數&lt;/p&gt;
+&lt;p&gt;string:轉成字串&lt;/p&gt;
+&lt;p&gt;float:轉成符點數&lt;/p&gt;
+&lt;p&gt;！=:不等於&lt;/p&gt;
+&lt;p&gt;：:還沒說完&lt;/p&gt;
+&lt;p&gt;Len:計算行列的個數&lt;/p&gt;
+&lt;p&gt;sep="符號":分隔符號&lt;/p&gt;
+&lt;p&gt;end="\n\n":跳行&lt;/p&gt;
+&lt;p&gt;while: 迴圈關鍵字&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;請利用流程圖, 簡要說明近端猜數字遊戲與猜顏色遊戲程式碼如何設計與運作.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;請各組員利用 Brython, 分別在各分組的 pelican 網頁文章中, 繪製一個歡慶耶誕的 2D 圖形.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- 導入 brython.js --&gt;
+
+&lt;script type="text/javascript" src="js/Brython3.2.3-20151122-082712/brython.js"&gt;&lt;/script&gt;
+
+&lt;!-- 啟動 brython() --&gt;
+
+&lt;script&gt;
+window.onload=function(){
+brython(1);
+}
+&lt;/script&gt;
+
+&lt;!-- 以下利用 Brython 程式執行繪圖 --&gt;
+
+&lt;canvas id="plotarea" width="500" height="500"&gt;&lt;/canvas&gt;
+
+&lt;script type="text/python3"&gt;
+# 導入 doc
+from browser import document as doc
+from browser import console
+import math
+
+# 準備繪圖畫布
+canvas = doc["plotarea"]
+ctx = canvas.getContext("2d")
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(275, 0)
+ctx.lineTo(200, 100)
+ctx.lineTo(225, 100)
+ctx.lineTo(175, 175)
+ctx.lineTo(175, 200)
+ctx.lineTo(125, 255)
+ctx.lineTo(125, 250)
+ctx.lineTo(100, 325)
+ctx.lineTo(450, 325)
+ctx.lineTo(350, 250)
+ctx.lineTo(425, 250)
+ctx.lineTo(325, 175)
+ctx.lineTo(375, 175)
+ctx.lineTo(300,  75)
+ctx.lineTo(325,  75)
+ctx.lineTo(275,   0)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+x = 100
+y = 100
+&lt;/script&gt;</summary><category term="w15"></category></entry><entry><title>第十五週報告示範</title><link href="http://coursemdetw.github.io/reveal/g99_w15.html" rel="alternate"></link><updated>2015-12-25T10:48:00+08:00</updated><author><name>9999</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/g99_w15.html</id><summary type="html">&lt;p&gt;先抄一下題目:&lt;/p&gt;
 &lt;p&gt;CP W15 分組報告:&lt;/p&gt;
 &lt;p&gt;請以組為單位, 利用 &lt;a href="http://2015fallhw.github.io/2015fallcpa/"&gt;http://2015fallhw.github.io/2015fallcpa/&lt;/a&gt; 上的 pelican 文章, 回答下列問題:&lt;/p&gt;
 &lt;ul&gt;
