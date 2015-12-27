@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>2015FALL 40423103 CPA 作業</title><link href="http://coursemdetw.github.io/reveal/" rel="alternate"></link><link href="http://coursemdetw.github.io/reveal/feeds/python.atom.xml" rel="self"></link><id>http://coursemdetw.github.io/reveal/</id><updated>2015-12-25T11:41:00+08:00</updated><entry><title>2015 計算機程式 第十五週</title><link href="http://coursemdetw.github.io/reveal/2015cpa_hw_w15.html" rel="alternate"></link><updated>2015-12-25T11:41:00+08:00</updated><author><name>40423103</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/2015cpa_hw_w15.html</id><summary type="html">&lt;!-- 導入 brython.js --&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>2015FALL 40423103 CPA 作業</title><link href="http://coursemdetw.github.io/reveal/" rel="alternate"></link><link href="http://coursemdetw.github.io/reveal/feeds/python.atom.xml" rel="self"></link><id>http://coursemdetw.github.io/reveal/</id><updated>2015-12-25T11:41:00+08:00</updated><entry><title>2015 計算機程式 第十五週</title><link href="http://coursemdetw.github.io/reveal/2015cpa_hw_w15.html" rel="alternate"></link><updated>2015-12-25T11:41:00+08:00</updated><author><name>40423103</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/2015cpa_hw_w15.html</id><summary type="html">&lt;h2&gt;Merry Christmas&lt;/h2&gt;
+&lt;h2&gt;&amp;amp;&lt;/h2&gt;
+&lt;h2&gt;Happy new year&lt;/h2&gt;
+&lt;!-- 導入 brython.js --&gt;
 
 &lt;script type="text/javascript" src="http://brython.info/src/brython_dist.js"&gt;&lt;/script&gt;
 
