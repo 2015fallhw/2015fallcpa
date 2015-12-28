@@ -41,7 +41,7 @@
 &lt;li&gt;點選開啟start.bat&lt;/li&gt;
 &lt;li&gt;成功開啟~~                &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;###影片解說###&lt;/p&gt;
+&lt;h3&gt;影片解說&lt;/h3&gt;
 &lt;iframe src="https://player.vimeo.com/video/147597320" width="1280" height="720" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 
 &lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/147597320"&gt;修正fix_leo-editor安裝&lt;/a&gt; from &lt;a href="https://vimeo.com/user45467634"&gt;劉怡萱&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;
@@ -50,10 +50,10 @@
 &lt;h1&gt;3.請利用流程圖, 簡要說明近端猜數字遊戲與猜顏色遊戲程式碼如何設計與運作&lt;/h1&gt;
 &lt;p&gt;&lt;a href="http://imgur.com/Vb0uBlB"&gt;&lt;img src="http://i.imgur.com/Vb0uBlB.jpg" title="source: imgur.com" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h1&gt;4.請各組員利用 Brython, 分別在各分組的 pelican 網頁文章中, 繪製一個歡慶耶誕的 2D 圖形&lt;/h1&gt;
-&lt;h3&gt;Merry Christmas &amp;amp; Happy New Year&lt;/h3&gt;
+&lt;h3&gt;40423103&lt;/h3&gt;
 &lt;!-- 導入 brython.js --&gt;
 
-&lt;script type="text/javascript" src="http://brython.info/src/brython_dist.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="js/Brython3.2.3-20151122-082712/G1-40423103.js"&gt;&lt;/script&gt;
 
 &lt;!-- 啟動 brython() --&gt;
 
@@ -305,6 +305,144 @@ ctx.stroke()
 window.onload=function(){
 brython(1);
 }
+&lt;/script&gt;
+
+&lt;h3&gt;40423112&lt;/h3&gt;
+&lt;!-- 導入 brython.js --&gt;
+
+&lt;script type="text/javascript" src="js/Brython3.2.3-20151122-082712/40423112.js"&gt;&lt;/script&gt;
+
+&lt;!-- 啟動 brython() --&gt;
+
+&lt;script&gt;
+window.onload=function(){
+brython(1);
+}
+&lt;/script&gt;
+
+&lt;!-- 以下利用 Brython 程式執行繪圖 --&gt;
+
+&lt;canvas id="plotarea2" width="300" height="200"&gt;&lt;/canvas&gt;
+
+&lt;script type="text/python3"&gt;
+# 導入 doc
+from browser import document as doc
+from browser import console
+import math
+
+# 準備繪圖畫布
+canvas = doc["plotarea2"]
+ctx = canvas.getContext("2d")
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 1
+ctx.moveTo(50, 0)
+ctx.lineTo(30, 30)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 1
+ctx.moveTo(50, 0)
+ctx.lineTo(70, 30)
+ctx.strokeStyle = "#0000ff"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 1
+ctx.moveTo(30,30)
+ctx.lineTo(45, 30)
+ctx.strokeStyle = "#0000ff"
+ctx.stroke() 
+
+ctx.beginPath()
+ctx.lineWidth = 1
+ctx.moveTo(70,30)
+ctx.lineTo(55, 30)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 1
+ctx.moveTo(45,30)
+ctx.lineTo(20, 65)
+ctx.strokeStyle = "#0000ff"
+ctx.stroke() 
+
+ctx.beginPath()
+ctx.lineWidth = 1
+ctx.moveTo(55,30)
+ctx.lineTo(80, 65)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke() 
+
+ctx.beginPath()
+ctx.lineWidth = 1
+ctx.moveTo(20,65)
+ctx.lineTo(40, 65)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke() 
+
+ctx.beginPath()
+ctx.lineWidth = 1
+ctx.moveTo(80,65)
+ctx.lineTo(60, 65)
+ctx.strokeStyle = "#0000ff"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 1
+ctx.moveTo(40,65)
+ctx.lineTo(10, 105)
+ctx.strokeStyle = "#0000ff"
+ctx.stroke() 
+
+ctx.beginPath()
+ctx.lineWidth = 1
+ctx.moveTo(60,65)
+ctx.lineTo(90, 105)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 1
+ctx.moveTo(10,105)
+ctx.lineTo(40, 105)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke() 
+
+ctx.beginPath()
+ctx.lineWidth = 1
+ctx.moveTo(90,105)
+ctx.lineTo(60, 105)
+ctx.strokeStyle = "#0000ff"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 1
+ctx.moveTo(40,105)
+ctx.lineTo(40, 135)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke() 
+
+ctx.beginPath()
+ctx.lineWidth = 1
+ctx.moveTo(60,105)
+ctx.lineTo(60, 135)
+ctx.strokeStyle = "#0000ff"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 1
+ctx.moveTo(60,135)
+ctx.lineTo(40, 135)
+ctx.strokeStyle = "#000000"
+ctx.stroke()
+
+x = 100
+y = 100
+
 &lt;/script&gt;</summary><category term="G1"></category></entry><entry><title>G1_w14_1</title><link href="http://coursemdetw.github.io/reveal/G1_w14_1.html" rel="alternate"></link><updated>2015-12-18T11:41:00+08:00</updated><author><name>G1</name></author><id>tag:coursemdetw.github.io,2015-12-18:reveal/G1_w14_1.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
 &lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
 &lt;iframe src="simplest.html" width="500" height="300"&gt;&lt;/iframe&gt;
@@ -419,7 +557,7 @@ for i in 1 .. 10 { 呼叫特定函式(i) }
 &lt;/ol&gt;
 &lt;/div&gt;</summary><category term="G1"></category></entry><entry><title>G1_w14_2</title><link href="http://coursemdetw.github.io/reveal/G1_w14_2.html" rel="alternate"></link><updated>2015-12-18T11:41:00+08:00</updated><author><name>G1</name></author><id>tag:coursemdetw.github.io,2015-12-18:reveal/G1_w14_2.html</id><summary type="html">&lt;!-- 導入 brython.js --&gt;
 
-&lt;script type="text/javascript" src="js/Brython3.2.3-20151122-082712/brython.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="js/Brython3.2.3-20151122-082712/G1.js"&gt;&lt;/script&gt;
 
 &lt;!-- 啟動 brython() --&gt;
 
