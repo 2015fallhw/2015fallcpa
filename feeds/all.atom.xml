@@ -218,8 +218,57 @@ ctx.moveTo(30, 370)
 ctx.lineTo(410, 370) 
 ctx.strokeStyle = "#0000ff" 
 ctx.stroke() 
-&lt;/script&gt;&lt;/div&gt;</summary><category term="w14"></category></entry><entry><title>g2 w1-1</title><link href="http://coursemdetw.github.io/reveal/g2_w1_1.html" rel="alternate"></link><updated>2015-12-25T11:00:00+08:00</updated><author><name>40423105</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/g2_w1_1.html</id><summary type="html">&lt;p&gt;g2 w1_1摘要&lt;/p&gt;</summary><category term="w14"></category></entry><entry><title>G5_w15_1</title><link href="http://coursemdetw.github.io/reveal/G5_w15_1.html" rel="alternate"></link><updated>2015-12-25T10:48:00+08:00</updated><author><name>40423131</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/G5_w15_1.html</id><summary type="html">&lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
-&lt;iframe src="g5_w15_1_p.html" width="500" height="300"&gt;&lt;/iframe&gt;</summary><category term="w15"></category></entry><entry><title>第十五週報告示範</title><link href="http://coursemdetw.github.io/reveal/g6_w15.html" rel="alternate"></link><updated>2015-12-25T10:48:00+08:00</updated><author><name>g6</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/g6_w15.html</id><summary type="html">&lt;p&gt;CP W15 g6分組報告:&lt;/p&gt;
+&lt;/script&gt;&lt;/div&gt;</summary><category term="w14"></category></entry><entry><title>g2 w1-1</title><link href="http://coursemdetw.github.io/reveal/g2_w1_1.html" rel="alternate"></link><updated>2015-12-25T11:00:00+08:00</updated><author><name>40423105</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/g2_w1_1.html</id><summary type="html">&lt;p&gt;g2 w1_1摘要&lt;/p&gt;</summary><category term="w14"></category></entry><entry><title>G5_w15_1</title><link href="http://coursemdetw.github.io/reveal/G5_w15_1.html" rel="alternate"></link><updated>2015-12-25T10:48:00+08:00</updated><author><name>40423125</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/G5_w15_1.html</id><summary type="html">&lt;p&gt;1.建立&lt;/p&gt;
+&lt;p&gt;我們先利用gogle搜尋leo editor並且進入下載最新版的資料!&lt;/p&gt;
+&lt;p&gt;然後進課程網頁http://wordpress-2015course.rhcloud.com/?page_id=3633 下載fix檔!&lt;/p&gt;
+&lt;p&gt;fix解壓縮後把剛剛下載的ieo editor放入!開啟scite編輯器修改fix.bat--copy leo-editor-broke-abbrev.zip C:\Ana3_2015\data\&lt;/p&gt;
+&lt;p&gt;然後修改start.bat--第35行pip install leo-editor-broke-abbrev.zip,近端的python3就完成了!!&lt;/p&gt;
+&lt;p&gt;2.啟動&lt;/p&gt;
+&lt;p&gt;我們由start.bat可以充分理解它啟動了那些東西&lt;/p&gt;
+&lt;p&gt;REM 啟動 Jupyter&lt;/p&gt;
+&lt;p&gt;cd tmp&lt;/p&gt;
+&lt;p&gt;start %Disk%:\Anaconda3\python.exe "%Disk%:\Anaconda3\Scripts\ipython-script.py" notebook --ip=%thisip% --certfile=%Disk%:\home\ssl_cert.pem --profile=nbserver&lt;/p&gt;
+&lt;p&gt;REM 利用 pip install pelilcan 與 Markdown,
+pip install leo-editor-broke-abbrev.zip&lt;/p&gt;
+&lt;p&gt;REM 啟動 VMEmulator
+REM start %Disk%:\apps\nand2tetris\tools\VMEmulator.bat&lt;/p&gt;
+&lt;p&gt;REM 啟動 Assembler
+REM start %Disk%:\apps\nand2tetris\tools\Assembler.bat&lt;/p&gt;
+&lt;p&gt;REM 啟動 CPUEmulator
+REM start %Disk%:\apps\nand2tetris\tools\CPUEmulator.bat&lt;/p&gt;
+&lt;p&gt;REM 啟動 HardwareSimulator
+REM start %Disk%:\apps\nand2tetris\tools\HardwareSimulator.bat&lt;/p&gt;
+&lt;p&gt;REM 啟動 JackCompiler
+REM start %Disk%:\apps\nand2tetris\tools\JackCompiler.bat&lt;/p&gt;
+&lt;p&gt;REM 啟動 TextComparer
+REM start %Disk%:\apps\nand2tetris\tools\TextComparer.bat&lt;/p&gt;
+&lt;p&gt;REM 啟動 node.js
+REM start /MIN cmd.exe /k "%Disk%:\nodejs\nodejsvars.bat"&lt;/p&gt;
+&lt;p&gt;REM start %Disk%:\nodejs\node.exe
+start /MIN cmd.exe&lt;/p&gt;
+&lt;p&gt;REM start %Disk%:\IDE\nodejs\node.exe
+REM C:\WINDOWS\system32\cmd.exe /k %Disk%:\IDE\nodejs\nodejsvars.bat&lt;/p&gt;
+&lt;p&gt;REM 啟動 Leo 編輯器&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;目前已經熟悉的 Python3 指令及語法有哪些? 請舉例說明.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;conding:編碼&lt;/p&gt;
+&lt;p&gt;#:單行註解&lt;/p&gt;
+&lt;p&gt;random:亂數&lt;/p&gt;
+&lt;p&gt;import: 導入&lt;/p&gt;
+&lt;p&gt;string:轉成字串&lt;/p&gt;
+&lt;p&gt;integer:轉成整數&lt;/p&gt;
+&lt;p&gt;！=:不等於&lt;/p&gt;
+&lt;p&gt;float:轉成符點數&lt;/p&gt;
+&lt;p&gt;::還沒說完&lt;/p&gt;
+&lt;p&gt;end="\n\n":跳行&lt;/p&gt;
+&lt;p&gt;sep="符號":分隔符號&lt;/p&gt;
+&lt;p&gt;Len:計算行列的個數&lt;/p&gt;
+&lt;p&gt;while: 迴圈&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;請利用流程圖, 簡要說明近端猜數字遊戲與猜顏色遊戲程式碼如何設計與運作.
+猜數字遊戲&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="w15"></category></entry><entry><title>第十五週報告示範</title><link href="http://coursemdetw.github.io/reveal/g6_w15.html" rel="alternate"></link><updated>2015-12-25T10:48:00+08:00</updated><author><name>g6</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/g6_w15.html</id><summary type="html">&lt;p&gt;CP W15 g6分組報告:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Python3 的近端程式開發系統如何建立? 如何啟動?&lt;/li&gt;
 &lt;/ul&gt;

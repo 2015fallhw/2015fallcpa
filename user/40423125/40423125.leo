@@ -19,9 +19,10 @@
 <v t="leo.20151225095716.3" a="E"><vh>@path pelican</vh>
 <v t="leo.20151225095716.4"><vh>@edit publishconf.py</vh></v>
 <v t="leo.20151225095716.5" a="E"><vh>@path content</vh>
-<v t="leo.20151225095716.6"><vh>@edit g5_w14_1.md</vh></v>
-<v t="leo.20151225095716.7"><vh>@edit g5_w14_2.md</vh></v>
-<v t="leo.20151225100414.1"><vh>@edit g5_w15.md</vh></v>
+<v t="leo.20160103200710.1"><vh>@edit G5_w14_1.md</vh></v>
+<v t="leo.20160103200720.1"><vh>@edit G5_w14_2.md</vh></v>
+<v t="leo.20160103200805.1"><vh>@edit G5_w15_1.md</vh></v>
+<v t="leo.20160103200817.1"><vh>@edit G5_w15_2.md</vh></v>
 </v>
 </v>
 <v t="leo.20151225104525.1"><vh>以下為投影片 ------------</vh></v>
