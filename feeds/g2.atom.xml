@@ -432,5 +432,204 @@ ctx.closePath();
 ctx.fill();
 &lt;/script&gt;
 
+&lt;h3&gt;40423116&lt;/h3&gt;
+&lt;!-- 導入 brython.js --&gt;
+
+&lt;script type="text/javascript" src="js/Brython3.2.3-20151122-082712/40423112.js"&gt;&lt;/script&gt;
+
+&lt;!-- 啟動 brython() --&gt;
+
+&lt;script&gt;
+window.onload=function(){
+brython(1);
+}
+&lt;/script&gt;
+
+&lt;!-- 以下利用 Brython 程式執行繪圖 --&gt;
+
+&lt;canvas id="plotarea2" width="500" height="500"&gt;&lt;/canvas&gt;
+
+&lt;script type="text/python3"&gt;
+# 導入 doc
+from browser import document as doc
+from browser import console
+import math
+
+# 準備繪圖畫布
+canvas = doc["plotarea2"]
+ctx = canvas.getContext("2d")
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 10
+ctx.moveTo(10, 250)
+ctx.lineTo(240, 250)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 10
+ctx.moveTo(240, 250)
+ctx.lineTo(240, 330)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 10
+ctx.moveTo(240, 330)
+ctx.lineTo(10, 330)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 10
+ctx.moveTo(10, 330)
+ctx.lineTo(10, 250)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 10
+ctx.moveTo(30, 330)
+ctx.lineTo(30, 490)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 10
+ctx.moveTo(30, 490)
+ctx.lineTo(220, 490)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 10
+ctx.moveTo(220, 490)
+ctx.lineTo(220, 330)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 10
+ctx.moveTo(260, 250)
+ctx.lineTo(490, 250)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 10
+ctx.moveTo(490, 250)
+ctx.lineTo(490, 330)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 10
+ctx.moveTo(490, 330)
+ctx.lineTo(260, 330)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 10
+ctx.moveTo(260, 330)
+ctx.lineTo(260, 250)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 10
+ctx.moveTo(280, 330)
+ctx.lineTo(280, 490)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 10
+ctx.moveTo(280, 490)
+ctx.lineTo(470, 490)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 10
+ctx.moveTo(470, 490)
+ctx.lineTo(470, 330)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 10
+ctx.moveTo(135, 10)
+ctx.lineTo(365, 10)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 10
+ctx.moveTo(365, 10)
+ctx.lineTo(365, 90)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 10
+ctx.moveTo(365, 90)
+ctx.lineTo(135, 90)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 10
+ctx.moveTo(135, 90)
+ctx.lineTo(135, 10)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 10
+ctx.moveTo(155, 90)
+ctx.lineTo(155, 250)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 10
+ctx.moveTo(155, 250)
+ctx.lineTo(345, 250)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 10
+ctx.moveTo(345, 250)
+ctx.lineTo(345, 90)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 50
+ctx.moveTo(125, 495)
+ctx.lineTo(125, 245)
+ctx.strokeStyle = "#00FFFF"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 50
+ctx.moveTo(375, 495)
+ctx.lineTo(375, 245)
+ctx.strokeStyle = "#00FFFF"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 50
+ctx.moveTo(250, 255)
+ctx.lineTo(250, 5)
+ctx.strokeStyle = "#00FFFF"
+ctx.stroke()
+
+
+&lt;/script&gt;
+
 &lt;p&gt;&lt;/body&gt;
 &lt;/html&gt;&lt;/p&gt;</summary><category term="w15"></category></entry></feed>
