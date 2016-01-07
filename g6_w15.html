@@ -63,6 +63,9 @@
         <a href="./category/g8.html">G8</a>
       </li>
       <li >
+        <a href="./category/g9.html">G9</a>
+      </li>
+      <li >
         <a href="./category/g99.html">G99</a>
       </li>
       <li >
@@ -159,6 +162,51 @@ ctx.stroke()
 
 x = 100
 y = 100
+</script>
+
+<!-- 導入 brython.js -->
+
+<script type="text/javascript" src="js/Brython3.2.3-20151122-082712/40423112.js"></script>
+
+<!-- 啟動 brython() -->
+
+<script>
+window.onload=function(){
+brython(1);
+}
+</script>
+
+<!-- 以下利用 Brython 程式執行繪圖 -->
+
+<canvas id="plotarea2" width="500" height="500"></canvas>
+
+<script type="text/python3">
+# 導入 doc
+from browser import document as doc
+from browser import console
+import math
+
+# 準備繪圖畫布
+canvas = doc["plotarea2"]
+ctx = canvas.getContext("2d")
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(250, 200)
+ctx.lineTo(150, 300)
+ctx.lineTo(200, 300)
+ctx.lineTo(100, 400)
+ctx.lineTo(200, 400)
+ctx.lineTo(200, 500)
+ctx.lineTo(300, 500)
+ctx.lineTo(300, 400)
+ctx.lineTo(400, 400)
+ctx.lineTo(300, 300)
+ctx.lineTo(350, 300)
+ctx.lineTo(250, 200)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
 </script></div>
     <footer>
 <p class="meta">
@@ -214,6 +262,7 @@ y = 100
         <li><a href="./category/g6.html">g6</a></li>
         <li><a href="./category/g7.html">g7</a></li>
         <li><a href="./category/g8.html">g8</a></li>
+        <li><a href="./category/g9.html">G9</a></li>
         <li><a href="./category/g99.html">g99</a></li>
         <li><a href="./category/python.html">Python</a></li>
     </ul>
@@ -222,7 +271,7 @@ y = 100
 
   <section>
   <h1>Tags</h1>
-    <a href="./tag/g3.html">G3</a>,    <a href="./tag/brython.html">Brython</a>,    <a href="./tag/w15.html">w15</a>,    <a href="./tag/publishing.html">publishing</a>,    <a href="./tag/jupyter.html">Jupyter</a>,    <a href="./tag/g1.html">G1</a>,    <a href="./tag/ipython.html">IPython</a>,    <a href="./tag/w14.html">w14</a>,    <a href="./tag/g10.html">G10</a>,    <a href="./tag/pelican.html">pelican</a>  </section>
+    <a href="./tag/w15.html">w15</a>,    <a href="./tag/g1.html">G1</a>,    <a href="./tag/g3.html">G3</a>,    <a href="./tag/ipython.html">IPython</a>,    <a href="./tag/publishing.html">publishing</a>,    <a href="./tag/w14.html">w14</a>,    <a href="./tag/pelican.html">pelican</a>,    <a href="./tag/jupyter.html">Jupyter</a>,    <a href="./tag/g10.html">G10</a>,    <a href="./tag/brython.html">Brython</a>  </section>
 
 
     <section>

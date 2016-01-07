@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>2015 計算機程式 w13 &mdash; 2015FALL 40423116 CPA 作業</title>
+  <meta name="author" content="40423116">
+
+
+
+
+
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link href="./favicon.png" rel="icon">
+
+  <link href="./theme/css/main.css" media="screen, projection"
+        rel="stylesheet" type="text/css">
+
+  <link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic"
+        rel="stylesheet" type="text/css">
+  <link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic"
+        rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <header role="banner"><hgroup>
+  <h1><a href="./">2015FALL 40423116 CPA 作業</a></h1>
+</hgroup></header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+</ul>
+
+
+<ul class="main-navigation">
+      <li class="active">
+        <a href="./category/python.html">Python</a>
+      </li>
+</ul></nav>
+  <div id="main">
+    <div id="content">
+<div>
+  <article class="hentry" role="article">
+<header>
+      <h1 class="entry-title">2015 計算機程式 w13</h1>
+    <p class="meta">
+<time datetime="2015-12-11T11:41:00+08:00" pubdate>週五 11 十二月 2015</time>    </p>
+</header>
+
+  <div class="entry-content"><p>以下為作業13內容內容</p>
+<p>利用 iframe 嵌入投影片:</p>
+<iframe src="40423116_cp_w13_p.html" width="500" height="300"></iframe>
+
+<p><a href="40423116_cp_w13_p.html" target="_blank">作業十三投影片</a></p>
+<p>List程式:抽點名</p>
+<div class="highlight"><pre>cpa_number=[&#39; 40123227&#39;,&#39; 40123237&#39;,&#39; 40123256&#39;,&#39; 40423101&#39;,&#39; 40423103&#39;,&#39; 40423104&#39;,&#39; 40423105&#39;,&#39; 40423106&#39;,&#39; 40423107&#39;,&#39; 40423108&#39;,&#39; 40423109&#39;,&#39; 40423110&#39;,&#39; 40423111&#39;,&#39; 40423112&#39;,&#39; 40423113&#39;,&#39; 40423114&#39;,&#39; 40423115&#39;,&#39; 40423116&#39;,&#39; 40423117&#39;,&#39; 40423118&#39;,&#39; 40423119&#39;,&#39; 40423120&#39;,&#39; 40423121&#39;,&#39; 40423122&#39;,&#39; 40423123&#39;,&#39; 40423124&#39;,&#39; 40423125&#39;,&#39; 40423126&#39;,&#39; 40423127&#39;,&#39; 40423128&#39;,&#39; 40423129&#39;,&#39; 40423130&#39;,&#39; 40423131&#39;,&#39; 40423132&#39;,&#39; 40423133&#39;,&#39; 40423134&#39;,&#39; 40423135&#39;,&#39; 40423136&#39;,&#39; 40423137&#39;,&#39; 40423138&#39;,&#39; 40423139&#39;,&#39; 40423140&#39;,&#39; 40423141&#39;,&#39; 40423142&#39;,&#39; 40423143&#39;,&#39; 40423144&#39;,&#39; 40423145&#39;,&#39; 40423146&#39;,&#39; 40423147&#39;,&#39; 40423148&#39;,&#39; 40423149&#39;,&#39; 40423150&#39;,&#39; 40423152&#39;,&#39; 40423153&#39;,&#39; 40423154&#39;,&#39; 40423155&#39;]
+cpa_name=[&#39; 紀培俞&#39;, &#39; 陳琨揚&#39;,&#39; 蘇建瑋&#39;,&#39; 曾宜萱&#39;,&#39; 劉怡萱&#39;,&#39; 顏暄&#39;,&#39; 王奕智&#39;,&#39; 王翔佑&#39;,&#39; 史育澤&#39;,&#39; 江心平&#39;,&#39; 何宗哲&#39;,&#39; 余浩鋼&#39;,&#39; 吳承翰&#39;,&#39; 吳欣奕&#39;,&#39; 吳冠毅&#39;,&#39; 李希凡&#39;,&#39; 李尚瑋&#39;,&#39; 李冠辰&#39;,&#39; 李國豪&#39;,&#39; 阮伯宗&#39;,&#39; 周嘉原&#39;,&#39; 林尚漢&#39;,&#39; 林秉憲&#39;,&#39; 林國蓁&#39;,&#39; 林嘉文&#39;,&#39; 林濬翔&#39;,&#39; 邱弘承&#39;,&#39; 紀均瀚&#39;,&#39; 范展榕&#39;,&#39; 徐聖倫&#39;,&#39; 張俊鴻&#39;,&#39; 張勝雄&#39;,&#39; 許承恩&#39;,&#39; 郭力維&#39;,&#39; 郭政修&#39;,&#39; 陳正凱&#39;,&#39; 陳冠錡&#39;,&#39; 陳柏維&#39;,&#39; 陳慶豪&#39;,&#39; 傅仁禹&#39;,&#39; 曾繼緯&#39;,&#39; 黃子晏&#39;,&#39; 黃羿誠&#39;,&#39; 黃興煜&#39;,&#39; 楊智勝&#39;,&#39; 葉宗翰&#39;,&#39; 廖先博&#39;,&#39; 廖祈安&#39;,&#39; 劉孟璋&#39;,&#39; 劉佑程&#39;,&#39; 蔡悌仁&#39;,&#39; 鄭邦宏&#39;,&#39; 賴浚珅&#39;,&#39; 簡登瑋&#39;,&#39; 闕崇晉&#39;,&#39; 蘇麒彬&#39;]
+g2_number=[&#39;40423105&#39;,&#39;40423106&#39;,&#39;40423107&#39;,&#39;40423114&#39;,&#39;40423115&#39;,&#39;40423116&#39;]
+g2_name=[&#39;王奕智&#39;,&#39;王翔佑&#39;,&#39;史育澤&#39;,&#39;李希凡&#39;,&#39;李尚瑋&#39;,&#39;李冠辰&#39;]
+
+#第2組組員有多少，有哪些人?
+print(&#39;g2組員:&#39;, len(g2_number),&#39;人&#39;)
+
+print(&#39;成員:&#39;)
+
+for i in range(len(g2_number)):
+     print( g2_number[i], g2_name[i])
+
+
+print(&#39;-----分隔-----&#39;)
+
+
+#班上幾個人? 抽點名點多少人? 抽到誰?
+print(&#39;班上有&#39;,len(cpa_number),&#39;人&#39;)
+
+import random
+total_number=len(cpa_number)
+roll_number= int(input(&quot;抽點幾位?&quot;))
+
+for i in range(roll_number):
+     check = random.randint(0,total_number -1)
+     print(cpa_number[check],cpa_name[check])
+</pre></div>
+
+
+<iframe src="https://player.vimeo.com/video/151022090" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+<p><a href="https://vimeo.com/151022090">list</a> from <a href="https://vimeo.com/user47573583">40423116</a> on <a href="https://vimeo.com">Vimeo</a>.</p></div>
+    <footer>
+<p class="meta">
+  <span class="byline author vcard">
+    Posted by <span class="fn">
+        40423116
+    </span>
+  </span>
+<time datetime="2015-12-11T11:41:00+08:00" pubdate>週五 11 十二月 2015</time>  <span class="categories">
+    <a class='category' href='./category/python.html'>Python</a>
+  </span>
+  <span class="categories">
+    <a class="category" href="./tag/pelican.html">pelican</a>,    <a class="category" href="./tag/publishing.html">publishing</a>  </span>
+</p><div class="sharing">
+</div>    </footer>
+  </article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+  </section>
+</div>
+<aside class="sidebar">
+  <section>
+    <h1>Recent Posts</h1>
+    <ul id="recent_posts">
+      <li class="post">
+          <a href="./2015cp_hw_w13.html">2015 計算機程式 w13</a>
+      </li>
+      <li class="post">
+          <a href="./2015cp_hw_w14.html">2015 計算機程式 w14</a>
+      </li>
+      <li class="post">
+          <a href="./2015cp_hw_w12.html">2015 計算機程式 w12</a>
+      </li>
+      <li class="post">
+          <a href="./2015cp_hw_w11.html">2015 計算機程式 w11</a>
+      </li>
+      <li class="post">
+          <a href="./2015cp_hw_w1.html">2015 計算機程式 期中報告(1~8)</a>
+      </li>
+    </ul>
+  </section>
+  <section>
+      
+    <h1>Categories</h1>
+    <ul id="recent_posts">
+        <li><a href="./category/python.html">Python</a></li>
+    </ul>
+  </section>
+ 
+
+  <section>
+  <h1>Tags</h1>
+    <a href="./tag/publishing.html">publishing</a>,    <a href="./tag/pelican.html">pelican</a>  </section>
+
+
+    <section>
+        <h1>Social</h1>
+        <ul>
+            <li><a href="http://twitter.com/ametaireau" target="_blank">twitter</a></li>
+            <li><a href="http://github.com/ametaireau" target="_blank">github</a></li>
+        </ul>
+    </section>
+    <section>
+        <h1>Blogroll</h1>
+        <ul>
+            <li><a href="http://wordpress-2015course.rhcloud.com/" target="_blank">2015課程網頁</a></li>
+            <li><a href="http://python.org/" target="_blank">Python</a></li>
+            <li><a href="../../" target="_blank">2015作業主頁</a></li>
+            <li><a href="http://40423116.github.io/cpaw2/" target="_blank">個人倉儲</a></li>
+        </ul>
+    </section>
+
+</aside>    </div>
+  </div>
+  <footer role="contentinfo"><p>
+    Copyright &copy;  2015  40423116 &mdash;
+  <span class="credit">Powered by <a href="http://getpelican.com">Pelican</a></span>
+</p></footer>
+  <script src="./theme/js/modernizr-2.0.js"></script>
+  <script src="./theme/js/ender.js"></script>
+  <script src="./theme/js/octopress.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    var disqus_shortname = '2015fall';
+    var disqus_identifier = '/2015cp_hw_w13.html';
+    var disqus_url = './2015cp_hw_w13.html';
+    var disqus_title = '2015 計算機程式 w13';
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = "//" + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+     })();
+  </script>
+</body>
+</html>

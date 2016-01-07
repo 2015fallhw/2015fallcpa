@@ -63,6 +63,9 @@
         <a href="./category/g8.html">G8</a>
       </li>
       <li >
+        <a href="./category/g9.html">G9</a>
+      </li>
+      <li >
         <a href="./category/g99.html">G99</a>
       </li>
       <li >
@@ -79,57 +82,455 @@
 <time datetime="2015-12-25T10:48:00+08:00" pubdate>週五 25 十二月 2015</time>    </p>
 </header>
 
-  <div class="entry-content"><p>1.建立</p>
+  <div class="entry-content"><p>1.Python3 的近端程式開發系統如何建立? 如何啟動?</p>
+<p>2.目前已經熟悉的 Python3 指令及語法有哪些? 請舉例說明</p>
+<p>3.請利用流程圖, 簡要說明近端猜數字遊戲與猜顏色遊戲程式碼如何設計與運作.</p>
+<p>4.請各組員利用 Brython, 分別在各分組的 pelican 網頁文章中, 繪製一個歡慶耶誕的 2D 圖形.</p>
+<p><font color=blue>1.建立</font></p>
 <p>我們先利用gogle搜尋leo editor並且進入下載最新版的資料!</p>
-<p>然後進課程網頁http://wordpress-2015course.rhcloud.com/?page_id=3633 下載fix檔!</p>
+<p>然後進課程網頁<font color=red>http://wordpress-2015course.rhcloud.com/?page_id=3633</font>下載fix檔!</p>
 <p>fix解壓縮後把剛剛下載的ieo editor放入!開啟scite編輯器修改fix.bat--copy leo-editor-broke-abbrev.zip C:\Ana3_2015\data\</p>
 <p>然後修改start.bat--第35行pip install leo-editor-broke-abbrev.zip,近端的python3就完成了!!</p>
-<p>2.啟動</p>
+<p><font color=blue>啟動</font></p>
 <p>我們由start.bat可以充分理解它啟動了那些東西</p>
-<p>REM 啟動 Jupyter</p>
+<p><font color=red>REM 啟動 Jupyter</font></p>
 <p>cd tmp</p>
 <p>start %Disk%:\Anaconda3\python.exe "%Disk%:\Anaconda3\Scripts\ipython-script.py" notebook --ip=%thisip% --certfile=%Disk%:\home\ssl_cert.pem --profile=nbserver</p>
-<p>REM 利用 pip install pelilcan 與 Markdown,
-pip install leo-editor-broke-abbrev.zip</p>
-<p>REM 啟動 VMEmulator
+<p><font color=red>REM 利用 pip install pelilcan 與 Markdown,
+pip install leo-editor-broke-abbrev.zip</font></p>
+<p><font color=red>REM 啟動 VMEmulator</font>
 REM start %Disk%:\apps\nand2tetris\tools\VMEmulator.bat</p>
-<p>REM 啟動 Assembler
+<p><font color=red>REM 啟動 Assembler</font>
 REM start %Disk%:\apps\nand2tetris\tools\Assembler.bat</p>
-<p>REM 啟動 CPUEmulator
+<p><font color=red>REM 啟動 CPUEmulator</font>
 REM start %Disk%:\apps\nand2tetris\tools\CPUEmulator.bat</p>
-<p>REM 啟動 HardwareSimulator
+<p><font color=red>REM 啟動 HardwareSimulator</font>
 REM start %Disk%:\apps\nand2tetris\tools\HardwareSimulator.bat</p>
-<p>REM 啟動 JackCompiler
+<p><font color=red>REM 啟動 JackCompiler</font>
 REM start %Disk%:\apps\nand2tetris\tools\JackCompiler.bat</p>
-<p>REM 啟動 TextComparer
+<p><font color=red>REM 啟動 TextComparer</font>
 REM start %Disk%:\apps\nand2tetris\tools\TextComparer.bat</p>
-<p>REM 啟動 node.js
+<p><font color=red>REM 啟動 node.js</font>
 REM start /MIN cmd.exe /k "%Disk%:\nodejs\nodejsvars.bat"</p>
 <p>REM start %Disk%:\nodejs\node.exe
 start /MIN cmd.exe</p>
 <p>REM start %Disk%:\IDE\nodejs\node.exe
 REM C:\WINDOWS\system32\cmd.exe /k %Disk%:\IDE\nodejs\nodejsvars.bat</p>
-<p>REM 啟動 Leo 編輯器</p>
-<ul>
-<li>目前已經熟悉的 Python3 指令及語法有哪些? 請舉例說明.</li>
-</ul>
-<p>conding:編碼</p>
-<p>#:單行註解</p>
-<p>random:亂數</p>
-<p>import: 導入</p>
-<p>string:轉成字串</p>
-<p>integer:轉成整數</p>
-<p>！=:不等於</p>
-<p>float:轉成符點數</p>
-<p>::還沒說完</p>
-<p>end="\n\n":跳行</p>
-<p>sep="符號":分隔符號</p>
-<p>Len:計算行列的個數</p>
-<p>while: 迴圈</p>
-<ul>
-<li>請利用流程圖, 簡要說明近端猜數字遊戲與猜顏色遊戲程式碼如何設計與運作.
-猜數字遊戲</li>
-</ul></div>
+<p><font color=red>REM 啟動 Leo 編輯器</font></p>
+<p><font color=blue>2.目前已經熟悉的 Python3 指令及語法有哪些? 請舉例說明.</font></p>
+<p><font color=purple>conding:編碼</font></p>
+<p><font color=purple>#:單行註解</font></p>
+<p><font color=purple>random:亂數</font></p>
+<p><font color=purple>import: 導入</font></p>
+<p><font color=purple>string:轉成字串</font></p>
+<p><font color=purple>integer:轉成整數</font></p>
+<p><font color=purple>！=:不等於</font></p>
+<p><font color=purple>float:轉成符點數</font></p>
+<p><font color=purple>[]: 數列</font></p>
+<p><font color=purple>::還沒說完</font></p>
+<p><font color=purple>end="\n\n":跳行</font></p>
+<p><font color=purple>sep="符號":分隔符號</font></p>
+<p><font color=purple>Len:計算行列的個數</font></p>
+<p><font color=purple>while: 迴圈</font></p>
+<p>3.請利用流程圖, 簡要說明近端猜數字遊戲與猜顏色遊戲程式碼如何設計與運作.
+猜數字遊戲</p>
+<p><font color=blue>猜數字流程圖</font>
+<script src="https://www.gliffy.com/diagramEmbed.js" type="text/javascript"></script><script type="text/javascript">gliffy_did="9733113";embedGliffy();</script></p>
+<p><font color=blue>猜顏色程式碼</font></p>
+<p>import random</p>
+<p>產生標準答案</p>
+<p>利用 list 數列資料型別建立顏色選項</p>
+<p>Red 紅色, White 白色, Yellow 黃色, Green 綠色, Blue 藍色, Purple 紫色
+ 假設顏色值不會重複</p>
+<p>print('''遊戲規則說明: 可選顏色值, \nRed 紅色, White 白色, Yellow 黃色, Green 綠色, \nBlue 藍色, Purple 紫色, \nRBYGBP, \nX 表示位置與顏色都對, O 表示顏色對, 但是位置不對.''')</p>
+<p>顏色選項 = ["R", "W", "Y", "G", "B", "P"]</p>
+<p>標準答案 = random.sample(顏色選項, 4)  </p>
+<p>print (標準答案)</p>
+<p>顏色字串 = ""</p>
+<p>幾次決勝 = 9</p>
+<p>猜測次數 = 0</p>
+<p>遊戲進行中 = True</p>
+<p>print ("總共有", 幾次決勝 - 猜測次數, "次機會,可以猜!")</p>
+<p>for i in range(len(顏色選項)):</p>
+<p>顏色字串 += 顏色選項[i]</p>
+<p>print (顏色字串)</p>
+<p>while 遊戲進行中:</p>
+<p>位置顏色都正確 = ""</p>
+<p>顏色對位置錯 = ""</p>
+<p>將使用者的輸入轉為大寫英文字母</p>
+<p>使用者猜測輸入 = input("請從下列顏色值中選四個, "+顏色字串+": ").upper()</p>
+<p>猜測次數 += 1</p>
+<p>檢驗是否輸入四個顏色字母</p>
+<p>if len(使用者猜測輸入) != len(標準答案):</p>
+<p>print ("\n只能猜四個顏色, 請重猜!")</p>
+<p>print ("\n剩下", 幾次決勝 - 猜測次數, "次機會,可以猜: ")</p>
+<p>continue</p>
+<p>判斷是否重複選擇相同顏色</p>
+<p>if len(使用者猜測輸入) &gt; len(set(使用者猜測輸入)):</p>
+<p>print ("\n顏色值不能重複！")</p>
+<p>print ("\n剩下", 幾次決勝 - 猜測次數, "次機會,可以猜: ")</p>
+<p>continue</p>
+<p>for i in range(4):</p>
+<p>判斷是否從顏色選項輸入</p>
+<p>if 使用者猜測輸入[i] not in 顏色選項:</p>
+<p>print ("\n只能從下列顏色選項中輸入!", 顏色選項)</p>
+<p>print ("\n剩下", 幾次決勝 - 猜測次數, "次機會,可以猜: ")</p>
+<p>continue</p>
+<p>if 位置顏色都正確 != "XXXX":</p>
+<p>for i in range(4):</p>
+<p>if 使用者猜測輸入[i] == 標準答案[i]:</p>
+<p>位置顏色都正確 += "X"</p>
+<p>if  使用者猜測輸入[i] != 標準答案[i] and 使用者猜測輸入[i] in 標準答案:</p>
+<p>顏色對位置錯 += "O"</p>
+<p>print (位置顏色都正確 +  顏色對位置錯 + "\n")       </p>
+<p>if 位置顏色都正確 == "XXXX":</p>
+<p>if 猜測次數 == 1:</p>
+<p>print ("太神奇了, 1 次就猜對!")</p>
+<p>else:print ("還不錯... 總共猜了 " + str(猜測次數) + " 次, 終於猜對!")</p>
+<p>遊戲進行中 = False</p>
+<p>if 猜測次數&gt;= 1 and 猜測次數 = 幾次決勝:</p>
+<p>print ("沒有猜對! 願賭服輸, 答案顏色值為: " + str(標準答案))  </p>
+<p>遊戲進行中 = False</p>
+<p>詢問要不要再玩</p>
+<p>while 遊戲進行中 == False:</p>
+<p>遊戲結束詢問 = input("\n要不要再玩 (Y/N)?").upper()  </p>
+<p>猜測次數歸零</p>
+<p>猜測次數 = 0</p>
+<p>if 遊戲結束詢問 =="N":</p>
+<p>print ("歡迎再回來玩!")</p>
+<p>elif 遊戲結束詢問 == "Y":</p>
+<p>遊戲進行中 = True</p>
+<p>重新產生標準答案</p>
+<p>標準答案 = random.sample(顏色選項, 4)     </p>
+<p>print (標準答案)</p>
+<p>print ("好, 再玩一次...")</p>
+<p>print ("總共有", 幾次決勝 - 猜測次數, "次機會,可以猜!")</p>
+<p><font color=blue>4.請各組員利用 Brython, 分別在各分組的 pelican 網頁文章中, 繪製一個歡慶耶誕的 2D 圖形</font>.
+以下利用 Brython 在網頁寫 Python 繪圖</p>
+<!-- 導入 brython.js -->
+
+<script type="text/javascript" src="js/Brython3.2.3-20151122-082712/brython.js"></script>
+
+<!-- 啟動 brython() -->
+
+<script>
+window.onload=function(){
+brython(1);
+}
+</script>
+
+<!-- 以下利用 Brython 程式執行繪圖 -->
+
+<canvas id="plotarea" width="400" height="400"></canvas>
+
+<script type="text/python3">
+# 導入 doc
+from browser import document as doc
+from browser import console
+import math
+
+# 準備繪圖畫布
+canvas = doc["plotarea"]
+ctx = canvas.getContext("2d")
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(175, 65)
+ctx.lineTo(120, 120)
+ctx.strokeStyle = "#008B00"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(225, 65)
+ctx.lineTo(280, 120)
+ctx.strokeStyle = "#008B00"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(280, 120)
+ctx.lineTo(240,120)
+ctx.strokeStyle ="#008B00"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(120,120)
+ctx.lineTo(160,120)
+ctx.strokeStyle = "#008B00"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(160,120)
+ctx.lineTo(80,200 )
+ctx.strokeStyle = "#008B00"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(80,200)
+ctx.lineTo(120, 200)
+ctx.strokeStyle = "#008B00"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(120, 200)
+ctx.lineTo(40,280)
+ctx.strokeStyle = "#008B00"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(40,280)
+ctx.lineTo(360,280)
+ctx.strokeStyle = "#008B00"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(240,120)
+ctx.lineTo(320,200)
+ctx.strokeStyle = "#008B00"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(320,200)
+ctx.lineTo(280,200)
+ctx.strokeStyle = "#008B00"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(280,200)
+ctx.lineTo(360,280)
+ctx.strokeStyle = "#008B00"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(160,280)
+ctx.lineTo(160,360 )
+ctx.strokeStyle = "#8B4726"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(240,280)
+ctx.lineTo(240, 360)
+ctx.strokeStyle = "#8B4726"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(160, 360)
+ctx.lineTo(240,360 )
+ctx.strokeStyle = "#8B4726"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(200,0)
+ctx.lineTo(170,80)
+ctx.strokeStyle = "#EE9A00"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(170, 80)
+ctx.lineTo(240,24 )
+ctx.strokeStyle = "#EE9A00"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(240,24)
+ctx.lineTo(160,24 )
+ctx.strokeStyle = "#EE9A00"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(160,24)
+ctx.lineTo(230,80 )
+ctx.strokeStyle = "#EE9A00"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(230,80)
+ctx.lineTo(200,0 )
+ctx.strokeStyle = "#EE9A00"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(102,308)
+ctx.lineTo(102,360 )
+ctx.strokeStyle = "#7D26CD"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(102,360)
+ctx.lineTo(154,360 )
+ctx.strokeStyle = "#7D26CD"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(154,360)
+ctx.lineTo(154,308 )
+ctx.strokeStyle = "#7D26CD"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(154,308)
+ctx.lineTo(102,308 )
+ctx.strokeStyle = "#7D26CD"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(128,308)
+ctx.lineTo(128,360 )
+ctx.strokeStyle = "#7D26CD"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(102,335)
+ctx.lineTo(154,335 )
+ctx.strokeStyle = "#7D26CD"
+ctx.stroke()
+
+x = 100
+y = 100
+
+</script>
+
+<p>許承恩
+</script></p>
+<!-- 導入 brython.js -->
+
+<script type="text/javascript" src="js/Brython3.2.3-20151122-082712/40423112.js"></script>
+
+<!-- 啟動 brython() -->
+
+<script>
+window.onload=function(){
+brython(1);
+}
+</script>
+
+<!-- 以下利用 Brython 程式執行繪圖 -->
+
+<canvas id="plotarea2" width="500" height="500"></canvas>
+
+<script type="text/python3">
+# 導入 doc
+from browser import document as doc
+from browser import console
+import math
+
+# 準備繪圖畫布
+canvas = doc["plotarea2"]
+ctx = canvas.getContext("2d")
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(50,300)
+ctx.lineTo(50, 400)
+ctx.lineTo(150, 400)
+ctx.lineTo(150, 300)
+ctx.lineTo(50, 300)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.moveTo(150,300)
+ctx.lineTo(150, 180)
+ctx.lineTo(350, 180)
+ctx.lineTo(350, 400)
+ctx.lineTo(150, 400)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.moveTo(350,400)
+ctx.lineTo(350, 200)
+ctx.lineTo(470, 200)
+ctx.lineTo(470, 400)
+ctx.lineTo(350, 400)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.moveTo(90,300)
+ctx.lineTo(75, 230)
+ctx.lineTo(130, 210)
+ctx.lineTo(90, 300)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.moveTo(250,180)
+ctx.lineTo(200, 80)
+ctx.lineTo(300, 130)
+ctx.lineTo(250,180)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.moveTo(420,200)
+ctx.lineTo(390, 170)
+ctx.lineTo(430, 190)
+ctx.lineTo(420, 200)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+
+ctx.moveTo(50,330)
+ctx.lineTo(350, 330)
+ctx.moveTo(50,360)
+ctx.lineTo(150, 360)
+ctx.moveTo(150,300)
+ctx.lineTo(350, 300)
+ctx.moveTo(420,200)
+ctx.lineTo(390, 170)
+ctx.moveTo(100,400)
+ctx.lineTo(100, 300)
+ctx.moveTo(220,400)
+ctx.lineTo(220, 180)
+ctx.moveTo(290,400)
+ctx.lineTo(290, 180)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.moveTo(390,400)
+ctx.lineTo(390, 200)
+ctx.moveTo(430,400)
+ctx.lineTo(430, 200)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+
+ctx.moveTo(350,270)
+ctx.lineTo(470, 270)
+ctx.moveTo(350,340)
+ctx.lineTo(470, 340)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+ctx.moveTo(150,270)
+ctx.lineTo(350, 270)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+</script>
+
+<p><a>Happy Christmas!!!祝大家平安快樂!!</a></p>
+<p>邱弘丞40423125
+</script></p></div>
     <footer>
 <p class="meta">
   <span class="byline author vcard">
@@ -184,6 +585,7 @@ REM C:\WINDOWS\system32\cmd.exe /k %Disk%:\IDE\nodejs\nodejsvars.bat</p>
         <li><a href="./category/g6.html">g6</a></li>
         <li><a href="./category/g7.html">g7</a></li>
         <li><a href="./category/g8.html">g8</a></li>
+        <li><a href="./category/g9.html">G9</a></li>
         <li><a href="./category/g99.html">g99</a></li>
         <li><a href="./category/python.html">Python</a></li>
     </ul>
@@ -192,7 +594,7 @@ REM C:\WINDOWS\system32\cmd.exe /k %Disk%:\IDE\nodejs\nodejsvars.bat</p>
 
   <section>
   <h1>Tags</h1>
-    <a href="./tag/g3.html">G3</a>,    <a href="./tag/brython.html">Brython</a>,    <a href="./tag/w15.html">w15</a>,    <a href="./tag/publishing.html">publishing</a>,    <a href="./tag/jupyter.html">Jupyter</a>,    <a href="./tag/g1.html">G1</a>,    <a href="./tag/ipython.html">IPython</a>,    <a href="./tag/w14.html">w14</a>,    <a href="./tag/g10.html">G10</a>,    <a href="./tag/pelican.html">pelican</a>  </section>
+    <a href="./tag/w15.html">w15</a>,    <a href="./tag/g1.html">G1</a>,    <a href="./tag/g3.html">G3</a>,    <a href="./tag/ipython.html">IPython</a>,    <a href="./tag/publishing.html">publishing</a>,    <a href="./tag/w14.html">w14</a>,    <a href="./tag/pelican.html">pelican</a>,    <a href="./tag/jupyter.html">Jupyter</a>,    <a href="./tag/g10.html">G10</a>,    <a href="./tag/brython.html">Brython</a>  </section>
 
 
     <section>
