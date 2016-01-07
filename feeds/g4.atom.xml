@@ -47,6 +47,7 @@ REM C:\WINDOWS\system32\cmd.exe /k %Disk%:\IDE\nodejs\nodejsvars.bat&lt;/p&gt;
 &lt;h1&gt;4.請利用流程圖, 簡要說明近端猜數字遊戲與猜顏色遊戲程式碼如何設計與運作.猜數字遊戲&lt;/h1&gt;
 &lt;p&gt;&lt;a href="http://imgur.com/IkjsAK0"&gt;&lt;img src="http://imgur.com/IkjsAK0.jpg" title="source: imgur.com" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h1&gt;5.2D聖誕樹&lt;/h1&gt;
+&lt;h3&gt;40423129&lt;/h3&gt;
 &lt;!-- 導入 brython.js --&gt;
 
 &lt;script type="text/javascript" src="js/Brython3.2.3-20151122-082712/brython.js"&gt;&lt;/script&gt;
