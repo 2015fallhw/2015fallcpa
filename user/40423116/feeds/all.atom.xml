@@ -1,9 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>2015FALL 40423116 CADPA 作業</title><link href="http://coursemdetw.github.io/reveal/" rel="alternate"></link><link href="http://coursemdetw.github.io/reveal/feeds/all.atom.xml" rel="self"></link><id>http://coursemdetw.github.io/reveal/</id><updated>2015-12-04T11:41:00+08:00</updated><entry><title>2015 計算機程式 w12</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w12.html" rel="alternate"></link><updated>2015-12-04T11:41:00+08:00</updated><author><name>40423116</name></author><id>tag:coursemdetw.github.io,2015-12-04:reveal/2015cp_hw_w12.html</id><summary type="html">&lt;p&gt;以下為作業12內容內容&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>2015FALL 40423116 CPA 作業</title><link href="http://coursemdetw.github.io/reveal/" rel="alternate"></link><link href="http://coursemdetw.github.io/reveal/feeds/all.atom.xml" rel="self"></link><id>http://coursemdetw.github.io/reveal/</id><updated>2015-12-11T11:41:00+08:00</updated><entry><title>2015 計算機程式 w13</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w13.html" rel="alternate"></link><updated>2015-12-11T11:41:00+08:00</updated><author><name>40423116</name></author><id>tag:coursemdetw.github.io,2015-12-11:reveal/2015cp_hw_w13.html</id><summary type="html">&lt;p&gt;以下為作業13內容內容&lt;/p&gt;
+&lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
+&lt;iframe src="40423116_cp_w13_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="40423116_cp_w13_p.html" target="_blank"&gt;作業十三投影片&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;List程式:抽點名&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;cpa_number=[&amp;#39; 40123227&amp;#39;,&amp;#39; 40123237&amp;#39;,&amp;#39; 40123256&amp;#39;,&amp;#39; 40423101&amp;#39;,&amp;#39; 40423103&amp;#39;,&amp;#39; 40423104&amp;#39;,&amp;#39; 40423105&amp;#39;,&amp;#39; 40423106&amp;#39;,&amp;#39; 40423107&amp;#39;,&amp;#39; 40423108&amp;#39;,&amp;#39; 40423109&amp;#39;,&amp;#39; 40423110&amp;#39;,&amp;#39; 40423111&amp;#39;,&amp;#39; 40423112&amp;#39;,&amp;#39; 40423113&amp;#39;,&amp;#39; 40423114&amp;#39;,&amp;#39; 40423115&amp;#39;,&amp;#39; 40423116&amp;#39;,&amp;#39; 40423117&amp;#39;,&amp;#39; 40423118&amp;#39;,&amp;#39; 40423119&amp;#39;,&amp;#39; 40423120&amp;#39;,&amp;#39; 40423121&amp;#39;,&amp;#39; 40423122&amp;#39;,&amp;#39; 40423123&amp;#39;,&amp;#39; 40423124&amp;#39;,&amp;#39; 40423125&amp;#39;,&amp;#39; 40423126&amp;#39;,&amp;#39; 40423127&amp;#39;,&amp;#39; 40423128&amp;#39;,&amp;#39; 40423129&amp;#39;,&amp;#39; 40423130&amp;#39;,&amp;#39; 40423131&amp;#39;,&amp;#39; 40423132&amp;#39;,&amp;#39; 40423133&amp;#39;,&amp;#39; 40423134&amp;#39;,&amp;#39; 40423135&amp;#39;,&amp;#39; 40423136&amp;#39;,&amp;#39; 40423137&amp;#39;,&amp;#39; 40423138&amp;#39;,&amp;#39; 40423139&amp;#39;,&amp;#39; 40423140&amp;#39;,&amp;#39; 40423141&amp;#39;,&amp;#39; 40423142&amp;#39;,&amp;#39; 40423143&amp;#39;,&amp;#39; 40423144&amp;#39;,&amp;#39; 40423145&amp;#39;,&amp;#39; 40423146&amp;#39;,&amp;#39; 40423147&amp;#39;,&amp;#39; 40423148&amp;#39;,&amp;#39; 40423149&amp;#39;,&amp;#39; 40423150&amp;#39;,&amp;#39; 40423152&amp;#39;,&amp;#39; 40423153&amp;#39;,&amp;#39; 40423154&amp;#39;,&amp;#39; 40423155&amp;#39;]
+cpa_name=[&amp;#39; 紀培俞&amp;#39;, &amp;#39; 陳琨揚&amp;#39;,&amp;#39; 蘇建瑋&amp;#39;,&amp;#39; 曾宜萱&amp;#39;,&amp;#39; 劉怡萱&amp;#39;,&amp;#39; 顏暄&amp;#39;,&amp;#39; 王奕智&amp;#39;,&amp;#39; 王翔佑&amp;#39;,&amp;#39; 史育澤&amp;#39;,&amp;#39; 江心平&amp;#39;,&amp;#39; 何宗哲&amp;#39;,&amp;#39; 余浩鋼&amp;#39;,&amp;#39; 吳承翰&amp;#39;,&amp;#39; 吳欣奕&amp;#39;,&amp;#39; 吳冠毅&amp;#39;,&amp;#39; 李希凡&amp;#39;,&amp;#39; 李尚瑋&amp;#39;,&amp;#39; 李冠辰&amp;#39;,&amp;#39; 李國豪&amp;#39;,&amp;#39; 阮伯宗&amp;#39;,&amp;#39; 周嘉原&amp;#39;,&amp;#39; 林尚漢&amp;#39;,&amp;#39; 林秉憲&amp;#39;,&amp;#39; 林國蓁&amp;#39;,&amp;#39; 林嘉文&amp;#39;,&amp;#39; 林濬翔&amp;#39;,&amp;#39; 邱弘承&amp;#39;,&amp;#39; 紀均瀚&amp;#39;,&amp;#39; 范展榕&amp;#39;,&amp;#39; 徐聖倫&amp;#39;,&amp;#39; 張俊鴻&amp;#39;,&amp;#39; 張勝雄&amp;#39;,&amp;#39; 許承恩&amp;#39;,&amp;#39; 郭力維&amp;#39;,&amp;#39; 郭政修&amp;#39;,&amp;#39; 陳正凱&amp;#39;,&amp;#39; 陳冠錡&amp;#39;,&amp;#39; 陳柏維&amp;#39;,&amp;#39; 陳慶豪&amp;#39;,&amp;#39; 傅仁禹&amp;#39;,&amp;#39; 曾繼緯&amp;#39;,&amp;#39; 黃子晏&amp;#39;,&amp;#39; 黃羿誠&amp;#39;,&amp;#39; 黃興煜&amp;#39;,&amp;#39; 楊智勝&amp;#39;,&amp;#39; 葉宗翰&amp;#39;,&amp;#39; 廖先博&amp;#39;,&amp;#39; 廖祈安&amp;#39;,&amp;#39; 劉孟璋&amp;#39;,&amp;#39; 劉佑程&amp;#39;,&amp;#39; 蔡悌仁&amp;#39;,&amp;#39; 鄭邦宏&amp;#39;,&amp;#39; 賴浚珅&amp;#39;,&amp;#39; 簡登瑋&amp;#39;,&amp;#39; 闕崇晉&amp;#39;,&amp;#39; 蘇麒彬&amp;#39;]
+g2_number=[&amp;#39;40423105&amp;#39;,&amp;#39;40423106&amp;#39;,&amp;#39;40423107&amp;#39;,&amp;#39;40423114&amp;#39;,&amp;#39;40423115&amp;#39;,&amp;#39;40423116&amp;#39;]
+g2_name=[&amp;#39;王奕智&amp;#39;,&amp;#39;王翔佑&amp;#39;,&amp;#39;史育澤&amp;#39;,&amp;#39;李希凡&amp;#39;,&amp;#39;李尚瑋&amp;#39;,&amp;#39;李冠辰&amp;#39;]
+
+#第2組組員有多少，有哪些人?
+print(&amp;#39;g2組員:&amp;#39;, len(g2_number),&amp;#39;人&amp;#39;)
+
+print(&amp;#39;成員:&amp;#39;)
+
+for i in range(len(g2_number)):
+     print( g2_number[i], g2_name[i])
+
+
+print(&amp;#39;-----分隔-----&amp;#39;)
+
+
+#班上幾個人? 抽點名點多少人? 抽到誰?
+print(&amp;#39;班上有&amp;#39;,len(cpa_number),&amp;#39;人&amp;#39;)
+
+import random
+total_number=len(cpa_number)
+roll_number= int(input(&amp;quot;抽點幾位?&amp;quot;))
+
+for i in range(roll_number):
+     check = random.randint(0,total_number -1)
+     print(cpa_number[check],cpa_name[check])
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;iframe src="https://player.vimeo.com/video/151022090" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="https://vimeo.com/151022090"&gt;list&lt;/a&gt; from &lt;a href="https://vimeo.com/user47573583"&gt;40423116&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 w14</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w14.html" rel="alternate"></link><updated>2015-12-11T11:41:00+08:00</updated><author><name>40423116</name></author><id>tag:coursemdetw.github.io,2015-12-11:reveal/2015cp_hw_w14.html</id><summary type="html">&lt;p&gt;以下為作業14內容內容&lt;/p&gt;
+&lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
+&lt;iframe src="40423116_cp_w14_p.html" width="800" height="500"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="40423116_cp_w14_p.html" target="_blank"&gt;作業十四投影片&lt;/a&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 w12</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w12.html" rel="alternate"></link><updated>2015-12-04T11:41:00+08:00</updated><author><name>40423116</name></author><id>tag:coursemdetw.github.io,2015-12-04:reveal/2015cp_hw_w12.html</id><summary type="html">&lt;p&gt;以下為作業12內容內容&lt;/p&gt;
 &lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
 &lt;iframe src="40423116_cp_w12_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
-&lt;p&gt;&lt;a href="40423116_cp_w12_p.html" target="_blank"&gt;作業十一投影片&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="40423116_cp_w12_p.html" target="_blank"&gt;作業十二投影片&lt;/a&gt;&lt;/p&gt;
 &lt;h1&gt;coding: utf-8&lt;/h1&gt;
 &lt;h1&gt;猜數字遊戲&lt;/h1&gt;
 &lt;p&gt;import random
