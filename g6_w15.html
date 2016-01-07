@@ -112,6 +112,7 @@
 <p>請各組員利用 Brython, 分別在各分組的 pelican 網頁文章中, 繪製一個歡慶耶誕的 2D 圖形.</p>
 </li>
 </ul>
+<h4>40423135</h4>
 <!-- 導入 brython.js -->
 
 <script type="text/javascript" src="js/Brython3.2.3-20151122-082712/brython.js"></script>
@@ -126,7 +127,7 @@ brython(1);
 
 <!-- 以下利用 Brython 程式執行繪圖 -->
 
-<canvas id="plotarea" width="500" height="500"></canvas>
+<canvas id="plotarea1" width="500" height="500"></canvas>
 
 <script type="text/python3">
 # 導入 doc
@@ -135,7 +136,7 @@ from browser import console
 import math
 
 # 準備繪圖畫布
-canvas = doc["plotarea"]
+canvas = doc["plotarea1"]
 ctx = canvas.getContext("2d")
 
 # 開始畫直線
@@ -164,6 +165,7 @@ x = 100
 y = 100
 </script>
 
+<h4>40423136</h4>
 <!-- 導入 brython.js -->
 
 <script type="text/javascript" src="js/Brython3.2.3-20151122-082712/40423112.js"></script>
@@ -206,6 +208,205 @@ ctx.lineTo(300, 300)
 ctx.lineTo(350, 300)
 ctx.lineTo(250, 200)
 ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+</script>
+
+<h4>40423128</h4>
+<!-- 以下利用 Brython 程式執行繪圖 -->
+
+<canvas id="plotarea3" width="500" height="500"></canvas>
+
+<script type="text/python3">
+# 導入 doc
+from browser import document as doc
+from browser import console
+import math
+
+# 準備繪圖畫布
+canvas = doc["plotarea3"]
+ctx = canvas.getContext("2d")
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 3
+ctx.moveTo(51.1751, 100)
+ctx.lineTo(44.1041, 92.9289)
+ctx.lineTo(46.1041, 92.9289)
+ctx.lineTo(35.4975, 82.3223)
+ctx.lineTo(41.4975, 82.3223)
+ctx.lineTo(20.2843, 61.1091)
+ctx.lineTo(28.2843, 61.1091)
+ctx.lineTo(0, 32.8249)
+ctx.lineTo(102.3503, 32.8249)
+ctx.lineTo(74.0660, 61.1091)
+ctx.lineTo(82.0660, 61.1091)
+ctx.lineTo(60.8528, 82.3223)
+ctx.lineTo(66.8528, 82.3223)
+ctx.lineTo(56.2462, 92.9289)
+ctx.lineTo(58.2462, 92.9289)
+ctx.lineTo(51.1751, 100)
+ctx.strokeStyle = "#00EC00"
+ctx.stroke()
+
+
+
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(56.2462, 92.9289)
+ctx.lineTo(41.4975, 82.3223)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(67.0857, 76.0894)
+ctx.lineTo(6.9253, 32.8249)
+ctx.strokeStyle = "#F9F900"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(76.7619, 58.4133)
+ctx.lineTo(41.1806, 32.8249)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(91.0915, 44.0839)
+ctx.lineTo(75.4358, 32.8249)
+ctx.strokeStyle = "#F9F900"
+ctx.stroke()
+
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(45, 32.8249)
+ctx.lineTo(45, 1.8498)
+ctx.lineTo(57.3503, 1.8498)
+ctx.lineTo(57.3503, 32.8249)
+ctx.strokeStyle = " #9F5000"
+ctx.stroke()
+
+
+
+
+</script>
+
+<h4>40423127</h4>
+<!-- 以下利用 Brython 程式執行繪圖 -->
+
+<canvas id="plotarea4" width="500" height="500"></canvas>
+
+<script type="text/python3">
+# 導入 doc
+from browser import document as doc
+from browser import console
+import math
+
+# 準備繪圖畫布
+canvas = doc["plotarea4"]
+ctx = canvas.getContext("2d")
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(150,400)
+ctx.lineTo(150,200)
+ctx.lineTo(250,200)
+ctx.lineTo(113.3234,168.3832)
+ctx.lineTo(95.6793,104.4727)
+ctx.lineTo(177.2188,112.3134)
+ctx.lineTo(250,200)
+ctx.lineTo(322.7812,112.3134)
+ctx.lineTo(404.3207,104.4727)
+ctx.lineTo(386.6766,168.3832)
+ctx.lineTo(250,200)
+ctx.lineTo(350,200)
+ctx.lineTo(350,400)
+ctx.lineTo(265,400)
+ctx.lineTo(265,200)
+ctx.lineTo(235,200)
+ctx.lineTo(235,400)
+ctx.lineTo(265,400)
+ctx.lineTo(150,400)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+</script>
+
+<h4>40423126</h4>
+<!-- 以下利用 Brython 程式執行繪圖 -->
+
+<canvas id="plotarea5" width="500" height="500"></canvas>
+
+<script type="text/python3">
+# 導入 doc
+from browser import document as doc
+from browser import console
+import math
+
+# 準備繪圖畫布
+canvas = doc["plotarea5"]
+ctx = canvas.getContext("2d")
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(250, 150)
+ctx.lineTo(150, 150)
+ctx.lineTo(150, 350)
+ctx.lineTo(350, 350)
+ctx.lineTo(350, 150)
+ctx.lineTo(250, 150)
+ctx.lineTo(280, 110)
+ctx.lineTo(270, 100)
+ctx.lineTo(250, 150)
+ctx.lineTo(220, 110)
+ctx.lineTo(230, 100)
+ctx.lineTo(250, 150)
+ctx.lineTo(250, 225)
+ctx.lineTo(225, 250)
+ctx.lineTo(250, 275)
+ctx.lineTo(275, 250)
+ctx.lineTo(250, 225)
+ctx.lineTo(250, 150)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+</script>
+
+<h4>40423137</h4>
+<!-- 以下利用 Brython 程式執行繪圖 -->
+
+<canvas id="plotarea6" width="500" height="500"></canvas>
+
+<script type="text/python3">
+# 導入 doc
+from browser import document as doc
+from browser import console
+import math
+
+# 準備繪圖畫布
+canvas = doc["plotarea6"]
+ctx = canvas.getContext("2d")
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(200, 498.1481)
+ctx.lineTo(0, 150)
+ctx.lineTo(400, 150)
+ctx.lineTo(200, 498.1481)
+ctx.strokeStyle = "#00EC00"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(150, 150)
+ctx.lineTo(150, 0)
+ctx.lineTo(250, 0)
+ctx.lineTo(250, 150)
+ctx.strokeStyle = " #9F5000"
 ctx.stroke()
 </script></div>
     <footer>
@@ -271,7 +472,7 @@ ctx.stroke()
 
   <section>
   <h1>Tags</h1>
-    <a href="./tag/pelican.html">pelican</a>,    <a href="./tag/g3.html">G3</a>,    <a href="./tag/w14.html">w14</a>,    <a href="./tag/publishing.html">publishing</a>,    <a href="./tag/w15.html">w15</a>,    <a href="./tag/brython.html">Brython</a>,    <a href="./tag/g1.html">G1</a>,    <a href="./tag/g10.html">G10</a>,    <a href="./tag/jupyter.html">Jupyter</a>,    <a href="./tag/ipython.html">IPython</a>  </section>
+    <a href="./tag/brython.html">Brython</a>,    <a href="./tag/w15.html">w15</a>,    <a href="./tag/g1.html">G1</a>,    <a href="./tag/g3.html">G3</a>,    <a href="./tag/g10.html">G10</a>,    <a href="./tag/w14.html">w14</a>,    <a href="./tag/pelican.html">pelican</a>,    <a href="./tag/ipython.html">IPython</a>,    <a href="./tag/jupyter.html">Jupyter</a>,    <a href="./tag/publishing.html">publishing</a>  </section>
 
 
     <section>
