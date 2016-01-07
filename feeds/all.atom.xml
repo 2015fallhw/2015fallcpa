@@ -786,9 +786,11 @@ ctx.strokeStyle = "#FFFF00"
 ctx.stroke()
 &lt;/script&gt;
 
-&lt;p&gt;40423139曾繼緯&lt;/p&gt;</summary><category term="w15"></category></entry><entry><title>G3_w15_1</title><link href="http://coursemdetw.github.io/reveal/G3_w15_1.html" rel="alternate"></link><updated>2015-12-25T12:00:00+08:00</updated><author><name>40423108</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/G3_w15_1.html</id><summary type="html">&lt;p&gt;1.利用fix.bat複製leo安裝擋與start.bat和python.properties到Ana3,並修改start.bat讓leo在近端安裝。&lt;/p&gt;
-&lt;p&gt;2.#python指令
-print列印文字,如:print("hello")&lt;/p&gt;
+&lt;p&gt;40423139曾繼緯&lt;/p&gt;</summary><category term="w15"></category></entry><entry><title>G3_w15_1</title><link href="http://coursemdetw.github.io/reveal/G3_w15_1.html" rel="alternate"></link><updated>2015-12-25T12:00:00+08:00</updated><author><name>40423119</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/G3_w15_1.html</id><summary type="html">&lt;h1&gt;1. Python3 的近端程式開發系統如何建立? 如何啟動?&lt;/h1&gt;
+&lt;p&gt;利用fix.bat複製leo安裝擋與start.bat和python.properties到Ana3,並修改start.bat讓leo在近端安裝。&lt;/p&gt;
+&lt;h1&gt;2. 目前已經熟悉的 Python3 指令及語法有哪些? 請舉例說明&lt;/h1&gt;
+&lt;h1&gt;python指令&lt;/h1&gt;
+&lt;p&gt;print列印文字,如:print("hello")&lt;/p&gt;
 &lt;p&gt;迴圈指令,例如
 for i in range(4):
     print("hello")&lt;/p&gt;
@@ -801,7 +803,144 @@ if X==Y   如果X等於Y&lt;/p&gt;
 顏色選項=["R","Y","W"]&lt;/p&gt;
 &lt;p&gt;亂數random,例如
 標準答案=random.sample(顏色選項,2)
-標準答案為顏色選項內亂數選兩個&lt;/p&gt;</summary><category term="G3"></category></entry><entry><title>g2 w1</title><link href="http://coursemdetw.github.io/reveal/g2_w1.html" rel="alternate"></link><updated>2015-12-25T11:00:00+08:00</updated><author><name>40423105</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/g2_w1.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
+標準答案為顏色選項內亂數選兩個&lt;/p&gt;
+&lt;h1&gt;3.請利用流程圖, 簡要說明近端猜數字遊戲與猜顏色遊戲程式碼如何設計與運作&lt;/h1&gt;
+&lt;script src="https://www.gliffy.com/diagramEmbed.js" type="text/javascript"&gt;&lt;/script&gt;
+
+&lt;script type="text/javascript"&gt;gliffy_did="9703261";embedGliffy();&lt;/script&gt;
+
+&lt;h1&gt;4.請各組員利用 Brython, 分別在各分組的 pelican 網頁文章中, 繪製一個歡慶耶誕的 2D 圖形&lt;/h1&gt;
+&lt;!-- 導入 brython.js --&gt;
+
+&lt;script type="text/javascript" src="js/Brython3.2.3-20151122-082712/G1-40423103.js"&gt;&lt;/script&gt;
+
+&lt;!-- 啟動 brython() --&gt;
+
+&lt;script&gt;
+window.onload=function(){
+brython(1);
+}
+&lt;/script&gt;
+
+&lt;!-- 以下利用 Brython 程式執行繪圖 --&gt;
+
+&lt;canvas id="plotarea" width="400" height="410"&gt;&lt;/canvas&gt;
+
+&lt;script type="text/python3"&gt;
+# 導入 doc
+from browser import document as doc
+from browser import console
+import math
+
+# 準備繪圖畫布
+canvas = doc["plotarea"]
+ctx = canvas.getContext("2d")
+
+ctx.beginPath()
+ctx.moveTo(140, 60)
+ctx.quadraticCurveTo(170, 45, 200, 15)
+ctx.moveTo(200, 12)
+ctx.quadraticCurveTo(230, 43, 260, 61)
+ctx.moveTo(260, 60)
+ctx.lineTo(140, 60)
+
+ctx.moveTo(100, 120)
+ctx.quadraticCurveTo(150, 95, 180, 60)
+ctx.moveTo(220, 60)
+ctx.quadraticCurveTo(250, 95, 300, 120)
+ctx.moveTo(100, 120)
+ctx.lineTo(300, 120)
+
+ctx.moveTo(60, 190)
+ctx.quadraticCurveTo(120, 165, 160, 120)
+ctx.moveTo(240, 120)
+ctx.quadraticCurveTo(280, 165, 340, 190)
+ctx.moveTo(60, 190)
+ctx.lineTo(340, 190)
+
+ctx.moveTo(20, 270)
+ctx.quadraticCurveTo(80, 250, 140, 190)
+ctx.moveTo(260, 190)
+ctx.quadraticCurveTo(320, 250, 380, 270)
+ctx.moveTo(20, 270)
+ctx.lineTo(380, 270)
+
+ctx.lineWidth = 3
+ctx.strokeStyle = "#008800"
+ctx.stroke()
+
+ctx.fillStyle = "#663300"
+ctx.fillRect(180,271.5,40,129)
+
+ctx.beginPath()
+ctx.fillStyle = "#484891"
+ctx.fillRect(260,340,60,60)
+ctx.stroke()
+
+ctx.moveTo(260,370)
+ctx.lineTo(320,370)
+
+ctx.moveTo(290,340)
+ctx.lineTo(290,400)
+
+ctx.moveTo(290,340)
+ctx.lineTo(260,320)
+
+ctx.moveTo(290,340)
+ctx.lineTo(280,300)
+
+ctx.moveTo(258,321)
+ctx.lineTo(282,300)
+
+ctx.moveTo(290,340)
+ctx.lineTo(300,300)
+
+ctx.moveTo(290,340)
+ctx.lineTo(320,320)
+
+ctx.moveTo(298,300)
+ctx.lineTo(322,320)
+
+ctx.lineWidth = 2
+ctx.strokeStyle = "#FF8000"
+ctx.stroke()
+
+ctx.moveTo(60,370)
+ctx.lineTo(160,370)
+
+ctx.moveTo(110,340)
+ctx.lineTo(110,400)
+
+ctx.moveTo(111.5,341.5)
+ctx.lineTo(100,310)
+
+ctx.moveTo(111.5,341.5)
+ctx.lineTo(80,330)
+
+ctx.moveTo(101.5,310)
+ctx.lineTo(78.5,330)
+
+ctx.moveTo(111.5,341.5)
+ctx.lineTo(140,330)
+
+ctx.moveTo(111.5,341.5)
+ctx.lineTo(120,310)
+
+ctx.moveTo(141.5,330)
+ctx.lineTo(118.5,310)
+
+ctx.beginPath()
+
+
+&lt;/script&gt;
+
+&lt;script&gt;
+window.onload=function(){
+brython(1);
+}
+&lt;/script&gt;
+
+&lt;p&gt;40423119&lt;/p&gt;</summary><category term="G3"></category></entry><entry><title>g2 w1</title><link href="http://coursemdetw.github.io/reveal/g2_w1.html" rel="alternate"></link><updated>2015-12-25T11:00:00+08:00</updated><author><name>40423105</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/g2_w1.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
 &lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
 &lt;iframe src="simplest.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
@@ -7608,4 +7747,4 @@ for i in 1 .. 10 { 呼叫特定函式(i) }
 &lt;p&gt;註腳會連結到這裡.&amp;#160;&lt;a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry></feed>
+&lt;/div&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>G3 w15-2</title><link href="http://coursemdetw.github.io/reveal/G3_w15_2.html" rel="alternate"></link><updated>2015-09-19T11:41:00+08:00</updated><author><name>40423119</name></author><id>tag:coursemdetw.github.io,2015-09-19:reveal/G3_w15_2.html</id><summary type="html"></summary><category term="w15"></category></entry></feed>
