@@ -275,7 +275,7 @@ REM C:\WINDOWS\system32\cmd.exe /k %Disk%:\IDE\nodejs\nodejsvars.bat&lt;/font&gt
 &lt;p&gt;利用流程圖, 簡要說明近端猜數字遊戲與猜顏色遊戲程式碼如何設計與運作.
 猜數字遊戲
 &lt;a data-flickr-embed="true"  href="https://www.flickr.com/photos/125234485@N06/23604246193/in/dateposted-public/" title="流程圖-"&gt;&lt;img src="https://farm2.staticflickr.com/1661/23604246193_8a2cf6e4d9_b.jpg" width="750" height="679" alt="流程圖-"&gt;&lt;/a&gt;&lt;script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"&gt;&lt;/script&gt;&lt;/p&gt;
-&lt;p&gt;以下利用 Brython 在網頁寫 Python 繪圖&lt;/p&gt;
+&lt;p&gt;以下利用 Brython 在網頁寫 Python 繪圖(我真的很努力想要表現出金蔥的樣子啊...52留)&lt;/p&gt;
 &lt;!-- 導入 brython.js --&gt;
 
 &lt;script type="text/javascript" src="js/Brython3.2.3-20151122-082712/brython.js"&gt;&lt;/script&gt;
