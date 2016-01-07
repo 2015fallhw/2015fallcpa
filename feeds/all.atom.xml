@@ -482,7 +482,7 @@ canvas.bind('click', on_canvas_click, False)
 &lt;p&gt;, scite 則為 SciTE 編輯器.&lt;/p&gt;
 &lt;h1&gt;3.請利用流程圖, 簡要說明近端猜數字遊戲與猜顏色遊戲程式碼如何設計與運作&lt;/h1&gt;
 &lt;p&gt;&lt;a href="http://imgur.com/P9vZLUM"&gt;&lt;img src="http://i.imgur.com/P9vZLUM.jpg" title="source: imgur.com" /&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://www.gliffy.com/go/html5/9703277?app=1b5094b0-6042-11e2-bcfd-0800200c9a66"&gt;https://www.gliffy.com/go/html5/9703277?app=1b5094b0-6042-11e2-bcfd-0800200c9a66&lt;/a&gt;&lt;/p&gt;</summary><category term="G10"></category></entry><entry><title>G7第十五週報告</title><link href="http://coursemdetw.github.io/reveal/g7_w15.html" rel="alternate"></link><updated>2015-12-26T10:48:00+08:00</updated><author><name>40423140</name></author><id>tag:coursemdetw.github.io,2015-12-26:reveal/g7_w15.html</id><summary type="html">&lt;p&gt;1.建立&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.gliffy.com/go/html5/9703277?app=1b5094b0-6042-11e2-bcfd-0800200c9a66"&gt;https://www.gliffy.com/go/html5/9703277?app=1b5094b0-6042-11e2-bcfd-0800200c9a66&lt;/a&gt;&lt;/p&gt;</summary><category term="G10"></category></entry><entry><title>G7第十五週報告</title><link href="http://coursemdetw.github.io/reveal/g7_w15.html" rel="alternate"></link><updated>2015-12-26T10:48:00+08:00</updated><author><name>40423139</name></author><id>tag:coursemdetw.github.io,2015-12-26:reveal/g7_w15.html</id><summary type="html">&lt;p&gt;1.建立&lt;/p&gt;
 &lt;p&gt;我們先利用gogle搜尋leo editor並且進入下載最新版的資料!&lt;/p&gt;
 &lt;p&gt;然後進課程網頁http://wordpress-2015course.rhcloud.com/?page_id=3633 下載fix檔!&lt;/p&gt;
 &lt;p&gt;fix解壓縮後把剛剛下載的ieo editor放入!開啟scite編輯器修改fix.bat--copy leo-editor-broke-abbrev.zip C:\Ana3_2015\data\&lt;/p&gt;
@@ -739,7 +739,54 @@ ctx.stroke()
 x = 100
 y = 100
 
-&lt;/script&gt;</summary><category term="w15"></category></entry><entry><title>G3_w15_1</title><link href="http://coursemdetw.github.io/reveal/G3_w15_1.html" rel="alternate"></link><updated>2015-12-25T12:00:00+08:00</updated><author><name>40423108</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/G3_w15_1.html</id><summary type="html">&lt;p&gt;1.利用fix.bat複製leo安裝擋與start.bat和python.properties到Ana3,並修改start.bat讓leo在近端安裝。&lt;/p&gt;
+&lt;/script&gt;
+
+&lt;!-- 導入 brython.js --&gt;
+
+&lt;script type="text/javascript" src="js/Brython3.2.3-20151122-082712/40423112.js"&gt;&lt;/script&gt;
+
+&lt;!-- 啟動 brython() --&gt;
+
+&lt;script&gt;
+window.onload=function(){
+brython(1);
+}
+&lt;/script&gt;
+
+&lt;!-- 以下利用 Brython 程式執行繪圖 --&gt;
+
+&lt;canvas id="plotarea2" width="500" height="500"&gt;&lt;/canvas&gt;
+
+&lt;script type="text/python3"&gt;
+# 導入 doc
+from browser import document as doc
+from browser import console
+import math
+
+# 準備繪圖畫布
+canvas = doc["plotarea2"]
+ctx = canvas.getContext("2d")
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(250, 200)
+ctx.lineTo(150, 300)
+ctx.lineTo(200, 300)
+ctx.lineTo(100, 400)
+ctx.lineTo(200, 400)
+ctx.lineTo(200, 500)
+ctx.lineTo(300, 500)
+ctx.lineTo(300, 400)
+ctx.lineTo(400, 400)
+ctx.lineTo(300, 300)
+ctx.lineTo(350, 300)
+ctx.lineTo(250, 200)
+ctx.strokeStyle = "#FFFF00"
+ctx.stroke()
+&lt;/script&gt;
+
+&lt;p&gt;40423139曾繼緯&lt;/p&gt;</summary><category term="w15"></category></entry><entry><title>G3_w15_1</title><link href="http://coursemdetw.github.io/reveal/G3_w15_1.html" rel="alternate"></link><updated>2015-12-25T12:00:00+08:00</updated><author><name>40423108</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/G3_w15_1.html</id><summary type="html">&lt;p&gt;1.利用fix.bat複製leo安裝擋與start.bat和python.properties到Ana3,並修改start.bat讓leo在近端安裝。&lt;/p&gt;
 &lt;p&gt;2.#python指令
 print列印文字,如:print("hello")&lt;/p&gt;
 &lt;p&gt;迴圈指令,例如
@@ -961,80 +1008,6 @@ REM start /MIN cmd.exe /k "%Disk%:\nodejs\nodejsvars.bat"&lt;/p&gt;
 start /MIN cmd.exe&lt;/p&gt;
 &lt;p&gt;REM start %Disk%:\IDE\nodejs\node.exe
 REM C:\WINDOWS\system32\cmd.exe /k %Disk%:\IDE\nodejs\nodejsvars.bat&lt;/p&gt;
-<<<<<<< HEAD
-&lt;p&gt;REM 啟動 Leo 編輯器&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;目前已經熟悉的 Python3 指令及語法有哪些? 請舉例說明.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;conding:編碼&lt;/p&gt;
-&lt;p&gt;#:單行註解&lt;/p&gt;
-&lt;p&gt;random:亂數&lt;/p&gt;
-&lt;p&gt;import: 導入&lt;/p&gt;
-&lt;p&gt;string:轉成字串&lt;/p&gt;
-&lt;p&gt;integer:轉成整數&lt;/p&gt;
-&lt;p&gt;！=:不等於&lt;/p&gt;
-&lt;p&gt;float:轉成符點數&lt;/p&gt;
-&lt;p&gt;::還沒說完&lt;/p&gt;
-&lt;p&gt;end="\n\n":跳行&lt;/p&gt;
-&lt;p&gt;sep="符號":分隔符號&lt;/p&gt;
-&lt;p&gt;Len:計算行列的個數&lt;/p&gt;
-&lt;p&gt;while: 迴圈&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;請利用流程圖, 簡要說明近端猜數字遊戲與猜顏色遊戲程式碼如何設計與運作.
-猜數字遊戲&lt;/li&gt;
-&lt;/ul&gt;</summary><category term="w15"></category></entry><entry><title>G9第十五週報告</title><link href="http://coursemdetw.github.io/reveal/G9_w15.html" rel="alternate"></link><updated>2015-12-25T10:48:00+08:00</updated><author><name>KMOL</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/G9_w15.html</id><summary type="html">&lt;h2&gt;1. Python3 的近端程式開發系統如何建立? 如何啟動?&lt;/h2&gt;
-&lt;h2&gt;1.建立&lt;/h2&gt;
-&lt;p&gt;我們先利用GOOGLE搜尋Leo editor並且進入下載最新版的資料!&lt;/p&gt;
-&lt;p&gt;然後進課程網頁http://wordpress-2015course.rhcloud.com/?page_id=3633 &lt;/p&gt;
-&lt;p&gt;並前往COPY.com下載fix檔&lt;/p&gt;
-&lt;p&gt;fix解壓縮後把剛下載的Leo editor放入開啟scite編輯器修改&lt;/p&gt;
-&lt;p&gt;fix.bat copy leo-editor-broke-abbrev.zip C:\Ana3_2015\data\&lt;/p&gt;
-&lt;p&gt;修改start.bat--第35行pip install leo-editor-broke-abbrev.zip,近端的python3就完成了!!&lt;/p&gt;
-&lt;h2&gt;2.啟動&lt;/h2&gt;
-&lt;p&gt;我們由start.bat可以充分理解它啟動了那些東西&lt;/p&gt;
-&lt;p&gt;REM 啟動 Jupyter&lt;/p&gt;
-&lt;p&gt;cd tmp
-start %Disk%:\Anaconda3\python.exe "%Disk%:\Anaconda3\Scripts\ipython-script.py" notebook --ip=%thisip% --certfile=%Disk%:\home\ssl_cert.pem --profile=nbserver&lt;/p&gt;
-&lt;p&gt;REM 利用 pip install pelilcan 與 Markdown,
-pip install leo-editor-broke-abbrev.zip&lt;/p&gt;
-&lt;p&gt;REM 啟動 VMEmulator&lt;/p&gt;
-&lt;p&gt;REM start %Disk%:\apps\nand2tetris\tools\VMEmulator.bat&lt;/p&gt;
-&lt;p&gt;REM 啟動 Assembler&lt;/p&gt;
-&lt;p&gt;REM start %Disk%:\apps\nand2tetris\tools\Assembler.bat&lt;/p&gt;
-&lt;p&gt;REM 啟動 CPUEmulator&lt;/p&gt;
-&lt;p&gt;REM start %Disk%:\apps\nand2tetris\tools\CPUEmulator.bat&lt;/p&gt;
-&lt;p&gt;REM 啟動 HardwareSimulator&lt;/p&gt;
-&lt;p&gt;REM start %Disk%:\apps\nand2tetris\tools\HardwareSimulator.bat&lt;/p&gt;
-&lt;p&gt;REM 啟動 JackCompiler&lt;/p&gt;
-&lt;p&gt;REM start %Disk%:\apps\nand2tetris\tools\JackCompiler.bat&lt;/p&gt;
-&lt;p&gt;REM 啟動 TextComparer&lt;/p&gt;
-&lt;p&gt;REM start %Disk%:\apps\nand2tetris\tools\TextComparer.bat&lt;/p&gt;
-&lt;p&gt;REM 啟動 node.js&lt;/p&gt;
-&lt;p&gt;REM start /MIN cmd.exe /k "%Disk%:\nodejs\nodejsvars.bat"&lt;/p&gt;
-&lt;p&gt;REM start %Disk%:\nodejs\node.exe&lt;/p&gt;
-&lt;p&gt;start /MIN cmd.exe&lt;/p&gt;
-&lt;p&gt;REM start %Disk%:\IDE\nodejs\node.exe&lt;/p&gt;
-&lt;p&gt;REM C:\WINDOWS\system32\cmd.exe /k %Disk%:\IDE\nodejs\nodejsvars.bat&lt;/p&gt;
-&lt;p&gt;REM 啟動 Leo 編輯器&lt;/p&gt;
-&lt;h2&gt;2. 目前已經熟悉的 Python3 指令及語法有哪些? 請舉例說明&lt;/h2&gt;
-&lt;p&gt;舉例說明一些語法&lt;/p&gt;
-&lt;p&gt;1.random=亂數&lt;/p&gt;
-&lt;p&gt;2.import= 輸入&lt;/p&gt;
-&lt;p&gt;3.string=轉成字串&lt;/p&gt;
-&lt;p&gt;4.integer=轉成整數&lt;/p&gt;
-&lt;p&gt;5.float=轉成浮點數&lt;/p&gt;
-&lt;p&gt;6.end="\n\n"=跳行&lt;/p&gt;
-&lt;p&gt;7.sep="符號"=分隔符號&lt;/p&gt;
-&lt;p&gt;8.Len=計算行列的個數&lt;/p&gt;
-&lt;p&gt;9.while=迴圈&lt;/p&gt;
-&lt;p&gt;10.[XXX]=數列&lt;/p&gt;
-&lt;p&gt;11.！==不等於&lt;/p&gt;
-&lt;p&gt;12....=還沒說完&lt;/p&gt;
-&lt;p&gt;13.#:單行註解&lt;/p&gt;
-&lt;p&gt;14.conding:編碼&lt;/p&gt;
-&lt;h2&gt;3.請各組員利用 Brython, 分別在各分組的 pelican 網頁文章中, 繪製一個歡慶耶誕的 2D 圖形&lt;/h2&gt;
-&lt;!-- 導入 brython_dist.js --&gt;
-=======
 &lt;p&gt;&lt;font color=red&gt;REM 啟動 Leo 編輯器&lt;/font&gt;&lt;/p&gt;
 &lt;p&gt;&lt;font color=blue&gt;2.目前已經熟悉的 Python3 指令及語法有哪些? 請舉例說明.&lt;/font&gt;&lt;/p&gt;
 &lt;p&gt;&lt;font color=purple&gt;conding:編碼&lt;/font&gt;&lt;/p&gt;
@@ -1127,144 +1100,19 @@ pip install leo-editor-broke-abbrev.zip&lt;/p&gt;
 &lt;p&gt;&lt;font color=blue&gt;4.請各組員利用 Brython, 分別在各分組的 pelican 網頁文章中, 繪製一個歡慶耶誕的 2D 圖形&lt;/font&gt;.
 以下利用 Brython 在網頁寫 Python 繪圖&lt;/p&gt;
 &lt;!-- 導入 brython.js --&gt;
->>>>>>> a9c63373784bd8885da3f680546ee1380f60abb6
 
 &lt;script type="text/javascript" src="js/Brython3.2.3-20151122-082712/brython.js"&gt;&lt;/script&gt;
 
 &lt;!-- 啟動 brython() --&gt;
 
-<<<<<<< HEAD
-&lt;script&gt; 
-window.onload=function(){ 
-brython(1); 
-} 
-=======
 &lt;script&gt;
 window.onload=function(){
 brython(1);
 }
->>>>>>> a9c63373784bd8885da3f680546ee1380f60abb6
 &lt;/script&gt;
 
 &lt;!-- 以下利用 Brython 程式執行繪圖 --&gt;
 
-<<<<<<< HEAD
-&lt;canvas id="plotarea" width="500" height="500"&gt;&lt;/canvas&gt;
-
-&lt;script type="text/python3"&gt; 
-# 導入 doc 
-from browser import document as doc 
-import math
-
-# 準備繪圖畫布 
-canvas = doc["plotarea"] 
-ctx = canvas.getContext("2d") 
-
-# 開始畫直線 
-
-ctx.beginPath() 
-ctx.lineWidth = 5 
-ctx.moveTo(231, 98) 
-ctx.lineTo(180, 187) 
-ctx.strokeStyle = "#FF0000" 
-ctx.stroke() 
-
-ctx.beginPath() 
-ctx.lineWidth = 5
-ctx.moveTo(231, 98) 
-ctx.lineTo(284, 187) 
-ctx.strokeStyle = "#FF0000" 
-ctx.stroke() 
-
-ctx.beginPath() 
-ctx.lineWidth = 5
-ctx.moveTo(180, 187) 
-ctx.lineTo(197, 187) 
-ctx.strokeStyle = "#FF0000" 
-ctx.stroke() 
-
-ctx.beginPath() 
-ctx.lineWidth = 5
-ctx.moveTo(284, 187) 
-ctx.lineTo(267, 187) 
-ctx.strokeStyle = "#FF0000" 
-ctx.stroke() 
-
-ctx.beginPath() 
-ctx.lineWidth = 5
-ctx.moveTo(197, 187) 
-ctx.lineTo(163, 262) 
-ctx.strokeStyle = "#FF0000" 
-ctx.stroke() 
-
-ctx.beginPath() 
-ctx.lineWidth = 5
-ctx.moveTo(267, 187) 
-ctx.lineTo(303, 262) 
-ctx.strokeStyle = "#FF0000" 
-ctx.stroke() 
-
-ctx.beginPath() 
-ctx.lineWidth = 5
-ctx.moveTo(163, 262) 
-ctx.lineTo(182, 262) 
-ctx.strokeStyle = "#FF0000" 
-ctx.stroke() 
-
-ctx.beginPath() 
-ctx.lineWidth = 5
-ctx.moveTo(281, 262) 
-ctx.lineTo(303, 262) 
-ctx.strokeStyle = "#FF0000" 
-ctx.stroke() 
-
-ctx.beginPath() 
-ctx.lineWidth = 5
-ctx.moveTo(182, 262) 
-ctx.lineTo(150, 317) 
-ctx.strokeStyle = "#FF0000" 
-ctx.stroke() 
-
-ctx.beginPath() 
-ctx.lineWidth = 5
-ctx.moveTo(281, 262) 
-ctx.lineTo(311, 317) 
-ctx.strokeStyle = "#FF0000" 
-ctx.stroke() 
-
-
-ctx.beginPath() 
-ctx.lineWidth = 5
-ctx.moveTo(150, 317) 
-ctx.lineTo(311, 317)
-ctx.strokeStyle = "#FF0000" 
-ctx.stroke() 
-
-ctx.beginPath() 
-ctx.lineWidth = 5
-ctx.moveTo(212, 319) 
-ctx.lineTo(212, 389) 
-ctx.strokeStyle = "#FF0000" 
-ctx.stroke() 
-
-ctx.beginPath() 
-ctx.lineWidth = 5
-ctx.moveTo(246, 319) 
-ctx.lineTo(246, 389) 
-ctx.strokeStyle = "#FF0000" 
-ctx.stroke() 
-
-ctx.beginPath() 
-ctx.lineWidth = 5
-ctx.moveTo(212, 389) 
-ctx.lineTo(246, 389)  
-ctx.strokeStyle = "#FF0000" 
-ctx.stroke() 
-
-&lt;/script&gt;
-
-&lt;/div&gt;</summary><category term="w15"></category></entry><entry><title>第十五週報告示範</title><link href="http://coursemdetw.github.io/reveal/g6_w15.html" rel="alternate"></link><updated>2015-12-25T10:48:00+08:00</updated><author><name>g6</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/g6_w15.html</id><summary type="html">&lt;p&gt;CP W15 g6分組報告:&lt;/p&gt;
-=======
 &lt;canvas id="plotarea" width="400" height="400"&gt;&lt;/canvas&gt;
 
 &lt;script type="text/python3"&gt;
@@ -1574,8 +1422,186 @@ ctx.stroke()
 
 &lt;p&gt;&lt;a&gt;Happy Christmas!!!祝大家平安快樂!!&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;邱弘丞40423125
-&lt;/script&gt;&lt;/p&gt;</summary><category term="w15"></category></entry><entry><title>第十五週報告示範</title><link href="http://coursemdetw.github.io/reveal/g6_w15.html" rel="alternate"></link><updated>2015-12-25T10:48:00+08:00</updated><author><name>g6</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/g6_w15.html</id><summary type="html">&lt;p&gt;CP W15 g6分組報告:&lt;/p&gt;
->>>>>>> a9c63373784bd8885da3f680546ee1380f60abb6
+&lt;/script&gt;&lt;/p&gt;</summary><category term="w15"></category></entry><entry><title>G9第十五週報告</title><link href="http://coursemdetw.github.io/reveal/G9_w15.html" rel="alternate"></link><updated>2015-12-25T10:48:00+08:00</updated><author><name>KMOL</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/G9_w15.html</id><summary type="html">&lt;h2&gt;1. Python3 的近端程式開發系統如何建立? 如何啟動?&lt;/h2&gt;
+&lt;h2&gt;1.建立&lt;/h2&gt;
+&lt;p&gt;我們先利用GOOGLE搜尋Leo editor並且進入下載最新版的資料!&lt;/p&gt;
+&lt;p&gt;然後進課程網頁http://wordpress-2015course.rhcloud.com/?page_id=3633 &lt;/p&gt;
+&lt;p&gt;並前往COPY.com下載fix檔&lt;/p&gt;
+&lt;p&gt;fix解壓縮後把剛下載的Leo editor放入開啟scite編輯器修改&lt;/p&gt;
+&lt;p&gt;fix.bat copy leo-editor-broke-abbrev.zip C:\Ana3_2015\data\&lt;/p&gt;
+&lt;p&gt;修改start.bat--第35行pip install leo-editor-broke-abbrev.zip,近端的python3就完成了!!&lt;/p&gt;
+&lt;h2&gt;2.啟動&lt;/h2&gt;
+&lt;p&gt;我們由start.bat可以充分理解它啟動了那些東西&lt;/p&gt;
+&lt;p&gt;REM 啟動 Jupyter&lt;/p&gt;
+&lt;p&gt;cd tmp
+start %Disk%:\Anaconda3\python.exe "%Disk%:\Anaconda3\Scripts\ipython-script.py" notebook --ip=%thisip% --certfile=%Disk%:\home\ssl_cert.pem --profile=nbserver&lt;/p&gt;
+&lt;p&gt;REM 利用 pip install pelilcan 與 Markdown,
+pip install leo-editor-broke-abbrev.zip&lt;/p&gt;
+&lt;p&gt;REM 啟動 VMEmulator&lt;/p&gt;
+&lt;p&gt;REM start %Disk%:\apps\nand2tetris\tools\VMEmulator.bat&lt;/p&gt;
+&lt;p&gt;REM 啟動 Assembler&lt;/p&gt;
+&lt;p&gt;REM start %Disk%:\apps\nand2tetris\tools\Assembler.bat&lt;/p&gt;
+&lt;p&gt;REM 啟動 CPUEmulator&lt;/p&gt;
+&lt;p&gt;REM start %Disk%:\apps\nand2tetris\tools\CPUEmulator.bat&lt;/p&gt;
+&lt;p&gt;REM 啟動 HardwareSimulator&lt;/p&gt;
+&lt;p&gt;REM start %Disk%:\apps\nand2tetris\tools\HardwareSimulator.bat&lt;/p&gt;
+&lt;p&gt;REM 啟動 JackCompiler&lt;/p&gt;
+&lt;p&gt;REM start %Disk%:\apps\nand2tetris\tools\JackCompiler.bat&lt;/p&gt;
+&lt;p&gt;REM 啟動 TextComparer&lt;/p&gt;
+&lt;p&gt;REM start %Disk%:\apps\nand2tetris\tools\TextComparer.bat&lt;/p&gt;
+&lt;p&gt;REM 啟動 node.js&lt;/p&gt;
+&lt;p&gt;REM start /MIN cmd.exe /k "%Disk%:\nodejs\nodejsvars.bat"&lt;/p&gt;
+&lt;p&gt;REM start %Disk%:\nodejs\node.exe&lt;/p&gt;
+&lt;p&gt;start /MIN cmd.exe&lt;/p&gt;
+&lt;p&gt;REM start %Disk%:\IDE\nodejs\node.exe&lt;/p&gt;
+&lt;p&gt;REM C:\WINDOWS\system32\cmd.exe /k %Disk%:\IDE\nodejs\nodejsvars.bat&lt;/p&gt;
+&lt;p&gt;REM 啟動 Leo 編輯器&lt;/p&gt;
+&lt;h2&gt;2. 目前已經熟悉的 Python3 指令及語法有哪些? 請舉例說明&lt;/h2&gt;
+&lt;p&gt;舉例說明一些語法&lt;/p&gt;
+&lt;p&gt;1.random=亂數&lt;/p&gt;
+&lt;p&gt;2.import= 輸入&lt;/p&gt;
+&lt;p&gt;3.string=轉成字串&lt;/p&gt;
+&lt;p&gt;4.integer=轉成整數&lt;/p&gt;
+&lt;p&gt;5.float=轉成浮點數&lt;/p&gt;
+&lt;p&gt;6.end="\n\n"=跳行&lt;/p&gt;
+&lt;p&gt;7.sep="符號"=分隔符號&lt;/p&gt;
+&lt;p&gt;8.Len=計算行列的個數&lt;/p&gt;
+&lt;p&gt;9.while=迴圈&lt;/p&gt;
+&lt;p&gt;10.[XXX]=數列&lt;/p&gt;
+&lt;p&gt;11.！==不等於&lt;/p&gt;
+&lt;p&gt;12....=還沒說完&lt;/p&gt;
+&lt;p&gt;13.#:單行註解&lt;/p&gt;
+&lt;p&gt;14.conding:編碼&lt;/p&gt;
+&lt;h2&gt;3.請各組員利用 Brython, 分別在各分組的 pelican 網頁文章中, 繪製一個歡慶耶誕的 2D 圖形&lt;/h2&gt;
+&lt;!-- 導入 brython_dist.js --&gt;
+
+&lt;script type="text/javascript" src="js/Brython3.2.3-20151122-082712/brython.js"&gt;&lt;/script&gt;
+
+&lt;!-- 啟動 brython() --&gt;
+
+&lt;script&gt; 
+window.onload=function(){ 
+brython(1); 
+} 
+&lt;/script&gt;
+
+&lt;!-- 以下利用 Brython 程式執行繪圖 --&gt;
+
+&lt;canvas id="plotarea" width="500" height="500"&gt;&lt;/canvas&gt;
+
+&lt;script type="text/python3"&gt; 
+# 導入 doc 
+from browser import document as doc 
+import math
+
+# 準備繪圖畫布 
+canvas = doc["plotarea"] 
+ctx = canvas.getContext("2d") 
+
+# 開始畫直線 
+
+ctx.beginPath() 
+ctx.lineWidth = 5 
+ctx.moveTo(231, 98) 
+ctx.lineTo(180, 187) 
+ctx.strokeStyle = "#FF0000" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 5
+ctx.moveTo(231, 98) 
+ctx.lineTo(284, 187) 
+ctx.strokeStyle = "#FF0000" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 5
+ctx.moveTo(180, 187) 
+ctx.lineTo(197, 187) 
+ctx.strokeStyle = "#FF0000" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 5
+ctx.moveTo(284, 187) 
+ctx.lineTo(267, 187) 
+ctx.strokeStyle = "#FF0000" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 5
+ctx.moveTo(197, 187) 
+ctx.lineTo(163, 262) 
+ctx.strokeStyle = "#FF0000" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 5
+ctx.moveTo(267, 187) 
+ctx.lineTo(303, 262) 
+ctx.strokeStyle = "#FF0000" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 5
+ctx.moveTo(163, 262) 
+ctx.lineTo(182, 262) 
+ctx.strokeStyle = "#FF0000" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 5
+ctx.moveTo(281, 262) 
+ctx.lineTo(303, 262) 
+ctx.strokeStyle = "#FF0000" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 5
+ctx.moveTo(182, 262) 
+ctx.lineTo(150, 317) 
+ctx.strokeStyle = "#FF0000" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 5
+ctx.moveTo(281, 262) 
+ctx.lineTo(311, 317) 
+ctx.strokeStyle = "#FF0000" 
+ctx.stroke() 
+
+
+ctx.beginPath() 
+ctx.lineWidth = 5
+ctx.moveTo(150, 317) 
+ctx.lineTo(311, 317)
+ctx.strokeStyle = "#FF0000" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 5
+ctx.moveTo(212, 319) 
+ctx.lineTo(212, 389) 
+ctx.strokeStyle = "#FF0000" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 5
+ctx.moveTo(246, 319) 
+ctx.lineTo(246, 389) 
+ctx.strokeStyle = "#FF0000" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 5
+ctx.moveTo(212, 389) 
+ctx.lineTo(246, 389)  
+ctx.strokeStyle = "#FF0000" 
+ctx.stroke() 
+
+&lt;/script&gt;
+
+&lt;/div&gt;</summary><category term="w15"></category></entry><entry><title>第十五週報告示範</title><link href="http://coursemdetw.github.io/reveal/g6_w15.html" rel="alternate"></link><updated>2015-12-25T10:48:00+08:00</updated><author><name>g6</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/g6_w15.html</id><summary type="html">&lt;p&gt;CP W15 g6分組報告:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Python3 的近端程式開發系統如何建立? 如何啟動?&lt;/li&gt;
 &lt;/ul&gt;
@@ -1655,6 +1681,51 @@ ctx.stroke()
 
 x = 100
 y = 100
+&lt;/script&gt;
+
+&lt;!-- 導入 brython.js --&gt;
+
+&lt;script type="text/javascript" src="js/Brython3.2.3-20151122-082712/40423112.js"&gt;&lt;/script&gt;
+
+&lt;!-- 啟動 brython() --&gt;
+
+&lt;script&gt;
+window.onload=function(){
+brython(1);
+}
+&lt;/script&gt;
+
+&lt;!-- 以下利用 Brython 程式執行繪圖 --&gt;
+
+&lt;canvas id="plotarea2" width="500" height="500"&gt;&lt;/canvas&gt;
+
+&lt;script type="text/python3"&gt;
+# 導入 doc
+from browser import document as doc
+from browser import console
+import math
+
+# 準備繪圖畫布
+canvas = doc["plotarea2"]
+ctx = canvas.getContext("2d")
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(250, 200)
+ctx.lineTo(150, 300)
+ctx.lineTo(200, 300)
+ctx.lineTo(100, 400)
+ctx.lineTo(200, 400)
+ctx.lineTo(200, 500)
+ctx.lineTo(300, 500)
+ctx.lineTo(300, 400)
+ctx.lineTo(400, 400)
+ctx.lineTo(300, 300)
+ctx.lineTo(350, 300)
+ctx.lineTo(250, 200)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
 &lt;/script&gt;</summary><category term="w15"></category></entry><entry><title>G8第十五週報告</title><link href="http://coursemdetw.github.io/reveal/g8_w15.html" rel="alternate"></link><updated>2015-12-25T10:48:00+08:00</updated><author><name>40423152</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/g8_w15.html</id><summary type="html">&lt;p&gt;聖誕節到了~就來個應景的配色吧&lt;/p&gt;
 &lt;p&gt;&lt;font color=green&gt;1.建立&lt;/p&gt;
 &lt;p&gt;我們先利用GOOGLE搜尋Leo editor並且進入下載最新版的資料!&lt;/p&gt;
@@ -3445,7 +3516,7 @@ ctx.stroke()
 &lt;span class="nt"&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
 
 &lt;span class="nt"&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</summary><category term="w14"></category><category term="Brython"></category></entry><entry><title>第十四週報告示範</title><link href="http://coursemdetw.github.io/reveal/g7_w14_1.html" rel="alternate"></link><updated>2015-12-20T09:48:00+08:00</updated><author><name>40423140</name></author><id>tag:coursemdetw.github.io,2015-12-20:reveal/g7_w14_1.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="w14"></category><category term="Brython"></category></entry><entry><title>第十四週報告示範</title><link href="http://coursemdetw.github.io/reveal/g7_w14_1.html" rel="alternate"></link><updated>2015-12-20T09:48:00+08:00</updated><author><name>40423139</name></author><id>tag:coursemdetw.github.io,2015-12-20:reveal/g7_w14_1.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
 &lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
 &lt;iframe src="simplest.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
@@ -3557,7 +3628,7 @@ for i in 1 .. 10 { 呼叫特定函式(i) }
 &lt;p&gt;註腳會連結到這裡.&amp;#160;&lt;a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</summary><category term="w14"></category></entry><entry><title>G7第14周報告</title><link href="http://coursemdetw.github.io/reveal/g7_w14_2.html" rel="alternate"></link><updated>2015-12-20T09:48:00+08:00</updated><author><name>40423140</name></author><id>tag:coursemdetw.github.io,2015-12-20:reveal/g7_w14_2.html</id><summary type="html">&lt;p&gt;以下利用 Brython 在網頁寫 Python 繪圖&lt;/p&gt;
+&lt;/div&gt;</summary><category term="w14"></category></entry><entry><title>G7第14周報告</title><link href="http://coursemdetw.github.io/reveal/g7_w14_2.html" rel="alternate"></link><updated>2015-12-20T09:48:00+08:00</updated><author><name>40423139</name></author><id>tag:coursemdetw.github.io,2015-12-20:reveal/g7_w14_2.html</id><summary type="html">&lt;p&gt;以下利用 Brython 在網頁寫 Python 繪圖&lt;/p&gt;
 &lt;!-- 導入 brython.js --&gt;
 
 &lt;script type="text/javascript" src="js/Brython3.2.3-20151122-082712/brython.js"&gt;&lt;/script&gt;

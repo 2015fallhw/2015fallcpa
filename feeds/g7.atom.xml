@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>2015FALL 作業主頁</title><link href="http://coursemdetw.github.io/reveal/" rel="alternate"></link><link href="http://coursemdetw.github.io/reveal/feeds/g7.atom.xml" rel="self"></link><id>http://coursemdetw.github.io/reveal/</id><updated>2015-12-26T10:48:00+08:00</updated><entry><title>G7第十五週報告</title><link href="http://coursemdetw.github.io/reveal/g7_w15.html" rel="alternate"></link><updated>2015-12-26T10:48:00+08:00</updated><author><name>40423140</name></author><id>tag:coursemdetw.github.io,2015-12-26:reveal/g7_w15.html</id><summary type="html">&lt;p&gt;1.建立&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>2015FALL 作業主頁</title><link href="http://coursemdetw.github.io/reveal/" rel="alternate"></link><link href="http://coursemdetw.github.io/reveal/feeds/g7.atom.xml" rel="self"></link><id>http://coursemdetw.github.io/reveal/</id><updated>2015-12-26T10:48:00+08:00</updated><entry><title>G7第十五週報告</title><link href="http://coursemdetw.github.io/reveal/g7_w15.html" rel="alternate"></link><updated>2015-12-26T10:48:00+08:00</updated><author><name>40423139</name></author><id>tag:coursemdetw.github.io,2015-12-26:reveal/g7_w15.html</id><summary type="html">&lt;p&gt;1.建立&lt;/p&gt;
 &lt;p&gt;我們先利用gogle搜尋leo editor並且進入下載最新版的資料!&lt;/p&gt;
 &lt;p&gt;然後進課程網頁http://wordpress-2015course.rhcloud.com/?page_id=3633 下載fix檔!&lt;/p&gt;
 &lt;p&gt;fix解壓縮後把剛剛下載的ieo editor放入!開啟scite編輯器修改fix.bat--copy leo-editor-broke-abbrev.zip C:\Ana3_2015\data\&lt;/p&gt;
@@ -256,7 +256,54 @@ ctx.stroke()
 x = 100
 y = 100
 
-&lt;/script&gt;</summary><category term="w15"></category></entry><entry><title>第十四週報告示範</title><link href="http://coursemdetw.github.io/reveal/g7_w14_1.html" rel="alternate"></link><updated>2015-12-20T09:48:00+08:00</updated><author><name>40423140</name></author><id>tag:coursemdetw.github.io,2015-12-20:reveal/g7_w14_1.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
+&lt;/script&gt;
+
+&lt;!-- 導入 brython.js --&gt;
+
+&lt;script type="text/javascript" src="js/Brython3.2.3-20151122-082712/40423112.js"&gt;&lt;/script&gt;
+
+&lt;!-- 啟動 brython() --&gt;
+
+&lt;script&gt;
+window.onload=function(){
+brython(1);
+}
+&lt;/script&gt;
+
+&lt;!-- 以下利用 Brython 程式執行繪圖 --&gt;
+
+&lt;canvas id="plotarea2" width="500" height="500"&gt;&lt;/canvas&gt;
+
+&lt;script type="text/python3"&gt;
+# 導入 doc
+from browser import document as doc
+from browser import console
+import math
+
+# 準備繪圖畫布
+canvas = doc["plotarea2"]
+ctx = canvas.getContext("2d")
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(250, 200)
+ctx.lineTo(150, 300)
+ctx.lineTo(200, 300)
+ctx.lineTo(100, 400)
+ctx.lineTo(200, 400)
+ctx.lineTo(200, 500)
+ctx.lineTo(300, 500)
+ctx.lineTo(300, 400)
+ctx.lineTo(400, 400)
+ctx.lineTo(300, 300)
+ctx.lineTo(350, 300)
+ctx.lineTo(250, 200)
+ctx.strokeStyle = "#FFFF00"
+ctx.stroke()
+&lt;/script&gt;
+
+&lt;p&gt;40423139曾繼緯&lt;/p&gt;</summary><category term="w15"></category></entry><entry><title>第十四週報告示範</title><link href="http://coursemdetw.github.io/reveal/g7_w14_1.html" rel="alternate"></link><updated>2015-12-20T09:48:00+08:00</updated><author><name>40423139</name></author><id>tag:coursemdetw.github.io,2015-12-20:reveal/g7_w14_1.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
 &lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
 &lt;iframe src="simplest.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
@@ -368,7 +415,7 @@ for i in 1 .. 10 { 呼叫特定函式(i) }
 &lt;p&gt;註腳會連結到這裡.&amp;#160;&lt;a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</summary><category term="w14"></category></entry><entry><title>G7第14周報告</title><link href="http://coursemdetw.github.io/reveal/g7_w14_2.html" rel="alternate"></link><updated>2015-12-20T09:48:00+08:00</updated><author><name>40423140</name></author><id>tag:coursemdetw.github.io,2015-12-20:reveal/g7_w14_2.html</id><summary type="html">&lt;p&gt;以下利用 Brython 在網頁寫 Python 繪圖&lt;/p&gt;
+&lt;/div&gt;</summary><category term="w14"></category></entry><entry><title>G7第14周報告</title><link href="http://coursemdetw.github.io/reveal/g7_w14_2.html" rel="alternate"></link><updated>2015-12-20T09:48:00+08:00</updated><author><name>40423139</name></author><id>tag:coursemdetw.github.io,2015-12-20:reveal/g7_w14_2.html</id><summary type="html">&lt;p&gt;以下利用 Brython 在網頁寫 Python 繪圖&lt;/p&gt;
 &lt;!-- 導入 brython.js --&gt;
 
 &lt;script type="text/javascript" src="js/Brython3.2.3-20151122-082712/brython.js"&gt;&lt;/script&gt;
