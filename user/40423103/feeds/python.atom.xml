@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom"><title>2015FALL 40423103 CPA 作業</title><link href="http://coursemdetw.github.io/reveal/" rel="alternate"></link><link href="http://coursemdetw.github.io/reveal/feeds/python.atom.xml" rel="self"></link><id>http://coursemdetw.github.io/reveal/</id><updated>2015-12-25T11:41:00+08:00</updated><entry><title>2015 計算機程式 第十五週</title><link href="http://coursemdetw.github.io/reveal/2015cpa_hw_w15.html" rel="alternate"></link><updated>2015-12-25T11:41:00+08:00</updated><author><name>40423103</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/2015cpa_hw_w15.html</id><summary type="html">&lt;h3&gt;Merry Christmas  &amp;amp;  Happy new year&lt;/h3&gt;
 &lt;!-- 導入 brython.js --&gt;
 
-&lt;script type="text/javascript" src="http://brython.info/src/brython_dist.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="js/40423103-w15.js"&gt;&lt;/script&gt;
 
 &lt;!-- 啟動 brython() --&gt;
 
@@ -256,7 +256,7 @@ brython(1);
 }
 &lt;/script&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第十四週</title><link href="http://coursemdetw.github.io/reveal/2015cpa_hw_w14.html" rel="alternate"></link><updated>2015-12-24T19:41:00+08:00</updated><author><name>40423103</name></author><id>tag:coursemdetw.github.io,2015-12-24:reveal/2015cpa_hw_w14.html</id><summary type="html">&lt;!-- 導入 brython.js --&gt;
 
-&lt;script type="text/javascript" src="http://brython.info/src/brython_dist.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="js/40423103-w14.js"&gt;&lt;/script&gt;
 
 &lt;!-- 啟動 brython() --&gt;
 
@@ -303,7 +303,67 @@ for i in range(11):
 window.onload=function(){
 brython(1);
 }
-&lt;/script&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第一週</title><link href="http://coursemdetw.github.io/reveal/2015cpa_hw_w1.html" rel="alternate"></link><updated>2015-09-19T11:41:00+08:00</updated><author><name>40423103</name></author><id>tag:coursemdetw.github.io,2015-09-19:reveal/2015cpa_hw_w1.html</id><summary type="html">&lt;iframe src="40423103_cp_w1_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
+&lt;/script&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式作業 第十二週</title><link href="http://coursemdetw.github.io/reveal/2015cpa_hw_w12.html" rel="alternate"></link><updated>2015-12-05T20:45:00+08:00</updated><author><name>劉怡萱</name></author><id>tag:coursemdetw.github.io,2015-12-05:reveal/2015cpa_hw_w12.html</id><summary type="html">&lt;h1&gt;猜數字遊戲&lt;/h1&gt;
+&lt;h3&gt;解析&lt;/h3&gt;
+&lt;p&gt;~投影片不好做直接上圖~
+&lt;a href="http://imgur.com/FxIA2DT"&gt;&lt;img src="http://i.imgur.com/FxIA2DT.jpg" title="source: imgur.com" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;影片解析&lt;/h3&gt;
+&lt;p&gt;&lt;iframe src="https://player.vimeo.com/video/147890116" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt; &lt;p&gt;&lt;a href="https://vimeo.com/147890116"&gt;Guess_Number&lt;/a&gt; from &lt;a href="https://vimeo.com/user45467634"&gt;劉怡萱&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;
+&lt;h3&gt;流程&lt;/h3&gt;
+&lt;p&gt;&lt;a href="http://imgur.com/Vb0uBlB"&gt;&lt;img src="http://i.imgur.com/Vb0uBlB.jpg" title="source: imgur.com" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;心得&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;看這些程式碼自己都大概懂他的意思&lt;/p&gt;
+&lt;p&gt;可是要講解給其他人聽還真的是有點難&lt;/p&gt;
+&lt;p&gt;自評&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;自評分數：70&lt;/p&gt;
+&lt;p&gt;這次的影片做的簡單了點~&lt;/p&gt;
+&lt;p&gt;可是好像背景音樂有點吵XD&lt;/p&gt;
+&lt;p&gt;但是就突然想放&lt;/p&gt;
+&lt;p&gt;不過這次有開場特效XD&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式作業 第十一週</title><link href="http://coursemdetw.github.io/reveal/2015cpa_hw_w11.html" rel="alternate"></link><updated>2015-12-02T20:45:00+08:00</updated><author><name>劉怡萱</name></author><id>tag:coursemdetw.github.io,2015-12-02:reveal/2015cpa_hw_w11.html</id><summary type="html">&lt;iframe src="w11.html" width="500" height="300"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="w11.html" target="_blank"&gt;修正fix_leo-editor安裝_投影片&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;修正fix_leo-editor安裝&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;開啟教學網頁&lt;/li&gt;
+&lt;li&gt;點選2015fall課程&lt;/li&gt;
+&lt;li&gt;點選遠端(copy)下載fix&lt;/li&gt;
+&lt;li&gt;將檔案解壓縮&lt;/li&gt;
+&lt;li&gt;使用瀏覽器搜尋 leo editor github&lt;/li&gt;
+&lt;li&gt;點選進入網頁&lt;/li&gt;
+&lt;li&gt;點選leo-editor&lt;/li&gt;
+&lt;li&gt;點選release&lt;/li&gt;
+&lt;li&gt;點選broke-abbrev&lt;/li&gt;
+&lt;li&gt;點選Source code(zip)&lt;/li&gt;
+&lt;li&gt;將檔案移至fix資料夾&lt;/li&gt;
+&lt;li&gt;到Ana3_lite2\data\SciTE&lt;/li&gt;
+&lt;li&gt;開啟SciTe.exe &lt;/li&gt;
+&lt;li&gt;使用此編輯器開啟fix.bat&lt;/li&gt;
+&lt;li&gt;在最後增加一行指令
+      指令為  copy leo-editor-broke-abbrev.zip C:\Ana3_2015\data\                            &lt;/li&gt;
+&lt;li&gt;儲存檔案&lt;/li&gt;
+&lt;li&gt;使用此編輯器開啟start.bat&lt;/li&gt;
+&lt;li&gt;將原指令 (第35行) pip install http://140.130.17.17/public/leo-editor-master.zip         &lt;br /&gt;
+     更改為 pip install leo-editor-broke-abbrev.zip&lt;/li&gt;
+&lt;li&gt;儲存檔案&lt;/li&gt;
+&lt;li&gt;點選開啟fix.bat&lt;/li&gt;
+&lt;li&gt;點選開啟start.bat&lt;/li&gt;
+&lt;li&gt;成功開啟~~&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;影片解說&lt;/h3&gt;
+&lt;iframe src="https://player.vimeo.com/video/147597320" width="1280" height="720" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/147597320"&gt;修正fix_leo-editor安裝&lt;/a&gt; from &lt;a href="https://vimeo.com/user45467634"&gt;劉怡萱&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;
+&lt;h2&gt;心得&lt;/h2&gt;
+&lt;p&gt;其實在拍影片的時候都會出現一些問題，&lt;/p&gt;
+&lt;p&gt;雖然影片都是很順暢地走完整個流程，&lt;/p&gt;
+&lt;p&gt;但是其實中間暫停、重拍過很多次，&lt;/p&gt;
+&lt;p&gt;在解決這些問題的同時也了解更多相關的東西。&lt;/p&gt;
+&lt;h2&gt;自評&lt;/h2&gt;
+&lt;p&gt;自評分數：75&lt;/p&gt;
+&lt;p&gt;我覺得每次的自評都只有影片好難拍好難拍好難拍而已XD&lt;/p&gt;
+&lt;p&gt;不過後製的速度有比較快了啦~&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第一週</title><link href="http://coursemdetw.github.io/reveal/2015cpa_hw_w1.html" rel="alternate"></link><updated>2015-09-19T11:41:00+08:00</updated><author><name>40423103</name></author><id>tag:coursemdetw.github.io,2015-09-19:reveal/2015cpa_hw_w1.html</id><summary type="html">&lt;iframe src="40423103_cp_w1_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
 &lt;p&gt;&lt;a href="40423103_cp_w1_p.html" target="_blank"&gt;安裝及啟動Anaconda_投影片&lt;/a&gt;&lt;/p&gt;
 &lt;h1&gt;安裝及啟動Anaconda&lt;/h1&gt;
