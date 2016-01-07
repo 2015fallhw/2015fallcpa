@@ -60,6 +60,12 @@
         <a href="./category/g7.html">G7</a>
       </li>
       <li >
+        <a href="./category/g8.html">G8</a>
+      </li>
+      <li >
+        <a href="./category/g9.html">G9</a>
+      </li>
+      <li >
         <a href="./category/g99.html">G99</a>
       </li>
       <li >
@@ -285,6 +291,121 @@ y = 100
 </script>
 
 <p>許承恩
+</script></p>
+<!-- 導入 brython.js -->
+
+<script type="text/javascript" src="js/Brython3.2.3-20151122-082712/40423112.js"></script>
+
+<!-- 啟動 brython() -->
+
+<script>
+window.onload=function(){
+brython(1);
+}
+</script>
+
+<!-- 以下利用 Brython 程式執行繪圖 -->
+
+<canvas id="plotarea2" width="500" height="500"></canvas>
+
+<script type="text/python3">
+# 導入 doc
+from browser import document as doc
+from browser import console
+import math
+
+# 準備繪圖畫布
+canvas = doc["plotarea2"]
+ctx = canvas.getContext("2d")
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(50,300)
+ctx.lineTo(50, 400)
+ctx.lineTo(150, 400)
+ctx.lineTo(150, 300)
+ctx.lineTo(50, 300)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.moveTo(150,300)
+ctx.lineTo(150, 180)
+ctx.lineTo(350, 180)
+ctx.lineTo(350, 400)
+ctx.lineTo(150, 400)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.moveTo(350,400)
+ctx.lineTo(350, 200)
+ctx.lineTo(470, 200)
+ctx.lineTo(470, 400)
+ctx.lineTo(350, 400)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.moveTo(90,300)
+ctx.lineTo(75, 230)
+ctx.lineTo(130, 210)
+ctx.lineTo(90, 300)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.moveTo(250,180)
+ctx.lineTo(200, 80)
+ctx.lineTo(300, 130)
+ctx.lineTo(250,180)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.moveTo(420,200)
+ctx.lineTo(390, 170)
+ctx.lineTo(430, 190)
+ctx.lineTo(420, 200)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+
+ctx.moveTo(50,330)
+ctx.lineTo(350, 330)
+ctx.moveTo(50,360)
+ctx.lineTo(150, 360)
+ctx.moveTo(150,300)
+ctx.lineTo(350, 300)
+ctx.moveTo(420,200)
+ctx.lineTo(390, 170)
+ctx.moveTo(100,400)
+ctx.lineTo(100, 300)
+ctx.moveTo(220,400)
+ctx.lineTo(220, 180)
+ctx.moveTo(290,400)
+ctx.lineTo(290, 180)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.moveTo(390,400)
+ctx.lineTo(390, 200)
+ctx.moveTo(430,400)
+ctx.lineTo(430, 200)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+
+ctx.moveTo(350,270)
+ctx.lineTo(470, 270)
+ctx.moveTo(350,340)
+ctx.lineTo(470, 340)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+ctx.moveTo(150,270)
+ctx.lineTo(350, 270)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+</script>
+
+<p><a>Happy Christmas!!!祝大家平安快樂!!</a></p>
+<p>邱弘丞40423125
 </script></p></div>
     <footer>
 <p class="meta">
@@ -312,6 +433,9 @@ y = 100
     <h1>Recent Posts</h1>
     <ul id="recent_posts">
       <li class="post">
+          <a href="./g8_w17.html">在網際頁面上, 用 Python 執行動態模擬!</a>
+      </li>
+      <li class="post">
           <a href="./g99_w17.html">在網際頁面上, 用 Python 執行動態模擬!</a>
       </li>
       <li class="post">
@@ -322,9 +446,6 @@ y = 100
       </li>
       <li class="post">
           <a href="./G3_w15_1.html">G3_w15_1</a>
-      </li>
-      <li class="post">
-          <a href="./g2_w1.html">g2 w1</a>
       </li>
     </ul>
   </section>
@@ -339,6 +460,8 @@ y = 100
         <li><a href="./category/g5.html">G5</a></li>
         <li><a href="./category/g6.html">g6</a></li>
         <li><a href="./category/g7.html">g7</a></li>
+        <li><a href="./category/g8.html">g8</a></li>
+        <li><a href="./category/g9.html">G9</a></li>
         <li><a href="./category/g99.html">g99</a></li>
         <li><a href="./category/python.html">Python</a></li>
     </ul>
@@ -347,7 +470,15 @@ y = 100
 
   <section>
   <h1>Tags</h1>
-    <a href="./tag/g1.html">G1</a>,    <a href="./tag/brython.html">Brython</a>,    <a href="./tag/w14.html">w14</a>,    <a href="./tag/ipython.html">IPython</a>,    <a href="./tag/publishing.html">publishing</a>,    <a href="./tag/pelican.html">pelican</a>,    <a href="./tag/jupyter.html">Jupyter</a>,    <a href="./tag/g10.html">G10</a>,    <a href="./tag/w15.html">w15</a>,    <a href="./tag/g3.html">G3</a>  </section>
+<<<<<<< HEAD
+    <a href="./tag/g10.html">G10</a>,    <a href="./tag/ipython.html">IPython</a>,    <a href="./tag/pelican.html">pelican</a>,    <a href="./tag/publishing.html">publishing</a>,    <a href="./tag/g1.html">G1</a>,    <a href="./tag/brython.html">Brython</a>,    <a href="./tag/jupyter.html">Jupyter</a>,    <a href="./tag/w15.html">w15</a>,    <a href="./tag/g3.html">G3</a>,    <a href="./tag/w14.html">w14</a>  </section>
+=======
+<<<<<<< HEAD
+    <a href="./tag/w14.html">w14</a>,    <a href="./tag/g3.html">G3</a>,    <a href="./tag/publishing.html">publishing</a>,    <a href="./tag/g10.html">G10</a>,    <a href="./tag/brython.html">Brython</a>,    <a href="./tag/jupyter.html">Jupyter</a>,    <a href="./tag/ipython.html">IPython</a>,    <a href="./tag/w15.html">w15</a>,    <a href="./tag/pelican.html">pelican</a>,    <a href="./tag/g1.html">G1</a>  </section>
+=======
+    <a href="./tag/g1.html">G1</a>,    <a href="./tag/w15.html">w15</a>,    <a href="./tag/w14.html">w14</a>,    <a href="./tag/brython.html">Brython</a>,    <a href="./tag/ipython.html">IPython</a>,    <a href="./tag/publishing.html">publishing</a>,    <a href="./tag/g3.html">G3</a>,    <a href="./tag/g10.html">G10</a>,    <a href="./tag/pelican.html">pelican</a>,    <a href="./tag/jupyter.html">Jupyter</a>  </section>
+>>>>>>> 502c16ba142f69ab1c47202433666b09f8913c4a
+>>>>>>> a9c63373784bd8885da3f680546ee1380f60abb6
 
 
     <section>
