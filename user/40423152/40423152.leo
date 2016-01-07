@@ -19,10 +19,8 @@
 <v t="leo.20151218094701.1" a="E"><vh>@path pelican</vh>
 <v t="leo.20151218094701.2"><vh>@edit publishconf.py</vh></v>
 <v t="leo.20151218094701.3" a="E"><vh>@path content</vh>
-<v t="leo.20151218094701.4"><vh>@edit g8_w14_1.md</vh></v>
 <v t="leo.20151218094701.5"><vh>@edit g8_w14_2.md</vh></v>
 <v t="leo.20151225100743.1"><vh>@edit g8_w15.md</vh></v>
-<v t="amd.20160103211002.1"><vh>@edit g8_w17.md</vh></v>
 </v>
 </v>
 </v>
