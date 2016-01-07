@@ -272,6 +272,8 @@ REM C:\WINDOWS\system32\cmd.exe /k %Disk%:\IDE\nodejs\nodejsvars.bat&lt;/font&gt
 &lt;p&gt;&lt;font color=red&gt;12. ...=還沒說完&lt;/font&gt;&lt;/p&gt;
 &lt;p&gt;&lt;font color=green&gt;13. #:單行註解&lt;/font&gt;&lt;/p&gt;
 &lt;p&gt;&lt;font color=red&gt;14. conding:編碼&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;把LEO弄到最新版本
+&lt;iframe src="https://player.vimeo.com/video/147718932" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt; &lt;p&gt;&lt;a href="https://vimeo.com/147718932"&gt;20151203&lt;/a&gt; from &lt;a href="https://vimeo.com/user46451216"&gt;Willy Lai&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;
 &lt;p&gt;利用流程圖, 簡要說明近端猜數字遊戲與猜顏色遊戲程式碼如何設計與運作.
 猜數字遊戲
 &lt;a data-flickr-embed="true"  href="https://www.flickr.com/photos/125234485@N06/23604246193/in/dateposted-public/" title="流程圖-"&gt;&lt;img src="https://farm2.staticflickr.com/1661/23604246193_8a2cf6e4d9_b.jpg" width="750" height="679" alt="流程圖-"&gt;&lt;/a&gt;&lt;script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"&gt;&lt;/script&gt;&lt;/p&gt;
