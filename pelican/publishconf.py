@@ -32,7 +32,7 @@ LINKS = (('2015課程網頁', 'http://wordpress-2015course.rhcloud.com/'),
 SOCIAL = (('twitter', 'http://twitter.com/ametaireau'),
           ('github', 'http://github.com/ametaireau'),)
           
-DEFAULT_PAGINATION = 10
+DEFAULT_PAGINATION = 20
 
 SITEURL = 'http://coursemdetw.github.io/reveal'
 RELATIVE_URLS = True
