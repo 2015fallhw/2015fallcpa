@@ -779,7 +779,7 @@
 </v>
 </v>
 </v>
-<v t="leo.20151026200230.1"><vh>@path 40423116</vh>
+<v t="leo.20151026200230.1" a="E"><vh>@path 40423116</vh>
 <v t="leo.20151026200230.2"><vh>以下為投影片 ------------</vh></v>
 <v t="leo.20151026200230.3"><vh>@edit 40423116_cp_w1_p.html</vh></v>
 <v t="leo.20151108171344.1"><vh>@edit 40423116_cp_w2_p.html</vh></v>
@@ -791,6 +791,8 @@
 <v t="leo.20151108172458.1"><vh>@edit 40423116_cp_w8_p.html</vh></v>
 <v t="leo.20151203202654.1"><vh>@edit 40423116_cp_w11_p.html</vh></v>
 <v t="leo.20151204093743.1"><vh>@edit 40423116_cp_w12_p.html</vh></v>
+<v t="leo.20160107210737.1"><vh>@edit 40423116_cp_w13_p.html</vh></v>
+<v t="leo.20160107233938.1"><vh>@edit 40423116_cp_w14_p.html</vh></v>
 <v t="leo.20151026200230.4" a="E"><vh>@path pelican</vh>
 <v t="leo.20151026200230.5"><vh>以下為設定檔 ------------</vh></v>
 <v t="leo.20151026200230.6"><vh>@edit publishconf.py</vh></v>
@@ -799,6 +801,8 @@
 <v t="leo.20151026200230.9"><vh>@edit 40423116_cp_w1.md</vh></v>
 <v t="leo.20151203202719.1"><vh>@edit 40423116_cp_w11.md</vh></v>
 <v t="leo.20151204093759.1"><vh>@edit 40423116_cp_w12.md</vh></v>
+<v t="leo.20160107210640.1"><vh>@edit 40423116_cp_w13.md</vh></v>
+<v t="leo.20160107233901.1"><vh>@edit 40423116_cp_w14.md</vh></v>
 </v>
 </v>
 </v>
@@ -847,10 +851,10 @@
 <v t="leo.20151116223649.2"><vh>@edit 40423117_cp_w5_p.html</vh></v>
 <v t="leo.20151116223649.3"><vh>@edit 40423117_cp_w6_p.html</vh></v>
 <v t="leo.20151218141410.1"><vh>@edit 40423117_cp_w7_p.html</vh></v>
-<v t="leo.20151026193315.4"><vh>@path pelican</vh>
+<v t="leo.20151026193315.4" a="E"><vh>@path pelican</vh>
 <v t="leo.20151026193315.5"><vh>以下為設定檔 ------------</vh></v>
 <v t="leo.20151026193315.6"><vh>@edit publishconf.py</vh></v>
-<v t="leo.20151026193315.7" a="E"><vh>@path content</vh>
+<v t="leo.20151026193315.7"><vh>@path content</vh>
 <v t="leo.20151026193315.8"><vh>以下為網誌 md 檔案 ------------</vh></v>
 <v t="leo.20151026193315.9"><vh>@edit 40423117_cp_w1.md</vh></v>
 <v t="leo.20151116223639.1"><vh>@edit 40423117_cp_w2.md</vh></v>
