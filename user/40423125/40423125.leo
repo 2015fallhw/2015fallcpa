@@ -22,7 +22,7 @@
 <v t="leo.20160103200710.1"><vh>@edit G5_w14_1.md</vh></v>
 <v t="leo.20160103200720.1"><vh>@edit G5_w14_2.md</vh></v>
 <v t="leo.20160103200805.1"><vh>@edit G5_w15_1.md</vh></v>
-<v t="leo.20160103200817.1"><vh>@edit G5_w15_2.md</vh></v>
+<v t="leo.20160103200817.1"><vh>@edit G6_w15_2.md</vh></v>
 </v>
 </v>
 </v>

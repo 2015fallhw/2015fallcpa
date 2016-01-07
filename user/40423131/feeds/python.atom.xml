@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>2015FALL 40423131 CPA 作業</title><link href="http://coursemdetw.github.io/reveal/" rel="alternate"></link><link href="http://coursemdetw.github.io/reveal/feeds/python.atom.xml" rel="self"></link><id>http://coursemdetw.github.io/reveal/</id><updated>2015-09-19T11:41:00+08:00</updated><entry><title>2015 計算機程式 作業</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w0.html" rel="alternate"></link><updated>2015-09-19T11:41:00+08:00</updated><author><name>40423131</name></author><id>tag:coursemdetw.github.io,2015-09-19:reveal/2015cp_hw_w0.html</id><summary type="html">&lt;p&gt;以下為作業內容&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>2015FALL 40423131 CPA 作業</title><link href="http://coursemdetw.github.io/reveal/" rel="alternate"></link><link href="http://coursemdetw.github.io/reveal/feeds/python.atom.xml" rel="self"></link><id>http://coursemdetw.github.io/reveal/</id><updated>2015-12-11T11:41:00+08:00</updated><entry><title>2015 計算機程式 w14</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w14.html" rel="alternate"></link><updated>2015-12-11T11:41:00+08:00</updated><author><name>40423131</name></author><id>tag:coursemdetw.github.io,2015-12-11:reveal/2015cp_hw_w14.html</id><summary type="html">&lt;p&gt;以下為作業14內容內容&lt;/p&gt;
+&lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
+&lt;iframe src="40423131_cp_w14_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="40423131_cp_w14_p.html" target="_blank"&gt;作業十三投影片&lt;/a&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w0.html" rel="alternate"></link><updated>2015-09-19T11:41:00+08:00</updated><author><name>40423131</name></author><id>tag:coursemdetw.github.io,2015-09-19:reveal/2015cp_hw_w0.html</id><summary type="html">&lt;p&gt;以下為作業內容&lt;/p&gt;
 &lt;iframe src="40423131_cp_w0_p.html" width="790" height="500"&gt;&lt;/iframe&gt;
 
 &lt;p&gt;&lt;a href="40423131_cp_w0_p.html" target="_blank"&gt;全螢幕&lt;/a&gt;&lt;/p&gt;
@@ -9,7 +13,212 @@
 
 &lt;p&gt;&lt;a href="40423131_cp_w1_p.html" target="_blank"&gt;全螢幕&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;來點音樂如何~~
-&lt;iframe width="700" height="500" src="https://www.youtube.com/embed/tDaUDStUERk" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt; 網址 &lt;a href="https://www.youtube.com/watch?v=tDaUDStUERk"&gt; https://www.youtube.com/watch?v=tDaUDStUERk &lt;/a&gt; on &lt;a href="https://www.youtube.com/"&gt;Youtube&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業二</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w2.html" rel="alternate"></link><updated>2015-09-19T11:41:00+08:00</updated><author><name>40423131</name></author><id>tag:coursemdetw.github.io,2015-09-19:reveal/2015cp_hw_w2.html</id><summary type="html">&lt;p&gt;以下為作業二內容&lt;/p&gt;
+&lt;iframe width="700" height="500" src="https://www.youtube.com/embed/tDaUDStUERk" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt; 網址 &lt;a href="https://www.youtube.com/watch?v=tDaUDStUERk"&gt; https://www.youtube.com/watch?v=tDaUDStUERk &lt;/a&gt; on &lt;a href="https://www.youtube.com/"&gt;Youtube&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業十五</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w15.html" rel="alternate"></link><updated>2015-09-19T11:41:00+08:00</updated><author><name>40423131</name></author><id>tag:coursemdetw.github.io,2015-09-19:reveal/2015cp_hw_w15.html</id><summary type="html">&lt;h1&gt;~~聖誕節快樂~~&lt;/h1&gt;
+&lt;!-- 導入 brython.js --&gt;
+
+&lt;script type="text/javascript" src="http://brython.info/src/brython_dist.js"&gt;&lt;/script&gt;
+
+&lt;!-- 啟動 brython() --&gt;
+
+&lt;script&gt;
+window.onload=function(){
+brython(1);
+}
+&lt;/script&gt;
+
+&lt;!-- 以下利用 Brython 程式執行繪圖 --&gt;
+
+&lt;canvas id="plotarea" width="400" height="400"&gt;&lt;/canvas&gt;
+
+&lt;script type="text/python3"&gt;
+# 導入 doc
+from browser import document as doc
+from browser import console
+import math
+
+# 準備繪圖畫布
+canvas = doc["plotarea"]
+ctx = canvas.getContext("2d")
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(175, 65)
+ctx.lineTo(120, 120)
+ctx.strokeStyle = "#008B00"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(225, 65)
+ctx.lineTo(280, 120)
+ctx.strokeStyle = "#008B00"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(280, 120)
+ctx.lineTo(240,120)
+ctx.strokeStyle ="#008B00"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(120,120)
+ctx.lineTo(160,120)
+ctx.strokeStyle = "#008B00"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(160,120)
+ctx.lineTo(80,200 )
+ctx.strokeStyle = "#008B00"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(80,200)
+ctx.lineTo(120, 200)
+ctx.strokeStyle = "#008B00"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(120, 200)
+ctx.lineTo(40,280)
+ctx.strokeStyle = "#008B00"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(40,280)
+ctx.lineTo(360,280)
+ctx.strokeStyle = "#008B00"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(240,120)
+ctx.lineTo(320,200)
+ctx.strokeStyle = "#008B00"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(320,200)
+ctx.lineTo(280,200)
+ctx.strokeStyle = "#008B00"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(280,200)
+ctx.lineTo(360,280)
+ctx.strokeStyle = "#008B00"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(160,280)
+ctx.lineTo(160,360 )
+ctx.strokeStyle = "#8B4726"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(240,280)
+ctx.lineTo(240, 360)
+ctx.strokeStyle = "#8B4726"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(160, 360)
+ctx.lineTo(240,360 )
+ctx.strokeStyle = "#8B4726"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(200,0)
+ctx.lineTo(170,80)
+ctx.strokeStyle = "#EE9A00"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(170, 80)
+ctx.lineTo(240,24 )
+ctx.strokeStyle = "#EE9A00"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(240,24)
+ctx.lineTo(160,24 )
+ctx.strokeStyle = "#EE9A00"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(160,24)
+ctx.lineTo(230,80 )
+ctx.strokeStyle = "#EE9A00"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(230,80)
+ctx.lineTo(200,0 )
+ctx.strokeStyle = "#EE9A00"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(102,308)
+ctx.lineTo(102,360 )
+ctx.strokeStyle = "#7D26CD"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(102,360)
+ctx.lineTo(154,360 )
+ctx.strokeStyle = "#7D26CD"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(154,360)
+ctx.lineTo(154,308 )
+ctx.strokeStyle = "#7D26CD"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(154,308)
+ctx.lineTo(102,308 )
+ctx.strokeStyle = "#7D26CD"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(128,308)
+ctx.lineTo(128,360 )
+ctx.strokeStyle = "#7D26CD"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(102,335)
+ctx.lineTo(154,335 )
+ctx.strokeStyle = "#7D26CD"
+ctx.stroke()
+
+&lt;/script&gt;
+
+&lt;/script&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業二</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w2.html" rel="alternate"></link><updated>2015-09-19T11:41:00+08:00</updated><author><name>40423131</name></author><id>tag:coursemdetw.github.io,2015-09-19:reveal/2015cp_hw_w2.html</id><summary type="html">&lt;p&gt;以下為作業二內容&lt;/p&gt;
 &lt;iframe src="40423131_cp_w2_p.html" width="790" height="500"&gt;&lt;/iframe&gt;
 
 &lt;p&gt;&lt;a href="40423131_cp_w2_p.html" target="_blank"&gt;全螢幕&lt;/a&gt;&lt;/p&gt;
