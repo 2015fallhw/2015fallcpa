@@ -225,7 +225,9 @@ canvas.bind('click', on_canvas_click, False)
 &lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="nx"&gt;只要使用者點擊在畫布上任何地方&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;即執行&lt;/span&gt; &lt;span class="nx"&gt;on_canvas_click&lt;/span&gt; &lt;span class="nx"&gt;函式&lt;/span&gt;
 &lt;span class="nx"&gt;canvas&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;bind&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;click&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;on_canvas_click&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;False&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="nt"&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</summary><category term="w14"></category><category term="Brython"></category></entry><entry><title>G8第16周報告</title><link href="http://coursemdetw.github.io/reveal/g8_w16.html" rel="alternate"></link><updated>2016-01-08T09:48:00+08:00</updated><author><name>40423143</name></author><id>tag:coursemdetw.github.io,2016-01-08:reveal/g8_w16.html</id><summary type="html">&lt;p&gt;以下利用 Brython 在網頁寫 Python 繪圖&lt;/p&gt;
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="w14"></category><category term="Brython"></category></entry><entry><title>G8第16周報告</title><link href="http://coursemdetw.github.io/reveal/g8_w16.html" rel="alternate"></link><updated>2016-01-08T09:48:00+08:00</updated><author><name>40423143</name></author><id>tag:coursemdetw.github.io,2016-01-08:reveal/g8_w16.html</id><summary type="html">&lt;p&gt;&lt;font color=red&gt;拋"40顆"
+球球囉~&lt;/font&gt;
+以下利用 Brython 在網頁寫 Python 繪圖&lt;/p&gt;
 &lt;!-- 導入 brython.js --&gt;
 
 &lt;script type="text/javascript" src="http://brython.info/src/brython_dist.js"&gt;&lt;/script&gt;
