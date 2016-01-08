@@ -810,7 +810,14 @@ if X==Y   如果X等於Y&lt;/p&gt;
 &lt;script type="text/javascript"&gt;gliffy_did="9703261";embedGliffy();&lt;/script&gt;
 
 &lt;h1&gt;4.請各組員利用 Brython, 分別在各分組的 pelican 網頁文章中, 繪製一個歡慶耶誕的 2D 圖形&lt;/h1&gt;
-&lt;!-- 導入 brython.js --&gt;
+&lt;h2&gt;merry&lt;/h2&gt;
+&lt;p&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h3 id="40423117"&gt;40423117&lt;a class="anchor-link" href="#40423117"&gt;&amp;#182;&lt;/a&gt;&lt;/h3&gt;&lt;!-- 導入 brython.js --&gt;
 
 &lt;script type="text/javascript" src="js/Brython3.2.3-20151122-082712/G1-40423103.js"&gt;&lt;/script&gt;
 
@@ -824,7 +831,7 @@ brython(1);
 
 &lt;!-- 以下利用 Brython 程式執行繪圖 --&gt;
 
-&lt;canvas id="plotarea" width="400" height="410"&gt;&lt;/canvas&gt;
+&lt;canvas id="plotarea" width="500" height="510"&gt;&lt;/canvas&gt;
 
 &lt;script type="text/python3"&gt;
 # 導入 doc
@@ -836,146 +843,225 @@ import math
 canvas = doc["plotarea"]
 ctx = canvas.getContext("2d")
 
+# 盆栽
 ctx.beginPath()
-ctx.moveTo(140, 60)
-ctx.quadraticCurveTo(170, 45, 200, 15)
-ctx.moveTo(200, 12)
-ctx.quadraticCurveTo(230, 43, 260, 61)
-ctx.moveTo(260, 60)
-ctx.lineTo(140, 60)
-
-ctx.moveTo(100, 120)
-ctx.quadraticCurveTo(150, 95, 180, 60)
-ctx.moveTo(220, 60)
-ctx.quadraticCurveTo(250, 95, 300, 120)
-ctx.moveTo(100, 120)
-ctx.lineTo(300, 120)
-
-ctx.moveTo(60, 190)
-ctx.quadraticCurveTo(120, 165, 160, 120)
-ctx.moveTo(240, 120)
-ctx.quadraticCurveTo(280, 165, 340, 190)
-ctx.moveTo(60, 190)
-ctx.lineTo(340, 190)
-
-ctx.moveTo(20, 270)
-ctx.quadraticCurveTo(80, 250, 140, 190)
-ctx.moveTo(260, 190)
-ctx.quadraticCurveTo(320, 250, 380, 270)
-ctx.moveTo(20, 270)
-ctx.lineTo(380, 270)
-
-ctx.lineWidth = 3
-ctx.strokeStyle = "#008800"
+ctx.moveTo(195, 390)
+ctx.lineTo(195, 420)
+ctx.moveTo(305, 405)
+ctx.lineTo(305, 420)
+ctx.lineWidth = 8
+ctx.strokeStyle = "#381319"
 ctx.stroke()
 
-ctx.fillStyle = "#663300"
-ctx.fillRect(180,271.5,40,129)
-
 ctx.beginPath()
-ctx.fillStyle = "#484891"
-ctx.fillRect(260,340,60,60)
+ctx.fillStyle = "#5C2230"
+ctx.fillRect(160,420,180,30)
 ctx.stroke()
 
-ctx.moveTo(260,370)
-ctx.lineTo(320,370)
-
-ctx.moveTo(290,340)
-ctx.lineTo(290,400)
-
-ctx.moveTo(290,340)
-ctx.lineTo(260,320)
-
-ctx.moveTo(290,340)
-ctx.lineTo(280,300)
-
-ctx.moveTo(258,321)
-ctx.lineTo(282,300)
-
-ctx.moveTo(290,340)
-ctx.lineTo(300,300)
-
-ctx.moveTo(290,340)
-ctx.lineTo(320,320)
-
-ctx.moveTo(298,300)
-ctx.lineTo(322,320)
-
-ctx.lineWidth = 2
-ctx.strokeStyle = "#FF8000"
+ctx.beginPath()
+ctx.fillStyle = "#381319"
+ctx.fillRect(200,420,50,30)
 ctx.stroke()
 
-ctx.moveTo(60,370)
-ctx.lineTo(160,370)
-
-ctx.moveTo(110,340)
-ctx.lineTo(110,400)
-
-ctx.moveTo(111.5,341.5)
-ctx.lineTo(100,310)
-
-ctx.moveTo(111.5,341.5)
-ctx.lineTo(80,330)
-
-ctx.moveTo(101.5,310)
-ctx.lineTo(78.5,330)
-
-ctx.moveTo(111.5,341.5)
-ctx.lineTo(140,330)
-
-ctx.moveTo(111.5,341.5)
-ctx.lineTo(120,310)
-
-ctx.moveTo(141.5,330)
-ctx.lineTo(118.5,310)
+ctx.beginPath()
+ctx.fillStyle = "#381319"
+ctx.fillRect(180,450,10,20)
+ctx.stroke()
 
 ctx.beginPath()
+ctx.fillStyle = "#5C2230"
+ctx.fillRect(190,450,40,20)
+ctx.stroke()
+
+ctx.beginPath()
+ctx.fillStyle = "#381319"
+ctx.fillRect(230,450,50,20)
+ctx.stroke()
+
+ctx.beginPath()
+ctx.fillStyle = "#5C2230"
+ctx.fillRect(280,450,50,20)
+ctx.stroke()
+
+ctx.beginPath()
+ctx.fillStyle = "#381319"
+ctx.fillRect(180,470,30,20)
+ctx.stroke()
+
+ctx.beginPath()
+ctx.fillStyle = "#5C2230"
+ctx.fillRect(210,470,40,20)
+ctx.stroke()
+
+ctx.beginPath()
+ctx.fillStyle = "#381319"
+ctx.fillRect(250,470,50,20)
+ctx.stroke()
+
+ctx.beginPath()
+ctx.fillStyle = "#5C2230"
+ctx.fillRect(300,470,30,20)
+ctx.stroke()
 
 
-&lt;/script&gt;
+# 樹
+ctx.beginPath()
+ctx.moveTo(220, 75)
+ctx.lineTo(220, 75)
+ctx.lineTo(140, 150)
+ctx.lineTo(185, 150)
+ctx.lineTo(80, 230)
+ctx.lineTo(110, 235)
+ctx.lineTo(50, 275)
+ctx.lineTo(120, 275)
+ctx.lineTo(10, 370)
+ctx.lineTo(145, 405)
+ctx.lineTo(165, 390)
+ctx.lineTo(175, 405)
+ctx.lineTo(225, 380)
+ctx.lineTo(275, 410)
+ctx.lineTo(320, 405)
+ctx.lineTo(415, 405)
+ctx.lineTo(390, 350)
+ctx.lineTo(490, 370)
+ctx.lineTo(385, 275)
+ctx.lineTo(450, 275)
+ctx.lineTo(385, 235)
+ctx.lineTo(410, 230)
+ctx.lineTo(310, 150)
+ctx.lineTo(350, 150)
+ctx.lineTo(270, 70)
+ctx.lineWidth = 10
+ctx.strokeStyle = "#25432D"
+ctx.stroke()
+
+# 星星
+ctx.beginPath()
+ctx.moveTo(240, 5)
+ctx.lineTo(225, 30)
+ctx.lineTo(200, 30)
+ctx.lineTo(215, 50)
+ctx.lineTo(200, 85)
+ctx.lineTo(240, 70)
+ctx.lineTo(280, 85)
+ctx.lineTo(260, 50)
+ctx.lineTo(280, 30)
+ctx.lineTo(250, 30)
+ctx.lineTo(240, 5)
+ctx.lineWidth = 12
+ctx.strokeStyle = "#F2E307"
+ctx.stroke()
+
+# 字體
+ctx.beginPath()
+ctx.fillStyle = "#88A85D"
+ctx.font = "23px Dutch801 XBd BT"
+ctx.fillText("Merry ",13,28)
+ctx.font = "23px Dutch801 XBd BT"
+ctx.fillText("Christmas",13,48)
+ctx.font = "23px Dutch801 XBd BT"
+ctx.fillText("&amp;",13,68)
+ctx.font = "23px Dutch801 XBd BT"
+ctx.fillText("Happy New ",13,88)
+ctx.font = "23px Dutch801 XBd BT"
+ctx.fillText("Year ",13,108)
+ctx.stroke()
+
+ctx.beginPath()
+ctx.fillStyle = "#88A85D"
+ctx.font = "12px ScriptS"
+ctx.fillText("40423117",390,490)
+ctx.stroke()
+
+# 邊框
+
+ctx.beginPath()
+grd=ctx.createLinearGradient(0,0,0,500)
+grd.addColorStop(1,"#F2E307")
+grd.addColorStop(0,"#D98E04")
+ctx.lineWidth = 20
+ctx.strokeStyle = grd
+ctx.moveTo(0,0)
+ctx.lineTo(0,500)
+ctx.stroke()
+
+ctx.beginPath()
+grd=ctx.createLinearGradient(500,0,0,0)
+grd.addColorStop(1,"#D98E04")
+grd.addColorStop(0,"#D90707")
+ctx.strokeStyle = grd
+ctx.moveTo(0,0)
+ctx.lineTo(500,0)
+ctx.stroke()
+
+ctx.beginPath()
+grd=ctx.createLinearGradient(0,500,0,0)
+grd.addColorStop(1,"#D90707")
+grd.addColorStop(0,"#A60505")
+ctx.strokeStyle = grd
+ctx.moveTo(500,0)
+ctx.lineTo(500,500)
+ctx.stroke()
+
+ctx.beginPath()
+grd=ctx.createLinearGradient(0,0,500,0)
+grd.addColorStop(0,"#88A85D")
+grd.addColorStop(1,"#25432D")
+ctx.strokeStyle = grd
+ctx.moveTo(0,510)
+ctx.lineTo(500,510)
+ctx.stroke()
+
+#禮物
+ctx.beginPath()
+ctx.fillStyle = "#88A85D"
+ctx.fillRect(300,300,60,60)
+ctx.stroke()
+
+
+ctx.beginPath()
+ctx.moveTo(300,330)
+ctx.lineTo(360,330)
+
+ctx.moveTo(330,300)
+ctx.lineTo(330,360)
+
+ctx.moveTo(330,300)
+ctx.lineTo(300,275)
+
+ctx.moveTo(330,300)
+ctx.lineTo(320,260)
+
+ctx.moveTo(300,275)
+ctx.lineTo(322,260)
+
+ctx.moveTo(330,300)
+ctx.lineTo(340,260)
+
+ctx.moveTo(330,300)
+ctx.lineTo(360, 280)
+
+ctx.moveTo(338,260)
+ctx.lineTo(362,280)
+
+ctx.lineWidth = 5
+ctx.strokeStyle = "#F2E307"
+ctx.stroke()
+
+
+&lt;/script&gt; 
+
+
+
 
 &lt;script&gt;
 window.onload=function(){
 brython(1);
 }
 &lt;/script&gt;
-
-&lt;p&gt;40423119&lt;/p&gt;
-&lt;hr /&gt;
-&lt;!-- 導入 brython_dist.js --&gt;
-
-&lt;script type="text/javascript" src="js/Brython3.2.3-20151122-082712/brython.js"&gt;&lt;/script&gt;
-
-&lt;!-- 啟動 brython() --&gt;
-
-&lt;script&gt; 
-window.onload=function(){ 
-brython(1); 
-} 
-&lt;/script&gt;
-
-&lt;!-- 以下利用 Brython 程式執行繪圖 --&gt;
-
-&lt;canvas id="plotarea" width="500" height="500"&gt;&lt;/canvas&gt;
-
-&lt;script type="text/python3"&gt; 
-# 導入 doc 
-from browser import document as doc 
-import math
-
-# 準備繪圖畫布 
-canvas = doc["plotarea"] 
-ctx = canvas.getContext("2d") 
-
-# 開始畫直線 
-
-ctx.beginPath() 
-ctx.lineWidth = 10 
-ctx.moveTo(0,0) 
-ctx.lineTo(100,100 ) 
-ctx.strokeStyle = "#006000" 
-ctx.stroke() 
-&lt;/script&gt;</summary><category term="G3"></category></entry><entry><title>g2 w1</title><link href="http://coursemdetw.github.io/reveal/g2_w1.html" rel="alternate"></link><updated>2015-12-25T11:00:00+08:00</updated><author><name>40423105</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/g2_w1.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/p&gt;</summary><category term="G3"></category></entry><entry><title>g2 w1</title><link href="http://coursemdetw.github.io/reveal/g2_w1.html" rel="alternate"></link><updated>2015-12-25T11:00:00+08:00</updated><author><name>40423105</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/g2_w1.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
 &lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
 &lt;iframe src="simplest.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
