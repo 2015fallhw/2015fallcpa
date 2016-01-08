@@ -18,11 +18,7 @@
 <v t="123.20151225111024.2"><vh>@button admin pelican</vh></v>
 <v t="123.20151225111024.3" a="E"><vh>@path pelican</vh>
 <v t="123.20151225111024.4"><vh>@edit publishconf.py</vh></v>
-<v t="123.20151225111024.5" a="E"><vh>@path content</vh>
-<v t="123.20151225111024.6"><vh>@edit G4_w14_1.md</vh></v>
-<v t="123.20151225111024.7"><vh>@edit G4_w14_2.md</vh></v>
-<v t="123.20151225111024.8"><vh>@edit G4_w15.md</vh></v>
-</v>
+<v t="123.20151225111024.5"><vh>@path content</vh></v>
 </v>
 </v>
 <v t="123.20151225112314.1"><vh>@button user pelican</vh></v>
