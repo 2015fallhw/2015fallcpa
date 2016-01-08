@@ -177,33 +177,8 @@ ctx.lineTo(410, 210)
 ctx.strokeStyle = "#0000ff" 
 ctx.stroke() 
 
-ctx.beginPath() 
-ctx.lineWidth = 20 
-ctx.moveTo(30, 250) 
-ctx.lineTo(410, 250) 
-ctx.strokeStyle = "#0000ff" 
-ctx.stroke() 
 
-ctx.beginPath() 
-ctx.lineWidth = 20 
-ctx.moveTo(30, 290) 
-ctx.lineTo(410, 290) 
-ctx.strokeStyle = "#0000ff" 
-ctx.stroke() 
 
-ctx.beginPath() 
-ctx.lineWidth =20 
-ctx.moveTo(30, 330) 
-ctx.lineTo(410, 330) 
-ctx.strokeStyle = "#0000ff" 
-ctx.stroke() 
-
-ctx.beginPath() 
-ctx.lineWidth = 20 
-ctx.moveTo(30, 370) 
-ctx.lineTo(410, 370) 
-ctx.strokeStyle = "#0000ff" 
-ctx.stroke() 
 &lt;/script&gt;
 
 &lt;/div&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 W15作業</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w15.html" rel="alternate"></link><updated>2015-11-06T11:41:00+08:00</updated><author><name>coursemdetw</name></author><id>tag:coursemdetw.github.io,2015-11-06:reveal/2015cp_hw_w15.html</id><summary type="html">&lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
@@ -268,11 +243,11 @@ var c=document.getElementById("myCanvas");
 var ctx=c.getContext("2d");
 ctx.fillStyle="#000000";
 ctx.beginPath();
-ctx.arc(252, 348, 10, 0, Math.PI * 2, true);
-ctx.arc(252, 378, 10, 0, Math.PI * 2, true);
-ctx.arc(252, 408, 10, 0, Math.PI * 2, true);
-ctx.arc(252, 438, 10, 0, Math.PI * 2, true);
-ctx.arc(252, 450, 10, 0, Math.PI * 2, true);
+ctx.arc(252, 0, 10, 0, Math.PI * 2, true);
+ctx.arc(252, 0, 10, 0, Math.PI * 2, true);
+ctx.arc(252, 0, 10, 0, Math.PI * 2, true);
+ctx.arc(252, 0, 10, 0, Math.PI * 2, true);
+ctx.arc(252, 0, 10, 0, Math.PI * 2, true);
 ctx.closePath();
 ctx.fill();
 &lt;/script&gt;
