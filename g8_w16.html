@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>G8第16周報告 &mdash; 2015FALL 作業主頁</title>
+  <meta name="author" content="KMOL">
+
+
+
+
+
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link href="./favicon.png" rel="icon">
+
+  <link href="./theme/css/main.css" media="screen, projection"
+        rel="stylesheet" type="text/css">
+
+  <link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic"
+        rel="stylesheet" type="text/css">
+  <link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic"
+        rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <header role="banner"><hgroup>
+  <h1><a href="./">2015FALL 作業主頁</a></h1>
+</hgroup></header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+</ul>
+
+
+<ul class="main-navigation">
+      <li >
+        <a href="./category/g1.html">G1</a>
+      </li>
+      <li >
+        <a href="./category/g10.html">G10</a>
+      </li>
+      <li >
+        <a href="./category/g2.html">G2</a>
+      </li>
+      <li >
+        <a href="./category/g3.html">G3</a>
+      </li>
+      <li >
+        <a href="./category/g4.html">G4</a>
+      </li>
+      <li >
+        <a href="./category/g5.html">G5</a>
+      </li>
+      <li >
+        <a href="./category/g6.html">G6</a>
+      </li>
+      <li >
+        <a href="./category/g7.html">G7</a>
+      </li>
+      <li class="active">
+        <a href="./category/g8.html">G8</a>
+      </li>
+      <li >
+        <a href="./category/g9.html">G9</a>
+      </li>
+      <li >
+        <a href="./category/g99.html">G99</a>
+      </li>
+      <li >
+        <a href="./category/python.html">Python</a>
+      </li>
+</ul></nav>
+  <div id="main">
+    <div id="content">
+<div>
+  <article class="hentry" role="article">
+<header>
+      <h1 class="entry-title">G8第16周報告</h1>
+    <p class="meta">
+<time datetime="2016-01-08T09:48:00+08:00" pubdate>週五 08 一月 2016</time>    </p>
+</header>
+
+  <div class="entry-content"><p><font color=red>拋"40顆"
+球球囉~</font>
+以下利用 Brython 在網頁寫 Python 繪圖</p>
+<!-- 導入 brython.js -->
+
+<script type="text/javascript" src="http://brython.info/src/brython_dist.js"></script>
+
+<!-- 啟動 brython() -->
+
+<script>
+window.onload=function(){
+brython(1);
+}
+</script>
+
+<!-- 以下利用 Brython 程式執行繪圖 -->
+
+<canvas id="plotarea" width="600" height="400"></canvas>
+
+<script type="text/python3">
+# 導入 browser 模組中的 document, 並設為 doc 變數
+from browser import document as doc
+# 導入數學模組
+import math
+# 產生各小球的亂數速度用
+import random
+# 導入 browser 中的計時器, 建立動畫用
+import browser.timer
+
+# 準備繪圖畫布
+canvas = doc["plotarea"]
+ctx = canvas.getContext("2d")
+
+# 取畫布的寬與高度
+width = canvas.width
+height = canvas.height
+
+n = 40
+# 已知數列內容個數, 先分別與 None 對應
+x = [None]*n
+y = [None]*n
+vy = [None]*n
+vx = [None]*n
+# 重力加速度, Y 方向向下為正
+g = 0.1
+# 空氣的黏滯阻尼係數
+cor = 0.7 
+# 球的彈力係數
+fr = 0.95
+# 球的半徑
+r = 10
+
+for i in range(n):
+    x[i] = 300
+    y[i] = 100
+    # random.random() 將會產生介於 0 與 1 的浮點亂數
+    vx[i] = 2*(random.random()-.5)
+    vy[i] = 2*(random.random()-.5)
+
+# 更新第 i 球 Y 座標的運算邏輯
+def updateY(i):
+    if ((y[i]+r) < height):
+        #y = height
+        vy[i] += g
+    else:
+        vy[i] = -vy[i]*cor
+        vx[i] *= fr
+    y[i] += vy[i]
+    if ((y[i]+r) > height):
+        y[i] = height-r
+
+# 更新第 i 球 X 座標的運算邏輯
+def updateX(i):
+    if ((x[i]+r) >= width or (x[i]-r) <= 0):
+        vx[i] = -vx[i]*cor
+    x[i] += vx[i]
+    if ((x[i]+r) > width):
+        x[i] = width-r
+    elif ((x[i]-r) < 0):
+        x[i] = r
+
+# 畫圓函式
+def circle(x,y,r):
+    ctx.beginPath()
+    ctx.arc(x, y, r, 0, math.pi*2, True)
+    ctx.fill()
+
+# 寫字函式
+def text(s):
+    ctx.fillStyle = "#00008b"
+    ctx.font = "30px sans-serif"
+    ctx.textBaseline = "bottom"
+    ctx.fillText(s,0,height)
+
+# 每隔特定時間, 進行動畫繪製
+def animate():
+    # 刷新畫布
+    ctx.clearRect(0, 0, width, height)
+    # 逐一重新繪製小球
+    ctx.fillStyle = "#8b0000"
+    for i in range(n):
+        updateY(i)
+        updateX(i)
+        circle(x[i],y[i],r)
+
+text("點!都點!都可以點!")
+
+# 畫布點擊後執行的函式
+def on_canvas_click(ev):
+    browser.timer.set_interval(animate,0)
+
+# 只要使用者點擊在畫布上任何地方, 即執行 on_canvas_click 函式
+canvas.bind('click', on_canvas_click, False)
+</script></div>
+    <footer>
+<p class="meta">
+  <span class="byline author vcard">
+    Posted by <span class="fn">
+        40423143
+    </span>
+  </span>
+<time datetime="2016-01-08T09:48:00+08:00" pubdate>週五 08 一月 2016</time>  <span class="categories">
+    <a class='category' href='./category/g8.html'>g8</a>
+  </span>
+  <span class="categories">
+    <a class="category" href="./tag/w16.html">w16</a>,    <a class="category" href="./tag/brython.html">Brython</a>  </span>
+</p><div class="sharing">
+</div>    </footer>
+  </article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+  </section>
+</div>
+<aside class="sidebar">
+  <section>
+    <h1>Recent Posts</h1>
+    <ul id="recent_posts">
+      <li class="post">
+          <a href="./g8_w17.html">在網際頁面上, 用 Python 執行動態模擬!</a>
+      </li>
+      <li class="post">
+          <a href="./g99_w17.html">在網際頁面上, 用 Python 執行動態模擬!</a>
+      </li>
+      <li class="post">
+          <a href="./g8_w16.html">G8第16周報告</a>
+      </li>
+      <li class="post">
+          <a href="./g7_w15.html">G7第十五週報告</a>
+      </li>
+      <li class="post">
+          <a href="./G3_w15_1.html">G3_w15_1</a>
+      </li>
+    </ul>
+  </section>
+  <section>
+      
+    <h1>Categories</h1>
+    <ul id="recent_posts">
+        <li><a href="./category/g1.html">G1</a></li>
+        <li><a href="./category/g10.html">G10</a></li>
+        <li><a href="./category/g2.html">g2</a></li>
+        <li><a href="./category/g3.html">G3</a></li>
+        <li><a href="./category/g4.html">G4</a></li>
+        <li><a href="./category/g5.html">G5</a></li>
+        <li><a href="./category/g6.html">g6</a></li>
+        <li><a href="./category/g7.html">g7</a></li>
+        <li><a href="./category/g8.html">g8</a></li>
+        <li><a href="./category/g9.html">G9</a></li>
+        <li><a href="./category/g99.html">g99</a></li>
+        <li><a href="./category/python.html">Python</a></li>
+    </ul>
+  </section>
+ 
+
+  <section>
+  <h1>Tags</h1>
+    <a href="./tag/brython.html">Brython</a>,    <a href="./tag/jupyter.html">Jupyter</a>,    <a href="./tag/w15.html">w15</a>,    <a href="./tag/ipython.html">IPython</a>,    <a href="./tag/publishing.html">publishing</a>,    <a href="./tag/pelican.html">pelican</a>,    <a href="./tag/w16.html">w16</a>,    <a href="./tag/g3.html">G3</a>,    <a href="./tag/w14.html">w14</a>,    <a href="./tag/g1.html">G1</a>,    <a href="./tag/g10.html">G10</a>  </section>
+
+
+    <section>
+        <h1>Social</h1>
+        <ul>
+            <li><a href="http://twitter.com/ametaireau" target="_blank">twitter</a></li>
+            <li><a href="http://github.com/ametaireau" target="_blank">github</a></li>
+        </ul>
+    </section>
+    <section>
+        <h1>Blogroll</h1>
+        <ul>
+            <li><a href="http://wordpress-2015course.rhcloud.com/" target="_blank">2015課程網頁</a></li>
+            <li><a href="http://python.org/" target="_blank">Python</a></li>
+        </ul>
+    </section>
+
+</aside>    </div>
+  </div>
+  <footer role="contentinfo"><p>
+    Copyright &copy;  2015&ndash;2016  KMOL &mdash;
+  <span class="credit">Powered by <a href="http://getpelican.com">Pelican</a></span>
+</p></footer>
+  <script src="./theme/js/modernizr-2.0.js"></script>
+  <script src="./theme/js/ender.js"></script>
+  <script src="./theme/js/octopress.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    var disqus_shortname = '2015fall';
+    var disqus_identifier = '/g8_w16.html';
+    var disqus_url = './g8_w16.html';
+    var disqus_title = 'G8第16周報告';
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = "//" + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+     })();
+  </script>
+</body>
+</html>
