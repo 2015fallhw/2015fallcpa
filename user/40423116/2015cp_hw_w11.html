@@ -57,6 +57,43 @@
 <iframe src="40423116_cp_w11_p.html" width="500" height="300"></iframe>
 
 <p><a href="40423116_cp_w11_p.html" target="_blank">作業十一投影片</a></p>
+<p>猜顏色:</p>
+<div class="highlight"><pre><span class="c">#coding: utf-8</span>
+<span class="c">#猜數字遊戲</span>
+<span class="kn">import</span> <span class="nn">random</span>
+<span class="err">執行次數</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="err">總猜測次數</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="err">執行次數</span><span class="p">):</span>
+    <span class="err">下限</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="err">上限</span> <span class="o">=</span> <span class="mi">100</span>
+    <span class="err">標準答案</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="err">下限</span><span class="p">,</span> <span class="err">上限</span><span class="p">)</span>
+    <span class="n">pc猜的數字</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="err">下限</span><span class="p">,</span> <span class="err">上限</span><span class="p">)</span>
+    <span class="c">#print(標準答案, pc猜的數字)</span>
+    <span class="c">#integer</span>
+    <span class="c">#string</span>
+    <span class="c">#float</span>
+    <span class="c">#你猜的數字 = int(input(&quot;請輸入您所猜的整數:&quot;))</span>
+    <span class="err">猜測次數</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">while</span> <span class="err">標準答案</span> <span class="o">!=</span> <span class="n">pc猜的數字</span><span class="p">:</span>
+        <span class="k">if</span> <span class="err">標準答案</span> <span class="o">&lt;</span> <span class="n">pc猜的數字</span><span class="p">:</span>
+            <span class="c">#print(&quot;太大了，再猜一次 :)加油&quot;)</span>
+            <span class="c"># 因此已經確定&quot;pc猜的數字&quot;不是答案, 因此 - 1</span>
+            <span class="err">上限</span> <span class="o">=</span> <span class="n">pc猜的數字</span> <span class="o">-</span> <span class="mi">1</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="c">#print(&quot;太小了，再猜一次 :)加油&quot;)</span>
+            <span class="c"># 因此已經確定&quot;pc猜的數字&quot;不是答案, 因此 + 1</span>
+            <span class="err">下限</span> <span class="o">=</span> <span class="n">pc猜的數字</span> <span class="o">+</span> <span class="mi">1</span>
+        <span class="c">#pc猜的數字 = int(input(&quot;請輸入您所猜的整數:&quot;))</span>
+        <span class="n">pc猜的數字</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="err">下限</span><span class="p">,</span> <span class="err">上限</span><span class="p">)</span>
+        <span class="err">猜測次數</span> <span class="o">+=</span> <span class="mi">1</span>
+
+    <span class="c">#print(&quot;猜對了！總共猜了&quot;, 猜測次數, &quot;次&quot;)</span>
+    <span class="err">總猜測次數</span> <span class="o">+=</span> <span class="err">猜測次數</span>
+<span class="err">平均猜測次數</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="err">總猜測次數</span><span class="o">/</span><span class="err">執行次數</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">&quot;平均次數&quot;</span><span class="p">,</span> <span class="err">平均猜測次數</span><span class="p">)</span>
+</pre></div>
+
+
 <iframe src="https://player.vimeo.com/video/147716682" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 <p><p><a href="https://vimeo.com/147716682">猜數字遊戲</a> from <a href="https://vimeo.com/user46450524">40423116</a> on <a href="https://vimeo.com">Vimeo</a>.</p></p></div>
@@ -86,19 +123,19 @@
     <h1>Recent Posts</h1>
     <ul id="recent_posts">
       <li class="post">
-          <a href="./2015cp_hw_w13.html">2015 計算機程式 w13</a>
+          <a href="./2015cp_hw_w17.html">2015 計算機程式 w17</a>
+      </li>
+      <li class="post">
+          <a href="./2015cp_hw_w16.html">2015 計算機程式 w16</a>
+      </li>
+      <li class="post">
+          <a href="./2015cp_hw_w15.html">2015 計算機程式 w15</a>
       </li>
       <li class="post">
           <a href="./2015cp_hw_w14.html">2015 計算機程式 w14</a>
       </li>
       <li class="post">
-          <a href="./2015cp_hw_w12.html">2015 計算機程式 w12</a>
-      </li>
-      <li class="post">
-          <a href="./2015cp_hw_w11.html">2015 計算機程式 w11</a>
-      </li>
-      <li class="post">
-          <a href="./2015cp_hw_w1.html">2015 計算機程式 期中報告(1~8)</a>
+          <a href="./2015cp_hw_w13.html">2015 計算機程式 w13</a>
       </li>
     </ul>
   </section>
@@ -113,7 +150,7 @@
 
   <section>
   <h1>Tags</h1>
-    <a href="./tag/publishing.html">publishing</a>,    <a href="./tag/pelican.html">pelican</a>  </section>
+    <a href="./tag/pelican.html">pelican</a>,    <a href="./tag/publishing.html">publishing</a>  </section>
 
 
     <section>
@@ -136,7 +173,7 @@
 </aside>    </div>
   </div>
   <footer role="contentinfo"><p>
-    Copyright &copy;  2015  40423116 &mdash;
+    Copyright &copy;  2015&ndash;2016  40423116 &mdash;
   <span class="credit">Powered by <a href="http://getpelican.com">Pelican</a></span>
 </p></footer>
   <script src="./theme/js/modernizr-2.0.js"></script>

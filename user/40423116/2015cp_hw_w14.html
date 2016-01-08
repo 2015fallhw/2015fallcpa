@@ -49,14 +49,117 @@
 <header>
       <h1 class="entry-title">2015 計算機程式 w14</h1>
     <p class="meta">
-<time datetime="2015-12-11T11:41:00+08:00" pubdate>週五 11 十二月 2015</time>    </p>
+<time datetime="2015-12-18T11:41:00+08:00" pubdate>週五 18 十二月 2015</time>    </p>
 </header>
 
   <div class="entry-content"><p>以下為作業14內容內容</p>
 <p>利用 iframe 嵌入投影片:</p>
-<iframe src="40423116_cp_w14_p.html" width="800" height="500"></iframe>
+<iframe src="40423116_cp_w14_p.html" width="500" height="300"></iframe>
 
-<p><a href="40423116_cp_w14_p.html" target="_blank">作業十四投影片</a></p></div>
+<p><a href="40423116_cp_w14_p.html" target="_blank">作業十四投影片</a></p>
+<p>以下利用 Brython 在網頁寫 Python 繪圖</p>
+<!-- 導入 brython.js -->
+
+<script type="text/javascript" src="js/Brython3.2.3-20151122-082712/brython.js"></script>
+
+<!-- 啟動 brython() -->
+
+<script>
+window.onload=function(){
+brython(1);
+}
+</script>
+
+<!-- 以下利用 Brython 程式執行繪圖 -->
+
+<canvas id="plotarea" width="500" height="500"></canvas>
+
+<script type="text/python3">
+# 導入 doc
+from browser import document as doc
+from browser import console
+import math
+
+# 準備繪圖畫布
+canvas = doc["plotarea"]
+ctx = canvas.getContext("2d")
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 10
+ctx.moveTo(0, 0)
+ctx.lineTo(500, 500)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 10
+ctx.moveTo(0, 500)
+ctx.lineTo(500, 0)
+ctx.strokeStyle = "#0000ff"
+ctx.stroke()
+</script>
+
+<p>上列繪圖的程式碼:</p>
+<div class="highlight"><pre><span class="c">&lt;!-- 導入 brython.js --&gt;</span>
+
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">src=</span><span class="s">&quot;js/Brython3.2.3-20151122-082712/brython.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+
+<span class="c">&lt;!-- 啟動 brython() --&gt;</span>
+
+<span class="nt">&lt;script&gt;</span>
+<span class="nb">window</span><span class="p">.</span><span class="nx">onload</span><span class="o">=</span><span class="kd">function</span><span class="p">(){</span>
+<span class="nx">brython</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nt">&lt;/script&gt;</span>
+
+<span class="c">&lt;!-- 以下利用 Brython 程式執行繪圖 --&gt;</span>
+
+<span class="nt">&lt;canvas</span> <span class="na">id=</span><span class="s">&quot;plotarea&quot;</span> <span class="na">width=</span><span class="s">&quot;300&quot;</span> <span class="na">height=</span><span class="s">&quot;200&quot;</span><span class="nt">&gt;&lt;/canvas&gt;</span>
+
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/python3&quot;</span><span class="nt">&gt;</span>
+<span class="err">#</span> <span class="nx">導入</span> <span class="nx">doc</span>
+<span class="nx">from</span> <span class="nx">browser</span> <span class="kr">import</span> <span class="nb">document</span> <span class="nx">as</span> <span class="nx">doc</span>
+<span class="nx">from</span> <span class="nx">browser</span> <span class="kr">import</span> <span class="nx">console</span>
+<span class="kr">import</span> <span class="nx">math</span>
+
+<span class="err">#</span> <span class="nx">準備繪圖畫布</span>
+<span class="nx">canvas</span> <span class="o">=</span> <span class="nx">doc</span><span class="p">[</span><span class="s2">&quot;plotarea&quot;</span><span class="p">]</span>
+<span class="nx">ctx</span> <span class="o">=</span> <span class="nx">canvas</span><span class="p">.</span><span class="nx">getContext</span><span class="p">(</span><span class="s2">&quot;2d&quot;</span><span class="p">)</span>
+
+<span class="err">#</span> <span class="nx">開始畫直線</span>
+<span class="nx">ctx</span><span class="p">.</span><span class="nx">beginPath</span><span class="p">()</span>
+<span class="nx">ctx</span><span class="p">.</span><span class="nx">lineWidth</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="nx">ctx</span><span class="p">.</span><span class="nx">moveTo</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="nx">ctx</span><span class="p">.</span><span class="nx">lineTo</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+<span class="nx">ctx</span><span class="p">.</span><span class="nx">strokeStyle</span> <span class="o">=</span> <span class="s2">&quot;#FF0000&quot;</span>
+<span class="nx">ctx</span><span class="p">.</span><span class="nx">stroke</span><span class="p">()</span>
+
+<span class="nx">ctx</span><span class="p">.</span><span class="nx">beginPath</span><span class="p">()</span>
+<span class="nx">ctx</span><span class="p">.</span><span class="nx">lineWidth</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="nx">ctx</span><span class="p">.</span><span class="nx">moveTo</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="nx">ctx</span><span class="p">.</span><span class="nx">lineTo</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+<span class="nx">ctx</span><span class="p">.</span><span class="nx">strokeStyle</span> <span class="o">=</span> <span class="s2">&quot;#0000ff&quot;</span>
+<span class="nx">ctx</span><span class="p">.</span><span class="nx">stroke</span><span class="p">()</span>
+
+<span class="nx">x</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="nx">y</span> <span class="o">=</span> <span class="mi">100</span>
+
+<span class="err">#</span> <span class="nx">利用</span> <span class="nx">browser</span> <span class="nx">模組中的</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span> <span class="nx">將資料列印在</span> <span class="nx">console</span> <span class="nx">區</span><span class="p">,</span> <span class="nx">可以用來確認程式中各變數的值</span><span class="p">,</span> <span class="nx">用法等同</span> <span class="nx">print</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;x 值為&quot;</span><span class="o">+</span><span class="nx">str</span><span class="p">(</span><span class="nx">x</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;, y 值為&quot;</span><span class="o">+</span><span class="nx">str</span><span class="p">(</span><span class="nx">y</span><span class="p">))</span>
+
+<span class="err">#</span> <span class="nx">利用迴圈畫水平線</span>
+<span class="k">for</span> <span class="nx">i</span> <span class="k">in</span> <span class="nx">range</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span><span class="o">:</span>
+    <span class="nx">ctx</span><span class="p">.</span><span class="nx">beginPath</span><span class="p">()</span>
+    <span class="nx">ctx</span><span class="p">.</span><span class="nx">lineWidth</span> <span class="o">=</span> <span class="mi">5</span>
+    <span class="nx">ctx</span><span class="p">.</span><span class="nx">moveTo</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="o">+</span><span class="nx">i</span><span class="o">*</span><span class="mi">20</span><span class="p">)</span>
+    <span class="nx">ctx</span><span class="p">.</span><span class="nx">lineTo</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">10</span><span class="o">+</span><span class="nx">i</span><span class="o">*</span><span class="mi">20</span><span class="p">)</span>
+    <span class="nx">ctx</span><span class="p">.</span><span class="nx">strokeStyle</span> <span class="o">=</span> <span class="s2">&quot;#0000ff&quot;</span>
+    <span class="nx">ctx</span><span class="p">.</span><span class="nx">stroke</span><span class="p">()</span>
+<span class="nt">&lt;/script&gt;</span>
+
+<span class="nt">&lt;/script&gt;</span>
+</pre></div></div>
     <footer>
 <p class="meta">
   <span class="byline author vcard">
@@ -64,7 +167,7 @@
         40423116
     </span>
   </span>
-<time datetime="2015-12-11T11:41:00+08:00" pubdate>週五 11 十二月 2015</time>  <span class="categories">
+<time datetime="2015-12-18T11:41:00+08:00" pubdate>週五 18 十二月 2015</time>  <span class="categories">
     <a class='category' href='./category/python.html'>Python</a>
   </span>
   <span class="categories">
@@ -83,19 +186,19 @@
     <h1>Recent Posts</h1>
     <ul id="recent_posts">
       <li class="post">
-          <a href="./2015cp_hw_w13.html">2015 計算機程式 w13</a>
+          <a href="./2015cp_hw_w17.html">2015 計算機程式 w17</a>
+      </li>
+      <li class="post">
+          <a href="./2015cp_hw_w16.html">2015 計算機程式 w16</a>
+      </li>
+      <li class="post">
+          <a href="./2015cp_hw_w15.html">2015 計算機程式 w15</a>
       </li>
       <li class="post">
           <a href="./2015cp_hw_w14.html">2015 計算機程式 w14</a>
       </li>
       <li class="post">
-          <a href="./2015cp_hw_w12.html">2015 計算機程式 w12</a>
-      </li>
-      <li class="post">
-          <a href="./2015cp_hw_w11.html">2015 計算機程式 w11</a>
-      </li>
-      <li class="post">
-          <a href="./2015cp_hw_w1.html">2015 計算機程式 期中報告(1~8)</a>
+          <a href="./2015cp_hw_w13.html">2015 計算機程式 w13</a>
       </li>
     </ul>
   </section>
@@ -110,7 +213,7 @@
 
   <section>
   <h1>Tags</h1>
-    <a href="./tag/publishing.html">publishing</a>,    <a href="./tag/pelican.html">pelican</a>  </section>
+    <a href="./tag/pelican.html">pelican</a>,    <a href="./tag/publishing.html">publishing</a>  </section>
 
 
     <section>
@@ -133,7 +236,7 @@
 </aside>    </div>
   </div>
   <footer role="contentinfo"><p>
-    Copyright &copy;  2015  40423116 &mdash;
+    Copyright &copy;  2015&ndash;2016  40423116 &mdash;
   <span class="credit">Powered by <a href="http://getpelican.com">Pelican</a></span>
 </p></footer>
   <script src="./theme/js/modernizr-2.0.js"></script>
