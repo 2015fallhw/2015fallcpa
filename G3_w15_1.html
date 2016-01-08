@@ -360,6 +360,146 @@ brython(1);
 </script>
 </div>
 </div>
+</div></p>
+<h2>merry</h2>
+<p>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="40423119">40423119<a class="anchor-link" href="#40423119">&#182;</a></h3><!-- 導入 brython.js -->
+
+<script type="text/javascript" src="js/Brython3.2.3-20151122-082712/G1-40423103.js"></script>
+
+<!-- 啟動 brython() -->
+
+<script>
+window.onload=function(){
+brython(1);
+}
+</script>
+
+<!-- 以下利用 Brython 程式執行繪圖 -->
+
+<canvas id="plotarea1" width="400" height="410"></canvas>
+
+<script type="text/python3">
+# 導入 doc
+from browser import document as doc
+from browser import console
+import math
+
+# 準備繪圖畫布
+canvas = doc["plotarea1"]
+ctx = canvas.getContext("2d")
+
+ctx.beginPath()
+ctx.moveTo(140, 60)
+ctx.quadraticCurveTo(170, 45, 200, 15)
+ctx.moveTo(200, 12)
+ctx.quadraticCurveTo(230, 43, 260, 61)
+ctx.moveTo(260, 60)
+ctx.lineTo(140, 60)
+
+ctx.moveTo(100, 120)
+ctx.quadraticCurveTo(150, 95, 180, 60)
+ctx.moveTo(220, 60)
+ctx.quadraticCurveTo(250, 95, 300, 120)
+ctx.moveTo(100, 120)
+ctx.lineTo(300, 120)
+
+ctx.moveTo(60, 190)
+ctx.quadraticCurveTo(120, 165, 160, 120)
+ctx.moveTo(240, 120)
+ctx.quadraticCurveTo(280, 165, 340, 190)
+ctx.moveTo(60, 190)
+ctx.lineTo(340, 190)
+
+ctx.moveTo(20, 270)
+ctx.quadraticCurveTo(80, 250, 140, 190)
+ctx.moveTo(260, 190)
+ctx.quadraticCurveTo(320, 250, 380, 270)
+ctx.moveTo(20, 270)
+ctx.lineTo(380, 270)
+
+ctx.lineWidth = 3
+ctx.strokeStyle = "#008800"
+ctx.stroke()
+
+ctx.fillStyle = "#663300"
+ctx.fillRect(180,271.5,40,129)
+
+ctx.beginPath()
+ctx.fillStyle = "#484891"
+ctx.fillRect(260,340,60,60)
+ctx.stroke()
+
+ctx.moveTo(260,370)
+ctx.lineTo(320,370)
+
+ctx.moveTo(290,340)
+ctx.lineTo(290,400)
+
+ctx.moveTo(290,340)
+ctx.lineTo(260,320)
+
+ctx.moveTo(290,340)
+ctx.lineTo(280,300)
+
+ctx.moveTo(258,321)
+ctx.lineTo(282,300)
+
+ctx.moveTo(290,340)
+ctx.lineTo(300,300)
+
+ctx.moveTo(290,340)
+ctx.lineTo(320,320)
+
+ctx.moveTo(298,300)
+ctx.lineTo(322,320)
+
+ctx.lineWidth = 2
+ctx.strokeStyle = "#FF8000"
+ctx.stroke()
+
+ctx.moveTo(60,370)
+ctx.lineTo(160,370)
+
+ctx.moveTo(110,340)
+ctx.lineTo(110,400)
+
+ctx.moveTo(111.5,341.5)
+ctx.lineTo(100,310)
+
+ctx.moveTo(111.5,341.5)
+ctx.lineTo(80,330)
+
+ctx.moveTo(101.5,310)
+ctx.lineTo(78.5,330)
+
+ctx.moveTo(111.5,341.5)
+ctx.lineTo(140,330)
+
+ctx.moveTo(111.5,341.5)
+ctx.lineTo(120,310)
+
+ctx.moveTo(141.5,330)
+ctx.lineTo(118.5,310)
+
+ctx.beginPath()
+
+
+</script> 
+
+
+<script>
+window.onload=function(){
+brython(1);
+}
+</script>
+</div>
+</div>
 </div></p></div>
     <footer>
 <p class="meta">
@@ -393,13 +533,20 @@ brython(1);
           <a href="./g99_w17.html">在網際頁面上, 用 Python 執行動態模擬!</a>
       </li>
       <li class="post">
+<<<<<<< HEAD
           <a href="./g8_w16.html">G8第16周報告</a>
       </li>
       <li class="post">
           <a href="./G10_w15.html">G10_w15</a>
+=======
+          <a href="./g7_w15.html">G7第十五週報告</a>
+>>>>>>> f02d763647fed334458dddf2d5db7be90dc78258
       </li>
       <li class="post">
           <a href="./g7_w15.html">G7第十五週報告</a>
+      </li>
+      <li class="post">
+          <a href="./g2_w1.html">g2 w1</a>
       </li>
     </ul>
   </section>
@@ -425,7 +572,15 @@ brython(1);
 
   <section>
   <h1>Tags</h1>
+<<<<<<< HEAD
     <a href="./tag/w15.html">w15</a>,    <a href="./tag/pelican.html">pelican</a>,    <a href="./tag/ipython.html">IPython</a>,    <a href="./tag/g3.html">G3</a>,    <a href="./tag/g1.html">G1</a>,    <a href="./tag/w16.html">w16</a>,    <a href="./tag/publishing.html">publishing</a>,    <a href="./tag/w14.html">w14</a>,    <a href="./tag/jupyter.html">Jupyter</a>,    <a href="./tag/g10.html">G10</a>,    <a href="./tag/brython.html">Brython</a>  </section>
+=======
+<<<<<<< HEAD
+    <a href="./tag/jupyter.html">Jupyter</a>,    <a href="./tag/brython.html">Brython</a>,    <a href="./tag/w15.html">w15</a>,    <a href="./tag/g1.html">G1</a>,    <a href="./tag/w14.html">w14</a>,    <a href="./tag/g3.html">G3</a>,    <a href="./tag/ipython.html">IPython</a>,    <a href="./tag/publishing.html">publishing</a>,    <a href="./tag/pelican.html">pelican</a>,    <a href="./tag/g10.html">G10</a>  </section>
+=======
+    <a href="./tag/w15.html">w15</a>,    <a href="./tag/g1.html">G1</a>,    <a href="./tag/publishing.html">publishing</a>,    <a href="./tag/pelican.html">pelican</a>,    <a href="./tag/jupyter.html">Jupyter</a>,    <a href="./tag/g10.html">G10</a>,    <a href="./tag/w14.html">w14</a>,    <a href="./tag/ipython.html">IPython</a>,    <a href="./tag/brython.html">Brython</a>,    <a href="./tag/g3.html">G3</a>  </section>
+>>>>>>> 2d68e076e9236e967e8c296283c19cdd3306ddbe
+>>>>>>> f02d763647fed334458dddf2d5db7be90dc78258
 
 
     <section>
