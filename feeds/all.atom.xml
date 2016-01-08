@@ -1776,7 +1776,7 @@ ctx.stroke()
 
 &lt;/script&gt;
 
-&lt;/div&gt;</summary><category term="w15"></category></entry><entry><title>第十五週報告示範</title><link href="http://coursemdetw.github.io/reveal/g6_w15.html" rel="alternate"></link><updated>2015-12-25T10:48:00+08:00</updated><author><name>g6</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/g6_w15.html</id><summary type="html">&lt;p&gt;CP W15 g6分組報告:&lt;/p&gt;
+&lt;/div&gt;</summary><category term="w15"></category></entry><entry><title>第十五週G6報告</title><link href="http://coursemdetw.github.io/reveal/g6_w15.html" rel="alternate"></link><updated>2015-12-25T10:48:00+08:00</updated><author><name>g6</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/g6_w15.html</id><summary type="html">&lt;p&gt;CP W15 g6分組報告:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Python3 的近端程式開發系統如何建立? 如何啟動?&lt;/li&gt;
 &lt;/ul&gt;
@@ -1799,12 +1799,11 @@ ctx.stroke()
 &lt;p&gt;end="\n\n":跳行&lt;/p&gt;
 &lt;p&gt;while: 迴圈關鍵字&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;請利用流程圖, 簡要說明近端猜數字遊戲與猜顏色遊戲程式碼如何設計與運作.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;請各組員利用 Brython, 分別在各分組的 pelican 網頁文章中, 繪製一個歡慶耶誕的 2D 圖形.&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;請利用流程圖, 簡要說明近端猜數字遊戲與猜顏色遊戲程式碼如何設計與運作.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href="http://imgur.com/zi8VimR"&gt;&lt;img src="http://i.imgur.com/zi8VimR.png" title="source: imgur.com" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;請各組員利用 Brython, 分別在各分組的 pelican 網頁文章中, 繪製一個歡慶耶誕的 2D 圖形.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4&gt;40423135&lt;/h4&gt;
 &lt;!-- 導入 brython.js --&gt;
