@@ -19,10 +19,10 @@
 <v t="amd.20151007224830.1"><vh>Jupyter 安裝與執行</vh></v>
 <v t="amd.20150919103357.1"><vh>pelican 設定</vh></v>
 </v>
-<v t="amd.20150919113957.1"><vh>以下為 pelican 文章</vh>
+<v t="amd.20150919113957.1" a="E"><vh>以下為 pelican 文章</vh>
 <v t="amd.20151021120245.1"><vh>@button admin pelican</vh></v>
 <v t="amd.20150919124128.1"><vh>@button user pelican</vh></v>
-<v t="amd.20150919114010.1" a="E"><vh>@path pelican</vh>
+<v t="amd.20150919114010.1"><vh>@path pelican</vh>
 <v t="amd.20151006130205.1"><vh>@edit publishconf.py</vh></v>
 <v t="amd.20151006113136.1" a="E"><vh>@path content</vh>
 <v t="amd.20150919114035.1"><vh>@edit 2015cphww1.md</vh></v>
@@ -47,7 +47,7 @@
 </v>
 </v>
 </v>
-<v t="amd.20151021113722.1"><vh>@path plugin</vh>
+<v t="amd.20151021113722.1" a="E"><vh>@path plugin</vh>
 <v t="amd.20151021113731.1"><vh>@path liquid_tags</vh>
 <v t="amd.20151021113745.1"><vh>@edit notebook.py</vh></v>
 </v>
@@ -66,7 +66,7 @@
 </v>
 </v>
 </v>
-<v t="40423148.20160108112603.1"><vh>@path 40423148</vh>
+<v t="40423148.20160108112603.1" a="E"><vh>@path 40423148</vh>
 <v t="40423148.20160108112603.2"><vh>以下為投影片 ------------</vh></v>
 <v t="40423148.20160108112603.3"><vh>@edit 40423148_cp_w1_p.html</vh></v>
 <v t="40423148.20160108112603.4" a="E"><vh>@path pelican</vh>
@@ -78,7 +78,7 @@
 </v>
 </v>
 </v>
-<v t="leo.20151225094011.1" a="E"><vh>@path 40423104</vh>
+<v t="leo.20151225094011.1"><vh>@path 40423104</vh>
 <v t="leo.20151225094011.2"><vh>以下為投影片 ------------</vh></v>
 <v t="leo.20151225094011.3"><vh>@edit 40423104_cp_w1_p.html</vh></v>
 <v t="leo.20151225094011.4"><vh>@edit 40423104_cp_w2_p.html</vh></v>
@@ -1127,65 +1127,6 @@
 </t>
 <t tx="40423148.20160108112603.4"></t>
 <t tx="40423148.20160108112603.5"></t>
-<t tx="40423148.20160108112603.6">@language python
-#!/usr/bin/env python
-# -*- coding: utf-8 -*- #
-from __future__ import unicode_literals
-
-# This file is only used if you use `make publish` or
-# explicitly specify it as your config file.
-
-import os
-
-AUTHOR = '40423148'
-SITENAME = '2015FALL 40423148 CADPA 作業'
-SITEURL = ''
-
-PATH = 'content'
-
-TIMEZONE = 'Asia/Taipei'
-
-DEFAULT_LANG = 'en'
-
-# Feed generation is usually not desired when developing
-FEED_ALL_ATOM = None
-CATEGORY_FEED_ATOM = None
-TRANSLATION_FEED_ATOM = None
-AUTHOR_FEED_ATOM = None
-AUTHOR_FEED_RSS = None
-
-# Blogroll
-LINKS = (('2015課程網頁', 'http://wordpress-2015course.rhcloud.com/'),
-         ('Python', 'http://python.org/'),('2015作業主頁', '../../'))
-
-# Social widget
-SOCIAL = (('twitter', 'http://twitter.com/ametaireau'),
-          ('github', 'http://github.com/ametaireau'),)
-          
-DEFAULT_PAGINATION = 10
-
-SITEURL = 'http://coursemdetw.github.io/reveal'
-RELATIVE_URLS = True
-
-FEED_ALL_ATOM = 'feeds/all.atom.xml'
-CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
-
-DELETE_OUTPUT_DIRECTORY = True
-
-# Following items are often useful when publishing
-
-#DISQUS_SITENAME = ""
-DISQUS_SITENAME = "2015fall"
-#GOOGLE_ANALYTICS = ""
-
-# 必須絕對目錄或相對於設定檔案所在目錄
-PLUGIN_PATHS = ['./../../../plugin']
-PLUGINS = ['liquid_tags.notebook']
-# 目錄設定相對於 reveal 下的 content 目錄
-NOTEBOOK_DIR = 'notebook'
-
-
-</t>
 <t tx="40423148.20160108112603.7"></t>
 <t tx="40423148.20160108112603.8"></t>
 <t tx="40423148.20160108112603.9">@language md
