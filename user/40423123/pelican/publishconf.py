@@ -1,14 +1,5 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*- #
-from __future__ import unicode_literals
-
-# This file is only used if you use `make publish` or
-# explicitly specify it as your config file.
-
-import os
-
 AUTHOR = '40423123'
-SITENAME = '2015FALL 40423123 CPA 作業'
+SITENAME = '2015FALL 40423123 cpa 作業'
 SITEURL = ''
 
 PATH = 'content'

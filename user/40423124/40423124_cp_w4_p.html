@@ -1,0 +1,125 @@
+<!--
+這個檔案展示了 reveal.js 投影片資料的基本架構
+其中使用 "reveal" class 與 "slides" class 來界定投影片的資料範圍
+而各投影片則以 <section></section> 標示
+且支援平行與垂直的投影片配置方法
+-->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>最簡單的 reveal 超文件</title>
+<link rel="stylesheet" href="css/reveal.min.css">
+	<link rel="stylesheet" href="css/theme/default.css" id="theme">	
+	<!--增加對於 IE 早期版本的支援 -->
+	<!--[if lt IE 9]>
+	<script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+<body>
+<!-- 將整個投影片包在 "reveal" class 中 -->
+<div class="reveal">
+<!-- 將所有投影片包在 "slides" class 中 -->
+<div class="slides">
+<!-- 以下為投影片 -->
+<!-- 每一個 section 都代表一張投影片,  -->
+<!-- section 標註中的多 section 標註, 將往下垂直延伸 -->
+<section>
+    <section>
+
+    <h1>第四週報告</h1>
+    <p>40423124 林濬翔</p>
+   
+    	
+  </section>
+    
+  <section>
+
+    <h1>投影片學習</h1>
+    
+  </section>		
+</section>
+	
+<section>
+    <<h1>內容大綱</h1>
+    <p>LEO and Jupyter</p>
+    <ul>
+    <li>LEO?</li>
+    <li>LEO語言</li>
+    <li>Jupyter</li>
+    <li>心得感想</li>
+    <li>自評成績</li>
+    </ul>
+</section>
+				
+<section>
+    <h1>LEO?</h1>
+    <p> Leo Editor 就是採 Python 的程式方法與流程來控管其中的各節點與資料內容，</p>
+    <p> leo是一種編輯器，可以編輯網頁、製作投影片也可以當成是一個交流程式的工具</p>
+    <p>使用LEO編輯投影片和網頁時，記得要注意版本，如果是使用5.0版本，可能在5.1版本上無法開啟使用或檔案出問題。<p>
+</section>
+
+<section>
+    <section>
+    <h1>LEO語言</h1>
+    <p>我們可以透過老師的reveal.leo檔，製作我們的投影片和作業，可以透過leo編輯器，在個人網頁中加入影片或圖片等資料。</p>
+    <p>leo的語言就是一定要記得有一個開始就要有一個結束。</p>
+    <p>可以利用html語法套用在LEO編輯器，編輯我們的資料。</p>
+    <p>例如:
+    <ul>
+    <p>*字代表小於大於符號
+    <li>只要在*加入"ul"的碼，便可製出有小圓頭的清單 ，接下來在每個清單前面都要在*加入"li"，每個清單都要在li前面加入/已表示結束，然後再資料輸入後在*加入"/ul"。</li>
+    <li>在*內加入h1，打入標題文字，再以*字內加入/h1。</li>
+    <li>每個語法都以相同方式做開始與結束，就能完成投影片編輯。</li>
+    </ul>
+    </section>
+    
+    <section>
+    <p> Leo Editor 基本操作</p>
+    <ul>
+    <p>節點</p>
+    <li>節點標題</li>
+    <li>節點內容</li>
+    <li>節點位置與從屬架構</li>
+    <p>用法</p>
+    <li>@edit用法</li>
+    <li>@path用法</li>
+    <li>@button用法</li>
+    <li>@clean用法</li>
+    <li>@language</li>
+    <li>@others</li>
+    </ul>
+    </section>
+</section>
+
+<section>
+
+    <h1>Jupyter</h1>
+    <p>上課時，老師都用Jupyter使用python3。</p>
+    <p>Jupyter 是把IPython和Python解釋器剝離後的產物，將逐漸替代IPython 獨立發行。Jupyter 可以和Python 之外的程序結合，提供新的、強大的服務。例如:Ruby REPL環境IRuby 和Julia REPL環境IJulia。</p>
+    <p>我們可以利用Jupyter去學習Python語言，讓自季更熟悉Python。</p>
+   
+</section>
+
+<section>
+    <h1>心得感想</h1>
+    <p>我發現瞭解完leo編輯器和每次都會被打開的Jupyter後，我越來越了解老師的上課內容了，原來我們的上課內容都一直是在用Python，雖然老師每次上課的內容不一定會完全了解，但透過影片和網路查詢資料，我更清楚的知道這堂課在教什麼。</p>
+</section>
+
+<section>
+    <h1>自評成績</h1>
+    <p>開始有點進入狀況了，也有點熟悉老師的上課內容。</p>
+    <p>給自己的分數:61分</p>
+</section>
+				
+</div>
+</div>
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.min.js"></script>
+<script>
+    // 啟動 Reveal.
+    Reveal.initialize({
+    });
+</script>
+	
+</body>
