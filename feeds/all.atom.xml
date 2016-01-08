@@ -451,7 +451,117 @@ canvas.bind('click', on_canvas_click, False)
 &lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="nx"&gt;只要使用者點擊在畫布上任何地方&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;即執行&lt;/span&gt; &lt;span class="nx"&gt;on_canvas_click&lt;/span&gt; &lt;span class="nx"&gt;函式&lt;/span&gt;
 &lt;span class="nx"&gt;canvas&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;bind&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;click&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;on_canvas_click&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;False&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="nt"&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</summary><category term="w14"></category><category term="Brython"></category></entry><entry><title>G8第16周報告</title><link href="http://coursemdetw.github.io/reveal/g8_w16.html" rel="alternate"></link><updated>2016-01-08T09:48:00+08:00</updated><author><name>40423143</name></author><id>tag:coursemdetw.github.io,2016-01-08:reveal/g8_w16.html</id><summary type="html">&lt;p&gt;&lt;font color=red&gt;拋"40顆"
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="w14"></category><category term="Brython"></category></entry><entry><title>G3_w17_1</title><link href="http://coursemdetw.github.io/reveal/G3_w17_1.html" rel="alternate"></link><updated>2016-01-08T12:00:00+08:00</updated><author><name>40423118</name></author><id>tag:coursemdetw.github.io,2016-01-08:reveal/G3_w17_1.html</id><summary type="html">&lt;!-- 導入 brython.js --&gt;
+
+&lt;script type="text/javascript" src="http://brython.info/src/brython_dist.js"&gt;&lt;/script&gt;
+
+&lt;!-- 啟動 brython() --&gt;
+
+&lt;script&gt;
+window.onload=function(){
+brython(1);
+}
+&lt;/script&gt;
+
+&lt;!-- 以下利用 Brython 程式執行繪圖 --&gt;
+
+&lt;canvas id="plotarea" width="600" height="400"&gt;&lt;/canvas&gt;
+
+&lt;script type="text/python3"&gt;
+# 導入 browser 模組中的 document, 並設為 doc 變數
+from browser import document as doc
+# 導入數學模組
+import math
+# 產生各小球的亂數速度用
+import random
+# 導入 browser 中的計時器, 建立動畫用
+import browser.timer
+
+# 準備繪圖畫布
+canvas = doc["plotarea"]
+ctx = canvas.getContext("2d")
+
+# 取畫布的寬與高度
+width = canvas.width
+height = canvas.height
+
+n = 20
+# 已知數列內容個數, 先分別與 None 對應
+x = [None]*n
+y = [None]*n
+vy = [None]*n
+vx = [None]*n
+# 重力加速度, Y 方向向下為正
+g = 0.05
+# 空氣的黏滯阻尼係數
+cor = 3 
+# 球的彈力係數
+fr = 1.9
+# 球的半徑
+r = 3
+
+for i in range(n):
+    x[i] = 300
+    y[i] = 100
+    # random.random() 將會產生介於 0 與 1 的浮點亂數
+    vx[i] = 2*(random.random()-.5)
+    vy[i] = 2*(random.random()-.5)
+
+# 更新第 i 球 Y 座標的運算邏輯
+def updateY(i):
+    if ((y[i]+r) &lt; height):
+        #y = height
+        vy[i] += g
+    else:
+        vy[i] = -vy[i]*cor
+        vx[i] *= fr
+    y[i] += vy[i]
+    if ((y[i]+r) &gt; height):
+        y[i] = height-r
+
+# 更新第 i 球 X 座標的運算邏輯
+def updateX(i):
+    if ((x[i]+r) &gt;= width or (x[i]-r) &lt;= 0):
+        vx[i] = -vx[i]*cor
+    x[i] += vx[i]
+    if ((x[i]+r) &gt; width):
+        x[i] = width-r
+    elif ((x[i]-r) &lt; 0):
+        x[i] = r
+
+# 畫圓函式
+def circle(x,y,r):
+    ctx.beginPath()
+    ctx.arc(x, y, r, 0, math.pi*2, True)
+    ctx.fill()
+
+# 寫字函式
+def text(s):
+    ctx.fillStyle = "#ff0000"
+    ctx.font = "30px sans-serif"
+    ctx.textBaseline = "bottom"
+    ctx.fillText(s,0,height)
+
+# 每隔特定時間, 進行動畫繪製
+def animate():
+    # 刷新畫布
+    ctx.clearRect(0, 0, width, height)
+    # 逐一重新繪製小球
+    ctx.fillStyle = "#000000"
+    for i in range(n):
+        updateY(i)
+        updateX(i)
+        circle(x[i],y[i],r)
+
+text("Click me!")
+
+# 畫布點擊後執行的函式
+def on_canvas_click(ev):
+    browser.timer.set_interval(animate,0)
+
+# 只要使用者點擊在畫布上任何地方, 即執行 on_canvas_click 函式
+canvas.bind('click', on_canvas_click, False)
+&lt;/script&gt;</summary><category term="G3"></category></entry><entry><title>G8第16周報告</title><link href="http://coursemdetw.github.io/reveal/g8_w16.html" rel="alternate"></link><updated>2016-01-08T09:48:00+08:00</updated><author><name>40423143</name></author><id>tag:coursemdetw.github.io,2016-01-08:reveal/g8_w16.html</id><summary type="html">&lt;p&gt;&lt;font color=red&gt;拋"40顆"
 球球囉~&lt;/font&gt;
 以下利用 Brython 在網頁寫 Python 繪圖&lt;/p&gt;
 &lt;!-- 導入 brython.js --&gt;
