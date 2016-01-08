@@ -19,10 +19,10 @@
 <v t="amd.20151007224830.1"><vh>Jupyter 安裝與執行</vh></v>
 <v t="amd.20150919103357.1"><vh>pelican 設定</vh></v>
 </v>
-<v t="amd.20150919113957.1"><vh>以下為 pelican 文章</vh>
+<v t="amd.20150919113957.1" a="E"><vh>以下為 pelican 文章</vh>
 <v t="amd.20151021120245.1"><vh>@button admin pelican</vh></v>
 <v t="amd.20150919124128.1"><vh>@button user pelican</vh></v>
-<v t="amd.20150919114010.1" a="E"><vh>@path pelican</vh>
+<v t="amd.20150919114010.1"><vh>@path pelican</vh>
 <v t="amd.20151006130205.1"><vh>@edit publishconf.py</vh></v>
 <v t="amd.20151006113136.1" a="E"><vh>@path content</vh>
 <v t="amd.20150919114035.1"><vh>@edit 2015cphww1.md</vh></v>
@@ -47,7 +47,7 @@
 </v>
 </v>
 </v>
-<v t="amd.20151021113722.1"><vh>@path plugin</vh>
+<v t="amd.20151021113722.1" a="E"><vh>@path plugin</vh>
 <v t="amd.20151021113731.1"><vh>@path liquid_tags</vh>
 <v t="amd.20151021113745.1"><vh>@edit notebook.py</vh></v>
 </v>
@@ -66,7 +66,7 @@
 </v>
 </v>
 </v>
-<v t="40423148.20160108112603.1"><vh>@path 40423148</vh>
+<v t="40423148.20160108112603.1" a="E"><vh>@path 40423148</vh>
 <v t="40423148.20160108112603.2"><vh>以下為投影片 ------------</vh></v>
 <v t="40423148.20160108112603.3"><vh>@edit 40423148_cp_w1_p.html</vh></v>
 <v t="40423148.20160108112603.4" a="E"><vh>@path pelican</vh>
@@ -78,7 +78,7 @@
 </v>
 </v>
 </v>
-<v t="leo.20151225094011.1" a="E"><vh>@path 40423104</vh>
+<v t="leo.20151225094011.1"><vh>@path 40423104</vh>
 <v t="leo.20151225094011.2"><vh>以下為投影片 ------------</vh></v>
 <v t="leo.20151225094011.3"><vh>@edit 40423104_cp_w1_p.html</vh></v>
 <v t="leo.20151225094011.4"><vh>@edit 40423104_cp_w2_p.html</vh></v>
