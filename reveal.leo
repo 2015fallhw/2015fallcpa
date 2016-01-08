@@ -47,7 +47,7 @@
 </v>
 </v>
 </v>
-<v t="amd.20151021113722.1"><vh>@path plugin</vh>
+<v t="amd.20151021113722.1" a="E"><vh>@path plugin</vh>
 <v t="amd.20151021113731.1"><vh>@path liquid_tags</vh>
 <v t="amd.20151021113745.1"><vh>@edit notebook.py</vh></v>
 </v>
@@ -679,7 +679,7 @@
 <v t="leo.20160107182220.1"><vh>@edit 40423140_cp_w3_p.html</vh></v>
 <v t="leo.20160107181646.1"><vh>@edit 40423140_cp_w2_p.html</vh></v>
 <v t="leo.20160107181202.1"><vh>@edit 40423140_cp_w1_p.html</vh></v>
-<v t="leo.20151027140510.4"><vh>@path pelican</vh>
+<v t="leo.20151027140510.4" a="E"><vh>@path pelican</vh>
 <v t="leo.20151027140510.5"><vh>以下為設定檔 ------------</vh></v>
 <v t="leo.20151027140510.6"><vh>@edit publishconf.py</vh></v>
 <v t="leo.20151027140510.7" a="E"><vh>@path content</vh>

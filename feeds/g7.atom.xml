@@ -51,6 +51,7 @@ REM C:\WINDOWS\system32\cmd.exe /k %Disk%:\IDE\nodejs\nodejsvars.bat&lt;/p&gt;
 猜數字遊戲&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;以下利用 Brython 在網頁寫 Python 繪圖&lt;/p&gt;
+&lt;h2&gt;40423140黃子晏&lt;/h2&gt;
 &lt;!-- 導入 brython.js --&gt;
 
 &lt;script type="text/javascript" src="js/Brython3.2.3-20151122-082712/brython.js"&gt;&lt;/script&gt;
