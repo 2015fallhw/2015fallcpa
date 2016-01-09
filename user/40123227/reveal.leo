@@ -37,14 +37,14 @@
 <v t="amd.20150919113957.1"><vh>以下為 pelican 文章</vh></v>
 <v t="amd.20150919124128.1"><vh>@button pelican content</vh></v>
 <v t="amd.20150919114010.1" a="E"><vh>@path pelican\content</vh>
-<v t="leo.20151116031345.1"><vh>@edit 40123227_w1.md</vh></v>
-<v t="leo.20151116031358.1"><vh>@edit 40123227_w2.md</vh></v>
-<v t="leo.20151116031408.1"><vh>@edit 40123227_w3.md</vh></v>
-<v t="leo.20151116031418.1"><vh>@edit 40123227_w5.md</vh></v>
-<v t="leo.20151116031427.1"><vh>@edit 40123227_w6.md</vh></v>
-<v t="leo.20151116031506.1"><vh>@edit 40123227_w7.md</vh></v>
-<v t="leo.20151116072753.1"><vh>@edit 40123227_w8.md</vh></v>
-<v t="leo.20160108122032.1"><vh>@edit 40123227_w17.md</vh></v>
+<v t="leo.20151116031345.1"><vh>@edit 40123227_cp_w1.md</vh></v>
+<v t="leo.20151116031358.1"><vh>@edit 40123227_cp_w2.md</vh></v>
+<v t="leo.20151116031408.1"><vh>@edit 40123227_cp_w3.md</vh></v>
+<v t="leo.20151116031418.1"><vh>@edit 40123227_cp_w5.md</vh></v>
+<v t="leo.20151116031427.1"><vh>@edit 40123227_cp_w6.md</vh></v>
+<v t="leo.20151116031506.1"><vh>@edit 40123227_cp_w7.md</vh></v>
+<v t="leo.20151116072753.1"><vh>@edit 40123227_cp_w8.md</vh></v>
+<v t="leo.20160108120859.1"><vh>@edit 40123227_w17.md</vh></v>
 </v>
 <v t="amd.20150919120205.1" a="E"><vh>以下為 reveal 投影片</vh>
 <v t="leo.20151116031556.1"><vh>@edit 40123227_cp_w1_p.html</vh></v>
