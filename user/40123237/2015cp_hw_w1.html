@@ -168,20 +168,20 @@ init_mathjax();
 
 <link rel="canonical" href="./2015cp_hw_w1.html">
 
-        <meta name="author" content="40423137" />
+        <meta name="author" content="40123237" />
         <meta name="keywords" content="pelican,publishing" />
-        <meta name="description" content="作業一摘要" />
+        <meta name="description" content="[w1] 09/18: Python3: 程式編(Jupyter/SciTE/cmd.exe), Github: 倉儲版本管理, copy.com: 雲端資料管理" />
 
         <meta property="og:site_name" content="2015FALL 40123237 CPA 作業 (期中報告)" />
         <meta property="og:type" content="article"/>
         <meta property="og:title" content="2015 計算機程式 作業一"/>
         <meta property="og:url" content="./2015cp_hw_w1.html"/>
-        <meta property="og:description" content="作業一摘要"/>
-        <meta property="article:published_time" content="2015-11-07" />
+        <meta property="og:description" content="[w1] 09/18: Python3: 程式編(Jupyter/SciTE/cmd.exe), Github: 倉儲版本管理, copy.com: 雲端資料管理"/>
+        <meta property="article:published_time" content="2015-09-18" />
             <meta property="article:section" content="Python" />
             <meta property="article:tag" content="pelican" />
             <meta property="article:tag" content="publishing" />
-            <meta property="article:author" content="40423137" />
+            <meta property="article:author" content="40123237" />
 
 
     <!-- Bootstrap -->
@@ -245,7 +245,7 @@ init_mathjax();
 <footer class="post-info">
     <span class="label label-default">Date</span>
     <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2015-11-07T00:00:00+08:00"> 週六 07 十一月 2015</time>
+        <i class="fa fa-calendar"></i><time datetime="2015-09-18T16:00:00+08:00"> 週五 18 九月 2015</time>
     </span>
 
 
@@ -254,34 +254,118 @@ init_mathjax();
 	<a href="./tag/pelican.html">pelican</a>
         /
 	<a href="./tag/publishing.html">publishing</a>
-    <span class="label label-default">Lang</span>
-	<a href="./2015cp_hw_w1.html">en</a>
-
+    
 </footer><!-- /.post-info -->                    </div>
                 </div>
-                <p>以下為作業一內容</p>
-<iframe src="40423137_cp_w1_p.html" width="500" height="300"></iframe>
+                <iframe src="40123237_cp_w1_p.html" width="500" height="300"></iframe>
 
-<p><a href="40423137_cp_w1_p.html" target="_blank">作業一投影片</a></p>
-<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-<iframe src="https://player.vimeo.com/video/146005325" width="500" height="333" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/146005325">建立倉儲</a> from <a href="https://vimeo.com/user45109608">TommyGWOW</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
-=======
-<iframe width="560" height="315" src="https://www.youtube.com/embed/n1a7o44WxNo?list=RDn1a7o44WxNo" frameborder="0" allowfullscreen></iframe></p>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>ae4f974ec09dab5c1e6a48dfe8c4727f78afcdb4</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
+<p><a href="40123237_cp_w1_p.html" target="_blank">作業一投影片</a></p>
+<ul>
+<li>basic python program:</li>
+</ul>
+<div class="highlight"><pre><span class="c">#first:</span>
+<span class="k">print</span><span class="p">(</span><span class="s">&quot;hello&quot;</span><span class="p">)</span>
+
+<span class="c">#second:</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="s">&quot;hello&quot;</span><span class="p">)</span>
+
+<span class="c">#third: example program</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">i</span><span class="o">*</span><span class="s">&quot;hello&quot;</span><span class="p">)</span>
+</pre></div>
+
+
+<ul>
+<li>
+<p><strong>Jupyter</strong>: run and save to <code>Y:\notebook\print1.ipynb</code></p>
+<ol>
+<li>run: example program</li>
+<li>save as: <code>File &gt;&gt; Rename... &gt;&gt; save as "print1"</code></li>
+</ol>
+</li>
+<li>
+<p><strong>SciTE</strong>: run and save to <code>Y:\tmp\print1.py</code></p>
+<ol>
+<li>run: example program</li>
+<li>save as: <code>File &gt;&gt; Save As... &gt;&gt; rename "print1.py"</code></li>
+</ol>
+</li>
+<li>
+<p><strong>cmd.exe</strong>: test run "print1.py" <code>Y:\tmp&gt;python print1.py</code></p>
+</li>
+<li>
+<p><strong>github</strong>: 4 step <code>git clone &gt;&gt; add &gt;&gt; commit &gt;&gt; push</code></p>
+<ul>
+<li>step 1: copy cpbw1 HTTPS clone URL <code>"https://github.com/學號/cpbw1.git"</code></li>
+<li>step 2: cmd <code>Y:\tmp&gt;git clone https://github.com/學號/cpbw1.git</code></li>
+<li>step 3: copy 2 file to <code>Y:\tmp\cpbw1</code> paste<ul>
+<li>2 file: <code>"print1.ipynb" &amp; "print1.py"</code></li>
+</ul>
+</li>
+<li>step 4: git</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre>    <span class="c">#[step 4.1] go to cpbw1</span>
+    <span class="n">Y</span><span class="p">:</span>\<span class="n">tmp</span><span class="o">&gt;</span><span class="n">cd</span> <span class="n">cpbw1</span>
+
+    <span class="c">#[step 4.2] submit update</span>
+    <span class="n">Y</span><span class="p">:</span>\<span class="n">tmp</span>\<span class="n">cpbw1</span><span class="o">&gt;</span><span class="n">git</span> <span class="n">add</span> <span class="o">-</span><span class="n">A</span>
+
+    <span class="c">#[step 4.3] submit message</span>
+    <span class="n">Y</span><span class="p">:</span>\<span class="n">tmp</span>\<span class="n">cpbw1</span><span class="o">&gt;</span><span class="n">git</span> <span class="n">commit</span> <span class="o">-</span><span class="n">m</span> <span class="s">&quot;add two files&quot;</span>
+
+    <span class="c">#cmd.exe: Please tell me who you are.</span>
+    <span class="n">Run</span>
+      <span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="k">global</span> <span class="n">user</span><span class="o">.</span><span class="n">email</span> <span class="s">&quot;you@example.com&quot;</span>
+      <span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="k">global</span> <span class="n">user</span><span class="o">.</span><span class="n">name</span> <span class="s">&quot;Your Name&quot;</span>
+
+    <span class="c">#[step 4.4] user.email</span>
+    <span class="n">Y</span><span class="p">:</span>\<span class="n">tmp</span>\<span class="n">cpbw1</span><span class="o">&gt;</span><span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="k">global</span> <span class="n">user</span><span class="o">.</span><span class="n">email</span> <span class="s">&quot;學號@nfu.edu.tw&quot;</span>
+
+    <span class="c">#[step 4.5] user.name</span>
+    <span class="n">Y</span><span class="p">:</span>\<span class="n">tmp</span>\<span class="n">cpbw1</span><span class="o">&gt;</span><span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="k">global</span> <span class="n">user</span><span class="o">.</span><span class="n">name</span> <span class="s">&quot;學號&quot;</span>
+
+    <span class="c">#check user email &amp; name Y:\home\.gitconfig open</span>
+    <span class="p">[</span><span class="n">user</span><span class="p">]</span>
+        <span class="n">email</span> <span class="o">=</span> <span class="err">學號</span><span class="nd">@gm.nfu.edu.tw</span>
+        <span class="n">name</span> <span class="o">=</span> <span class="err">學號</span>
+
+    <span class="c">#[step 4.6] submit message again</span>
+    <span class="n">Y</span><span class="p">:</span>\<span class="n">tmp</span>\<span class="n">cpbw1</span><span class="o">&gt;</span><span class="n">git</span> <span class="n">commit</span> <span class="o">-</span><span class="n">m</span> <span class="s">&quot;add two files&quot;</span>
+
+    <span class="c">#cmd.exe:</span>
+    <span class="p">[</span><span class="n">master</span> <span class="err">版次編號</span><span class="p">]</span> <span class="n">add</span> <span class="n">two</span> <span class="n">files</span>
+     <span class="mi">2</span> <span class="n">files</span> <span class="n">changed</span><span class="p">,</span> <span class="mi">115</span> <span class="n">insertions</span><span class="p">(</span><span class="o">+</span><span class="p">)</span>
+     <span class="n">create</span> <span class="n">mode</span> <span class="mi">100644</span> <span class="n">print1</span><span class="o">.</span><span class="n">ipynb</span>
+     <span class="n">create</span> <span class="n">mode</span> <span class="mi">100644</span> <span class="n">print1</span><span class="o">.</span><span class="n">py</span>
+
+    <span class="c">#[step 4.7] push to github</span>
+    <span class="n">Y</span><span class="p">:</span>\<span class="n">tmp</span>\<span class="n">cpbw1</span><span class="o">&gt;</span><span class="n">git</span> <span class="n">push</span>
+
+    <span class="c">#[step 4.8] cmd.exe: 輸入帳密</span>
+    <span class="n">Username</span><span class="p">:</span> <span class="err">學校信箱</span>
+    <span class="n">Password</span><span class="p">:</span> <span class="n">github密碼</span>
+
+    <span class="c">#update github\學號\cpbw1 success</span>
+</pre></div>
+
+
+<ul>
+<li>note: cmd.exe 指令:<ul>
+<li>查詢指令: dir</li>
+<li>更換目錄: cd</li>
+<li>回上一層: cd ..</li>
+<li>跳上一個: 上鍵</li>
+<li>跳下一個: 下鍵</li>
+</ul>
+</li>
+</ul>
+<p><strong>※播放須知</strong>: 由於網頁嵌入式影片畫質較低, 建議直接點案影片視窗右下角前往Vimeo瀏覽!</p>
+<iframe src="https://player.vimeo.com/video/145547331" width="500" height="267" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+<p><p><a href="https://vimeo.com/145547331">40123157_2015cpbw1</a> from <a href="https://vimeo.com/user25757242">盧毅民</a> on <a href="https://vimeo.com">Vimeo</a>.</p></p>
             </div>
             <!-- /.entry-content -->
     <hr/>
@@ -370,7 +454,7 @@ init_mathjax();
         </li>
         <li class="list-group-item">
             <a href="http://40123237.github.io/40123237/" target="_blank">
-                [github.io] 40123237/40123237
+                [github.io] 40123237
             </a>
         </li>
       </ul>
