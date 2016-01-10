@@ -1,5 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>2015FALL 40423125 cpa 作業</title><link href="http://coursemdetw.github.io/reveal/" rel="alternate"></link><link href="http://coursemdetw.github.io/reveal/feeds/python.atom.xml" rel="self"></link><id>http://coursemdetw.github.io/reveal/</id><updated>2015-12-03T00:00:00+08:00</updated><entry><title>2015 計算機程式 作業十一</title><link href="http://coursemdetw.github.io/reveal/2015%20%20cp_hw_w11.html" rel="alternate"></link><updated>2015-12-03T00:00:00+08:00</updated><author><name>40423125</name></author><id>tag:coursemdetw.github.io,2015-12-03:reveal/2015  cp_hw_w11.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>2015FALL 40423125 cpa 作業</title><link href="http://coursemdetw.github.io/reveal/" rel="alternate"></link><link href="http://coursemdetw.github.io/reveal/feeds/python.atom.xml" rel="self"></link><id>http://coursemdetw.github.io/reveal/</id><updated>2016-01-08T00:00:00+08:00</updated><entry><title>2015 計算機程式 作業十七</title><link href="http://coursemdetw.github.io/reveal/2015%20%20cp_hw_w17.html" rel="alternate"></link><updated>2016-01-08T00:00:00+08:00</updated><author><name>40423125</name></author><id>tag:coursemdetw.github.io,2016-01-08:reveal/2015  cp_hw_w17.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
+&lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
+&lt;iframe src="40423125_cp_w17_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="40423125_cp_w11_p.html" target="_blank"&gt;作業一投影片&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Vimeo 影片嵌入(直接從 Vimeo 影片上的 Share 複製 html 碼):&lt;/p&gt;
+&lt;iframe src="https://player.vimeo.com/video/151276070" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/151276070"&gt;錄製_2016_01_10_13_40_47_726&lt;/a&gt; from &lt;a href="https://vimeo.com/user45104858"&gt;yap&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業十六</title><link href="http://coursemdetw.github.io/reveal/2015%20%20cp_hw_w16.html" rel="alternate"></link><updated>2016-01-01T00:00:00+08:00</updated><author><name>40423125</name></author><id>tag:coursemdetw.github.io,2016-01-01:reveal/2015  cp_hw_w16.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
+&lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
+&lt;iframe src="40423125_cp_w16_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="40423125_cp_w11_p.html" target="_blank"&gt;作業一投影片&lt;/a&gt;
+&lt;a href="http://imgur.com/FZQclPX"&gt;&lt;img src="http://i.imgur.com/FZQclPX.jpg" title="source: imgur.com" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;iframe src="https://player.vimeo.com/video/147733326" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/147733326"&gt;20151203&lt;/a&gt; from &lt;a href="https://vimeo.com/user45104858"&gt;yap&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業十五</title><link href="http://coursemdetw.github.io/reveal/2015%20%20cp_hw_w15.html" rel="alternate"></link><updated>2015-12-25T00:00:00+08:00</updated><author><name>40423125</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/2015  cp_hw_w15.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
+&lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
+&lt;iframe src="40423125_cp_w15_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="40423125_cp_w11_p.html" target="_blank"&gt;作業一投影片&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://imgur.com/f7JfTiC"&gt;&lt;img src="http://i.imgur.com/f7JfTiC.png" title="source: imgur.com" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://imgur.com/VBwOXPD"&gt;&lt;img src="http://i.imgur.com/VBwOXPD.png" title="source: imgur.com" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://imgur.com/maCXNKb"&gt;&lt;img src="http://i.imgur.com/maCXNKb.jpg" title="source: imgur.com" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a&gt;大家聖誕節快樂:))))&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Vimeo 影片嵌入(直接從 Vimeo 影片上的 Share 複製 html 碼):&lt;/p&gt;
+&lt;iframe src="https://player.vimeo.com/video/151276493" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/151276493"&gt;錄製_2016_01_10_13_46_13_304&lt;/a&gt; from &lt;a href="https://vimeo.com/user45104858"&gt;yap&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業十四</title><link href="http://coursemdetw.github.io/reveal/2015%20%20cp_hw_w14.html" rel="alternate"></link><updated>2015-12-18T00:00:00+08:00</updated><author><name>40423125</name></author><id>tag:coursemdetw.github.io,2015-12-18:reveal/2015  cp_hw_w14.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
+&lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
+&lt;iframe src="40423125_cp_w14_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="40423125_cp_w11_p.html" target="_blank"&gt;作業一投影片&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Vimeo 影片嵌入(直接從 Vimeo 影片上的 Share 複製 html 碼):&lt;/p&gt;
+&lt;iframe src="https://player.vimeo.com/video/147733326" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/147733326"&gt;20151203&lt;/a&gt; from &lt;a href="https://vimeo.com/user45104858"&gt;yap&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業十三</title><link href="http://coursemdetw.github.io/reveal/2015%20%20cp_hw_w13.html" rel="alternate"></link><updated>2015-12-17T00:00:00+08:00</updated><author><name>40423125</name></author><id>tag:coursemdetw.github.io,2015-12-17:reveal/2015  cp_hw_w13.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
+&lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
+&lt;iframe src="40423125_cp_w13_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="40423125_cp_w11_p.html" target="_blank"&gt;作業一投影片&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Vimeo 影片嵌入(直接從 Vimeo 影片上的 Share 複製 html 碼):&lt;/p&gt;
+&lt;iframe src="https://player.vimeo.com/video/147733326" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/147733326"&gt;20151203&lt;/a&gt; from &lt;a href="https://vimeo.com/user45104858"&gt;yap&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業十二</title><link href="http://coursemdetw.github.io/reveal/2015%20%20cp_hw_w12.html" rel="alternate"></link><updated>2015-12-10T00:00:00+08:00</updated><author><name>40423125</name></author><id>tag:coursemdetw.github.io,2015-12-10:reveal/2015  cp_hw_w12.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
+&lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
+&lt;iframe src="40423125_cp_w12_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="40423125_cp_w11_p.html" target="_blank"&gt;作業一投影片&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Vimeo 影片嵌入(直接從 Vimeo 影片上的 Share 複製 html 碼):&lt;/p&gt;
+&lt;iframe src="https://player.vimeo.com/video/147733326" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/147733326"&gt;20151203&lt;/a&gt; from &lt;a href="https://vimeo.com/user45104858"&gt;yap&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業十一</title><link href="http://coursemdetw.github.io/reveal/2015%20%20cp_hw_w11.html" rel="alternate"></link><updated>2015-12-03T00:00:00+08:00</updated><author><name>40423125</name></author><id>tag:coursemdetw.github.io,2015-12-03:reveal/2015  cp_hw_w11.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
 &lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
 &lt;iframe src="40423125_cp_w11_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
@@ -9,77 +61,75 @@
 
 &lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/147733326"&gt;20151203&lt;/a&gt; from &lt;a href="https://vimeo.com/user45104858"&gt;yap&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業八</title><link href="http://coursemdetw.github.io/reveal/2015%20%20cp_hw_w.html" rel="alternate"></link><updated>2015-11-08T00:00:00+08:00</updated><author><name>40423125</name></author><id>tag:coursemdetw.github.io,2015-11-08:reveal/2015  cp_hw_w.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
 &lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
-&lt;iframe src="9999_cp_w1_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
+&lt;iframe src="40423125_cp_w8_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
 &lt;p&gt;&lt;a href="40423125_cp_w7_p.html" target="_blank"&gt;作業一投影片&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Vimeo 影片嵌入(直接從 Vimeo 影片上的 Share 複製 html 碼):&lt;/p&gt;
-&lt;iframe src="https://player.vimeo.com/video/137724068" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/137724068"&gt;Welcome Speech&lt;/a&gt; from &lt;a href="https://vimeo.com/user24079973"&gt;虎尾科大機械設計工程系 KMOL&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業</title><link href="http://coursemdetw.github.io/reveal/2015%20%20cp_hw_w0.html" rel="alternate"></link><updated>2015-11-08T00:00:00+08:00</updated><author><name>40423125</name></author><id>tag:coursemdetw.github.io,2015-11-08:reveal/2015  cp_hw_w0.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
+&lt;p&gt;Vimeo 影片嵌入(直接從 Vimeo 影片上的 Share 複製 html 碼):
+&lt;iframe src="https://player.vimeo.com/video/151276493" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt; &lt;p&gt;&lt;a href="https://vimeo.com/151276493"&gt;錄製_2016_01_10_13_46_13_304&lt;/a&gt; from &lt;a href="https://vimeo.com/user45104858"&gt;yap&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業</title><link href="http://coursemdetw.github.io/reveal/2015%20%20cp_hw_w0.html" rel="alternate"></link><updated>2015-11-08T00:00:00+08:00</updated><author><name>40423125</name></author><id>tag:coursemdetw.github.io,2015-11-08:reveal/2015  cp_hw_w0.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
 &lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
-&lt;iframe src="9999_cp_w1_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
+&lt;iframe src=" 40423125_cp_w0_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
 &lt;p&gt;&lt;a href="40423125_cp_w0_p.html" target="_blank"&gt;作業一投影片&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Vimeo 影片嵌入(直接從 Vimeo 影片上的 Share 複製 html 碼):&lt;/p&gt;
-&lt;iframe src="https://player.vimeo.com/video/137724068" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+&lt;iframe src="https://player.vimeo.com/video/151276493" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 
-&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/137724068"&gt;Welcome Speech&lt;/a&gt; from &lt;a href="https://vimeo.com/user24079973"&gt;虎尾科大機械設計工程系 KMOL&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業一</title><link href="http://coursemdetw.github.io/reveal/2015%20%20cp_hw_w1.html" rel="alternate"></link><updated>2015-11-08T00:00:00+08:00</updated><author><name>40423125</name></author><id>tag:coursemdetw.github.io,2015-11-08:reveal/2015  cp_hw_w1.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
+&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/151276493"&gt;錄製_2016_01_10_13_46_13_304&lt;/a&gt; from &lt;a href="https://vimeo.com/user45104858"&gt;yap&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業一</title><link href="http://coursemdetw.github.io/reveal/2015%20%20cp_hw_w1.html" rel="alternate"></link><updated>2015-11-08T00:00:00+08:00</updated><author><name>40423125</name></author><id>tag:coursemdetw.github.io,2015-11-08:reveal/2015  cp_hw_w1.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
 &lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
-&lt;iframe src="9999_cp_w1_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
+&lt;iframe src="40423125_cp_w1_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
 &lt;p&gt;&lt;a href="40423125_cp_w1_p.html" target="_blank"&gt;作業一投影片&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Vimeo 影片嵌入(直接從 Vimeo 影片上的 Share 複製 html 碼):&lt;/p&gt;
-&lt;iframe src="https://player.vimeo.com/video/137724068" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+&lt;iframe src="https://player.vimeo.com/video/147733326" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 
-&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/137724068"&gt;Welcome Speech&lt;/a&gt; from &lt;a href="https://vimeo.com/user24079973"&gt;虎尾科大機械設計工程系 KMOL&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業二</title><link href="http://coursemdetw.github.io/reveal/2015%20%20cp_hw_w2.html" rel="alternate"></link><updated>2015-11-08T00:00:00+08:00</updated><author><name>40423125</name></author><id>tag:coursemdetw.github.io,2015-11-08:reveal/2015  cp_hw_w2.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
+&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/147733326"&gt;20151203&lt;/a&gt; from &lt;a href="https://vimeo.com/user45104858"&gt;yap&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業二</title><link href="http://coursemdetw.github.io/reveal/2015%20%20cp_hw_w2.html" rel="alternate"></link><updated>2015-11-08T00:00:00+08:00</updated><author><name>40423125</name></author><id>tag:coursemdetw.github.io,2015-11-08:reveal/2015  cp_hw_w2.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
 &lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
-&lt;iframe src="9999_cp_w1_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
+&lt;iframe src="40423125_cp_w2_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
 &lt;p&gt;&lt;a href="40423125_cp_w2_p.html" target="_blank"&gt;作業一投影片&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Vimeo 影片嵌入(直接從 Vimeo 影片上的 Share 複製 html 碼):&lt;/p&gt;
-&lt;iframe src="https://player.vimeo.com/video/137724068" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+&lt;iframe src="https://player.vimeo.com/video/151276493" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 
-&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/137724068"&gt;Welcome Speech&lt;/a&gt; from &lt;a href="https://vimeo.com/user24079973"&gt;虎尾科大機械設計工程系 KMOL&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業三</title><link href="http://coursemdetw.github.io/reveal/2015%20%20cp_hw_w3.html" rel="alternate"></link><updated>2015-11-08T00:00:00+08:00</updated><author><name>40423125</name></author><id>tag:coursemdetw.github.io,2015-11-08:reveal/2015  cp_hw_w3.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
+&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/151276493"&gt;錄製_2016_01_10_13_46_13_304&lt;/a&gt; from &lt;a href="https://vimeo.com/user45104858"&gt;yap&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業三</title><link href="http://coursemdetw.github.io/reveal/2015%20%20cp_hw_w3.html" rel="alternate"></link><updated>2015-11-08T00:00:00+08:00</updated><author><name>40423125</name></author><id>tag:coursemdetw.github.io,2015-11-08:reveal/2015  cp_hw_w3.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
 &lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
-&lt;iframe src="9999_cp_w1_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
+&lt;iframe src="40423125_cp_w3_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
 &lt;p&gt;&lt;a href="40423125_cp_w3_p.html" target="_blank"&gt;作業一投影片&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Vimeo 影片嵌入(直接從 Vimeo 影片上的 Share 複製 html 碼):&lt;/p&gt;
-&lt;iframe src="https://player.vimeo.com/video/137724068" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+&lt;iframe src="https://player.vimeo.com/video/147733326" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 
-&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/137724068"&gt;Welcome Speech&lt;/a&gt; from &lt;a href="https://vimeo.com/user24079973"&gt;虎尾科大機械設計工程系 KMOL&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業四</title><link href="http://coursemdetw.github.io/reveal/2015%20%20cp_hw_w4.html" rel="alternate"></link><updated>2015-11-08T00:00:00+08:00</updated><author><name>40423125</name></author><id>tag:coursemdetw.github.io,2015-11-08:reveal/2015  cp_hw_w4.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
+&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/147733326"&gt;20151203&lt;/a&gt; from &lt;a href="https://vimeo.com/user45104858"&gt;yap&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業四</title><link href="http://coursemdetw.github.io/reveal/2015%20%20cp_hw_w4.html" rel="alternate"></link><updated>2015-11-08T00:00:00+08:00</updated><author><name>40423125</name></author><id>tag:coursemdetw.github.io,2015-11-08:reveal/2015  cp_hw_w4.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
 &lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
-&lt;iframe src="9999_cp_w1_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
+&lt;iframe src="40423125_cp_w4_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
 &lt;p&gt;&lt;a href="40423125_cp_w4_p.html" target="_blank"&gt;作業一投影片&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Vimeo 影片嵌入(直接從 Vimeo 影片上的 Share 複製 html 碼):&lt;/p&gt;
-&lt;iframe src="https://player.vimeo.com/video/137724068" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+&lt;iframe src="https://player.vimeo.com/video/151276493" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 
-&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/137724068"&gt;Welcome Speech&lt;/a&gt; from &lt;a href="https://vimeo.com/user24079973"&gt;虎尾科大機械設計工程系 KMOL&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業五</title><link href="http://coursemdetw.github.io/reveal/2015%20%20cp_hw_w5.html" rel="alternate"></link><updated>2015-11-08T00:00:00+08:00</updated><author><name>40423125</name></author><id>tag:coursemdetw.github.io,2015-11-08:reveal/2015  cp_hw_w5.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
+&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/151276493"&gt;錄製_2016_01_10_13_46_13_304&lt;/a&gt; from &lt;a href="https://vimeo.com/user45104858"&gt;yap&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業五</title><link href="http://coursemdetw.github.io/reveal/2015%20%20cp_hw_w5.html" rel="alternate"></link><updated>2015-11-08T00:00:00+08:00</updated><author><name>40423125</name></author><id>tag:coursemdetw.github.io,2015-11-08:reveal/2015  cp_hw_w5.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
 &lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
-&lt;iframe src="9999_cp_w1_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
+&lt;iframe src="40423125_cp_w5_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
 &lt;p&gt;&lt;a href="40423125_cp_w5_p.html" target="_blank"&gt;作業一投影片&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Vimeo 影片嵌入(直接從 Vimeo 影片上的 Share 複製 html 碼):&lt;/p&gt;
-&lt;iframe src="https://player.vimeo.com/video/137724068" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+&lt;iframe src="https://player.vimeo.com/video/147733326" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 
-&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/137724068"&gt;Welcome Speech&lt;/a&gt; from &lt;a href="https://vimeo.com/user24079973"&gt;虎尾科大機械設計工程系 KMOL&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業六</title><link href="http://coursemdetw.github.io/reveal/2015%20%20cp_hw_w6.html" rel="alternate"></link><updated>2015-11-08T00:00:00+08:00</updated><author><name>40423125</name></author><id>tag:coursemdetw.github.io,2015-11-08:reveal/2015  cp_hw_w6.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
+&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/147733326"&gt;20151203&lt;/a&gt; from &lt;a href="https://vimeo.com/user45104858"&gt;yap&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業六</title><link href="http://coursemdetw.github.io/reveal/2015%20%20cp_hw_w6.html" rel="alternate"></link><updated>2015-11-08T00:00:00+08:00</updated><author><name>40423125</name></author><id>tag:coursemdetw.github.io,2015-11-08:reveal/2015  cp_hw_w6.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
 &lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
-&lt;iframe src="9999_cp_w1_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
+&lt;iframe src="40423125_cp_w6_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
 &lt;p&gt;&lt;a href="40423125_cp_w6_p.html" target="_blank"&gt;作業一投影片&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Vimeo 影片嵌入(直接從 Vimeo 影片上的 Share 複製 html 碼):&lt;/p&gt;
-&lt;iframe src="https://player.vimeo.com/video/137724068" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+&lt;iframe src="https://player.vimeo.com/video/151276493" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 
-&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/137724068"&gt;Welcome Speech&lt;/a&gt; from &lt;a href="https://vimeo.com/user24079973"&gt;虎尾科大機械設計工程系 KMOL&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業七</title><link href="http://coursemdetw.github.io/reveal/2015%20%20cp_hw_w7.html" rel="alternate"></link><updated>2015-11-08T00:00:00+08:00</updated><author><name>40423125</name></author><id>tag:coursemdetw.github.io,2015-11-08:reveal/2015  cp_hw_w7.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
+&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/151276493"&gt;錄製_2016_01_10_13_46_13_304&lt;/a&gt; from &lt;a href="https://vimeo.com/user45104858"&gt;yap&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業七</title><link href="http://coursemdetw.github.io/reveal/2015%20%20cp_hw_w7.html" rel="alternate"></link><updated>2015-11-08T00:00:00+08:00</updated><author><name>40423125</name></author><id>tag:coursemdetw.github.io,2015-11-08:reveal/2015  cp_hw_w7.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
 &lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
-&lt;iframe src="9999_cp_w1_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
+&lt;iframe src="40423125_cp_w7_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
 &lt;p&gt;&lt;a href="40423125_cp_w7_p.html" target="_blank"&gt;作業一投影片&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Vimeo 影片嵌入(直接從 Vimeo 影片上的 Share 複製 html 碼):&lt;/p&gt;
-&lt;iframe src="https://player.vimeo.com/video/137724068" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+&lt;iframe src="https://player.vimeo.com/video/147733326" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 
-&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/137724068"&gt;Welcome Speech&lt;/a&gt; from &lt;a href="https://vimeo.com/user24079973"&gt;虎尾科大機械設計工程系 KMOL&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業一</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w1.html" rel="alternate"></link><updated>2015-09-19T11:41:00+08:00</updated><author><name>coursemdetw</name></author><id>tag:coursemdetw.github.io,2015-09-19:reveal/2015cp_hw_w1.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
+&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/147733326"&gt;20151203&lt;/a&gt; from &lt;a href="https://vimeo.com/user45104858"&gt;yap&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業一</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w1.html" rel="alternate"></link><updated>2015-09-19T11:41:00+08:00</updated><author><name>coursemdetw</name></author><id>tag:coursemdetw.github.io,2015-09-19:reveal/2015cp_hw_w1.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
 &lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
 &lt;iframe src="9999_cp_w1_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
 

@@ -25,13 +25,39 @@
 <!-- 每一個 section 都代表一張投影片,  -->
 <!-- section 標註中的多 section 標註, 將往下垂直延伸 -->
 <section>
-    <h1>zero to hero python教學</h1>
-    <p>40423125設計一甲邱弘丞</p>		
+    <h1>設計一甲</h1>
+    <p>40423125邱弘丞</p>		
 </section>
-	
-<section id="hw-task-five">
- <h1>作業五-任務說明</h1>
-    <p>10/30 作業: 完成 [03:14:26] Working with Dates and Time(up to [04:05:53]) 課程研習, 必須在 11/6 上課前完成內容與自評</p>   
+	<section id="hw-task-one">
+    <h2>一隻會動的小烏龜</h2>
+    <p>import turtle
+wn = turtle.Screen()
+wn.bgcolor("lightgreen")
+tess = turtle.Turtle()
+tess.shape("turtle")
+tess.color("blue")
+
+tess.penup()                # This is new
+size = 20
+for i in range(30):
+   tess.stamp()             # Leave an impression on the canvas
+   size = size + 3          # Increase the size on every iteration
+   tess.forward(size)       # Move tess along
+   tess.right(24)           #  ...  and turn her
+
+wn.mainloop()</p>
+ 
+</section>
+<section>
+    <h1>心得</h1>
+    <p>看到烏龜會動時,有一股好大好大的成就感喔:)))原來程式可以這麼好玩</p>
+
+</section>
+				
+<section>
+    <h1>自評</h1>
+    <p>70分!!!我會再接再勵的</p>
+
 </section>
   
   
