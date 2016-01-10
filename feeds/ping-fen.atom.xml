@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>2015FALL 作業主頁</title><link href="http://coursemdetw.github.io/reveal/" rel="alternate"></link><link href="http://coursemdetw.github.io/reveal/feeds/ping-fen.atom.xml" rel="self"></link><id>http://coursemdetw.github.io/reveal/</id><updated>2016-01-20T01:20:00+08:00</updated><entry><title>2015 Fall 計算機程式 期末評分註記</title><link href="http://coursemdetw.github.io/reveal/9999_final.html" rel="alternate"></link><updated>2016-01-20T01:20:00+08:00</updated><author><name>9999</name></author><id>tag:coursemdetw.github.io,2016-01-20:reveal/9999_final.html</id><summary type="html">&lt;p&gt;錯誤問題:&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://copy.com/w8gK8opjyaxzZbgv" width="600" /&gt;&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;G10_期末報告.md 中, 找不到 content/notebook/40123227_w15.ipynb&lt;/li&gt;
 &lt;li&gt;G10_w15.md 也有找不到 content/notebook/40123227_w15.ipynb 的錯誤&lt;/li&gt;

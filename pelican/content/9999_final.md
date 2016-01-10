@@ -8,6 +8,8 @@ Summary: 在此篇文章中, 將說明本課程的評分流程
 
 錯誤問題:
 
+<img src="https://copy.com/w8gK8opjyaxzZbgv" width="600" />
+
 1. G10_期末報告.md 中, 找不到 content/notebook/40123227_w15.ipynb
 2. G10_w15.md 也有找不到 content/notebook/40123227_w15.ipynb 的錯誤
 3. g6_w15.md 中有 string index out of range 的錯誤, 表示系統中有 g6_w15.md 檔案, 但是卻沒有內容.
