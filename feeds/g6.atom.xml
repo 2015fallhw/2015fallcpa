@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>2015FALL 作業主頁</title><link href="http://coursemdetw.github.io/reveal/" rel="alternate"></link><link href="http://coursemdetw.github.io/reveal/feeds/g6.atom.xml" rel="self"></link><id>http://coursemdetw.github.io/reveal/</id><updated>2015-12-25T10:48:00+08:00</updated><entry><title>第十五週G6報告</title><link href="http://coursemdetw.github.io/reveal/g6_w15.html" rel="alternate"></link><updated>2015-12-25T10:48:00+08:00</updated><author><name>g6</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/g6_w15.html</id><summary type="html">&lt;p&gt;CP W15 g6分組報告:&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>2015FALL 作業主頁</title><link href="http://coursemdetw.github.io/reveal/" rel="alternate"></link><link href="http://coursemdetw.github.io/reveal/feeds/g6.atom.xml" rel="self"></link><id>http://coursemdetw.github.io/reveal/</id><updated>2015-12-25T10:48:00+08:00</updated><entry><title>第十五週G6報告</title><link href="http://coursemdetw.github.io/reveal/g6_w15-1.html" rel="alternate"></link><updated>2015-12-25T10:48:00+08:00</updated><author><name>g6</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/g6_w15-1.html</id><summary type="html">&lt;p&gt;CP W15 g6分組報告:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Python3 的近端程式開發系統如何建立? 如何啟動?&lt;/li&gt;
 &lt;/ul&gt;
@@ -324,4 +324,4 @@ ctx.lineTo(250, 0)
 ctx.lineTo(250, 150)
 ctx.strokeStyle = " #9F5000"
 ctx.stroke()
-&lt;/script&gt;</summary><category term="w15"></category></entry></feed>
+&lt;/script&gt;</summary><category term="w15"></category></entry><entry><title>不要留下空白的 .md 檔案</title><link href="http://coursemdetw.github.io/reveal/g6_w15.html" rel="alternate"></link><updated>2015-12-18T09:48:00+08:00</updated><author><name>9999</name></author><id>tag:coursemdetw.github.io,2015-12-18:reveal/g6_w15.html</id><summary type="html">&lt;p&gt;請在這裡填入貴組的內容&lt;/p&gt;</summary><category term="w15"></category></entry></feed>

@@ -23,6 +23,14 @@
 <v t="leo.20151218094701.5"><vh>@edit g99_w14_2.md</vh></v>
 <v t="leo.20151225100743.1"><vh>@edit g99_w15.md</vh></v>
 <v t="amd.20160103211002.1"><vh>@edit g99_w17.md</vh></v>
+<v t="amd.20160110155406.1"><vh>@edit 9999_final.md</vh></v>
+<v t="amd.20160110161038.1" a="E"><vh>修正用</vh>
+<v t="amd.20160110161052.1"><vh>@edit G10_w15.md</vh></v>
+<v t="amd.20160110161208.1"><vh>@edit G10_期末報告.md</vh></v>
+<v t="amd.20160110161253.1"><vh>@edit g6_w15.md</vh></v>
+<v t="amd.20160110161853.1"><vh>@edit G6_w15_2.md</vh></v>
+<v t="amd.20160110162207.1"><vh>@edit g6 w15_1.md</vh></v>
+</v>
 </v>
 </v>
 </v>
@@ -41,6 +49,7 @@
 </v>
 </vnodes>
 <tnodes>
+<t tx="amd.20160110161038.1"></t>
 <t tx="leo.20151218093956.2"></t>
 <t tx="leo.20151218094050.1"></t>
 <t tx="leo.20151218094050.2">QTreeWidget {
