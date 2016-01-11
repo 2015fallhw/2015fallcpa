@@ -400,9 +400,9 @@ window.onload=function(){
 brython(1);
 }
 &lt;/script&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 12/11</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w13.html" rel="alternate"></link><updated>2015-12-11T11:41:00+08:00</updated><author><name>40423117</name></author><id>tag:coursemdetw.github.io,2015-12-11:reveal/2015cp_hw_w13.html</id><summary type="html"></summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 12/04</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w12.html" rel="alternate"></link><updated>2015-12-04T11:41:00+08:00</updated><author><name>40423117</name></author><id>tag:coursemdetw.github.io,2015-12-04:reveal/2015cp_hw_w12.html</id><summary type="html">&lt;p&gt;猜數字遊戲:&lt;/p&gt;
-&lt;iframe src="40423117_cp_w11_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
+&lt;iframe src="40423117_cp_w12_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
-&lt;p&gt;&lt;a href="40423117_cp_w11_p.html" target="_blank"&gt;12/04 猜數字遊戲 投影片&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="40423117_cp_w12_p.html" target="_blank"&gt;12/04 猜數字遊戲 投影片&lt;/a&gt;&lt;/p&gt;
 &lt;h1&gt;猜數字遊戲&lt;/h1&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;#coding: utf-8&lt;/span&gt;
 &lt;span class="c"&gt;# 猜數字遊戲&lt;/span&gt;
