@@ -6,7 +6,7 @@ Slug: 9999_final
 Authors: 9999
 Summary: 在此篇文章中, 將說明本課程的評分流程
 
-評分時程規劃請參考: <http://chiamingyen.github.io/kmolab/blog/posts/2016/01/10/2015-fall-final-schedule/>
+評分時程規劃請參考: <http://chiamingyen.github.io/kmolab/blog/2015-fall-final-schedule.html>
 
 錯誤問題:
 
