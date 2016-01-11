@@ -17,8 +17,8 @@
 &lt;/ol&gt;
 &lt;p&gt;錯誤都分別來自第六組與第十組, 請特別注意!!!&lt;/p&gt;
 &lt;p&gt;2015 Fall CP 課程影片整理:&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://chiamingyen.github.io/kmolab/blog/posts/2016/01/10/2015-fall-cp-part-1/"&gt;http://chiamingyen.github.io/kmolab/blog/posts/2016/01/10/2015-fall-cp-part-1/&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://chiamingyen.github.io/kmolab/blog/posts/2016/01/10/2015-fall-cp-part-2/"&gt;http://chiamingyen.github.io/kmolab/blog/posts/2016/01/10/2015-fall-cp-part-2/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://chiamingyen.github.io/kmolab/blog/2015-fall-cp-part-1"&gt;http://chiamingyen.github.io/kmolab/blog/2015-fall-cp-part-1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://chiamingyen.github.io/kmolab/blog/2015-fall-cp-part-2"&gt;http://chiamingyen.github.io/kmolab/blog/2015-fall-cp-part-2&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;各學員在整理各週心得時, 可以參照以上影片所講授的內容.&lt;/p&gt;</summary><category term="期末評分"></category></entry><entry><title>在網際頁面上, 用 Python 執行動態模擬!</title><link href="http://coursemdetw.github.io/reveal/g8_w17.html" rel="alternate"></link><updated>2016-01-16T16:16:00+08:00</updated><author><name>40423152</name></author><id>tag:coursemdetw.github.io,2016-01-16:reveal/g8_w17.html</id><summary type="html">&lt;p&gt;以下利用 Brython 在網頁中進行具彈性的 20 個小球彈跳模擬！
 換言之, 若採用相同的程式技巧與流程, 耶誕卡上的所有繪圖物件, 都可以製作成動畫!!!&lt;/p&gt;
 &lt;!-- 導入 brython.js --&gt;
