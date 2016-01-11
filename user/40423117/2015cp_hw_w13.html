@@ -4,7 +4,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>2015 計算機程式 12/18 &mdash; 2015FALL 40423117 CADPA 作業</title>
+  <title>2015 計算機程式 12/11 &mdash; 2015FALL 40423117 CADPA 作業</title>
   <meta name="author" content="40423117">
 
 
@@ -47,61 +47,12 @@
 <div>
   <article class="hentry" role="article">
 <header>
-      <h1 class="entry-title">2015 計算機程式 12/18</h1>
+      <h1 class="entry-title">2015 計算機程式 12/11</h1>
     <p class="meta">
-<time datetime="2015-12-18T11:41:00+08:00" pubdate>週五 18 十二月 2015</time>    </p>
+<time datetime="2015-12-11T11:41:00+08:00" pubdate>週五 11 十二月 2015</time>    </p>
 </header>
 
-  <div class="entry-content"><!-- 導入 brython.js -->
-
-<script type="text/javascript" src="http://brython.info/src/brython_dist.js"></script>
-
-<!-- 啟動 brython() -->
-
-<script>
-window.onload=function(){
-brython(1);
-}
-</script>
-
-<!-- 以下利用 Brython 程式執行繪圖 -->
-
-<canvas id="plotarea1" width="200" height="200"></canvas>
-
-<script type="text/python3">
-# 導入 doc
-from browser import document as doc
-from browser import console
-import math
-
-# 準備繪圖畫布
-canvas1 = doc["plotarea1"]
-ctx1 = canvas1.getContext("2d")
-
-# 開始畫直線
-for i in range(11):
-    ctx1.beginPath()
-    ctx1.lineWidth = 5
-    ctx1.moveTo(0,0+i*20 )
-    ctx1.lineTo(200,0+i*20 )
-    ctx1.strokeStyle = "#0000ff"
-    ctx1.stroke()
-for i in range(11):
-    ctx1.beginPath()
-    ctx1.lineWidth = 5
-    ctx1.moveTo(0+i*20, 0)
-    ctx1.lineTo(0+i*20, 200)
-    ctx1.strokeStyle = "#FF0000"
-    ctx1.stroke()
-
-
-</script>
-
-<script>
-window.onload=function(){
-brython(1);
-}
-</script></div>
+  <div class="entry-content"></div>
     <footer>
 <p class="meta">
   <span class="byline author vcard">
@@ -109,7 +60,7 @@ brython(1);
         40423117
     </span>
   </span>
-<time datetime="2015-12-18T11:41:00+08:00" pubdate>週五 18 十二月 2015</time>  <span class="categories">
+<time datetime="2015-12-11T11:41:00+08:00" pubdate>週五 11 十二月 2015</time>  <span class="categories">
     <a class='category' href='./category/python.html'>Python</a>
   </span>
   <span class="categories">
@@ -187,9 +138,9 @@ brython(1);
   <script src="./theme/js/octopress.js" type="text/javascript"></script>
   <script type="text/javascript">
     var disqus_shortname = '2015fall';
-    var disqus_identifier = '/2015cp_hw_w14.html';
-    var disqus_url = './2015cp_hw_w14.html';
-    var disqus_title = '2015 計算機程式 12/18';
+    var disqus_identifier = '/2015cp_hw_w13.html';
+    var disqus_url = './2015cp_hw_w13.html';
+    var disqus_title = '2015 計算機程式 12/11';
     (function() {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
       dsq.src = "//" + disqus_shortname + '.disqus.com/embed.js';

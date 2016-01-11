@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>2015 計算機程式 12/04 &mdash; 2015FALL 40423117 CADPA 作業</title>
+  <meta name="author" content="40423117">
+
+
+
+
+
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link href="./favicon.png" rel="icon">
+
+  <link href="./theme/css/main.css" media="screen, projection"
+        rel="stylesheet" type="text/css">
+
+  <link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic"
+        rel="stylesheet" type="text/css">
+  <link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic"
+        rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <header role="banner"><hgroup>
+  <h1><a href="./">2015FALL 40423117 CADPA 作業</a></h1>
+</hgroup></header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+</ul>
+
+
+<ul class="main-navigation">
+      <li class="active">
+        <a href="./category/python.html">Python</a>
+      </li>
+</ul></nav>
+  <div id="main">
+    <div id="content">
+<div>
+  <article class="hentry" role="article">
+<header>
+      <h1 class="entry-title">2015 計算機程式 12/04</h1>
+    <p class="meta">
+<time datetime="2015-12-04T11:41:00+08:00" pubdate>週五 04 十二月 2015</time>    </p>
+</header>
+
+  <div class="entry-content"><p>猜數字遊戲:</p>
+<iframe src="40423117_cp_w11_p.html" width="500" height="300"></iframe>
+
+<p><a href="40423117_cp_w11_p.html" target="_blank">12/04 猜數字遊戲 投影片</a></p>
+<h1>猜數字遊戲</h1>
+<div class="highlight"><pre><span class="c">#coding: utf-8</span>
+<span class="c"># 猜數字遊戲</span>
+<span class="kn">import</span> <span class="nn">random</span>
+
+<span class="err">標準答案</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+<span class="err">你猜的數字</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">&quot;請輸入您所猜的整數:&quot;</span><span class="p">))</span>
+<span class="err">猜測次數</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="k">while</span> <span class="err">標準答案</span> <span class="o">!=</span> <span class="err">你猜的數字</span><span class="p">:</span>
+    <span class="k">if</span> <span class="err">標準答案</span> <span class="o">&lt;</span> <span class="err">你猜的數字</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">&quot;太大了，再猜一次 :)加油&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">&quot;太小了，再猜一次 :)加油&quot;</span><span class="p">)</span>
+    <span class="err">你猜的數字</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">&quot;請輸入您所猜的整數:&quot;</span><span class="p">))</span>
+    <span class="err">猜測次數</span> <span class="o">+=</span> <span class="mi">1</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s">&quot;猜對了！總共猜了&quot;</span><span class="p">,</span> <span class="err">猜測次數</span><span class="p">,</span> <span class="s">&quot;次&quot;</span><span class="p">)</span>
+</pre></div>
+
+
+<p>上列程式碼說明:
+第1行為程式檔案內文的編碼宣告, 由於 Python3 內定的程式內文編碼為 utf-8, 因此一般可以不用宣告, 除非使用非 utf-8 的資料編碼, 也可以寫成 # -<em>- coding: utf-8 -</em>-</p>
+<p>第2行的井字號開頭, 屬於單行註解, Python3 解譯程式碼時, 會跳過這些註解, 不會執行其內容</p>
+<p>第3行是導入 Python 內建的 random 模組</p>
+<p>第4行為空白行</p>
+<p>第5行則設定一個變數, 名稱為”標準答案”, 然後利用所導入的 random 模組中的 randint 方法, 產生一個介於且包括頭尾數字的亂數整數, 這裡的 random.randint(1, 100), 會產生一個大於等於 1 但是小於等於 100 的整數.</p>
+<p>第6行則是利用 input() 函式來取使用者所猜測的數字, 而 input() 中的輸入為字串, 式用來提示使用者所要輸入的資料格式或範圍, 利用 input 取得的資料型別為字串, 因為隨後需要利用整數比對的判斷式來判定大小, 因此再將所取得的字串, 利用 int() 函式, 轉為 integer 整數, 取得輸入後, 再將此猜測的整數, 對應到”你猜的數字”變數.</p>
+<p>第7行則是將 1 對應到猜測次數所對應的記憶體空間, 也就是將”猜測次數”變數設為 1.</p>
+<p>第8行之後到第14行是屬於 while 迴圈的內容, 由於 Python 程式不像 C, C++, 或 Java 等利用 {} 來界定迴圈的執行內容, 而是利用資料的縮排來界定各迴圈的執行範圍, 因此, 第9行開始縮排4個空白的區域就是 while 的有效執行範圍, 而且第8行最後因為 while 迴圈的定義尚未完成, 因此必須要在最後加上冒號, 相同的語法, 在第9行的 if, 與第11行的 else 也都是相同格式, 都必須在該行最後, 加上冒號.</p>
+<p>第8行中的 != 是判斷式中的不等於, 假如標準答案不等於使用者所猜的數字, 則程式進入提示區域, 若太大, 則回覆所猜的數字過大, 否則回覆過小, 完成 if 的判斷提示區之後, 因為使用者尚未猜對, 因此在第13行再次利用 input 與 int 函式取使用者所猜的數字, 並在第14行將猜測數字變數增量1.</p>
+<p>第14行也可以寫為 猜測數字 = 猜測數字 + 1</p>
+<p>最後, 假如使用者猜對數字, 則 while 迴圈內容將不再執行, 並在第16行利用 print() 函式印出總共猜幾次的訊息.</p>
+<iframe src="https://player.vimeo.com/video/151271111" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+<p><p><a href="https://vimeo.com/151271111">1204</a> from <a href="https://vimeo.com/user44960495">Alex li</a> on <a href="https://vimeo.com">Vimeo</a>.</p></p></div>
+    <footer>
+<p class="meta">
+  <span class="byline author vcard">
+    Posted by <span class="fn">
+        40423117
+    </span>
+  </span>
+<time datetime="2015-12-04T11:41:00+08:00" pubdate>週五 04 十二月 2015</time>  <span class="categories">
+    <a class='category' href='./category/python.html'>Python</a>
+  </span>
+  <span class="categories">
+    <a class="category" href="./tag/pelican.html">pelican</a>,    <a class="category" href="./tag/publishing.html">publishing</a>  </span>
+</p><div class="sharing">
+</div>    </footer>
+  </article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+  </section>
+</div>
+<aside class="sidebar">
+  <section>
+    <h1>Recent Posts</h1>
+    <ul id="recent_posts">
+      <li class="post">
+          <a href="./2015cp_hw_w17.html">2016 計算機程式 01/08</a>
+      </li>
+      <li class="post">
+          <a href="./2015cp_hw_w15.html">2015 計算機程式 12/25</a>
+      </li>
+      <li class="post">
+          <a href="./2015cp_hw_w14.html">2015 計算機程式 12/18</a>
+      </li>
+      <li class="post">
+          <a href="./2015cp_hw_w13.html">2015 計算機程式 12/11</a>
+      </li>
+      <li class="post">
+          <a href="./2015cp_hw_w12.html">2015 計算機程式 12/04</a>
+      </li>
+    </ul>
+  </section>
+  <section>
+      
+    <h1>Categories</h1>
+    <ul id="recent_posts">
+        <li><a href="./category/python.html">Python</a></li>
+    </ul>
+  </section>
+ 
+
+  <section>
+  <h1>Tags</h1>
+    <a href="./tag/pelican.html">pelican</a>,    <a href="./tag/publishing.html">publishing</a>  </section>
+
+
+    <section>
+        <h1>Social</h1>
+        <ul>
+            <li><a href="http://twitter.com/ametaireau" target="_blank">twitter</a></li>
+            <li><a href="http://github.com/ametaireau" target="_blank">github</a></li>
+        </ul>
+    </section>
+    <section>
+        <h1>Blogroll</h1>
+        <ul>
+            <li><a href="http://wordpress-2015course.rhcloud.com/" target="_blank">2015課程網頁</a></li>
+            <li><a href="http://python.org/" target="_blank">Python</a></li>
+            <li><a href="../../" target="_blank">2015作業主頁</a></li>
+            <li><a href="http://40423117.github.io/blog/user/40423117/" target="_blank">40423117 作業倉儲</a></li>
+            <li><a href="http://40423117.github.io/blog/user/40423117/2015cp_hw_w17.html" target="_blank">第十七週</a></li>
+        </ul>
+    </section>
+
+</aside>    </div>
+  </div>
+  <footer role="contentinfo"><p>
+    Copyright &copy;  2015&ndash;2016  40423117 &mdash;
+  <span class="credit">Powered by <a href="http://getpelican.com">Pelican</a></span>
+</p></footer>
+  <script src="./theme/js/modernizr-2.0.js"></script>
+  <script src="./theme/js/ender.js"></script>
+  <script src="./theme/js/octopress.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    var disqus_shortname = '2015fall';
+    var disqus_identifier = '/2015cp_hw_w12.html';
+    var disqus_url = './2015cp_hw_w12.html';
+    var disqus_title = '2015 計算機程式 12/04';
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = "//" + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+     })();
+  </script>
+</body>
+</html>

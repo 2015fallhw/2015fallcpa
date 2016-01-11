@@ -49,10 +49,11 @@
 <header>
       <h1 class="entry-title">2016 計算機程式 01/08</h1>
     <p class="meta">
-<time datetime="2016-01-08T12:20:00+08:00" pubdate>週五 08 一月 2016</time>    </p>
+<time datetime="2016-01-08T11:41:00+08:00" pubdate>週五 08 一月 2016</time>    </p>
 </header>
 
-  <div class="entry-content"><!-- 導入 brython.js -->
+  <div class="entry-content"><h1>Brython動畫</h1>
+<!-- 導入 brython.js -->
 
 <script type="text/javascript" src="http://brython.info/src/brython_dist.js"></script>
 
@@ -86,7 +87,7 @@ ctx = canvas.getContext("2d")
 width = canvas.width
 height = canvas.height
 
-n = 20
+n = 15
 # 已知數列內容個數, 先分別與 None 對應
 x = [None]*n
 y = [None]*n
@@ -99,7 +100,7 @@ cor = 0.7
 # 球的彈力係數
 fr = 0.95
 # 球的半徑
-r = 5
+r = 6
 
 for i in range(n):
     x[i] = 300
@@ -162,12 +163,7 @@ def on_canvas_click(ev):
 
 # 只要使用者點擊在畫布上任何地方, 即執行 on_canvas_click 函式
 canvas.bind('click', on_canvas_click, False)
-</script>
-
-<h3>影片解說</h3>
-<h2>心得</h2>
-<h2>自評</h2>
-<h3>自評分數：****</h3></div>
+</script></div>
     <footer>
 <p class="meta">
   <span class="byline author vcard">
@@ -175,7 +171,7 @@ canvas.bind('click', on_canvas_click, False)
         40423117
     </span>
   </span>
-<time datetime="2016-01-08T12:20:00+08:00" pubdate>週五 08 一月 2016</time>  <span class="categories">
+<time datetime="2016-01-08T11:41:00+08:00" pubdate>週五 08 一月 2016</time>  <span class="categories">
     <a class='category' href='./category/python.html'>Python</a>
   </span>
   <span class="categories">
@@ -197,16 +193,16 @@ canvas.bind('click', on_canvas_click, False)
           <a href="./2015cp_hw_w17.html">2016 計算機程式 01/08</a>
       </li>
       <li class="post">
+          <a href="./2015cp_hw_w15.html">2015 計算機程式 12/25</a>
+      </li>
+      <li class="post">
           <a href="./2015cp_hw_w14.html">2015 計算機程式 12/18</a>
       </li>
       <li class="post">
-          <a href="./2015cp_hw_w7.html">2015 計算機程式 11/06</a>
+          <a href="./2015cp_hw_w13.html">2015 計算機程式 12/11</a>
       </li>
       <li class="post">
-          <a href="./2015cp_hw_w6.html">2015 計算機程式 10/30</a>
-      </li>
-      <li class="post">
-          <a href="./2015cp_hw_w5.html">2015 計算機程式 10/23</a>
+          <a href="./2015cp_hw_w12.html">2015 計算機程式 12/04</a>
       </li>
     </ul>
   </section>
@@ -238,7 +234,7 @@ canvas.bind('click', on_canvas_click, False)
             <li><a href="http://python.org/" target="_blank">Python</a></li>
             <li><a href="../../" target="_blank">2015作業主頁</a></li>
             <li><a href="http://40423117.github.io/blog/user/40423117/" target="_blank">40423117 作業倉儲</a></li>
-            <li><a href="http://2015fallhw.github.io/2015fallcpa/user/40423117/2015cp_hw_w17.html" target="_blank">第十七週</a></li>
+            <li><a href="http://40423117.github.io/blog/user/40423117/2015cp_hw_w17.html" target="_blank">第十七週</a></li>
         </ul>
     </section>
 
