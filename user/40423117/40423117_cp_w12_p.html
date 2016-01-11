@@ -1,0 +1,178 @@
+<!--
+這個檔案展示了 reveal.js 投影片資料的基本架構
+其中使用 "reveal" class 與 "slides" class 來界定投影片的資料範圍
+而各投影片則以 <section></section> 標示
+且支援平行與垂直的投影片配置方法
+-->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>404232117 12/04</title>
+<link rel="stylesheet" href="css/reveal.min.css">
+	<link rel="stylesheet" href="css/theme/default.css" id="theme">	
+	<!--增加對於 IE 早期版本的支援 -->
+	<!--[if lt IE 9]>
+	<script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+<body>
+<!-- 將整個投影片包在 "reveal" class 中 -->
+<div class="reveal">
+<!-- 將所有投影片包在 "slides" class 中 -->
+<div class="slides">
+<!-- 以下為投影片 -->
+<!-- 每一個 section 都代表一張投影片,  -->
+<!-- section 標註中的多 section 標註, 將往下垂直延伸 -->
+<section>
+    <h1>零基礎學Python</h1>
+    <h2>猜數字遊戲</h2>
+    <p>40423217 四設一甲 李國豪</p>	
+</section>
+	
+<section>   
+    <h1>猜數字遊戲</h1>
+    <p>#coding: utf-8</p>
+    <ul>
+        <li>為程式檔案內文的編碼宣告, 由於 Python3 內定的程式內文編碼為 utf-8, 因此一般可以不用宣告, 除非使用非 utf-8 的資料編碼, 也可以寫成 # -*- coding: utf-8 -*-</li>
+    </ul>
+</section>
+    
+<section>   
+    <h1>猜數字遊戲</h1>
+    <p># 猜數字遊戲註解</p>
+    <ul>
+        <li>
+        井字號開頭, 屬於單行註解, Python3 解譯程式碼時, 會跳過這些註解, 不會執行其內容
+        </li>
+    </ul>
+</section>
+    
+<section>   
+    <h1>猜數字遊戲</h1>
+    <p>import random</p>
+    <ul>
+        <li>
+        導入 Python 內建的 random 模組
+        </li>
+    </ul>
+</section>
+    
+<section>   
+    <h1>猜數字遊戲</h1>
+    <p>標準答案 = random.randint(1, 100)</p>
+    <ul>
+        <li>
+        設定一個變數, 名稱為”標準答案”, 然後利用所導入的 random 模組中的 randint 方法, 產生一個介於且包括頭尾數字的亂數整數, 這裡的 random.randint(1, 100), 會產生一個大於等於 1 但是小於等於 100 的整數.
+        </li>
+    </ul>
+</section>
+    
+<section>   
+    <h1>猜數字遊戲</h1>
+    <p>你猜的數字 = int(input("請輸入您所猜的整數:"))</p>
+    <ul>
+        <li>
+        是利用 input() 函式來取使用者所猜測的數字, 而 input() 中的輸入為字串, 式用來提示使用者所要輸入的資料格式或範圍, 利用 input 取得的資料型別為字串, 因為隨後需要利用整數比對的判斷式來判定大小, 因此再將所取得的字串, 利用 int() 函式, 轉為 integer 整數, 取得輸入後, 再將此猜測的整數, 對應到”你猜的數字”變數.
+        </li>
+    </ul>
+</section>
+    
+<section>   
+    <h1>猜數字遊戲</h1>
+    <p>猜測次數 = 1</p>
+    <ul>
+        <li>
+        將 1 對應到猜測次數所對應的記憶體空間, 也就是將”猜測次數”變數設為 1.
+        </li>
+    </ul>
+</section>
+    
+<section>   
+    <section>
+    <h1>猜數字遊戲</h1>
+    <p> 8~14行程式碼</p>
+    <ul>
+        <li>8. while 標準答案 != 你猜的數字:</li>
+        <li>9. if 標準答案 < 你猜的數字:</li>
+        <li>10. print("太大了，再猜一次 :)加油")</li>
+        <li>11. else:</li>
+        <li>12. print("太小了，再猜一次 :)加油")</li>
+        <li>13. 你猜的數字 = int(input("請輸入您所猜的整數:"))</li>
+        <li>14. 猜測次數 += 1</li>
+    </ul>
+    </section>
+    
+    <section>
+        <p>8~14行程式碼講解</p>
+    <ul>
+        <li>第8行之後到第14行是屬於 while 迴圈的內容, 由於 Python 程式不像 C, C++, 或 Java 等利用 {} 來界定迴圈的執行內容, 而是利用資料的縮排來界定各迴圈的執行範圍, 因此, 第9行開始縮排4個空白的區域就是 while 的有效執行範圍, 而且第8行最後因為 while 迴圈的定義尚未完成, 因此必須要在最後加上冒號, 相同的語法, 在第9行的 if, 與第11行的 else 也都是相同格式, 都必須在該行最後, 加上冒號.
+
+第8行中的 != 是判斷式中的不等於, 假如標準答案不等於使用者所猜的數字, 則程式進入提示區域, 若太大, 則回覆所猜的數字過大, 否則回覆過小, 完成 if 的判斷提示區之後, 因為使用者尚未猜對, 因此在第13行再次利用 input 與 int 函式取使用者所猜的數字, 並在第14行將猜測數字變數增量1.
+
+第14行也可以寫為 猜測數字 = 猜測數字 + 1</li>
+    </ul>
+    </section>
+    
+</section>
+    
+<section>   
+    <section>
+    <h1>猜數字遊戲</h1>
+    <p>print("猜對了！總共猜了", 猜測次數, "次")</p>
+    <ul>
+        <li>
+         假如使用者猜對數字, 則 while 迴圈內容將不再執行, 並利用 print() 函式印出總共猜幾次的訊息.
+        </li>
+    </ul>
+    </section>
+    
+    <section>
+    <p>完整程式碼</p>
+    <CODE>
+         #coding: utf-8
+         # 猜數字遊戲
+         import random   
+        標準答案 = random.randint(1, 100)
+        你猜的數字 = int(input("請輸入您所猜的整數:"))
+        猜測次數 = 1
+        while 標準答案 != 你猜的數字:
+            if 標準答案 < 你猜的數字:
+                print("太大了，再猜一次 :)加油")
+            else:
+                print("太小了，再猜一次 :)加油")
+        你猜的數字 = int(input("請輸入您所猜的整數:"))
+        猜測次數 += 1
+        print("猜對了！總共猜了", 猜測次數, "次")
+    </CODE>
+    </section>
+
+
+</section>
+    
+    
+<section>
+    <h1>心得</h1>
+    <p>因為之前其實已經有認識過程式語言</p>
+    <p>所以對程式碼的感覺還滿熟悉的XD</p>
+
+</section>
+<section>
+    <h1>自評</h1>
+    <p>自評分數：75</p>
+    <p>我覺得每次的自評都只有影片好難拍好難拍好難拍而已XD</p>
+    <p>然後又需要用語音說明覺得有點麻煩啦哈哈~~</p>
+</section>
+				
+</div>
+</div>
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.min.js"></script>
+<script>
+    // 啟動 Reveal.
+    Reveal.initialize({
+    });
+</script>
+	
+</body>
+

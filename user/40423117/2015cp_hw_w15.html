@@ -4,7 +4,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>2016 計算機程式 01/08 &mdash; 2015FALL 40423117 CADPA 作業</title>
+  <title>2015 計算機程式 12/25 &mdash; 2015FALL 40423117 CADPA 作業</title>
   <meta name="author" content="40423117">
 
 
@@ -47,12 +47,13 @@
 <div>
   <article class="hentry" role="article">
 <header>
-      <h1 class="entry-title">2016 計算機程式 01/08</h1>
+      <h1 class="entry-title">2015 計算機程式 12/25</h1>
     <p class="meta">
-<time datetime="2016-01-08T11:41:00+08:00" pubdate>週五 08 一月 2016</time>    </p>
+<time datetime="2015-12-25T11:41:00+08:00" pubdate>週五 25 十二月 2015</time>    </p>
 </header>
 
-  <div class="entry-content"><h1>Brython動畫</h1>
+  <div class="entry-content"><h3>Merry Christmas  &amp;  Happy new year###</h3>
+<h3>40423117</h3>
 <!-- 導入 brython.js -->
 
 <script type="text/javascript" src="http://brython.info/src/brython_dist.js"></script>
@@ -67,102 +68,230 @@ brython(1);
 
 <!-- 以下利用 Brython 程式執行繪圖 -->
 
-<canvas id="plotarea" width="600" height="400"></canvas>
+<canvas id="plotarea" width="500" height="510"></canvas>
 
 <script type="text/python3">
-# 導入 browser 模組中的 document, 並設為 doc 變數
+# 導入 doc
 from browser import document as doc
-# 導入數學模組
+from browser import console
 import math
-# 產生各小球的亂數速度用
-import random
-# 導入 browser 中的計時器, 建立動畫用
-import browser.timer
 
 # 準備繪圖畫布
 canvas = doc["plotarea"]
 ctx = canvas.getContext("2d")
 
-# 取畫布的寬與高度
-width = canvas.width
-height = canvas.height
+# 盆栽
+ctx.beginPath()
+ctx.moveTo(195, 390)
+ctx.lineTo(195, 420)
+ctx.moveTo(305, 405)
+ctx.lineTo(305, 420)
+ctx.lineWidth = 8
+ctx.strokeStyle = "#381319"
+ctx.stroke()
 
-n = 15
-# 已知數列內容個數, 先分別與 None 對應
-x = [None]*n
-y = [None]*n
-vy = [None]*n
-vx = [None]*n
-# 重力加速度, Y 方向向下為正
-g = 0.05
-# 空氣的黏滯阻尼係數
-cor = 0.7 
-# 球的彈力係數
-fr = 0.95
-# 球的半徑
-r = 6
+ctx.beginPath()
+ctx.fillStyle = "#5C2230"
+ctx.fillRect(160,420,180,30)
+ctx.stroke()
 
-for i in range(n):
-    x[i] = 300
-    y[i] = 100
-    # random.random() 將會產生介於 0 與 1 的浮點亂數
-    vx[i] = 2*(random.random()-.5)
-    vy[i] = 2*(random.random()-.5)
+ctx.beginPath()
+ctx.fillStyle = "#381319"
+ctx.fillRect(200,420,50,30)
+ctx.stroke()
 
-# 更新第 i 球 Y 座標的運算邏輯
-def updateY(i):
-    if ((y[i]+r) < height):
-        #y = height
-        vy[i] += g
-    else:
-        vy[i] = -vy[i]*cor
-        vx[i] *= fr
-    y[i] += vy[i]
-    if ((y[i]+r) > height):
-        y[i] = height-r
+ctx.beginPath()
+ctx.fillStyle = "#381319"
+ctx.fillRect(180,450,10,20)
+ctx.stroke()
 
-# 更新第 i 球 X 座標的運算邏輯
-def updateX(i):
-    if ((x[i]+r) >= width or (x[i]-r) <= 0):
-        vx[i] = -vx[i]*cor
-    x[i] += vx[i]
-    if ((x[i]+r) > width):
-        x[i] = width-r
-    elif ((x[i]-r) < 0):
-        x[i] = r
+ctx.beginPath()
+ctx.fillStyle = "#5C2230"
+ctx.fillRect(190,450,40,20)
+ctx.stroke()
 
-# 畫圓函式
-def circle(x,y,r):
-    ctx.beginPath()
-    ctx.arc(x, y, r, 0, math.pi*2, True)
-    ctx.fill()
+ctx.beginPath()
+ctx.fillStyle = "#381319"
+ctx.fillRect(230,450,50,20)
+ctx.stroke()
 
-# 寫字函式
-def text(s):
-    ctx.fillStyle = "#ff0000"
-    ctx.font = "30px sans-serif"
-    ctx.textBaseline = "bottom"
-    ctx.fillText(s,0,height)
+ctx.beginPath()
+ctx.fillStyle = "#5C2230"
+ctx.fillRect(280,450,50,20)
+ctx.stroke()
 
-# 每隔特定時間, 進行動畫繪製
-def animate():
-    # 刷新畫布
-    ctx.clearRect(0, 0, width, height)
-    # 逐一重新繪製小球
-    ctx.fillStyle = "#000000"
-    for i in range(n):
-        updateY(i)
-        updateX(i)
-        circle(x[i],y[i],r)
+ctx.beginPath()
+ctx.fillStyle = "#381319"
+ctx.fillRect(180,470,30,20)
+ctx.stroke()
 
-text("Click me!")
+ctx.beginPath()
+ctx.fillStyle = "#5C2230"
+ctx.fillRect(210,470,40,20)
+ctx.stroke()
 
-# 畫布點擊後執行的函式
-def on_canvas_click(ev):
-    browser.timer.set_interval(animate,0)
+ctx.beginPath()
+ctx.fillStyle = "#381319"
+ctx.fillRect(250,470,50,20)
+ctx.stroke()
 
-# 只要使用者點擊在畫布上任何地方, 即執行 on_canvas_click 函式
-canvas.bind('click', on_canvas_click, False)
+ctx.beginPath()
+ctx.fillStyle = "#5C2230"
+ctx.fillRect(300,470,30,20)
+ctx.stroke()
+
+
+# 樹
+ctx.beginPath()
+ctx.moveTo(220, 75)
+ctx.lineTo(220, 75)
+ctx.lineTo(140, 150)
+ctx.lineTo(185, 150)
+ctx.lineTo(80, 230)
+ctx.lineTo(110, 235)
+ctx.lineTo(50, 275)
+ctx.lineTo(120, 275)
+ctx.lineTo(10, 370)
+ctx.lineTo(145, 405)
+ctx.lineTo(165, 390)
+ctx.lineTo(175, 405)
+ctx.lineTo(225, 380)
+ctx.lineTo(275, 410)
+ctx.lineTo(320, 405)
+ctx.lineTo(415, 405)
+ctx.lineTo(390, 350)
+ctx.lineTo(490, 370)
+ctx.lineTo(385, 275)
+ctx.lineTo(450, 275)
+ctx.lineTo(385, 235)
+ctx.lineTo(410, 230)
+ctx.lineTo(310, 150)
+ctx.lineTo(350, 150)
+ctx.lineTo(270, 70)
+ctx.lineWidth = 10
+ctx.strokeStyle = "#25432D"
+ctx.stroke()
+
+# 星星
+ctx.beginPath()
+ctx.moveTo(240, 5)
+ctx.lineTo(225, 30)
+ctx.lineTo(200, 30)
+ctx.lineTo(215, 50)
+ctx.lineTo(200, 85)
+ctx.lineTo(240, 70)
+ctx.lineTo(280, 85)
+ctx.lineTo(260, 50)
+ctx.lineTo(280, 30)
+ctx.lineTo(250, 30)
+ctx.lineTo(240, 5)
+ctx.lineWidth = 12
+ctx.strokeStyle = "#F2E307"
+ctx.stroke()
+
+# 字體
+ctx.beginPath()
+ctx.fillStyle = "#88A85D"
+ctx.font = "23px Dutch801 XBd BT"
+ctx.fillText("Merry ",13,28)
+ctx.font = "23px Dutch801 XBd BT"
+ctx.fillText("Christmas",13,48)
+ctx.font = "23px Dutch801 XBd BT"
+ctx.fillText("&",13,68)
+ctx.font = "23px Dutch801 XBd BT"
+ctx.fillText("Happy New ",13,88)
+ctx.font = "23px Dutch801 XBd BT"
+ctx.fillText("Year ",13,108)
+ctx.stroke()
+
+ctx.beginPath()
+ctx.fillStyle = "#88A85D"
+ctx.font = "12px ScriptS"
+ctx.fillText("40423117",390,490)
+ctx.stroke()
+
+# 邊框
+
+ctx.beginPath()
+grd=ctx.createLinearGradient(0,0,0,500)
+grd.addColorStop(1,"#F2E307")
+grd.addColorStop(0,"#D98E04")
+ctx.lineWidth = 20
+ctx.strokeStyle = grd
+ctx.moveTo(0,0)
+ctx.lineTo(0,500)
+ctx.stroke()
+
+ctx.beginPath()
+grd=ctx.createLinearGradient(500,0,0,0)
+grd.addColorStop(1,"#D98E04")
+grd.addColorStop(0,"#D90707")
+ctx.strokeStyle = grd
+ctx.moveTo(0,0)
+ctx.lineTo(500,0)
+ctx.stroke()
+
+ctx.beginPath()
+grd=ctx.createLinearGradient(0,500,0,0)
+grd.addColorStop(1,"#D90707")
+grd.addColorStop(0,"#A60505")
+ctx.strokeStyle = grd
+ctx.moveTo(500,0)
+ctx.lineTo(500,500)
+ctx.stroke()
+
+ctx.beginPath()
+grd=ctx.createLinearGradient(0,0,500,0)
+grd.addColorStop(0,"#88A85D")
+grd.addColorStop(1,"#25432D")
+ctx.strokeStyle = grd
+ctx.moveTo(0,510)
+ctx.lineTo(500,510)
+ctx.stroke()
+
+#禮物
+ctx.beginPath()
+ctx.fillStyle = "#88A85D"
+ctx.fillRect(300,300,60,60)
+ctx.stroke()
+
+
+ctx.beginPath()
+ctx.moveTo(300,330)
+ctx.lineTo(360,330)
+
+ctx.moveTo(330,300)
+ctx.lineTo(330,360)
+
+ctx.moveTo(330,300)
+ctx.lineTo(300,275)
+
+ctx.moveTo(330,300)
+ctx.lineTo(320,260)
+
+ctx.moveTo(300,275)
+ctx.lineTo(322,260)
+
+ctx.moveTo(330,300)
+ctx.lineTo(340,260)
+
+ctx.moveTo(330,300)
+ctx.lineTo(360, 280)
+
+ctx.moveTo(338,260)
+ctx.lineTo(362,280)
+
+ctx.lineWidth = 5
+ctx.strokeStyle = "#F2E307"
+ctx.stroke()
+
+
+</script>
+
+<script>
+window.onload=function(){
+brython(1);
+}
 </script></div>
     <footer>
 <p class="meta">
@@ -171,7 +300,7 @@ canvas.bind('click', on_canvas_click, False)
         40423117
     </span>
   </span>
-<time datetime="2016-01-08T11:41:00+08:00" pubdate>週五 08 一月 2016</time>  <span class="categories">
+<time datetime="2015-12-25T11:41:00+08:00" pubdate>週五 25 十二月 2015</time>  <span class="categories">
     <a class='category' href='./category/python.html'>Python</a>
   </span>
   <span class="categories">
@@ -249,9 +378,9 @@ canvas.bind('click', on_canvas_click, False)
   <script src="./theme/js/octopress.js" type="text/javascript"></script>
   <script type="text/javascript">
     var disqus_shortname = '2015fall';
-    var disqus_identifier = '/2015cp_hw_w17.html';
-    var disqus_url = './2015cp_hw_w17.html';
-    var disqus_title = '2016 計算機程式 01/08';
+    var disqus_identifier = '/2015cp_hw_w15.html';
+    var disqus_url = './2015cp_hw_w15.html';
+    var disqus_title = '2015 計算機程式 12/25';
     (function() {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
       dsq.src = "//" + disqus_shortname + '.disqus.com/embed.js';
