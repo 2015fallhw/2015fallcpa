@@ -1,9 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>2015FALL 40423131 CPA 作業</title><link href="http://coursemdetw.github.io/reveal/" rel="alternate"></link><link href="http://coursemdetw.github.io/reveal/feeds/all.atom.xml" rel="self"></link><id>http://coursemdetw.github.io/reveal/</id><updated>2015-12-11T11:41:00+08:00</updated><entry><title>2015 計算機程式 w14</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w14.html" rel="alternate"></link><updated>2015-12-11T11:41:00+08:00</updated><author><name>40423131</name></author><id>tag:coursemdetw.github.io,2015-12-11:reveal/2015cp_hw_w14.html</id><summary type="html">&lt;p&gt;以下為作業14內容內容&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>2015FALL 40423131 CPA 作業</title><link href="http://coursemdetw.github.io/reveal/" rel="alternate"></link><link href="http://coursemdetw.github.io/reveal/feeds/all.atom.xml" rel="self"></link><id>http://coursemdetw.github.io/reveal/</id><updated>2015-12-11T11:41:00+08:00</updated><entry><title>2015 計算機程式 作業十四</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w14.html" rel="alternate"></link><updated>2015-12-11T11:41:00+08:00</updated><author><name>40423131</name></author><id>tag:coursemdetw.github.io,2015-12-11:reveal/2015cp_hw_w14.html</id><summary type="html">&lt;p&gt;以下為作業十四內容內容&lt;/p&gt;
 &lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
 &lt;iframe src="40423131_cp_w14_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
-&lt;p&gt;&lt;a href="40423131_cp_w14_p.html" target="_blank"&gt;作業十三投影片&lt;/a&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w0.html" rel="alternate"></link><updated>2015-09-19T11:41:00+08:00</updated><author><name>40423131</name></author><id>tag:coursemdetw.github.io,2015-09-19:reveal/2015cp_hw_w0.html</id><summary type="html">&lt;p&gt;以下為作業內容&lt;/p&gt;
+&lt;p&gt;&lt;a href="40423131_cp_w14_p.html" target="_blank"&gt;作業十三投影片&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;List程式:抽點名&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;cpa_number=[&amp;#39; 40123227&amp;#39;,&amp;#39; 40123237&amp;#39;,&amp;#39; 40123256&amp;#39;,&amp;#39; 40423101&amp;#39;,&amp;#39; 40423103&amp;#39;,&amp;#39; 40423104&amp;#39;,&amp;#39; 40423105&amp;#39;,&amp;#39; 40423106&amp;#39;,&amp;#39; 40423107&amp;#39;,&amp;#39; 40423108&amp;#39;,&amp;#39; 40423109&amp;#39;,&amp;#39; 40423110&amp;#39;,&amp;#39; 40423111&amp;#39;,&amp;#39; 40423112&amp;#39;,&amp;#39; 40423113&amp;#39;,&amp;#39; 40423114&amp;#39;,&amp;#39; 40423115&amp;#39;,&amp;#39; 40423116&amp;#39;,&amp;#39; 40423117&amp;#39;,&amp;#39; 40423118&amp;#39;,&amp;#39; 40423119&amp;#39;,&amp;#39; 40423120&amp;#39;,&amp;#39; 40423121&amp;#39;,&amp;#39; 40423122&amp;#39;,&amp;#39; 40423123&amp;#39;,&amp;#39; 40423124&amp;#39;,&amp;#39; 40423125&amp;#39;,&amp;#39; 40423126&amp;#39;,&amp;#39; 40423127&amp;#39;,&amp;#39; 40423128&amp;#39;,&amp;#39; 40423129&amp;#39;,&amp;#39; 40423130&amp;#39;,&amp;#39; 40423131&amp;#39;,&amp;#39; 40423132&amp;#39;,&amp;#39; 40423133&amp;#39;,&amp;#39; 40423134&amp;#39;,&amp;#39; 40423135&amp;#39;,&amp;#39; 40423136&amp;#39;,&amp;#39; 40423137&amp;#39;,&amp;#39; 40423138&amp;#39;,&amp;#39; 40423139&amp;#39;,&amp;#39; 40423140&amp;#39;,&amp;#39; 40423141&amp;#39;,&amp;#39; 40423142&amp;#39;,&amp;#39; 40423143&amp;#39;,&amp;#39; 40423144&amp;#39;,&amp;#39; 40423145&amp;#39;,&amp;#39; 40423146&amp;#39;,&amp;#39; 40423147&amp;#39;,&amp;#39; 40423148&amp;#39;,&amp;#39; 40423149&amp;#39;,&amp;#39; 40423150&amp;#39;,&amp;#39; 40423152&amp;#39;,&amp;#39; 40423153&amp;#39;,&amp;#39; 40423154&amp;#39;,&amp;#39; 40423155&amp;#39;]
+cpa_name=[&amp;#39; 紀培俞&amp;#39;, &amp;#39; 陳琨揚&amp;#39;,&amp;#39; 蘇建瑋&amp;#39;,&amp;#39; 曾宜萱&amp;#39;,&amp;#39; 劉怡萱&amp;#39;,&amp;#39; 顏暄&amp;#39;,&amp;#39; 王奕智&amp;#39;,&amp;#39; 王翔佑&amp;#39;,&amp;#39; 史育澤&amp;#39;,&amp;#39; 江心平&amp;#39;,&amp;#39; 何宗哲&amp;#39;,&amp;#39; 余浩鋼&amp;#39;,&amp;#39; 吳承翰&amp;#39;,&amp;#39; 吳欣奕&amp;#39;,&amp;#39; 吳冠毅&amp;#39;,&amp;#39; 李希凡&amp;#39;,&amp;#39; 李尚瑋&amp;#39;,&amp;#39; 李冠辰&amp;#39;,&amp;#39; 李國豪&amp;#39;,&amp;#39; 阮伯宗&amp;#39;,&amp;#39; 周嘉原&amp;#39;,&amp;#39; 林尚漢&amp;#39;,&amp;#39; 林秉憲&amp;#39;,&amp;#39; 林國蓁&amp;#39;,&amp;#39; 林嘉文&amp;#39;,&amp;#39; 林濬翔&amp;#39;,&amp;#39; 邱弘承&amp;#39;,&amp;#39; 紀均瀚&amp;#39;,&amp;#39; 范展榕&amp;#39;,&amp;#39; 徐聖倫&amp;#39;,&amp;#39; 張俊鴻&amp;#39;,&amp;#39; 張勝雄&amp;#39;,&amp;#39; 許承恩&amp;#39;,&amp;#39; 郭力維&amp;#39;,&amp;#39; 郭政修&amp;#39;,&amp;#39; 陳正凱&amp;#39;,&amp;#39; 陳冠錡&amp;#39;,&amp;#39; 陳柏維&amp;#39;,&amp;#39; 陳慶豪&amp;#39;,&amp;#39; 傅仁禹&amp;#39;,&amp;#39; 曾繼緯&amp;#39;,&amp;#39; 黃子晏&amp;#39;,&amp;#39; 黃羿誠&amp;#39;,&amp;#39; 黃興煜&amp;#39;,&amp;#39; 楊智勝&amp;#39;,&amp;#39; 葉宗翰&amp;#39;,&amp;#39; 廖先博&amp;#39;,&amp;#39; 廖祈安&amp;#39;,&amp;#39; 劉孟璋&amp;#39;,&amp;#39; 劉佑程&amp;#39;,&amp;#39; 蔡悌仁&amp;#39;,&amp;#39; 鄭邦宏&amp;#39;,&amp;#39; 賴浚珅&amp;#39;,&amp;#39; 簡登瑋&amp;#39;,&amp;#39; 闕崇晉&amp;#39;,&amp;#39; 蘇麒彬&amp;#39;]
+g2_number=[&amp;#39;40423105&amp;#39;,&amp;#39;40423106&amp;#39;,&amp;#39;40423107&amp;#39;,&amp;#39;40423114&amp;#39;,&amp;#39;40423115&amp;#39;,&amp;#39;40423116&amp;#39;]
+g2_name=[&amp;#39;王奕智&amp;#39;,&amp;#39;王翔佑&amp;#39;,&amp;#39;史育澤&amp;#39;,&amp;#39;李希凡&amp;#39;,&amp;#39;李尚瑋&amp;#39;,&amp;#39;李冠辰&amp;#39;]
+
+#第2組組員有多少，有哪些人?
+print(&amp;#39;g2組員:&amp;#39;, len(g2_number),&amp;#39;人&amp;#39;)
+
+print(&amp;#39;成員:&amp;#39;)
+
+for i in range(len(g2_number)):
+     print( g2_number[i], g2_name[i])
+
+
+print(&amp;#39;-----分隔-----&amp;#39;)
+
+
+#班上幾個人? 抽點名點多少人? 抽到誰?
+print(&amp;#39;班上有&amp;#39;,len(cpa_number),&amp;#39;人&amp;#39;)
+
+import random
+total_number=len(cpa_number)
+roll_number= int(input(&amp;quot;抽點幾位?&amp;quot;))
+
+for i in range(roll_number):
+     check = random.randint(0,total_number -1)
+     print(cpa_number[check],cpa_name[check])
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;iframe src="https://player.vimeo.com/video/151022090" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="https://vimeo.com/151022090"&gt;list&lt;/a&gt; from &lt;a href="https://vimeo.com/user47573583"&gt;40423116&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w0.html" rel="alternate"></link><updated>2015-09-19T11:41:00+08:00</updated><author><name>40423131</name></author><id>tag:coursemdetw.github.io,2015-09-19:reveal/2015cp_hw_w0.html</id><summary type="html">&lt;p&gt;以下為作業內容&lt;/p&gt;
 &lt;iframe src="40423131_cp_w0_p.html" width="790" height="500"&gt;&lt;/iframe&gt;
 
 &lt;p&gt;&lt;a href="40423131_cp_w0_p.html" target="_blank"&gt;全螢幕&lt;/a&gt;&lt;/p&gt;
@@ -13,7 +47,21 @@
 
 &lt;p&gt;&lt;a href="40423131_cp_w1_p.html" target="_blank"&gt;全螢幕&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;來點音樂如何~~
-&lt;iframe width="700" height="500" src="https://www.youtube.com/embed/tDaUDStUERk" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt; 網址 &lt;a href="https://www.youtube.com/watch?v=tDaUDStUERk"&gt; https://www.youtube.com/watch?v=tDaUDStUERk &lt;/a&gt; on &lt;a href="https://www.youtube.com/"&gt;Youtube&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業十五</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w15.html" rel="alternate"></link><updated>2015-09-19T11:41:00+08:00</updated><author><name>40423131</name></author><id>tag:coursemdetw.github.io,2015-09-19:reveal/2015cp_hw_w15.html</id><summary type="html">&lt;h1&gt;~~聖誕節快樂~~&lt;/h1&gt;
+&lt;iframe width="700" height="500" src="https://www.youtube.com/embed/tDaUDStUERk" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt; 網址 &lt;a href="https://www.youtube.com/watch?v=tDaUDStUERk"&gt; https://www.youtube.com/watch?v=tDaUDStUERk &lt;/a&gt; on &lt;a href="https://www.youtube.com/"&gt;Youtube&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業十一</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w11.html" rel="alternate"></link><updated>2015-09-19T11:41:00+08:00</updated><author><name>40423131</name></author><id>tag:coursemdetw.github.io,2015-09-19:reveal/2015cp_hw_w11.html</id><summary type="html">&lt;p&gt;以下為作業十一內容&lt;/p&gt;
+&lt;iframe src="40423131_cp_w11_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="40423131_cp_w11_p.html" target="_blank"&gt;作業一投影片&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;分享40423125的影片~~
+Vimeo 影片嵌入(直接從 Vimeo 影片上的 Share 複製 html 碼):&lt;/p&gt;
+&lt;iframe src="https://player.vimeo.com/video/147733326" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/147733326"&gt;20151203&lt;/a&gt; from &lt;a href="https://vimeo.com/user45104858"&gt;yap&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業十二</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w12.html" rel="alternate"></link><updated>2015-09-19T11:41:00+08:00</updated><author><name>40423131</name></author><id>tag:coursemdetw.github.io,2015-09-19:reveal/2015cp_hw_w12.html</id><summary type="html">&lt;p&gt;以下為作業十二內容&lt;/p&gt;
+&lt;iframe src="40423131_cp_w12_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="40423131_cp_w12_p.html" target="_blank"&gt;作業一投影片&lt;/a&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業十三</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w13.html" rel="alternate"></link><updated>2015-09-19T11:41:00+08:00</updated><author><name>40423131</name></author><id>tag:coursemdetw.github.io,2015-09-19:reveal/2015cp_hw_w13.html</id><summary type="html">&lt;p&gt;以下為作業十三內容&lt;/p&gt;
+&lt;iframe src="40423131_cp_w13_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="40423131_cp_w13_p.html" target="_blank"&gt;作業一投影片&lt;/a&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業十五</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w15.html" rel="alternate"></link><updated>2015-09-19T11:41:00+08:00</updated><author><name>40423131</name></author><id>tag:coursemdetw.github.io,2015-09-19:reveal/2015cp_hw_w15.html</id><summary type="html">&lt;h1&gt;~~聖誕節快樂~~&lt;/h1&gt;
 &lt;!-- 導入 brython.js --&gt;
 
 &lt;script type="text/javascript" src="http://brython.info/src/brython_dist.js"&gt;&lt;/script&gt;
@@ -218,7 +266,124 @@ ctx.stroke()
 
 &lt;/script&gt;
 
-&lt;/script&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業十七</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w17.html" rel="alternate"></link><updated>2015-09-19T11:41:00+08:00</updated><author><name>40423131</name></author><id>tag:coursemdetw.github.io,2015-09-19:reveal/2015cp_hw_w17.html</id><summary type="html">&lt;h1&gt;~~2016新年快樂~~&lt;/h1&gt;
+&lt;/script&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業十六</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w16.html" rel="alternate"></link><updated>2015-09-19T11:41:00+08:00</updated><author><name>40423131</name></author><id>tag:coursemdetw.github.io,2015-09-19:reveal/2015cp_hw_w16.html</id><summary type="html">&lt;p&gt;今年民國105年就來拋
+&lt;font color=green&gt;105顆球&lt;/font&gt;
+囉~&lt;/p&gt;
+&lt;!-- 導入 brython.js --&gt;
+
+&lt;script type="text/javascript" src="http://brython.info/src/brython_dist.js"&gt;&lt;/script&gt;
+
+&lt;!-- ?動 brython() --&gt;
+
+&lt;script&gt;
+window.onload=function(){
+brython(1);
+}
+&lt;/script&gt;
+
+&lt;!-- 以下利用 Brython 程式執行繪圖 --&gt;
+
+&lt;canvas id="plotarea" width="600" height="400"&gt;&lt;/canvas&gt;
+
+&lt;script type="text/python3"&gt;
+# 導入 browser 模組中的 document, 並設為 doc 變數
+from browser import document as doc
+# 導入數學模組
+import math
+# ?生各小球的亂數速度用
+import random
+# 導入 browser 中的計時器, 建立動畫用
+import browser.timer
+
+# 準備繪圖畫布
+canvas = doc["plotarea"]
+ctx = canvas.getContext("2d")
+
+# 取畫布的寬與高度
+width = canvas.width
+height = canvas.height
+
+n = 105
+# 已知數列?容個數, 先分別與 None 對應
+x = [None]*n
+y = [None]*n
+vy = [None]*n
+vx = [None]*n
+# 重力加速度, Y 方向向下為正
+g = 0.05
+# 空氣的黏滯阻尼係數
+cor = 0.7 
+# 球的彈力係數
+fr = 2
+# 球的半徑
+r =5
+
+for i in range(n):
+    x[i] = 300
+    y[i] = 100
+    # random.random() 將會?生介於 0 與 1 的浮點亂數
+    vx[i] = 2*(random.random()-.5)
+    vy[i] = 2*(random.random()-.5)
+
+# 更新第 i 球 Y 座標的運算邏輯
+def updateY(i):
+    if ((y[i]+r) &lt; height):
+        #y = height
+        vy[i] += g
+    else:
+        vy[i] = -vy[i]*cor
+        vx[i] *= fr
+    y[i] += vy[i]
+    if ((y[i]+r) &gt; height):
+        y[i] = height-r
+
+# 更新第 i 球 X 座標的運算邏輯
+def updateX(i):
+    if ((x[i]+r) &gt;= width or (x[i]-r) &lt;= 0):
+        vx[i] = -vx[i]*cor
+    x[i] += vx[i]
+    if ((x[i]+r) &gt; width):
+        x[i] = width-r
+    elif ((x[i]-r) &lt; 0):
+        x[i] = r
+
+# 畫圓函式
+def circle(x,y,r):
+    ctx.beginPath()
+    ctx.arc(x, y, r, 0, math.pi*2, True)
+    ctx.fill()
+
+# 寫字函式
+def text(s):
+    ctx.fillStyle = "#FF0000"
+    ctx.font = "30px sans-serif"
+    ctx.textBaseline = "bottom"
+    ctx.fillText(s,0,height)
+
+# ?隔特定時間, 進行動畫繪製
+def animate():
+    # 刷新畫布
+    ctx.clearRect(0, 0, width, height)
+    # 逐一重新繪製小球
+    ctx.fillStyle = "#7D26CD"
+    for i in range(n):
+        updateY(i)
+        updateX(i)
+        circle(x[i],y[i],r)
+
+text("爆炸!105 ")
+
+# 畫布點?後執行的函式
+def on_canvas_click(ev):
+    browser.timer.set_interval(animate,0)
+
+# 只要使用者點?在畫布上任何地方, 即執行 on_canvas_click 函式
+canvas.bind('click', on_canvas_click, False)
+&lt;/script&gt;
+
+&lt;iframe src="https://player.vimeo.com/video/151801601" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="https://vimeo.com/151801601"&gt;彈力球程式碼~~&lt;/a&gt; from &lt;a href="https://vimeo.com/user44207151"&gt;40423131&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業十七</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w17.html" rel="alternate"></link><updated>2015-09-19T11:41:00+08:00</updated><author><name>40423131</name></author><id>tag:coursemdetw.github.io,2015-09-19:reveal/2015cp_hw_w17.html</id><summary type="html">&lt;h1&gt;~~2016新年快樂~~&lt;/h1&gt;
 &lt;p&gt;心得:計概很有趣&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業二</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w2.html" rel="alternate"></link><updated>2015-09-19T11:41:00+08:00</updated><author><name>40423131</name></author><id>tag:coursemdetw.github.io,2015-09-19:reveal/2015cp_hw_w2.html</id><summary type="html">&lt;p&gt;以下為作業二內容&lt;/p&gt;
 &lt;iframe src="40423131_cp_w2_p.html" width="790" height="500"&gt;&lt;/iframe&gt;
 

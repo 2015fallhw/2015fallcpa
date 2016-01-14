@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>w14 &mdash; 2015FALL 40423101 CADPA 作業</title>
+  <meta name="author" content="40423101">
+
+
+
+
+
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link href="./favicon.png" rel="icon">
+
+  <link href="./theme/css/main.css" media="screen, projection"
+        rel="stylesheet" type="text/css">
+
+  <link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic"
+        rel="stylesheet" type="text/css">
+  <link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic"
+        rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <header role="banner"><hgroup>
+  <h1><a href="./">2015FALL 40423101 CADPA 作業</a></h1>
+</hgroup></header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+</ul>
+
+
+<ul class="main-navigation">
+      <li class="active">
+        <a href="./category/python.html">Python</a>
+      </li>
+</ul></nav>
+  <div id="main">
+    <div id="content">
+<div>
+  <article class="hentry" role="article">
+<header>
+      <h1 class="entry-title">w14</h1>
+    <p class="meta">
+<time datetime="2015-12-18T00:00:00+08:00" pubdate>週五 18 十二月 2015</time>    </p>
+</header>
+
+  <div class="entry-content"><!-- 導入 brython.js -->
+
+<script type="text/javascript" src="http://brython.info/src/brython_dist.js"></script>
+
+<!-- 啟動 brython() -->
+
+<script>
+window.onload=function(){
+brython(1);
+}
+</script>
+
+<!-- 以下利用 Brython 程式執行繪圖 -->
+
+<canvas id="plotarea3" width="200" height="200"></canvas>
+
+<script type="text/python3">
+# 導入 doc
+from browser import document as doc
+from browser import console
+import math
+
+# 準備繪圖畫布
+canvas3 = doc["plotarea3"]
+ctx3 = canvas3.getContext("2d")
+
+# 開始畫直線
+for i in range(11):
+    ctx3.beginPath()
+    ctx3.lineWidth = 5
+    ctx3.moveTo(0,0+i*20 )
+    ctx3.lineTo(200,0+i*20 )
+    ctx3.strokeStyle = "#0000ff"
+    ctx3.stroke()
+for i in range(11):
+    ctx3.beginPath()
+    ctx3.lineWidth = 5
+    ctx3.moveTo(0+i*20, 0)
+    ctx3.lineTo(0+i*20, 200)
+    ctx3.strokeStyle = "#FF0000"
+    ctx3.stroke()
+
+
+</script>
+
+<script>
+window.onload=function(){
+brython(1);
+}
+</script></div>
+    <footer>
+<p class="meta">
+  <span class="byline author vcard">
+    Posted by <span class="fn">
+        coursemdetw
+    </span>
+  </span>
+<time datetime="2015-12-18T00:00:00+08:00" pubdate>週五 18 十二月 2015</time>  <span class="categories">
+    <a class='category' href='./category/python.html'>Python</a>
+  </span>
+  <span class="categories">
+    <a class="category" href="./tag/pelican.html">pelican</a>,    <a class="category" href="./tag/publishing.html">publishing</a>  </span>
+</p><div class="sharing">
+</div>    </footer>
+  </article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+  </section>
+</div>
+<aside class="sidebar">
+  <section>
+    <h1>Recent Posts</h1>
+    <ul id="recent_posts">
+      <li class="post">
+          <a href="./w17.html">w17</a>
+      </li>
+      <li class="post">
+          <a href="./w15.html">w15</a>
+      </li>
+      <li class="post">
+          <a href="./w14.html">w14</a>
+      </li>
+      <li class="post">
+          <a href="./w13.html">w13</a>
+      </li>
+      <li class="post">
+          <a href="./w12.html">w12</a>
+      </li>
+    </ul>
+  </section>
+  <section>
+      
+    <h1>Categories</h1>
+    <ul id="recent_posts">
+        <li><a href="./category/python.html">Python</a></li>
+    </ul>
+  </section>
+ 
+
+  <section>
+  <h1>Tags</h1>
+    <a href="./tag/pelican.html">pelican</a>,    <a href="./tag/publishing.html">publishing</a>  </section>
+
+
+    <section>
+        <h1>Social</h1>
+        <ul>
+            <li><a href="http://twitter.com/ametaireau" target="_blank">twitter</a></li>
+            <li><a href="http://github.com/ametaireau" target="_blank">github</a></li>
+        </ul>
+    </section>
+    <section>
+        <h1>Blogroll</h1>
+        <ul>
+            <li><a href="http://wordpress-2015course.rhcloud.com/" target="_blank">2015課程網頁</a></li>
+            <li><a href="http://python.org/" target="_blank">Python</a></li>
+            <li><a href="http://40423101.github.io/w1/" target="_blank">40423101作業主頁</a></li>
+        </ul>
+    </section>
+
+</aside>    </div>
+  </div>
+  <footer role="contentinfo"><p>
+    Copyright &copy;  2015&ndash;2016  40423101 &mdash;
+  <span class="credit">Powered by <a href="http://getpelican.com">Pelican</a></span>
+</p></footer>
+  <script src="./theme/js/modernizr-2.0.js"></script>
+  <script src="./theme/js/ender.js"></script>
+  <script src="./theme/js/octopress.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    var disqus_shortname = '2015fall';
+    var disqus_identifier = '/w14.html';
+    var disqus_url = './w14.html';
+    var disqus_title = 'w14';
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = "//" + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+     })();
+  </script>
+</body>
+</html>

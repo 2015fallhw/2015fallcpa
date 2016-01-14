@@ -56,7 +56,176 @@
 <p>利用 iframe 嵌入投影片:</p>
 <iframe src="40423115_cp_w14_p.html" width="500" height="300"></iframe>
 
-<p><a href="https://vimeo.com/137724068">Welcome Speech</a> from <a href="https://vimeo.com/user24079973"></a> on <a href="https://vimeo.com">Vimeo</a>.</p></p></div>
+</div>
+<div class="entry-content"><p>以下利用 Brython 在網頁寫 Python 繪圖</p> 
+<!-- 導入 brython_dist.js --> </p>
+<script type="text/javascript" src="js/Brython3.2.3-20151122-082712/brython.js"></script>
+
+<!-- 啟動 brython() -->
+
+<script> 
+window.onload=function(){ 
+brython(1); 
+} 
+</script>
+
+<!-- 以下利用 Brython 程式執行繪圖 -->
+
+<canvas id="plotarea" width="500" height="500"></canvas>
+
+<script type="text/python3"> 
+# 導入 doc 
+from browser import document as doc 
+import math
+
+# 準備繪圖畫布 
+canvas = doc["plotarea"] 
+ctx = canvas.getContext("2d") 
+
+# 開始畫直線 
+
+ctx.beginPath() 
+ctx.lineWidth = 20 
+ctx.moveTo(40, 0) 
+ctx.lineTo(40, 360) 
+ctx.strokeStyle = "#FF0000" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 20 
+ctx.moveTo(80, 0) 
+ctx.lineTo(80, 360) 
+ctx.strokeStyle = "#FF0000" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 20 
+ctx.moveTo(120, 0) 
+ctx.lineTo(120, 360) 
+ctx.strokeStyle = "#FF0000" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 20 
+ctx.moveTo(160, 0) 
+ctx.lineTo(160, 360) 
+ctx.strokeStyle = "#FF0000" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 20 
+ctx.moveTo(200, 0) 
+ctx.lineTo(200, 360) 
+ctx.strokeStyle = "#FF0000" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 20 
+ctx.moveTo(240, 0) 
+ctx.lineTo(240, 360) 
+ctx.strokeStyle = "#FF0000" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 20 
+ctx.moveTo(280, 0) 
+ctx.lineTo(280, 360) 
+ctx.strokeStyle = "#FF0000" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 20 
+ctx.moveTo(320, 0) 
+ctx.lineTo(320, 360) 
+ctx.strokeStyle = "#FF0000" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 20 
+ctx.moveTo(360, 0) 
+ctx.lineTo(360, 360) 
+ctx.strokeStyle = "#FF0000" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 20 
+ctx.moveTo(400, 0) 
+ctx.lineTo(400, 360) 
+ctx.strokeStyle = "#FF0000" 
+ctx.stroke() 
+
+
+ctx.beginPath() 
+ctx.lineWidth = 20 
+ctx.moveTo(30, 10) 
+ctx.lineTo(410, 10) 
+ctx.strokeStyle = "#0000ff" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 20 
+ctx.moveTo(30, 50) 
+ctx.lineTo(410, 50) 
+ctx.strokeStyle = "#0000ff" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 20 
+ctx.moveTo(30, 90) 
+ctx.lineTo(410, 90) 
+ctx.strokeStyle = "#0000ff" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 20 
+ctx.moveTo(30, 130) 
+ctx.lineTo(410, 130) 
+ctx.strokeStyle = "#0000ff" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 20 
+ctx.moveTo(30, 170) 
+ctx.lineTo(410, 170) 
+ctx.strokeStyle = "#0000ff" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 20 
+ctx.moveTo(30, 210) 
+ctx.lineTo(410, 210) 
+ctx.strokeStyle = "#0000ff" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 20 
+ctx.moveTo(30, 250) 
+ctx.lineTo(410, 250) 
+ctx.strokeStyle = "#0000ff" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 20 
+ctx.moveTo(30, 290) 
+ctx.lineTo(410, 290) 
+ctx.strokeStyle = "#0000ff" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth =20 
+ctx.moveTo(30, 330) 
+ctx.lineTo(410, 330) 
+ctx.strokeStyle = "#0000ff" 
+ctx.stroke() 
+
+ctx.beginPath() 
+ctx.lineWidth = 20 
+ctx.moveTo(30, 370) 
+ctx.lineTo(410, 370) 
+ctx.strokeStyle = "#0000ff" 
+ctx.stroke() 
+</script>
+</div>
     <footer>
 <p class="meta">
   <span class="byline author vcard">
