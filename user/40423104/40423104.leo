@@ -18,14 +18,14 @@
 <v t="123.20151218110221.1"><vh>@button admin pelican</vh></v>
 <v t="123.20151218105028.1" a="E"><vh>@path pelican</vh>
 <v t="123.20151218105028.2"><vh>@edit publishconf.py</vh></v>
-<v t="123.20151218105028.3" a="E"><vh>@path content</vh>
-<v t="123.20151218105028.4"><vh>@edit G1_w14_1.md</vh></v>
-<v t="123.20151218105028.5"><vh>@edit G1_w14_2.md</vh></v>
-</v>
+<v t="123.20151218105028.3"><vh>@path content</vh></v>
+<v t="leo.20160115044408.1"><vh>@edit G1_w14_1.md</vh></v>
+<v t="leo.20160115044415.1"><vh>@edit G1_w14_2.md</vh></v>
+<v t="leo.20160115044423.1"><vh>@edit G1_w15.md</vh></v>
 </v>
 </v>
 <v t="123.20151218110216.1"><vh>@button user pelican</vh></v>
-<v t="leo.20151225093651.1"><vh>@path ./</vh>
+<v t="leo.20151225093651.1" a="E"><vh>@path ./</vh>
 <v t="leo.20151225093651.2"><vh>以下為投影片 ------------</vh></v>
 <v t="leo.20151225093651.3"><vh>@edit 40423104_cp_w1_p.html</vh></v>
 <v t="leo.20151225093651.4"><vh>@edit 40423104_cp_w2_p.html</vh></v>
@@ -35,7 +35,7 @@
 <v t="leo.20151225093651.8"><vh>@edit 40423104_cp_w6_p.html</vh></v>
 <v t="leo.20151225093651.9"><vh>@edit 40423104_cp_w7_p.html</vh></v>
 <v t="leo.20151225093651.10"><vh>@edit 40423104_cp_w8_p.html</vh></v>
-<v t="leo.20151225093651.11"><vh>@path pelican</vh>
+<v t="leo.20151225093651.11" a="E"><vh>@path pelican</vh>
 <v t="leo.20151225093651.12"><vh>以下為設定檔 ------------</vh></v>
 <v t="leo.20151225093651.13"><vh>@edit publishconf.py</vh></v>
 <v t="leo.20151225093651.14" a="E"><vh>@path content</vh>
