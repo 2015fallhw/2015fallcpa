@@ -1173,11 +1173,8 @@
 <v t="leo.20151108172454.1"><vh>@edit 40423116_cp_w6_p.html</vh></v>
 <v t="leo.20151108172456.1"><vh>@edit 40423116_cp_w7_p.html</vh></v>
 <v t="leo.20151108172458.1"><vh>@edit 40423116_cp_w8_p.html</vh></v>
-<<<<<<< HEAD
 <v t="leo.20160108113005.1"><vh>@edit 40423116_cp_w10_p.html</vh></v>
-=======
 <v t="leo.20151203202654.1"><vh>@edit 40423116_cp_w11_p.html</vh></v>
->>>>>>> 5aefa522e9d4d111f8fe6fadca2104d881f9ebf9
 <v t="leo.20151204093743.1"><vh>@edit 40423116_cp_w12_p.html</vh></v>
 <v t="leo.20151203202654.1"><vh>@edit 40423116_cp_w11_p.html</vh></v>
 <v t="leo.20160107210737.1"><vh>@edit 40423116_cp_w13_p.html</vh></v>
