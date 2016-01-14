@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>2015FALL 40123227 CPA 作業 (期中報告)</title><link href="http://coursemdetw.github.io/reveal/" rel="alternate"></link><link href="http://coursemdetw.github.io/reveal/feeds/python.atom.xml" rel="self"></link><id>http://coursemdetw.github.io/reveal/</id><updated>2016-01-08T10:57:00+08:00</updated><entry><title>2015 計算機程式 第十七週</title><link href="http://coursemdetw.github.io/reveal/40123227_w17.html" rel="alternate"></link><updated>2016-01-08T10:57:00+08:00</updated><author><name>紀培俞</name></author><id>tag:coursemdetw.github.io,2016-01-08:reveal/40123227_w17.html</id><summary type="html">&lt;h1&gt;Brython動畫&lt;/h1&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>2015FALL 40123227 CPA 作業 (期中報告)</title><link href="http://coursemdetw.github.io/reveal/" rel="alternate"></link><link href="http://coursemdetw.github.io/reveal/feeds/python.atom.xml" rel="self"></link><id>http://coursemdetw.github.io/reveal/</id><updated>2016-01-09T10:57:00+08:00</updated><entry><title>2015 計算機程式 第十八週(期末考週)</title><link href="http://coursemdetw.github.io/reveal/40123227_hw_w18.html" rel="alternate"></link><updated>2016-01-09T10:57:00+08:00</updated><author><name>紀培俞</name></author><id>tag:coursemdetw.github.io,2016-01-09:reveal/40123227_hw_w18.html</id><summary type="html">&lt;h1&gt;期末考週&lt;/h1&gt;
+&lt;h2&gt;評分流程 :&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;從各班個人連結頁面中 (2a, 2b, 1a, 1b), 進入各學員在各班倉儲中對應的個人 gh-pages 網頁&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;從上述頁面右下方的 Blogroll 中最下方連結 (名稱為"學號 個人網頁"), 進入學員個人單獨的 gh-pages 網頁&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;根據上述兩個頁面中的資料, 配合各課程的講授內容, 依據 投影片, 操作影片以及頁面上的其他相關檔案資料評分.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;從各班的協同網頁中, 各組所公佈的分組報告中的 投影片, 操作影片以及頁面上的其他相關檔案資料評分.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第十七週</title><link href="http://coursemdetw.github.io/reveal/40123227_hw_w17.html" rel="alternate"></link><updated>2016-01-08T10:57:00+08:00</updated><author><name>紀培俞</name></author><id>tag:coursemdetw.github.io,2016-01-08:reveal/40123227_hw_w17.html</id><summary type="html">&lt;h1&gt;Brython動畫&lt;/h1&gt;
 &lt;!-- 導入 brython.js --&gt;
 
 &lt;script type="text/javascript" src="http://brython.info/src/brython_dist.js"&gt;&lt;/script&gt;
@@ -116,189 +131,267 @@ canvas.bind('click', on_canvas_click, False)
 &lt;/script&gt;
 
 &lt;h2&gt;心得&lt;/h2&gt;
-&lt;p&gt;函式好難喔~ 我一定要努力學會&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第十七週</title><link href="http://coursemdetw.github.io/reveal/40123256_w17.html" rel="alternate"></link><updated>2016-01-08T10:57:00+08:00</updated><author><name>蘇建瑋</name></author><id>tag:coursemdetw.github.io,2016-01-08:reveal/40123256_w17.html</id><summary type="html">&lt;h1&gt;Brython動畫&lt;/h1&gt;
-&lt;!-- 導入 brython.js --&gt;
-
-&lt;script type="text/javascript" src="http://brython.info/src/brython_dist.js"&gt;&lt;/script&gt;
-
-&lt;!-- 啟動 brython() --&gt;
-
-&lt;script&gt;
-window.onload=function(){
-brython(1);
-}
-&lt;/script&gt;
-
+&lt;p&gt;函式好難喔~ 我一定要努力學會。&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第十六週 (元旦放假)</title><link href="http://coursemdetw.github.io/reveal/40123227_hw_w16.html" rel="alternate"></link><updated>2015-11-14T16:00:00+08:00</updated><author><name>40123227</name></author><id>tag:coursemdetw.github.io,2015-11-14:reveal/40123227_hw_w16.html</id><summary type="html">&lt;p&gt;&lt;strong&gt; 1/1 元旦放假，祝大家新年快樂 &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;2016為新的一年開始，利用年假把2015年沒熟悉的指令重新再複習，新年開始也表示期末將近，假期除了出外遊玩，也要提醒自己該準備讀書了。&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://imgur.com/esIQqvy"&gt;&lt;img src="http://i.imgur.com/esIQqvy.jpg" title="source: imgur.com" /&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第十五週 (聖誕節)</title><link href="http://coursemdetw.github.io/reveal/40123227_hw_w15.html" rel="alternate"></link><updated>2015-11-13T16:00:00+08:00</updated><author><name>40123227</name></author><id>tag:coursemdetw.github.io,2015-11-13:reveal/40123227_hw_w15.html</id><summary type="html">&lt;p&gt;&lt;strong&gt;1-1. Python3的近端程式開發系統如何建立&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;從 http://www.python.org/download/ 下載 Python 3.3.1, Doc 與 test scripts 不安裝, 容量大約 26 MB.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;接著從 http://www.lfd.uci.edu/~gohlke/pythonlibs/#distribute 下載 distribute-0.6.36.win32-py3.3.‌exe, 安裝後約佔&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;30MB.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;接著從 http://www.lfd.uci.edu/~gohlke/pythonlibs/#pip 下載 pip-1.3.1.win32-py3.3.‌exe, 安裝後約佔 32MB.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;接著從 http://sourceforge.net/projects/pywin32/files/pywin32/Build%20218/ 下載 pywin32-218.win32-py3.3.exe, 安裝&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;後約佔 58MB.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;接著從 http://www.riverbankcomputing.com/software/pyqt/download 下載 PyQt4-4.10-gpl-Py3.3-Qt5.0.1-x32-2.exe, Doc
+與 Examples 不安裝, 安裝後約佔 166MB.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;註: 因為安裝 PyQt4/Qt5 必須要從 http://www.microsoft.com/en-us/download/search.aspx?q=directx 更新 directx, 對於沒有更新的電腦就無法讓 Leo Editor 擷取到最新的 directx dll, 因為這不是 Leo 編輯器的問題, 而是 PyQt4 連結 Qt5 dll 所造成的問題&lt;/p&gt;
+&lt;p&gt;目前還不知道 PyQt5 是否可以在未更新 directx 的情況下讓 2014 年即將退役的 Windows XP 正常使用 Qt5 的 dll&lt;/p&gt;
+&lt;p&gt;因此依賴 PyQt 的 Leo Editor 根本無法主動修改, 只有兩條路可以走, 就是在 PyQt4 配合 Qt5 的情況下, 更新 Windows 的directx, 或者是回到 PyQt4 與 Qt4 的搭配, 等待 PyQt5 與 Qt5 的版本到來, 然後再看是否能在未更新 dirextx 或更新directx 的操作系統中彼此相容.&lt;/p&gt;
+&lt;p&gt;這裡我們選擇在 PyQt4/Qt4 的模式下來啟動 Leo 編輯器, 也就從&lt;/p&gt;
+&lt;p&gt;http://www.riverbankcomputing.com/software/pyqt/download 下載 PyQt4-4.10-gpl-Py3.3-Qt4.8.4-x32.exe, 而非 PyQt4-4.10-gpl-Py3.3-Qt5.0.1-x32-2.exe.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;接著從 http://www.lfd.uci.edu/~gohlke/pythonlibs/#docutils 下載 docutils-0.10.win32-py3.3.‌exe, 安裝後約佔 172MB.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;接著從 http://www.greygreen.org/leo/ 下載 leo-editor-snapshot-20130408.zip, 解開後將 leo 目錄放到 C:
+\Python33\Lib\site-packages\, 整個 C:\Python33 約為 190MB.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;1-2.Python3的近端程式開發系統如何建立&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;當使用者執行 start.bat 後, 系統會將 leoeditor 目錄中的 data 目錄與 Y: 硬碟對應, Y:\ 硬碟中的檔案其實就是&lt;/p&gt;
+&lt;p&gt;leoeditor/data 目錄, 兩個目錄為同步對應.&lt;/p&gt;
+&lt;p&gt;假設將上述兩個壓縮檔案下載後, 直接解開到 C:\Documents and Settings\amd\My Documents\Downloads\leoeditor&lt;/p&gt;
+&lt;p&gt;然後就可以
+點擊其中的 start.bat, 將會分別開啟兩個 cmd.exe 視窗, SciTE 編輯器與 Leo Editor, 這時進入 Y: 硬碟, 就可以看到&lt;/p&gt;
+&lt;p&gt;commands, exammples, Python33, tcc 與 wscite 等五個目錄, 其中 Python33 為可攜的 Python 3.3.1, tcc 為 TinyC 編譯程式&lt;/p&gt;
+&lt;p&gt;, scite 則為 SciTE 編輯器.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3.請利用流程圖, 簡要說明近端猜數字遊戲與猜顏色遊戲程式碼如何設計與運作&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://imgur.com/P9vZLUM"&gt;&lt;img src="http://i.imgur.com/P9vZLUM.jpg" title="source: imgur.com" /&gt;&lt;/p&gt;
+&lt;p&gt;**4. 請各組員利用 Brython, 分別在各分組的 pelican 網頁文章中, 繪製一個歡慶耶誕的 2D 圖形&lt;/p&gt;
+&lt;p&gt;&lt;/script&gt;
+&lt;a href="http://imgur.com/QMmRhyi"&gt;&lt;img src="http://i.imgur.com/QMmRhyi.png" title="source: imgur.com" /&gt;&lt;/p&gt;
 &lt;!-- 以下利用 Brython 程式執行繪圖 --&gt;
 
-&lt;canvas id="plotarea" width="600" height="400"&gt;&lt;/canvas&gt;
+&lt;canvas id="plotarea" width="500" height="500"&gt;&lt;/canvas&gt;
 
 &lt;script type="text/python3"&gt;
-# 導入 browser 模組中的 document, 並設為 doc 變數
+# 導入 doc
 from browser import document as doc
-
-# 導入數學模組
+from browser import console
 import math
-
-# 產生各小球的亂數速度用
-import random
-
-# 導入 browser 中的計時器, 建立動畫用
-import browser.timer
 
 # 準備繪圖畫布
 canvas = doc["plotarea"]
 ctx = canvas.getContext("2d")
 
-# 取畫布的寬與高度
-width = canvas.width
-height = canvas.height
+# 進行座標轉換, x 軸不變, y 軸反向且移動 500 光點
+ctx.setTransform(1, 0, 0, -1, 0, 500)
 
-n = 15
-# 已知數列內容個數, 先分別與 None 對應
-x = [None]*n
-y = [None]*n
-vy = [None]*n
-vx = [None]*n
-# 重力加速度, Y 方向向下為正
-g = 0.1
-# 空氣的黏滯阻尼係數
-cor = 0.7 
-# 球的彈力係數
-fr = 0.95
-# 球的半徑
-r = 4
+# 大禮物(方形)
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(94, 30)
+ctx.lineTo(86, 180)
+ctx.lineTo(293, 180)
+ctx.lineTo(279, 30)
+ctx.lineTo(94, 30)
+# 大禮物(緞帶)
+ctx.lineTo(91, 92)
+ctx.lineTo(285, 86)
+ctx.lineTo(286, 105)
+ctx.lineTo(90, 117)
+ctx.lineTo(86, 180)
+ctx.lineTo(174, 180)
+ctx.lineTo(179, 30)
+ctx.lineTo(199, 30)
+ctx.lineTo(199, 180)
+# 大禮物(蝴蝶結)
+ctx.lineTo(186, 180)
+ctx.lineTo(237, 206)
+ctx.lineTo(228, 256)
+ctx.lineTo(190, 230)
+ctx.lineTo(186, 180)
+ctx.lineTo(178, 241)
+ctx.lineTo(144, 279)
+ctx.lineTo(138, 223)
+ctx.lineTo(186, 180)
+ctx.strokeStyle = "rgb(255, 0, 0)"
+ctx.stroke()
 
-for i in range(n):
-    x[i] = 300
-    y[i] = 100
-    # random.random() 將會產生介於 0 與 1 的浮點亂數
-    vx[i] = 2*(random.random()-.5)
-    vy[i] = 2*(random.random()-.5)
+# 小禮物(方形)
+ctx.beginPath()
+ctx.lineWidth = 3
+ctx.moveTo(316, 30)
+ctx.lineTo(312, 105)
+ctx.lineTo(416, 105)
+ctx.lineTo(409, 30)
+ctx.lineTo(316, 30)
+# 小禮物(緞帶)
+ctx.lineTo(315, 61)
+ctx.lineTo(412, 58)
+ctx.lineTo(413, 76)
+ctx.lineTo(314, 73)
+ctx.lineTo(312, 105)
+ctx.lineTo(356, 105)
+ctx.lineTo(353, 30)
+ctx.lineTo(365, 30)
+ctx.lineTo(369, 105)
+# 小禮物(蝴蝶結)
+ctx.lineTo(362, 105)
+ctx.lineTo(388, 115)
+ctx.lineTo(390, 143)
+ctx.lineTo(368, 127)
+ctx.lineTo(362, 105)
+ctx.lineTo(355, 131)
+ctx.lineTo(328, 140)
+ctx.lineTo(332, 119)
+ctx.lineTo(362, 105)
+ctx.strokeStyle = "rgb(0, 255, 0)"
+ctx.stroke()</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第十四週</title><link href="http://coursemdetw.github.io/reveal/40123227_hw_w14.html" rel="alternate"></link><updated>2015-11-12T16:00:00+08:00</updated><author><name>40123227</name></author><id>tag:coursemdetw.github.io,2015-11-12:reveal/40123227_hw_w14.html</id><summary type="html">&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;無內容&lt;/strong&gt;:&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第十三週</title><link href="http://coursemdetw.github.io/reveal/40123227_hw_w13.html" rel="alternate"></link><updated>2015-11-11T16:00:00+08:00</updated><author><name>40123227</name></author><id>tag:coursemdetw.github.io,2015-11-11:reveal/40123227_hw_w13.html</id><summary type="html">&lt;p&gt;&lt;pre class="brush:python;"&gt;
+import random&lt;/p&gt;
+&lt;h1&gt;產生標準答案&lt;/h1&gt;
+&lt;h1&gt;利用 list 數列資料型別建立顏色選項&lt;/h1&gt;
+&lt;h1&gt;Red 紅色, White 白色, Yellow 黃色, Green 綠色, Blue 藍色, Purple 紫色, 假設顏色值不會重複&lt;/h1&gt;
+&lt;p&gt;print('''遊戲規則說明: 可選顏色值, \nRed 紅色, White 白色, Yellow 黃色, Green 綠色, \nBlue 藍色, Purple 紫色, \nRBYGBP, \nX 表示位置與顏色都對, O 表示顏色對, 但是位置不對.
+''')&lt;/p&gt;
+&lt;p&gt;顏色選項 = ["R", "W", "Y", "G", "B", "P"]
+標準答案 = random.sample(顏色選項, 4)  &lt;br /&gt;
+print (標準答案)&lt;/p&gt;
+&lt;p&gt;顏色字串 = ""
+幾次決勝 = 9
+猜測次數 = 0
+遊戲進行中 = True&lt;/p&gt;
+&lt;p&gt;print ("總共有", 幾次決勝 - 猜測次數, "次機會,可以猜!")&lt;/p&gt;
+&lt;p&gt;for i in range(len(顏色選項)):
+    顏色字串 += 顏色選項[i]&lt;/p&gt;
+&lt;h1&gt;print (顏色字串)&lt;/h1&gt;
+&lt;p&gt;while 遊戲進行中:
+    位置顏色都正確 = ""
+    顏色對位置錯 = ""
+    # 將使用者的輸入轉為大寫英文字母
+    使用者猜測輸入 = input("請從下列顏色值中選四個, "+顏色字串+": ").upper()
+    猜測次數 += 1&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;# 檢驗是否輸入四個顏色字母
+if len(使用者猜測輸入) != len(標準答案):
+    print (&amp;quot;\n只能猜四個顏色, 請重猜!&amp;quot;)
+    print (&amp;quot;\n剩下&amp;quot;, 幾次決勝 - 猜測次數, &amp;quot;次機會,可以猜: &amp;quot;)
+    continue
+# 判斷是否重複選擇相同顏色
+if len(使用者猜測輸入) &amp;amp;gt; len(set(使用者猜測輸入)):
+    print (&amp;quot;\n顏色值不能重複！&amp;quot;)
+    print (&amp;quot;\n剩下&amp;quot;, 幾次決勝 - 猜測次數, &amp;quot;次機會,可以猜: &amp;quot;)
+    continue
+for i in range(4):
+    # 判斷是否從顏色選項輸入
+    if 使用者猜測輸入[i] not in 顏色選項:
+        print (&amp;quot;\n只能從下列顏色選項中輸入!&amp;quot;, 顏色選項)
+        print (&amp;quot;\n剩下&amp;quot;, 幾次決勝 - 猜測次數, &amp;quot;次機會,可以猜: &amp;quot;)
+        continue
 
-# 更新第 i 球 Y 座標的運算邏輯
-def updateY(i):
-    if ((y[i]+r) &lt; height):
-        #y = height
-        vy[i] += g
+if 位置顏色都正確 != &amp;quot;XXXX&amp;quot;:
+    for i in range(4):
+        if 使用者猜測輸入[i] == 標準答案[i]:
+            位置顏色都正確 += &amp;quot;X&amp;quot;
+        if  使用者猜測輸入[i] != 標準答案[i] and 使用者猜測輸入[i] in 標準答案:
+            顏色對位置錯 += &amp;quot;O&amp;quot;
+    print (位置顏色都正確 +  顏色對位置錯 + &amp;quot;\n&amp;quot;)
+
+if 位置顏色都正確 == &amp;quot;XXXX&amp;quot;:
+    if 猜測次數 == 1:
+        print (&amp;quot;太神奇了, 1 次就猜對!&amp;quot;)
     else:
-        vy[i] = -vy[i]*cor
-        vx[i] *= fr
-    y[i] += vy[i]
-    if ((y[i]+r) &gt; height):
-        y[i] = height-r
+        print (&amp;quot;還不錯... 總共猜了 &amp;quot; + str(猜測次數) + &amp;quot; 次, 終於猜對!&amp;quot;)
+    遊戲進行中 = False
 
-# 更新第 i 球 X 座標的運算邏輯
-def updateX(i):
-    if ((x[i]+r) &gt;= width or (x[i]-r) &lt;= 0):
-        vx[i] = -vx[i]*cor
-    x[i] += vx[i]
-    if ((x[i]+r) &gt; width):
-        x[i] = width-r
-    elif ((x[i]-r) &lt; 0):
-        x[i] = r
+if 猜測次數&amp;amp;gt;= 1 and 猜測次數 = 幾次決勝:
+    print (&amp;quot;沒有猜對! 願賭服輸, 答案顏色值為: &amp;quot; + str(標準答案))  
+    遊戲進行中 = False
 
-# 畫圓函式
-def circle(x,y,r):
-    ctx.beginPath()
-    ctx.arc(x, y, r, 0, math.pi*2, True)
-    ctx.fill()
+# 詢問要不要再玩
+while 遊戲進行中 == False:
+    遊戲結束詢問 = input(&amp;quot;\n要不要再玩 (Y/N)?&amp;quot;).upper()  
+    # 猜測次數歸零
+    猜測次數 = 0
+    if 遊戲結束詢問 ==&amp;quot;N&amp;quot;:
+        print (&amp;quot;歡迎再回來玩!&amp;quot;)
+    elif 遊戲結束詢問 == &amp;quot;Y&amp;quot;:
+        遊戲進行中 = True
+        # 重新產生標準答案
+        標準答案 = random.sample(顏色選項, 4)     
+        #print (標準答案)
+        print (&amp;quot;好, 再玩一次...&amp;quot;)
+        print (&amp;quot;總共有&amp;quot;, 幾次決勝 - 猜測次數, &amp;quot;次機會,可以猜!&amp;quot;)
+&lt;/pre&gt;&lt;/div&gt;
 
-# 寫字函式
-def text(s):
-    ctx.fillStyle = "#ff0000"
-    ctx.font = "30px sans-serif"
-    ctx.textBaseline = "bottom"
-    ctx.fillText(s,0,height)
 
-# 每隔特定時間, 進行動畫繪製
-def animate():
-    # 刷新畫布
-    ctx.clearRect(0, 0, width, height)
-    # 逐一重新繪製小球
-    ctx.fillStyle = "#000000"
-    for i in range(n):
-        updateY(i)
-        updateX(i)
-        circle(x[i],y[i],r)
-
-text("Click me!")
-
-# 畫布點擊後執行的函式
-def on_canvas_click(ev):
-    browser.timer.set_interval(animate,0)
-
-# 只要使用者點擊在畫布上任何地方, 即執行 on_canvas_click 函式
-canvas.bind('click', on_canvas_click, False)
-&lt;/script&gt;
-
-&lt;h2&gt;心得&lt;/h2&gt;
-&lt;p&gt;函式好難喔，我還在研究~&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業八 (自我評量)</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w8.html" rel="alternate"></link><updated>2015-11-06T16:00:00+08:00</updated><author><name>40123157</name></author><id>tag:coursemdetw.github.io,2015-11-06:reveal/2015cp_hw_w8.html</id><summary type="html">&lt;iframe src="40123157_cp_w8_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;a href="40123157_cp_w8_p.html" target="_blank"&gt;作業八投影片&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;期中考核項目&lt;/strong&gt;:&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;[50%]&lt;/strong&gt; 個人作業頁面(全班協同區)&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://2015fallhw.github.io/2015fallcpb/user/40123157/" target="_blank"&gt;2015fallcpb/user/40123157&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;/pre&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第十二週</title><link href="http://coursemdetw.github.io/reveal/40123227_hw_w12.html" rel="alternate"></link><updated>2015-11-10T16:00:00+08:00</updated><author><name>40123227</name></author><id>tag:coursemdetw.github.io,2015-11-10:reveal/40123227_hw_w12.html</id><summary type="html">&lt;p&gt;在零基礎學 Python 中有一個單機執行的猜數字遊戲, 在 KMOL 的系列課程中, 可以單單從這個遊戲開始, 逐步體會計算機程式、網際內容管理、電腦輔助設計實習與協同產品設計實習等課程的整合應用.&lt;/p&gt;
+&lt;p&gt;猜數字遊戲一開始由系統產生一個標準答案 – 這個答案可以類比到機械設計工程師設計產品過程中所希望完成的最佳化設計結果.&lt;/p&gt;
+&lt;p&gt;接下來, 遊戲會透過介面設計取得使用者的猜數字輸入 – 而此使用者的輸入過程, 可以類比到在機械設計工程師逐步達成最後設計之前, 因為各種分析考量的需要, 或協力廠商間設計參數的變更需求, 必須透過介面設計將各種輸入納入系統中.&lt;/p&gt;
+&lt;p&gt;接下來, 遊戲會根據標準答案與使用者的輸入進行比對, 然後回應比對結果 – 此階段之於產品開發流程, 可以類比為根據使用者所採用的電腦輔助設計分析方法, 取得分析的結果, 可以透過工程分析方法顯示目前設計結果的優劣, 或者以人工方式來評判設計分析的結果.&lt;/p&gt;
+&lt;p&gt;接下來, 若使用者已經猜對標準答案, 則遊戲停止, 否則重複輸入、比對與回應的迴圈 – 此階段於產品開發流程, 可以類比為若設計團隊認為已經達到所需要的設計結果, 則設計結束, 並且投入下一產品開發的製造規劃階段 (這裡假設設計與製造可以完全切割的最簡單理想範例), 否則進行重複修改輸入、評估設計結果的迴圈, 一直到取得滿意的設計結果為止.&lt;/p&gt;
+&lt;p&gt;接下來將透過 3 個不同的環境來實現這個猜數字遊戲:&lt;/p&gt;
+&lt;p&gt;單機執行環境 – 使用指令操作執行
+網際執行環境 (localhost、近端主機與雲端主機) – 使用 CherryPy 與 Flask 網際框架模式執行
+Ajax 與 Websockets 模式下的網際執行環境 (localhost、近端主機與雲端主機) – 使用 CherryPy 與 Flask 網際框架模式加上 Brython 執行
+上述網際近端主機 (nginx) 與雲端主機 (OpenShift) 將透過 uwsgi 架構下執行&lt;/p&gt;
+&lt;h1&gt;coding: utf-8&lt;/h1&gt;
+&lt;h1&gt;猜數字遊戲&lt;/h1&gt;
+&lt;p&gt;import random&lt;/p&gt;
+&lt;p&gt;標準答案 = random.randint(1, 100)
+你猜的數字 = int(input("請輸入您所猜的整數:"))
+猜測次數 = 1
+while 標準答案 != 你猜的數字:
+    if 標準答案 &amp;lt; 你猜的數字:
+        print("太大了，再猜一次 :)加油")
+    else:
+        print("太小了，再猜一次 :)加油")
+    你猜的數字 = int(input("請輸入您所猜的整數:"))
+    猜測次數 += 1&lt;/p&gt;
+&lt;p&gt;print("猜對了！總共猜了", 猜測次數, "次")&lt;/p&gt;
+&lt;p&gt;上列程式碼說明:
+第1行為程式檔案內文的編碼宣告, 由於 Python3 內定的程式內文編碼為 utf-8, 因此一般可以不用宣告, 除非使用非 utf-8 的資料編碼, 也可以寫成 # -&lt;em&gt;- coding: utf-8 -&lt;/em&gt;-&lt;/p&gt;
+&lt;p&gt;第2行的井字號開頭, 屬於單行註解, Python3 解譯程式碼時, 會跳過這些註解, 不會執行其內容&lt;/p&gt;
+&lt;p&gt;第3行是導入 Python 內建的 random 模組&lt;/p&gt;
+&lt;p&gt;第4行為空白行&lt;/p&gt;
+&lt;p&gt;第5行則設定一個變數, 名稱為”標準答案”, 然後利用所導入的 random 模組中的 randint 方法, 產生一個介於且包括頭尾數字的亂數整數, 這裡的 random.randint(1, 100), 會產生一個大於等於 1 但是小於等於 100 的整數.&lt;/p&gt;
+&lt;p&gt;第6行則是利用 input() 函式來取使用者所猜測的數字, 而 input() 中的輸入為字串, 式用來提示使用者所要輸入的資料格式或範圍, 利用 input 取得的資料型別為字串, 因為隨後需要利用整數比對的判斷式來判定大小, 因此再將所取得的字串, 利用 int() 函式, 轉為 integer 整數, 取得輸入後, 再將此猜測的整數, 對應到”你猜的數字”變數.&lt;/p&gt;
+&lt;p&gt;第7行則是將 1 對應到猜測次數所對應的記憶體空間, 也就是將”猜測次數”變數設為 1.&lt;/p&gt;
+&lt;p&gt;第8行之後到第14行是屬於 while 迴圈的內容, 由於 Python 程式不像 C, C++, 或 Java 等利用 {} 來界定迴圈的執行內容, 而是利用資料的縮排來界定各迴圈的執行範圍, 因此, 第9行開始縮排4個空白的區域就是 while 的有效執行範圍, 而且第8行最後因為 while 迴圈的定義尚未完成, 因此必須要在最後加上冒號, 相同的語法, 在第9行的 if, 與第11行的 else 也都是相同格式, 都必須在該行最後, 加上冒號.&lt;/p&gt;
+&lt;p&gt;第8行中的 != 是判斷式中的不等於, 假如標準答案不等於使用者所猜的數字, 則程式進入提示區域, 若太大, 則回覆所猜的數字過大, 否則回覆過小, 完成 if 的判斷提示區之後, 因為使用者尚未猜對, 因此在第13行再次利用 input 與 int 函式取使用者所猜的數字, 並在第14行將猜測數字變數增量1.&lt;/p&gt;
+&lt;p&gt;第14行也可以寫為 猜測數字 = 猜測數字 + 1&lt;/p&gt;
+&lt;p&gt;最後, 假如使用者猜對數字, 則 while 迴圈內容將不再執行, 並在第16行利用 print() 函式印出總共猜幾次的訊息.&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第十一週</title><link href="http://coursemdetw.github.io/reveal/40123227_hw_w11.html" rel="alternate"></link><updated>2015-11-09T16:00:00+08:00</updated><author><name>40123227</name></author><id>tag:coursemdetw.github.io,2015-11-09:reveal/40123227_hw_w11.html</id><summary type="html">&lt;p&gt;計算機程式學習項目:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;工程師的主要任務在解決人所面臨的各種問題 (Problems Solving), 而人的活動分為 3 個主軸類別 Humanites (人文), Science (科學), Goods and Services (產品與服務) (參考資料) – 人文是養份, 科學是依據, 讓工程師創造各種產品與服務來解決人類所面臨的問題&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;[60%]&lt;/strong&gt; 個人作業倉儲(gh-pages)&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://40123157.github.io/cpbw8/" target="_blank"&gt;40123157.github.io/cpbw8&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;li&gt;
+&lt;p&gt;電腦在工程解題過程中所扮演的角色 (參考資料)&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;[65%]&lt;/strong&gt; 作業練習影片(含語音說明)&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://vimeo.com/user25757242" target="_blank"&gt;vimeo.com/user25757242&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;[75%]&lt;/strong&gt; 作業投影片, 筆記, 操作過程, 心得&lt;ul&gt;
-&lt;li&gt;作業投影片, 筆記, 操作過程: 已於個人作業頁面完成建置&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;學習心得&lt;/strong&gt;:
-    上課必須非常專注跟著老師課程安排進行，稍有恍神即錯失某個操作流程細節與重點，當週上課大概至多了解一半的課程內容，勉強跟著老師操作一遍也不曉得其中關鍵技術，但於課後利用線上教學與課程網站再次複習，效果出乎意料之外感覺打通任督二脈，補足上課來不及記下的課程筆記，更加了解其中所應用的技術與操作細節，深深體會到老師課程編排內容的用心與扎實，循序漸進而非一步到位，每週不厭其煩的從最基礎的教起，複習前一週所講述的課程內容並加以延伸進階，甚至還有課程緩衝週作總複習前幾週所學。本課程學習需要較長的時間吸收內化，教學內容相當豐富但實際操作理解其技術後，又覺得所學只不過是九牛一毛，距離關鍵核心技術還有一段很長的距離要走，總結一句「知其然，而不知其所以然」。頓悟協同版次架構管理的重要性，才能與世界接軌迎向國際化的未來，工業4.0與物聯網(IoT)的時代來臨，其中關鍵技術就是雲端協同應用及網頁整合，也就是我們課程所學之最終目標。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;[85%]&lt;/strong&gt; 標題, 關鍵字, 內容&lt;ul&gt;
-&lt;li&gt;依課程評量標準而定&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;自評成績&lt;/strong&gt;: 80分 (沒有最好, 只有更好)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;※播放須知&lt;/strong&gt;: 由於網頁嵌入式影片畫質較低, 建議直接點案影片視窗右下角前往Vimeo瀏覽!&lt;/p&gt;
-&lt;iframe src="https://player.vimeo.com/video/145808429" width="500" height="267" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/145808429"&gt;40123157_2015cpbw8&lt;/a&gt; from &lt;a href="https://vimeo.com/user25757242"&gt;盧毅民&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業八 (自我評量)</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w8.html" rel="alternate"></link><updated>2015-11-06T16:00:00+08:00</updated><author><name>40123227</name></author><id>tag:coursemdetw.github.io,2015-11-06:reveal/2015cp_hw_w8.html</id><summary type="html">&lt;iframe src="40123227_cp_w8_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;a href="40123227_cp_w8_p.html" target="_blank"&gt;作業八投影片&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;期中考核項目&lt;/strong&gt;:&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;[50%]&lt;/strong&gt; 個人作業頁面(全班協同區)&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://2015fallhw.github.io/2015fallcpb/user/40123157/" target="_blank"&gt;2015fallcpb/user/40123227&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;[60%]&lt;/strong&gt; 個人作業倉儲(gh-pages)&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://40123227.github.io/40123227/" target="_blank"&gt;40123227.github.io/40123227&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li target="_blank"&gt;&lt;strong&gt;[65%]&lt;/strong&gt; 作業練習影片(含語音說明)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;[75%]&lt;/strong&gt; 作業投影片, 筆記, 操作過程, 心得&lt;ul&gt;
-&lt;li&gt;作業投影片, 筆記, 操作過程: 已於個人作業頁面完成建置&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;學習心得&lt;/strong&gt;:
-    上課必須非常專注跟著老師課程安排進行，稍有恍神即錯失某個操作流程細節與重點，當週上課大概至多了解一半的課程內容，勉強跟著老師操作一遍也不曉得其中關鍵技術，但於課後利用線上教學與課程網站再次複習，效果出乎意料之外感覺打通任督二脈，補足上課來不及記下的課程筆記，更加了解其中所應用的技術與操作細節，深深體會到老師課程編排內容的用心與扎實，循序漸進而非一步到位，每週不厭其煩的從最基礎的教起，複習前一週所講述的課程內容並加以延伸進階，甚至還有課程緩衝週作總複習前幾週所學。本課程學習需要較長的時間吸收內化，教學內容相當豐富但實際操作理解其技術後，又覺得所學只不過是九牛一毛，距離關鍵核心技術還有一段很長的距離要走，總結一句「知其然，而不知其所以然」。頓悟協同版次架構管理的重要性，才能與世界接軌迎向國際化的未來，工業4.0與物聯網(IoT)的時代來臨，其中關鍵技術就是雲端協同應用及網頁整合，也就是我們課程所學之最終目標。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;[85%]&lt;/strong&gt; 標題, 關鍵字, 內容&lt;ul&gt;
-&lt;li&gt;依課程評量標準而定&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;自評成績&lt;/strong&gt;: 80分 (沒有最好, 只有更好)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;※播放須知&lt;/strong&gt;: 由於網頁嵌入式影片畫質較低, 建議直接點案影片視窗右下角前往Vimeo瀏覽!&lt;/p&gt;
-&lt;iframe src="https://player.vimeo.com/video/145808429" width="500" height="267" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/145808429"&gt;40123157_2015cpbw8&lt;/a&gt; from &lt;a href="https://vimeo.com/user25757242"&gt;盧毅民&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業九 (期中考)</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w9.html" rel="alternate"></link><updated>2015-11-06T16:00:00+08:00</updated><author><name>40123227</name></author><id>tag:coursemdetw.github.io,2015-11-06:reveal/2015cp_hw_w9.html</id><summary type="html">&lt;ul&gt;
+&lt;/ol&gt;
+&lt;p&gt;(一 ) Information transfer (including library activities) 資訊傳輸 (包括圖書館活動) (一) Git, Github 與 Leo Editor 應用實習&lt;/p&gt;
+&lt;p&gt;(二) Communications (written, visual, and oral) 溝通 (文字, 視覺與口語) (二) 觀看教學影片, 實習影片錄製, 網際投影片製作&lt;/p&gt;
+&lt;p&gt;(三) Data collection and analysis 數據收集與分析 (三)  程式設計專案&lt;/p&gt;
+&lt;p&gt;(四) Design activities of all sorts 各種設計活動 (四) 從單機猜數字遊戲到雲端網際猜數字遊戲&lt;/p&gt;
+&lt;p&gt;(五)Computations of all sorts 各種運算 (五) random 與 math 模組應用&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;人文&lt;/em&gt;: learning concerned with human culture (人類文化), especially literature (文學), history (歷史), art (藝術), music (音樂), and philosophy (哲學)&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;科學&lt;/em&gt;: the intellectual (知識的) and practical (實用的) activity encompassing the systematic study (系統化研習) of the structure and behavior of the physical and natural world (物理與自然世界) through observation and experiment, knowledge of any kind&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;產品與服務&lt;/em&gt;: a substance produced during a natural (天然), chemical (化學), or manufacturing (製造) process and the action of helping or doing work for someone &lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第十週 (學校運動會)</title><link href="http://coursemdetw.github.io/reveal/40123227_hw_w10.html" rel="alternate"></link><updated>2015-11-08T16:00:00+08:00</updated><author><name>40123227</name></author><id>tag:coursemdetw.github.io,2015-11-08:reveal/40123227_hw_w10.html</id><summary type="html">&lt;p&gt;跑跑跳跳的一天，也別忘記要認真在自己的課業上。&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://imgur.com/guBDGR7"&gt;&lt;img src="http://i.imgur.com/guBDGR7.jpg" title="source: imgur.com" /&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第九週 (期中考)</title><link href="http://coursemdetw.github.io/reveal/40123227_hw_w9.html" rel="alternate"></link><updated>2015-11-07T16:00:00+08:00</updated><author><name>40123227</name></author><id>tag:coursemdetw.github.io,2015-11-07:reveal/40123227_hw_w9.html</id><summary type="html">&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;期中考核項目&lt;/strong&gt;:&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;[50%]&lt;/strong&gt; 個人作業頁面(全班協同區)&lt;ul&gt;
 &lt;li&gt;&lt;a href="http://2015fallhw.github.io/2015fallcpb/user/40123157/" target="_blank"&gt;2015fallcpb/user/40123227&lt;/a&gt;&lt;/li&gt;
@@ -322,23 +415,20 @@ canvas.bind('click', on_canvas_click, False)
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;自評成績&lt;/strong&gt;: 80分 &lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業八 (自我評量)</title><link href="http://coursemdetw.github.io/reveal/40123227_w8.html" rel="alternate"></link><updated>2015-11-06T16:00:00+08:00</updated><author><name>40123227</name></author><id>tag:coursemdetw.github.io,2015-11-06:reveal/40123227_w8.html</id><summary type="html">&lt;iframe src="40123227_cp_w8_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;strong&gt;自評成績&lt;/strong&gt;: 75分 &lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第八週 (含自我評量)</title><link href="http://coursemdetw.github.io/reveal/40123227_hw_w8.html" rel="alternate"></link><updated>2015-11-06T16:00:00+08:00</updated><author><name>40123227</name></author><id>tag:coursemdetw.github.io,2015-11-06:reveal/40123227_hw_w8.html</id><summary type="html">&lt;iframe src="40123227_cp_w8_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
 &lt;p&gt;&lt;a href="40123227_cp_w8_p.html" target="_blank"&gt;作業八投影片&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;期中考核項目&lt;/strong&gt;:&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;[50%]&lt;/strong&gt; 個人作業頁面(全班協同區)&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://2015fallhw.github.io/2015fallcpa/user/40123227/" target="_blank"&gt;2015fallcpa/user/40123227&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://2015fallhw.github.io/2015fallcpb/user/40123157/" target="_blank"&gt;2015fallcpb/user/40123227&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;[60%]&lt;/strong&gt; 個人作業倉儲(gh-pages)&lt;ul&gt;
 &lt;li&gt;&lt;a href="http://40123227.github.io/40123227/" target="_blank"&gt;40123227.github.io/40123227&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;[65%]&lt;/strong&gt; 作業練習影片(含語音說明)&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://vimeo.com/user25757242" target="_blank"&gt;vimeo.com/user25757242&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
+&lt;li target="_blank"&gt;&lt;strong&gt;[65%]&lt;/strong&gt; 作業練習影片(含語音說明)&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;[75%]&lt;/strong&gt; 作業投影片, 筆記, 操作過程, 心得&lt;ul&gt;
 &lt;li&gt;作業投影片, 筆記, 操作過程: 已於個人作業頁面完成建置&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;學習心得&lt;/strong&gt;:
@@ -356,108 +446,7 @@ canvas.bind('click', on_canvas_click, False)
 &lt;p&gt;&lt;strong&gt;※播放須知&lt;/strong&gt;: 由於網頁嵌入式影片畫質較低, 建議直接點案影片視窗右下角前往Vimeo瀏覽!&lt;/p&gt;
 &lt;iframe src="https://player.vimeo.com/video/145808429" width="500" height="267" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 
-&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/145808429"&gt;40123157_2015cpbw8&lt;/a&gt; from &lt;a href="https://vimeo.com/user25757242"&gt;盧毅民&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業八 (自我評量)</title><link href="http://coursemdetw.github.io/reveal/40123256_w8.html" rel="alternate"></link><updated>2015-11-06T16:00:00+08:00</updated><author><name>40123256</name></author><id>tag:coursemdetw.github.io,2015-11-06:reveal/40123256_w8.html</id><summary type="html">&lt;iframe src="40123256_cp_w8_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;a href="40123256_cp_w8_p.html" target="_blank"&gt;作業八投影片&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;期中考核項目&lt;/strong&gt;:&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;[50%]&lt;/strong&gt; 個人作業頁面(全班協同區)&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://2015fallhw.github.io/2015fallcpa/user/40123256/" target="_blank"&gt;2015fallcpa/user/40123256&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;[60%]&lt;/strong&gt; 個人作業倉儲(gh-pages)&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://40123256.github.io/cpw/" target="_blank"&gt;40123256.github.io/cpw&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;[65%]&lt;/strong&gt; 作業練習影片(含語音說明)&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://vimeo.com/user25757242" target="_blank"&gt;vimeo.com/user25757242&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;[75%]&lt;/strong&gt; 作業投影片, 筆記, 操作過程, 心得&lt;ul&gt;
-&lt;li&gt;作業投影片, 筆記, 操作過程: 已於個人作業頁面完成建置&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;學習心得&lt;/strong&gt;:
-    上課必須非常專注跟著老師課程安排進行，稍有恍神即錯失某個操作流程細節與重點，當週上課大概至多了解一半的課程內容，勉強跟著老師操作一遍也不曉得其中關鍵技術，但於課後利用線上教學與課程網站再次複習，效果出乎意料之外感覺打通任督二脈，補足上課來不及記下的課程筆記，更加了解其中所應用的技術與操作細節，深深體會到老師課程編排內容的用心與扎實，循序漸進而非一步到位，每週不厭其煩的從最基礎的教起，複習前一週所講述的課程內容並加以延伸進階，甚至還有課程緩衝週作總複習前幾週所學。本課程學習需要較長的時間吸收內化，教學內容相當豐富但實際操作理解其技術後，又覺得所學只不過是九牛一毛，距離關鍵核心技術還有一段很長的距離要走，總結一句「知其然，而不知其所以然」。頓悟協同版次架構管理的重要性，才能與世界接軌迎向國際化的未來，工業4.0與物聯網(IoT)的時代來臨，其中關鍵技術就是雲端協同應用及網頁整合，也就是我們課程所學之最終目標。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;[85%]&lt;/strong&gt; 標題, 關鍵字, 內容&lt;ul&gt;
-&lt;li&gt;依課程評量標準而定&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;自評成績&lt;/strong&gt;: 80分 (沒有最好, 只有更好)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;※播放須知&lt;/strong&gt;: 由於網頁嵌入式影片畫質較低, 建議直接點案影片視窗右下角前往Vimeo瀏覽!&lt;/p&gt;
-&lt;iframe src="https://player.vimeo.com/video/145808429" width="500" height="267" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/145808429"&gt;40123157_2015cpbw8&lt;/a&gt; from &lt;a href="https://vimeo.com/user25757242"&gt;盧毅民&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業九 (自我評量)</title><link href="http://coursemdetw.github.io/reveal/40123256_w9.html" rel="alternate"></link><updated>2015-11-06T16:00:00+08:00</updated><author><name>40123256</name></author><id>tag:coursemdetw.github.io,2015-11-06:reveal/40123256_w9.html</id><summary type="html">&lt;iframe src="40123256_cp_w8_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;a href="40123256_cp_w8_p.html" target="_blank"&gt;作業八投影片&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;期中考核項目&lt;/strong&gt;:&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;[50%]&lt;/strong&gt; 個人作業頁面(全班協同區)&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://2015fallhw.github.io/2015fallcpa/user/40123256/" target="_blank"&gt;2015fallcpa/user/40123256&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;[60%]&lt;/strong&gt; 個人作業倉儲(gh-pages)&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://40123256.github.io/cpw/" target="_blank"&gt;40123256.github.io/cpw&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;[65%]&lt;/strong&gt; 作業練習影片(含語音說明)&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://vimeo.com/user25757242" target="_blank"&gt;vimeo.com/user25757242&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;[75%]&lt;/strong&gt; 作業投影片, 筆記, 操作過程, 心得&lt;ul&gt;
-&lt;li&gt;作業投影片, 筆記, 操作過程: 已於個人作業頁面完成建置&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;學習心得&lt;/strong&gt;:
-    上課必須非常專注跟著老師課程安排進行，稍有恍神即錯失某個操作流程細節與重點，當週上課大概至多了解一半的課程內容，勉強跟著老師操作一遍也不曉得其中關鍵技術，但於課後利用線上教學與課程網站再次複習，效果出乎意料之外感覺打通任督二脈，補足上課來不及記下的課程筆記，更加了解其中所應用的技術與操作細節，深深體會到老師課程編排內容的用心與扎實，循序漸進而非一步到位，每週不厭其煩的從最基礎的教起，複習前一週所講述的課程內容並加以延伸進階，甚至還有課程緩衝週作總複習前幾週所學。本課程學習需要較長的時間吸收內化，教學內容相當豐富但實際操作理解其技術後，又覺得所學只不過是九牛一毛，距離關鍵核心技術還有一段很長的距離要走，總結一句「知其然，而不知其所以然」。頓悟協同版次架構管理的重要性，才能與世界接軌迎向國際化的未來，工業4.0與物聯網(IoT)的時代來臨，其中關鍵技術就是雲端協同應用及網頁整合，也就是我們課程所學之最終目標。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;[85%]&lt;/strong&gt; 標題, 關鍵字, 內容&lt;ul&gt;
-&lt;li&gt;依課程評量標準而定&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;自評成績&lt;/strong&gt;: 80分 (沒有最好, 只有更好)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;※播放須知&lt;/strong&gt;: 由於網頁嵌入式影片畫質較低, 建議直接點案影片視窗右下角前往Vimeo瀏覽!&lt;/p&gt;
-&lt;iframe src="https://player.vimeo.com/video/145808429" width="500" height="267" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/145808429"&gt;40123157_2015cpbw8&lt;/a&gt; from &lt;a href="https://vimeo.com/user25757242"&gt;盧毅民&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業七</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w7.html" rel="alternate"></link><updated>2015-10-30T16:00:00+08:00</updated><author><name>40123157</name></author><id>tag:coursemdetw.github.io,2015-10-30:reveal/2015cp_hw_w7.html</id><summary type="html">&lt;iframe src="40123157_cp_w7_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;a href="40123157_cp_w7_p.html" target="_blank"&gt;作業七投影片&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;機械設計工程師: Ana3_2015 (專用可攜程式系統, 業界主流: Python 2.7)&lt;/p&gt;
-&lt;p&gt;程式方法管理: 分散式版次管理系統 (個人, 團隊, 協同, 分享, 效率)&lt;/p&gt;
-&lt;p&gt;程式能力: 線上教學系統&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Python 3&lt;/strong&gt;: 程式基本概念&lt;ul&gt;
-&lt;li&gt;變數: 命名規則, 保留關鍵字&lt;/li&gt;
-&lt;li&gt;資料呈現: print(), 整數, 浮點數, 字串&lt;/li&gt;
-&lt;li&gt;數列(list): [1, 2, 3]&lt;/li&gt;
-&lt;li&gt;元組(tuple): (1, 2, 3)&lt;/li&gt;
-&lt;li&gt;字典(dictionary): {"a":1, "b":2}&lt;ul&gt;
-&lt;li&gt;重複迴圈: for&lt;/li&gt;
-&lt;li&gt;邏輯判斷: if, while&lt;/li&gt;
-&lt;li&gt;檔案輸出入(file IO)&lt;/li&gt;
-&lt;li&gt;檔案與操作系統(windows, Mac, Linux...)&lt;/li&gt;
-&lt;li&gt;資料編碼&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;函式(function)&lt;/li&gt;
-&lt;li&gt;模組(module)&lt;/li&gt;
-&lt;li&gt;物件導向(OOP)&lt;/li&gt;
-&lt;li&gt;網際程式: javascript, html5, webgl&lt;/li&gt;
-&lt;li&gt;資料庫: database, sql,nosql&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;基本程式練習: SciTE, Jupyter (print("*"), notebook網誌)&lt;/p&gt;
-&lt;p&gt;切換倉儲版本資料: git reset -- hard 1234567(版本代號7碼)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;※播放須知&lt;/strong&gt;: 由於網頁嵌入式影片畫質較低, 建議直接點案影片視窗右下角前往Vimeo瀏覽!&lt;/p&gt;
-&lt;iframe src="https://player.vimeo.com/video/145548313" width="500" height="267" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/145548313"&gt;40123157_2015cpbw7&lt;/a&gt; from &lt;a href="https://vimeo.com/user25757242"&gt;盧毅民&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業七</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w7.html" rel="alternate"></link><updated>2015-10-30T16:00:00+08:00</updated><author><name>40123227</name></author><id>tag:coursemdetw.github.io,2015-10-30:reveal/2015cp_hw_w7.html</id><summary type="html">&lt;iframe src="40123227_cp_w7_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/145808429"&gt;40123157_2015cpbw8&lt;/a&gt; from &lt;a href="https://vimeo.com/user25757242"&gt;盧毅民&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第七週</title><link href="http://coursemdetw.github.io/reveal/40123227_hw_w7.html" rel="alternate"></link><updated>2015-10-30T16:00:00+08:00</updated><author><name>40123227</name></author><id>tag:coursemdetw.github.io,2015-10-30:reveal/40123227_hw_w7.html</id><summary type="html">&lt;iframe src="40123227_cp_w7_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
 &lt;p&gt;&lt;a href="40123227_cp_w7_p.html" target="_blank"&gt;作業七投影片&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;機械設計工程師: Ana3_2015 (專用可攜程式系統, 業界主流: Python 2.7)&lt;/p&gt;
@@ -490,95 +479,7 @@ canvas.bind('click', on_canvas_click, False)
 &lt;p&gt;&lt;strong&gt;※播放須知&lt;/strong&gt;: 由於網頁嵌入式影片畫質較低, 建議直接點案影片視窗右下角前往Vimeo瀏覽!&lt;/p&gt;
 &lt;iframe src="https://player.vimeo.com/video/145548313" width="500" height="267" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 
-&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/145548313"&gt;40123157_2015cpbw7&lt;/a&gt; from &lt;a href="https://vimeo.com/user25757242"&gt;盧毅民&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業七</title><link href="http://coursemdetw.github.io/reveal/40123227_w7.html" rel="alternate"></link><updated>2015-10-30T16:00:00+08:00</updated><author><name>40123227</name></author><id>tag:coursemdetw.github.io,2015-10-30:reveal/40123227_w7.html</id><summary type="html">&lt;iframe src="40123227_cp_w7_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;a href="40123227_cp_w7_p.html" target="_blank"&gt;作業七投影片&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;機械設計工程師: Ana3_2015 (專用可攜程式系統, 業界主流: Python 2.7)&lt;/p&gt;
-&lt;p&gt;程式方法管理: 分散式版次管理系統 (個人, 團隊, 協同, 分享, 效率)&lt;/p&gt;
-&lt;p&gt;程式能力: 線上教學系統&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Python 3&lt;/strong&gt;: 程式基本概念&lt;ul&gt;
-&lt;li&gt;變數: 命名規則, 保留關鍵字&lt;/li&gt;
-&lt;li&gt;資料呈現: print(), 整數, 浮點數, 字串&lt;/li&gt;
-&lt;li&gt;數列(list): [1, 2, 3]&lt;/li&gt;
-&lt;li&gt;元組(tuple): (1, 2, 3)&lt;/li&gt;
-&lt;li&gt;字典(dictionary): {"a":1, "b":2}&lt;ul&gt;
-&lt;li&gt;重複迴圈: for&lt;/li&gt;
-&lt;li&gt;邏輯判斷: if, while&lt;/li&gt;
-&lt;li&gt;檔案輸出入(file IO)&lt;/li&gt;
-&lt;li&gt;檔案與操作系統(windows, Mac, Linux...)&lt;/li&gt;
-&lt;li&gt;資料編碼&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;函式(function)&lt;/li&gt;
-&lt;li&gt;模組(module)&lt;/li&gt;
-&lt;li&gt;物件導向(OOP)&lt;/li&gt;
-&lt;li&gt;網際程式: javascript, html5, webgl&lt;/li&gt;
-&lt;li&gt;資料庫: database, sql,nosql&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;基本程式練習: SciTE, Jupyter (print("*"), notebook網誌)&lt;/p&gt;
-&lt;p&gt;切換倉儲版本資料: git reset -- hard 1234567(版本代號7碼)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;※播放須知&lt;/strong&gt;: 由於網頁嵌入式影片畫質較低, 建議直接點案影片視窗右下角前往Vimeo瀏覽!&lt;/p&gt;
-&lt;iframe src="https://player.vimeo.com/video/145548313" width="500" height="267" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/145548313"&gt;40123157_2015cpbw7&lt;/a&gt; from &lt;a href="https://vimeo.com/user25757242"&gt;盧毅民&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業七</title><link href="http://coursemdetw.github.io/reveal/40123256_w7.html" rel="alternate"></link><updated>2015-10-30T16:00:00+08:00</updated><author><name>40123256</name></author><id>tag:coursemdetw.github.io,2015-10-30:reveal/40123256_w7.html</id><summary type="html">&lt;iframe src="40123256_cp_w7_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;a href="40123256_cp_w7_p.html" target="_blank"&gt;作業七投影片&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;機械設計工程師: Ana3_2015 (專用可攜程式系統, 業界主流: Python 2.7)&lt;/p&gt;
-&lt;p&gt;程式方法管理: 分散式版次管理系統 (個人, 團隊, 協同, 分享, 效率)&lt;/p&gt;
-&lt;p&gt;程式能力: 線上教學系統&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Python 3&lt;/strong&gt;: 程式基本概念&lt;ul&gt;
-&lt;li&gt;變數: 命名規則, 保留關鍵字&lt;/li&gt;
-&lt;li&gt;資料呈現: print(), 整數, 浮點數, 字串&lt;/li&gt;
-&lt;li&gt;數列(list): [1, 2, 3]&lt;/li&gt;
-&lt;li&gt;元組(tuple): (1, 2, 3)&lt;/li&gt;
-&lt;li&gt;字典(dictionary): {"a":1, "b":2}&lt;ul&gt;
-&lt;li&gt;重複迴圈: for&lt;/li&gt;
-&lt;li&gt;邏輯判斷: if, while&lt;/li&gt;
-&lt;li&gt;檔案輸出入(file IO)&lt;/li&gt;
-&lt;li&gt;檔案與操作系統(windows, Mac, Linux...)&lt;/li&gt;
-&lt;li&gt;資料編碼&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;函式(function)&lt;/li&gt;
-&lt;li&gt;模組(module)&lt;/li&gt;
-&lt;li&gt;物件導向(OOP)&lt;/li&gt;
-&lt;li&gt;網際程式: javascript, html5, webgl&lt;/li&gt;
-&lt;li&gt;資料庫: database, sql,nosql&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;基本程式練習: SciTE, Jupyter (print("*"), notebook網誌)&lt;/p&gt;
-&lt;p&gt;切換倉儲版本資料: git reset -- hard 1234567(版本代號7碼)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;※播放須知&lt;/strong&gt;: 由於網頁嵌入式影片畫質較低, 建議直接點案影片視窗右下角前往Vimeo瀏覽!&lt;/p&gt;
-&lt;iframe src="https://player.vimeo.com/video/145548313" width="500" height="267" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/145548313"&gt;40123157_2015cpbw7&lt;/a&gt; from &lt;a href="https://vimeo.com/user25757242"&gt;盧毅民&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業六</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w6.html" rel="alternate"></link><updated>2015-10-23T16:00:00+08:00</updated><author><name>40123157</name></author><id>tag:coursemdetw.github.io,2015-10-23:reveal/2015cp_hw_w6.html</id><summary type="html">&lt;iframe src="40123157_cp_w6_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;a href="40123157_cp_w6_p.html" target="_blank"&gt;作業六投影片&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Zero to Hero&lt;/strong&gt; with Python:&lt;ul&gt;
-&lt;li&gt;C:\Ana3_2015\data\project\cp\zero_to_hero(有字幕說明)&lt;/li&gt;
-&lt;li&gt;學習建議: 第一次練習盲聽, 第二次字幕對應(查單字)學習&lt;/li&gt;
-&lt;li&gt;影片撥放器: VLCPortable (支援flv,mp4播放)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;解決新舊版本衝突: 關閉頭尾對應程式&lt;/p&gt;
-&lt;p&gt;git pull: 拉回倉儲最新版本資料&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;SciTE&lt;/strong&gt;: &lt;ul&gt;
-&lt;li&gt;Ctrl F: 搜尋錯誤代碼"&amp;lt;", "=", "&amp;gt;"(7個)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;※播放須知&lt;/strong&gt;: 由於網頁嵌入式影片畫質較低, 建議直接點案影片視窗右下角前往Vimeo瀏覽!&lt;/p&gt;
-&lt;iframe src="https://player.vimeo.com/video/145548217" width="500" height="267" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/145548217"&gt;40123157_2015cpbw6&lt;/a&gt; from &lt;a href="https://vimeo.com/user25757242"&gt;盧毅民&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業六</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w6.html" rel="alternate"></link><updated>2015-10-23T16:00:00+08:00</updated><author><name>40123227</name></author><id>tag:coursemdetw.github.io,2015-10-23:reveal/2015cp_hw_w6.html</id><summary type="html">&lt;iframe src="40123227_cp_w6_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/145548313"&gt;40123157_2015cpbw7&lt;/a&gt; from &lt;a href="https://vimeo.com/user25757242"&gt;盧毅民&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第六週</title><link href="http://coursemdetw.github.io/reveal/40123227_hw_w6.html" rel="alternate"></link><updated>2015-10-23T16:00:00+08:00</updated><author><name>40123227</name></author><id>tag:coursemdetw.github.io,2015-10-23:reveal/40123227_hw_w6.html</id><summary type="html">&lt;iframe src="40123227_cp_w6_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
 &lt;p&gt;&lt;a href="40123227_cp_w6_p.html" target="_blank"&gt;作業六投影片&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -600,91 +501,7 @@ canvas.bind('click', on_canvas_click, False)
 &lt;p&gt;&lt;strong&gt;※播放須知&lt;/strong&gt;: 由於網頁嵌入式影片畫質較低, 建議直接點案影片視窗右下角前往Vimeo瀏覽!&lt;/p&gt;
 &lt;iframe src="https://player.vimeo.com/video/145548217" width="500" height="267" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 
-&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/145548217"&gt;40123157_2015cpbw6&lt;/a&gt; from &lt;a href="https://vimeo.com/user25757242"&gt;盧毅民&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業六</title><link href="http://coursemdetw.github.io/reveal/40123227_w6.html" rel="alternate"></link><updated>2015-10-23T16:00:00+08:00</updated><author><name>40123227</name></author><id>tag:coursemdetw.github.io,2015-10-23:reveal/40123227_w6.html</id><summary type="html">&lt;iframe src="40123227_cp_w6_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;a href="40123227_cp_w6_p.html" target="_blank"&gt;作業六投影片&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Zero to Hero&lt;/strong&gt; with Python:&lt;ul&gt;
-&lt;li&gt;C:\Ana3_2015\data\project\cp\zero_to_hero(有字幕說明)&lt;/li&gt;
-&lt;li&gt;學習建議: 第一次練習盲聽, 第二次字幕對應(查單字)學習&lt;/li&gt;
-&lt;li&gt;影片撥放器: VLCPortable (支援flv,mp4播放)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;解決新舊版本衝突: 關閉頭尾對應程式&lt;/p&gt;
-&lt;p&gt;git pull: 拉回倉儲最新版本資料&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;SciTE&lt;/strong&gt;: &lt;ul&gt;
-&lt;li&gt;Ctrl F: 搜尋錯誤代碼"&amp;lt;", "=", "&amp;gt;"(7個)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;※播放須知&lt;/strong&gt;: 由於網頁嵌入式影片畫質較低, 建議直接點案影片視窗右下角前往Vimeo瀏覽!&lt;/p&gt;
-&lt;iframe src="https://player.vimeo.com/video/145548217" width="500" height="267" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/145548217"&gt;40123157_2015cpbw6&lt;/a&gt; from &lt;a href="https://vimeo.com/user25757242"&gt;盧毅民&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業六</title><link href="http://coursemdetw.github.io/reveal/40123256_w6.html" rel="alternate"></link><updated>2015-10-23T16:00:00+08:00</updated><author><name>40123256</name></author><id>tag:coursemdetw.github.io,2015-10-23:reveal/40123256_w6.html</id><summary type="html">&lt;iframe src="40123256_cp_w6_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;a href="40123256_cp_w6_p.html" target="_blank"&gt;作業六投影片&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Zero to Hero&lt;/strong&gt; with Python:&lt;ul&gt;
-&lt;li&gt;C:\Ana3_2015\data\project\cp\zero_to_hero(有字幕說明)&lt;/li&gt;
-&lt;li&gt;學習建議: 第一次練習盲聽, 第二次字幕對應(查單字)學習&lt;/li&gt;
-&lt;li&gt;影片撥放器: VLCPortable (支援flv,mp4播放)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;解決新舊版本衝突: 關閉頭尾對應程式&lt;/p&gt;
-&lt;p&gt;git pull: 拉回倉儲最新版本資料&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;SciTE&lt;/strong&gt;: &lt;ul&gt;
-&lt;li&gt;Ctrl F: 搜尋錯誤代碼"&amp;lt;", "=", "&amp;gt;"(7個)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;※播放須知&lt;/strong&gt;: 由於網頁嵌入式影片畫質較低, 建議直接點案影片視窗右下角前往Vimeo瀏覽!&lt;/p&gt;
-&lt;iframe src="https://player.vimeo.com/video/145548217" width="500" height="267" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/145548217"&gt;40123157_2015cpbw6&lt;/a&gt; from &lt;a href="https://vimeo.com/user25757242"&gt;盧毅民&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業五</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w5.html" rel="alternate"></link><updated>2015-10-16T16:00:00+08:00</updated><author><name>40123157</name></author><id>tag:coursemdetw.github.io,2015-10-16:reveal/2015cp_hw_w5.html</id><summary type="html">&lt;iframe src="40123157_cp_w5_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;a href="40123157_cp_w5_p.html" target="_blank"&gt;作業五投影片&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;階段複習:&lt;ul&gt;
-&lt;li&gt;reveal2: 修復notebook編碼錯誤&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Leo Editor&lt;/strong&gt;: Python 3, PyQt(圖形介面)&lt;ul&gt;
-&lt;li&gt;節點: 架構 -&amp;gt; 細節&lt;ul&gt;
-&lt;li&gt;標題&lt;/li&gt;
-&lt;li&gt;內容&lt;/li&gt;
-&lt;li&gt;位置與從屬架構&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;用法: &lt;ul&gt;
-&lt;li&gt;@edit(雙向)&lt;/li&gt;
-&lt;li&gt;@path(對應目錄)&lt;/li&gt;
-&lt;li&gt;@button(命令)&lt;/li&gt;
-&lt;li&gt;@clean(架構)&lt;/li&gt;
-&lt;li&gt;@language&lt;/li&gt;
-&lt;li&gt;@others(所有子節點內容)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;GitHub&lt;/strong&gt;: 倉儲&lt;ul&gt;
-&lt;li&gt;新增 -&amp;gt; git clone -&amp;gt; download -&amp;gt; setting -&amp;gt; collaborator(協同者)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Python 3&lt;/strong&gt;: 語法&lt;ul&gt;
-&lt;li&gt;IPython Notebook: Jupyter&lt;/li&gt;
-&lt;li&gt;reveal.js: 全球資訊網投影片&lt;/li&gt;
-&lt;li&gt;pelican: 靜態網誌產生器&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;※播放須知&lt;/strong&gt;: 由於網頁嵌入式影片畫質較低, 建議直接點案影片視窗右下角前往Vimeo瀏覽!&lt;/p&gt;
-&lt;iframe src="https://player.vimeo.com/video/145548140" width="500" height="267" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/145548140"&gt;40123157_2015cpbw5&lt;/a&gt; from &lt;a href="https://vimeo.com/user25757242"&gt;盧毅民&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業五</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w5.html" rel="alternate"></link><updated>2015-10-16T16:00:00+08:00</updated><author><name>40123227</name></author><id>tag:coursemdetw.github.io,2015-10-16:reveal/2015cp_hw_w5.html</id><summary type="html">&lt;iframe src="40123227_cp_w5_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/145548217"&gt;40123157_2015cpbw6&lt;/a&gt; from &lt;a href="https://vimeo.com/user25757242"&gt;盧毅民&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第五週</title><link href="http://coursemdetw.github.io/reveal/40123227_hw_w5.html" rel="alternate"></link><updated>2015-10-16T16:00:00+08:00</updated><author><name>40123227</name></author><id>tag:coursemdetw.github.io,2015-10-16:reveal/40123227_hw_w5.html</id><summary type="html">&lt;iframe src="40123227_cp_w5_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
 &lt;p&gt;&lt;a href="40123227_cp_w5_p.html" target="_blank"&gt;作業五投影片&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -724,126 +541,7 @@ canvas.bind('click', on_canvas_click, False)
 &lt;p&gt;&lt;strong&gt;※播放須知&lt;/strong&gt;: 由於網頁嵌入式影片畫質較低, 建議直接點案影片視窗右下角前往Vimeo瀏覽!&lt;/p&gt;
 &lt;iframe src="https://player.vimeo.com/video/145548140" width="500" height="267" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 
-&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/145548140"&gt;40123157_2015cpbw5&lt;/a&gt; from &lt;a href="https://vimeo.com/user25757242"&gt;盧毅民&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業五</title><link href="http://coursemdetw.github.io/reveal/40123227_w5.html" rel="alternate"></link><updated>2015-10-16T16:00:00+08:00</updated><author><name>40123227</name></author><id>tag:coursemdetw.github.io,2015-10-16:reveal/40123227_w5.html</id><summary type="html">&lt;iframe src="40123227_cp_w5_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;a href="40123227_cp_w5_p.html" target="_blank"&gt;作業五投影片&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;階段複習:&lt;ul&gt;
-&lt;li&gt;reveal2: 修復notebook編碼錯誤&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Leo Editor&lt;/strong&gt;: Python 3, PyQt(圖形介面)&lt;ul&gt;
-&lt;li&gt;節點: 架構 -&amp;gt; 細節&lt;ul&gt;
-&lt;li&gt;標題&lt;/li&gt;
-&lt;li&gt;內容&lt;/li&gt;
-&lt;li&gt;位置與從屬架構&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;用法: &lt;ul&gt;
-&lt;li&gt;@edit(雙向)&lt;/li&gt;
-&lt;li&gt;@path(對應目錄)&lt;/li&gt;
-&lt;li&gt;@button(命令)&lt;/li&gt;
-&lt;li&gt;@clean(架構)&lt;/li&gt;
-&lt;li&gt;@language&lt;/li&gt;
-&lt;li&gt;@others(所有子節點內容)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;GitHub&lt;/strong&gt;: 倉儲&lt;ul&gt;
-&lt;li&gt;新增 -&amp;gt; git clone -&amp;gt; download -&amp;gt; setting -&amp;gt; collaborator(協同者)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Python 3&lt;/strong&gt;: 語法&lt;ul&gt;
-&lt;li&gt;IPython Notebook: Jupyter&lt;/li&gt;
-&lt;li&gt;reveal.js: 全球資訊網投影片&lt;/li&gt;
-&lt;li&gt;pelican: 靜態網誌產生器&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;※播放須知&lt;/strong&gt;: 由於網頁嵌入式影片畫質較低, 建議直接點案影片視窗右下角前往Vimeo瀏覽!&lt;/p&gt;
-&lt;iframe src="https://player.vimeo.com/video/145548140" width="500" height="267" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/145548140"&gt;40123157_2015cpbw5&lt;/a&gt; from &lt;a href="https://vimeo.com/user25757242"&gt;盧毅民&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業五</title><link href="http://coursemdetw.github.io/reveal/40123256_w5.html" rel="alternate"></link><updated>2015-10-16T16:00:00+08:00</updated><author><name>40123256</name></author><id>tag:coursemdetw.github.io,2015-10-16:reveal/40123256_w5.html</id><summary type="html">&lt;iframe src="40123256_cp_w5_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;a href="40123256_cp_w5_p.html" target="_blank"&gt;作業五投影片&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;階段複習:&lt;ul&gt;
-&lt;li&gt;reveal2: 修復notebook編碼錯誤&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Leo Editor&lt;/strong&gt;: Python 3, PyQt(圖形介面)&lt;ul&gt;
-&lt;li&gt;節點: 架構 -&amp;gt; 細節&lt;ul&gt;
-&lt;li&gt;標題&lt;/li&gt;
-&lt;li&gt;內容&lt;/li&gt;
-&lt;li&gt;位置與從屬架構&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;用法: &lt;ul&gt;
-&lt;li&gt;@edit(雙向)&lt;/li&gt;
-&lt;li&gt;@path(對應目錄)&lt;/li&gt;
-&lt;li&gt;@button(命令)&lt;/li&gt;
-&lt;li&gt;@clean(架構)&lt;/li&gt;
-&lt;li&gt;@language&lt;/li&gt;
-&lt;li&gt;@others(所有子節點內容)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;GitHub&lt;/strong&gt;: 倉儲&lt;ul&gt;
-&lt;li&gt;新增 -&amp;gt; git clone -&amp;gt; download -&amp;gt; setting -&amp;gt; collaborator(協同者)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Python 3&lt;/strong&gt;: 語法&lt;ul&gt;
-&lt;li&gt;IPython Notebook: Jupyter&lt;/li&gt;
-&lt;li&gt;reveal.js: 全球資訊網投影片&lt;/li&gt;
-&lt;li&gt;pelican: 靜態網誌產生器&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;※播放須知&lt;/strong&gt;: 由於網頁嵌入式影片畫質較低, 建議直接點案影片視窗右下角前往Vimeo瀏覽!&lt;/p&gt;
-&lt;iframe src="https://player.vimeo.com/video/145548140" width="500" height="267" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/145548140"&gt;40123157_2015cpbw5&lt;/a&gt; from &lt;a href="https://vimeo.com/user25757242"&gt;盧毅民&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業三</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w3.html" rel="alternate"></link><updated>2015-10-02T16:00:00+08:00</updated><author><name>40123157</name></author><id>tag:coursemdetw.github.io,2015-10-02:reveal/2015cp_hw_w3.html</id><summary type="html">&lt;iframe src="40123157_cp_w3_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;a href="40123157_cp_w3_p.html" target="_blank"&gt;作業三投影片&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;reveal&lt;/strong&gt;:&lt;ul&gt;
-&lt;li&gt;reveal.leo架構&lt;/li&gt;
-&lt;li&gt;reveal.js投影片: .html檔&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;pelican網誌文章&lt;/strong&gt;: .md檔 -&amp;gt; pelican轉檔 -&amp;gt; .html檔&lt;ul&gt;
-&lt;li&gt;.md檔: 編寫人性化, .html檔: 不易閱讀&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;ERROR: 轉notebook時出現編碼錯誤 (C:\reveal-gh-pages\plugin\liquid_tags\notebook.py)&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;SciTE編輯器&lt;/strong&gt;:&lt;ul&gt;
-&lt;li&gt;View -&amp;gt; Line Numbers: 顯示行數&lt;/li&gt;
-&lt;li&gt;Ctrl F: 搜尋 "open"&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;encoding="utf-8"編碼: 處理中文&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;start&lt;/strong&gt;:&lt;/li&gt;
-&lt;li&gt;已完成fix.bat即可關閉start時啟動安裝 (remark)&lt;ul&gt;
-&lt;li&gt;rem pip install pelican Markdown&lt;/li&gt;
-&lt;li&gt;rem pip install leo editor&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;更換notebook目錄: 為了Jupyter程式編寫轉網誌文章&lt;ul&gt;
-&lt;li&gt;原設定: data\notebook&lt;/li&gt;
-&lt;li&gt;新設定: data\tmp\reveal\content\notebook&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;※播放須知&lt;/strong&gt;: 由於網頁嵌入式影片畫質較低, 建議直接點案影片視窗右下角前往Vimeo瀏覽!&lt;/p&gt;
-&lt;iframe src="https://player.vimeo.com/video/145548068" width="500" height="267" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/145548068"&gt;40123157_2015cpbw3&lt;/a&gt; from &lt;a href="https://vimeo.com/user25757242"&gt;盧毅民&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業三</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w3.html" rel="alternate"></link><updated>2015-10-02T16:00:00+08:00</updated><author><name>40123227</name></author><id>tag:coursemdetw.github.io,2015-10-02:reveal/2015cp_hw_w3.html</id><summary type="html">&lt;iframe src="40123227_cp_w3_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/145548140"&gt;40123157_2015cpbw5&lt;/a&gt; from &lt;a href="https://vimeo.com/user25757242"&gt;盧毅民&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第四週(國慶日放假)</title><link href="http://coursemdetw.github.io/reveal/40123227_hw_w4.html" rel="alternate"></link><updated>2015-10-02T17:00:00+08:00</updated><author><name>40123227</name></author><id>tag:coursemdetw.github.io,2015-10-02:reveal/40123227_hw_w4.html</id><summary type="html">&lt;iframe src="40123227_cp_w3_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
 &lt;p&gt;&lt;a href="40123227_cp_w3_p.html" target="_blank"&gt;作業三投影片&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -882,7 +580,7 @@ canvas.bind('click', on_canvas_click, False)
 &lt;p&gt;&lt;strong&gt;※播放須知&lt;/strong&gt;: 由於網頁嵌入式影片畫質較低, 建議直接點案影片視窗右下角前往Vimeo瀏覽!&lt;/p&gt;
 &lt;iframe src="https://player.vimeo.com/video/145548068" width="500" height="267" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 
-&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/145548068"&gt;40123157_2015cpbw3&lt;/a&gt; from &lt;a href="https://vimeo.com/user25757242"&gt;盧毅民&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業三</title><link href="http://coursemdetw.github.io/reveal/40123227_w3.html" rel="alternate"></link><updated>2015-10-02T16:00:00+08:00</updated><author><name>40123227</name></author><id>tag:coursemdetw.github.io,2015-10-02:reveal/40123227_w3.html</id><summary type="html">&lt;iframe src="40123227_cp_w3_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/145548068"&gt;40123157_2015cpbw3&lt;/a&gt; from &lt;a href="https://vimeo.com/user25757242"&gt;盧毅民&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第三週</title><link href="http://coursemdetw.github.io/reveal/40123227_hw_w3.html" rel="alternate"></link><updated>2015-10-02T16:00:00+08:00</updated><author><name>40123227</name></author><id>tag:coursemdetw.github.io,2015-10-02:reveal/40123227_hw_w3.html</id><summary type="html">&lt;iframe src="40123227_cp_w3_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
 &lt;p&gt;&lt;a href="40123227_cp_w3_p.html" target="_blank"&gt;作業三投影片&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -921,149 +619,7 @@ canvas.bind('click', on_canvas_click, False)
 &lt;p&gt;&lt;strong&gt;※播放須知&lt;/strong&gt;: 由於網頁嵌入式影片畫質較低, 建議直接點案影片視窗右下角前往Vimeo瀏覽!&lt;/p&gt;
 &lt;iframe src="https://player.vimeo.com/video/145548068" width="500" height="267" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 
-&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/145548068"&gt;40123157_2015cpbw3&lt;/a&gt; from &lt;a href="https://vimeo.com/user25757242"&gt;盧毅民&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業三</title><link href="http://coursemdetw.github.io/reveal/40123256_w3.html" rel="alternate"></link><updated>2015-10-02T16:00:00+08:00</updated><author><name>40123256</name></author><id>tag:coursemdetw.github.io,2015-10-02:reveal/40123256_w3.html</id><summary type="html">&lt;iframe src="40123256_cp_w3_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;a href="40123256_cp_w3_p.html" target="_blank"&gt;作業三投影片&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;reveal&lt;/strong&gt;:&lt;ul&gt;
-&lt;li&gt;reveal.leo架構&lt;/li&gt;
-&lt;li&gt;reveal.js投影片: .html檔&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;pelican網誌文章&lt;/strong&gt;: .md檔 -&amp;gt; pelican轉檔 -&amp;gt; .html檔&lt;ul&gt;
-&lt;li&gt;.md檔: 編寫人性化, .html檔: 不易閱讀&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;ERROR: 轉notebook時出現編碼錯誤 (C:\reveal-gh-pages\plugin\liquid_tags\notebook.py)&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;SciTE編輯器&lt;/strong&gt;:&lt;ul&gt;
-&lt;li&gt;View -&amp;gt; Line Numbers: 顯示行數&lt;/li&gt;
-&lt;li&gt;Ctrl F: 搜尋 "open"&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;encoding="utf-8"編碼: 處理中文&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;start&lt;/strong&gt;:&lt;/li&gt;
-&lt;li&gt;已完成fix.bat即可關閉start時啟動安裝 (remark)&lt;ul&gt;
-&lt;li&gt;rem pip install pelican Markdown&lt;/li&gt;
-&lt;li&gt;rem pip install leo editor&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;更換notebook目錄: 為了Jupyter程式編寫轉網誌文章&lt;ul&gt;
-&lt;li&gt;原設定: data\notebook&lt;/li&gt;
-&lt;li&gt;新設定: data\tmp\reveal\content\notebook&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;※播放須知&lt;/strong&gt;: 由於網頁嵌入式影片畫質較低, 建議直接點案影片視窗右下角前往Vimeo瀏覽!&lt;/p&gt;
-&lt;iframe src="https://player.vimeo.com/video/145548068" width="500" height="267" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/145548068"&gt;40123157_2015cpbw3&lt;/a&gt; from &lt;a href="https://vimeo.com/user25757242"&gt;盧毅民&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業二 (重點筆記)</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w2.html" rel="alternate"></link><updated>2015-09-25T16:00:00+08:00</updated><author><name>40123157</name></author><id>tag:coursemdetw.github.io,2015-09-25:reveal/2015cp_hw_w2.html</id><summary type="html">&lt;iframe src="40123157_cp_w2_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;a href="40123157_cp_w2_p.html" target="_blank"&gt;作業二投影片&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;課程網站&lt;/strong&gt;: &lt;a href="https://wordpress-2015course.rhcloud.com" target="_blank"&gt;wordpress-2015course&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;Category: 2015 計算機程式 (教材專用)&lt;/li&gt;
-&lt;li&gt;課程vimeo: &lt;a href="https://vimeo.com/user24079973" target="_blank"&gt;虎尾科大機械設計工程&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;隨身可攜程式系統&lt;/strong&gt;: 隨插隨用, 協同加值&lt;ul&gt;
-&lt;li&gt;完整版: Ana3_2015&lt;/li&gt;
-&lt;li&gt;精簡版: Ana3_lite2.7z&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;程式語言: Python 3&lt;/p&gt;
-&lt;p&gt;工程模擬運算: Anaconda 3&lt;/p&gt;
-&lt;p&gt;IPython Notebook 功能: Jupyter (6人協作平台, 筆記與網誌編輯)&lt;/p&gt;
-&lt;p&gt;文字編輯器: SciTE (處理設定)&lt;/p&gt;
-&lt;p&gt;大綱管理系統: Leo Editor 5.1 final (Markdown節點架構, pelican靜態網誌)&lt;/p&gt;
-&lt;p&gt;影片錄製: CamStudio&lt;/p&gt;
-&lt;p&gt;影片轉檔: FormatFactory (from avi to flv)&lt;/p&gt;
-&lt;p&gt;影片撥放器: VLCPortable&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;近端檔案傳輸&lt;/strong&gt;: C:\FFOutput&amp;gt;python -m http.server&lt;ul&gt;
-&lt;li&gt;執行python模組http.server超文件傳輸&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;查詢ip位址: ipconfig /all&lt;ul&gt;
-&lt;li&gt;i: 網際網路, p:協定, config: 設定&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;IPv4位址: 192.168.1.35:8000&lt;ul&gt;
-&lt;li&gt;192.168: 內部ip, python http.server預設port號: 8000, http預設port號: 80&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;執行設定批次檔: &lt;strong&gt;fix.zip&lt;/strong&gt; (安裝模組)&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;檔案說明:fix.bat: 點選執行 (閃一下, 執行完三個複製)&lt;ul&gt;
-&lt;li&gt;launchLeo.py: 啟動Leo Editor管理系統&lt;/li&gt;
-&lt;li&gt;python.properties: 解譯python程式&lt;/li&gt;
-&lt;li&gt;start: 安裝模組Leo Editor, pelican, Markdown (pip: 安裝/卸除模組)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Enter Leo id: leo (產生唯一節點序號, 3個字以上的字串)&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Leo操作指令&lt;/strong&gt;: 節點架構次序&lt;ul&gt;
-&lt;li&gt;Ctrl I: 新增節點&lt;/li&gt;
-&lt;li&gt;Ctrl R: 子節點(下一層)&lt;/li&gt;
-&lt;li&gt;Ctrl L: 母節點(上一層)&lt;/li&gt;
-&lt;li&gt;右鍵選擇 Refresh from disk: 更新資料內容(雙向)&lt;/li&gt;
-&lt;li&gt;藍色小框框: 表示此節點有資料內容&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;GitHub倉儲下載&lt;/strong&gt;:&lt;ul&gt;
-&lt;li&gt;Download ZIP: 僅下載所選分支資料&lt;/li&gt;
-&lt;li&gt;HTTPS clone URL: 下載包含所有分支資料&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;coursemdetw/reveal: reveal-gh-pages (網誌基本架構)&lt;ul&gt;
-&lt;li&gt;index.html: 網誌首頁&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;reveal.leo&lt;/strong&gt;:&lt;ul&gt;
-&lt;li&gt;@button pelican content: 滑鼠停留在此節點上, 點按 pelican-content 按鈕&lt;ul&gt;
-&lt;li&gt;將.md檔資料轉為pelican靜態網誌&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;@settings: Leo設定&lt;/li&gt;
-&lt;li&gt;@path pelican\content: 網誌文章 (.md檔: Markdown)&lt;/li&gt;
-&lt;li&gt;@edit 2015cphww1.md&lt;/li&gt;
-&lt;li&gt;Slug: 2015cp_hw_w1 (.md檔轉超文件存檔名稱)&lt;/li&gt;
-&lt;li&gt;Summary: 文章摘要&lt;/li&gt;
-&lt;li&gt;iframe: 視窗嵌入&lt;/li&gt;
-&lt;li&gt;:target="_blank": 視窗另啟分頁&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;GitHub倉儲推送流程&lt;/strong&gt;:&lt;ul&gt;
-&lt;li&gt;git branch: 查尋分支&lt;/li&gt;
-&lt;li&gt;git branch gh-pages: 建立分支&lt;/li&gt;
-&lt;li&gt;git checkout gh-pages: 切換分支&lt;/li&gt;
-&lt;li&gt;git add -A: 拍快照&lt;/li&gt;
-&lt;li&gt;git commit -m "提交訊息"&lt;ul&gt;
-&lt;li&gt;身分設定: 檔案儲存在home.gitconfig&lt;/li&gt;
-&lt;li&gt;git config --global user.email "學號@nfu.edu.tw"&lt;/li&gt;
-&lt;li&gt;git config --global user.name "學號"&lt;/li&gt;
-&lt;li&gt;認證完成, 再次提交&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;git commit -m "提交訊息"&lt;/li&gt;
-&lt;li&gt;git push origin gh-pages  #網址代號: origin&lt;ul&gt;
-&lt;li&gt;Username: 學號@nfu.edu.tw&lt;/li&gt;
-&lt;li&gt;Password: GitHub密碼&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;※播放須知&lt;/strong&gt;: 由於網頁嵌入式影片畫質較低, 建議直接點案影片視窗右下角前往Vimeo瀏覽!&lt;/p&gt;
-&lt;iframe src="https://player.vimeo.com/video/145547731" width="500" height="267" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/145547731"&gt;40123157_2015cpbw2&lt;/a&gt; from &lt;a href="https://vimeo.com/user25757242"&gt;盧毅民&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業二 (重點筆記)</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w2.html" rel="alternate"></link><updated>2015-09-25T16:00:00+08:00</updated><author><name>40123227</name></author><id>tag:coursemdetw.github.io,2015-09-25:reveal/2015cp_hw_w2.html</id><summary type="html">&lt;iframe src="40123227_cp_w2_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/145548068"&gt;40123157_2015cpbw3&lt;/a&gt; from &lt;a href="https://vimeo.com/user25757242"&gt;盧毅民&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第二週</title><link href="http://coursemdetw.github.io/reveal/40123227_hw_w2.html" rel="alternate"></link><updated>2015-09-25T16:00:00+08:00</updated><author><name>40123227</name></author><id>tag:coursemdetw.github.io,2015-09-25:reveal/40123227_hw_w2.html</id><summary type="html">&lt;iframe src="40123227_cp_w2_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
 &lt;p&gt;&lt;a href="40123227_cp_w2_p.html" target="_blank"&gt;作業二投影片&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -1166,539 +722,9 @@ canvas.bind('click', on_canvas_click, False)
 &lt;p&gt;&lt;strong&gt;※播放須知&lt;/strong&gt;: 由於網頁嵌入式影片畫質較低, 建議直接點案影片視窗右下角前往Vimeo瀏覽!&lt;/p&gt;
 &lt;iframe src="https://player.vimeo.com/video/145547731" width="500" height="267" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 
-&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/145547731"&gt;40123157_2015cpbw2&lt;/a&gt; from &lt;a href="https://vimeo.com/user25757242"&gt;盧毅民&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業二 (重點筆記)</title><link href="http://coursemdetw.github.io/reveal/40123227_w2.html" rel="alternate"></link><updated>2015-09-25T16:00:00+08:00</updated><author><name>40123227</name></author><id>tag:coursemdetw.github.io,2015-09-25:reveal/40123227_w2.html</id><summary type="html">&lt;iframe src="40123227_cp_w2_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;a href="40123227_cp_w2_p.html" target="_blank"&gt;作業二投影片&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;課程網站&lt;/strong&gt;: &lt;a href="https://wordpress-2015course.rhcloud.com" target="_blank"&gt;wordpress-2015course&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;Category: 2015 計算機程式 (教材專用)&lt;/li&gt;
-&lt;li&gt;課程vimeo: &lt;a href="https://vimeo.com/user24079973" target="_blank"&gt;虎尾科大機械設計工程&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;隨身可攜程式系統&lt;/strong&gt;: 隨插隨用, 協同加值&lt;ul&gt;
-&lt;li&gt;完整版: Ana3_2015&lt;/li&gt;
-&lt;li&gt;精簡版: Ana3_lite2.7z&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;程式語言: Python 3&lt;/p&gt;
-&lt;p&gt;工程模擬運算: Anaconda 3&lt;/p&gt;
-&lt;p&gt;IPython Notebook 功能: Jupyter (6人協作平台, 筆記與網誌編輯)&lt;/p&gt;
-&lt;p&gt;文字編輯器: SciTE (處理設定)&lt;/p&gt;
-&lt;p&gt;大綱管理系統: Leo Editor 5.1 final (Markdown節點架構, pelican靜態網誌)&lt;/p&gt;
-&lt;p&gt;影片錄製: CamStudio&lt;/p&gt;
-&lt;p&gt;影片轉檔: FormatFactory (from avi to flv)&lt;/p&gt;
-&lt;p&gt;影片撥放器: VLCPortable&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;近端檔案傳輸&lt;/strong&gt;: C:\FFOutput&amp;gt;python -m http.server&lt;ul&gt;
-&lt;li&gt;執行python模組http.server超文件傳輸&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;查詢ip位址: ipconfig /all&lt;ul&gt;
-&lt;li&gt;i: 網際網路, p:協定, config: 設定&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;IPv4位址: 192.168.1.35:8000&lt;ul&gt;
-&lt;li&gt;192.168: 內部ip, python http.server預設port號: 8000, http預設port號: 80&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;執行設定批次檔: &lt;strong&gt;fix.zip&lt;/strong&gt; (安裝模組)&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;檔案說明:fix.bat: 點選執行 (閃一下, 執行完三個複製)&lt;ul&gt;
-&lt;li&gt;launchLeo.py: 啟動Leo Editor管理系統&lt;/li&gt;
-&lt;li&gt;python.properties: 解譯python程式&lt;/li&gt;
-&lt;li&gt;start: 安裝模組Leo Editor, pelican, Markdown (pip: 安裝/卸除模組)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Enter Leo id: leo (產生唯一節點序號, 3個字以上的字串)&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Leo操作指令&lt;/strong&gt;: 節點架構次序&lt;ul&gt;
-&lt;li&gt;Ctrl I: 新增節點&lt;/li&gt;
-&lt;li&gt;Ctrl R: 子節點(下一層)&lt;/li&gt;
-&lt;li&gt;Ctrl L: 母節點(上一層)&lt;/li&gt;
-&lt;li&gt;右鍵選擇 Refresh from disk: 更新資料內容(雙向)&lt;/li&gt;
-&lt;li&gt;藍色小框框: 表示此節點有資料內容&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;GitHub倉儲下載&lt;/strong&gt;:&lt;ul&gt;
-&lt;li&gt;Download ZIP: 僅下載所選分支資料&lt;/li&gt;
-&lt;li&gt;HTTPS clone URL: 下載包含所有分支資料&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;coursemdetw/reveal: reveal-gh-pages (網誌基本架構)&lt;ul&gt;
-&lt;li&gt;index.html: 網誌首頁&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;reveal.leo&lt;/strong&gt;:&lt;ul&gt;
-&lt;li&gt;@button pelican content: 滑鼠停留在此節點上, 點按 pelican-content 按鈕&lt;ul&gt;
-&lt;li&gt;將.md檔資料轉為pelican靜態網誌&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;@settings: Leo設定&lt;/li&gt;
-&lt;li&gt;@path pelican\content: 網誌文章 (.md檔: Markdown)&lt;/li&gt;
-&lt;li&gt;@edit 2015cphww1.md&lt;/li&gt;
-&lt;li&gt;Slug: 2015cp_hw_w1 (.md檔轉超文件存檔名稱)&lt;/li&gt;
-&lt;li&gt;Summary: 文章摘要&lt;/li&gt;
-&lt;li&gt;iframe: 視窗嵌入&lt;/li&gt;
-&lt;li&gt;:target="_blank": 視窗另啟分頁&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;GitHub倉儲推送流程&lt;/strong&gt;:&lt;ul&gt;
-&lt;li&gt;git branch: 查尋分支&lt;/li&gt;
-&lt;li&gt;git branch gh-pages: 建立分支&lt;/li&gt;
-&lt;li&gt;git checkout gh-pages: 切換分支&lt;/li&gt;
-&lt;li&gt;git add -A: 拍快照&lt;/li&gt;
-&lt;li&gt;git commit -m "提交訊息"&lt;ul&gt;
-&lt;li&gt;身分設定: 檔案儲存在home.gitconfig&lt;/li&gt;
-&lt;li&gt;git config --global user.email "學號@nfu.edu.tw"&lt;/li&gt;
-&lt;li&gt;git config --global user.name "學號"&lt;/li&gt;
-&lt;li&gt;認證完成, 再次提交&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;git commit -m "提交訊息"&lt;/li&gt;
-&lt;li&gt;git push origin gh-pages  #網址代號: origin&lt;ul&gt;
-&lt;li&gt;Username: 學號@nfu.edu.tw&lt;/li&gt;
-&lt;li&gt;Password: GitHub密碼&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;※播放須知&lt;/strong&gt;: 由於網頁嵌入式影片畫質較低, 建議直接點案影片視窗右下角前往Vimeo瀏覽!&lt;/p&gt;
-&lt;iframe src="https://player.vimeo.com/video/145547731" width="500" height="267" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/145547731"&gt;40123157_2015cpbw2&lt;/a&gt; from &lt;a href="https://vimeo.com/user25757242"&gt;盧毅民&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業二 (重點筆記)</title><link href="http://coursemdetw.github.io/reveal/40123256_w2.html" rel="alternate"></link><updated>2015-09-25T16:00:00+08:00</updated><author><name>40123256</name></author><id>tag:coursemdetw.github.io,2015-09-25:reveal/40123256_w2.html</id><summary type="html">&lt;iframe src="40123256_cp_w2_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;a href="40123256_cp_w2_p.html" target="_blank"&gt;作業二投影片&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;課程網站&lt;/strong&gt;: &lt;a href="https://wordpress-2015course.rhcloud.com" target="_blank"&gt;wordpress-2015course&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;Category: 2015 計算機程式 (教材專用)&lt;/li&gt;
-&lt;li&gt;課程vimeo: &lt;a href="https://vimeo.com/user24079973" target="_blank"&gt;虎尾科大機械設計工程&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;隨身可攜程式系統&lt;/strong&gt;: 隨插隨用, 協同加值&lt;ul&gt;
-&lt;li&gt;完整版: Ana3_2015&lt;/li&gt;
-&lt;li&gt;精簡版: Ana3_lite2.7z&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;程式語言: Python 3&lt;/p&gt;
-&lt;p&gt;工程模擬運算: Anaconda 3&lt;/p&gt;
-&lt;p&gt;IPython Notebook 功能: Jupyter (6人協作平台, 筆記與網誌編輯)&lt;/p&gt;
-&lt;p&gt;文字編輯器: SciTE (處理設定)&lt;/p&gt;
-&lt;p&gt;大綱管理系統: Leo Editor 5.1 final (Markdown節點架構, pelican靜態網誌)&lt;/p&gt;
-&lt;p&gt;影片錄製: CamStudio&lt;/p&gt;
-&lt;p&gt;影片轉檔: FormatFactory (from avi to flv)&lt;/p&gt;
-&lt;p&gt;影片撥放器: VLCPortable&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;近端檔案傳輸&lt;/strong&gt;: C:\FFOutput&amp;gt;python -m http.server&lt;ul&gt;
-&lt;li&gt;執行python模組http.server超文件傳輸&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;查詢ip位址: ipconfig /all&lt;ul&gt;
-&lt;li&gt;i: 網際網路, p:協定, config: 設定&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;IPv4位址: 192.168.1.35:8000&lt;ul&gt;
-&lt;li&gt;192.168: 內部ip, python http.server預設port號: 8000, http預設port號: 80&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;執行設定批次檔: &lt;strong&gt;fix.zip&lt;/strong&gt; (安裝模組)&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;檔案說明:fix.bat: 點選執行 (閃一下, 執行完三個複製)&lt;ul&gt;
-&lt;li&gt;launchLeo.py: 啟動Leo Editor管理系統&lt;/li&gt;
-&lt;li&gt;python.properties: 解譯python程式&lt;/li&gt;
-&lt;li&gt;start: 安裝模組Leo Editor, pelican, Markdown (pip: 安裝/卸除模組)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Enter Leo id: leo (產生唯一節點序號, 3個字以上的字串)&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Leo操作指令&lt;/strong&gt;: 節點架構次序&lt;ul&gt;
-&lt;li&gt;Ctrl I: 新增節點&lt;/li&gt;
-&lt;li&gt;Ctrl R: 子節點(下一層)&lt;/li&gt;
-&lt;li&gt;Ctrl L: 母節點(上一層)&lt;/li&gt;
-&lt;li&gt;右鍵選擇 Refresh from disk: 更新資料內容(雙向)&lt;/li&gt;
-&lt;li&gt;藍色小框框: 表示此節點有資料內容&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;GitHub倉儲下載&lt;/strong&gt;:&lt;ul&gt;
-&lt;li&gt;Download ZIP: 僅下載所選分支資料&lt;/li&gt;
-&lt;li&gt;HTTPS clone URL: 下載包含所有分支資料&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;coursemdetw/reveal: reveal-gh-pages (網誌基本架構)&lt;ul&gt;
-&lt;li&gt;index.html: 網誌首頁&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;reveal.leo&lt;/strong&gt;:&lt;ul&gt;
-&lt;li&gt;@button pelican content: 滑鼠停留在此節點上, 點按 pelican-content 按鈕&lt;ul&gt;
-&lt;li&gt;將.md檔資料轉為pelican靜態網誌&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;@settings: Leo設定&lt;/li&gt;
-&lt;li&gt;@path pelican\content: 網誌文章 (.md檔: Markdown)&lt;/li&gt;
-&lt;li&gt;@edit 2015cphww1.md&lt;/li&gt;
-&lt;li&gt;Slug: 2015cp_hw_w1 (.md檔轉超文件存檔名稱)&lt;/li&gt;
-&lt;li&gt;Summary: 文章摘要&lt;/li&gt;
-&lt;li&gt;iframe: 視窗嵌入&lt;/li&gt;
-&lt;li&gt;:target="_blank": 視窗另啟分頁&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;GitHub倉儲推送流程&lt;/strong&gt;:&lt;ul&gt;
-&lt;li&gt;git branch: 查尋分支&lt;/li&gt;
-&lt;li&gt;git branch gh-pages: 建立分支&lt;/li&gt;
-&lt;li&gt;git checkout gh-pages: 切換分支&lt;/li&gt;
-&lt;li&gt;git add -A: 拍快照&lt;/li&gt;
-&lt;li&gt;git commit -m "提交訊息"&lt;ul&gt;
-&lt;li&gt;身分設定: 檔案儲存在home.gitconfig&lt;/li&gt;
-&lt;li&gt;git config --global user.email "學號@nfu.edu.tw"&lt;/li&gt;
-&lt;li&gt;git config --global user.name "學號"&lt;/li&gt;
-&lt;li&gt;認證完成, 再次提交&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;git commit -m "提交訊息"&lt;/li&gt;
-&lt;li&gt;git push origin gh-pages  #網址代號: origin&lt;ul&gt;
-&lt;li&gt;Username: 學號@nfu.edu.tw&lt;/li&gt;
-&lt;li&gt;Password: GitHub密碼&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;※播放須知&lt;/strong&gt;: 由於網頁嵌入式影片畫質較低, 建議直接點案影片視窗右下角前往Vimeo瀏覽!&lt;/p&gt;
-&lt;iframe src="https://player.vimeo.com/video/145547731" width="500" height="267" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/145547731"&gt;40123157_2015cpbw2&lt;/a&gt; from &lt;a href="https://vimeo.com/user25757242"&gt;盧毅民&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業一</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w1.html" rel="alternate"></link><updated>2015-09-18T16:00:00+08:00</updated><author><name>40123157</name></author><id>tag:coursemdetw.github.io,2015-09-18:reveal/2015cp_hw_w1.html</id><summary type="html">&lt;iframe src="40123157_cp_w1_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;a href="40123157_cp_w1_p.html" target="_blank"&gt;作業一投影片&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;basic python program:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;#first:&lt;/span&gt;
-&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;hello&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-
-&lt;span class="c"&gt;#second:&lt;/span&gt;
-&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;hello&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-
-&lt;span class="c"&gt;#third: example program&lt;/span&gt;
-&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;hello&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Jupyter&lt;/strong&gt;: run and save to &lt;code&gt;Y:\notebook\print1.ipynb&lt;/code&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;run: example program&lt;/li&gt;
-&lt;li&gt;save as: &lt;code&gt;File &amp;gt;&amp;gt; Rename... &amp;gt;&amp;gt; save as "print1"&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;SciTE&lt;/strong&gt;: run and save to &lt;code&gt;Y:\tmp\print1.py&lt;/code&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;run: example program&lt;/li&gt;
-&lt;li&gt;save as: &lt;code&gt;File &amp;gt;&amp;gt; Save As... &amp;gt;&amp;gt; rename "print1.py"&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;cmd.exe&lt;/strong&gt;: test run "print1.py" &lt;code&gt;Y:\tmp&amp;gt;python print1.py&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;github&lt;/strong&gt;: 4 step &lt;code&gt;git clone &amp;gt;&amp;gt; add &amp;gt;&amp;gt; commit &amp;gt;&amp;gt; push&lt;/code&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;step 1: copy cpbw1 HTTPS clone URL &lt;code&gt;"https://github.com/學號/cpbw1.git"&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;step 2: cmd &lt;code&gt;Y:\tmp&amp;gt;git clone https://github.com/學號/cpbw1.git&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;step 3: copy 2 file to &lt;code&gt;Y:\tmp\cpbw1&lt;/code&gt; paste&lt;ul&gt;
-&lt;li&gt;2 file: &lt;code&gt;"print1.ipynb" &amp;amp; "print1.py"&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;step 4: git&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;    &lt;span class="c"&gt;#[step 4.1] go to cpbw1&lt;/span&gt;
-    &lt;span class="n"&gt;Y&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;\&lt;span class="n"&gt;tmp&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="n"&gt;cd&lt;/span&gt; &lt;span class="n"&gt;cpbw1&lt;/span&gt;
-
-    &lt;span class="c"&gt;#[step 4.2] submit update&lt;/span&gt;
-    &lt;span class="n"&gt;Y&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;\&lt;span class="n"&gt;tmp&lt;/span&gt;\&lt;span class="n"&gt;cpbw1&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;add&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;A&lt;/span&gt;
-
-    &lt;span class="c"&gt;#[step 4.3] submit message&lt;/span&gt;
-    &lt;span class="n"&gt;Y&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;\&lt;span class="n"&gt;tmp&lt;/span&gt;\&lt;span class="n"&gt;cpbw1&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;commit&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;m&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;add two files&amp;quot;&lt;/span&gt;
-
-    &lt;span class="c"&gt;#cmd.exe: Please tell me who you are.&lt;/span&gt;
-    &lt;span class="n"&gt;Run&lt;/span&gt;
-      &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;config&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="k"&gt;global&lt;/span&gt; &lt;span class="n"&gt;user&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;email&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;you@example.com&amp;quot;&lt;/span&gt;
-      &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;config&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="k"&gt;global&lt;/span&gt; &lt;span class="n"&gt;user&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;name&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;Your Name&amp;quot;&lt;/span&gt;
-
-    &lt;span class="c"&gt;#[step 4.4] user.email&lt;/span&gt;
-    &lt;span class="n"&gt;Y&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;\&lt;span class="n"&gt;tmp&lt;/span&gt;\&lt;span class="n"&gt;cpbw1&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;config&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="k"&gt;global&lt;/span&gt; &lt;span class="n"&gt;user&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;email&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;學號@nfu.edu.tw&amp;quot;&lt;/span&gt;
-
-    &lt;span class="c"&gt;#[step 4.5] user.name&lt;/span&gt;
-    &lt;span class="n"&gt;Y&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;\&lt;span class="n"&gt;tmp&lt;/span&gt;\&lt;span class="n"&gt;cpbw1&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;config&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="k"&gt;global&lt;/span&gt; &lt;span class="n"&gt;user&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;name&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;學號&amp;quot;&lt;/span&gt;
-
-    &lt;span class="c"&gt;#check user email &amp;amp; name Y:\home\.gitconfig open&lt;/span&gt;
-    &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;user&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
-        &lt;span class="n"&gt;email&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="err"&gt;學號&lt;/span&gt;&lt;span class="nd"&gt;@gm.nfu.edu.tw&lt;/span&gt;
-        &lt;span class="n"&gt;name&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="err"&gt;學號&lt;/span&gt;
-
-    &lt;span class="c"&gt;#[step 4.6] submit message again&lt;/span&gt;
-    &lt;span class="n"&gt;Y&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;\&lt;span class="n"&gt;tmp&lt;/span&gt;\&lt;span class="n"&gt;cpbw1&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;commit&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;m&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;add two files&amp;quot;&lt;/span&gt;
-
-    &lt;span class="c"&gt;#cmd.exe:&lt;/span&gt;
-    &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;master&lt;/span&gt; &lt;span class="err"&gt;版次編號&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="n"&gt;add&lt;/span&gt; &lt;span class="n"&gt;two&lt;/span&gt; &lt;span class="n"&gt;files&lt;/span&gt;
-     &lt;span class="mi"&gt;2&lt;/span&gt; &lt;span class="n"&gt;files&lt;/span&gt; &lt;span class="n"&gt;changed&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;115&lt;/span&gt; &lt;span class="n"&gt;insertions&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-     &lt;span class="n"&gt;create&lt;/span&gt; &lt;span class="n"&gt;mode&lt;/span&gt; &lt;span class="mi"&gt;100644&lt;/span&gt; &lt;span class="n"&gt;print1&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ipynb&lt;/span&gt;
-     &lt;span class="n"&gt;create&lt;/span&gt; &lt;span class="n"&gt;mode&lt;/span&gt; &lt;span class="mi"&gt;100644&lt;/span&gt; &lt;span class="n"&gt;print1&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;py&lt;/span&gt;
-
-    &lt;span class="c"&gt;#[step 4.7] push to github&lt;/span&gt;
-    &lt;span class="n"&gt;Y&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;\&lt;span class="n"&gt;tmp&lt;/span&gt;\&lt;span class="n"&gt;cpbw1&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;push&lt;/span&gt;
-
-    &lt;span class="c"&gt;#[step 4.8] cmd.exe: 輸入帳密&lt;/span&gt;
-    &lt;span class="n"&gt;Username&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="err"&gt;學校信箱&lt;/span&gt;
-    &lt;span class="n"&gt;Password&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;github密碼&lt;/span&gt;
-
-    &lt;span class="c"&gt;#update github\學號\cpbw1 success&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;note: cmd.exe 指令:&lt;ul&gt;
-&lt;li&gt;查詢指令: dir&lt;/li&gt;
-&lt;li&gt;更換目錄: cd&lt;/li&gt;
-&lt;li&gt;回上一層: cd ..&lt;/li&gt;
-&lt;li&gt;跳上一個: 上鍵&lt;/li&gt;
-&lt;li&gt;跳下一個: 下鍵&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;※播放須知&lt;/strong&gt;: 由於網頁嵌入式影片畫質較低, 建議直接點案影片視窗右下角前往Vimeo瀏覽!&lt;/p&gt;
-&lt;iframe src="https://player.vimeo.com/video/145547331" width="500" height="267" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/145547331"&gt;40123157_2015cpbw1&lt;/a&gt; from &lt;a href="https://vimeo.com/user25757242"&gt;盧毅民&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業一</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w1.html" rel="alternate"></link><updated>2015-09-18T16:00:00+08:00</updated><author><name>40123227</name></author><id>tag:coursemdetw.github.io,2015-09-18:reveal/2015cp_hw_w1.html</id><summary type="html">&lt;iframe src="40123227_cp_w1_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/145547731"&gt;40123157_2015cpbw2&lt;/a&gt; from &lt;a href="https://vimeo.com/user25757242"&gt;盧毅民&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第一週</title><link href="http://coursemdetw.github.io/reveal/40123227_hw_w1.html" rel="alternate"></link><updated>2015-09-18T16:00:00+08:00</updated><author><name>40123227</name></author><id>tag:coursemdetw.github.io,2015-09-18:reveal/40123227_hw_w1.html</id><summary type="html">&lt;iframe src="40123227_cp_w1_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
 &lt;p&gt;&lt;a href="40123227_cp_w1_p.html" target="_blank"&gt;作業一投影片&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;basic python program:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;#first:&lt;/span&gt;
-&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;hello&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-
-&lt;span class="c"&gt;#second:&lt;/span&gt;
-&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;hello&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-
-&lt;span class="c"&gt;#third: example program&lt;/span&gt;
-&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;hello&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Jupyter&lt;/strong&gt;: run and save to &lt;code&gt;Y:\notebook\print1.ipynb&lt;/code&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;run: example program&lt;/li&gt;
-&lt;li&gt;save as: &lt;code&gt;File &amp;gt;&amp;gt; Rename... &amp;gt;&amp;gt; save as "print1"&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;SciTE&lt;/strong&gt;: run and save to &lt;code&gt;Y:\tmp\print1.py&lt;/code&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;run: example program&lt;/li&gt;
-&lt;li&gt;save as: &lt;code&gt;File &amp;gt;&amp;gt; Save As... &amp;gt;&amp;gt; rename "print1.py"&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;cmd.exe&lt;/strong&gt;: test run "print1.py" &lt;code&gt;Y:\tmp&amp;gt;python print1.py&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;github&lt;/strong&gt;: 4 step &lt;code&gt;git clone &amp;gt;&amp;gt; add &amp;gt;&amp;gt; commit &amp;gt;&amp;gt; push&lt;/code&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;step 1: copy cpbw1 HTTPS clone URL &lt;code&gt;"https://github.com/學號/cpbw1.git"&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;step 2: cmd &lt;code&gt;Y:\tmp&amp;gt;git clone https://github.com/學號/cpbw1.git&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;step 3: copy 2 file to &lt;code&gt;Y:\tmp\cpbw1&lt;/code&gt; paste&lt;ul&gt;
-&lt;li&gt;2 file: &lt;code&gt;"print1.ipynb" &amp;amp; "print1.py"&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;step 4: git&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;    &lt;span class="c"&gt;#[step 4.1] go to cpbw1&lt;/span&gt;
-    &lt;span class="n"&gt;Y&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;\&lt;span class="n"&gt;tmp&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="n"&gt;cd&lt;/span&gt; &lt;span class="n"&gt;cpbw1&lt;/span&gt;
-
-    &lt;span class="c"&gt;#[step 4.2] submit update&lt;/span&gt;
-    &lt;span class="n"&gt;Y&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;\&lt;span class="n"&gt;tmp&lt;/span&gt;\&lt;span class="n"&gt;cpbw1&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;add&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;A&lt;/span&gt;
-
-    &lt;span class="c"&gt;#[step 4.3] submit message&lt;/span&gt;
-    &lt;span class="n"&gt;Y&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;\&lt;span class="n"&gt;tmp&lt;/span&gt;\&lt;span class="n"&gt;cpbw1&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;commit&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;m&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;add two files&amp;quot;&lt;/span&gt;
-
-    &lt;span class="c"&gt;#cmd.exe: Please tell me who you are.&lt;/span&gt;
-    &lt;span class="n"&gt;Run&lt;/span&gt;
-      &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;config&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="k"&gt;global&lt;/span&gt; &lt;span class="n"&gt;user&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;email&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;you@example.com&amp;quot;&lt;/span&gt;
-      &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;config&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="k"&gt;global&lt;/span&gt; &lt;span class="n"&gt;user&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;name&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;Your Name&amp;quot;&lt;/span&gt;
-
-    &lt;span class="c"&gt;#[step 4.4] user.email&lt;/span&gt;
-    &lt;span class="n"&gt;Y&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;\&lt;span class="n"&gt;tmp&lt;/span&gt;\&lt;span class="n"&gt;cpbw1&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;config&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="k"&gt;global&lt;/span&gt; &lt;span class="n"&gt;user&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;email&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;學號@nfu.edu.tw&amp;quot;&lt;/span&gt;
-
-    &lt;span class="c"&gt;#[step 4.5] user.name&lt;/span&gt;
-    &lt;span class="n"&gt;Y&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;\&lt;span class="n"&gt;tmp&lt;/span&gt;\&lt;span class="n"&gt;cpbw1&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;config&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="k"&gt;global&lt;/span&gt; &lt;span class="n"&gt;user&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;name&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;學號&amp;quot;&lt;/span&gt;
-
-    &lt;span class="c"&gt;#check user email &amp;amp; name Y:\home\.gitconfig open&lt;/span&gt;
-    &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;user&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
-        &lt;span class="n"&gt;email&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="err"&gt;學號&lt;/span&gt;&lt;span class="nd"&gt;@gm.nfu.edu.tw&lt;/span&gt;
-        &lt;span class="n"&gt;name&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="err"&gt;學號&lt;/span&gt;
-
-    &lt;span class="c"&gt;#[step 4.6] submit message again&lt;/span&gt;
-    &lt;span class="n"&gt;Y&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;\&lt;span class="n"&gt;tmp&lt;/span&gt;\&lt;span class="n"&gt;cpbw1&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;commit&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;m&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;add two files&amp;quot;&lt;/span&gt;
-
-    &lt;span class="c"&gt;#cmd.exe:&lt;/span&gt;
-    &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;master&lt;/span&gt; &lt;span class="err"&gt;版次編號&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="n"&gt;add&lt;/span&gt; &lt;span class="n"&gt;two&lt;/span&gt; &lt;span class="n"&gt;files&lt;/span&gt;
-     &lt;span class="mi"&gt;2&lt;/span&gt; &lt;span class="n"&gt;files&lt;/span&gt; &lt;span class="n"&gt;changed&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;115&lt;/span&gt; &lt;span class="n"&gt;insertions&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-     &lt;span class="n"&gt;create&lt;/span&gt; &lt;span class="n"&gt;mode&lt;/span&gt; &lt;span class="mi"&gt;100644&lt;/span&gt; &lt;span class="n"&gt;print1&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ipynb&lt;/span&gt;
-     &lt;span class="n"&gt;create&lt;/span&gt; &lt;span class="n"&gt;mode&lt;/span&gt; &lt;span class="mi"&gt;100644&lt;/span&gt; &lt;span class="n"&gt;print1&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;py&lt;/span&gt;
-
-    &lt;span class="c"&gt;#[step 4.7] push to github&lt;/span&gt;
-    &lt;span class="n"&gt;Y&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;\&lt;span class="n"&gt;tmp&lt;/span&gt;\&lt;span class="n"&gt;cpbw1&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;push&lt;/span&gt;
-
-    &lt;span class="c"&gt;#[step 4.8] cmd.exe: 輸入帳密&lt;/span&gt;
-    &lt;span class="n"&gt;Username&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="err"&gt;學校信箱&lt;/span&gt;
-    &lt;span class="n"&gt;Password&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;github密碼&lt;/span&gt;
-
-    &lt;span class="c"&gt;#update github\學號\cpbw1 success&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;note: cmd.exe 指令:&lt;ul&gt;
-&lt;li&gt;查詢指令: dir&lt;/li&gt;
-&lt;li&gt;更換目錄: cd&lt;/li&gt;
-&lt;li&gt;回上一層: cd ..&lt;/li&gt;
-&lt;li&gt;跳上一個: 上鍵&lt;/li&gt;
-&lt;li&gt;跳下一個: 下鍵&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;※播放須知&lt;/strong&gt;: 由於網頁嵌入式影片畫質較低, 建議直接點案影片視窗右下角前往Vimeo瀏覽!&lt;/p&gt;
-&lt;iframe src="https://player.vimeo.com/video/145547331" width="500" height="267" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/145547331"&gt;40123157_2015cpbw1&lt;/a&gt; from &lt;a href="https://vimeo.com/user25757242"&gt;盧毅民&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業一</title><link href="http://coursemdetw.github.io/reveal/40123227_w1.html" rel="alternate"></link><updated>2015-09-18T16:00:00+08:00</updated><author><name>40123227</name></author><id>tag:coursemdetw.github.io,2015-09-18:reveal/40123227_w1.html</id><summary type="html">&lt;iframe src="40123227_cp_w1_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;a href="40123227_cp_w1_p.html" target="_blank"&gt;作業一投影片&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;basic python program:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;#first:&lt;/span&gt;
-&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;hello&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-
-&lt;span class="c"&gt;#second:&lt;/span&gt;
-&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;hello&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-
-&lt;span class="c"&gt;#third: example program&lt;/span&gt;
-&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="ow"&gt;in&lt;/span&gt; &lt;span class="nb"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
-    &lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;hello&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Jupyter&lt;/strong&gt;: run and save to &lt;code&gt;Y:\notebook\print1.ipynb&lt;/code&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;run: example program&lt;/li&gt;
-&lt;li&gt;save as: &lt;code&gt;File &amp;gt;&amp;gt; Rename... &amp;gt;&amp;gt; save as "print1"&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;SciTE&lt;/strong&gt;: run and save to &lt;code&gt;Y:\tmp\print1.py&lt;/code&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;run: example program&lt;/li&gt;
-&lt;li&gt;save as: &lt;code&gt;File &amp;gt;&amp;gt; Save As... &amp;gt;&amp;gt; rename "print1.py"&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;cmd.exe&lt;/strong&gt;: test run "print1.py" &lt;code&gt;Y:\tmp&amp;gt;python print1.py&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;github&lt;/strong&gt;: 4 step &lt;code&gt;git clone &amp;gt;&amp;gt; add &amp;gt;&amp;gt; commit &amp;gt;&amp;gt; push&lt;/code&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;step 1: copy cpbw1 HTTPS clone URL &lt;code&gt;"https://github.com/學號/cpbw1.git"&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;step 2: cmd &lt;code&gt;Y:\tmp&amp;gt;git clone https://github.com/學號/cpbw1.git&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;step 3: copy 2 file to &lt;code&gt;Y:\tmp\cpbw1&lt;/code&gt; paste&lt;ul&gt;
-&lt;li&gt;2 file: &lt;code&gt;"print1.ipynb" &amp;amp; "print1.py"&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;step 4: git&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;    &lt;span class="c"&gt;#[step 4.1] go to cpbw1&lt;/span&gt;
-    &lt;span class="n"&gt;Y&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;\&lt;span class="n"&gt;tmp&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="n"&gt;cd&lt;/span&gt; &lt;span class="n"&gt;cpbw1&lt;/span&gt;
-
-    &lt;span class="c"&gt;#[step 4.2] submit update&lt;/span&gt;
-    &lt;span class="n"&gt;Y&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;\&lt;span class="n"&gt;tmp&lt;/span&gt;\&lt;span class="n"&gt;cpbw1&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;add&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;A&lt;/span&gt;
-
-    &lt;span class="c"&gt;#[step 4.3] submit message&lt;/span&gt;
-    &lt;span class="n"&gt;Y&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;\&lt;span class="n"&gt;tmp&lt;/span&gt;\&lt;span class="n"&gt;cpbw1&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;commit&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;m&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;add two files&amp;quot;&lt;/span&gt;
-
-    &lt;span class="c"&gt;#cmd.exe: Please tell me who you are.&lt;/span&gt;
-    &lt;span class="n"&gt;Run&lt;/span&gt;
-      &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;config&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="k"&gt;global&lt;/span&gt; &lt;span class="n"&gt;user&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;email&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;you@example.com&amp;quot;&lt;/span&gt;
-      &lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;config&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="k"&gt;global&lt;/span&gt; &lt;span class="n"&gt;user&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;name&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;Your Name&amp;quot;&lt;/span&gt;
-
-    &lt;span class="c"&gt;#[step 4.4] user.email&lt;/span&gt;
-    &lt;span class="n"&gt;Y&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;\&lt;span class="n"&gt;tmp&lt;/span&gt;\&lt;span class="n"&gt;cpbw1&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;config&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="k"&gt;global&lt;/span&gt; &lt;span class="n"&gt;user&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;email&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;學號@nfu.edu.tw&amp;quot;&lt;/span&gt;
-
-    &lt;span class="c"&gt;#[step 4.5] user.name&lt;/span&gt;
-    &lt;span class="n"&gt;Y&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;\&lt;span class="n"&gt;tmp&lt;/span&gt;\&lt;span class="n"&gt;cpbw1&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;config&lt;/span&gt; &lt;span class="o"&gt;--&lt;/span&gt;&lt;span class="k"&gt;global&lt;/span&gt; &lt;span class="n"&gt;user&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;name&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;學號&amp;quot;&lt;/span&gt;
-
-    &lt;span class="c"&gt;#check user email &amp;amp; name Y:\home\.gitconfig open&lt;/span&gt;
-    &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;user&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
-        &lt;span class="n"&gt;email&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="err"&gt;學號&lt;/span&gt;&lt;span class="nd"&gt;@gm.nfu.edu.tw&lt;/span&gt;
-        &lt;span class="n"&gt;name&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="err"&gt;學號&lt;/span&gt;
-
-    &lt;span class="c"&gt;#[step 4.6] submit message again&lt;/span&gt;
-    &lt;span class="n"&gt;Y&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;\&lt;span class="n"&gt;tmp&lt;/span&gt;\&lt;span class="n"&gt;cpbw1&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;commit&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;m&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;add two files&amp;quot;&lt;/span&gt;
-
-    &lt;span class="c"&gt;#cmd.exe:&lt;/span&gt;
-    &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;master&lt;/span&gt; &lt;span class="err"&gt;版次編號&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="n"&gt;add&lt;/span&gt; &lt;span class="n"&gt;two&lt;/span&gt; &lt;span class="n"&gt;files&lt;/span&gt;
-     &lt;span class="mi"&gt;2&lt;/span&gt; &lt;span class="n"&gt;files&lt;/span&gt; &lt;span class="n"&gt;changed&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;115&lt;/span&gt; &lt;span class="n"&gt;insertions&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-     &lt;span class="n"&gt;create&lt;/span&gt; &lt;span class="n"&gt;mode&lt;/span&gt; &lt;span class="mi"&gt;100644&lt;/span&gt; &lt;span class="n"&gt;print1&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;ipynb&lt;/span&gt;
-     &lt;span class="n"&gt;create&lt;/span&gt; &lt;span class="n"&gt;mode&lt;/span&gt; &lt;span class="mi"&gt;100644&lt;/span&gt; &lt;span class="n"&gt;print1&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;py&lt;/span&gt;
-
-    &lt;span class="c"&gt;#[step 4.7] push to github&lt;/span&gt;
-    &lt;span class="n"&gt;Y&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;\&lt;span class="n"&gt;tmp&lt;/span&gt;\&lt;span class="n"&gt;cpbw1&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;push&lt;/span&gt;
-
-    &lt;span class="c"&gt;#[step 4.8] cmd.exe: 輸入帳密&lt;/span&gt;
-    &lt;span class="n"&gt;Username&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="err"&gt;學校信箱&lt;/span&gt;
-    &lt;span class="n"&gt;Password&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;github密碼&lt;/span&gt;
-
-    &lt;span class="c"&gt;#update github\學號\cpbw1 success&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;note: cmd.exe 指令:&lt;ul&gt;
-&lt;li&gt;查詢指令: dir&lt;/li&gt;
-&lt;li&gt;更換目錄: cd&lt;/li&gt;
-&lt;li&gt;回上一層: cd ..&lt;/li&gt;
-&lt;li&gt;跳上一個: 上鍵&lt;/li&gt;
-&lt;li&gt;跳下一個: 下鍵&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;※播放須知&lt;/strong&gt;: 由於網頁嵌入式影片畫質較低, 建議直接點案影片視窗右下角前往Vimeo瀏覽!&lt;/p&gt;
-&lt;iframe src="https://player.vimeo.com/video/145547331" width="500" height="267" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/145547331"&gt;40123157_2015cpbw1&lt;/a&gt; from &lt;a href="https://vimeo.com/user25757242"&gt;盧毅民&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業一</title><link href="http://coursemdetw.github.io/reveal/40123256_w1.html" rel="alternate"></link><updated>2015-09-18T16:00:00+08:00</updated><author><name>40123256</name></author><id>tag:coursemdetw.github.io,2015-09-18:reveal/40123256_w1.html</id><summary type="html">&lt;iframe src="40123256_cp_w1_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;a href="40123256_cp_w1_p.html" target="_blank"&gt;作業一投影片&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;basic python program:&lt;/li&gt;
 &lt;/ul&gt;
