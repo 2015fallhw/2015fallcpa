@@ -7,8 +7,8 @@ from __future__ import unicode_literals
 
 import os
 
-AUTHOR = 'KMOL'
-SITENAME = '2015FALL 作業主頁'
+AUTHOR = '2015FALLCPA'
+SITENAME = '2015FALL CPA 作業'
 SITEURL = ''
 
 PATH = 'content'
@@ -26,14 +26,13 @@ AUTHOR_FEED_RSS = None
 
 # Blogroll
 LINKS = (('2015課程網頁', 'http://wordpress-2015course.rhcloud.com/'),
-         ('Python', 'http://python.org/'),('[github.io] 40123237', 'http://40123237.github.io/40123237/'),('[github.io] 40123227', 'http://40123227.github.io/40123227/'),('[github.io] 40123256', 'http://40123256.github.io/cpw/'))
-
+         ('Python', 'http://python.org/'),('2015作業主頁', '../../'))
 
 # Social widget
 SOCIAL = (('twitter', 'http://twitter.com/ametaireau'),
-          ('github', 'http://github.com/ametaireau'),)
+          ('github', 'http://github.com/ametaireau'))
           
-DEFAULT_PAGINATION = 20
+DEFAULT_PAGINATION = 10
 
 SITEURL = 'http://coursemdetw.github.io/reveal'
 RELATIVE_URLS = True
@@ -54,11 +53,3 @@ PLUGIN_PATHS = ['./../plugin']
 PLUGINS = ['liquid_tags.notebook']
 # 目錄設定相對於 reveal 下的 content 目錄
 NOTEBOOK_DIR = 'notebook'
-'''
-if not os.path.exists('_nb_header.html'):     
-    import warnings 
-    warnings.warn("_nb_header.html not found.") 
-else: 
-    EXTRA_HEADER = open('_nb_header.html', encoding="utf-8").read()
-'''
-
