@@ -749,6 +749,101 @@ ctx.stroke()
 
 </script>
 
+<p>40423114聖誕盒子</p>
+
+<!-- 導入 brython.js -->
+
+<script type="text/javascript" src="js/Brython3.2.3-20151122-082712/brython.js"></script>
+
+<!-- 啟動 brython() -->
+
+<script>
+window.onload=function(){
+brython(1);
+}
+</script>
+
+<!-- 以下利用 Brython 程式執行繪圖 -->
+
+<canvas id="plotarea6" width="500" height="500"></canvas>
+
+<script type="text/python3"> 
+# 導入 doc 
+from browser import document as doc 
+import math
+
+# 準備繪圖畫布 
+canvas = doc["plotarea6"] 
+ctx = canvas.getContext("2d") 
+
+# 開始畫直線 
+
+ctx.beginPath()
+ctx.lineWidth = 20
+ctx.moveTo(10, 20)
+ctx.lineTo(495,20)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 20
+ctx.moveTo(485, 15)
+ctx.lineTo(485, 150)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 20
+ctx.moveTo(495, 160)
+ctx.lineTo(5, 160)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 20
+ctx.moveTo(15, 10)
+ctx.lineTo(15, 160)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 20
+ctx.moveTo(30, 150)
+ctx.lineTo(30, 490)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 20
+ctx.moveTo(30, 490)
+ctx.lineTo(470, 490)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 20
+ctx.moveTo(470, 490)
+ctx.lineTo(470, 150)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth =150
+ctx.moveTo(250, 5)
+ctx.lineTo(250, 500)
+ctx.strokeStyle = "#FFD2D2"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth =150
+ctx.moveTo(20, 250)
+ctx.lineTo(480, 250)
+ctx.strokeStyle = "#FFD2D2"
+ctx.stroke()
+
+
+</script>
+
 <p></body> 
 </html></p></div>
     <footer>
@@ -816,11 +911,7 @@ ctx.stroke()
 
   <section>
   <h1>Tags</h1>
-<<<<<<< HEAD
-    <a href="./tag/qi-mo-ping-fen.html">期末評分</a>,    <a href="./tag/w16.html">w16</a>,    <a href="./tag/g10.html">G10</a>,    <a href="./tag/ipython.html">IPython</a>,    <a href="./tag/w15.html">w15</a>,    <a href="./tag/pelican.html">pelican</a>,    <a href="./tag/publishing.html">publishing</a>,    <a href="./tag/w14.html">w14</a>,    <a href="./tag/brython.html">Brython</a>,    <a href="./tag/g3.html">G3</a>,    <a href="./tag/jupyter.html">Jupyter</a>,    <a href="./tag/g1.html">G1</a>  </section>
-=======
-    <a href="./tag/qi-mo-ping-fen.html">期末評分</a>,    <a href="./tag/brython.html">Brython</a>,    <a href="./tag/ipython.html">IPython</a>,    <a href="./tag/w15.html">w15</a>,    <a href="./tag/g3.html">G3</a>,    <a href="./tag/pelican.html">pelican</a>,    <a href="./tag/g10.html">G10</a>,    <a href="./tag/publishing.html">publishing</a>,    <a href="./tag/w16.html">w16</a>,    <a href="./tag/w14.html">w14</a>,    <a href="./tag/g1.html">G1</a>,    <a href="./tag/jupyter.html">Jupyter</a>  </section>
->>>>>>> 5aefa522e9d4d111f8fe6fadca2104d881f9ebf9
+    <a href="./tag/w15.html">w15</a>,    <a href="./tag/jupyter.html">Jupyter</a>,    <a href="./tag/g10.html">G10</a>,    <a href="./tag/ipython.html">IPython</a>,    <a href="./tag/publishing.html">publishing</a>,    <a href="./tag/g3.html">G3</a>,    <a href="./tag/w16.html">w16</a>,    <a href="./tag/brython.html">Brython</a>,    <a href="./tag/qi-mo-ping-fen.html">期末評分</a>,    <a href="./tag/pelican.html">pelican</a>,    <a href="./tag/w14.html">w14</a>,    <a href="./tag/g1.html">G1</a>  </section>
 
 
     <section>

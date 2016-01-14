@@ -25,20 +25,18 @@
 <!-- 每一個 section 都代表一張投影片,  -->
 <!-- section 標註中的多 section 標註, 將往下垂直延伸 -->
 <section>
-    <h1>有關我的作業</h1>
-    <p>40423114李希凡11/06</p>		
+    <h1>第六周</h1>
+    <p>40423114李希凡</p>		
 </section>
 	
 <section id="hw-task-one">
-    <h1>作業任務一</h1>
-    <p>有關作業任務一的說明</p>
-    <p>請參考 <a href="http://www.google.com">Google</a>
+    <h1>在協同倉儲建立自己的網頁</h1>
+    <p>過程必須正確無誤 不然會爆炸</p>
 </section>
 				
 <section>
-    <h1>第3張投影片</h1>
-    <p>成績自評分數的量化依據?</p>
-    <p>可以連結到內部投影片<a href="#/hw-task-one">作業任務一</a>
+    <h1>自評</h1>
+    <p>成功 我給自己70分</p>
 </section>
 				
 </div>
@@ -52,4 +50,104 @@
 </script>
 	
 </body>
+
+<p>40423114聖誕盒子</p> 
+
+<!-- 導入 brython.js --> 
+
+<script type="text/javascript" src="js/Brython3.2.3-20151122-082712/40423112.js"></script> 
+
+<!-- 啟動 brython() --> 
+
+<script> 
+window.onload=function(){ 
+brython(1); 
+} 
+</script> 
+
+<!-- 以下利用 Brython 程式執行繪圖 --> 
+
+<canvas id="plotarea6" width="500" height="500"></canvas> 
+
+<script type="text/python3"> 
+# 導入 doc 
+from browser import document as doc 
+from browser import console 
+import math 
+
+# 準備繪圖畫布 
+canvas = doc["plotarea6"] 
+ctx = canvas.getContext("2d") 
+
+# 開始畫直線 
+
+ctx.beginPath()
+ctx.lineWidth = 20
+ctx.moveTo(10, 20)
+ctx.lineTo(495,20)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 20
+ctx.moveTo(485, 15)
+ctx.lineTo(485, 150)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 20
+ctx.moveTo(495, 160)
+ctx.lineTo(5, 160)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 20
+ctx.moveTo(15, 10)
+ctx.lineTo(15, 160)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 20
+ctx.moveTo(30, 150)
+ctx.lineTo(30, 490)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 20
+ctx.moveTo(30, 490)
+ctx.lineTo(470, 490)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 20
+ctx.moveTo(470, 490)
+ctx.lineTo(470, 150)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth =150
+ctx.moveTo(250, 5)
+ctx.lineTo(250, 500)
+ctx.strokeStyle = "#FFD2D2"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth =150
+ctx.moveTo(20, 250)
+ctx.lineTo(480, 250)
+ctx.strokeStyle = "#FFD2D2"
+ctx.stroke()
+
+
+
+</script>
+
+</body> 
+</html>
 

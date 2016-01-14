@@ -943,5 +943,100 @@ ctx.stroke()
 
 &lt;/script&gt;
 
+&lt;p&gt;40423114聖誕盒子&lt;/p&gt;
+
+&lt;!-- 導入 brython.js --&gt;
+
+&lt;script type="text/javascript" src="js/Brython3.2.3-20151122-082712/brython.js"&gt;&lt;/script&gt;
+
+&lt;!-- 啟動 brython() --&gt;
+
+&lt;script&gt;
+window.onload=function(){
+brython(1);
+}
+&lt;/script&gt;
+
+&lt;!-- 以下利用 Brython 程式執行繪圖 --&gt;
+
+&lt;canvas id="plotarea6" width="500" height="500"&gt;&lt;/canvas&gt;
+
+&lt;script type="text/python3"&gt; 
+# 導入 doc 
+from browser import document as doc 
+import math
+
+# 準備繪圖畫布 
+canvas = doc["plotarea6"] 
+ctx = canvas.getContext("2d") 
+
+# 開始畫直線 
+
+ctx.beginPath()
+ctx.lineWidth = 20
+ctx.moveTo(10, 20)
+ctx.lineTo(495,20)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 20
+ctx.moveTo(485, 15)
+ctx.lineTo(485, 150)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 20
+ctx.moveTo(495, 160)
+ctx.lineTo(5, 160)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 20
+ctx.moveTo(15, 10)
+ctx.lineTo(15, 160)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 20
+ctx.moveTo(30, 150)
+ctx.lineTo(30, 490)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 20
+ctx.moveTo(30, 490)
+ctx.lineTo(470, 490)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 20
+ctx.moveTo(470, 490)
+ctx.lineTo(470, 150)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth =150
+ctx.moveTo(250, 5)
+ctx.lineTo(250, 500)
+ctx.strokeStyle = "#FFD2D2"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth =150
+ctx.moveTo(20, 250)
+ctx.lineTo(480, 250)
+ctx.strokeStyle = "#FFD2D2"
+ctx.stroke()
+
+
+&lt;/script&gt;
+
 &lt;p&gt;&lt;/body&gt; 
 &lt;/html&gt;&lt;/p&gt;</summary><category term="w15"></category></entry></feed>
