@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>2015FALL 40423116 CPA 作業</title><link href="http://coursemdetw.github.io/reveal/" rel="alternate"></link><link href="http://coursemdetw.github.io/reveal/feeds/python.atom.xml" rel="self"></link><id>http://coursemdetw.github.io/reveal/</id><updated>2016-01-08T11:41:00+08:00</updated><entry><title>2015 計算機程式 w17</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w17.html" rel="alternate"></link><updated>2016-01-08T11:41:00+08:00</updated><author><name>40423116</name></author><id>tag:coursemdetw.github.io,2016-01-08:reveal/2015cp_hw_w17.html</id><summary type="html">&lt;p&gt;以下為作業17內容內容&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>2015FALL 40423116 CPA 作業</title><link href="http://coursemdetw.github.io/reveal/" rel="alternate"></link><link href="http://coursemdetw.github.io/reveal/feeds/python.atom.xml" rel="self"></link><id>http://coursemdetw.github.io/reveal/</id><updated>2016-01-15T11:41:00+08:00</updated><entry><title>2015-Leo小勇士</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w18.html" rel="alternate"></link><updated>2016-01-15T11:41:00+08:00</updated><author><name>40423116</name></author><id>tag:coursemdetw.github.io,2016-01-15:reveal/2015cp_hw_w18.html</id><summary type="html">&lt;p&gt;以下為故事內容&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/EPVOoYLXMwA" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/GrJvjvse3_M" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/vdkYXrlMemU" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 w17</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w17.html" rel="alternate"></link><updated>2016-01-08T11:41:00+08:00</updated><author><name>40423116</name></author><id>tag:coursemdetw.github.io,2016-01-08:reveal/2015cp_hw_w17.html</id><summary type="html">&lt;p&gt;以下為作業17內容內容&lt;/p&gt;
 &lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
 &lt;iframe src="40423116_cp_w17_p.html" width="800" height="500"&gt;&lt;/iframe&gt;
 
