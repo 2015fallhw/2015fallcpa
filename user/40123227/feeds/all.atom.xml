@@ -181,6 +181,8 @@ canvas.bind('click', on_canvas_click, False)
 &lt;p&gt;&lt;strong&gt;3.請利用流程圖, 簡要說明近端猜數字遊戲與猜顏色遊戲程式碼如何設計與運作&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://imgur.com/P9vZLUM"&gt;&lt;img src="http://i.imgur.com/P9vZLUM.jpg" title="source: imgur.com" /&gt;&lt;/p&gt;
 &lt;p&gt;**4. 請各組員利用 Brython, 分別在各分組的 pelican 網頁文章中, 繪製一個歡慶耶誕的 2D 圖形&lt;/p&gt;
+&lt;p&gt;&lt;/script&gt;
+&lt;a href="http://imgur.com/QMmRhyi"&gt;&lt;img src="http://i.imgur.com/QMmRhyi.png" title="source: imgur.com" /&gt;&lt;/p&gt;
 &lt;!-- 以下利用 Brython 程式執行繪圖 --&gt;
 
 &lt;canvas id="plotarea" width="500" height="500"&gt;&lt;/canvas&gt;
@@ -258,11 +260,7 @@ ctx.lineTo(328, 140)
 ctx.lineTo(332, 119)
 ctx.lineTo(362, 105)
 ctx.strokeStyle = "rgb(0, 255, 0)"
-ctx.stroke()
-
-&lt;/script&gt;
-
-&lt;p&gt;&lt;a href="http://imgur.com/QMmRhyi"&gt;&lt;img src="http://i.imgur.com/QMmRhyi.png" title="source: imgur.com" /&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第十四週</title><link href="http://coursemdetw.github.io/reveal/40123227_hw_w14.html" rel="alternate"></link><updated>2015-11-12T16:00:00+08:00</updated><author><name>40123227</name></author><id>tag:coursemdetw.github.io,2015-11-12:reveal/40123227_hw_w14.html</id><summary type="html">&lt;ul&gt;
+ctx.stroke()</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第十四週</title><link href="http://coursemdetw.github.io/reveal/40123227_hw_w14.html" rel="alternate"></link><updated>2015-11-12T16:00:00+08:00</updated><author><name>40123227</name></author><id>tag:coursemdetw.github.io,2015-11-12:reveal/40123227_hw_w14.html</id><summary type="html">&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;無內容&lt;/strong&gt;:&lt;/li&gt;
 &lt;/ul&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第十三週</title><link href="http://coursemdetw.github.io/reveal/40123227_hw_w13.html" rel="alternate"></link><updated>2015-11-11T16:00:00+08:00</updated><author><name>40123227</name></author><id>tag:coursemdetw.github.io,2015-11-11:reveal/40123227_hw_w13.html</id><summary type="html">&lt;p&gt;&lt;pre class="brush:python;"&gt;
 import random&lt;/p&gt;
