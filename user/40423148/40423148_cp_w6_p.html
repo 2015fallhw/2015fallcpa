@@ -1,0 +1,70 @@
+<!--
+這個檔案展示了 reveal.js 投影片資料的基本架構
+其中使用 "reveal" class 與 "slides" class 來界定投影片的資料範圍
+而各投影片則以 <section></section> 標示
+且支援平行與垂直的投影片配置方法
+-->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>最簡單的 reveal 超文件</title>
+<link rel="stylesheet" href="css/reveal.min.css">
+	<link rel="stylesheet" href="css/theme/default.css" id="theme">	
+	<!--增加對於 IE 早期版本的支援 -->
+	<!--[if lt IE 9]>
+	<script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+<body>
+<!-- 將整個投影片包在 "reveal" class 中 -->
+<div class="reveal">
+<!-- 將所有投影片包在 "slides" class 中 -->
+<div class="slides">
+<!-- 以下為投影片 -->
+<!-- 每一個 section 都代表一張投影片,  -->
+<!-- section 標註中的多 section 標註, 將往下垂直延伸 -->
+<section>
+    <h1>w6作業</h1>
+    <p>40423148劉祐程</p>		
+</section>
+
+<section>
+    <h1>影片大綱</h1>
+    <p> print("i have {0:d}cats".format(6))輸出i have 6 cats</p>
+    <p>print("i have {0:3d}cats".format(6))輸出 i have 6 cats</p>
+    <p>print("i have {0:03d }cats".format(6))輸出i have 006 cats</p>
+    <p>print("i have {0:f}cats".format(6))輸出i have 6.000000 cats</p>
+    <p>print("i have {0:.2f}cats".format(6))輸出喔i have 6.00 cats
+</p>
+</section>
+
+<section>
+    <h1>影片心得</h1>
+    <p>salary = input("please enter your salary") bouns = input("please enter your bouns") paycheckAmount = salary + bouns print(paycheckAmount) 將你的薪水及獎金輸入,之後再將兩個分別加起來,並打印出來.
+</p>		
+</section>
+
+<section>
+    <h1>上課心得</h1>
+    <p>這禮拜老師在github上創建了一個班上的群組,每個人可以將自己的作業gitpush到上面,不過途中有發現一些錯誤,無法分辨,很快的老師就解決了錯誤,並將錯誤告訴我們,只要將開啟即關閉改成一定數量就可以將錯誤解決,接下來就可以push.
+</p>		
+</section>
+
+<section>
+    <h1>自評</h1>
+    <p>分數:75分</p> 
+</section>
+	
+</div>
+</div>
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.min.js"></script>
+<script>
+    // 啟動 Reveal.
+    Reveal.initialize({
+    });
+</script>
+	
+</body>
+

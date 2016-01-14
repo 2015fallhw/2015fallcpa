@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>2015FALL 作業主頁</title><link href="http://coursemdetw.github.io/reveal/" rel="alternate"></link><link href="http://coursemdetw.github.io/reveal/feeds/g99.atom.xml" rel="self"></link><id>http://coursemdetw.github.io/reveal/</id><updated>2016-01-16T16:16:00+08:00</updated><entry><title>在網際頁面上, 用 Python 執行動態模擬!</title><link href="http://coursemdetw.github.io/reveal/g99_w17.html" rel="alternate"></link><updated>2016-01-16T16:16:00+08:00</updated><author><name>9999</name></author><id>tag:coursemdetw.github.io,2016-01-16:reveal/g99_w17.html</id><summary type="html">&lt;p&gt;以下利用 Brython 在網頁中進行具彈性的 20 個小球彈跳模擬！
+<feed xmlns="http://www.w3.org/2005/Atom"><title>2015FALL CPA 作業</title><link href="http://coursemdetw.github.io/reveal/" rel="alternate"></link><link href="http://coursemdetw.github.io/reveal/feeds/g99.atom.xml" rel="self"></link><id>http://coursemdetw.github.io/reveal/</id><updated>2016-01-16T16:16:00+08:00</updated><entry><title>在網際頁面上, 用 Python 執行動態模擬!</title><link href="http://coursemdetw.github.io/reveal/g99_w17.html" rel="alternate"></link><updated>2016-01-16T16:16:00+08:00</updated><author><name>9999</name></author><id>tag:coursemdetw.github.io,2016-01-16:reveal/g99_w17.html</id><summary type="html">&lt;p&gt;以下利用 Brython 在網頁中進行具彈性的 20 個小球彈跳模擬！
 換言之, 若採用相同的程式技巧與流程, 耶誕卡上的所有繪圖物件, 都可以製作成動畫!!!&lt;/p&gt;
 &lt;!-- 導入 brython.js --&gt;
 
@@ -326,9 +326,12 @@ notebook --ip&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nv"&gt;%thisip%
 window.onload=function(){
 brython(1);
 }
-&lt;/script&gt;&lt;!-- 以下利用 Brython 程式執行繪圖 --&gt;
+&lt;/script&gt;
 
-&lt;p&gt;&lt;canvas id="plotarea" width="300" height="200"&gt;&lt;/canvas&gt;&lt;/p&gt;
+&lt;!-- 以下利用 Brython 程式執行繪圖 --&gt;
+
+&lt;canvas id="plotarea" width="300" height="200"&gt;&lt;/canvas&gt;
+
 &lt;script type="text/python3"&gt;
 # 導入 doc
 from browser import document as doc
@@ -407,9 +410,12 @@ ctx.fill()
 window.onload=function(){
 brython(1);
 }
-&lt;/script&gt;&lt;!-- 以下利用 Brython 程式執行繪圖 --&gt;
+&lt;/script&gt;
 
-&lt;p&gt;&lt;canvas id="9903_plotarea" width="600" height="600"&gt;&lt;/canvas&gt;&lt;/p&gt;
+&lt;!-- 以下利用 Brython 程式執行繪圖 --&gt;
+
+&lt;canvas id="9903_plotarea" width="600" height="600"&gt;&lt;/canvas&gt;
+
 &lt;script type="text/python3"&gt;
 import math
 from browser import html, doc

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>2015FALL 作業主頁</title><link href="http://coursemdetw.github.io/reveal/" rel="alternate"></link><link href="http://coursemdetw.github.io/reveal/feeds/g3.atom.xml" rel="self"></link><id>http://coursemdetw.github.io/reveal/</id><updated>2016-01-08T12:00:00+08:00</updated><entry><title>G3_w17_1</title><link href="http://coursemdetw.github.io/reveal/G3_w17_1.html" rel="alternate"></link><updated>2016-01-08T12:00:00+08:00</updated><author><name>40423118</name></author><id>tag:coursemdetw.github.io,2016-01-08:reveal/G3_w17_1.html</id><summary type="html">&lt;!-- 導入 brython.js --&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>2015FALL CPA 作業</title><link href="http://coursemdetw.github.io/reveal/" rel="alternate"></link><link href="http://coursemdetw.github.io/reveal/feeds/g3.atom.xml" rel="self"></link><id>http://coursemdetw.github.io/reveal/</id><updated>2016-01-08T12:00:00+08:00</updated><entry><title>G3_w17_1</title><link href="http://coursemdetw.github.io/reveal/G3_w17_1.html" rel="alternate"></link><updated>2016-01-08T12:00:00+08:00</updated><author><name>40423118</name></author><id>tag:coursemdetw.github.io,2016-01-08:reveal/G3_w17_1.html</id><summary type="html">&lt;!-- 導入 brython.js --&gt;
 
 &lt;script type="text/javascript" src="http://brython.info/src/brython_dist.js"&gt;&lt;/script&gt;
 
@@ -150,9 +150,12 @@ if X==Y   如果X等於Y&lt;/p&gt;
 window.onload=function(){
 brython(1);
 }
-&lt;/script&gt;&lt;!-- 以下利用 Brython 程式執行繪圖 --&gt;
+&lt;/script&gt;
 
-&lt;p&gt;&lt;canvas id="plotarea" width="500" height="510"&gt;&lt;/canvas&gt;&lt;/p&gt;
+&lt;!-- 以下利用 Brython 程式執行繪圖 --&gt;
+
+&lt;canvas id="plotarea" width="500" height="510"&gt;&lt;/canvas&gt;
+
 &lt;script type="text/python3"&gt;
 # 導入 doc
 from browser import document as doc
@@ -369,7 +372,12 @@ ctx.strokeStyle = "#F2E307"
 ctx.stroke()
 
 
-&lt;/script&gt;&lt;script&gt;
+&lt;/script&gt; 
+
+
+
+
+&lt;script&gt;
 window.onload=function(){
 brython(1);
 }
@@ -394,9 +402,12 @@ brython(1);
 window.onload=function(){
 brython(1);
 }
-&lt;/script&gt;&lt;!-- 以下利用 Brython 程式執行繪圖 --&gt;
+&lt;/script&gt;
 
-&lt;p&gt;&lt;canvas id="plotarea1" width="400" height="410"&gt;&lt;/canvas&gt;&lt;/p&gt;
+&lt;!-- 以下利用 Brython 程式執行繪圖 --&gt;
+
+&lt;canvas id="plotarea1" width="400" height="410"&gt;&lt;/canvas&gt;
+
 &lt;script type="text/python3"&gt;
 # 導入 doc
 from browser import document as doc
@@ -503,7 +514,10 @@ ctx.lineTo(118.5,310)
 ctx.beginPath()
 
 
-&lt;/script&gt;&lt;script&gt;
+&lt;/script&gt; 
+
+
+&lt;script&gt;
 window.onload=function(){
 brython(1);
 }
@@ -528,9 +542,12 @@ brython(1);
 window.onload=function(){
 brython(1);
 }
-&lt;/script&gt;&lt;!-- 以下利用 Brython 程式執行繪圖 --&gt;
+&lt;/script&gt;
 
-&lt;p&gt;&lt;canvas id="plotarea2" width="500" height="500"&gt;&lt;/canvas&gt;&lt;/p&gt;
+&lt;!-- 以下利用 Brython 程式執行繪圖 --&gt;
+
+&lt;canvas id="plotarea2" width="500" height="500"&gt;&lt;/canvas&gt;
+
 &lt;script type="text/python3"&gt;
 # 導入 doc
 from browser import document as doc
