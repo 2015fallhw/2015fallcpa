@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>2015FALL 40123256 CPA 作業 (期中報告)</title><link href="http://coursemdetw.github.io/reveal/" rel="alternate"></link><link href="http://coursemdetw.github.io/reveal/feeds/all.atom.xml" rel="self"></link><id>http://coursemdetw.github.io/reveal/</id><updated>2016-01-08T10:57:00+08:00</updated><entry><title>2015 計算機程式 第十七週</title><link href="http://coursemdetw.github.io/reveal/40123256_w17.html" rel="alternate"></link><updated>2016-01-08T10:57:00+08:00</updated><author><name>蘇建瑋</name></author><id>tag:coursemdetw.github.io,2016-01-08:reveal/40123256_w17.html</id><summary type="html">&lt;h1&gt;Brython動畫&lt;/h1&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>2015FALL 40123256 CPA 作業 (期中報告)</title><link href="http://coursemdetw.github.io/reveal/" rel="alternate"></link><link href="http://coursemdetw.github.io/reveal/feeds/all.atom.xml" rel="self"></link><id>http://coursemdetw.github.io/reveal/</id><updated>2016-01-09T10:57:00+08:00</updated><entry><title>2015 計算機程式 第十八週(期末考週)</title><link href="http://coursemdetw.github.io/reveal/40123256_w18.html" rel="alternate"></link><updated>2016-01-09T10:57:00+08:00</updated><author><name>蘇建瑋</name></author><id>tag:coursemdetw.github.io,2016-01-09:reveal/40123256_w18.html</id><summary type="html">&lt;h1&gt;期末考週&lt;/h1&gt;
+&lt;h2&gt;評分流程 :&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;從各班個人連結頁面中 (2a, 2b, 1a, 1b), 進入各學員在各班倉儲中對應的個人 gh-pages 網頁&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;從上述頁面右下方的 Blogroll 中最下方連結 (名稱為"學號 個人網頁"), 進入學員個人單獨的 gh-pages 網頁&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;根據上述兩個頁面中的資料, 配合各課程的講授內容, 依據 投影片, 操作影片以及頁面上的其他相關檔案資料評分.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;從各班的協同網頁中, 各組所公佈的分組報告中的 投影片, 操作影片以及頁面上的其他相關檔案資料評分.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第十七週</title><link href="http://coursemdetw.github.io/reveal/40123256_w17.html" rel="alternate"></link><updated>2016-01-08T10:57:00+08:00</updated><author><name>蘇建瑋</name></author><id>tag:coursemdetw.github.io,2016-01-08:reveal/40123256_w17.html</id><summary type="html">&lt;h1&gt;Brython動畫&lt;/h1&gt;
 &lt;!-- 導入 brython.js --&gt;
 
 &lt;script type="text/javascript" src="http://brython.info/src/brython_dist.js"&gt;&lt;/script&gt;
@@ -116,7 +131,207 @@ canvas.bind('click', on_canvas_click, False)
 &lt;/script&gt;
 
 &lt;h2&gt;心得&lt;/h2&gt;
-&lt;p&gt;函式好難喔，我還在研究~&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業八 (自我評量)</title><link href="http://coursemdetw.github.io/reveal/40123256_w8.html" rel="alternate"></link><updated>2015-11-06T16:00:00+08:00</updated><author><name>40123256</name></author><id>tag:coursemdetw.github.io,2015-11-06:reveal/40123256_w8.html</id><summary type="html">&lt;iframe src="40123256_cp_w8_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
+&lt;p&gt;函式好難喔，我還在研究~&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第十六週 (元旦放假)</title><link href="http://coursemdetw.github.io/reveal/40123256_w16.html" rel="alternate"></link><updated>2015-11-14T16:00:00+08:00</updated><author><name>40123256</name></author><id>tag:coursemdetw.github.io,2015-11-14:reveal/40123256_w16.html</id><summary type="html">&lt;p&gt;&lt;strong&gt; 1/1 元旦放假，祝大家新年快樂 &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;2016為新的一年開始，利用年假把2015年沒熟悉的指令重新再複習，新年開始也表示期末將近，假期除了出外遊玩，也要提醒自己該準備讀書了。&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://imgur.com/esIQqvy"&gt;&lt;img src="http://i.imgur.com/esIQqvy.jpg" title="source: imgur.com" /&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第十五週 (聖誕節)</title><link href="http://coursemdetw.github.io/reveal/40123256_w15.html" rel="alternate"></link><updated>2015-11-13T16:00:00+08:00</updated><author><name>40123256</name></author><id>tag:coursemdetw.github.io,2015-11-13:reveal/40123256_w15.html</id><summary type="html">&lt;p&gt;&lt;strong&gt;1-1. Python3的近端程式開發系統如何建立&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;從 http://www.python.org/download/ 下載 Python 3.3.1, Doc 與 test scripts 不安裝, 容量大約 26 MB.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;接著從 http://www.lfd.uci.edu/~gohlke/pythonlibs/#distribute 下載 distribute-0.6.36.win32-py3.3.‌exe, 安裝後約佔&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;30MB.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;接著從 http://www.lfd.uci.edu/~gohlke/pythonlibs/#pip 下載 pip-1.3.1.win32-py3.3.‌exe, 安裝後約佔 32MB.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;接著從 http://sourceforge.net/projects/pywin32/files/pywin32/Build%20218/ 下載 pywin32-218.win32-py3.3.exe, 安裝&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;後約佔 58MB.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;接著從 http://www.riverbankcomputing.com/software/pyqt/download 下載 PyQt4-4.10-gpl-Py3.3-Qt5.0.1-x32-2.exe, Doc
+與 Examples 不安裝, 安裝後約佔 166MB.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;註: 因為安裝 PyQt4/Qt5 必須要從 http://www.microsoft.com/en-us/download/search.aspx?q=directx 更新 directx, 對於沒有更新的電腦就無法讓 Leo Editor 擷取到最新的 directx dll, 因為這不是 Leo 編輯器的問題, 而是 PyQt4 連結 Qt5 dll 所造成的問題&lt;/p&gt;
+&lt;p&gt;目前還不知道 PyQt5 是否可以在未更新 directx 的情況下讓 2014 年即將退役的 Windows XP 正常使用 Qt5 的 dll&lt;/p&gt;
+&lt;p&gt;因此依賴 PyQt 的 Leo Editor 根本無法主動修改, 只有兩條路可以走, 就是在 PyQt4 配合 Qt5 的情況下, 更新 Windows 的directx, 或者是回到 PyQt4 與 Qt4 的搭配, 等待 PyQt5 與 Qt5 的版本到來, 然後再看是否能在未更新 dirextx 或更新directx 的操作系統中彼此相容.&lt;/p&gt;
+&lt;p&gt;這裡我們選擇在 PyQt4/Qt4 的模式下來啟動 Leo 編輯器, 也就從&lt;/p&gt;
+&lt;p&gt;http://www.riverbankcomputing.com/software/pyqt/download 下載 PyQt4-4.10-gpl-Py3.3-Qt4.8.4-x32.exe, 而非 PyQt4-4.10-gpl-Py3.3-Qt5.0.1-x32-2.exe.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;接著從 http://www.lfd.uci.edu/~gohlke/pythonlibs/#docutils 下載 docutils-0.10.win32-py3.3.‌exe, 安裝後約佔 172MB.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;接著從 http://www.greygreen.org/leo/ 下載 leo-editor-snapshot-20130408.zip, 解開後將 leo 目錄放到 C:
+\Python33\Lib\site-packages\, 整個 C:\Python33 約為 190MB.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;1-2.Python3的近端程式開發系統如何建立&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;當使用者執行 start.bat 後, 系統會將 leoeditor 目錄中的 data 目錄與 Y: 硬碟對應, Y:\ 硬碟中的檔案其實就是&lt;/p&gt;
+&lt;p&gt;leoeditor/data 目錄, 兩個目錄為同步對應.&lt;/p&gt;
+&lt;p&gt;假設將上述兩個壓縮檔案下載後, 直接解開到 C:\Documents and Settings\amd\My Documents\Downloads\leoeditor&lt;/p&gt;
+&lt;p&gt;然後就可以
+點擊其中的 start.bat, 將會分別開啟兩個 cmd.exe 視窗, SciTE 編輯器與 Leo Editor, 這時進入 Y: 硬碟, 就可以看到&lt;/p&gt;
+&lt;p&gt;commands, exammples, Python33, tcc 與 wscite 等五個目錄, 其中 Python33 為可攜的 Python 3.3.1, tcc 為 TinyC 編譯程式&lt;/p&gt;
+&lt;p&gt;, scite 則為 SciTE 編輯器.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3.請利用流程圖, 簡要說明近端猜數字遊戲與猜顏色遊戲程式碼如何設計與運作&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://imgur.com/P9vZLUM"&gt;&lt;img src="http://i.imgur.com/P9vZLUM.jpg" title="source: imgur.com" /&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第十四週</title><link href="http://coursemdetw.github.io/reveal/40123256_w14.html" rel="alternate"></link><updated>2015-11-12T16:00:00+08:00</updated><author><name>40123256</name></author><id>tag:coursemdetw.github.io,2015-11-12:reveal/40123256_w14.html</id><summary type="html">&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;期中考核項目&lt;/strong&gt;:&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;[50%]&lt;/strong&gt; 個人作業頁面(全班協同區)&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://2015fallhw.github.io/2015fallcpa/user/40123256/" target="_blank"&gt;2015fallcpb/user/40123256&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[60%]&lt;/strong&gt; 個人作業倉儲(gh-pages)&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://40123256.github.io/cpw/" target="_blank"&gt;40123256.github.io/cpw&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li target="_blank"&gt;&lt;strong&gt;[65%]&lt;/strong&gt; 作業練習影片(含語音說明)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[75%]&lt;/strong&gt; 作業投影片, 筆記, 操作過程, 心得&lt;ul&gt;
+&lt;li&gt;作業投影片, 筆記, 操作過程: 已於個人作業頁面完成建置&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;學習心得&lt;/strong&gt;:
+    一步步認真踏實，才能領悟。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[85%]&lt;/strong&gt; 標題, 關鍵字, 內容&lt;ul&gt;
+&lt;li&gt;依課程評量標準而定&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;自評成績&lt;/strong&gt;: 75分 &lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第十三週</title><link href="http://coursemdetw.github.io/reveal/40123256_w13.html" rel="alternate"></link><updated>2015-11-11T16:00:00+08:00</updated><author><name>40123256</name></author><id>tag:coursemdetw.github.io,2015-11-11:reveal/40123256_w13.html</id><summary type="html">&lt;p&gt;&lt;pre class="brush:python;"&gt;
+import random&lt;/p&gt;
+&lt;h1&gt;產生標準答案&lt;/h1&gt;
+&lt;h1&gt;利用 list 數列資料型別建立顏色選項&lt;/h1&gt;
+&lt;h1&gt;Red 紅色, White 白色, Yellow 黃色, Green 綠色, Blue 藍色, Purple 紫色, 假設顏色值不會重複&lt;/h1&gt;
+&lt;p&gt;print('''遊戲規則說明: 可選顏色值, \nRed 紅色, White 白色, Yellow 黃色, Green 綠色, \nBlue 藍色, Purple 紫色, \nRBYGBP, \nX 表示位置與顏色都對, O 表示顏色對, 但是位置不對.
+''')&lt;/p&gt;
+&lt;p&gt;顏色選項 = ["R", "W", "Y", "G", "B", "P"]
+標準答案 = random.sample(顏色選項, 4)  &lt;br /&gt;
+print (標準答案)&lt;/p&gt;
+&lt;p&gt;顏色字串 = ""
+幾次決勝 = 9
+猜測次數 = 0
+遊戲進行中 = True&lt;/p&gt;
+&lt;p&gt;print ("總共有", 幾次決勝 - 猜測次數, "次機會,可以猜!")&lt;/p&gt;
+&lt;p&gt;for i in range(len(顏色選項)):
+    顏色字串 += 顏色選項[i]&lt;/p&gt;
+&lt;h1&gt;print (顏色字串)&lt;/h1&gt;
+&lt;p&gt;while 遊戲進行中:
+    位置顏色都正確 = ""
+    顏色對位置錯 = ""
+    # 將使用者的輸入轉為大寫英文字母
+    使用者猜測輸入 = input("請從下列顏色值中選四個, "+顏色字串+": ").upper()
+    猜測次數 += 1&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;# 檢驗是否輸入四個顏色字母
+if len(使用者猜測輸入) != len(標準答案):
+    print (&amp;quot;\n只能猜四個顏色, 請重猜!&amp;quot;)
+    print (&amp;quot;\n剩下&amp;quot;, 幾次決勝 - 猜測次數, &amp;quot;次機會,可以猜: &amp;quot;)
+    continue
+# 判斷是否重複選擇相同顏色
+if len(使用者猜測輸入) &amp;amp;gt; len(set(使用者猜測輸入)):
+    print (&amp;quot;\n顏色值不能重複！&amp;quot;)
+    print (&amp;quot;\n剩下&amp;quot;, 幾次決勝 - 猜測次數, &amp;quot;次機會,可以猜: &amp;quot;)
+    continue
+for i in range(4):
+    # 判斷是否從顏色選項輸入
+    if 使用者猜測輸入[i] not in 顏色選項:
+        print (&amp;quot;\n只能從下列顏色選項中輸入!&amp;quot;, 顏色選項)
+        print (&amp;quot;\n剩下&amp;quot;, 幾次決勝 - 猜測次數, &amp;quot;次機會,可以猜: &amp;quot;)
+        continue
+
+if 位置顏色都正確 != &amp;quot;XXXX&amp;quot;:
+    for i in range(4):
+        if 使用者猜測輸入[i] == 標準答案[i]:
+            位置顏色都正確 += &amp;quot;X&amp;quot;
+        if  使用者猜測輸入[i] != 標準答案[i] and 使用者猜測輸入[i] in 標準答案:
+            顏色對位置錯 += &amp;quot;O&amp;quot;
+    print (位置顏色都正確 +  顏色對位置錯 + &amp;quot;\n&amp;quot;)
+
+if 位置顏色都正確 == &amp;quot;XXXX&amp;quot;:
+    if 猜測次數 == 1:
+        print (&amp;quot;太神奇了, 1 次就猜對!&amp;quot;)
+    else:
+        print (&amp;quot;還不錯... 總共猜了 &amp;quot; + str(猜測次數) + &amp;quot; 次, 終於猜對!&amp;quot;)
+    遊戲進行中 = False
+
+if 猜測次數&amp;amp;gt;= 1 and 猜測次數 = 幾次決勝:
+    print (&amp;quot;沒有猜對! 願賭服輸, 答案顏色值為: &amp;quot; + str(標準答案))  
+    遊戲進行中 = False
+
+# 詢問要不要再玩
+while 遊戲進行中 == False:
+    遊戲結束詢問 = input(&amp;quot;\n要不要再玩 (Y/N)?&amp;quot;).upper()  
+    # 猜測次數歸零
+    猜測次數 = 0
+    if 遊戲結束詢問 ==&amp;quot;N&amp;quot;:
+        print (&amp;quot;歡迎再回來玩!&amp;quot;)
+    elif 遊戲結束詢問 == &amp;quot;Y&amp;quot;:
+        遊戲進行中 = True
+        # 重新產生標準答案
+        標準答案 = random.sample(顏色選項, 4)     
+        #print (標準答案)
+        print (&amp;quot;好, 再玩一次...&amp;quot;)
+        print (&amp;quot;總共有&amp;quot;, 幾次決勝 - 猜測次數, &amp;quot;次機會,可以猜!&amp;quot;)
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;/pre&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第十二週</title><link href="http://coursemdetw.github.io/reveal/40123256_w12.html" rel="alternate"></link><updated>2015-11-10T16:00:00+08:00</updated><author><name>40123256</name></author><id>tag:coursemdetw.github.io,2015-11-10:reveal/40123256_w12.html</id><summary type="html">&lt;p&gt;在零基礎學 Python 中有一個單機執行的猜數字遊戲, 在 KMOL 的系列課程中, 可以單單從這個遊戲開始, 逐步體會計算機程式、網際內容管理、電腦輔助設計實習與協同產品設計實習等課程的整合應用.&lt;/p&gt;
+&lt;p&gt;猜數字遊戲一開始由系統產生一個標準答案 – 這個答案可以類比到機械設計工程師設計產品過程中所希望完成的最佳化設計結果.&lt;/p&gt;
+&lt;p&gt;接下來, 遊戲會透過介面設計取得使用者的猜數字輸入 – 而此使用者的輸入過程, 可以類比到在機械設計工程師逐步達成最後設計之前, 因為各種分析考量的需要, 或協力廠商間設計參數的變更需求, 必須透過介面設計將各種輸入納入系統中.&lt;/p&gt;
+&lt;p&gt;接下來, 遊戲會根據標準答案與使用者的輸入進行比對, 然後回應比對結果 – 此階段之於產品開發流程, 可以類比為根據使用者所採用的電腦輔助設計分析方法, 取得分析的結果, 可以透過工程分析方法顯示目前設計結果的優劣, 或者以人工方式來評判設計分析的結果.&lt;/p&gt;
+&lt;p&gt;接下來, 若使用者已經猜對標準答案, 則遊戲停止, 否則重複輸入、比對與回應的迴圈 – 此階段於產品開發流程, 可以類比為若設計團隊認為已經達到所需要的設計結果, 則設計結束, 並且投入下一產品開發的製造規劃階段 (這裡假設設計與製造可以完全切割的最簡單理想範例), 否則進行重複修改輸入、評估設計結果的迴圈, 一直到取得滿意的設計結果為止.&lt;/p&gt;
+&lt;p&gt;接下來將透過 3 個不同的環境來實現這個猜數字遊戲:&lt;/p&gt;
+&lt;p&gt;單機執行環境 – 使用指令操作執行
+網際執行環境 (localhost、近端主機與雲端主機) – 使用 CherryPy 與 Flask 網際框架模式執行
+Ajax 與 Websockets 模式下的網際執行環境 (localhost、近端主機與雲端主機) – 使用 CherryPy 與 Flask 網際框架模式加上 Brython 執行
+上述網際近端主機 (nginx) 與雲端主機 (OpenShift) 將透過 uwsgi 架構下執行&lt;/p&gt;
+&lt;h1&gt;coding: utf-8&lt;/h1&gt;
+&lt;h1&gt;猜數字遊戲&lt;/h1&gt;
+&lt;p&gt;import random&lt;/p&gt;
+&lt;p&gt;標準答案 = random.randint(1, 100)
+你猜的數字 = int(input("請輸入您所猜的整數:"))
+猜測次數 = 1
+while 標準答案 != 你猜的數字:
+    if 標準答案 &amp;lt; 你猜的數字:
+        print("太大了，再猜一次 :)加油")
+    else:
+        print("太小了，再猜一次 :)加油")
+    你猜的數字 = int(input("請輸入您所猜的整數:"))
+    猜測次數 += 1&lt;/p&gt;
+&lt;p&gt;print("猜對了！總共猜了", 猜測次數, "次")&lt;/p&gt;
+&lt;p&gt;上列程式碼說明:
+第1行為程式檔案內文的編碼宣告, 由於 Python3 內定的程式內文編碼為 utf-8, 因此一般可以不用宣告, 除非使用非 utf-8 的資料編碼, 也可以寫成 # -&lt;em&gt;- coding: utf-8 -&lt;/em&gt;-&lt;/p&gt;
+&lt;p&gt;第2行的井字號開頭, 屬於單行註解, Python3 解譯程式碼時, 會跳過這些註解, 不會執行其內容&lt;/p&gt;
+&lt;p&gt;第3行是導入 Python 內建的 random 模組&lt;/p&gt;
+&lt;p&gt;第4行為空白行&lt;/p&gt;
+&lt;p&gt;第5行則設定一個變數, 名稱為”標準答案”, 然後利用所導入的 random 模組中的 randint 方法, 產生一個介於且包括頭尾數字的亂數整數, 這裡的 random.randint(1, 100), 會產生一個大於等於 1 但是小於等於 100 的整數.&lt;/p&gt;
+&lt;p&gt;第6行則是利用 input() 函式來取使用者所猜測的數字, 而 input() 中的輸入為字串, 式用來提示使用者所要輸入的資料格式或範圍, 利用 input 取得的資料型別為字串, 因為隨後需要利用整數比對的判斷式來判定大小, 因此再將所取得的字串, 利用 int() 函式, 轉為 integer 整數, 取得輸入後, 再將此猜測的整數, 對應到”你猜的數字”變數.&lt;/p&gt;
+&lt;p&gt;第7行則是將 1 對應到猜測次數所對應的記憶體空間, 也就是將”猜測次數”變數設為 1.&lt;/p&gt;
+&lt;p&gt;第8行之後到第14行是屬於 while 迴圈的內容, 由於 Python 程式不像 C, C++, 或 Java 等利用 {} 來界定迴圈的執行內容, 而是利用資料的縮排來界定各迴圈的執行範圍, 因此, 第9行開始縮排4個空白的區域就是 while 的有效執行範圍, 而且第8行最後因為 while 迴圈的定義尚未完成, 因此必須要在最後加上冒號, 相同的語法, 在第9行的 if, 與第11行的 else 也都是相同格式, 都必須在該行最後, 加上冒號.&lt;/p&gt;
+&lt;p&gt;第8行中的 != 是判斷式中的不等於, 假如標準答案不等於使用者所猜的數字, 則程式進入提示區域, 若太大, 則回覆所猜的數字過大, 否則回覆過小, 完成 if 的判斷提示區之後, 因為使用者尚未猜對, 因此在第13行再次利用 input 與 int 函式取使用者所猜的數字, 並在第14行將猜測數字變數增量1.&lt;/p&gt;
+&lt;p&gt;第14行也可以寫為 猜測數字 = 猜測數字 + 1&lt;/p&gt;
+&lt;p&gt;最後, 假如使用者猜對數字, 則 while 迴圈內容將不再執行, 並在第16行利用 print() 函式印出總共猜幾次的訊息.&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第十一週</title><link href="http://coursemdetw.github.io/reveal/40123256_w11.html" rel="alternate"></link><updated>2015-11-09T16:00:00+08:00</updated><author><name>40123256</name></author><id>tag:coursemdetw.github.io,2015-11-09:reveal/40123256_w11.html</id><summary type="html">&lt;p&gt;計算機程式學習項目:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;工程師的主要任務在解決人所面臨的各種問題 (Problems Solving), 而人的活動分為 3 個主軸類別 Humanites (人文), Science (科學), Goods and Services (產品與服務) (參考資料) – 人文是養份, 科學是依據, 讓工程師創造各種產品與服務來解決人類所面臨的問題&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;電腦在工程解題過程中所扮演的角色 (參考資料)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;(一 ) Information transfer (including library activities) 資訊傳輸 (包括圖書館活動) (一) Git, Github 與 Leo Editor 應用實習&lt;/p&gt;
+&lt;p&gt;(二) Communications (written, visual, and oral) 溝通 (文字, 視覺與口語) (二) 觀看教學影片, 實習影片錄製, 網際投影片製作&lt;/p&gt;
+&lt;p&gt;(三) Data collection and analysis 數據收集與分析 (三)  程式設計專案&lt;/p&gt;
+&lt;p&gt;(四) Design activities of all sorts 各種設計活動 (四) 從單機猜數字遊戲到雲端網際猜數字遊戲&lt;/p&gt;
+&lt;p&gt;(五)Computations of all sorts 各種運算 (五) random 與 math 模組應用&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;人文&lt;/em&gt;: learning concerned with human culture (人類文化), especially literature (文學), history (歷史), art (藝術), music (音樂), and philosophy (哲學)&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;科學&lt;/em&gt;: the intellectual (知識的) and practical (實用的) activity encompassing the systematic study (系統化研習) of the structure and behavior of the physical and natural world (物理與自然世界) through observation and experiment, knowledge of any kind&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;產品與服務&lt;/em&gt;: a substance produced during a natural (天然), chemical (化學), or manufacturing (製造) process and the action of helping or doing work for someone &lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第十週 (學校運動會)</title><link href="http://coursemdetw.github.io/reveal/40123256_w10.html" rel="alternate"></link><updated>2015-11-08T16:00:00+08:00</updated><author><name>40123256</name></author><id>tag:coursemdetw.github.io,2015-11-08:reveal/40123256_w10.html</id><summary type="html">&lt;p&gt;今天是全校運動會，所以停課一週。&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業八 (自我評量)</title><link href="http://coursemdetw.github.io/reveal/40123256_w8.html" rel="alternate"></link><updated>2015-11-06T16:00:00+08:00</updated><author><name>40123256</name></author><id>tag:coursemdetw.github.io,2015-11-06:reveal/40123256_w8.html</id><summary type="html">&lt;iframe src="40123256_cp_w8_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
 &lt;p&gt;&lt;a href="40123256_cp_w8_p.html" target="_blank"&gt;作業八投影片&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
