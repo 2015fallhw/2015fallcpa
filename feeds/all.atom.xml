@@ -1468,9 +1468,12 @@ if X==Y   如果X等於Y&lt;/p&gt;
 window.onload=function(){
 brython(1);
 }
-&lt;/script&gt;&lt;!-- 以下利用 Brython 程式執行繪圖 --&gt;
+&lt;/script&gt;
 
-&lt;p&gt;&lt;canvas id="plotarea" width="500" height="510"&gt;&lt;/canvas&gt;&lt;/p&gt;
+&lt;!-- 以下利用 Brython 程式執行繪圖 --&gt;
+
+&lt;canvas id="plotarea" width="500" height="510"&gt;&lt;/canvas&gt;
+
 &lt;script type="text/python3"&gt;
 # 導入 doc
 from browser import document as doc
@@ -1687,7 +1690,12 @@ ctx.strokeStyle = "#F2E307"
 ctx.stroke()
 
 
-&lt;/script&gt;&lt;script&gt;
+&lt;/script&gt; 
+
+
+
+
+&lt;script&gt;
 window.onload=function(){
 brython(1);
 }
@@ -1712,9 +1720,12 @@ brython(1);
 window.onload=function(){
 brython(1);
 }
-&lt;/script&gt;&lt;!-- 以下利用 Brython 程式執行繪圖 --&gt;
+&lt;/script&gt;
 
-&lt;p&gt;&lt;canvas id="plotarea1" width="400" height="410"&gt;&lt;/canvas&gt;&lt;/p&gt;
+&lt;!-- 以下利用 Brython 程式執行繪圖 --&gt;
+
+&lt;canvas id="plotarea1" width="400" height="410"&gt;&lt;/canvas&gt;
+
 &lt;script type="text/python3"&gt;
 # 導入 doc
 from browser import document as doc
@@ -1821,7 +1832,10 @@ ctx.lineTo(118.5,310)
 ctx.beginPath()
 
 
-&lt;/script&gt;&lt;script&gt;
+&lt;/script&gt; 
+
+
+&lt;script&gt;
 window.onload=function(){
 brython(1);
 }
@@ -1846,9 +1860,12 @@ brython(1);
 window.onload=function(){
 brython(1);
 }
-&lt;/script&gt;&lt;!-- 以下利用 Brython 程式執行繪圖 --&gt;
+&lt;/script&gt;
 
-&lt;p&gt;&lt;canvas id="plotarea2" width="500" height="500"&gt;&lt;/canvas&gt;&lt;/p&gt;
+&lt;!-- 以下利用 Brython 程式執行繪圖 --&gt;
+
+&lt;canvas id="plotarea2" width="500" height="500"&gt;&lt;/canvas&gt;
+
 &lt;script type="text/python3"&gt;
 # 導入 doc
 from browser import document as doc
@@ -4421,9 +4438,12 @@ notebook --ip&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nv"&gt;%thisip%
 window.onload=function(){
 brython(1);
 }
-&lt;/script&gt;&lt;!-- 以下利用 Brython 程式執行繪圖 --&gt;
+&lt;/script&gt;
 
-&lt;p&gt;&lt;canvas id="plotarea" width="300" height="200"&gt;&lt;/canvas&gt;&lt;/p&gt;
+&lt;!-- 以下利用 Brython 程式執行繪圖 --&gt;
+
+&lt;canvas id="plotarea" width="300" height="200"&gt;&lt;/canvas&gt;
+
 &lt;script type="text/python3"&gt;
 # 導入 doc
 from browser import document as doc
@@ -4502,9 +4522,12 @@ ctx.fill()
 window.onload=function(){
 brython(1);
 }
-&lt;/script&gt;&lt;!-- 以下利用 Brython 程式執行繪圖 --&gt;
+&lt;/script&gt;
 
-&lt;p&gt;&lt;canvas id="9903_plotarea" width="600" height="600"&gt;&lt;/canvas&gt;&lt;/p&gt;
+&lt;!-- 以下利用 Brython 程式執行繪圖 --&gt;
+
+&lt;canvas id="9903_plotarea" width="600" height="600"&gt;&lt;/canvas&gt;
+
 &lt;script type="text/python3"&gt;
 import math
 from browser import html, doc
