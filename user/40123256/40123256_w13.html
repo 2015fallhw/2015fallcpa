@@ -2,7 +2,7 @@
 <html lang="en"
 >
 <head>
-    <title>2015 計算機程式 作業六 - 2015FALL 40123256 CPA 作業 (期中報告)</title>
+    <title>2015 計算機程式 第十三週 - 2015FALL 40123256 CPA 作業 (期中報告)</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -166,18 +166,18 @@ init_mathjax = function() {
 init_mathjax();
 </script>
 
-<link rel="canonical" href="./40123256_w6.html">
+<link rel="canonical" href="./40123256_w13.html">
 
         <meta name="author" content="40123256" />
         <meta name="keywords" content="pelican,publishing" />
-        <meta name="description" content="[w6] 10/23: Zero to Hero with Python, 建立個人@path user在作業協同倉儲, 解決GitHub倉儲新舊版本衝突" />
+        <meta name="description" content="[w13] 猜顏色遊戲" />
 
         <meta property="og:site_name" content="2015FALL 40123256 CPA 作業 (期中報告)" />
         <meta property="og:type" content="article"/>
-        <meta property="og:title" content="2015 計算機程式 作業六"/>
-        <meta property="og:url" content="./40123256_w6.html"/>
-        <meta property="og:description" content="[w6] 10/23: Zero to Hero with Python, 建立個人@path user在作業協同倉儲, 解決GitHub倉儲新舊版本衝突"/>
-        <meta property="article:published_time" content="2015-10-23" />
+        <meta property="og:title" content="2015 計算機程式 第十三週"/>
+        <meta property="og:url" content="./40123256_w13.html"/>
+        <meta property="og:description" content="[w13] 猜顏色遊戲"/>
+        <meta property="article:published_time" content="2015-11-11" />
             <meta property="article:section" content="Python" />
             <meta property="article:tag" content="pelican" />
             <meta property="article:tag" content="publishing" />
@@ -232,10 +232,10 @@ init_mathjax();
         <article>
             <header class="page-header">
                 <h1>
-                    <a href="./40123256_w6.html"
+                    <a href="./40123256_w13.html"
                        rel="bookmark"
-                       title="Permalink to 2015 計算機程式 作業六">
-                        2015 計算機程式 作業六
+                       title="Permalink to 2015 計算機程式 第十三週">
+                        2015 計算機程式 第十三週
                     </a>
                 </h1>
             </header>
@@ -245,7 +245,7 @@ init_mathjax();
 <footer class="post-info">
     <span class="label label-default">Date</span>
     <span class="published">
-        <i class="fa fa-calendar"></i><time datetime="2015-10-23T16:00:00+08:00"> 週五 23 十月 2015</time>
+        <i class="fa fa-calendar"></i><time datetime="2015-11-11T16:00:00+08:00"> 週三 11 十一月 2015</time>
     </span>
 
 
@@ -257,25 +257,84 @@ init_mathjax();
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
-                <iframe src="40123256_cp_w6_p.html" width="500" height="300"></iframe>
+                <p><pre class="brush:python;">
+import random</p>
+<h1>產生標準答案</h1>
+<h1>利用 list 數列資料型別建立顏色選項</h1>
+<h1>Red 紅色, White 白色, Yellow 黃色, Green 綠色, Blue 藍色, Purple 紫色, 假設顏色值不會重複</h1>
+<p>print('''遊戲規則說明: 可選顏色值, \nRed 紅色, White 白色, Yellow 黃色, Green 綠色, \nBlue 藍色, Purple 紫色, \nRBYGBP, \nX 表示位置與顏色都對, O 表示顏色對, 但是位置不對.
+''')</p>
+<p>顏色選項 = ["R", "W", "Y", "G", "B", "P"]
+標準答案 = random.sample(顏色選項, 4)  <br />
+print (標準答案)</p>
+<p>顏色字串 = ""
+幾次決勝 = 9
+猜測次數 = 0
+遊戲進行中 = True</p>
+<p>print ("總共有", 幾次決勝 - 猜測次數, "次機會,可以猜!")</p>
+<p>for i in range(len(顏色選項)):
+    顏色字串 += 顏色選項[i]</p>
+<h1>print (顏色字串)</h1>
+<p>while 遊戲進行中:
+    位置顏色都正確 = ""
+    顏色對位置錯 = ""
+    # 將使用者的輸入轉為大寫英文字母
+    使用者猜測輸入 = input("請從下列顏色值中選四個, "+顏色字串+": ").upper()
+    猜測次數 += 1</p>
+<div class="highlight"><pre># 檢驗是否輸入四個顏色字母
+if len(使用者猜測輸入) != len(標準答案):
+    print (&quot;\n只能猜四個顏色, 請重猜!&quot;)
+    print (&quot;\n剩下&quot;, 幾次決勝 - 猜測次數, &quot;次機會,可以猜: &quot;)
+    continue
+# 判斷是否重複選擇相同顏色
+if len(使用者猜測輸入) &amp;gt; len(set(使用者猜測輸入)):
+    print (&quot;\n顏色值不能重複！&quot;)
+    print (&quot;\n剩下&quot;, 幾次決勝 - 猜測次數, &quot;次機會,可以猜: &quot;)
+    continue
+for i in range(4):
+    # 判斷是否從顏色選項輸入
+    if 使用者猜測輸入[i] not in 顏色選項:
+        print (&quot;\n只能從下列顏色選項中輸入!&quot;, 顏色選項)
+        print (&quot;\n剩下&quot;, 幾次決勝 - 猜測次數, &quot;次機會,可以猜: &quot;)
+        continue
 
-<p><a href="40123256_cp_w6_p.html" target="_blank">作業六投影片</a></p>
-<ul>
-<li><strong>Zero to Hero</strong> with Python:<ul>
-<li>C:\Ana3_2015\data\project\cp\zero_to_hero(有字幕說明)</li>
-<li>學習建議: 第一次練習盲聽, 第二次字幕對應(查單字)學習</li>
-<li>影片撥放器: VLCPortable (支援flv,mp4播放)</li>
-</ul>
-</li>
-</ul>
-<p>解決新舊版本衝突: 關閉頭尾對應程式</p>
-<p>git pull: 拉回倉儲最新版本資料</p>
-<ul>
-<li><strong>SciTE</strong>: <ul>
-<li>Ctrl F: 搜尋錯誤代碼"&lt;", "=", "&gt;"(7個)</li>
-</ul>
-</li>
-</ul>
+if 位置顏色都正確 != &quot;XXXX&quot;:
+    for i in range(4):
+        if 使用者猜測輸入[i] == 標準答案[i]:
+            位置顏色都正確 += &quot;X&quot;
+        if  使用者猜測輸入[i] != 標準答案[i] and 使用者猜測輸入[i] in 標準答案:
+            顏色對位置錯 += &quot;O&quot;
+    print (位置顏色都正確 +  顏色對位置錯 + &quot;\n&quot;)
+
+if 位置顏色都正確 == &quot;XXXX&quot;:
+    if 猜測次數 == 1:
+        print (&quot;太神奇了, 1 次就猜對!&quot;)
+    else:
+        print (&quot;還不錯... 總共猜了 &quot; + str(猜測次數) + &quot; 次, 終於猜對!&quot;)
+    遊戲進行中 = False
+
+if 猜測次數&amp;gt;= 1 and 猜測次數 = 幾次決勝:
+    print (&quot;沒有猜對! 願賭服輸, 答案顏色值為: &quot; + str(標準答案))  
+    遊戲進行中 = False
+
+# 詢問要不要再玩
+while 遊戲進行中 == False:
+    遊戲結束詢問 = input(&quot;\n要不要再玩 (Y/N)?&quot;).upper()  
+    # 猜測次數歸零
+    猜測次數 = 0
+    if 遊戲結束詢問 ==&quot;N&quot;:
+        print (&quot;歡迎再回來玩!&quot;)
+    elif 遊戲結束詢問 == &quot;Y&quot;:
+        遊戲進行中 = True
+        # 重新產生標準答案
+        標準答案 = random.sample(顏色選項, 4)     
+        #print (標準答案)
+        print (&quot;好, 再玩一次...&quot;)
+        print (&quot;總共有&quot;, 幾次決勝 - 猜測次數, &quot;次機會,可以猜!&quot;)
+</pre></div>
+
+
+</pre>
             </div>
             <!-- /.entry-content -->
     <hr/>
@@ -287,8 +346,8 @@ init_mathjax();
             /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
             var disqus_shortname = '2015fall'; // required: replace example with your forum shortname
 
-                    var disqus_identifier = '40123256_w6';
-                var disqus_url = './40123256_w6.html';
+                    var disqus_identifier = '40123256_w13';
+                var disqus_url = './40123256_w13.html';
 
             var disqus_config = function () {
                 this.language = "en";
