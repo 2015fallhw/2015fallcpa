@@ -260,7 +260,9 @@ ctx.lineTo(362, 105)
 ctx.strokeStyle = "rgb(0, 255, 0)"
 ctx.stroke()
 
-&lt;/script&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第十四週</title><link href="http://coursemdetw.github.io/reveal/40123227_hw_w14.html" rel="alternate"></link><updated>2015-11-12T16:00:00+08:00</updated><author><name>40123227</name></author><id>tag:coursemdetw.github.io,2015-11-12:reveal/40123227_hw_w14.html</id><summary type="html">&lt;ul&gt;
+&lt;/script&gt;
+
+&lt;p&gt;&lt;a href="http://imgur.com/QMmRhyi"&gt;&lt;img src="http://i.imgur.com/QMmRhyi.png" title="source: imgur.com" /&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第十四週</title><link href="http://coursemdetw.github.io/reveal/40123227_hw_w14.html" rel="alternate"></link><updated>2015-11-12T16:00:00+08:00</updated><author><name>40123227</name></author><id>tag:coursemdetw.github.io,2015-11-12:reveal/40123227_hw_w14.html</id><summary type="html">&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;無內容&lt;/strong&gt;:&lt;/li&gt;
 &lt;/ul&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第十三週</title><link href="http://coursemdetw.github.io/reveal/40123227_hw_w13.html" rel="alternate"></link><updated>2015-11-11T16:00:00+08:00</updated><author><name>40123227</name></author><id>tag:coursemdetw.github.io,2015-11-11:reveal/40123227_hw_w13.html</id><summary type="html">&lt;p&gt;&lt;pre class="brush:python;"&gt;
 import random&lt;/p&gt;
