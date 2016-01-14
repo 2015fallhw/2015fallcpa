@@ -2,7 +2,7 @@
 <html lang="en"
 >
 <head>
-    <title>2015 計算機程式 第十二週作業 - 2015FALL 40123227 CPA 作業 (期中報告)</title>
+    <title>2015 計算機程式 第十二週 - 2015FALL 40123227 CPA 作業 (期中報告)</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -170,13 +170,13 @@ init_mathjax();
 
         <meta name="author" content="40123227" />
         <meta name="keywords" content="pelican,publishing" />
-        <meta name="description" content="[w12]" />
+        <meta name="description" content="[w12] 猜數字遊戲" />
 
         <meta property="og:site_name" content="2015FALL 40123227 CPA 作業 (期中報告)" />
         <meta property="og:type" content="article"/>
-        <meta property="og:title" content="2015 計算機程式 第十二週作業"/>
+        <meta property="og:title" content="2015 計算機程式 第十二週"/>
         <meta property="og:url" content="./40123227_hw_w12.html"/>
-        <meta property="og:description" content="[w12]"/>
+        <meta property="og:description" content="[w12] 猜數字遊戲"/>
         <meta property="article:published_time" content="2015-11-10" />
             <meta property="article:section" content="Python" />
             <meta property="article:tag" content="pelican" />
@@ -234,8 +234,8 @@ init_mathjax();
                 <h1>
                     <a href="./40123227_hw_w12.html"
                        rel="bookmark"
-                       title="Permalink to 2015 計算機程式 第十二週作業">
-                        2015 計算機程式 第十二週作業
+                       title="Permalink to 2015 計算機程式 第十二週">
+                        2015 計算機程式 第十二週
                     </a>
                 </h1>
             </header>
@@ -257,31 +257,42 @@ init_mathjax();
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
-                <ul>
-<li><strong>期中考核項目</strong>:<ul>
-<li><strong>[50%]</strong> 個人作業頁面(全班協同區)<ul>
-<li><a href="http://2015fallhw.github.io/2015fallcpb/user/40123157/" target="_blank">2015fallcpb/user/40123227</a></li>
-</ul>
-</li>
-<li><strong>[60%]</strong> 個人作業倉儲(gh-pages)<ul>
-<li><a href="http://40123227.github.io/40123227/" target="_blank">40123227.github.io/40123227</a></li>
-</ul>
-</li>
-<li target="_blank"><strong>[65%]</strong> 作業練習影片(含語音說明)</li>
-<li><strong>[75%]</strong> 作業投影片, 筆記, 操作過程, 心得<ul>
-<li>作業投影片, 筆記, 操作過程: 已於個人作業頁面完成建置</li>
-<li><strong>學習心得</strong>:
-    一步步認真踏實，才能領悟。</li>
-</ul>
-</li>
-<li><strong>[85%]</strong> 標題, 關鍵字, 內容<ul>
-<li>依課程評量標準而定</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<p><strong>自評成績</strong>: 75分 </p>
+                <p>在零基礎學 Python 中有一個單機執行的猜數字遊戲, 在 KMOL 的系列課程中, 可以單單從這個遊戲開始, 逐步體會計算機程式、網際內容管理、電腦輔助設計實習與協同產品設計實習等課程的整合應用.</p>
+<p>猜數字遊戲一開始由系統產生一個標準答案 – 這個答案可以類比到機械設計工程師設計產品過程中所希望完成的最佳化設計結果.</p>
+<p>接下來, 遊戲會透過介面設計取得使用者的猜數字輸入 – 而此使用者的輸入過程, 可以類比到在機械設計工程師逐步達成最後設計之前, 因為各種分析考量的需要, 或協力廠商間設計參數的變更需求, 必須透過介面設計將各種輸入納入系統中.</p>
+<p>接下來, 遊戲會根據標準答案與使用者的輸入進行比對, 然後回應比對結果 – 此階段之於產品開發流程, 可以類比為根據使用者所採用的電腦輔助設計分析方法, 取得分析的結果, 可以透過工程分析方法顯示目前設計結果的優劣, 或者以人工方式來評判設計分析的結果.</p>
+<p>接下來, 若使用者已經猜對標準答案, 則遊戲停止, 否則重複輸入、比對與回應的迴圈 – 此階段於產品開發流程, 可以類比為若設計團隊認為已經達到所需要的設計結果, 則設計結束, 並且投入下一產品開發的製造規劃階段 (這裡假設設計與製造可以完全切割的最簡單理想範例), 否則進行重複修改輸入、評估設計結果的迴圈, 一直到取得滿意的設計結果為止.</p>
+<p>接下來將透過 3 個不同的環境來實現這個猜數字遊戲:</p>
+<p>單機執行環境 – 使用指令操作執行
+網際執行環境 (localhost、近端主機與雲端主機) – 使用 CherryPy 與 Flask 網際框架模式執行
+Ajax 與 Websockets 模式下的網際執行環境 (localhost、近端主機與雲端主機) – 使用 CherryPy 與 Flask 網際框架模式加上 Brython 執行
+上述網際近端主機 (nginx) 與雲端主機 (OpenShift) 將透過 uwsgi 架構下執行</p>
+<h1>coding: utf-8</h1>
+<h1>猜數字遊戲</h1>
+<p>import random</p>
+<p>標準答案 = random.randint(1, 100)
+你猜的數字 = int(input("請輸入您所猜的整數:"))
+猜測次數 = 1
+while 標準答案 != 你猜的數字:
+    if 標準答案 &lt; 你猜的數字:
+        print("太大了，再猜一次 :)加油")
+    else:
+        print("太小了，再猜一次 :)加油")
+    你猜的數字 = int(input("請輸入您所猜的整數:"))
+    猜測次數 += 1</p>
+<p>print("猜對了！總共猜了", 猜測次數, "次")</p>
+<p>上列程式碼說明:
+第1行為程式檔案內文的編碼宣告, 由於 Python3 內定的程式內文編碼為 utf-8, 因此一般可以不用宣告, 除非使用非 utf-8 的資料編碼, 也可以寫成 # -<em>- coding: utf-8 -</em>-</p>
+<p>第2行的井字號開頭, 屬於單行註解, Python3 解譯程式碼時, 會跳過這些註解, 不會執行其內容</p>
+<p>第3行是導入 Python 內建的 random 模組</p>
+<p>第4行為空白行</p>
+<p>第5行則設定一個變數, 名稱為”標準答案”, 然後利用所導入的 random 模組中的 randint 方法, 產生一個介於且包括頭尾數字的亂數整數, 這裡的 random.randint(1, 100), 會產生一個大於等於 1 但是小於等於 100 的整數.</p>
+<p>第6行則是利用 input() 函式來取使用者所猜測的數字, 而 input() 中的輸入為字串, 式用來提示使用者所要輸入的資料格式或範圍, 利用 input 取得的資料型別為字串, 因為隨後需要利用整數比對的判斷式來判定大小, 因此再將所取得的字串, 利用 int() 函式, 轉為 integer 整數, 取得輸入後, 再將此猜測的整數, 對應到”你猜的數字”變數.</p>
+<p>第7行則是將 1 對應到猜測次數所對應的記憶體空間, 也就是將”猜測次數”變數設為 1.</p>
+<p>第8行之後到第14行是屬於 while 迴圈的內容, 由於 Python 程式不像 C, C++, 或 Java 等利用 {} 來界定迴圈的執行內容, 而是利用資料的縮排來界定各迴圈的執行範圍, 因此, 第9行開始縮排4個空白的區域就是 while 的有效執行範圍, 而且第8行最後因為 while 迴圈的定義尚未完成, 因此必須要在最後加上冒號, 相同的語法, 在第9行的 if, 與第11行的 else 也都是相同格式, 都必須在該行最後, 加上冒號.</p>
+<p>第8行中的 != 是判斷式中的不等於, 假如標準答案不等於使用者所猜的數字, 則程式進入提示區域, 若太大, 則回覆所猜的數字過大, 否則回覆過小, 完成 if 的判斷提示區之後, 因為使用者尚未猜對, 因此在第13行再次利用 input 與 int 函式取使用者所猜的數字, 並在第14行將猜測數字變數增量1.</p>
+<p>第14行也可以寫為 猜測數字 = 猜測數字 + 1</p>
+<p>最後, 假如使用者猜對數字, 則 while 迴圈內容將不再執行, 並在第16行利用 print() 函式印出總共猜幾次的訊息.</p>
             </div>
             <!-- /.entry-content -->
     <hr/>

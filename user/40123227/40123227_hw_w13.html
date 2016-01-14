@@ -170,13 +170,13 @@ init_mathjax();
 
         <meta name="author" content="40123227" />
         <meta name="keywords" content="pelican,publishing" />
-        <meta name="description" content="[w13]" />
+        <meta name="description" content="[w13] 猜顏色遊戲" />
 
         <meta property="og:site_name" content="2015FALL 40123227 CPA 作業 (期中報告)" />
         <meta property="og:type" content="article"/>
         <meta property="og:title" content="2015 計算機程式 第十三週"/>
         <meta property="og:url" content="./40123227_hw_w13.html"/>
-        <meta property="og:description" content="[w13]"/>
+        <meta property="og:description" content="[w13] 猜顏色遊戲"/>
         <meta property="article:published_time" content="2015-11-11" />
             <meta property="article:section" content="Python" />
             <meta property="article:tag" content="pelican" />
@@ -257,31 +257,84 @@ init_mathjax();
     
 </footer><!-- /.post-info -->                    </div>
                 </div>
-                <ul>
-<li><strong>期中考核項目</strong>:<ul>
-<li><strong>[50%]</strong> 個人作業頁面(全班協同區)<ul>
-<li><a href="http://2015fallhw.github.io/2015fallcpb/user/40123157/" target="_blank">2015fallcpb/user/40123227</a></li>
-</ul>
-</li>
-<li><strong>[60%]</strong> 個人作業倉儲(gh-pages)<ul>
-<li><a href="http://40123227.github.io/40123227/" target="_blank">40123227.github.io/40123227</a></li>
-</ul>
-</li>
-<li target="_blank"><strong>[65%]</strong> 作業練習影片(含語音說明)</li>
-<li><strong>[75%]</strong> 作業投影片, 筆記, 操作過程, 心得<ul>
-<li>作業投影片, 筆記, 操作過程: 已於個人作業頁面完成建置</li>
-<li><strong>學習心得</strong>:
-    一步步認真踏實，才能領悟。</li>
-</ul>
-</li>
-<li><strong>[85%]</strong> 標題, 關鍵字, 內容<ul>
-<li>依課程評量標準而定</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<p><strong>自評成績</strong>: 75分 </p>
+                <p><pre class="brush:python;">
+import random</p>
+<h1>產生標準答案</h1>
+<h1>利用 list 數列資料型別建立顏色選項</h1>
+<h1>Red 紅色, White 白色, Yellow 黃色, Green 綠色, Blue 藍色, Purple 紫色, 假設顏色值不會重複</h1>
+<p>print('''遊戲規則說明: 可選顏色值, \nRed 紅色, White 白色, Yellow 黃色, Green 綠色, \nBlue 藍色, Purple 紫色, \nRBYGBP, \nX 表示位置與顏色都對, O 表示顏色對, 但是位置不對.
+''')</p>
+<p>顏色選項 = ["R", "W", "Y", "G", "B", "P"]
+標準答案 = random.sample(顏色選項, 4)  <br />
+print (標準答案)</p>
+<p>顏色字串 = ""
+幾次決勝 = 9
+猜測次數 = 0
+遊戲進行中 = True</p>
+<p>print ("總共有", 幾次決勝 - 猜測次數, "次機會,可以猜!")</p>
+<p>for i in range(len(顏色選項)):
+    顏色字串 += 顏色選項[i]</p>
+<h1>print (顏色字串)</h1>
+<p>while 遊戲進行中:
+    位置顏色都正確 = ""
+    顏色對位置錯 = ""
+    # 將使用者的輸入轉為大寫英文字母
+    使用者猜測輸入 = input("請從下列顏色值中選四個, "+顏色字串+": ").upper()
+    猜測次數 += 1</p>
+<div class="highlight"><pre># 檢驗是否輸入四個顏色字母
+if len(使用者猜測輸入) != len(標準答案):
+    print (&quot;\n只能猜四個顏色, 請重猜!&quot;)
+    print (&quot;\n剩下&quot;, 幾次決勝 - 猜測次數, &quot;次機會,可以猜: &quot;)
+    continue
+# 判斷是否重複選擇相同顏色
+if len(使用者猜測輸入) &amp;gt; len(set(使用者猜測輸入)):
+    print (&quot;\n顏色值不能重複！&quot;)
+    print (&quot;\n剩下&quot;, 幾次決勝 - 猜測次數, &quot;次機會,可以猜: &quot;)
+    continue
+for i in range(4):
+    # 判斷是否從顏色選項輸入
+    if 使用者猜測輸入[i] not in 顏色選項:
+        print (&quot;\n只能從下列顏色選項中輸入!&quot;, 顏色選項)
+        print (&quot;\n剩下&quot;, 幾次決勝 - 猜測次數, &quot;次機會,可以猜: &quot;)
+        continue
+
+if 位置顏色都正確 != &quot;XXXX&quot;:
+    for i in range(4):
+        if 使用者猜測輸入[i] == 標準答案[i]:
+            位置顏色都正確 += &quot;X&quot;
+        if  使用者猜測輸入[i] != 標準答案[i] and 使用者猜測輸入[i] in 標準答案:
+            顏色對位置錯 += &quot;O&quot;
+    print (位置顏色都正確 +  顏色對位置錯 + &quot;\n&quot;)
+
+if 位置顏色都正確 == &quot;XXXX&quot;:
+    if 猜測次數 == 1:
+        print (&quot;太神奇了, 1 次就猜對!&quot;)
+    else:
+        print (&quot;還不錯... 總共猜了 &quot; + str(猜測次數) + &quot; 次, 終於猜對!&quot;)
+    遊戲進行中 = False
+
+if 猜測次數&amp;gt;= 1 and 猜測次數 = 幾次決勝:
+    print (&quot;沒有猜對! 願賭服輸, 答案顏色值為: &quot; + str(標準答案))  
+    遊戲進行中 = False
+
+# 詢問要不要再玩
+while 遊戲進行中 == False:
+    遊戲結束詢問 = input(&quot;\n要不要再玩 (Y/N)?&quot;).upper()  
+    # 猜測次數歸零
+    猜測次數 = 0
+    if 遊戲結束詢問 ==&quot;N&quot;:
+        print (&quot;歡迎再回來玩!&quot;)
+    elif 遊戲結束詢問 == &quot;Y&quot;:
+        遊戲進行中 = True
+        # 重新產生標準答案
+        標準答案 = random.sample(顏色選項, 4)     
+        #print (標準答案)
+        print (&quot;好, 再玩一次...&quot;)
+        print (&quot;總共有&quot;, 幾次決勝 - 猜測次數, &quot;次機會,可以猜!&quot;)
+</pre></div>
+
+
+</pre>
             </div>
             <!-- /.entry-content -->
     <hr/>

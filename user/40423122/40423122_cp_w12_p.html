@@ -1,0 +1,75 @@
+<!--
+這個檔案展示了 reveal.js 投影片資料的基本架構
+其中使用 "reveal" class 與 "slides" class 來界定投影片的資料範圍
+而各投影片則以 <section></section> 標示
+且支援平行與垂直的投影片配置方法
+-->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>40423122</title>
+<link rel="stylesheet" href="css/reveal.min.css">
+	<link rel="stylesheet" href="css/theme/default.css" id="theme">	
+	<!--增加對於 IE 早期版本的支援 -->
+	<!--[if lt IE 9]>
+	<script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+<body>
+<!-- 將整個投影片包在 "reveal" class 中 -->
+<div class="reveal">
+<!-- 將所有投影片包在 "slides" class 中 -->
+<div class="slides">
+<!-- 以下為投影片 -->
+<!-- 每一個 section 都代表一張投影片,  -->
+<!-- section 標註中的多 section 標註, 將往下垂直延伸 -->
+<section>
+    <h1>2015/12/4   猜數字遊戲 </h1>
+    <p>40423122 四設一甲 林國蓁</p>		
+</section>
+
+
+<section>
+<h1>程式碼</h1>
+ <p>#coding: utf-8
+# 猜數字遊戲
+import random
+   
+標準答案 = random.randint(1, 100)
+你猜的數字 = int(input("請輸入您所猜的整數:"))
+猜測次數 = 1
+while 標準答案 != 你猜的數字:
+ if 標準答案 < 你猜的數字:
+print("太大了，再猜一次 :)加油")
+else:
+print("太小了，再猜一次 :)加油")
+你猜的數字 = int(input("請輸入您所猜的整數:"))
+猜測次數 += 1
+   
+print("猜對了！總共猜了", 猜測次數, "次")</p>
+
+</section>
+
+<section>
+<h1>心得</h1>
+猜數字還滿好玩的,尤其是可以一次就猜對,就可以獲得強烈的成就感。
+</section>
+
+<section>
+    <h1>自評</h1>
+    <p>雖然照著老師做是免強可以,不過還是有許多需改善的部分,個人對這周學習表現給70分</p>
+</section>
+				
+</div>
+</div>
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.min.js"></script>
+<script>
+    // 啟動 Reveal.
+    Reveal.initialize({
+    });
+</script>
+	
+</body>
+
