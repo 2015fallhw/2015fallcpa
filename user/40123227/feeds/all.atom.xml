@@ -181,6 +181,10 @@ canvas.bind('click', on_canvas_click, False)
 &lt;p&gt;&lt;strong&gt;3.請利用流程圖, 簡要說明近端猜數字遊戲與猜顏色遊戲程式碼如何設計與運作&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://imgur.com/P9vZLUM"&gt;&lt;img src="http://i.imgur.com/P9vZLUM.jpg" title="source: imgur.com" /&gt;&lt;/p&gt;
 &lt;p&gt;**4. 請各組員利用 Brython, 分別在各分組的 pelican 網頁文章中, 繪製一個歡慶耶誕的 2D 圖形&lt;/p&gt;
+&lt;!-- 以下利用 Brython 程式執行繪圖 --&gt;
+
+&lt;canvas id="plotarea" width="500" height="500"&gt;&lt;/canvas&gt;
+
 &lt;script type="text/python3"&gt;
 # 導入 doc
 from browser import document as doc
