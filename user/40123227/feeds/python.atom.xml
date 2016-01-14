@@ -179,7 +179,84 @@ canvas.bind('click', on_canvas_click, False)
 &lt;p&gt;commands, exammples, Python33, tcc 與 wscite 等五個目錄, 其中 Python33 為可攜的 Python 3.3.1, tcc 為 TinyC 編譯程式&lt;/p&gt;
 &lt;p&gt;, scite 則為 SciTE 編輯器.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;3.請利用流程圖, 簡要說明近端猜數字遊戲與猜顏色遊戲程式碼如何設計與運作&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://imgur.com/P9vZLUM"&gt;&lt;img src="http://i.imgur.com/P9vZLUM.jpg" title="source: imgur.com" /&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第十四週</title><link href="http://coursemdetw.github.io/reveal/40123227_hw_w14.html" rel="alternate"></link><updated>2015-11-12T16:00:00+08:00</updated><author><name>40123227</name></author><id>tag:coursemdetw.github.io,2015-11-12:reveal/40123227_hw_w14.html</id><summary type="html">&lt;ul&gt;
+&lt;p&gt;&lt;a href="http://imgur.com/P9vZLUM"&gt;&lt;img src="http://i.imgur.com/P9vZLUM.jpg" title="source: imgur.com" /&gt;&lt;/p&gt;
+&lt;p&gt;**4. 請各組員利用 Brython, 分別在各分組的 pelican 網頁文章中, 繪製一個歡慶耶誕的 2D 圖形&lt;/p&gt;
+&lt;script type="text/python3"&gt;
+# 導入 doc
+from browser import document as doc
+from browser import console
+import math
+
+# 準備繪圖畫布
+canvas = doc["plotarea"]
+ctx = canvas.getContext("2d")
+
+# 進行座標轉換, x 軸不變, y 軸反向且移動 500 光點
+ctx.setTransform(1, 0, 0, -1, 0, 500)
+
+# 大禮物(方形)
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(94, 30)
+ctx.lineTo(86, 180)
+ctx.lineTo(293, 180)
+ctx.lineTo(279, 30)
+ctx.lineTo(94, 30)
+# 大禮物(緞帶)
+ctx.lineTo(91, 92)
+ctx.lineTo(285, 86)
+ctx.lineTo(286, 105)
+ctx.lineTo(90, 117)
+ctx.lineTo(86, 180)
+ctx.lineTo(174, 180)
+ctx.lineTo(179, 30)
+ctx.lineTo(199, 30)
+ctx.lineTo(199, 180)
+# 大禮物(蝴蝶結)
+ctx.lineTo(186, 180)
+ctx.lineTo(237, 206)
+ctx.lineTo(228, 256)
+ctx.lineTo(190, 230)
+ctx.lineTo(186, 180)
+ctx.lineTo(178, 241)
+ctx.lineTo(144, 279)
+ctx.lineTo(138, 223)
+ctx.lineTo(186, 180)
+ctx.strokeStyle = "rgb(255, 0, 0)"
+ctx.stroke()
+
+# 小禮物(方形)
+ctx.beginPath()
+ctx.lineWidth = 3
+ctx.moveTo(316, 30)
+ctx.lineTo(312, 105)
+ctx.lineTo(416, 105)
+ctx.lineTo(409, 30)
+ctx.lineTo(316, 30)
+# 小禮物(緞帶)
+ctx.lineTo(315, 61)
+ctx.lineTo(412, 58)
+ctx.lineTo(413, 76)
+ctx.lineTo(314, 73)
+ctx.lineTo(312, 105)
+ctx.lineTo(356, 105)
+ctx.lineTo(353, 30)
+ctx.lineTo(365, 30)
+ctx.lineTo(369, 105)
+# 小禮物(蝴蝶結)
+ctx.lineTo(362, 105)
+ctx.lineTo(388, 115)
+ctx.lineTo(390, 143)
+ctx.lineTo(368, 127)
+ctx.lineTo(362, 105)
+ctx.lineTo(355, 131)
+ctx.lineTo(328, 140)
+ctx.lineTo(332, 119)
+ctx.lineTo(362, 105)
+ctx.strokeStyle = "rgb(0, 255, 0)"
+ctx.stroke()
+
+&lt;/script&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第十四週</title><link href="http://coursemdetw.github.io/reveal/40123227_hw_w14.html" rel="alternate"></link><updated>2015-11-12T16:00:00+08:00</updated><author><name>40123227</name></author><id>tag:coursemdetw.github.io,2015-11-12:reveal/40123227_hw_w14.html</id><summary type="html">&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;無內容&lt;/strong&gt;:&lt;/li&gt;
 &lt;/ul&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第十三週</title><link href="http://coursemdetw.github.io/reveal/40123227_hw_w13.html" rel="alternate"></link><updated>2015-11-11T16:00:00+08:00</updated><author><name>40123227</name></author><id>tag:coursemdetw.github.io,2015-11-11:reveal/40123227_hw_w13.html</id><summary type="html">&lt;p&gt;&lt;pre class="brush:python;"&gt;
 import random&lt;/p&gt;
