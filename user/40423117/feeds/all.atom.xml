@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>2015FALL 40423117 CADPA 作業</title><link href="http://coursemdetw.github.io/reveal/" rel="alternate"></link><link href="http://coursemdetw.github.io/reveal/feeds/all.atom.xml" rel="self"></link><id>http://coursemdetw.github.io/reveal/</id><updated>2016-01-08T12:20:00+08:00</updated><entry><title>2016 計算機程式 01/08</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w17.html" rel="alternate"></link><updated>2016-01-08T12:20:00+08:00</updated><author><name>40423117</name></author><id>tag:coursemdetw.github.io,2016-01-08:reveal/2015cp_hw_w17.html</id><summary type="html">&lt;!-- 導入 brython.js --&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>2015FALL 40423117 CADPA 作業</title><link href="http://coursemdetw.github.io/reveal/" rel="alternate"></link><link href="http://coursemdetw.github.io/reveal/feeds/all.atom.xml" rel="self"></link><id>http://coursemdetw.github.io/reveal/</id><updated>2016-01-08T11:41:00+08:00</updated><entry><title>2016 計算機程式 01/08</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w17.html" rel="alternate"></link><updated>2016-01-08T11:41:00+08:00</updated><author><name>40423117</name></author><id>tag:coursemdetw.github.io,2016-01-08:reveal/2015cp_hw_w17.html</id><summary type="html">&lt;h1&gt;Brython動畫&lt;/h1&gt;
+&lt;!-- 導入 brython.js --&gt;
 
 &lt;script type="text/javascript" src="http://brython.info/src/brython_dist.js"&gt;&lt;/script&gt;
 
@@ -33,7 +34,7 @@ ctx = canvas.getContext("2d")
 width = canvas.width
 height = canvas.height
 
-n = 20
+n = 15
 # 已知數列內容個數, 先分別與 None 對應
 x = [None]*n
 y = [None]*n
@@ -46,7 +47,7 @@ cor = 0.7
 # 球的彈力係數
 fr = 0.95
 # 球的半徑
-r = 5
+r = 6
 
 for i in range(n):
     x[i] = 300
@@ -109,15 +110,11 @@ def on_canvas_click(ev):
 
 # 只要使用者點擊在畫布上任何地方, 即執行 on_canvas_click 函式
 canvas.bind('click', on_canvas_click, False)
-&lt;/script&gt;
-
-&lt;h3&gt;影片解說&lt;/h3&gt;
-&lt;h2&gt;心得&lt;/h2&gt;
-&lt;h2&gt;自評&lt;/h2&gt;
-&lt;h3&gt;自評分數：****&lt;/h3&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 12/18</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w14.html" rel="alternate"></link><updated>2015-12-18T14:20:00+08:00</updated><author><name>40423117</name></author><id>tag:coursemdetw.github.io,2015-12-18:reveal/2015cp_hw_w14.html</id><summary type="html">&lt;p&gt;以下利用 Brython 在網頁寫 Python 繪圖&lt;/p&gt;
+&lt;/script&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 12/25</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w15.html" rel="alternate"></link><updated>2015-12-25T11:41:00+08:00</updated><author><name>40423117</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/2015cp_hw_w15.html</id><summary type="html">&lt;h3&gt;Merry Christmas  &amp;amp;  Happy new year###&lt;/h3&gt;
+&lt;h3&gt;40423117&lt;/h3&gt;
 &lt;!-- 導入 brython.js --&gt;
 
-&lt;script type="text/javascript" src="js/Brython3.2.3-20151122-082712/brython.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://brython.info/src/brython_dist.js"&gt;&lt;/script&gt;
 
 &lt;!-- 啟動 brython() --&gt;
 
@@ -129,7 +126,7 @@ brython(1);
 
 &lt;!-- 以下利用 Brython 程式執行繪圖 --&gt;
 
-&lt;canvas id="plotarea" width="300" height="200"&gt;&lt;/canvas&gt;
+&lt;canvas id="plotarea" width="500" height="510"&gt;&lt;/canvas&gt;
 
 &lt;script type="text/python3"&gt;
 # 導入 doc
@@ -141,43 +138,341 @@ import math
 canvas = doc["plotarea"]
 ctx = canvas.getContext("2d")
 
+# 盆栽
+ctx.beginPath()
+ctx.moveTo(195, 390)
+ctx.lineTo(195, 420)
+ctx.moveTo(305, 405)
+ctx.lineTo(305, 420)
+ctx.lineWidth = 8
+ctx.strokeStyle = "#381319"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.fillStyle = "#5C2230"
+ctx.fillRect(160,420,180,30)
+ctx.stroke()
+
+ctx.beginPath()
+ctx.fillStyle = "#381319"
+ctx.fillRect(200,420,50,30)
+ctx.stroke()
+
+ctx.beginPath()
+ctx.fillStyle = "#381319"
+ctx.fillRect(180,450,10,20)
+ctx.stroke()
+
+ctx.beginPath()
+ctx.fillStyle = "#5C2230"
+ctx.fillRect(190,450,40,20)
+ctx.stroke()
+
+ctx.beginPath()
+ctx.fillStyle = "#381319"
+ctx.fillRect(230,450,50,20)
+ctx.stroke()
+
+ctx.beginPath()
+ctx.fillStyle = "#5C2230"
+ctx.fillRect(280,450,50,20)
+ctx.stroke()
+
+ctx.beginPath()
+ctx.fillStyle = "#381319"
+ctx.fillRect(180,470,30,20)
+ctx.stroke()
+
+ctx.beginPath()
+ctx.fillStyle = "#5C2230"
+ctx.fillRect(210,470,40,20)
+ctx.stroke()
+
+ctx.beginPath()
+ctx.fillStyle = "#381319"
+ctx.fillRect(250,470,50,20)
+ctx.stroke()
+
+ctx.beginPath()
+ctx.fillStyle = "#5C2230"
+ctx.fillRect(300,470,30,20)
+ctx.stroke()
+
+
+# 樹
+ctx.beginPath()
+ctx.moveTo(220, 75)
+ctx.lineTo(220, 75)
+ctx.lineTo(140, 150)
+ctx.lineTo(185, 150)
+ctx.lineTo(80, 230)
+ctx.lineTo(110, 235)
+ctx.lineTo(50, 275)
+ctx.lineTo(120, 275)
+ctx.lineTo(10, 370)
+ctx.lineTo(145, 405)
+ctx.lineTo(165, 390)
+ctx.lineTo(175, 405)
+ctx.lineTo(225, 380)
+ctx.lineTo(275, 410)
+ctx.lineTo(320, 405)
+ctx.lineTo(415, 405)
+ctx.lineTo(390, 350)
+ctx.lineTo(490, 370)
+ctx.lineTo(385, 275)
+ctx.lineTo(450, 275)
+ctx.lineTo(385, 235)
+ctx.lineTo(410, 230)
+ctx.lineTo(310, 150)
+ctx.lineTo(350, 150)
+ctx.lineTo(270, 70)
+ctx.lineWidth = 10
+ctx.strokeStyle = "#25432D"
+ctx.stroke()
+
+# 星星
+ctx.beginPath()
+ctx.moveTo(240, 5)
+ctx.lineTo(225, 30)
+ctx.lineTo(200, 30)
+ctx.lineTo(215, 50)
+ctx.lineTo(200, 85)
+ctx.lineTo(240, 70)
+ctx.lineTo(280, 85)
+ctx.lineTo(260, 50)
+ctx.lineTo(280, 30)
+ctx.lineTo(250, 30)
+ctx.lineTo(240, 5)
+ctx.lineWidth = 12
+ctx.strokeStyle = "#F2E307"
+ctx.stroke()
+
+# 字體
+ctx.beginPath()
+ctx.fillStyle = "#88A85D"
+ctx.font = "23px Dutch801 XBd BT"
+ctx.fillText("Merry ",13,28)
+ctx.font = "23px Dutch801 XBd BT"
+ctx.fillText("Christmas",13,48)
+ctx.font = "23px Dutch801 XBd BT"
+ctx.fillText("&amp;",13,68)
+ctx.font = "23px Dutch801 XBd BT"
+ctx.fillText("Happy New ",13,88)
+ctx.font = "23px Dutch801 XBd BT"
+ctx.fillText("Year ",13,108)
+ctx.stroke()
+
+ctx.beginPath()
+ctx.fillStyle = "#88A85D"
+ctx.font = "12px ScriptS"
+ctx.fillText("40423117",390,490)
+ctx.stroke()
+
+# 邊框
+
+ctx.beginPath()
+grd=ctx.createLinearGradient(0,0,0,500)
+grd.addColorStop(1,"#F2E307")
+grd.addColorStop(0,"#D98E04")
+ctx.lineWidth = 20
+ctx.strokeStyle = grd
+ctx.moveTo(0,0)
+ctx.lineTo(0,500)
+ctx.stroke()
+
+ctx.beginPath()
+grd=ctx.createLinearGradient(500,0,0,0)
+grd.addColorStop(1,"#D98E04")
+grd.addColorStop(0,"#D90707")
+ctx.strokeStyle = grd
+ctx.moveTo(0,0)
+ctx.lineTo(500,0)
+ctx.stroke()
+
+ctx.beginPath()
+grd=ctx.createLinearGradient(0,500,0,0)
+grd.addColorStop(1,"#D90707")
+grd.addColorStop(0,"#A60505")
+ctx.strokeStyle = grd
+ctx.moveTo(500,0)
+ctx.lineTo(500,500)
+ctx.stroke()
+
+ctx.beginPath()
+grd=ctx.createLinearGradient(0,0,500,0)
+grd.addColorStop(0,"#88A85D")
+grd.addColorStop(1,"#25432D")
+ctx.strokeStyle = grd
+ctx.moveTo(0,510)
+ctx.lineTo(500,510)
+ctx.stroke()
+
+#禮物
+ctx.beginPath()
+ctx.fillStyle = "#88A85D"
+ctx.fillRect(300,300,60,60)
+ctx.stroke()
+
+
+ctx.beginPath()
+ctx.moveTo(300,330)
+ctx.lineTo(360,330)
+
+ctx.moveTo(330,300)
+ctx.lineTo(330,360)
+
+ctx.moveTo(330,300)
+ctx.lineTo(300,275)
+
+ctx.moveTo(330,300)
+ctx.lineTo(320,260)
+
+ctx.moveTo(300,275)
+ctx.lineTo(322,260)
+
+ctx.moveTo(330,300)
+ctx.lineTo(340,260)
+
+ctx.moveTo(330,300)
+ctx.lineTo(360, 280)
+
+ctx.moveTo(338,260)
+ctx.lineTo(362,280)
+
+ctx.lineWidth = 5
+ctx.strokeStyle = "#F2E307"
+ctx.stroke()
+
+
+&lt;/script&gt;
+
+&lt;script&gt;
+window.onload=function(){
+brython(1);
+}
+&lt;/script&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 12/18</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w14.html" rel="alternate"></link><updated>2015-12-18T11:41:00+08:00</updated><author><name>40423117</name></author><id>tag:coursemdetw.github.io,2015-12-18:reveal/2015cp_hw_w14.html</id><summary type="html">&lt;!-- 導入 brython.js --&gt;
+
+&lt;script type="text/javascript" src="http://brython.info/src/brython_dist.js"&gt;&lt;/script&gt;
+
+&lt;!-- 啟動 brython() --&gt;
+
+&lt;script&gt;
+window.onload=function(){
+brython(1);
+}
+&lt;/script&gt;
+
+&lt;!-- 以下利用 Brython 程式執行繪圖 --&gt;
+
+&lt;canvas id="plotarea1" width="200" height="200"&gt;&lt;/canvas&gt;
+
+&lt;script type="text/python3"&gt;
+# 導入 doc
+from browser import document as doc
+from browser import console
+import math
+
+# 準備繪圖畫布
+canvas1 = doc["plotarea1"]
+ctx1 = canvas1.getContext("2d")
+
 # 開始畫直線
-ctx.beginPath()
-ctx.lineWidth = 5
-ctx.moveTo(0, 0)
-ctx.lineTo(100, 100)
-ctx.strokeStyle = "#FF0000"
-ctx.stroke()
+for i in range(11):
+    ctx1.beginPath()
+    ctx1.lineWidth = 5
+    ctx1.moveTo(0,0+i*20 )
+    ctx1.lineTo(200,0+i*20 )
+    ctx1.strokeStyle = "#0000ff"
+    ctx1.stroke()
+for i in range(11):
+    ctx1.beginPath()
+    ctx1.lineWidth = 5
+    ctx1.moveTo(0+i*20, 0)
+    ctx1.lineTo(0+i*20, 200)
+    ctx1.strokeStyle = "#FF0000"
+    ctx1.stroke()
 
-ctx.beginPath()
-ctx.lineWidth = 5
-ctx.moveTo(100, 0)
-ctx.lineTo(0, 100)
-ctx.strokeStyle = "#0000ff"
-ctx.stroke()
-
-x = 100
-y = 100
-
-# 利用 browser 模組中的 console.log 將資料列印在 console 區, 可以用來確認程式中各變數的值, 用法等同 print
-console.log("x 值為"+str(x)+", y 值為"+str(y))
-
-# 利用迴圈畫水平線
-for i in range(5):
-    ctx.beginPath()
-    ctx.lineWidth = 5
-    ctx.moveTo(0, 10+i*20)
-    ctx.lineTo(100, 10+i*20)
-    ctx.strokeStyle = "#0000ff"
-    ctx.stroke()
-&lt;/script&gt;
 
 &lt;/script&gt;
 
-&lt;h3&gt;影片解說&lt;/h3&gt;
-&lt;h2&gt;心得&lt;/h2&gt;
-&lt;h2&gt;自評&lt;/h2&gt;
-&lt;h3&gt;自評分數：****&lt;/h3&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 11/06</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w7.html" rel="alternate"></link><updated>2015-11-06T11:41:00+08:00</updated><author><name>40423117</name></author><id>tag:coursemdetw.github.io,2015-11-06:reveal/2015cp_hw_w7.html</id><summary type="html">&lt;p&gt;以下為作業七內容&lt;/p&gt;
+&lt;script&gt;
+window.onload=function(){
+brython(1);
+}
+&lt;/script&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 12/11</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w13.html" rel="alternate"></link><updated>2015-12-11T11:41:00+08:00</updated><author><name>40423117</name></author><id>tag:coursemdetw.github.io,2015-12-11:reveal/2015cp_hw_w13.html</id><summary type="html"></summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 12/04</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w12.html" rel="alternate"></link><updated>2015-12-04T11:41:00+08:00</updated><author><name>40423117</name></author><id>tag:coursemdetw.github.io,2015-12-04:reveal/2015cp_hw_w12.html</id><summary type="html">&lt;p&gt;猜數字遊戲:&lt;/p&gt;
+&lt;iframe src="40423117_cp_w12_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="40423117_cp_w12_p.html" target="_blank"&gt;12/04 猜數字遊戲 投影片&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;猜數字遊戲&lt;/h1&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;#coding: utf-8&lt;/span&gt;
+&lt;span class="c"&gt;# 猜數字遊戲&lt;/span&gt;
+&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;random&lt;/span&gt;
+
+&lt;span class="err"&gt;標準答案&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;random&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;randint&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;100&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="err"&gt;你猜的數字&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;int&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;input&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;請輸入您所猜的整數:&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;span class="err"&gt;猜測次數&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;
+&lt;span class="k"&gt;while&lt;/span&gt; &lt;span class="err"&gt;標準答案&lt;/span&gt; &lt;span class="o"&gt;!=&lt;/span&gt; &lt;span class="err"&gt;你猜的數字&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="err"&gt;標準答案&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="err"&gt;你猜的數字&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;太大了，再猜一次 :)加油&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="k"&gt;else&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+        &lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;太小了，再猜一次 :)加油&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="err"&gt;你猜的數字&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;int&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;input&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;請輸入您所猜的整數:&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+    &lt;span class="err"&gt;猜測次數&lt;/span&gt; &lt;span class="o"&gt;+=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;
+
+&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;猜對了！總共猜了&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="err"&gt;猜測次數&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;次&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;上列程式碼說明:
+第1行為程式檔案內文的編碼宣告, 由於 Python3 內定的程式內文編碼為 utf-8, 因此一般可以不用宣告, 除非使用非 utf-8 的資料編碼, 也可以寫成 # -&lt;em&gt;- coding: utf-8 -&lt;/em&gt;-&lt;/p&gt;
+&lt;p&gt;第2行的井字號開頭, 屬於單行註解, Python3 解譯程式碼時, 會跳過這些註解, 不會執行其內容&lt;/p&gt;
+&lt;p&gt;第3行是導入 Python 內建的 random 模組&lt;/p&gt;
+&lt;p&gt;第4行為空白行&lt;/p&gt;
+&lt;p&gt;第5行則設定一個變數, 名稱為”標準答案”, 然後利用所導入的 random 模組中的 randint 方法, 產生一個介於且包括頭尾數字的亂數整數, 這裡的 random.randint(1, 100), 會產生一個大於等於 1 但是小於等於 100 的整數.&lt;/p&gt;
+&lt;p&gt;第6行則是利用 input() 函式來取使用者所猜測的數字, 而 input() 中的輸入為字串, 式用來提示使用者所要輸入的資料格式或範圍, 利用 input 取得的資料型別為字串, 因為隨後需要利用整數比對的判斷式來判定大小, 因此再將所取得的字串, 利用 int() 函式, 轉為 integer 整數, 取得輸入後, 再將此猜測的整數, 對應到”你猜的數字”變數.&lt;/p&gt;
+&lt;p&gt;第7行則是將 1 對應到猜測次數所對應的記憶體空間, 也就是將”猜測次數”變數設為 1.&lt;/p&gt;
+&lt;p&gt;第8行之後到第14行是屬於 while 迴圈的內容, 由於 Python 程式不像 C, C++, 或 Java 等利用 {} 來界定迴圈的執行內容, 而是利用資料的縮排來界定各迴圈的執行範圍, 因此, 第9行開始縮排4個空白的區域就是 while 的有效執行範圍, 而且第8行最後因為 while 迴圈的定義尚未完成, 因此必須要在最後加上冒號, 相同的語法, 在第9行的 if, 與第11行的 else 也都是相同格式, 都必須在該行最後, 加上冒號.&lt;/p&gt;
+&lt;p&gt;第8行中的 != 是判斷式中的不等於, 假如標準答案不等於使用者所猜的數字, 則程式進入提示區域, 若太大, 則回覆所猜的數字過大, 否則回覆過小, 完成 if 的判斷提示區之後, 因為使用者尚未猜對, 因此在第13行再次利用 input 與 int 函式取使用者所猜的數字, 並在第14行將猜測數字變數增量1.&lt;/p&gt;
+&lt;p&gt;第14行也可以寫為 猜測數字 = 猜測數字 + 1&lt;/p&gt;
+&lt;p&gt;最後, 假如使用者猜對數字, 則 while 迴圈內容將不再執行, 並在第16行利用 print() 函式印出總共猜幾次的訊息.&lt;/p&gt;
+&lt;iframe src="https://player.vimeo.com/video/151271111" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/151271111"&gt;1204&lt;/a&gt; from &lt;a href="https://vimeo.com/user44960495"&gt;Alex li&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 11/27</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w11.html" rel="alternate"></link><updated>2015-11-27T11:41:00+08:00</updated><author><name>40423117</name></author><id>tag:coursemdetw.github.io,2015-11-27:reveal/2015cp_hw_w11.html</id><summary type="html">&lt;p&gt;修正fix_leo-editor安裝:&lt;/p&gt;
+&lt;iframe src="40423117_cp_w11_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="40423117_cp_w11_p.html" target="_blank"&gt;11/27 修正fix_leo-editor安裝 投影片&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;修正fix_leo-editor安裝&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;開啟教學網頁&lt;/li&gt;
+&lt;li&gt;點選2015fall課程&lt;/li&gt;
+&lt;li&gt;點選遠端(copy)下載fix&lt;/li&gt;
+&lt;li&gt;將檔案解壓縮&lt;/li&gt;
+&lt;li&gt;使用瀏覽器搜尋 leo editor github&lt;/li&gt;
+&lt;li&gt;點選進入網頁&lt;/li&gt;
+&lt;li&gt;點選leo-editor&lt;/li&gt;
+&lt;li&gt;點選release&lt;/li&gt;
+&lt;li&gt;點選broke-abbrev&lt;/li&gt;
+&lt;li&gt;點選Source code(zip)&lt;/li&gt;
+&lt;li&gt;將檔案移至fix資料夾&lt;/li&gt;
+&lt;li&gt;到Ana3_lite2\data\SciTE&lt;/li&gt;
+&lt;li&gt;開啟SciTe.exe &lt;/li&gt;
+&lt;li&gt;使用此編輯器開啟fix.bat&lt;/li&gt;
+&lt;li&gt;在最後增加一行指令
+      指令為  copy leo-editor-broke-abbrev.zip C:\Ana3_2015\data\                            &lt;/li&gt;
+&lt;li&gt;儲存檔案&lt;/li&gt;
+&lt;li&gt;使用此編輯器開啟start.bat&lt;/li&gt;
+&lt;li&gt;將原指令 (第35行) pip install http://140.130.17.17/public/leo-editor-master.zip         &lt;br /&gt;
+     更改為 pip install leo-editor-broke-abbrev.zip&lt;/li&gt;
+&lt;li&gt;儲存檔案&lt;/li&gt;
+&lt;li&gt;點選開啟fix.bat&lt;/li&gt;
+&lt;li&gt;點選開啟start.bat&lt;/li&gt;
+&lt;li&gt;成功開啟~~&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;iframe src="https://player.vimeo.com/video/151233826" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/151233826"&gt;11/27&lt;/a&gt; from &lt;a href="https://vimeo.com/user44960495"&gt;Alex li&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 11/06</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w7.html" rel="alternate"></link><updated>2015-11-06T11:41:00+08:00</updated><author><name>40423117</name></author><id>tag:coursemdetw.github.io,2015-11-06:reveal/2015cp_hw_w7.html</id><summary type="html">&lt;p&gt;以下為作業七內容&lt;/p&gt;
 &lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
 &lt;iframe src="40423117_cp_w7_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
 

@@ -1,0 +1,102 @@
+<!--
+這個檔案展示了 reveal.js 投影片資料的基本架構
+其中使用 "reveal" class 與 "slides" class 來界定投影片的資料範圍
+而各投影片則以 <section></section> 標示
+且支援平行與垂直的投影片配置方法
+-->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>404232117 11/27</title>
+<link rel="stylesheet" href="css/reveal.min.css">
+	<link rel="stylesheet" href="css/theme/default.css" id="theme">	
+	<!--增加對於 IE 早期版本的支援 -->
+	<!--[if lt IE 9]>
+	<script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+<body>
+<!-- 將整個投影片包在 "reveal" class 中 -->
+<div class="reveal">
+<!-- 將所有投影片包在 "slides" class 中 -->
+<div class="slides">
+<!-- 以下為投影片 -->
+<!-- 每一個 section 都代表一張投影片,  -->
+<!-- section 標註中的多 section 標註, 將往下垂直延伸 -->
+<section>
+    <h1>—修正fix—</h1>
+    <h2>leo-editor安裝</h2>
+    <p>40423217 四設一甲 李國豪</p>	
+</section>
+	
+<section>   
+    <h1>修正步驟</h1>
+    <p>fix_leo-editor安裝</p>
+    <ul>
+        <li>1. 開啟教學網頁</li>
+        <li>2. 點選2015fall課程</li>
+        <li>3. 點選遠端(copy)下載fix</li>
+        <li>4. 將檔案解壓縮</li>
+        <li>5. 使用瀏覽器搜尋 leo editor github</li>
+        <li>6. 點選進入網頁</li>
+        <li>7. 點選leo-editor</li>
+        <li>8. 點選release</li>
+        <li>9. 點選broke-abbrev</li>  
+        <li>10. 點選Source code(zip)</li>
+        <li>11. 將檔案移至fix資料夾</li>
+        <li>12. 到Ana3_lite2\data\SciTE</li>
+    </ul>
+</section>
+    
+<section>
+    <h1>修正步驟</h1>
+    <p>fix_leo-editor安裝</p>
+    <ul>
+        <li>13. 開啟SciTe.exe</li>
+        <li>14. 使用此編輯器開啟fix.bat</li>
+        <li>15. 在最後增加一行指令</li>
+          指令為  copy leo-editor-broke-abbrev.zip C:\Ana3_2015\data\</li>                                                
+        <li>16. 儲存檔案</li>
+        <li>17. 使用此編輯器開啟start.bat</li>
+        <li>18. 將原指令 (第35行) </li>
+        <li>          pip install http://140.130.17.17/public/leo-editor-master.zip</li>         
+        <li>         更改為 pip install leo-editor-broke-abbrev.zip</li>
+    </ul>
+</section>
+    
+<section>
+    <h1>修正步驟</h1>
+    <p>fix_leo-editor安裝</p>
+    <ul>
+        <li>20. 點選開啟fix.bat</li>
+        <li>21. 點選開啟start.bat</li>
+        <li>22. 成功開啟~~</li>
+    </ul>
+</section>
+    
+<section>
+    <h1>心得</h1>
+<p>其實在拍影片的時候都會出現一些問題</p>
+<p>中間暫停、重拍過很多次</p>
+<p>在解決這些問題的同時也了解更多相關的東西</p>
+</section>
+<section>
+    <h1>自評</h1>
+    <p>自評分數：75</p>
+    <p>我覺得每次的自評都只有影片好難拍好難拍好難拍而已XD</p>
+    <p>然後又需要用語音說明覺得有點麻煩啦哈哈~~</p>
+</section>
+				
+</div>
+</div>
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.min.js"></script>
+<script>
+    // 啟動 Reveal.
+    Reveal.initialize({
+    });
+</script>
+	
+</body>
+

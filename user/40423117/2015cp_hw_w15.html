@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>2015 計算機程式 12/25 &mdash; 2015FALL 40423117 CADPA 作業</title>
+  <meta name="author" content="40423117">
+
+
+
+
+
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link href="./favicon.png" rel="icon">
+
+  <link href="./theme/css/main.css" media="screen, projection"
+        rel="stylesheet" type="text/css">
+
+  <link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic"
+        rel="stylesheet" type="text/css">
+  <link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic"
+        rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <header role="banner"><hgroup>
+  <h1><a href="./">2015FALL 40423117 CADPA 作業</a></h1>
+</hgroup></header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+</ul>
+
+
+<ul class="main-navigation">
+      <li class="active">
+        <a href="./category/python.html">Python</a>
+      </li>
+</ul></nav>
+  <div id="main">
+    <div id="content">
+<div>
+  <article class="hentry" role="article">
+<header>
+      <h1 class="entry-title">2015 計算機程式 12/25</h1>
+    <p class="meta">
+<time datetime="2015-12-25T11:41:00+08:00" pubdate>週五 25 十二月 2015</time>    </p>
+</header>
+
+  <div class="entry-content"><h3>Merry Christmas  &amp;  Happy new year###</h3>
+<h3>40423117</h3>
+<!-- 導入 brython.js -->
+
+<script type="text/javascript" src="http://brython.info/src/brython_dist.js"></script>
+
+<!-- 啟動 brython() -->
+
+<script>
+window.onload=function(){
+brython(1);
+}
+</script>
+
+<!-- 以下利用 Brython 程式執行繪圖 -->
+
+<canvas id="plotarea" width="500" height="510"></canvas>
+
+<script type="text/python3">
+# 導入 doc
+from browser import document as doc
+from browser import console
+import math
+
+# 準備繪圖畫布
+canvas = doc["plotarea"]
+ctx = canvas.getContext("2d")
+
+# 盆栽
+ctx.beginPath()
+ctx.moveTo(195, 390)
+ctx.lineTo(195, 420)
+ctx.moveTo(305, 405)
+ctx.lineTo(305, 420)
+ctx.lineWidth = 8
+ctx.strokeStyle = "#381319"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.fillStyle = "#5C2230"
+ctx.fillRect(160,420,180,30)
+ctx.stroke()
+
+ctx.beginPath()
+ctx.fillStyle = "#381319"
+ctx.fillRect(200,420,50,30)
+ctx.stroke()
+
+ctx.beginPath()
+ctx.fillStyle = "#381319"
+ctx.fillRect(180,450,10,20)
+ctx.stroke()
+
+ctx.beginPath()
+ctx.fillStyle = "#5C2230"
+ctx.fillRect(190,450,40,20)
+ctx.stroke()
+
+ctx.beginPath()
+ctx.fillStyle = "#381319"
+ctx.fillRect(230,450,50,20)
+ctx.stroke()
+
+ctx.beginPath()
+ctx.fillStyle = "#5C2230"
+ctx.fillRect(280,450,50,20)
+ctx.stroke()
+
+ctx.beginPath()
+ctx.fillStyle = "#381319"
+ctx.fillRect(180,470,30,20)
+ctx.stroke()
+
+ctx.beginPath()
+ctx.fillStyle = "#5C2230"
+ctx.fillRect(210,470,40,20)
+ctx.stroke()
+
+ctx.beginPath()
+ctx.fillStyle = "#381319"
+ctx.fillRect(250,470,50,20)
+ctx.stroke()
+
+ctx.beginPath()
+ctx.fillStyle = "#5C2230"
+ctx.fillRect(300,470,30,20)
+ctx.stroke()
+
+
+# 樹
+ctx.beginPath()
+ctx.moveTo(220, 75)
+ctx.lineTo(220, 75)
+ctx.lineTo(140, 150)
+ctx.lineTo(185, 150)
+ctx.lineTo(80, 230)
+ctx.lineTo(110, 235)
+ctx.lineTo(50, 275)
+ctx.lineTo(120, 275)
+ctx.lineTo(10, 370)
+ctx.lineTo(145, 405)
+ctx.lineTo(165, 390)
+ctx.lineTo(175, 405)
+ctx.lineTo(225, 380)
+ctx.lineTo(275, 410)
+ctx.lineTo(320, 405)
+ctx.lineTo(415, 405)
+ctx.lineTo(390, 350)
+ctx.lineTo(490, 370)
+ctx.lineTo(385, 275)
+ctx.lineTo(450, 275)
+ctx.lineTo(385, 235)
+ctx.lineTo(410, 230)
+ctx.lineTo(310, 150)
+ctx.lineTo(350, 150)
+ctx.lineTo(270, 70)
+ctx.lineWidth = 10
+ctx.strokeStyle = "#25432D"
+ctx.stroke()
+
+# 星星
+ctx.beginPath()
+ctx.moveTo(240, 5)
+ctx.lineTo(225, 30)
+ctx.lineTo(200, 30)
+ctx.lineTo(215, 50)
+ctx.lineTo(200, 85)
+ctx.lineTo(240, 70)
+ctx.lineTo(280, 85)
+ctx.lineTo(260, 50)
+ctx.lineTo(280, 30)
+ctx.lineTo(250, 30)
+ctx.lineTo(240, 5)
+ctx.lineWidth = 12
+ctx.strokeStyle = "#F2E307"
+ctx.stroke()
+
+# 字體
+ctx.beginPath()
+ctx.fillStyle = "#88A85D"
+ctx.font = "23px Dutch801 XBd BT"
+ctx.fillText("Merry ",13,28)
+ctx.font = "23px Dutch801 XBd BT"
+ctx.fillText("Christmas",13,48)
+ctx.font = "23px Dutch801 XBd BT"
+ctx.fillText("&",13,68)
+ctx.font = "23px Dutch801 XBd BT"
+ctx.fillText("Happy New ",13,88)
+ctx.font = "23px Dutch801 XBd BT"
+ctx.fillText("Year ",13,108)
+ctx.stroke()
+
+ctx.beginPath()
+ctx.fillStyle = "#88A85D"
+ctx.font = "12px ScriptS"
+ctx.fillText("40423117",390,490)
+ctx.stroke()
+
+# 邊框
+
+ctx.beginPath()
+grd=ctx.createLinearGradient(0,0,0,500)
+grd.addColorStop(1,"#F2E307")
+grd.addColorStop(0,"#D98E04")
+ctx.lineWidth = 20
+ctx.strokeStyle = grd
+ctx.moveTo(0,0)
+ctx.lineTo(0,500)
+ctx.stroke()
+
+ctx.beginPath()
+grd=ctx.createLinearGradient(500,0,0,0)
+grd.addColorStop(1,"#D98E04")
+grd.addColorStop(0,"#D90707")
+ctx.strokeStyle = grd
+ctx.moveTo(0,0)
+ctx.lineTo(500,0)
+ctx.stroke()
+
+ctx.beginPath()
+grd=ctx.createLinearGradient(0,500,0,0)
+grd.addColorStop(1,"#D90707")
+grd.addColorStop(0,"#A60505")
+ctx.strokeStyle = grd
+ctx.moveTo(500,0)
+ctx.lineTo(500,500)
+ctx.stroke()
+
+ctx.beginPath()
+grd=ctx.createLinearGradient(0,0,500,0)
+grd.addColorStop(0,"#88A85D")
+grd.addColorStop(1,"#25432D")
+ctx.strokeStyle = grd
+ctx.moveTo(0,510)
+ctx.lineTo(500,510)
+ctx.stroke()
+
+#禮物
+ctx.beginPath()
+ctx.fillStyle = "#88A85D"
+ctx.fillRect(300,300,60,60)
+ctx.stroke()
+
+
+ctx.beginPath()
+ctx.moveTo(300,330)
+ctx.lineTo(360,330)
+
+ctx.moveTo(330,300)
+ctx.lineTo(330,360)
+
+ctx.moveTo(330,300)
+ctx.lineTo(300,275)
+
+ctx.moveTo(330,300)
+ctx.lineTo(320,260)
+
+ctx.moveTo(300,275)
+ctx.lineTo(322,260)
+
+ctx.moveTo(330,300)
+ctx.lineTo(340,260)
+
+ctx.moveTo(330,300)
+ctx.lineTo(360, 280)
+
+ctx.moveTo(338,260)
+ctx.lineTo(362,280)
+
+ctx.lineWidth = 5
+ctx.strokeStyle = "#F2E307"
+ctx.stroke()
+
+
+</script>
+
+<script>
+window.onload=function(){
+brython(1);
+}
+</script></div>
+    <footer>
+<p class="meta">
+  <span class="byline author vcard">
+    Posted by <span class="fn">
+        40423117
+    </span>
+  </span>
+<time datetime="2015-12-25T11:41:00+08:00" pubdate>週五 25 十二月 2015</time>  <span class="categories">
+    <a class='category' href='./category/python.html'>Python</a>
+  </span>
+  <span class="categories">
+    <a class="category" href="./tag/pelican.html">pelican</a>,    <a class="category" href="./tag/publishing.html">publishing</a>  </span>
+</p><div class="sharing">
+</div>    </footer>
+  </article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+  </section>
+</div>
+<aside class="sidebar">
+  <section>
+    <h1>Recent Posts</h1>
+    <ul id="recent_posts">
+      <li class="post">
+          <a href="./2015cp_hw_w17.html">2016 計算機程式 01/08</a>
+      </li>
+      <li class="post">
+          <a href="./2015cp_hw_w15.html">2015 計算機程式 12/25</a>
+      </li>
+      <li class="post">
+          <a href="./2015cp_hw_w14.html">2015 計算機程式 12/18</a>
+      </li>
+      <li class="post">
+          <a href="./2015cp_hw_w13.html">2015 計算機程式 12/11</a>
+      </li>
+      <li class="post">
+          <a href="./2015cp_hw_w12.html">2015 計算機程式 12/04</a>
+      </li>
+    </ul>
+  </section>
+  <section>
+      
+    <h1>Categories</h1>
+    <ul id="recent_posts">
+        <li><a href="./category/python.html">Python</a></li>
+    </ul>
+  </section>
+ 
+
+  <section>
+  <h1>Tags</h1>
+    <a href="./tag/publishing.html">publishing</a>,    <a href="./tag/pelican.html">pelican</a>  </section>
+
+
+    <section>
+        <h1>Social</h1>
+        <ul>
+            <li><a href="http://twitter.com/ametaireau" target="_blank">twitter</a></li>
+            <li><a href="http://github.com/ametaireau" target="_blank">github</a></li>
+        </ul>
+    </section>
+    <section>
+        <h1>Blogroll</h1>
+        <ul>
+            <li><a href="http://wordpress-2015course.rhcloud.com/" target="_blank">2015課程網頁</a></li>
+            <li><a href="http://python.org/" target="_blank">Python</a></li>
+            <li><a href="../../" target="_blank">2015作業主頁</a></li>
+            <li><a href="http://40423117.github.io/blog/user/40423117/" target="_blank">40423117 作業倉儲</a></li>
+            <li><a href="http://40423117.github.io/blog/user/40423117/2015cp_hw_w17.html" target="_blank">第十七週</a></li>
+        </ul>
+    </section>
+
+</aside>    </div>
+  </div>
+  <footer role="contentinfo"><p>
+    Copyright &copy;  2015&ndash;2016  40423117 &mdash;
+  <span class="credit">Powered by <a href="http://getpelican.com">Pelican</a></span>
+</p></footer>
+  <script src="./theme/js/modernizr-2.0.js"></script>
+  <script src="./theme/js/ender.js"></script>
+  <script src="./theme/js/octopress.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    var disqus_shortname = '2015fall';
+    var disqus_identifier = '/2015cp_hw_w15.html';
+    var disqus_url = './2015cp_hw_w15.html';
+    var disqus_title = '2015 計算機程式 12/25';
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = "//" + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+     })();
+  </script>
+</body>
+</html>

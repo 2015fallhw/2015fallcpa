@@ -503,6 +503,60 @@ brython(1);
 </script>
 </div>
 </div>
+</div></p>
+<h2>merry</h2>
+<p>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="40423108">40423108<a class="anchor-link" href="#40423108">&#182;</a></h3><!-- 導入 brython.js -->
+
+<script type="text/javascript" src="js/Brython3.2.3-20151122-082712/40423112.js"></script>
+
+<!-- 啟動 brython() -->
+
+<script>
+window.onload=function(){
+brython(1);
+}
+</script>
+
+<!-- 以下利用 Brython 程式執行繪圖 -->
+
+<canvas id="plotarea2" width="500" height="500"></canvas>
+
+<script type="text/python3">
+# 導入 doc
+from browser import document as doc
+from browser import console
+import math
+
+# 準備繪圖畫布
+canvas = doc["plotarea2"]
+ctx = canvas.getContext("2d")
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(250,100)
+ctx.lineTo(150,200)
+ctx.lineTo(200,200)
+ctx.lineTo(100,300)
+ctx.lineTo(200,300)
+ctx.lineTo(200,400)
+ctx.lineTo(300,400)
+ctx.lineTo(300,300)
+ctx.lineTo(400,300)
+ctx.lineTo(300,200)
+ctx.lineTo(350,200)
+ctx.lineTo(250,100)
+ctx.strokeStyle = "#006000"
+ctx.stroke()
+</script>
+</div>
+</div>
 </div></p></div>
     <footer>
 <p class="meta">
@@ -569,7 +623,7 @@ brython(1);
 
   <section>
   <h1>Tags</h1>
-    <a href="./tag/g3.html">G3</a>,    <a href="./tag/ipython.html">IPython</a>,    <a href="./tag/publishing.html">publishing</a>,    <a href="./tag/w15.html">w15</a>,    <a href="./tag/w14.html">w14</a>,    <a href="./tag/g1.html">G1</a>,    <a href="./tag/qi-mo-ping-fen.html">期末評分</a>,    <a href="./tag/w16.html">w16</a>,    <a href="./tag/pelican.html">pelican</a>,    <a href="./tag/g10.html">G10</a>,    <a href="./tag/brython.html">Brython</a>,    <a href="./tag/jupyter.html">Jupyter</a>  </section>
+    <a href="./tag/g3.html">G3</a>,    <a href="./tag/w15.html">w15</a>,    <a href="./tag/g1.html">G1</a>,    <a href="./tag/ipython.html">IPython</a>,    <a href="./tag/brython.html">Brython</a>,    <a href="./tag/w16.html">w16</a>,    <a href="./tag/qi-mo-ping-fen.html">期末評分</a>,    <a href="./tag/publishing.html">publishing</a>,    <a href="./tag/g10.html">G10</a>,    <a href="./tag/pelican.html">pelican</a>,    <a href="./tag/jupyter.html">Jupyter</a>,    <a href="./tag/w14.html">w14</a>  </section>
 
 
     <section>
@@ -584,6 +638,9 @@ brython(1);
         <ul>
             <li><a href="http://wordpress-2015course.rhcloud.com/" target="_blank">2015課程網頁</a></li>
             <li><a href="http://python.org/" target="_blank">Python</a></li>
+            <li><a href="http://40123237.github.io/40123237/" target="_blank">[github.io] 40123237</a></li>
+            <li><a href="http://40123227.github.io/40123227/" target="_blank">[github.io] 40123227</a></li>
+            <li><a href="http://40123256.github.io/cpw/" target="_blank">[github.io] 40123256</a></li>
         </ul>
     </section>
 

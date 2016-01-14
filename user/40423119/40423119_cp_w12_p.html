@@ -1,0 +1,80 @@
+<!--
+這個檔案展示了 reveal.js 投影片資料的基本架構
+其中使用 "reveal" class 與 "slides" class 來界定投影片的資料範圍
+而各投影片則以 <section></section> 標示
+且支援平行與垂直的投影片配置方法
+-->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>40423119-12</title>
+<link rel="stylesheet" href="css/reveal.min.css">
+	<link rel="stylesheet" href="css/theme/default.css" id="theme">	
+	<!--增加對於 IE 早期版本的支援 -->
+	<!--[if lt IE 9]>
+	<script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+<body>
+<!-- 將整個投影片包在 "reveal" class 中 -->
+<div class="reveal">
+<!-- 將所有投影片包在 "slides" class 中 -->
+<div class="slides">
+<!-- 以下為投影片 -->
+<!-- 每一個 section 都代表一張投影片,  -->
+<!-- section 標註中的多 section 標註, 將往下垂直延伸 -->
+<section>
+    <h1>四設計一甲</h1>
+    <p>40423119 周嘉原 12/4 </p>		
+</section>
+	
+<section id="hw-task-one">
+ <h1>W12上課內容:</h1>
+修改fix：
+<br />
+下載fix.zip→搜尋github leo editor→點選releases下載broke-abbrev.zip→將資料夾複製到fix→打開Ana3_2015/data/SciTE→點選SciTE.exe開啟→將fix.bat複製到SciTE貼上→輸入copy leo editor broke-abbrev.zip C:\Ana3_2015\data\儲存→接著將start.bat複製到SciTE貼上→在第35行下修改為pip install leo-editor-broke-abbrev.zip
+</section>
+
+<section>
+<h1>猜數字遊戲:</h1>
+______________________________________________________
+<br />
+#(單行註解)
+<br />
+import(導入)
+<br />
+random(亂數模組)
+<br />
+randint(產生變數)
+<br />
+input("輸入字串")，其中int轉成整數(integer)
+<br />
+float(浮點數)
+<br />
+while(迴圈關鍵字)
+<br />
+!=(不等於)
+</section>
+
+<section>
+<h1>心得</h1>
+第11週我學會了如何將有問題的fix修改好，能夠啟動leo，讓自己到環境更好，還有這週的猜數字遊戲真的好有趣，利用PYTHON3寫出玩遊戲的程式，讓我想更進一步的認識PYTHON3。
+</section>
+<section>
+    <h1>自評</h1>
+    <p>雖然照著老師做是免強可以,不過還是有許多需改善的部分,個人對這週學習表現給70分</p>
+</section>
+				
+</div>
+</div>
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.min.js"></script>
+<script>
+    // 啟動 Reveal.
+    Reveal.initialize({
+    });
+</script>
+	
+</body>
+

@@ -524,6 +524,60 @@ brython(1);
 &lt;/script&gt;
 &lt;/div&gt;
 &lt;/div&gt;
+&lt;/div&gt;&lt;/p&gt;
+&lt;h2&gt;merry&lt;/h2&gt;
+&lt;p&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;
+&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h3 id="40423108"&gt;40423108&lt;a class="anchor-link" href="#40423108"&gt;&amp;#182;&lt;/a&gt;&lt;/h3&gt;&lt;!-- 導入 brython.js --&gt;
+
+&lt;script type="text/javascript" src="js/Brython3.2.3-20151122-082712/40423112.js"&gt;&lt;/script&gt;
+
+&lt;!-- 啟動 brython() --&gt;
+
+&lt;script&gt;
+window.onload=function(){
+brython(1);
+}
+&lt;/script&gt;
+
+&lt;!-- 以下利用 Brython 程式執行繪圖 --&gt;
+
+&lt;canvas id="plotarea2" width="500" height="500"&gt;&lt;/canvas&gt;
+
+&lt;script type="text/python3"&gt;
+# 導入 doc
+from browser import document as doc
+from browser import console
+import math
+
+# 準備繪圖畫布
+canvas = doc["plotarea2"]
+ctx = canvas.getContext("2d")
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(250,100)
+ctx.lineTo(150,200)
+ctx.lineTo(200,200)
+ctx.lineTo(100,300)
+ctx.lineTo(200,300)
+ctx.lineTo(200,400)
+ctx.lineTo(300,400)
+ctx.lineTo(300,300)
+ctx.lineTo(400,300)
+ctx.lineTo(300,200)
+ctx.lineTo(350,200)
+ctx.lineTo(250,100)
+ctx.strokeStyle = "#006000"
+ctx.stroke()
+&lt;/script&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;/div&gt;&lt;/p&gt;</summary><category term="G3"></category></entry><entry><title>G3_w14_1</title><link href="http://coursemdetw.github.io/reveal/G3_w14_1.html" rel="alternate"></link><updated>2015-12-18T12:00:00+08:00</updated><author><name>40423117</name></author><id>tag:coursemdetw.github.io,2015-12-18:reveal/G3_w14_1.html</id><summary type="html">&lt;p&gt;以下為作業一內容&lt;/p&gt;
 &lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
 &lt;iframe src="simplest.html" width="500" height="300"&gt;&lt;/iframe&gt;
