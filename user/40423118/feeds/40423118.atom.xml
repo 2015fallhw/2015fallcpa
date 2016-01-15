@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>2015FALL 40423118 cpa 作業</title><link href="http://coursemdetw.github.io/reveal/" rel="alternate"></link><link href="http://coursemdetw.github.io/reveal/feeds/40423118.atom.xml" rel="self"></link><id>http://coursemdetw.github.io/reveal/</id><updated>2015-12-18T12:00:00+08:00</updated><entry><title>40423118_w15</title><link href="http://coursemdetw.github.io/reveal/w15.html" rel="alternate"></link><updated>2015-12-18T12:00:00+08:00</updated><author><name>40423117</name></author><id>tag:coursemdetw.github.io,2015-12-18:reveal/w15.html</id><summary type="html">&lt;p&gt;以下利用 Brython 在網頁寫 Python 繪圖&lt;/p&gt;
+&lt;!-- 導入 brython.js --&gt;
+
+&lt;script type="text/javascript" src="js/Brython3.2.3-20151122-082712/brython.js"&gt;&lt;/script&gt;
+
+&lt;!-- 啟動 brython() --&gt;
+
+&lt;script&gt;
+window.onload=function(){
+brython(1);
+}
+&lt;/script&gt;
+
+&lt;!-- 以下利用 Brython 程式執行繪圖 --&gt;
+
+&lt;canvas id="plotarea" width="300" height="200"&gt;&lt;/canvas&gt;
+
+&lt;script type="text/python3"&gt;
+# 導入 doc
+from browser import document as doc
+from browser import console
+import math
+
+# 準備繪圖畫布
+canvas = doc["plotarea"]
+ctx = canvas.getContext("2d")
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(0, 0)
+ctx.lineTo(100, 100)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(250, 90)
+ctx.lineTo(190, 150)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(190, 150)
+ctx.lineTo(220, 150)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(220, 150)
+ctx.lineTo(150, 240)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(150, 240)
+ctx.lineTo(190, 240)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(190,240 )
+ctx.lineTo(110, 340)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(110, 340)
+ctx.lineTo(390, 340)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(390, 340)
+ctx.lineTo(310, 240)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(310, 240)
+ctx.lineTo(350, 240)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(350,240 )
+ctx.lineTo(280, 150)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(280, 150)
+ctx.lineTo(380, 150)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(380, 150)
+ctx.lineTo(250, 90)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(220, 200)
+ctx.lineTo(230, 200)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(230, 200)
+ctx.lineTo(230, 210)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(230, 210)
+ctx.lineTo(220, 210)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(220, 210)
+ctx.lineTo(220, 200)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(270, 200)
+ctx.lineTo(280, 200)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(280, 200)
+ctx.lineTo(280, 210)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(280, 210)
+ctx.lineTo(270, 210)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(270, 210)
+ctx.lineTo(270, 200)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(100, 0)
+ctx.lineTo(0, 100)
+ctx.strokeStyle = "#0000ff"
+ctx.stroke()
+
+x = 100
+y = 100
+
+# 利用 browser 模組中的 console.log 將資料列印在 console 區, 可以用來確認程式中各變數的值, 用法等同 print
+console.log("x 值為"+str(x)+", y 值為"+str(y))
+
+# 利用迴圈畫水平線
+for i in range(5):
+    ctx.beginPath()
+    ctx.lineWidth = 5
+    ctx.moveTo(0, 10+i*20)
+    ctx.lineTo(100, 10+i*20)
+    ctx.strokeStyle = "#0000ff"
+    ctx.stroke()
+&lt;/script&gt;
+
+&lt;/script&gt;</summary><category term="40423118"></category></entry></feed>

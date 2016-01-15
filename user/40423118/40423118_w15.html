@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>40423118_w15 &mdash; 2015FALL 40423118 cpa 作業</title>
+  <meta name="author" content="40423118">
+
+
+
+
+
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link href="./favicon.png" rel="icon">
+
+  <link href="./theme/css/main.css" media="screen, projection"
+        rel="stylesheet" type="text/css">
+
+  <link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic"
+        rel="stylesheet" type="text/css">
+  <link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic"
+        rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <header role="banner"><hgroup>
+  <h1><a href="./">2015FALL 40423118 cpa 作業</a></h1>
+</hgroup></header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+</ul>
+
+
+<ul class="main-navigation">
+      <li class="active">
+        <a href="./category/40423118.html">40423118</a>
+      </li>
+      <li >
+        <a href="./category/python.html">Python</a>
+      </li>
+</ul></nav>
+  <div id="main">
+    <div id="content">
+<div>
+  <article class="hentry" role="article">
+<header>
+      <h1 class="entry-title">40423118_w15</h1>
+    <p class="meta">
+<time datetime="2015-12-18T12:00:00+08:00" pubdate>週五 18 十二月 2015</time>    </p>
+</header>
+
+  <div class="entry-content"><p>以下利用 Brython 在網頁寫 Python 繪圖</p>
+<!-- 導入 brython.js -->
+
+<script type="text/javascript" src="js/Brython3.2.3-20151122-082712/brython.js"></script>
+
+<!-- 啟動 brython() -->
+
+<script>
+window.onload=function(){
+brython(1);
+}
+</script>
+
+<!-- 以下利用 Brython 程式執行繪圖 -->
+
+<canvas id="plotarea" width="300" height="200"></canvas>
+
+<script type="text/python3">
+# 導入 doc
+from browser import document as doc
+from browser import console
+import math
+
+# 準備繪圖畫布
+canvas = doc["plotarea"]
+ctx = canvas.getContext("2d")
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(0, 0)
+ctx.lineTo(100, 100)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(250, 90)
+ctx.lineTo(190, 150)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(190, 150)
+ctx.lineTo(220, 150)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(220, 150)
+ctx.lineTo(150, 240)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(150, 240)
+ctx.lineTo(190, 240)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(190,240 )
+ctx.lineTo(110, 340)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(110, 340)
+ctx.lineTo(390, 340)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(390, 340)
+ctx.lineTo(310, 240)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(310, 240)
+ctx.lineTo(350, 240)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(350,240 )
+ctx.lineTo(280, 150)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(280, 150)
+ctx.lineTo(380, 150)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(380, 150)
+ctx.lineTo(250, 90)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(220, 200)
+ctx.lineTo(230, 200)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(230, 200)
+ctx.lineTo(230, 210)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(230, 210)
+ctx.lineTo(220, 210)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(220, 210)
+ctx.lineTo(220, 200)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(270, 200)
+ctx.lineTo(280, 200)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(280, 200)
+ctx.lineTo(280, 210)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(280, 210)
+ctx.lineTo(270, 210)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(270, 210)
+ctx.lineTo(270, 200)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(100, 0)
+ctx.lineTo(0, 100)
+ctx.strokeStyle = "#0000ff"
+ctx.stroke()
+
+x = 100
+y = 100
+
+# 利用 browser 模組中的 console.log 將資料列印在 console 區, 可以用來確認程式中各變數的值, 用法等同 print
+console.log("x 值為"+str(x)+", y 值為"+str(y))
+
+# 利用迴圈畫水平線
+for i in range(5):
+    ctx.beginPath()
+    ctx.lineWidth = 5
+    ctx.moveTo(0, 10+i*20)
+    ctx.lineTo(100, 10+i*20)
+    ctx.strokeStyle = "#0000ff"
+    ctx.stroke()
+</script>
+
+</script></div>
+    <footer>
+<p class="meta">
+  <span class="byline author vcard">
+    Posted by <span class="fn">
+        40423117
+    </span>
+  </span>
+<time datetime="2015-12-18T12:00:00+08:00" pubdate>週五 18 十二月 2015</time>  <span class="categories">
+    <a class='category' href='./category/40423118.html'>40423118</a>
+  </span>
+  <span class="categories">
+    <a class="category" href="./tag/40423118.html">40423118</a>  </span>
+</p><div class="sharing">
+</div>    </footer>
+  </article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+  </section>
+</div>
+<aside class="sidebar">
+  <section>
+    <h1>Recent Posts</h1>
+    <ul id="recent_posts">
+      <li class="post">
+          <a href="./2015cp_hw_w17.html">2015 計算機程式 w17</a>
+      </li>
+      <li class="post">
+          <a href="./2015cp_hw_w16.html">2015 計算機程式 w16</a>
+      </li>
+      <li class="post">
+          <a href="./2015cp_hw_w15.html">2015 計算機程式 w15</a>
+      </li>
+      <li class="post">
+          <a href="./40423118_w15.html">40423118_w15</a>
+      </li>
+      <li class="post">
+          <a href="./w15.html">40423118_w15</a>
+      </li>
+    </ul>
+  </section>
+  <section>
+      
+    <h1>Categories</h1>
+    <ul id="recent_posts">
+        <li><a href="./category/40423118.html">40423118</a></li>
+        <li><a href="./category/python.html">Python</a></li>
+    </ul>
+  </section>
+ 
+
+  <section>
+  <h1>Tags</h1>
+    <a href="./tag/publishing.html">publishing</a>,    <a href="./tag/pelican.html">pelican</a>,    <a href="./tag/40423118.html">40423118</a>  </section>
+
+
+    <section>
+        <h1>Social</h1>
+        <ul>
+            <li><a href="http://twitter.com/ametaireau" target="_blank">twitter</a></li>
+            <li><a href="http://github.com/ametaireau" target="_blank">github</a></li>
+        </ul>
+    </section>
+    <section>
+        <h1>Blogroll</h1>
+        <ul>
+            <li><a href="http://wordpress-2015course.rhcloud.com/" target="_blank">2015課程網頁</a></li>
+            <li><a href="http://python.org/" target="_blank">Python</a></li>
+            <li><a href="../../" target="_blank">2015作業主頁</a></li>
+            <li><a href="http://40423118.github.io/cpaw2/" target="_blank">個人倉儲</a></li>
+        </ul>
+    </section>
+
+</aside>    </div>
+  </div>
+  <footer role="contentinfo"><p>
+    Copyright &copy;  2015&ndash;2016  40423118 &mdash;
+  <span class="credit">Powered by <a href="http://getpelican.com">Pelican</a></span>
+</p></footer>
+  <script src="./theme/js/modernizr-2.0.js"></script>
+  <script src="./theme/js/ender.js"></script>
+  <script src="./theme/js/octopress.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    var disqus_shortname = '2015fall';
+    var disqus_identifier = '/40423118_w15.html';
+    var disqus_url = './40423118_w15.html';
+    var disqus_title = '40423118_w15';
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = "//" + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+     })();
+  </script>
+</body>
+</html>
