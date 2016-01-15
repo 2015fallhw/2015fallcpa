@@ -8,7 +8,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>最簡單的 reveal 超文件</title>
+<title>40423129-14</title>
 <link rel="stylesheet" href="css/reveal.min.css">
 	<link rel="stylesheet" href="css/theme/default.css" id="theme">	
 	<!--增加對於 IE 早期版本的支援 -->
@@ -25,22 +25,50 @@
 <!-- 每一個 section 都代表一張投影片,  -->
 <!-- section 標註中的多 section 標註, 將往下垂直延伸 -->
 <section>
-    <h1>作業十一</h1>
-    <p>40423129  張俊鴻</p>		
+    <h2>作業十四</h2>
+    <p>40423129  張俊鴻 W14</p>		
 </section>
 	
-<section id="hw-task-one">
-    <h1>作業任務一</h1>
-    <p>有關作業任務一的說明</p>
-    <p>請參考 <a href="http://www.google.com">Google</a>
-</section>
-				
 <section>
-    <h1>第3張投影片</h1>
-    <p>成績自評分數的量化依據?</p>
-    <p>可以連結到內部投影片<a href="#/hw-task-one">作業任務一</a>
+ <h1>利用brython繪製直線和垂直線(程式碼)</h1>
+ <p>
+# 導入 doc
+from browser import document as doc
+from browser import console
+import math
+# 準備繪圖畫布
+canvas = doc["plotarea"]
+ctx = canvas.getContext("2d")
+# 開始畫直線
+for i in range(11):
+    ctx.beginPath()
+    ctx.lineWidth = 5
+    ctx.moveTo(0,0+i*20 )
+    ctx.lineTo(200,0+i*20 )
+    ctx.strokeStyle = "#0000ff"
+    ctx.stroke()
+for i in range(11):
+    ctx.beginPath()
+    ctx.lineWidth = 5
+    ctx.moveTo(0+i*20, 0)
+    ctx.lineTo(0+i*20, 200)
+    ctx.strokeStyle = "#FF0000"
+    ctx.stroke()
+</p>
 </section>
-				
+ 
+ <section>
+ <h1>心得</h1>
+ <p>快學期末了!!多學會點東西了!老師的指導</p>
+</section>
+  
+<section>
+<h1>自評</h1>
+<p>70分</p>
+</section>
+   
+
+  
 </div>
 </div>
 <script src="lib/js/head.min.js"></script>
@@ -52,3 +80,4 @@
 </script>
 	
 </body>
+
