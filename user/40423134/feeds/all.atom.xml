@@ -333,44 +333,7 @@ ctx.lineTo(102,360 )
 ctx.strokeStyle = "#7D26CD"
 ctx.stroke()
 
-ctx.beginPath()
-ctx.lineWidth = 5
-ctx.moveTo(102,360)
-ctx.lineTo(154,360 )
-ctx.strokeStyle = "#7D26CD"
-ctx.stroke()
-
-ctx.beginPath()
-ctx.lineWidth = 5
-ctx.moveTo(154,360)
-ctx.lineTo(154,308 )
-ctx.strokeStyle = "#7D26CD"
-ctx.stroke()
-
-ctx.beginPath()
-ctx.lineWidth = 5
-ctx.moveTo(154,308)
-ctx.lineTo(102,308 )
-ctx.strokeStyle = "#7D26CD"
-ctx.stroke()
-
-ctx.beginPath()
-ctx.lineWidth = 5
-ctx.moveTo(128,308)
-ctx.lineTo(128,360 )
-ctx.strokeStyle = "#7D26CD"
-ctx.stroke()
-
-ctx.beginPath()
-ctx.lineWidth = 5
-ctx.moveTo(102,335)
-ctx.lineTo(154,335 )
-ctx.strokeStyle = "#7D26CD"
-ctx.stroke()
-
-&lt;/script&gt;
-
-&lt;/script&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>['2015 計算機程式 作業十六', '2015 計算機程式 作業十六']</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w16.html" rel="alternate"></link><updated>2015-09-19T11:41:00+08:00</updated><author><name>coursemdetw</name></author><id>tag:coursemdetw.github.io,2015-09-19:reveal/2015cp_hw_w16.html</id><summary type="html">&lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
+ctx.beginPath()</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業十六</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w16.html" rel="alternate"></link><updated>2015-09-19T11:41:00+08:00</updated><author><name>coursemdetw</name></author><id>tag:coursemdetw.github.io,2015-09-19:reveal/2015cp_hw_w16.html</id><summary type="html">&lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
 &lt;iframe src="40423134_cp_w16_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
 &lt;p&gt;&lt;a href="40423134_cp_w16_p.html" target="_blank"&gt;作業十六投影片&lt;/a&gt;&lt;/p&gt;
