@@ -1,34 +1,37 @@
-Title:2015 計算機程式 第十七週
-Date: 2016-1-8 10:57
-Category: Python
-Tags: pelican, publishing
-Slug: 40123237_w17
-Authors: 陳琨揚
-Summary: Brython動畫
-                    
-                
-            
-                
-Brython動畫
-==========
-<!-- 導入 brython.js -->
-
-<script type="text/javascript" src="http://brython.info/src/brython_dist.js"></script>
-
-<!-- 啟動 brython() -->
-
-<script>
-window.onload=function(){
-brython(1);
-}
-</script>
-
-<!-- 以下利用 Brython 程式執行繪圖 -->
-
-<canvas id="plotarea" width="600" height="400"></canvas>
-
-<script type="text/python3">
-# 導入 browser 模組中的 document, 並設為 doc 變數
+<!--
+這個檔案展示了 reveal.js 投影片資料的基本架構
+其中使用 "reveal" class 與 "slides" class 來界定投影片的資料範圍
+而各投影片則以 <section></section> 標示
+且支援平行與垂直的投影片配置方法
+-->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>40423129-17</title>
+<link rel="stylesheet" href="css/reveal.min.css">
+	<link rel="stylesheet" href="css/theme/default.css" id="theme">	
+	<!--增加對於 IE 早期版本的支援 -->
+	<!--[if lt IE 9]>
+	<script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+<body>
+<!-- 將整個投影片包在 "reveal" class 中 -->
+<div class="reveal">
+<!-- 將所有投影片包在 "slides" class 中 -->
+<div class="slides">
+<!-- 以下為投影片 -->
+<!-- 每一個 section 都代表一張投影片,  -->
+<!-- section 標註中的多 section 標註, 將往下垂直延伸 -->
+<section>
+    <h1>彈力球動畫</h1>
+    <p>40423129 張俊鴻 W17</p>		
+</section>
+	
+<section>
+ <h2>彈力球動畫程式碼1</h2>
+ <p># 導入 browser 模組中的 document, 並設為 doc 變數
 from browser import document as doc
 
 # 導入數學模組
@@ -81,6 +84,12 @@ def updateY(i):
     y[i] += vy[i]
     if ((y[i]+r) > height):
         y[i] = height-r
+ </p>       
+</section>
+
+<section>
+ <h2>彈力球動畫程式碼2</h2>
+ <p>
 
 # 更新第 i 球 X 座標的運算邏輯
 def updateX(i):
@@ -124,18 +133,31 @@ def on_canvas_click(ev):
 
 # 只要使用者點擊在畫布上任何地方, 即執行 on_canvas_click 函式
 canvas.bind('click', on_canvas_click, False)
+</p>
+</section>
+
+<section>
+ <h1>心得</h1>
+ <p>彈力球動畫是利用上述程式碼寫成的,雖然只是複製老師的程式碼,但增加了自己對程式的了解,除了程式外還可以製作動畫</p>
+ </section>
+
+<section>
+ <h1>自評</h1>
+ <p>不上不下~75分</p>
+ </section>
+
+
+
+  
+</div>
+</div>
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.min.js"></script>
+<script>
+    // 啟動 Reveal.
+    Reveal.initialize({
+    });
 </script>
-                            
-                            
-                            
-                            
-心得
--------
-                        
-                        
-                        
-函式好難喔，我還在研究~
-
-
-
+	
+</body>
 
