@@ -18,10 +18,7 @@
 <v t="leo.20151225135712.2"><vh>@button admin pelican</vh></v>
 <v t="leo.20151225135712.3" a="E"><vh>@path pelican</vh>
 <v t="leo.20151225135712.4"><vh>@edit publishconf.py</vh></v>
-<v t="leo.20151225135712.5" a="E"><vh>@path content</vh>
-<v t="leo.20151225135712.6"><vh>@edit g6 w15_1.md</vh></v>
-<v t="leo.20151225135712.7"><vh>@edit g6 w15.md</vh></v>
-</v>
+<v t="leo.20151225135712.5"><vh>@path content</vh></v>
 </v>
 </v>
 <v t="leo.20151225135718.1"><vh>@button user pelican</vh></v>

@@ -1,0 +1,78 @@
+<!--
+這個檔案展示了 reveal.js 投影片資料的基本架構
+其中使用 "reveal" class 與 "slides" class 來界定投影片的資料範圍
+而各投影片則以 <section></section> 標示
+且支援平行與垂直的投影片配置方法
+-->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>40423109-11</title>
+<link rel="stylesheet" href="css/reveal.min.css">
+	<link rel="stylesheet" href="css/theme/default.css" id="theme">	
+	<!--增加對於 IE 早期版本的支援 -->
+	<!--[if lt IE 9]>
+	<script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+<body>
+<!-- 將整個投影片包在 "reveal" class 中 -->
+<div class="reveal">
+<!-- 將所有投影片包在 "slides" class 中 -->
+<div class="slides">
+<!-- 以下為投影片 -->
+<!-- 每一個 section 都代表一張投影片,  -->
+<!-- section 標註中的多 section 標註, 將往下垂直延伸 -->
+<section>
+   <h1>設計一甲</h1>
+    <p>40423109何宗哲</p>			
+</section>
+	
+<section id="hw-task-one">
+    <h1>課程內容</h1>
+    <p>今天老師以猜數字遊戲的程式來讓我們學習運用這些程式還可以新增一些功能之類的</p>
+</section>
+				
+<section>
+    <h1>大綱</h1>
+    <p>#:單行註解</p>
+    <p>coding:編碼</p>
+    <p>import:導入</p>
+    <p>random:亂數</p>
+    <p>int:轉成整數</p>
+    <p>str:字串</p>
+    <p>float:符點數</p>
+</section>
+
+
+<section>
+    <h1>更新leo，讓環境更好</h1>
+    <p>載入fix</p>
+    <p>將最新的leo載入fix資料夾</p>
+    <p>白頁打開fix.bat檔</p>
+    <p>新增行數，打入copy "最新leo" Ana32015\data，並存檔</p>
+    <p>白頁打開start.bat檔</p>
+    <p>第35行的網址改成leo的最新版本，存檔</p>
+    <p>將fix資料夾存在隨身碟，這樣以後到教室只要打開fix，就能使Ana3的工作環境更好</p>
+</section>
+
+
+<section>
+ <h1>自評</h1>
+    <p>分數:70分</p> 
+</section>
+	
+    			
+</div>
+</div>
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.min.js"></script>
+<script>
+    // 啟動 Reveal.
+    Reveal.initialize({
+    });
+</script>
+	
+</body>
+
