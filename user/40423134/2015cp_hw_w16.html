@@ -4,7 +4,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>2015 計算機程式 作業七 &mdash; 2015FALL 40423134 CPA 作業</title>
+  <title>['2015 計算機程式 作業十六', '2015 計算機程式 作業十六'] &mdash; 2015FALL 40423134 CPA 作業</title>
   <meta name="author" content="40423134">
 
 
@@ -47,18 +47,126 @@
 <div>
   <article class="hentry" role="article">
 <header>
-      <h1 class="entry-title">2015 計算機程式 作業七</h1>
+      <h1 class="entry-title">['2015 計算機程式 作業十六', '2015 計算機程式 作業十六']</h1>
     <p class="meta">
 <time datetime="2015-09-19T11:41:00+08:00" pubdate>週六 19 九月 2015</time>    </p>
 </header>
 
   <div class="entry-content"><p>利用 iframe 嵌入投影片:</p>
-<iframe src=" 40423134_cp_w7_p.html" width="500" height="300"></iframe>
+<iframe src="40423134_cp_w16_p.html" width="500" height="300"></iframe>
 
-<p><a href="40423134_cp_w7_p.html" target="_blank">作業一投影片</a></p>
-<p>Vimeo 影片嵌入(直接從 Vimeo 影片上的 Share 複製 html 碼):
-<iframe src="https://player.vimeo.com/video/145730867" width="500" height="375" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/145730867">w77</a> from <a href="https://vimeo.com/user44512429">40423105</a> on <a href="https://vimeo.com">Vimeo</a>.</p></p>
-<p><a href="https://vimeo.com/137724068">Welcome Speech on <a href="https://vimeo.com">Vimeo</a>.</p></div>
+<p><a href="40423134_cp_w16_p.html" target="_blank">作業十六投影片</a></p>
+<!-- 導入 brython.js -->
+
+<script type="text/javascript" src="http://brython.info/src/brython_dist.js"></script>
+
+<!-- 啟動 brython() -->
+
+<script>
+window.onload=function(){
+brython(1);
+}
+</script>
+
+<!-- 以下利用 Brython 程式執行繪圖 -->
+
+<canvas id="plotarea" width="600" height="400"></canvas>
+
+<script type="text/python3">
+# 導入 browser 模組中的 document, 並設為 doc 變數
+from browser import document as doc
+# 導入數學模組
+import math
+# 產生各小球的亂數速度用
+import random
+# 導入 browser 中的計時器, 建立動畫用
+import browser.timer
+
+# 準備繪圖畫布
+canvas = doc["plotarea"]
+ctx = canvas.getContext("2d")
+
+# 取畫布的寬與高度
+width = canvas.width
+height = canvas.height
+
+n = 20
+# 已知數列內容個數, 先分別與 None 對應
+x = [None]*n
+y = [None]*n
+vy = [None]*n
+vx = [None]*n
+# 重力加速度, Y 方向向下為正
+g = 0.05
+# 空氣的黏滯阻尼係數
+cor = 0.7 
+# 球的彈力係數
+fr = 0.95
+# 球的半徑
+r = 5
+
+for i in range(n):
+    x[i] = 300
+    y[i] = 100
+    # random.random() 將會產生介於 0 與 1 的浮點亂數
+    vx[i] = 2*(random.random()-.5)
+    vy[i] = 2*(random.random()-.5)
+
+# 更新第 i 球 Y 座標的運算邏輯
+def updateY(i):
+    if ((y[i]+r) < height):
+        #y = height
+        vy[i] += g
+    else:
+        vy[i] = -vy[i]*cor
+        vx[i] *= fr
+    y[i] += vy[i]
+    if ((y[i]+r) > height):
+        y[i] = height-r
+
+# 更新第 i 球 X 座標的運算邏輯
+def updateX(i):
+    if ((x[i]+r) >= width or (x[i]-r) <= 0):
+        vx[i] = -vx[i]*cor
+    x[i] += vx[i]
+    if ((x[i]+r) > width):
+        x[i] = width-r
+    elif ((x[i]-r) < 0):
+        x[i] = r
+
+# 畫圓函式
+def circle(x,y,r):
+    ctx.beginPath()
+    ctx.arc(x, y, r, 0, math.pi*2, True)
+    ctx.fill()
+
+# 寫字函式
+def text(s):
+    ctx.fillStyle = "#ff0000"
+    ctx.font = "30px sans-serif"
+    ctx.textBaseline = "bottom"
+    ctx.fillText(s,0,height)
+
+# 每隔特定時間, 進行動畫繪製
+def animate():
+    # 刷新畫布
+    ctx.clearRect(0, 0, width, height)
+    # 逐一重新繪製小球
+    ctx.fillStyle = "#000000"
+    for i in range(n):
+        updateY(i)
+        updateX(i)
+        circle(x[i],y[i],r)
+
+text("Click me!")
+
+# 畫布點擊後執行的函式
+def on_canvas_click(ev):
+    browser.timer.set_interval(animate,0)
+
+# 只要使用者點擊在畫布上任何地方, 即執行 on_canvas_click 函式
+canvas.bind('click', on_canvas_click, False)
+</script></div>
     <footer>
 <p class="meta">
   <span class="byline author vcard">
@@ -143,9 +251,9 @@
   <script src="./theme/js/octopress.js" type="text/javascript"></script>
   <script type="text/javascript">
     var disqus_shortname = '2015fall';
-    var disqus_identifier = '/2015cp_hw_w7.html';
-    var disqus_url = './2015cp_hw_w7.html';
-    var disqus_title = '2015 計算機程式 作業七';
+    var disqus_identifier = '/2015cp_hw_w16.html';
+    var disqus_url = './2015cp_hw_w16.html';
+    var disqus_title = '[\'2015 計算機程式 作業十六\', \'2015 計算機程式 作業十六\']';
     (function() {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
       dsq.src = "//" + disqus_shortname + '.disqus.com/embed.js';
