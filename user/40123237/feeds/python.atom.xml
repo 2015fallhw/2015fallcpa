@@ -1,5 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>2015FALL 40123237 CPA 作業 (期中報告)</title><link href="http://coursemdetw.github.io/reveal/" rel="alternate"></link><link href="http://coursemdetw.github.io/reveal/feeds/python.atom.xml" rel="self"></link><id>http://coursemdetw.github.io/reveal/</id><updated>2016-01-08T10:57:00+08:00</updated><entry><title>2015 計算機程式 第十七週</title><link href="http://coursemdetw.github.io/reveal/40123237_cp_w17.html" rel="alternate"></link><updated>2016-01-08T10:57:00+08:00</updated><author><name>陳琨揚</name></author><id>tag:coursemdetw.github.io,2016-01-08:reveal/40123237_cp_w17.html</id><summary type="html">&lt;h1&gt;Brython動畫&lt;/h1&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>2015FALL 40123237 CPA 作業 (期中報告)</title><link href="http://coursemdetw.github.io/reveal/" rel="alternate"></link><link href="http://coursemdetw.github.io/reveal/feeds/python.atom.xml" rel="self"></link><id>http://coursemdetw.github.io/reveal/</id><updated>2016-01-15T16:00:00+08:00</updated><entry><title>2015 計算機程式 作業十八</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w18.html" rel="alternate"></link><updated>2016-01-15T16:00:00+08:00</updated><author><name>40123237</name></author><id>tag:coursemdetw.github.io,2016-01-15:reveal/2015cp_hw_w18.html</id><summary type="html">&lt;iframe src="40123237_cp_w18_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="40123237_cp_w18_p.html" target="_blank"&gt;作業十二投影片&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;期中考核項目&lt;/strong&gt;:&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;[50%]&lt;/strong&gt; 個人作業頁面(全班協同區)&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://2015fallhw.github.io/2015fallcpb/user/40123157/" target="_blank"&gt;2015fallcpb/user/40123237&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[60%]&lt;/strong&gt; 個人作業倉儲(gh-pages)&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://40123157.github.io/cpbw8/" target="_blank"&gt;40123237.github.io/cpbw8&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[65%]&lt;/strong&gt; 作業練習影片(含語音說明)&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://vimeo.com/user25757242" target="_blank"&gt;vimeo.com/user25757242&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[75%]&lt;/strong&gt; 作業投影片, 筆記, 操作過程, 心得&lt;ul&gt;
+&lt;li&gt;作業投影片, 筆記, 操作過程: 已於個人作業頁面完成建置&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;學習心得&lt;/strong&gt;:
+    上課必須非常專注跟著老師課程安排進行，稍有恍神即錯失某個操作流程細節與重點，當週上課大概至多了解一半的課程內容，勉強跟著老師操作一遍也不曉得其中關鍵技術，但於課後利用線上教學與課程網站再次複習，效果出乎意料之外感覺打通任督二脈，補足上課來不及記下的課程筆記，更加了解其中所應用的技術與操作細節，深深體會到老師課程編排內容的用心與扎實，循序漸進而非一步到位，每週不厭其煩的從最基礎的教起，複習前一週所講述的課程內容並加以延伸進階，甚至還有課程緩衝週作總複習前幾週所學。本課程學習需要較長的時間吸收內化，教學內容相當豐富但實際操作理解其技術後，又覺得所學只不過是九牛一毛，距離關鍵核心技術還有一段很長的距離要走，總結一句「知其然，而不知其所以然」。頓悟協同版次架構管理的重要性，才能與世界接軌迎向國際化的未來，工業4.0與物聯網(IoT)的時代來臨，其中關鍵技術就是雲端協同應用及網頁整合，也就是我們課程所學之最終目標。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[85%]&lt;/strong&gt; 標題, 關鍵字, 內容&lt;ul&gt;
+&lt;li&gt;依課程評量標準而定&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;自評成績&lt;/strong&gt;: 80分 (沒有最好, 只有更好)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;※播放須知&lt;/strong&gt;: 由於網頁嵌入式影片畫質較低, 建議直接點案影片視窗右下角前往Vimeo瀏覽!&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第十七週</title><link href="http://coursemdetw.github.io/reveal/40123237_cp_w17.html" rel="alternate"></link><updated>2016-01-08T10:57:00+08:00</updated><author><name>陳琨揚</name></author><id>tag:coursemdetw.github.io,2016-01-08:reveal/40123237_cp_w17.html</id><summary type="html">&lt;h1&gt;Brython動畫&lt;/h1&gt;
 &lt;!-- 導入 brython.js --&gt;
 
 &lt;script type="text/javascript" src="http://brython.info/src/brython_dist.js"&gt;&lt;/script&gt;
@@ -116,7 +147,38 @@ canvas.bind('click', on_canvas_click, False)
 &lt;/script&gt;
 
 &lt;h2&gt;心得&lt;/h2&gt;
-&lt;p&gt;這門課說難不難，一直反覆的練習很快就熟悉了。                       &lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業十四</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w14.html" rel="alternate"></link><updated>2015-12-25T16:00:00+08:00</updated><author><name>40123237</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/2015cp_hw_w14.html</id><summary type="html">&lt;iframe src="40123237_cp_w14_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
+&lt;p&gt;這門課說難不難，一直反覆的練習很快就熟悉了。                       &lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業十五(聖誕週)</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w15.html" rel="alternate"></link><updated>2016-01-07T16:00:00+08:00</updated><author><name>40123237</name></author><id>tag:coursemdetw.github.io,2016-01-07:reveal/2015cp_hw_w15.html</id><summary type="html">&lt;iframe src="40123237_cp_w15_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="40123237_cp_w15_p.html" target="_blank"&gt;作業十二投影片&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;期中考核項目&lt;/strong&gt;:&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;[50%]&lt;/strong&gt; 個人作業頁面(全班協同區)&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://2015fallhw.github.io/2015fallcpb/user/40123157/" target="_blank"&gt;2015fallcpb/user/40123237&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[60%]&lt;/strong&gt; 個人作業倉儲(gh-pages)&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://40123157.github.io/cpbw8/" target="_blank"&gt;40123237.github.io/cpbw8&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[65%]&lt;/strong&gt; 作業練習影片(含語音說明)&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://vimeo.com/user25757242" target="_blank"&gt;vimeo.com/user25757242&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[75%]&lt;/strong&gt; 作業投影片, 筆記, 操作過程, 心得&lt;ul&gt;
+&lt;li&gt;作業投影片, 筆記, 操作過程: 已於個人作業頁面完成建置&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;學習心得&lt;/strong&gt;:
+    上課必須非常專注跟著老師課程安排進行，稍有恍神即錯失某個操作流程細節與重點，當週上課大概至多了解一半的課程內容，勉強跟著老師操作一遍也不曉得其中關鍵技術，但於課後利用線上教學與課程網站再次複習，效果出乎意料之外感覺打通任督二脈，補足上課來不及記下的課程筆記，更加了解其中所應用的技術與操作細節，深深體會到老師課程編排內容的用心與扎實，循序漸進而非一步到位，每週不厭其煩的從最基礎的教起，複習前一週所講述的課程內容並加以延伸進階，甚至還有課程緩衝週作總複習前幾週所學。本課程學習需要較長的時間吸收內化，教學內容相當豐富但實際操作理解其技術後，又覺得所學只不過是九牛一毛，距離關鍵核心技術還有一段很長的距離要走，總結一句「知其然，而不知其所以然」。頓悟協同版次架構管理的重要性，才能與世界接軌迎向國際化的未來，工業4.0與物聯網(IoT)的時代來臨，其中關鍵技術就是雲端協同應用及網頁整合，也就是我們課程所學之最終目標。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[85%]&lt;/strong&gt; 標題, 關鍵字, 內容&lt;ul&gt;
+&lt;li&gt;依課程評量標準而定&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;自評成績&lt;/strong&gt;: 80分 (沒有最好, 只有更好)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;※播放須知&lt;/strong&gt;: 由於網頁嵌入式影片畫質較低, 建議直接點案影片視窗右下角前往Vimeo瀏覽!&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業十四</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w14.html" rel="alternate"></link><updated>2015-12-25T16:00:00+08:00</updated><author><name>40123237</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/2015cp_hw_w14.html</id><summary type="html">&lt;iframe src="40123237_cp_w14_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
 &lt;p&gt;&lt;a href="40123237_cp_w14_p.html" target="_blank"&gt;作業十二投影片&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -632,35 +694,4 @@ canvas.bind('click', on_canvas_click, False)
 &lt;p&gt;&lt;strong&gt;※播放須知&lt;/strong&gt;: 由於網頁嵌入式影片畫質較低, 建議直接點案影片視窗右下角前往Vimeo瀏覽!&lt;/p&gt;
 &lt;iframe src="https://player.vimeo.com/video/151750352" width="500" height="300" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 
-&lt;p&gt;&lt;a href="https://vimeo.com/151750352"&gt;第一周&lt;/a&gt; from &lt;a href="https://vimeo.com/user40271183"&gt;40123237&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業十八(期末考)</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w18.html" rel="alternate"></link><updated>2015-01-01T16:00:00+08:00</updated><author><name>40123237</name></author><id>tag:coursemdetw.github.io,2015-01-01:reveal/2015cp_hw_w18.html</id><summary type="html">&lt;iframe src="40123237_cp_w18_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;a href="40123237_cp_w18_p.html" target="_blank"&gt;作業十二投影片&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;期中考核項目&lt;/strong&gt;:&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;[50%]&lt;/strong&gt; 個人作業頁面(全班協同區)&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://2015fallhw.github.io/2015fallcpb/user/40123157/" target="_blank"&gt;2015fallcpb/user/40123237&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;[60%]&lt;/strong&gt; 個人作業倉儲(gh-pages)&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://40123157.github.io/cpbw8/" target="_blank"&gt;40123237.github.io/cpbw8&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;[65%]&lt;/strong&gt; 作業練習影片(含語音說明)&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://vimeo.com/user25757242" target="_blank"&gt;vimeo.com/user25757242&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;[75%]&lt;/strong&gt; 作業投影片, 筆記, 操作過程, 心得&lt;ul&gt;
-&lt;li&gt;作業投影片, 筆記, 操作過程: 已於個人作業頁面完成建置&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;學習心得&lt;/strong&gt;:
-    上課必須非常專注跟著老師課程安排進行，稍有恍神即錯失某個操作流程細節與重點，當週上課大概至多了解一半的課程內容，勉強跟著老師操作一遍也不曉得其中關鍵技術，但於課後利用線上教學與課程網站再次複習，效果出乎意料之外感覺打通任督二脈，補足上課來不及記下的課程筆記，更加了解其中所應用的技術與操作細節，深深體會到老師課程編排內容的用心與扎實，循序漸進而非一步到位，每週不厭其煩的從最基礎的教起，複習前一週所講述的課程內容並加以延伸進階，甚至還有課程緩衝週作總複習前幾週所學。本課程學習需要較長的時間吸收內化，教學內容相當豐富但實際操作理解其技術後，又覺得所學只不過是九牛一毛，距離關鍵核心技術還有一段很長的距離要走，總結一句「知其然，而不知其所以然」。頓悟協同版次架構管理的重要性，才能與世界接軌迎向國際化的未來，工業4.0與物聯網(IoT)的時代來臨，其中關鍵技術就是雲端協同應用及網頁整合，也就是我們課程所學之最終目標。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;[85%]&lt;/strong&gt; 標題, 關鍵字, 內容&lt;ul&gt;
-&lt;li&gt;依課程評量標準而定&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;自評成績&lt;/strong&gt;: 80分 (沒有最好, 只有更好)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;※播放須知&lt;/strong&gt;: 由於網頁嵌入式影片畫質較低, 建議直接點案影片視窗右下角前往Vimeo瀏覽!&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry></feed>
+&lt;p&gt;&lt;a href="https://vimeo.com/151750352"&gt;第一周&lt;/a&gt; from &lt;a href="https://vimeo.com/user40271183"&gt;40123237&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry></feed>
