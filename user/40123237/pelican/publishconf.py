@@ -25,7 +25,7 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (('2015課程網頁', 'http://wordpress-2015course.rhcloud.com/'), ('Python', 'http://python.org/'),  ('2015作業主頁', '../../'), ('[github] 2015fallhw/2015fallcpa', 'https://github.com/2015fallhw/2015fallcpa/tree/gh-pages'), ('[github] 40123237', 'https://github.com/40123237'), ('[vimeo] 40123237', 'https://vimeo.com/user40271183'), ('[github.io] 40123237', 'http://40123237.github.io/40123237/'))
+LINKS = (('2015課程網頁', 'http://wordpress-2015course.rhcloud.com/'), ('Python', 'http://python.org/'),  ('2015作業主頁', '../../'), ('[github] 2015fallhw/2015fallcpa', 'https://github.com/2015fallhw/2015fallcpa/tree/gh-pages'), ('[github] 40123237', 'https://github.com/40123237'), ('[vimeo] 40123237', 'https://vimeo.com/user40271183'), ('[github.io] 40123237 個人網頁', 'http://40123237.github.io/40123237/'))
 
 # Social widget
 SOCIAL = (('twitter', 'http://twitter.com/ametaireau'),
