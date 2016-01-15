@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom"><title>2015FALL 40423107_ CPA 作業</title><link href="http://coursemdetw.github.io/reveal/" rel="alternate"></link><link href="http://coursemdetw.github.io/reveal/feeds/python.atom.xml" rel="self"></link><id>http://coursemdetw.github.io/reveal/</id><updated>2016-01-08T11:41:00+08:00</updated><entry><title>2016 計算機程式 W17作業</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w17.html" rel="alternate"></link><updated>2016-01-08T11:41:00+08:00</updated><author><name>coursemdetw</name></author><id>tag:coursemdetw.github.io,2016-01-08:reveal/2015cp_hw_w17.html</id><summary type="html">&lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
 &lt;iframe src="40423107_cp_w17_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
-&lt;p&gt;&lt;a href="40423107_cp_w17_p.html" target="_blank"&gt;作業一投影片&lt;/a&gt;
+&lt;p&gt;&lt;a href="40423107_cp_w17_p.html" target="_blank"&gt;作業17投影片&lt;/a&gt;
 &lt;p&gt;在網際頁面上, 用 Python 執行動態模擬!&lt;/p&gt;&lt;/p&gt;
 &lt;!-- 導入 brython.js --&gt;
 
@@ -117,7 +117,7 @@ canvas.bind('click', on_canvas_click, False)
 &lt;/script&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 W15作業</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w15.html" rel="alternate"></link><updated>2015-12-25T11:41:00+08:00</updated><author><name>coursemdetw</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/2015cp_hw_w15.html</id><summary type="html">&lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
 &lt;iframe src="40423107_cp_w15_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
-&lt;p&gt;&lt;a href="40423107_cp_w15_p.html" target="_blank"&gt;作業一投影片&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="40423107_cp_w15_p.html" target="_blank"&gt;作業15投影片&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;聖誕節&lt;/p&gt;
 
 &lt;!DOCTYPE html&gt;
@@ -285,7 +285,7 @@ ctx.stroke()
 &lt;/script&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 W14作業</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w14.html" rel="alternate"></link><updated>2015-12-18T11:41:00+08:00</updated><author><name>coursemdetw</name></author><id>tag:coursemdetw.github.io,2015-12-18:reveal/2015cp_hw_w14.html</id><summary type="html">&lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
 &lt;iframe src="40423107_cp_w14_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
-&lt;p&gt;&lt;a href="40423107_cp_w14_p.html" target="_blank"&gt;作業一投影片&lt;/a&gt;
+&lt;p&gt;&lt;a href="40423107_cp_w14_p.html" target="_blank"&gt;作業14投影片&lt;/a&gt;
 &lt;div class="entry-content"&gt;&lt;p&gt;以下利用 Brython 在網頁寫 Python 繪圖&lt;/p&gt; 
 &lt;!-- 導入 brython_dist.js --&gt; &lt;/p&gt;
 &lt;script type="text/javascript" src="js/Brython3.2.3-20151122-082712/brython.js"&gt;&lt;/script&gt;
@@ -459,7 +459,7 @@ ctx.stroke()
 利用 iframe 嵌入投影片:&lt;/p&gt;
 &lt;iframe src="40423107_cp_w12_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
-&lt;p&gt;&lt;a href="40423107_cp_w12_p.html" target="_blank"&gt;作業一投影片&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="40423107_cp_w12_p.html" target="_blank"&gt;作業12投影片&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;程式&lt;/p&gt;
 
 &lt;p&gt;#coding: utf-8&lt;/p&gt;
@@ -482,11 +482,16 @@ ctx.stroke()
         &lt;p&gt;    print("太小了，再猜一次 :)加油")&lt;/p&gt;
     &lt;p&gt;    你猜的數字 = int(input("請輸入您所猜的整數:"))&lt;/p&gt;
     &lt;p&gt;    猜測次數 += 1&lt;/p&gt;&lt;/p&gt;
-&lt;p&gt;print("猜對了！總共猜了", 猜測次數, "次")&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 W11作業</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w11.html" rel="alternate"></link><updated>2015-11-27T11:41:00+08:00</updated><author><name>coursemdetw</name></author><id>tag:coursemdetw.github.io,2015-11-27:reveal/2015cp_hw_w11.html</id><summary type="html">&lt;p&gt;以下為作業11內容&lt;/p&gt;
+&lt;p&gt;print("猜對了！總共猜了", 猜測次數, "次")&lt;/p&gt;
+
+&lt;iframe src="https://player.vimeo.com/video/147719022" width="500" height="282" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/147719022"&gt;2015 cpa w11&lt;/a&gt; from &lt;a href="https://vimeo.com/user45320873"&gt;史育澤&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 W11作業</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w11.html" rel="alternate"></link><updated>2015-11-27T11:41:00+08:00</updated><author><name>coursemdetw</name></author><id>tag:coursemdetw.github.io,2015-11-27:reveal/2015cp_hw_w11.html</id><summary type="html">&lt;p&gt;以下為作業11內容&lt;/p&gt;
 &lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
 &lt;iframe src="40423107_cp_w11_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
-&lt;p&gt;&lt;a href="40423107_cp_w11_p.html" target="_blank"&gt;作業一投影片&lt;/a&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業8</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w8.html" rel="alternate"></link><updated>2015-11-06T10:00:00+08:00</updated><author><name>coursemdetw</name></author><id>tag:coursemdetw.github.io,2015-11-06:reveal/2015cp_hw_w8.html</id><summary type="html">&lt;p&gt;以下為作業8內容&lt;/p&gt;
+&lt;p&gt;&lt;a href="40423107_cp_w11_p.html" target="_blank"&gt;作業11投影片&lt;/a&gt;
+&lt;iframe src="https://player.vimeo.com/video/143997616" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt; &lt;p&gt;&lt;a href="https://vimeo.com/143997616"&gt;錄製_2015_10_29_21_37_49_383&lt;/a&gt; from &lt;a href="https://vimeo.com/user45320873"&gt;史育澤&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業8</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w8.html" rel="alternate"></link><updated>2015-11-06T10:00:00+08:00</updated><author><name>coursemdetw</name></author><id>tag:coursemdetw.github.io,2015-11-06:reveal/2015cp_hw_w8.html</id><summary type="html">&lt;p&gt;以下為作業8內容&lt;/p&gt;
 &lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
 &lt;iframe src="40423107_cp_w8_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
