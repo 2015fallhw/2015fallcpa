@@ -10,7 +10,10 @@
 &lt;p&gt;3.根據上述兩個頁面中的資料, 配合各課程的講授內容, 依據 投影片, 操作影片以及頁面上的其他相關檔案資料評分.&lt;/p&gt;
 &lt;p&gt;4.從各班的協同網頁中, 各組所公佈的分組報告中的 投影片, 操作影片以及頁面上的其他相關檔案資料評分.&lt;/p&gt;
 &lt;p&gt;5.cadp 課程另外將參酌學員所完成的 Solvespace 零件檔案, Creo Parametric 零組件檔案, Onshape 零組件檔案評分.&lt;/p&gt;
-&lt;p&gt;自我評分:80&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第十七週</title><link href="http://coursemdetw.github.io/reveal/40123237_cp_w17.html" rel="alternate"></link><updated>2016-01-08T10:57:00+08:00</updated><author><name>陳琨揚</name></author><id>tag:coursemdetw.github.io,2016-01-08:reveal/40123237_cp_w17.html</id><summary type="html">&lt;h1&gt;Brython動畫&lt;/h1&gt;
+&lt;p&gt;自我評分:80&lt;/p&gt;
+&lt;iframe src="https://player.vimeo.com/video/151750352" width="500" height="300" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="https://vimeo.com/151750352"&gt;第一周&lt;/a&gt; from &lt;a href="https://vimeo.com/user40271183"&gt;40123237&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第十七週</title><link href="http://coursemdetw.github.io/reveal/40123237_cp_w17.html" rel="alternate"></link><updated>2016-01-08T10:57:00+08:00</updated><author><name>陳琨揚</name></author><id>tag:coursemdetw.github.io,2016-01-08:reveal/40123237_cp_w17.html</id><summary type="html">&lt;h1&gt;Brython動畫&lt;/h1&gt;
 &lt;!-- 導入 brython.js --&gt;
 
 &lt;script type="text/javascript" src="http://brython.info/src/brython_dist.js"&gt;&lt;/script&gt;
@@ -291,13 +294,57 @@ ctx.stroke()
 &lt;p&gt;&lt;a href="https://www.gliffy.com/go/html5/9703277?app=1b5094b0-6042-11e2-bcfd-0800200c9a66"&gt;https://www.gliffy.com/go/html5/9703277?app=1b5094b0-6042-11e2-bcfd-0800200c9a66&lt;/a&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業十四</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w14.html" rel="alternate"></link><updated>2015-12-25T16:00:00+08:00</updated><author><name>40123237</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/2015cp_hw_w14.html</id><summary type="html">&lt;iframe src="40123237_cp_w14_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
 &lt;p&gt;&lt;a href="40123237_cp_w14_p.html" target="_blank"&gt;作業十二投影片&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;*&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業十三</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w13.html" rel="alternate"></link><updated>2015-12-18T16:00:00+08:00</updated><author><name>40123237</name></author><id>tag:coursemdetw.github.io,2015-12-18:reveal/2015cp_hw_w13.html</id><summary type="html">&lt;iframe src="40123237_cp_w13_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
+&lt;h1&gt;1-1. Python3的近端程式開發系統如何建立&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;**1. 從 http://www.python.org/download/ 下載 Python 3.3.1, Doc 與 test scripts 不安裝, 容量大約 26 MB.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;**2. 接著從 http://www.lfd.uci.edu/~gohlke/pythonlibs/#distribute 下載 distribute-0.6.36.win32-py3.3.‌exe, 安裝後約佔 &lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;30MB.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;**3. 接著從 http://www.lfd.uci.edu/~gohlke/pythonlibs/#pip 下載 pip-1.3.1.win32-py3.3.‌exe, 安裝後約佔 32MB.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;**4. 接著從 http://sourceforge.net/projects/pywin32/files/pywin32/Build%20218/ 下載 pywin32-218.win32-py3.3.exe, 安裝&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;後約佔 58MB.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;**5. 接著從 http://www.riverbankcomputing.com/software/pyqt/download 下載 PyQt4-4.10-gpl-Py3.3-Qt5.0.1-x32-2.exe, Doc &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;與 Examples 不安裝, 安裝後約佔 166MB.&lt;/p&gt;
+&lt;p&gt;註: 因為安裝 PyQt4/Qt5 必須要從 http://www.microsoft.com/en-us/download/search.aspx?q=directx 更新 directx, 對於沒&lt;/p&gt;
+&lt;p&gt;有更新的電腦就無法讓 Leo Editor 擷取到最新的 directx dll, 因為這不是 Leo 編輯器的問題, 而是 PyQt4 連結 Qt5 dll 所造&lt;/p&gt;
+&lt;p&gt;成的問題, 目前還不知道 PyQt5 是否可以在未更新 directx 的情況下讓 2014 年即將退役的 Windows XP 正常使用 Qt5 的 dll, &lt;/p&gt;
+&lt;p&gt;因此依賴 PyQt 的 Leo Editor 根本無法主動修改, 只有兩條路可以走, 就是在 PyQt4 配合 Qt5  的情況下, 更新 Windows 的 &lt;/p&gt;
+&lt;p&gt;directx, 或者是回到 PyQt4 與 Qt4 的搭配, 等待 PyQt5 與 Qt5 的版本到來, 然後再看是否能在未更新 dirextx 或更新 &lt;/p&gt;
+&lt;p&gt;directx 的操作系統中彼此相容.&lt;/p&gt;
+&lt;p&gt;這裡我們選擇在 PyQt4/Qt4 的模式下來啟動 Leo 編輯器, 也就從  &lt;/p&gt;
+&lt;p&gt;http://www.riverbankcomputing.com/software/pyqt/download 下載 PyQt4-4.10-gpl-Py3.3-Qt4.8.4-x32.exe, 而非 PyQt4-&lt;/p&gt;
+&lt;p&gt;4.10-gpl-Py3.3-Qt5.0.1-x32-2.exe.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;* **6. 接著從 http://www.lfd.uci.edu/~gohlke/pythonlibs/#docutils 下載 docutils-0.10.win32-py3.3.‌exe, 安裝後約佔 172MB.
+
+* **7. 接著從 http://www.greygreen.org/leo/ 下載 leo-editor-snapshot-20130408.zip, 解開後將 leo 目錄放到 C:
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;\Python33\Lib\site-packages\, 整個 C:\Python33 約為 190MB.&lt;/p&gt;
+&lt;iframe src="https://player.vimeo.com/video/151750352" width="500" height="300" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="https://vimeo.com/151750352"&gt;第一周&lt;/a&gt; from &lt;a href="https://vimeo.com/user40271183"&gt;40123237&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業十三</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w13.html" rel="alternate"></link><updated>2015-12-18T16:00:00+08:00</updated><author><name>40123237</name></author><id>tag:coursemdetw.github.io,2015-12-18:reveal/2015cp_hw_w13.html</id><summary type="html">&lt;iframe src="40123237_cp_w13_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
 &lt;p&gt;&lt;a href="40123237_cp_w13_p.html" target="_blank"&gt;作業十二投影片&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;確定可以透過修正, 在 C:\ana3_2015 目錄中正確啟動 Leo Editor 5.1 與 Pelican 網誌架構環境, 並且將 Jupyter 在 Y:\tmp 目錄中啟動, 所有組員都能在各分組的 Jupyter 中執行程式與 Markdown 報告編寫.
         &lt;/em&gt;先徹底了解猜數字遊戲, 從互動程式開始到電腦自動運行的版本.
         &lt;em&gt;看看猜顏色遊戲, 要在單機完成這樣的程式, 還需要那些程式語法與內容架構? (cptocadp)
-        &lt;/em&gt;單機執行的猜數字程式若希望搬到全球資訊網的環境中執行(Why?), 還需要那些知識?&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業十二</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w12.html" rel="alternate"></link><updated>2015-12-11T16:00:00+08:00</updated><author><name>40123237</name></author><id>tag:coursemdetw.github.io,2015-12-11:reveal/2015cp_hw_w12.html</id><summary type="html">&lt;iframe src="40123237_cp_w12_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
+        &lt;/em&gt;單機執行的猜數字程式若希望搬到全球資訊網的環境中執行(Why?), 還需要那些知識?&lt;/p&gt;
+&lt;iframe src="https://player.vimeo.com/video/151750352" width="500" height="300" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="https://vimeo.com/151750352"&gt;第一周&lt;/a&gt; from &lt;a href="https://vimeo.com/user40271183"&gt;40123237&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業十二</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w12.html" rel="alternate"></link><updated>2015-12-11T16:00:00+08:00</updated><author><name>40123237</name></author><id>tag:coursemdetw.github.io,2015-12-11:reveal/2015cp_hw_w12.html</id><summary type="html">&lt;iframe src="40123237_cp_w12_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
 &lt;p&gt;&lt;a href="40123237_cp_w12_p.html" target="_blank"&gt;作業十二投影片&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -309,7 +356,10 @@ ctx.stroke()
 
 
 &lt;/li&gt;
-&lt;/ul&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業十一</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w11.html" rel="alternate"></link><updated>2015-12-04T16:00:00+08:00</updated><author><name>40123237</name></author><id>tag:coursemdetw.github.io,2015-12-04:reveal/2015cp_hw_w11.html</id><summary type="html">&lt;iframe src="40123237_cp_w11_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
+&lt;/ul&gt;
+&lt;iframe src="https://player.vimeo.com/video/151750352" width="500" height="300" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="https://vimeo.com/151750352"&gt;第一周&lt;/a&gt; from &lt;a href="https://vimeo.com/user40271183"&gt;40123237&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業十一</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w11.html" rel="alternate"></link><updated>2015-12-04T16:00:00+08:00</updated><author><name>40123237</name></author><id>tag:coursemdetw.github.io,2015-12-04:reveal/2015cp_hw_w11.html</id><summary type="html">&lt;iframe src="40123237_cp_w11_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
 &lt;p&gt;&lt;a href="40123237_cp_w11_p.html" target="_blank"&gt;作業十一投影片&lt;/a&gt;&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;    *工程師的主要任務在解決人所面臨的各種問題 (Problems Solving), 而人的活動分為 3 個主軸類別 Humanites (人文), Science (科學), Goods and Services (產品與服務) (參考資料) – 人文是養份, 科學是依據, 讓工程師創造各種產品與服務來解決人類所面臨的問題
@@ -324,7 +374,12 @@ ctx.stroke()
     *科學: the intellectual (知識的) and practical (實用的) activity encompassing the systematic study (系統化研習) of the structure and behavior of the physical and natural world (物理與自然世界) through observation and experiment, knowledge of any kind
 
     *產品與服務: a substance produced during a natural (天然), chemical (化學), or manufacturing (製造) process and the action of helping or doing work for someone
-&lt;/pre&gt;&lt;/div&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業九(期中考週)</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w9.html" rel="alternate"></link><updated>2015-11-20T16:00:00+08:00</updated><author><name>40123237</name></author><id>tag:coursemdetw.github.io,2015-11-20:reveal/2015cp_hw_w9.html</id><summary type="html">&lt;iframe src="40123237_cp_w9_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;iframe src="https://player.vimeo.com/video/151750352" width="500" height="300" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="https://vimeo.com/151750352"&gt;第一周&lt;/a&gt; from &lt;a href="https://vimeo.com/user40271183"&gt;40123237&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業九(期中考週)</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w9.html" rel="alternate"></link><updated>2015-11-20T16:00:00+08:00</updated><author><name>40123237</name></author><id>tag:coursemdetw.github.io,2015-11-20:reveal/2015cp_hw_w9.html</id><summary type="html">&lt;iframe src="40123237_cp_w9_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
 &lt;p&gt;&lt;a href="40123237_cp_w9_p.html" target="_blank"&gt;作業九投影片&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -350,17 +405,20 @@ ctx.stroke()
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;自評成績&lt;/strong&gt;: 80分 (沒有最好, 只有更好)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;※播放須知&lt;/strong&gt;: 由於網頁嵌入式影片畫質較低, 建議直接點案影片視窗右下角前往Vimeo瀏覽!&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業八 (自我評量)</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w8.html" rel="alternate"></link><updated>2015-11-13T16:00:00+08:00</updated><author><name>40123237</name></author><id>tag:coursemdetw.github.io,2015-11-13:reveal/2015cp_hw_w8.html</id><summary type="html">&lt;iframe src="40123237_cp_w8_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;strong&gt;※播放須知&lt;/strong&gt;: 由於網頁嵌入式影片畫質較低, 建議直接點案影片視窗右下角前往Vimeo瀏覽!&lt;/p&gt;
+&lt;iframe src="https://player.vimeo.com/video/151750352" width="500" height="300" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="https://vimeo.com/151750352"&gt;第一周&lt;/a&gt; from &lt;a href="https://vimeo.com/user40271183"&gt;40123237&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業八 (自我評量)</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w8.html" rel="alternate"></link><updated>2015-11-13T16:00:00+08:00</updated><author><name>40123237</name></author><id>tag:coursemdetw.github.io,2015-11-13:reveal/2015cp_hw_w8.html</id><summary type="html">&lt;iframe src="40123237_cp_w8_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
 &lt;p&gt;&lt;a href="40123237_cp_w8_p.html" target="_blank"&gt;作業八投影片&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;期中考核項目&lt;/strong&gt;:&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;[50%]&lt;/strong&gt; 個人作業頁面(全班協同區)&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://2015fallhw.github.io/2015fallcpb/user/40123237/" target="_blank"&gt;2015fallcpb/user/40123237&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://2015fallhw.github.io/2015fallcpa/user/40123237/" target="_blank"&gt;2015fallcpb/user/40123237&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;[60%]&lt;/strong&gt; 個人作業倉儲(gh-pages)&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://40123157.github.io/40123237/" target="_blank"&gt;40123237.github.io/40123237&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://40123237.github.io/40123237/" target="_blank"&gt;40123237.github.io/40123237&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;[65%]&lt;/strong&gt; 作業練習影片(含語音說明)&lt;ul&gt;
@@ -410,7 +468,10 @@ ctx.stroke()
 &lt;/ul&gt;
 &lt;p&gt;基本程式練習: SciTE, Jupyter (print("*"), notebook網誌)&lt;/p&gt;
 &lt;p&gt;切換倉儲版本資料: git reset -- hard 1234567(版本代號7碼)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;※播放須知&lt;/strong&gt;: 由於網頁嵌入式影片畫質較低, 建議直接點案影片視窗右下角前往Vimeo瀏覽!&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業六</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w6.html" rel="alternate"></link><updated>2015-10-23T16:00:00+08:00</updated><author><name>40123237</name></author><id>tag:coursemdetw.github.io,2015-10-23:reveal/2015cp_hw_w6.html</id><summary type="html">&lt;iframe src="40123237_cp_w6_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;strong&gt;※播放須知&lt;/strong&gt;: 由於網頁嵌入式影片畫質較低, 建議直接點案影片視窗右下角前往Vimeo瀏覽!&lt;/p&gt;
+&lt;iframe src="https://player.vimeo.com/video/151870738" width="500" height="300" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="https://vimeo.com/151870738"&gt;7&lt;/a&gt; from &lt;a href="https://vimeo.com/user40271183"&gt;40123237&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業六</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w6.html" rel="alternate"></link><updated>2015-10-23T16:00:00+08:00</updated><author><name>40123237</name></author><id>tag:coursemdetw.github.io,2015-10-23:reveal/2015cp_hw_w6.html</id><summary type="html">&lt;iframe src="40123237_cp_w6_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
 &lt;p&gt;&lt;a href="40123237_cp_w6_p.html" target="_blank"&gt;作業六投影片&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -429,7 +490,10 @@ ctx.stroke()
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;※播放須知&lt;/strong&gt;: 由於網頁嵌入式影片畫質較低, 建議直接點案影片視窗右下角前往Vimeo瀏覽!&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業五</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w5.html" rel="alternate"></link><updated>2015-10-16T16:00:00+08:00</updated><author><name>40123237</name></author><id>tag:coursemdetw.github.io,2015-10-16:reveal/2015cp_hw_w5.html</id><summary type="html">&lt;iframe src="40123237_cp_w5_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;strong&gt;※播放須知&lt;/strong&gt;: 由於網頁嵌入式影片畫質較低, 建議直接點案影片視窗右下角前往Vimeo瀏覽!&lt;/p&gt;
+&lt;iframe src="https://player.vimeo.com/video/151870835" width="500" height="300" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="https://vimeo.com/151870835"&gt;6&lt;/a&gt; from &lt;a href="https://vimeo.com/user40271183"&gt;40123237&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業五</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w5.html" rel="alternate"></link><updated>2015-10-16T16:00:00+08:00</updated><author><name>40123237</name></author><id>tag:coursemdetw.github.io,2015-10-16:reveal/2015cp_hw_w5.html</id><summary type="html">&lt;iframe src="40123237_cp_w5_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
 &lt;p&gt;&lt;a href="40123237_cp_w5_p.html" target="_blank"&gt;作業五投影片&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -466,7 +530,10 @@ ctx.stroke()
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;※播放須知&lt;/strong&gt;: 由於網頁嵌入式影片畫質較低, 建議直接點案影片視窗右下角前往Vimeo瀏覽!&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業三</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w3.html" rel="alternate"></link><updated>2015-10-02T16:00:00+08:00</updated><author><name>40123237</name></author><id>tag:coursemdetw.github.io,2015-10-02:reveal/2015cp_hw_w3.html</id><summary type="html">&lt;iframe src="40123237_cp_w3_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;strong&gt;※播放須知&lt;/strong&gt;: 由於網頁嵌入式影片畫質較低, 建議直接點案影片視窗右下角前往Vimeo瀏覽!&lt;/p&gt;
+&lt;iframe src="https://player.vimeo.com/video/151870175" width="500" height="300" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="https://vimeo.com/151870175"&gt;5&lt;/a&gt; from &lt;a href="https://vimeo.com/user40271183"&gt;40123237&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業三</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w3.html" rel="alternate"></link><updated>2015-10-02T16:00:00+08:00</updated><author><name>40123237</name></author><id>tag:coursemdetw.github.io,2015-10-02:reveal/2015cp_hw_w3.html</id><summary type="html">&lt;iframe src="40123237_cp_w3_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
 &lt;p&gt;&lt;a href="40123237_cp_w3_p.html" target="_blank"&gt;作業三投影片&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -502,7 +569,10 @@ ctx.stroke()
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;※播放須知&lt;/strong&gt;: 由於網頁嵌入式影片畫質較低, 建議直接點案影片視窗右下角前往Vimeo瀏覽!&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業二 (重點筆記)</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w2.html" rel="alternate"></link><updated>2015-09-25T16:00:00+08:00</updated><author><name>40123237</name></author><id>tag:coursemdetw.github.io,2015-09-25:reveal/2015cp_hw_w2.html</id><summary type="html">&lt;iframe src="40123237_cp_w2_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;strong&gt;※播放須知&lt;/strong&gt;: 由於網頁嵌入式影片畫質較低, 建議直接點案影片視窗右下角前往Vimeo瀏覽!&lt;/p&gt;
+&lt;iframe src="https://player.vimeo.com/video/151872522" width="500" height="300" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="https://vimeo.com/151872522"&gt;第三周 (2)&lt;/a&gt; from &lt;a href="https://vimeo.com/user40271183"&gt;40123237&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業二 (重點筆記)</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w2.html" rel="alternate"></link><updated>2015-09-25T16:00:00+08:00</updated><author><name>40123237</name></author><id>tag:coursemdetw.github.io,2015-09-25:reveal/2015cp_hw_w2.html</id><summary type="html">&lt;iframe src="40123237_cp_w2_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
 &lt;p&gt;&lt;a href="40123237_cp_w2_p.html" target="_blank"&gt;作業二投影片&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -602,7 +672,10 @@ ctx.stroke()
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;※播放須知&lt;/strong&gt;: 由於網頁嵌入式影片畫質較低, 建議直接點案影片視窗右下角前往Vimeo瀏覽!&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業一</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w1.html" rel="alternate"></link><updated>2015-09-18T16:00:00+08:00</updated><author><name>40123237</name></author><id>tag:coursemdetw.github.io,2015-09-18:reveal/2015cp_hw_w1.html</id><summary type="html">&lt;iframe src="40123237_cp_w1_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;strong&gt;※播放須知&lt;/strong&gt;: 由於網頁嵌入式影片畫質較低, 建議直接點案影片視窗右下角前往Vimeo瀏覽!&lt;/p&gt;
+&lt;iframe src="https://player.vimeo.com/video/151866041" width="500" height="300" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="https://vimeo.com/151866041"&gt;第二周&lt;/a&gt; from &lt;a href="https://vimeo.com/user40271183"&gt;40123237&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業一</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w1.html" rel="alternate"></link><updated>2015-09-18T16:00:00+08:00</updated><author><name>40123237</name></author><id>tag:coursemdetw.github.io,2015-09-18:reveal/2015cp_hw_w1.html</id><summary type="html">&lt;iframe src="40123237_cp_w1_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
 &lt;p&gt;&lt;a href="40123237_cp_w1_p.html" target="_blank"&gt;作業一投影片&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
