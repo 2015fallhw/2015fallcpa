@@ -1,0 +1,79 @@
+<!--
+這個檔案展示了 reveal.js 投影片資料的基本架構
+其中使用 "reveal" class 與 "slides" class 來界定投影片的資料範圍
+而各投影片則以 <section></section> 標示
+且支援平行與垂直的投影片配置方法
+-->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>最簡單的 reveal 超文件</title>
+<link rel="stylesheet" href="css/reveal.min.css">
+	<link rel="stylesheet" href="css/theme/default.css" id="theme">	
+	<!--增加對於 IE 早期版本的支援 -->
+	<!--[if lt IE 9]>
+	<script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+<body>
+<!-- 將整個投影片包在 "reveal" class 中 -->
+<div class="reveal">
+<!-- 將所有投影片包在 "slides" class 中 -->
+<div class="slides">
+<!-- 以下為投影片 -->
+<!-- 每一個 section 都代表一張投影片,  -->
+<!-- section 標註中的多 section 標註, 將往下垂直延伸 -->
+<section>
+    <h1>2015cpaw18step</h1>
+    <p>40123237陳琨揚2016/1/15</p>		
+</section>
+
+<section id="hw-task-one">
+    <img src="theme/images/step/cpbw8/1.png" width="1000" alt="step1"></img>
+    <p>step1</p>
+</section>
+
+<section id="hw-task-one">
+    <img src="theme/images/step/cpbw8/2.png" width="1000" alt="step2"></img>
+    <p>step2</p>
+</section>
+
+<section id="hw-task-one">
+    <img src="theme/images/step/cpbw8/3.png" width="1000" alt="step3"></img>
+    <p>step3</p>
+</section>
+
+<section id="hw-task-one">
+    <img src="theme/images/step/cpbw8/4.png" width="1000" alt="step4"></img>
+    <p>step4</p>
+</section>
+
+<section id="hw-task-one">
+    <img src="theme/images/step/cpbw8/5.png" width="1000" alt="step5"></img>
+    <p>step5</p>
+</section>
+
+<section id="hw-task-one">
+    <img src="theme/images/step/cpbw8/6.png" width="1000" alt="step6"></img>
+    <p>step6</p>
+</section>
+
+<section>
+    <h1>[w8] 11/06</h1>
+    <p>課程筆記網誌建構: Leo Editor, Jupyter notebook</p>
+    <p>[w9] 11/13: 期中考自我評量</p>
+</section>
+				
+</div>
+</div>
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.min.js"></script>
+<script>
+    // 啟動 Reveal.
+    Reveal.initialize({
+    });
+</script>
+	
+</body>
+

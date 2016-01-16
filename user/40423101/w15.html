@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>w15 &mdash; 2015FALL 40423101 CADPA 作業</title>
+  <meta name="author" content="40423101">
+
+
+
+
+
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link href="./favicon.png" rel="icon">
+
+  <link href="./theme/css/main.css" media="screen, projection"
+        rel="stylesheet" type="text/css">
+
+  <link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic"
+        rel="stylesheet" type="text/css">
+  <link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic"
+        rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <header role="banner"><hgroup>
+  <h1><a href="./">2015FALL 40423101 CADPA 作業</a></h1>
+</hgroup></header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+</ul>
+
+
+<ul class="main-navigation">
+      <li class="active">
+        <a href="./category/python.html">Python</a>
+      </li>
+</ul></nav>
+  <div id="main">
+    <div id="content">
+<div>
+  <article class="hentry" role="article">
+<header>
+      <h1 class="entry-title">w15</h1>
+    <p class="meta">
+<time datetime="2015-12-25T00:00:00+08:00" pubdate>週五 25 十二月 2015</time>    </p>
+</header>
+
+  <div class="entry-content"><!-- 導入 brython.js -->
+
+<script type="text/javascript" src="http://brython.info/src/brython_dist.js"></script>
+
+<!-- 啟動 brython() -->
+
+<script>
+window.onload=function(){
+brython(1);
+}
+</script>
+
+<!-- 以下利用 Brython 程式執行繪圖 -->
+
+<canvas id="plotarea2" width="0" height="0"></canvas>
+
+<script type="text/python3">
+# 導入 doc
+from browser import document as doc
+from browser import console
+import math
+
+# 準備繪圖畫布
+canvas2 = doc["plotarea2"]
+ctx22 = canvas2.getContext("2d")
+
+
+
+
+</script>
+
+<script>
+window.onload=function(){
+brython(1);
+}
+</script>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<canvas id="myCanvas" width="400" height="400"
+style="border:1px solid #c3c3c3;">
+Your browser does not support the canvas element.
+</canvas>
+
+<script>
+var canvas = document.getElementById("myCanvas");
+var ctx2 = canvas.getContext("2d");
+ctx2.fillStyle = "#9F5000";
+ctx2.fillRect(180,307.5,40,100);
+
+ctx2.beginPath();
+ctx2.lineWidth=5
+ctx2.strokeStyle = "#9AFF02";
+ctx2.moveTo(200,70);
+ctx2.lineTo(100,150);
+ctx2.stroke();
+
+ctx2.beginPath();
+ctx2.moveTo(200,70);
+ctx2.lineTo(300,150);
+ctx2.stroke();
+
+ctx2.beginPath();
+ctx2.moveTo(100,150);
+ctx2.lineTo(300,150);
+ctx2.stroke();
+
+ctx2.beginPath();
+ctx2.moveTo(160,150);
+ctx2.lineTo(80,230);
+ctx2.stroke();
+
+ctx2.beginPath();
+ctx2.moveTo(240,150);
+ctx2.lineTo(320,230);
+ctx2.stroke();
+
+ctx2.beginPath();
+ctx2.moveTo(80,230);
+ctx2.lineTo(320,230);
+ctx2.stroke();
+
+ctx2.beginPath();
+ctx2.moveTo(140,230);
+ctx2.lineTo(60,310);
+ctx2.stroke();
+
+ctx2.beginPath();
+ctx2.moveTo(260,230);
+ctx2.lineTo(340,310);
+ctx2.stroke();
+
+ctx2.beginPath();
+ctx2.moveTo(60,310);
+ctx2.lineTo(340,310);
+ctx2.stroke();
+
+ctx2.beginPath();
+ctx2.lineWidth=6
+ctx2.strokeStyle = "#FFFF37";
+ctx2.moveTo(200,10);
+ctx2.lineTo(180,30);
+ctx2.stroke();
+
+ctx2.beginPath();
+ctx2.moveTo(200,10);
+ctx2.lineTo(220,30);
+ctx2.stroke();
+
+ctx2.beginPath();
+ctx2.moveTo(180,30);
+ctx2.lineTo(160,30);
+ctx2.stroke();
+
+ctx2.beginPath();
+ctx2.moveTo(220,30);
+ctx2.lineTo(240,30);
+ctx2.stroke();
+
+ctx2.beginPath();
+ctx2.moveTo(160,30);
+ctx2.lineTo(180,50);
+ctx2.stroke();
+
+ctx2.beginPath();
+ctx2.moveTo(180,50);
+ctx2.lineTo(170,70);
+ctx2.stroke();
+
+ctx2.beginPath();
+ctx2.moveTo(170,70);
+ctx2.lineTo(200,50);
+ctx2.stroke();
+
+ctx2.beginPath();
+ctx2.moveTo(200,50);
+ctx2.lineTo(230,70);
+ctx2.stroke();
+
+ctx2.beginPath();
+ctx2.moveTo(230,70);
+ctx2.lineTo(220,50);
+ctx2.stroke();
+
+ctx2.beginPath();
+ctx2.moveTo(220,50);
+ctx2.lineTo(240,30);
+ctx2.stroke();
+
+ctx2.beginPath();
+ctx2.lineWidth=4
+ctx2.strokeStyle = "#FF0000";
+ctx2.moveTo(200,70);
+ctx2.lineTo(200,50);
+ctx2.stroke();
+
+
+
+ctx2.beginPath();
+var canvas = document.getElementById("myCanvas");
+var ctx2 = canvas.getContext("2d");
+ctx2.moveTo(0,0);
+ctx2.strokeStyle = "#FFBFFF";
+ctx2.lineTo(400,0);
+ctx2.lineWidth=5
+ctx2.stroke();
+
+
+ctx2.beginPath();
+var canvas = document.getElementById("myCanvas");
+var ctx2 = canvas.getContext("2d");
+ctx2.moveTo(0,0);
+ctx2.strokeStyle = "#FFBFFF";
+ctx2.lineTo(0,400);
+ctx2.lineWidth=5
+ctx2.stroke();
+
+
+ctx2.beginPath();
+var canvas = document.getElementById("myCanvas");
+var ctx2 = canvas.getContext("2d");
+ctx2.moveTo(400,400);
+ctx2.strokeStyle = "#FFBFFF";
+ctx2.lineTo(400,0);
+ctx2.lineWidth=5
+ctx2.stroke();
+
+ctx2.beginPath();
+var canvas = document.getElementById("myCanvas");
+var ctx2 = canvas.getContext("2d");
+ctx2.moveTo(400,400);
+ctx2.strokeStyle = "#FFBFFF";
+ctx2.lineTo(0,400);
+ctx2.lineWidth=5
+ctx2.stroke();
+
+ctx2.beginPath();
+var canvas = document.getElementById("myCanvas");
+var ctx2 = canvas.getContext("2d");
+ctx2.beginPath();
+ctx2.arc(52.5,345,10,0,2*Math.PI);
+ctx2.fillStyle = "#FF0000";
+ctx2.fill();
+
+ctx2.beginPath();
+var canvas = document.getElementById("myCanvas");
+var ctx2 = canvas.getContext("2d");
+ctx2.beginPath();
+ctx2.arc(52.5,375,20,0,2*Math.PI);
+ctx2.fillStyle = "#FF0000";
+ctx2.fill();
+
+ctx2.beginPath();
+var canvas = document.getElementById("myCanvas");
+var ctx2 = canvas.getContext("2d");
+ctx2.fillStyle = "#d3a4ff";
+ctx2.fillRect(45.35,353,12,4);
+
+ctx2.beginPath();
+var canvas = document.getElementById("myCanvas");
+var ctx2 = canvas.getContext("2d");
+ctx2.fillStyle = "#d3a4ff";
+ctx2.fillRect(56,353,4,12);
+
+ctx2.beginPath();
+var canvas = document.getElementById("myCanvas");
+var ctx2 = canvas.getContext("2d");
+ctx2.beginPath();
+ctx2.arc(575,350,180,0,2*Math.PI);
+ctx2.fillStyle = "#d3a4ff";
+ctx2.fill();
+
+ctx2.beginPath();
+var canvas = document.getElementById("myCanvas");
+var ctx2 = canvas.getContext("2d");
+ctx2.beginPath();
+ctx2.arc(575,250,180,0,2*Math.PI);
+ctx2.fillStyle = "#d3a4ff";
+ctx2.fill();
+
+ctx2.beginPath();
+var canvas = document.getElementById("myCanvas");
+var ctx2 = canvas.getContext("2d");
+ctx2.beginPath();
+ctx2.arc(575,150,180,0,2*Math.PI);
+ctx2.fillStyle = "#d3a4ff";
+ctx2.fill();
+
+ctx2.beginPath();
+var canvas = document.getElementById("myCanvas");
+var ctx2 = canvas.getContext("2d");
+ctx2.beginPath();
+ctx2.arc(575,50,180,0,2*Math.PI);
+ctx2.fillStyle = "#d3a4ff";
+ctx2.fill();
+
+ctx2.beginPath();
+var canvas = document.getElementById("myCanvas");
+var ctx2 = canvas.getContext("2d");
+ctx2.beginPath();
+ctx2.arc(50,575,180,0,2*Math.PI);
+ctx2.fillStyle = "#d3a4ff";
+ctx2.fill();
+
+ctx2.beginPath();
+var canvas = document.getElementById("myCanvas");
+var ctx2 = canvas.getContext("2d");
+ctx2.beginPath();
+ctx2.arc(150,575,180,0,2*Math.PI);
+ctx2.fillStyle = "#d3a4ff";
+ctx2.fill();
+
+
+ctx2.beginPath();
+var canvas = document.getElementById("myCanvas");
+var ctx2 = canvas.getContext("2d");
+ctx2.beginPath();
+ctx2.arc(250,575,180,0,2*Math.PI);
+ctx2.fillStyle = "#d3a4ff";
+ctx2.fill();
+
+
+ctx2.beginPath();
+var canvas = document.getElementById("myCanvas");
+var ctx2 = canvas.getContext("2d");
+ctx2.beginPath();
+ctx2.arc(350,575,180,0,2*Math.PI);
+ctx2.fillStyle = "#d3a4ff";
+ctx2.fill();
+
+
+ctx2.beginPath();
+var canvas = document.getElementById("myCanvas");
+var ctx2 = canvas.getContext("2d");
+ctx2.beginPath();
+ctx2.arc(-175,50,180,0,2*Math.PI);
+ctx2.fillStyle = "#d3a4ff";
+ctx2.fill();
+
+ctx2.beginPath();
+var canvas = document.getElementById("myCanvas");
+var ctx2 = canvas.getContext("2d");
+ctx2.beginPath();
+ctx2.arc(-175,150,180,0,2*Math.PI);
+ctx2.fillStyle = "#d3a4ff";
+ctx2.fill();
+
+ctx2.beginPath();
+var canvas = document.getElementById("myCanvas");
+var ctx2 = canvas.getContext("2d");
+ctx2.beginPath();
+ctx2.arc(-175,250,180,0,2*Math.PI);
+ctx2.fillStyle = "#d3a4ff";
+ctx2.fill();
+
+ctx2.beginPath();
+var canvas = document.getElementById("myCanvas");
+var ctx2 = canvas.getContext("2d");
+ctx2.beginPath();
+ctx2.arc(-175,350,180,0,2*Math.PI);
+ctx2.fillStyle = "#d3a4ff";
+ctx2.fill();
+
+ctx2.beginPath();
+var canvas = document.getElementById("myCanvas");
+var ctx2 = canvas.getContext("2d");
+ctx2.beginPath();
+ctx2.arc(50,-175,180,0,2*Math.PI);
+ctx2.fillStyle = "#d3a4ff";
+ctx2.fill();
+
+ctx2.beginPath();
+var canvas = document.getElementById("myCanvas");
+var ctx2 = canvas.getContext("2d");
+ctx2.beginPath();
+ctx2.arc(150,-175,180,0,2*Math.PI);
+ctx2.fillStyle = "#d3a4ff";
+ctx2.fill();
+
+ctx2.beginPath();
+var canvas = document.getElementById("myCanvas");
+var ctx2 = canvas.getContext("2d");
+ctx2.beginPath();
+ctx2.arc(250,-175,180,0,2*Math.PI);
+ctx2.fillStyle = "#d3a4ff";
+ctx2.fill();
+
+ctx2.beginPath();
+var canvas = document.getElementById("myCanvas");
+var ctx2 = canvas.getContext("2d");
+ctx2.beginPath();
+ctx2.arc(350,-175,180,0,2*Math.PI);
+ctx2.fillStyle = "#d3a4ff";
+ctx2.fill();
+
+
+</script>
+
+<p></body>
+</html></p></div>
+    <footer>
+<p class="meta">
+  <span class="byline author vcard">
+    Posted by <span class="fn">
+        coursemdetw
+    </span>
+  </span>
+<time datetime="2015-12-25T00:00:00+08:00" pubdate>週五 25 十二月 2015</time>  <span class="categories">
+    <a class='category' href='./category/python.html'>Python</a>
+  </span>
+  <span class="categories">
+    <a class="category" href="./tag/pelican.html">pelican</a>,    <a class="category" href="./tag/publishing.html">publishing</a>  </span>
+</p><div class="sharing">
+</div>    </footer>
+  </article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+  </section>
+</div>
+<aside class="sidebar">
+  <section>
+    <h1>Recent Posts</h1>
+    <ul id="recent_posts">
+      <li class="post">
+          <a href="./w17.html">w17</a>
+      </li>
+      <li class="post">
+          <a href="./w15.html">w15</a>
+      </li>
+      <li class="post">
+          <a href="./w14.html">w14</a>
+      </li>
+      <li class="post">
+          <a href="./w13.html">w13</a>
+      </li>
+      <li class="post">
+          <a href="./w12.html">w12</a>
+      </li>
+    </ul>
+  </section>
+  <section>
+      
+    <h1>Categories</h1>
+    <ul id="recent_posts">
+        <li><a href="./category/python.html">Python</a></li>
+    </ul>
+  </section>
+ 
+
+  <section>
+  <h1>Tags</h1>
+    <a href="./tag/pelican.html">pelican</a>,    <a href="./tag/publishing.html">publishing</a>  </section>
+
+
+    <section>
+        <h1>Social</h1>
+        <ul>
+            <li><a href="http://twitter.com/ametaireau" target="_blank">twitter</a></li>
+            <li><a href="http://github.com/ametaireau" target="_blank">github</a></li>
+        </ul>
+    </section>
+    <section>
+        <h1>Blogroll</h1>
+        <ul>
+            <li><a href="http://wordpress-2015course.rhcloud.com/" target="_blank">2015課程網頁</a></li>
+            <li><a href="http://python.org/" target="_blank">Python</a></li>
+            <li><a href="http://40423101.github.io/w1/" target="_blank">40423101 個人網頁</a></li>
+        </ul>
+    </section>
+
+</aside>    </div>
+  </div>
+  <footer role="contentinfo"><p>
+    Copyright &copy;  2015&ndash;2016  40423101 &mdash;
+  <span class="credit">Powered by <a href="http://getpelican.com">Pelican</a></span>
+</p></footer>
+  <script src="./theme/js/modernizr-2.0.js"></script>
+  <script src="./theme/js/ender.js"></script>
+  <script src="./theme/js/octopress.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    var disqus_shortname = '2015fall';
+    var disqus_identifier = '/w15.html';
+    var disqus_url = './w15.html';
+    var disqus_title = 'w15';
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = "//" + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+     })();
+  </script>
+</body>
+</html>

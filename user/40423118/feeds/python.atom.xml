@@ -1,5 +1,640 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>2015FALL 40423118 cpa 作業</title><link href="http://coursemdetw.github.io/reveal/" rel="alternate"></link><link href="http://coursemdetw.github.io/reveal/feeds/python.atom.xml" rel="self"></link><id>http://coursemdetw.github.io/reveal/</id><updated>2015-11-27T11:41:00+08:00</updated><entry><title>2015 計算機程式 作業11</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w11.html" rel="alternate"></link><updated>2015-11-27T11:41:00+08:00</updated><author><name>40423118</name></author><id>tag:coursemdetw.github.io,2015-11-27:reveal/2015cp_hw_w11.html</id><summary type="html">&lt;p&gt;以下為期中報告內容&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>2015FALL 40423118 cpa 作業</title><link href="http://coursemdetw.github.io/reveal/" rel="alternate"></link><link href="http://coursemdetw.github.io/reveal/feeds/python.atom.xml" rel="self"></link><id>http://coursemdetw.github.io/reveal/</id><updated>2016-01-08T11:41:00+08:00</updated><entry><title>2015 計算機程式 w17</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w17.html" rel="alternate"></link><updated>2016-01-08T11:41:00+08:00</updated><author><name>40423118</name></author><id>tag:coursemdetw.github.io,2016-01-08:reveal/2015cp_hw_w17.html</id><summary type="html">&lt;p&gt;以下為作業17內容內容&lt;/p&gt;
+&lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
+&lt;iframe src="40423118_cp_w17_p.html" width="800" height="500"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="40423118_cp_w17_p.html" target="_blank"&gt;作業十七投影片&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;在網際頁面上, 用 Python 執行動態模擬!:&lt;/p&gt;
+&lt;!-- 導入 brython.js --&gt;
+
+&lt;script type="text/javascript" src="http://brython.info/src/brython_dist.js"&gt;&lt;/script&gt;
+
+&lt;!-- 啟動 brython() --&gt;
+
+&lt;script&gt;
+window.onload=function(){
+brython(1);
+}
+&lt;/script&gt;
+
+&lt;!-- 以下利用 Brython 程式執行繪圖 --&gt;
+
+&lt;canvas id="plotarea" width="600" height="400"&gt;&lt;/canvas&gt;
+
+&lt;script type="text/python3"&gt;
+# 導入 browser 模組中的 document, 並設為 doc 變數
+from browser import document as doc
+# 導入數學模組
+import math
+# 產生各小球的亂數速度用
+import random
+# 導入 browser 中的計時器, 建立動畫用
+import browser.timer
+
+# 準備繪圖畫布
+canvas = doc["plotarea"]
+ctx = canvas.getContext("2d")
+
+# 取畫布的寬與高度
+width = canvas.width
+height = canvas.height
+
+n = 20
+# 已知數列內容個數, 先分別與 None 對應
+x = [None]*n
+y = [None]*n
+vy = [None]*n
+vx = [None]*n
+# 重力加速度, Y 方向向下為正
+g = 0.05
+# 空氣的黏滯阻尼係數
+cor = 0.9 
+# 球的彈力係數
+fr = 1.9
+# 球的半徑
+r = 10
+
+for i in range(n):
+    x[i] = 300
+    y[i] = 100
+    # random.random() 將會產生介於 0 與 1 的浮點亂數
+    vx[i] = 2*(random.random()-.5)
+    vy[i] = 2*(random.random()-.5)
+
+# 更新第 i 球 Y 座標的運算邏輯
+def updateY(i):
+    if ((y[i]+r) &lt; height):
+        #y = height
+        vy[i] += g
+    else:
+        vy[i] = -vy[i]*cor
+        vx[i] *= fr
+    y[i] += vy[i]
+    if ((y[i]+r) &gt; height):
+        y[i] = height-r
+
+# 更新第 i 球 X 座標的運算邏輯
+def updateX(i):
+    if ((x[i]+r) &gt;= width or (x[i]-r) &lt;= 0):
+        vx[i] = -vx[i]*cor
+    x[i] += vx[i]
+    if ((x[i]+r) &gt; width):
+        x[i] = width-r
+    elif ((x[i]-r) &lt; 0):
+        x[i] = r
+
+# 畫圓函式
+def circle(x,y,r):
+    ctx.beginPath()
+    ctx.arc(x, y, r, 0, math.pi*2, True)
+    ctx.fill()
+
+# 寫字函式
+def text(s):
+    ctx.fillStyle = "#ff0000"
+    ctx.font = "30px sans-serif"
+    ctx.textBaseline = "bottom"
+    ctx.fillText(s,0,height)
+
+# 每隔特定時間, 進行動畫繪製
+def animate():
+    # 刷新畫布
+    ctx.clearRect(0, 0, width, height)
+    # 逐一重新繪製小球
+    ctx.fillStyle = "#000000"
+    for i in range(n):
+        updateY(i)
+        updateX(i)
+        circle(x[i],y[i],r)
+
+text("Click me!")
+
+# 畫布點擊後執行的函式
+def on_canvas_click(ev):
+    browser.timer.set_interval(animate,0)
+
+# 只要使用者點擊在畫布上任何地方, 即執行 on_canvas_click 函式
+canvas.bind('click', on_canvas_click, False)
+&lt;/script&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 w16</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w16.html" rel="alternate"></link><updated>2016-01-01T11:41:00+08:00</updated><author><name>40423118</name></author><id>tag:coursemdetw.github.io,2016-01-01:reveal/2015cp_hw_w16.html</id><summary type="html">&lt;p&gt;以下為作業16內容內容&lt;/p&gt;
+&lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
+&lt;iframe src="40423116_cp_w16_p.html" width="800" height="500"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="40423116_cp_w16_p.html" target="_blank"&gt;作業十六投影片&lt;/a&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 w15</title><link href="http://coursemdetw.github.io/reveal/W15.html" rel="alternate"></link><updated>2015-12-25T11:41:00+08:00</updated><author><name>40423118</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/W15.html</id><summary type="html">&lt;p&gt;以下為作業15內容內容&lt;/p&gt;
+&lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
+&lt;iframe src="40423118_cp_w15_p.html" width="800" height="500"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="40423118_cp_w15_p.html" target="_blank"&gt;作業十五投影片&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;40423118-聖誕圖之---我好像搞砸了&lt;/h3&gt;
+&lt;!-- 導入 brython.js --&gt;
+
+&lt;script type="text/javascript" src="js/Brython3.2.3-20151122-082712/brython.js"&gt;&lt;/script&gt;
+
+&lt;!-- 啟動 brython() --&gt;
+
+&lt;script&gt;
+window.onload=function(){
+brython(1);
+}
+&lt;/script&gt;
+
+&lt;!-- 以下利用 Brython 程式執行繪圖 --&gt;
+
+&lt;canvas id="plotarea" width="500" height="500"&gt;&lt;/canvas&gt;
+
+&lt;script type="text/python3"&gt;
+# 導入 doc
+from browser import document as doc
+from browser import console
+import math
+
+# 準備繪圖畫布
+canvas = doc["plotarea"]
+ctx = canvas.getContext("2d")
+
+
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(250, 90)
+ctx.lineTo(190, 150)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(190, 150)
+ctx.lineTo(220, 150)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(220, 150)
+ctx.lineTo(150, 240)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(150, 240)
+ctx.lineTo(190, 240)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(190,240 )
+ctx.lineTo(110, 340)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(110, 340)
+ctx.lineTo(390, 340)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(390, 340)
+ctx.lineTo(310, 240)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(310, 240)
+ctx.lineTo(350, 240)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(350,240 )
+ctx.lineTo(280, 150)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(280, 150)
+ctx.lineTo(380, 150)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(380, 150)
+ctx.lineTo(250, 90)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(220, 200)
+ctx.lineTo(230, 200)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(230, 200)
+ctx.lineTo(230, 210)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(230, 210)
+ctx.lineTo(220, 210)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(220, 210)
+ctx.lineTo(220, 200)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(270, 200)
+ctx.lineTo(280, 200)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(280, 200)
+ctx.lineTo(280, 210)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(280, 210)
+ctx.lineTo(270, 210)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(270, 210)
+ctx.lineTo(270, 200)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(210, 280)
+ctx.lineTo(210, 240)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(210, 240)
+ctx.lineTo(220, 250)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(220, 250)
+ctx.lineTo(230, 240)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(230, 240)
+ctx.lineTo(240, 250)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(240, 250)
+ctx.lineTo(250, 240)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(250, 240)
+ctx.lineTo(260, 250)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(260, 250)
+ctx.lineTo(270, 240)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(270, 240)
+ctx.lineTo(280, 250)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(280, 250)
+ctx.lineTo(290, 240)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(290, 240)
+ctx.lineTo(290, 280)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(290, 280)
+ctx.lineTo(280, 270)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(280, 270)
+ctx.lineTo(270, 280)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(270, 280)
+ctx.lineTo(260, 270)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(260, 270)
+ctx.lineTo(250, 280)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(250, 280)
+ctx.lineTo(240, 270)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(240, 270)
+ctx.lineTo(230, 280)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(230, 280)
+ctx.lineTo(220, 270)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(220, 270)
+ctx.lineTo(210, 280)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(230, 340)
+ctx.lineTo(230, 400)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(100, 400)
+ctx.lineTo(400, 4000)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(270, 340)
+ctx.lineTo(270, 400)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+
+x = 100
+y = 100
+
+# 利用 browser 模組中的 console.log 將資料列印在 console 區, 可以用來確認程式中各變數的值, 用法等同 print
+console.log("x 值為"+str(x)+", y 值為"+str(y))
+
+
+&lt;/script&gt;
+
+&lt;/script&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 w14</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w14.html" rel="alternate"></link><updated>2015-12-18T11:41:00+08:00</updated><author><name>40423118</name></author><id>tag:coursemdetw.github.io,2015-12-18:reveal/2015cp_hw_w14.html</id><summary type="html">&lt;p&gt;以下為作業14內容內容&lt;/p&gt;
+&lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
+&lt;iframe src="40423118_cp_w14_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="40423118_cp_w14_p.html" target="_blank"&gt;作業十四投影片&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;以下利用 Brython 在網頁寫 Python 繪圖&lt;/p&gt;
+&lt;!-- 導入 brython.js --&gt;
+
+&lt;script type="text/javascript" src="js/Brython3.2.3-20151122-082712/brython.js"&gt;&lt;/script&gt;
+
+&lt;!-- 啟動 brython() --&gt;
+
+&lt;script&gt;
+window.onload=function(){
+brython(1);
+}
+&lt;/script&gt;
+
+&lt;!-- 以下利用 Brython 程式執行繪圖 --&gt;
+
+&lt;canvas id="plotarea" width="500" height="500"&gt;&lt;/canvas&gt;
+
+&lt;script type="text/python3"&gt;
+# 導入 doc
+from browser import document as doc
+from browser import console
+import math
+
+# 準備繪圖畫布
+canvas = doc["plotarea"]
+ctx = canvas.getContext("2d")
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 10
+ctx.moveTo(0, 0)
+ctx.lineTo(500, 500)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 10
+ctx.moveTo(0, 500)
+ctx.lineTo(500, 0)
+ctx.strokeStyle = "#0000ff"
+ctx.stroke()
+&lt;/script&gt;
+
+&lt;p&gt;上列繪圖的程式碼:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;&amp;lt;!-- 導入 brython.js --&amp;gt;&lt;/span&gt;
+
+&lt;span class="nt"&gt;&amp;lt;script &lt;/span&gt;&lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;src=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;js/Brython3.2.3-20151122-082712/brython.js&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+
+&lt;span class="c"&gt;&amp;lt;!-- 啟動 brython() --&amp;gt;&lt;/span&gt;
+
+&lt;span class="nt"&gt;&amp;lt;script&amp;gt;&lt;/span&gt;
+&lt;span class="nb"&gt;window&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;onload&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(){&lt;/span&gt;
+&lt;span class="nx"&gt;brython&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+
+&lt;span class="c"&gt;&amp;lt;!-- 以下利用 Brython 程式執行繪圖 --&amp;gt;&lt;/span&gt;
+
+&lt;span class="nt"&gt;&amp;lt;canvas&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;plotarea&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;width=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;300&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;height=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;200&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;/canvas&amp;gt;&lt;/span&gt;
+
+&lt;span class="nt"&gt;&amp;lt;script &lt;/span&gt;&lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text/python3&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="nx"&gt;導入&lt;/span&gt; &lt;span class="nx"&gt;doc&lt;/span&gt;
+&lt;span class="nx"&gt;from&lt;/span&gt; &lt;span class="nx"&gt;browser&lt;/span&gt; &lt;span class="kr"&gt;import&lt;/span&gt; &lt;span class="nb"&gt;document&lt;/span&gt; &lt;span class="nx"&gt;as&lt;/span&gt; &lt;span class="nx"&gt;doc&lt;/span&gt;
+&lt;span class="nx"&gt;from&lt;/span&gt; &lt;span class="nx"&gt;browser&lt;/span&gt; &lt;span class="kr"&gt;import&lt;/span&gt; &lt;span class="nx"&gt;console&lt;/span&gt;
+&lt;span class="kr"&gt;import&lt;/span&gt; &lt;span class="nx"&gt;math&lt;/span&gt;
+
+&lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="nx"&gt;準備繪圖畫布&lt;/span&gt;
+&lt;span class="nx"&gt;canvas&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;doc&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;plotarea&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="nx"&gt;ctx&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;canvas&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;getContext&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;2d&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="nx"&gt;開始畫直線&lt;/span&gt;
+&lt;span class="nx"&gt;ctx&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;beginPath&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;span class="nx"&gt;ctx&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;lineWidth&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt;
+&lt;span class="nx"&gt;ctx&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;moveTo&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="nx"&gt;ctx&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;lineTo&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;100&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;100&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="nx"&gt;ctx&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;strokeStyle&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;#FF0000&amp;quot;&lt;/span&gt;
+&lt;span class="nx"&gt;ctx&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;stroke&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+
+&lt;span class="nx"&gt;ctx&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;beginPath&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;span class="nx"&gt;ctx&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;lineWidth&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt;
+&lt;span class="nx"&gt;ctx&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;moveTo&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;100&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="nx"&gt;ctx&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;lineTo&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;100&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="nx"&gt;ctx&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;strokeStyle&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;#0000ff&amp;quot;&lt;/span&gt;
+&lt;span class="nx"&gt;ctx&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;stroke&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+
+&lt;span class="nx"&gt;x&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;100&lt;/span&gt;
+&lt;span class="nx"&gt;y&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;100&lt;/span&gt;
+
+&lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="nx"&gt;利用&lt;/span&gt; &lt;span class="nx"&gt;browser&lt;/span&gt; &lt;span class="nx"&gt;模組中的&lt;/span&gt; &lt;span class="nx"&gt;console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;log&lt;/span&gt; &lt;span class="nx"&gt;將資料列印在&lt;/span&gt; &lt;span class="nx"&gt;console&lt;/span&gt; &lt;span class="nx"&gt;區&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;可以用來確認程式中各變數的值&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;用法等同&lt;/span&gt; &lt;span class="nx"&gt;print&lt;/span&gt;
+&lt;span class="nx"&gt;console&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;log&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;x 值為&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nx"&gt;str&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;x&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;, y 值為&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nx"&gt;str&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;y&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+
+&lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="nx"&gt;利用迴圈畫水平線&lt;/span&gt;
+&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="nx"&gt;i&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt; &lt;span class="nx"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+    &lt;span class="nx"&gt;ctx&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;beginPath&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+    &lt;span class="nx"&gt;ctx&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;lineWidth&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt;
+    &lt;span class="nx"&gt;ctx&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;moveTo&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="mi"&gt;20&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="nx"&gt;ctx&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;lineTo&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;100&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="mi"&gt;20&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="nx"&gt;ctx&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;strokeStyle&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;#0000ff&amp;quot;&lt;/span&gt;
+    &lt;span class="nx"&gt;ctx&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;stroke&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+
+&lt;span class="nt"&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 w13</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w13.html" rel="alternate"></link><updated>2015-12-11T11:41:00+08:00</updated><author><name>40423118</name></author><id>tag:coursemdetw.github.io,2015-12-11:reveal/2015cp_hw_w13.html</id><summary type="html">&lt;p&gt;以下為作業13內容內容&lt;/p&gt;
+&lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
+&lt;iframe src="40423118_cp_w13_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="40423118_cp_w13_p.html" target="_blank"&gt;作業十三投影片&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;List程式:抽點名&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;cpa_number=[&amp;#39; 40123227&amp;#39;,&amp;#39; 40123237&amp;#39;,&amp;#39; 40123256&amp;#39;,&amp;#39; 40423101&amp;#39;,&amp;#39; 40423103&amp;#39;,&amp;#39; 40423104&amp;#39;,&amp;#39; 40423105&amp;#39;,&amp;#39; 40423106&amp;#39;,&amp;#39; 40423107&amp;#39;,&amp;#39; 40423108&amp;#39;,&amp;#39; 40423109&amp;#39;,&amp;#39; 40423110&amp;#39;,&amp;#39; 40423111&amp;#39;,&amp;#39; 40423112&amp;#39;,&amp;#39; 40423113&amp;#39;,&amp;#39; 40423114&amp;#39;,&amp;#39; 40423115&amp;#39;,&amp;#39; 40423116&amp;#39;,&amp;#39; 40423117&amp;#39;,&amp;#39; 40423118&amp;#39;,&amp;#39; 40423119&amp;#39;,&amp;#39; 40423120&amp;#39;,&amp;#39; 40423121&amp;#39;,&amp;#39; 40423122&amp;#39;,&amp;#39; 40423123&amp;#39;,&amp;#39; 40423124&amp;#39;,&amp;#39; 40423125&amp;#39;,&amp;#39; 40423126&amp;#39;,&amp;#39; 40423127&amp;#39;,&amp;#39; 40423128&amp;#39;,&amp;#39; 40423129&amp;#39;,&amp;#39; 40423130&amp;#39;,&amp;#39; 40423131&amp;#39;,&amp;#39; 40423132&amp;#39;,&amp;#39; 40423133&amp;#39;,&amp;#39; 40423134&amp;#39;,&amp;#39; 40423135&amp;#39;,&amp;#39; 40423136&amp;#39;,&amp;#39; 40423137&amp;#39;,&amp;#39; 40423138&amp;#39;,&amp;#39; 40423139&amp;#39;,&amp;#39; 40423140&amp;#39;,&amp;#39; 40423141&amp;#39;,&amp;#39; 40423142&amp;#39;,&amp;#39; 40423143&amp;#39;,&amp;#39; 40423144&amp;#39;,&amp;#39; 40423145&amp;#39;,&amp;#39; 40423146&amp;#39;,&amp;#39; 40423147&amp;#39;,&amp;#39; 40423148&amp;#39;,&amp;#39; 40423149&amp;#39;,&amp;#39; 40423150&amp;#39;,&amp;#39; 40423152&amp;#39;,&amp;#39; 40423153&amp;#39;,&amp;#39; 40423154&amp;#39;,&amp;#39; 40423155&amp;#39;]
+cpa_name=[&amp;#39; 紀培俞&amp;#39;, &amp;#39; 陳琨揚&amp;#39;,&amp;#39; 蘇建瑋&amp;#39;,&amp;#39; 曾宜萱&amp;#39;,&amp;#39; 劉怡萱&amp;#39;,&amp;#39; 顏暄&amp;#39;,&amp;#39; 王奕智&amp;#39;,&amp;#39; 王翔佑&amp;#39;,&amp;#39; 史育澤&amp;#39;,&amp;#39; 江心平&amp;#39;,&amp;#39; 何宗哲&amp;#39;,&amp;#39; 余浩鋼&amp;#39;,&amp;#39; 吳承翰&amp;#39;,&amp;#39; 吳欣奕&amp;#39;,&amp;#39; 吳冠毅&amp;#39;,&amp;#39; 李希凡&amp;#39;,&amp;#39; 李尚瑋&amp;#39;,&amp;#39; 李冠辰&amp;#39;,&amp;#39; 李國豪&amp;#39;,&amp;#39; 阮伯宗&amp;#39;,&amp;#39; 周嘉原&amp;#39;,&amp;#39; 林尚漢&amp;#39;,&amp;#39; 林秉憲&amp;#39;,&amp;#39; 林國蓁&amp;#39;,&amp;#39; 林嘉文&amp;#39;,&amp;#39; 林濬翔&amp;#39;,&amp;#39; 邱弘承&amp;#39;,&amp;#39; 紀均瀚&amp;#39;,&amp;#39; 范展榕&amp;#39;,&amp;#39; 徐聖倫&amp;#39;,&amp;#39; 張俊鴻&amp;#39;,&amp;#39; 張勝雄&amp;#39;,&amp;#39; 許承恩&amp;#39;,&amp;#39; 郭力維&amp;#39;,&amp;#39; 郭政修&amp;#39;,&amp;#39; 陳正凱&amp;#39;,&amp;#39; 陳冠錡&amp;#39;,&amp;#39; 陳柏維&amp;#39;,&amp;#39; 陳慶豪&amp;#39;,&amp;#39; 傅仁禹&amp;#39;,&amp;#39; 曾繼緯&amp;#39;,&amp;#39; 黃子晏&amp;#39;,&amp;#39; 黃羿誠&amp;#39;,&amp;#39; 黃興煜&amp;#39;,&amp;#39; 楊智勝&amp;#39;,&amp;#39; 葉宗翰&amp;#39;,&amp;#39; 廖先博&amp;#39;,&amp;#39; 廖祈安&amp;#39;,&amp;#39; 劉孟璋&amp;#39;,&amp;#39; 劉佑程&amp;#39;,&amp;#39; 蔡悌仁&amp;#39;,&amp;#39; 鄭邦宏&amp;#39;,&amp;#39; 賴浚珅&amp;#39;,&amp;#39; 簡登瑋&amp;#39;,&amp;#39; 闕崇晉&amp;#39;,&amp;#39; 蘇麒彬&amp;#39;]
+g2_number=[&amp;#39;40423105&amp;#39;,&amp;#39;40423106&amp;#39;,&amp;#39;40423107&amp;#39;,&amp;#39;40423114&amp;#39;,&amp;#39;40423115&amp;#39;,&amp;#39;40423116&amp;#39;]
+g2_name=[&amp;#39;王奕智&amp;#39;,&amp;#39;王翔佑&amp;#39;,&amp;#39;史育澤&amp;#39;,&amp;#39;李希凡&amp;#39;,&amp;#39;李尚瑋&amp;#39;,&amp;#39;李冠辰&amp;#39;]
+
+#第2組組員有多少，有哪些人?
+print(&amp;#39;g2組員:&amp;#39;, len(g2_number),&amp;#39;人&amp;#39;)
+
+print(&amp;#39;成員:&amp;#39;)
+
+for i in range(len(g2_number)):
+     print( g2_number[i], g2_name[i])
+
+
+print(&amp;#39;-----分隔-----&amp;#39;)
+
+
+#班上幾個人? 抽點名點多少人? 抽到誰?
+print(&amp;#39;班上有&amp;#39;,len(cpa_number),&amp;#39;人&amp;#39;)
+
+import random
+total_number=len(cpa_number)
+roll_number= int(input(&amp;quot;抽點幾位?&amp;quot;))
+
+for i in range(roll_number):
+     check = random.randint(0,total_number -1)
+     print(cpa_number[check],cpa_name[check])
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;iframe src="https://player.vimeo.com/video/151801226" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="https://vimeo.com/151801226"&gt;錄製_2016_01_15_01_22_43_500&lt;/a&gt; from &lt;a href="https://vimeo.com/user46453244"&gt;40423118&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 w12</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w12.html" rel="alternate"></link><updated>2015-12-04T11:41:00+08:00</updated><author><name>40423118</name></author><id>tag:coursemdetw.github.io,2015-12-04:reveal/2015cp_hw_w12.html</id><summary type="html">&lt;p&gt;以下為作業12內容內容&lt;/p&gt;
+&lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
+&lt;iframe src="40423116_cp_w12_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="40423116_cp_w12_p.html" target="_blank"&gt;作業十二投影片&lt;/a&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 作業11</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w11.html" rel="alternate"></link><updated>2015-11-27T11:41:00+08:00</updated><author><name>40423118</name></author><id>tag:coursemdetw.github.io,2015-11-27:reveal/2015cp_hw_w11.html</id><summary type="html">&lt;p&gt;以下為期中報告內容&lt;/p&gt;
 &lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
 &lt;iframe src="40423118_cp_w11_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
