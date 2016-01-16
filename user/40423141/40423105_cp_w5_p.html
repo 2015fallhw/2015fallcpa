@@ -1,0 +1,69 @@
+<!--
+這個檔案展示了 reveal.js 投影片資料的基本架構
+其中使用 "reveal" class 與 "slides" class 來界定投影片的資料範圍
+而各投影片則以 <section></section> 標示
+且支援平行與垂直的投影片配置方法
+-->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>最簡單的 reveal 超文件</title>
+<link rel="stylesheet" href="css/reveal.min.css">
+	<link rel="stylesheet" href="css/theme/default.css" id="theme">	
+	<!--增加對於 IE 早期版本的支援 -->
+	<!--[if lt IE 9]>
+	<script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+<body>
+<!-- 將整個投影片包在 "reveal" class 中 -->
+<div class="reveal">
+<!-- 將所有投影片包在 "slides" class 中 -->
+<div class="slides">
+<!-- 以下為投影片 -->
+<!-- 每一個 section 都代表一張投影片,  -->
+<!-- section 標註中的多 section 標註, 將往下垂直延伸 -->
+<section>
+    <h1>W5作業</h1>
+    <p>40423141黃羿誠</p>		
+</section>
+	
+ <section>
+    <h1>影片大綱</h1>
+    <p>介紹input的用法,將名子儲存起來,然後再打印出來,還可以指定名字在name裡,並打印出來.</p>		
+</section>
+
+<section>
+    <h1>影片心得</h1>
+    <p>name = input("what is your name? ")</p>
+    <p>print(name)上面的程式是說將你打的名子儲存在name裡面,再將儲存的名子打印出來.</p>
+    <p>name = input("what is your name? ")</p>
+    <p>print(name)</p>
+    <p>name="mary"</p>
+    <p>print(name)將你打的名子儲存在name裡面,再將儲存的名子打印出來,在指定mary為name
+    打印出來,所以當程式在跑的時候會先打印出你打入的名子在打印出mary.<p>		
+</section> 
+
+<section>
+    <h1>上課心得</h1>
+    <p>這個禮拜上完課,讓我更了解投影片更深入的用法,如何在投影片裡再新增好幾頁投影片,可以更有效的利用投影片,也知道了如何將上傳到viemo的影片嵌入到網頁上,可以更有效率的做功課.</p>		
+</section> 
+
+<section>
+    <h1>自評</h1>
+    <p>分數:75分</p>
+</section>   
+	
+</div>
+</div>
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.min.js"></script>
+<script>
+    // 啟動 Reveal.
+    Reveal.initialize({
+    });
+</script>
+	
+</body>
+
