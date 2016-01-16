@@ -1173,6 +1173,10 @@ REM C:\WINDOWS\system32\cmd.exe /k %Disk%:\IDE\nodejs\nodejsvars.bat&lt;/p&gt;
 &lt;li&gt;請利用流程圖, 簡要說明近端猜數字遊戲與猜顏色遊戲程式碼如何設計與運作.
 猜數字遊戲&lt;/li&gt;
 &lt;/ul&gt;
+&lt;script src="https://www.gliffy.com/diagramEmbed.js" type="text/javascript"&gt;&lt;/script&gt;
+
+&lt;script type="text/javascript"&gt;gliffy_did="9800125";embedGliffy();&lt;/script&gt;
+
 &lt;p&gt;以下利用 Brython 在網頁寫 Python 繪圖&lt;/p&gt;
 &lt;h2&gt;40423140黃子晏&lt;/h2&gt;
 &lt;!-- 導入 brython.js --&gt;
