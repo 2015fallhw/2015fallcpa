@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>2015FALL 作業主頁</title><link href="http://coursemdetw.github.io/reveal/" rel="alternate"></link><link href="http://coursemdetw.github.io/reveal/feeds/g7.atom.xml" rel="self"></link><id>http://coursemdetw.github.io/reveal/</id><updated>2015-12-26T10:48:00+08:00</updated><entry><title>G7第十五週報告</title><link href="http://coursemdetw.github.io/reveal/g7_w15.html" rel="alternate"></link><updated>2015-12-26T10:48:00+08:00</updated><author><name>40423139</name></author><id>tag:coursemdetw.github.io,2015-12-26:reveal/g7_w15.html</id><summary type="html">&lt;p&gt;1.建立&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>2015FALL CPA 作業</title><link href="http://coursemdetw.github.io/reveal/" rel="alternate"></link><link href="http://coursemdetw.github.io/reveal/feeds/g7.atom.xml" rel="self"></link><id>http://coursemdetw.github.io/reveal/</id><updated>2015-12-26T10:48:00+08:00</updated><entry><title>G7第十五週報告</title><link href="http://coursemdetw.github.io/reveal/g7_w15.html" rel="alternate"></link><updated>2015-12-26T10:48:00+08:00</updated><author><name>40423139</name></author><id>tag:coursemdetw.github.io,2015-12-26:reveal/g7_w15.html</id><summary type="html">&lt;p&gt;1.建立&lt;/p&gt;
 &lt;p&gt;我們先利用gogle搜尋leo editor並且進入下載最新版的資料!&lt;/p&gt;
 &lt;p&gt;然後進課程網頁http://wordpress-2015course.rhcloud.com/?page_id=3633 下載fix檔!&lt;/p&gt;
 &lt;p&gt;fix解壓縮後把剛剛下載的ieo editor放入!開啟scite編輯器修改fix.bat--copy leo-editor-broke-abbrev.zip C:\Ana3_2015\data\&lt;/p&gt;
@@ -50,6 +50,10 @@ REM C:\WINDOWS\system32\cmd.exe /k %Disk%:\IDE\nodejs\nodejsvars.bat&lt;/p&gt;
 &lt;li&gt;請利用流程圖, 簡要說明近端猜數字遊戲與猜顏色遊戲程式碼如何設計與運作.
 猜數字遊戲&lt;/li&gt;
 &lt;/ul&gt;
+&lt;script src="https://www.gliffy.com/diagramEmbed.js" type="text/javascript"&gt;&lt;/script&gt;
+
+&lt;script type="text/javascript"&gt;gliffy_did="9800125";embedGliffy();&lt;/script&gt;
+
 &lt;p&gt;以下利用 Brython 在網頁寫 Python 繪圖&lt;/p&gt;
 &lt;h2&gt;40423140黃子晏&lt;/h2&gt;
 &lt;!-- 導入 brython.js --&gt;
