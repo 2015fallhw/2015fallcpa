@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>2015FALL 40423103 CPA 作業</title><link href="http://coursemdetw.github.io/reveal/" rel="alternate"></link><link href="http://coursemdetw.github.io/reveal/feeds/all.atom.xml" rel="self"></link><id>http://coursemdetw.github.io/reveal/</id><updated>2016-01-08T10:57:00+08:00</updated><entry><title>2015 計算機程式作業 第十七週</title><link href="http://coursemdetw.github.io/reveal/2015cpa_hw_w17.html" rel="alternate"></link><updated>2016-01-08T10:57:00+08:00</updated><author><name>40423103</name></author><id>tag:coursemdetw.github.io,2016-01-08:reveal/2015cpa_hw_w17.html</id><summary type="html">&lt;h1&gt;Brython動畫&lt;/h1&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>2015FALL 40423103 CPA 作業</title><link href="http://coursemdetw.github.io/reveal/" rel="alternate"></link><link href="http://coursemdetw.github.io/reveal/feeds/all.atom.xml" rel="self"></link><id>http://coursemdetw.github.io/reveal/</id><updated>2016-01-08T10:57:00+08:00</updated><entry><title>2015 計算機程式 第十七週</title><link href="http://coursemdetw.github.io/reveal/2015cpa_hw_w17.html" rel="alternate"></link><updated>2016-01-08T10:57:00+08:00</updated><author><name>40423103</name></author><id>tag:coursemdetw.github.io,2016-01-08:reveal/2015cpa_hw_w17.html</id><summary type="html">&lt;h1&gt;Brython動畫&lt;/h1&gt;
 &lt;!-- 導入 brython.js --&gt;
 
 &lt;script type="text/javascript" src="http://brython.info/src/brython_dist.js"&gt;&lt;/script&gt;
@@ -449,7 +449,7 @@ for i in range(11):
 window.onload=function(){
 brython(1);
 }
-&lt;/script&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式作業 第十二週</title><link href="http://coursemdetw.github.io/reveal/2015cpa_hw_w12.html" rel="alternate"></link><updated>2015-12-05T20:45:00+08:00</updated><author><name>40423103</name></author><id>tag:coursemdetw.github.io,2015-12-05:reveal/2015cpa_hw_w12.html</id><summary type="html">&lt;h1&gt;猜數字遊戲&lt;/h1&gt;
+&lt;/script&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第十二週</title><link href="http://coursemdetw.github.io/reveal/2015cpa_hw_w12.html" rel="alternate"></link><updated>2015-12-05T20:45:00+08:00</updated><author><name>40423103</name></author><id>tag:coursemdetw.github.io,2015-12-05:reveal/2015cpa_hw_w12.html</id><summary type="html">&lt;h1&gt;猜數字遊戲&lt;/h1&gt;
 &lt;h3&gt;解析&lt;/h3&gt;
 &lt;p&gt;~投影片不好做直接上圖~
 &lt;a href="http://imgur.com/FxIA2DT"&gt;&lt;img src="http://i.imgur.com/FxIA2DT.jpg" title="source: imgur.com" /&gt;&lt;/a&gt;&lt;/p&gt;
@@ -467,7 +467,7 @@ brython(1);
 &lt;p&gt;這次的影片做的簡單了點~&lt;/p&gt;
 &lt;p&gt;可是好像背景音樂有點吵XD&lt;/p&gt;
 &lt;p&gt;但是就突然想放&lt;/p&gt;
-&lt;p&gt;不過這次有開場特效XD&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式作業 第十一週</title><link href="http://coursemdetw.github.io/reveal/2015cpa_hw_w11.html" rel="alternate"></link><updated>2015-12-02T20:45:00+08:00</updated><author><name>40423103</name></author><id>tag:coursemdetw.github.io,2015-12-02:reveal/2015cpa_hw_w11.html</id><summary type="html">&lt;iframe src="40423103_cp_w11_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
+&lt;p&gt;不過這次有開場特效XD&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第十一週</title><link href="http://coursemdetw.github.io/reveal/2015cpa_hw_w11.html" rel="alternate"></link><updated>2015-12-02T20:45:00+08:00</updated><author><name>40423103</name></author><id>tag:coursemdetw.github.io,2015-12-02:reveal/2015cpa_hw_w11.html</id><summary type="html">&lt;iframe src="40423103_cp_w11_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
 &lt;p&gt;&lt;a href="40423103_cp_w11.html" target="_blank"&gt;修正fix_leo-editor安裝_投影片&lt;/a&gt;&lt;/p&gt;
 &lt;h1&gt;修正fix_leo-editor安裝&lt;/h1&gt;
