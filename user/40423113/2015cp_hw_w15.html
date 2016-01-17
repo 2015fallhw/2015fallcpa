@@ -4,7 +4,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>2015 計算機程式 作業十五 &mdash; 2015FALL 40423113  作業 G1</title>
+  <title>2015 計算機程式 作業15 &mdash; 2015FALL 40423113  CPA作業 </title>
   <meta name="author" content="40423113">
 
 
@@ -31,7 +31,7 @@
 
 <body>
   <header role="banner"><hgroup>
-  <h1><a href="./">2015FALL 40423113  作業 G1</a></h1>
+  <h1><a href="./">2015FALL 40423113  CPA作業 </a></h1>
 </hgroup></header>
   <nav role="navigation"><ul class="subscription" data-subscription="rss">
 </ul>
@@ -47,16 +47,152 @@
 <div>
   <article class="hentry" role="article">
 <header>
-      <h1 class="entry-title">2015 計算機程式 作業十五</h1>
+      <h1 class="entry-title">2015 計算機程式 作業15</h1>
     <p class="meta">
 <time datetime="2015-09-19T11:41:00+08:00" pubdate>週六 19 九月 2015</time>    </p>
 </header>
 
-  <div class="entry-content"><p>以下為作業十五內容</p>
-<p>利用 iframe 嵌入投影片:</p>
+  <div class="entry-content"><p>以下為作業15內容</p>
+<p>投影片:</p>
 <iframe src="40423113_cp_w15_p.html" width="500" height="300"></iframe>
 
-<p><a href="40423113_cp_w15_p.html" target="_blank">作業一投影片</a></p></div>
+<p><a href="40423113_cp_w15_p.html" target="_blank">作業一投影片</a></p>
+<!-- 導入 brython.js -->
+
+<script type="text/javascript" src="js/Brython3.2.3-20151122-082712/brython.js"></script>
+
+<!-- 啟動 brython() -->
+
+<script>
+window.onload=function(){
+brython(1);
+}
+</script>
+
+<!-- 以下利用 Brython 程式執行繪圖 -->
+
+<canvas id="plotarea" width="300" height="200"></canvas>
+
+<script type="text/python3">
+# 導入 doc
+from browser import document as doc
+from browser import console
+import math
+
+# 準備繪圖畫布
+canvas = doc["plotarea"]
+ctx = canvas.getContext("2d")
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 1
+ctx.moveTo(50, 0)
+ctx.lineTo(30, 30)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 1
+ctx.moveTo(50, 0)
+ctx.lineTo(70, 30)
+ctx.strokeStyle = "#0000ff"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 1
+ctx.moveTo(30,30)
+ctx.lineTo(45, 30)
+ctx.strokeStyle = "#0000ff"
+ctx.stroke() 
+
+ctx.beginPath()
+ctx.lineWidth = 1
+ctx.moveTo(70,30)
+ctx.lineTo(55, 30)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 1
+ctx.moveTo(45,30)
+ctx.lineTo(20, 65)
+ctx.strokeStyle = "#0000ff"
+ctx.stroke() 
+
+ctx.beginPath()
+ctx.lineWidth = 1
+ctx.moveTo(55,30)
+ctx.lineTo(80, 65)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke() 
+
+ctx.beginPath()
+ctx.lineWidth = 1
+ctx.moveTo(20,65)
+ctx.lineTo(40, 65)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke() 
+
+ctx.beginPath()
+ctx.lineWidth = 1
+ctx.moveTo(80,65)
+ctx.lineTo(60, 65)
+ctx.strokeStyle = "#0000ff"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 1
+ctx.moveTo(40,65)
+ctx.lineTo(10, 105)
+ctx.strokeStyle = "#0000ff"
+ctx.stroke() 
+
+ctx.beginPath()
+ctx.lineWidth = 1
+ctx.moveTo(60,65)
+ctx.lineTo(90, 105)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 1
+ctx.moveTo(10,105)
+ctx.lineTo(40, 105)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke() 
+
+ctx.beginPath()
+ctx.lineWidth = 1
+ctx.moveTo(90,105)
+ctx.lineTo(60, 105)
+ctx.strokeStyle = "#0000ff"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 1
+ctx.moveTo(40,105)
+ctx.lineTo(40, 135)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke() 
+
+ctx.beginPath()
+ctx.lineWidth = 1
+ctx.moveTo(60,105)
+ctx.lineTo(60, 135)
+ctx.strokeStyle = "#0000ff"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 1
+ctx.moveTo(60,135)
+ctx.lineTo(40, 135)
+ctx.strokeStyle = "#000000"
+ctx.stroke()
+
+x = 100
+y = 100
+
+</script></div>
     <footer>
 <p class="meta">
   <span class="byline author vcard">
@@ -83,19 +219,19 @@
     <h1>Recent Posts</h1>
     <ul id="recent_posts">
       <li class="post">
-          <a href="./2015cp_hw_w1.html">2015 計算機程式 作業一</a>
+          <a href="./2015cp_hw_w1.html">2015 計算機程式 作業1</a>
       </li>
       <li class="post">
-          <a href="./2015cp_hw_w10.html">2015 計算機程式 作業十</a>
+          <a href="./2015cp_hw_w11.html">2015 計算機程式 作業11</a>
       </li>
       <li class="post">
-          <a href="./2015cp_hw_w11.html">2015 計算機程式 作業十一</a>
+          <a href="./2015cp_hw_w12.html">2015 計算機程式 作業12</a>
       </li>
       <li class="post">
-          <a href="./2015cp_hw_w12.html">2015 計算機程式 作業十二</a>
+          <a href="./2015cp_hw_w14.html">2015 計算機程式 作業14</a>
       </li>
       <li class="post">
-          <a href="./2015cp_hw_w13.html">2015 計算機程式 作業十三</a>
+          <a href="./2015cp_hw_w15.html">2015 計算機程式 作業15</a>
       </li>
     </ul>
   </section>
@@ -143,7 +279,7 @@
     var disqus_shortname = '2015fall';
     var disqus_identifier = '/2015cp_hw_w15.html';
     var disqus_url = './2015cp_hw_w15.html';
-    var disqus_title = '2015 計算機程式 作業十五';
+    var disqus_title = '2015 計算機程式 作業15';
     (function() {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
       dsq.src = "//" + disqus_shortname + '.disqus.com/embed.js';
