@@ -54,9 +54,101 @@
 
   <div class="entry-content"><p>以下為作業十四內容</p>
 <p>利用 iframe 嵌入投影片:</p>
-<iframe src="w14.html" width="500" height="300"></iframe>
+<iframe src="40423108_cp_w14_p.html" width="500" height="300"></iframe>
 
-<p><a href="w14.html" target="_blank">作業一投影片</a></p></div>
+<p><a href="40423108_cp_w14_p.html" target="_blank">作業一投影片</a></p>
+<h3>40423108</h3>
+<!-- 導入 brython.js -->
+
+<script type="text/javascript" src="js/Brython3.2.3-20151122-082712/40423112.js"></script>
+
+<!-- 啟動 brython() -->
+
+<script>
+window.onload=function(){
+brython(1);
+}
+</script>
+
+<!-- 以下利用 Brython 程式執行繪圖 -->
+
+<canvas id="plotarea2" width="500" height="500"></canvas>
+
+<script type="text/python3">
+# 導入 doc
+from browser import document as doc
+from browser import console
+import math
+
+# 準備繪圖畫布
+canvas = doc["plotarea2"]
+ctx = canvas.getContext("2d")
+
+# 開始畫直線
+ctx.beginPath()
+ctx.lineWidth = 5
+ctx.moveTo(250,100)
+ctx.lineTo(150,200)
+ctx.lineTo(200,200)
+ctx.lineTo(100,300)
+ctx.lineTo(200,300)
+ctx.lineTo(200,400)
+ctx.lineTo(300,400)
+ctx.lineTo(300,300)
+ctx.lineTo(400,300)
+ctx.lineTo(300,200)
+ctx.lineTo(350,200)
+ctx.lineTo(250,100)
+ctx.strokeStyle = "#006000"
+ctx.stroke()
+</script>
+
+<p>聖誕樹程式碼:</p>
+<div class="highlight"><pre><span class="c">&lt;!-- 導入 brython.js --&gt;</span>
+
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">src=</span><span class="s">&quot;js/Brython3.2.3-20151122-082712/40423112.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+
+<span class="c">&lt;!-- 啟動 brython() --&gt;</span>
+
+<span class="nt">&lt;script&gt;</span>
+<span class="nb">window</span><span class="p">.</span><span class="nx">onload</span><span class="o">=</span><span class="kd">function</span><span class="p">(){</span>
+<span class="nx">brython</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nt">&lt;/script&gt;</span>
+
+<span class="c">&lt;!-- 以下利用 Brython 程式執行繪圖 --&gt;</span>
+
+<span class="nt">&lt;canvas</span> <span class="na">id=</span><span class="s">&quot;plotarea2&quot;</span> <span class="na">width=</span><span class="s">&quot;500&quot;</span> <span class="na">height=</span><span class="s">&quot;500&quot;</span><span class="nt">&gt;&lt;/canvas&gt;</span>
+
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/python3&quot;</span><span class="nt">&gt;</span>
+<span class="err">#</span> <span class="nx">導入</span> <span class="nx">doc</span>
+<span class="nx">from</span> <span class="nx">browser</span> <span class="kr">import</span> <span class="nb">document</span> <span class="nx">as</span> <span class="nx">doc</span>
+<span class="nx">from</span> <span class="nx">browser</span> <span class="kr">import</span> <span class="nx">console</span>
+<span class="kr">import</span> <span class="nx">math</span>
+
+<span class="err">#</span> <span class="nx">準備繪圖畫布</span>
+<span class="nx">canvas</span> <span class="o">=</span> <span class="nx">doc</span><span class="p">[</span><span class="s2">&quot;plotarea2&quot;</span><span class="p">]</span>
+<span class="nx">ctx</span> <span class="o">=</span> <span class="nx">canvas</span><span class="p">.</span><span class="nx">getContext</span><span class="p">(</span><span class="s2">&quot;2d&quot;</span><span class="p">)</span>
+
+<span class="err">#</span> <span class="nx">開始畫直線</span>
+<span class="nx">ctx</span><span class="p">.</span><span class="nx">beginPath</span><span class="p">()</span>
+<span class="nx">ctx</span><span class="p">.</span><span class="nx">lineWidth</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="nx">ctx</span><span class="p">.</span><span class="nx">moveTo</span><span class="p">(</span><span class="mi">250</span><span class="p">,</span><span class="mi">100</span><span class="p">)</span>
+<span class="nx">ctx</span><span class="p">.</span><span class="nx">lineTo</span><span class="p">(</span><span class="mi">150</span><span class="p">,</span><span class="mi">200</span><span class="p">)</span>
+<span class="nx">ctx</span><span class="p">.</span><span class="nx">lineTo</span><span class="p">(</span><span class="mi">200</span><span class="p">,</span><span class="mi">200</span><span class="p">)</span>
+<span class="nx">ctx</span><span class="p">.</span><span class="nx">lineTo</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span><span class="mi">300</span><span class="p">)</span>
+<span class="nx">ctx</span><span class="p">.</span><span class="nx">lineTo</span><span class="p">(</span><span class="mi">200</span><span class="p">,</span><span class="mi">300</span><span class="p">)</span>
+<span class="nx">ctx</span><span class="p">.</span><span class="nx">lineTo</span><span class="p">(</span><span class="mi">200</span><span class="p">,</span><span class="mi">400</span><span class="p">)</span>
+<span class="nx">ctx</span><span class="p">.</span><span class="nx">lineTo</span><span class="p">(</span><span class="mi">300</span><span class="p">,</span><span class="mi">400</span><span class="p">)</span>
+<span class="nx">ctx</span><span class="p">.</span><span class="nx">lineTo</span><span class="p">(</span><span class="mi">300</span><span class="p">,</span><span class="mi">300</span><span class="p">)</span>
+<span class="nx">ctx</span><span class="p">.</span><span class="nx">lineTo</span><span class="p">(</span><span class="mi">400</span><span class="p">,</span><span class="mi">300</span><span class="p">)</span>
+<span class="nx">ctx</span><span class="p">.</span><span class="nx">lineTo</span><span class="p">(</span><span class="mi">300</span><span class="p">,</span><span class="mi">200</span><span class="p">)</span>
+<span class="nx">ctx</span><span class="p">.</span><span class="nx">lineTo</span><span class="p">(</span><span class="mi">350</span><span class="p">,</span><span class="mi">200</span><span class="p">)</span>
+<span class="nx">ctx</span><span class="p">.</span><span class="nx">lineTo</span><span class="p">(</span><span class="mi">250</span><span class="p">,</span><span class="mi">100</span><span class="p">)</span>
+<span class="nx">ctx</span><span class="p">.</span><span class="nx">strokeStyle</span> <span class="o">=</span> <span class="s2">&quot;#006000&quot;</span>
+<span class="nx">ctx</span><span class="p">.</span><span class="nx">stroke</span><span class="p">()</span>
+<span class="nt">&lt;/script&gt;</span>
+</pre></div></div>
     <footer>
 <p class="meta">
   <span class="byline author vcard">
