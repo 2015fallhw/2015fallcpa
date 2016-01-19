@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>2015FALL 40423116 CPA 作業</title><link href="http://coursemdetw.github.io/reveal/" rel="alternate"></link><link href="http://coursemdetw.github.io/reveal/feeds/all.atom.xml" rel="self"></link><id>http://coursemdetw.github.io/reveal/</id><updated>2016-01-15T11:41:00+08:00</updated><entry><title>2015-Leo小勇士</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w18.html" rel="alternate"></link><updated>2016-01-15T11:41:00+08:00</updated><author><name>40423116</name></author><id>tag:coursemdetw.github.io,2016-01-15:reveal/2015cp_hw_w18.html</id><summary type="html">&lt;p&gt;以下為故事內容&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>2015FALL 40423116 CPA 作業</title><link href="http://coursemdetw.github.io/reveal/" rel="alternate"></link><link href="http://coursemdetw.github.io/reveal/feeds/all.atom.xml" rel="self"></link><id>http://coursemdetw.github.io/reveal/</id><updated>2016-01-19T11:41:00+08:00</updated><entry><title>關於user9999版本</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w19.html" rel="alternate"></link><updated>2016-01-19T11:41:00+08:00</updated><author><name>40423116</name></author><id>tag:coursemdetw.github.io,2016-01-19:reveal/2015cp_hw_w19.html</id><summary type="html">&lt;iframe src="40423116_cp_w3-1_p.html" width="800" height="500"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="40423116_cp_w3-1_p.html" target="_blank"&gt;作業十七投影片&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;用user9999的好處:&lt;/p&gt;
+&lt;iframe src="https://player.vimeo.com/video/152259869" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="https://vimeo.com/152259869"&gt;用最新版本的user 9999的好處&lt;/a&gt; from &lt;a href="https://vimeo.com/user47990593"&gt;40423116&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015-Leo小勇士</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w18.html" rel="alternate"></link><updated>2016-01-15T11:41:00+08:00</updated><author><name>40423116</name></author><id>tag:coursemdetw.github.io,2016-01-15:reveal/2015cp_hw_w18.html</id><summary type="html">&lt;p&gt;以下為故事內容&lt;/p&gt;
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/EPVOoYLXMwA" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/GrJvjvse3_M" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
@@ -671,18 +677,38 @@ for i in range(roll_number):
 &lt;iframe src="40423116_cp_w8_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
 &lt;p&gt;&lt;a href="40423116_cp_w8_p.html" target="_blank"&gt;作業八投影片&lt;/a&gt;&lt;/p&gt;
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/bAq4XbE2gA8" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;1.2015 Fall 課程工作與環境介紹&lt;/p&gt;
+&lt;iframe src="https://player.vimeo.com/video/152252029" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/nwClSBuTXrQ" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/152252029"&gt;課程工作環境&lt;/a&gt; from &lt;a href="https://vimeo.com/user46450524"&gt;40423116&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;2.2015 Fall 計算機程式可攜環境介紹&lt;/p&gt;
+&lt;iframe src="https://player.vimeo.com/video/152248777" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/l8NC5nne0j0" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/152248777"&gt;可攜式系統的介紹&lt;/a&gt; from &lt;a href="https://vimeo.com/user46450524"&gt;40423116&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;3.說明如何利用 python -m http.server 分享近端檔案&lt;/p&gt;
+&lt;iframe src="https://player.vimeo.com/video/152249931" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/G-yclEFBGnY" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/152249931"&gt;利用python 分享近端檔案&lt;/a&gt; from &lt;a href="https://vimeo.com/user46450524"&gt;40423116&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;4.介紹如何利用 fix.bat 修補 C 槽既有的可攜程式系統, 說明 SciTE 如何執行 Python3 程式, 如何建立 gh-pages 分支網頁及繳交作業&lt;/p&gt;
+&lt;iframe src="https://player.vimeo.com/video/152251392" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/aBszY3Wa-Ho" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/152251392"&gt;關於fix及建立gh-pages和繳交作業&lt;/a&gt; from &lt;a href="https://vimeo.com/user46450524"&gt;40423116&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;5.Github 倉儲分支的刪除&lt;/p&gt;
+&lt;iframe src="https://player.vimeo.com/video/152252410" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/w4OewLMeE58" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/152252410"&gt;Github 倉儲的刪除&lt;/a&gt; from &lt;a href="https://vimeo.com/user46450524"&gt;40423116&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;6.介紹英文教學影片的字幕所在位置, 說明如利用 VLC 在近端播放教學影片&lt;/p&gt;
+&lt;iframe src="https://player.vimeo.com/video/152256032" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/BmKTJj-47Ps" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/152256032"&gt;教學影片 vlc&lt;/a&gt; from &lt;a href="https://vimeo.com/user47573583"&gt;40423116&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;7.說明近端與 Jupyter 環境的 Python 程式執行, print 與 for 迴圈應用，並將計算機程式內容放到gh-pages 網頁&lt;/p&gt;
+&lt;iframe src="https://player.vimeo.com/video/152257283" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/UjIrVDLYpgQ" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry></feed>
+&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/152257283"&gt;for迴圈應用&lt;/a&gt; from &lt;a href="https://vimeo.com/user47573583"&gt;40423116&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;
+&lt;iframe src="https://player.vimeo.com/video/152257082" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/152257082"&gt;計算機內容送到gh-pages網頁上&lt;/a&gt; from &lt;a href="https://vimeo.com/user47573583"&gt;40423116&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;8.說明如何利用 git reset -- hard 版本編號, 回復舊版本資料，及示範如何修正內含 git 衝突標示的 Leo Editor 檔案&lt;/p&gt;
+&lt;iframe src="https://player.vimeo.com/video/152258500" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="https://vimeo.com/152258500"&gt;回到舊版本&lt;/a&gt; from &lt;a href="https://vimeo.com/user47990593"&gt;40423116&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry></feed>
