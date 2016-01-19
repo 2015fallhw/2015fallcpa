@@ -38,6 +38,9 @@
 
 
 <ul class="main-navigation">
+      <li >
+        <a href="./category/g3.html">G3</a>
+      </li>
       <li class="active">
         <a href="./category/python.html">Python</a>
       </li>
@@ -52,7 +55,67 @@
 <time datetime="2015-12-18T11:41:00+08:00" pubdate>週五 18 十二月 2015</time>    </p>
 </header>
 
-  <div class="entry-content"><!-- 導入 brython.js -->
+  <div class="entry-content"><p>html導入brython利用其繪圖技巧:</p>
+<iframe src="40423117_cp_w14_p.html" width="500" height="300"></iframe>
+
+<p><a href="40423117_cp_w14_p.html" target="_blank">12/18 html導入brython 投影片</a></p>
+<h1>簡易繪圖程式碼分享</h1>
+<div class="highlight"><pre><span class="o">&lt;</span><span class="err">!</span><span class="o">--</span> <span class="err">導入</span> <span class="n">brython</span><span class="o">.</span><span class="n">js</span> <span class="o">--&gt;</span>
+
+<span class="o">&lt;</span><span class="n">script</span> <span class="nb">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span> <span class="n">src</span><span class="o">=</span><span class="s">&quot;http://brython.info/src/brython_dist.js&quot;</span><span class="o">&gt;&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+
+
+<span class="o">&lt;</span><span class="err">!</span><span class="o">--</span> <span class="err">啟動</span> <span class="n">brython</span><span class="p">()</span> <span class="o">--&gt;</span>
+
+<span class="o">&lt;</span><span class="n">script</span><span class="o">&gt;</span>
+<span class="n">window</span><span class="o">.</span><span class="n">onload</span><span class="o">=</span><span class="n">function</span><span class="p">(){</span>
+<span class="n">brython</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="o">&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+
+<span class="o">&lt;</span><span class="err">!</span><span class="o">--</span> <span class="err">以下利用</span> <span class="n">Brython</span> <span class="err">程式執行繪圖</span> <span class="o">--&gt;</span>
+
+<span class="o">&lt;</span><span class="n">canvas</span> <span class="nb">id</span><span class="o">=</span><span class="s">&quot;plotarea1&quot;</span> <span class="n">width</span><span class="o">=</span><span class="s">&quot;200&quot;</span> <span class="n">height</span><span class="o">=</span><span class="s">&quot;200&quot;</span><span class="o">&gt;&lt;/</span><span class="n">canvas</span><span class="o">&gt;</span>
+
+<span class="o">&lt;</span><span class="n">script</span> <span class="nb">type</span><span class="o">=</span><span class="s">&quot;text/python3&quot;</span><span class="o">&gt;</span>
+<span class="c"># 導入 doc</span>
+<span class="kn">from</span> <span class="nn">browser</span> <span class="kn">import</span> <span class="n">document</span> <span class="k">as</span> <span class="n">doc</span>
+<span class="kn">from</span> <span class="nn">browser</span> <span class="kn">import</span> <span class="n">console</span>
+<span class="kn">import</span> <span class="nn">math</span>
+
+<span class="c"># 準備繪圖畫布</span>
+<span class="n">canvas1</span> <span class="o">=</span> <span class="n">doc</span><span class="p">[</span><span class="s">&quot;plotarea1&quot;</span><span class="p">]</span>
+<span class="n">ctx1</span> <span class="o">=</span> <span class="n">canvas1</span><span class="o">.</span><span class="n">getContext</span><span class="p">(</span><span class="s">&quot;2d&quot;</span><span class="p">)</span>
+
+<span class="c"># 開始畫直線</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">11</span><span class="p">):</span>
+    <span class="n">ctx1</span><span class="o">.</span><span class="n">beginPath</span><span class="p">()</span>
+    <span class="n">ctx1</span><span class="o">.</span><span class="n">lineWidth</span> <span class="o">=</span> <span class="mi">5</span>
+    <span class="n">ctx1</span><span class="o">.</span><span class="n">moveTo</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="o">+</span><span class="n">i</span><span class="o">*</span><span class="mi">20</span> <span class="p">)</span>
+    <span class="n">ctx1</span><span class="o">.</span><span class="n">lineTo</span><span class="p">(</span><span class="mi">200</span><span class="p">,</span><span class="mi">0</span><span class="o">+</span><span class="n">i</span><span class="o">*</span><span class="mi">20</span> <span class="p">)</span>
+    <span class="n">ctx1</span><span class="o">.</span><span class="n">strokeStyle</span> <span class="o">=</span> <span class="s">&quot;#0000ff&quot;</span>
+    <span class="n">ctx1</span><span class="o">.</span><span class="n">stroke</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">11</span><span class="p">):</span>
+    <span class="n">ctx1</span><span class="o">.</span><span class="n">beginPath</span><span class="p">()</span>
+    <span class="n">ctx1</span><span class="o">.</span><span class="n">lineWidth</span> <span class="o">=</span> <span class="mi">5</span>
+    <span class="n">ctx1</span><span class="o">.</span><span class="n">moveTo</span><span class="p">(</span><span class="mi">0</span><span class="o">+</span><span class="n">i</span><span class="o">*</span><span class="mi">20</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+    <span class="n">ctx1</span><span class="o">.</span><span class="n">lineTo</span><span class="p">(</span><span class="mi">0</span><span class="o">+</span><span class="n">i</span><span class="o">*</span><span class="mi">20</span><span class="p">,</span> <span class="mi">200</span><span class="p">)</span>
+    <span class="n">ctx1</span><span class="o">.</span><span class="n">strokeStyle</span> <span class="o">=</span> <span class="s">&quot;#FF0000&quot;</span>
+    <span class="n">ctx1</span><span class="o">.</span><span class="n">stroke</span><span class="p">()</span>
+
+
+<span class="o">&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+
+
+<span class="o">&lt;</span><span class="n">script</span><span class="o">&gt;</span>
+<span class="n">window</span><span class="o">.</span><span class="n">onload</span><span class="o">=</span><span class="n">function</span><span class="p">(){</span>
+<span class="n">brython</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="o">&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+</pre></div>
+
+
+<!-- 導入 brython.js -->
 
 <script type="text/javascript" src="http://brython.info/src/brython_dist.js"></script>
 
@@ -134,13 +197,13 @@ brython(1);
           <a href="./2015cp_hw_w15.html">2015 計算機程式 12/25</a>
       </li>
       <li class="post">
+          <a href="./G3_w15_1.html">2015 G3_w15 報告 12/25</a>
+      </li>
+      <li class="post">
           <a href="./2015cp_hw_w14.html">2015 計算機程式 12/18</a>
       </li>
       <li class="post">
           <a href="./2015cp_hw_w13.html">2015 計算機程式 12/11</a>
-      </li>
-      <li class="post">
-          <a href="./2015cp_hw_w12.html">2015 計算機程式 12/04</a>
       </li>
     </ul>
   </section>
@@ -148,6 +211,7 @@ brython(1);
       
     <h1>Categories</h1>
     <ul id="recent_posts">
+        <li><a href="./category/g3.html">G3</a></li>
         <li><a href="./category/python.html">Python</a></li>
     </ul>
   </section>
@@ -155,7 +219,7 @@ brython(1);
 
   <section>
   <h1>Tags</h1>
-    <a href="./tag/pelican.html">pelican</a>,    <a href="./tag/publishing.html">publishing</a>  </section>
+    <a href="./tag/publishing.html">publishing</a>,    <a href="./tag/g3.html">G3</a>,    <a href="./tag/pelican.html">pelican</a>  </section>
 
 
     <section>
@@ -171,8 +235,9 @@ brython(1);
             <li><a href="http://wordpress-2015course.rhcloud.com/" target="_blank">2015課程網頁</a></li>
             <li><a href="http://python.org/" target="_blank">Python</a></li>
             <li><a href="../../" target="_blank">2015作業主頁</a></li>
-            <li><a href="http://40423117.github.io/blog/user/40423117/" target="_blank">40423117 個人網頁</a></li>
+            <li><a href="http://2015fallhw.github.io/2015fallcpa/category/g3.html" target="_blank">第三組</a></li>
             <li><a href="http://40423117.github.io/blog/user/40423117/2015cp_hw_w17.html" target="_blank">第十七週</a></li>
+            <li><a href="http://40423117.github.io/blog/user/40423117/" target="_blank">40423117 個人網頁</a></li>
         </ul>
     </section>
 

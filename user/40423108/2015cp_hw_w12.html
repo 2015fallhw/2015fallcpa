@@ -54,9 +54,69 @@
 
   <div class="entry-content"><p>以下為作業十二內容</p>
 <p>利用 iframe 嵌入投影片:</p>
-<iframe src="w12.html" width="500" height="300"></iframe>
+<iframe src="40423108_cp_w12_p.html" width="500" height="300"></iframe>
 
-<p><a href="w12.html" target="_blank">作業一投影片</a></p></div>
+<p><a href="40423108_cp_w12_p.html" target="_blank">作業一投影片</a></p>
+<p>猜顏色程式碼:</p>
+<div class="highlight"><pre>import random
+print(&quot;遊戲規則說明:可選的顏色,\nRED紅色,WHITE白色,YELLOW黃色,GREEN綠色,BLUE藍色,PURPLE紫色,\nRWYGBP\nX代表位置與顏色都對,O但表顏色對位置不對&quot;)
+顏色選項=[&quot;R&quot;,&quot;W&quot;,&quot;Y&quot;,&quot;G&quot;,&quot;B&quot;,&quot;P&quot;]
+標準答案=random.sample(顏色選項,4)
+print(標準答案)
+顏色字串=&quot;&quot;
+
+for i in range(len(顏色選項)):
+    顏色字串+=顏色選項[i]
+
+猜測次數=0
+遊戲進行中=True
+
+while 遊戲進行中:
+    猜中顏色字串=&quot;&quot;
+    猜測顏色字串=&quot;&quot;
+    使用者猜測輸入=input(&quot;請從下列顏色中選擇四種顏色,&quot;+顏色字串+&quot;:&quot;).upper()
+    猜測次數+=1
+
+    if len(使用者猜測輸入)!=len(標準答案):
+        print(&quot;\n請猜四種顏色, 請重猜!&quot;)
+        continue
+    for i in range(4):
+        if 使用者猜測輸入[i] not in 顏色選項:
+            print(&quot;\n只能輸入下列顏色!&quot;,顏色選項)
+        continue
+
+    if 猜中顏色字串!=&quot;XXXX&quot;:
+        for i in range(4):
+            if 使用者猜測輸入[i] ==標準答案[i]:
+                猜中顏色字串 +=&quot;X&quot;
+            if 使用者猜測輸入 [i] !=標準答案[i] and 使用者猜測輸入 [i] in 標準答案:
+                猜中顏色字串 +=&quot;O&quot;
+        print(猜中顏色字串 + 猜測顏色字串 + &quot;\n&quot;)
+
+    if 猜中顏色字串 ==&quot;XXXX&quot;:
+        if 猜測次數==1:
+            print(&quot;太神奇了,1 次就猜中了!&quot;)
+        else:
+            print(&quot;還不錯...總共猜了&quot;+str(猜測次數) + &quot;次,終於猜對了!&quot;)
+        遊戲進行中=False
+
+    if 猜測次數 &gt;= 1 and 猜測次數 <span class="nt">&lt; 9</span> <span class="na">and</span> <span class="na">猜中顏色字串</span><span class="err">!=(&quot;</span><span class="na">XXXX</span><span class="err">&quot;)</span><span class="na">:</span>
+        <span class="na">print</span> <span class="err">(&quot;</span><span class="na">可以再猜:</span><span class="err">&quot;)</span>
+    <span class="na">elif</span> <span class="na">猜測次數</span><span class="nt">&gt;</span>=9:
+        print(&quot;很可惜沒猜對!答案是:&quot; + str(標準答案))
+
+    while 遊戲進行中 == False:
+        遊戲結束詢問=  input(&quot;\n要不要再玩  (Y/N)?&quot;).upper()
+        猜測次數=0
+        if 遊戲結束詢問 == &quot;N&quot;:
+            print(&quot;歡迎再次遊玩&quot;)
+
+        elif 遊戲結束詢問 == &quot;Y&quot;:
+            遊戲進行中=True
+            標準答案=random.sample(顏色選項,4)
+            print(標準答案)
+            print(&quot;好!在玩一次!&quot;)
+</pre></div></div>
     <footer>
 <p class="meta">
   <span class="byline author vcard">
@@ -86,9 +146,6 @@
           <a href="./2015cp_hw_w15.html">2015 作業十五40423108</a>
       </li>
       <li class="post">
-          <a href="./2015cp_hw_w14.html">2015 作業十四40423108</a>
-      </li>
-      <li class="post">
           <a href="./2015cp_hw_w13.html">2015 作業十三40423108</a>
       </li>
       <li class="post">
@@ -96,6 +153,9 @@
       </li>
       <li class="post">
           <a href="./2015cp_hw_w11.html">2015 作業十一 40423108</a>
+      </li>
+      <li class="post">
+          <a href="./2015cp_hw_w7.html">2015 作業七 40423108</a>
       </li>
     </ul>
   </section>
