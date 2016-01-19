@@ -46,13 +46,13 @@ y = [None]*n
 vy = [None]*n
 vx = [None]*n
 # 重力加速度, Y 方向向下為正
-g = 0.05
+g = 0.04
 # 空氣的黏滯阻尼係數
-cor = 0.7 
+cor = 0.8
 # 球的彈力係數
-fr = 0.95
+fr = 0.8
 # 球的半徑
-r = 5
+r = 5.5
 
 for i in range(n):
     x[i] = 300
