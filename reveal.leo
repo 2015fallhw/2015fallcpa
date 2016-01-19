@@ -47,14 +47,12 @@
 </v>
 </v>
 </v>
-<<<<<<< HEAD
 <v t="amd.20151021113722.1" a="E"><vh>@path plugin</vh>
-=======
 <v t="amd.20151021113722.1"><vh>@path plugin</vh>
->>>>>>> c725c04a5daa6a9fc50a9ed8be21c0d2b78f68d7
+</v>
+</v>
 <v t="amd.20151021113731.1" a="E"><vh>@path liquid_tags</vh>
 <v t="amd.20151021113745.1"><vh>@edit notebook.py</vh></v>
-</v>
 </v>
 <v t="amd.20151021114454.1" a="E"><vh>@path user</vh>
 <v t="amd.20151021114529.1"><vh>各組員必須自行建立 以下節點</vh></v>
