@@ -5697,7 +5697,7 @@ brython(1);
 
 &lt;!-- 以下利用 Brython 程式執行繪圖 --&gt;
 
-&lt;canvas id="plotarea" width="300" height="200"&gt;&lt;/canvas&gt;
+&lt;canvas id="plotarea5" width="300" height="200"&gt;&lt;/canvas&gt;
 
 &lt;script type="text/python3"&gt;
 # 導入 doc
@@ -5706,8 +5706,8 @@ from browser import console
 import math
 
 # 準備繪圖畫布
-canvas = doc["plotarea"]
-ctx = canvas.getContext("2d")
+canvas5 = doc["plotarea5"]
+ctx = canvas5.getContext("2d")
 
 # 開始畫直線
 ctx.beginPath()
