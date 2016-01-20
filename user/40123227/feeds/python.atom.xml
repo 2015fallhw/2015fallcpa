@@ -133,7 +133,10 @@ canvas.bind('click', on_canvas_click, False)
 &lt;h2&gt;心得&lt;/h2&gt;
 &lt;p&gt;函式好難喔~ 我一定要努力學會。&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第十六週 (元旦放假)</title><link href="http://coursemdetw.github.io/reveal/40123227_hw_w16.html" rel="alternate"></link><updated>2015-11-14T16:00:00+08:00</updated><author><name>40123227</name></author><id>tag:coursemdetw.github.io,2015-11-14:reveal/40123227_hw_w16.html</id><summary type="html">&lt;p&gt;&lt;strong&gt; 1/1 元旦放假，祝大家新年快樂 &lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;2016為新的一年開始，利用年假把2015年沒熟悉的指令重新再複習，新年開始也表示期末將近，假期除了出外遊玩，也要提醒自己該準備讀書了。&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://imgur.com/OSY6c14"&gt;&lt;img src="http://i.imgur.com/OSY6c14.jpg" title="source: imgur.com" /&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第十五週 (聖誕節)</title><link href="http://coursemdetw.github.io/reveal/40123227_hw_w15.html" rel="alternate"></link><updated>2015-11-13T16:00:00+08:00</updated><author><name>40123227</name></author><id>tag:coursemdetw.github.io,2015-11-13:reveal/40123227_hw_w15.html</id><summary type="html">&lt;p&gt;&lt;strong&gt;1-1. Python3的近端程式開發系統如何建立&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://imgur.com/OSY6c14"&gt;&lt;img src="http://i.imgur.com/OSY6c14.jpg" title="source: imgur.com" /&gt;&lt;/p&gt;
+&lt;iframe src="https://player.vimeo.com/video/152388217" width="500" height="282" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="https://vimeo.com/152388217"&gt;40123227元旦&lt;/a&gt; from &lt;a href="https://vimeo.com/user28483043"&gt;40123227&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第十五週 (聖誕節)</title><link href="http://coursemdetw.github.io/reveal/40123227_hw_w15.html" rel="alternate"></link><updated>2015-11-13T16:00:00+08:00</updated><author><name>40123227</name></author><id>tag:coursemdetw.github.io,2015-11-13:reveal/40123227_hw_w15.html</id><summary type="html">&lt;p&gt;&lt;strong&gt;1-1. Python3的近端程式開發系統如何建立&lt;/strong&gt;&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;從 http://www.python.org/download/ 下載 Python 3.3.1, Doc 與 test scripts 不安裝, 容量大約 26 MB.&lt;/p&gt;
@@ -179,7 +182,7 @@ canvas.bind('click', on_canvas_click, False)
 &lt;p&gt;commands, exammples, Python33, tcc 與 wscite 等五個目錄, 其中 Python33 為可攜的 Python 3.3.1, tcc 為 TinyC 編譯程式&lt;/p&gt;
 &lt;p&gt;, scite 則為 SciTE 編輯器.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;3.請利用流程圖, 簡要說明近端猜數字遊戲與猜顏色遊戲程式碼如何設計與運作&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://imgur.com/P9vZLUM"&gt;&lt;img src="http://i.imgur.com/P9vZLUM.jpg" title="source: imgur.com" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://imgur.com/2lAG5oD"&gt;&lt;img src="http://i.imgur.com/2lAG5oD.png" title="source: imgur.com" /&gt;&lt;/p&gt;
 &lt;p&gt;**4. 請各組員利用 Brython, 分別在各分組的 pelican 網頁文章中, 繪製一個歡慶耶誕的 2D 圖形&lt;/p&gt;
 &lt;p&gt;&lt;/script&gt;
 &lt;a href="http://imgur.com/QMmRhyi"&gt;&lt;img src="http://i.imgur.com/QMmRhyi.png" title="source: imgur.com" /&gt;&lt;/p&gt;
