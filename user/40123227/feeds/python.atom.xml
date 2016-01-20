@@ -133,7 +133,7 @@ canvas.bind('click', on_canvas_click, False)
 &lt;h2&gt;心得&lt;/h2&gt;
 &lt;p&gt;函式好難喔~ 我一定要努力學會。&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第十六週 (元旦放假)</title><link href="http://coursemdetw.github.io/reveal/40123227_hw_w16.html" rel="alternate"></link><updated>2015-11-14T16:00:00+08:00</updated><author><name>40123227</name></author><id>tag:coursemdetw.github.io,2015-11-14:reveal/40123227_hw_w16.html</id><summary type="html">&lt;p&gt;&lt;strong&gt; 1/1 元旦放假，祝大家新年快樂 &lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;2016為新的一年開始，利用年假把2015年沒熟悉的指令重新再複習，新年開始也表示期末將近，假期除了出外遊玩，也要提醒自己該準備讀書了。&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://imgur.com/esIQqvy"&gt;&lt;img src="http://i.imgur.com/esIQqvy.jpg" title="source: imgur.com" /&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第十五週 (聖誕節)</title><link href="http://coursemdetw.github.io/reveal/40123227_hw_w15.html" rel="alternate"></link><updated>2015-11-13T16:00:00+08:00</updated><author><name>40123227</name></author><id>tag:coursemdetw.github.io,2015-11-13:reveal/40123227_hw_w15.html</id><summary type="html">&lt;p&gt;&lt;strong&gt;1-1. Python3的近端程式開發系統如何建立&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://imgur.com/OSY6c14"&gt;&lt;img src="http://i.imgur.com/OSY6c14.jpg" title="source: imgur.com" /&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第十五週 (聖誕節)</title><link href="http://coursemdetw.github.io/reveal/40123227_hw_w15.html" rel="alternate"></link><updated>2015-11-13T16:00:00+08:00</updated><author><name>40123227</name></author><id>tag:coursemdetw.github.io,2015-11-13:reveal/40123227_hw_w15.html</id><summary type="html">&lt;p&gt;&lt;strong&gt;1-1. Python3的近端程式開發系統如何建立&lt;/strong&gt;&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;從 http://www.python.org/download/ 下載 Python 3.3.1, Doc 與 test scripts 不安裝, 容量大約 26 MB.&lt;/p&gt;
@@ -341,7 +341,10 @@ while 遊戲進行中 == False:
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;/pre&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第十二週</title><link href="http://coursemdetw.github.io/reveal/40123227_hw_w12.html" rel="alternate"></link><updated>2015-11-10T16:00:00+08:00</updated><author><name>40123227</name></author><id>tag:coursemdetw.github.io,2015-11-10:reveal/40123227_hw_w12.html</id><summary type="html">&lt;p&gt;在零基礎學 Python 中有一個單機執行的猜數字遊戲, 在 KMOL 的系列課程中, 可以單單從這個遊戲開始, 逐步體會計算機程式、網際內容管理、電腦輔助設計實習與協同產品設計實習等課程的整合應用.&lt;/p&gt;
+&lt;/pre&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第十二週</title><link href="http://coursemdetw.github.io/reveal/40123227_hw_w12.html" rel="alternate"></link><updated>2015-11-10T16:00:00+08:00</updated><author><name>40123227</name></author><id>tag:coursemdetw.github.io,2015-11-10:reveal/40123227_hw_w12.html</id><summary type="html">&lt;p&gt;&lt;strong&gt;操作影片&lt;/strong&gt;
+&lt;iframe src="https://player.vimeo.com/video/152384387" width="500" height="282" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;a href="https://vimeo.com/152384387"&gt;40123227 猜數字&lt;/a&gt; from &lt;a href="https://vimeo.com/user28483043"&gt;40123227&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;在零基礎學 Python 中有一個單機執行的猜數字遊戲, 在 KMOL 的系列課程中, 可以單單從這個遊戲開始, 逐步體會計算機程式、網際內容管理、電腦輔助設計實習與協同產品設計實習等課程的整合應用.&lt;/p&gt;
 &lt;p&gt;猜數字遊戲一開始由系統產生一個標準答案 – 這個答案可以類比到機械設計工程師設計產品過程中所希望完成的最佳化設計結果.&lt;/p&gt;
 &lt;p&gt;接下來, 遊戲會透過介面設計取得使用者的猜數字輸入 – 而此使用者的輸入過程, 可以類比到在機械設計工程師逐步達成最後設計之前, 因為各種分析考量的需要, 或協力廠商間設計參數的變更需求, 必須透過介面設計將各種輸入納入系統中.&lt;/p&gt;
 &lt;p&gt;接下來, 遊戲會根據標準答案與使用者的輸入進行比對, 然後回應比對結果 – 此階段之於產品開發流程, 可以類比為根據使用者所採用的電腦輔助設計分析方法, 取得分析的結果, 可以透過工程分析方法顯示目前設計結果的優劣, 或者以人工方式來評判設計分析的結果.&lt;/p&gt;
