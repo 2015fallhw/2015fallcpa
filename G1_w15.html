@@ -399,7 +399,7 @@ brython(1);
 <h3>40423112</h3>
 <!-- 導入 brython.js -->
 
-<script type="text/javascript" src="js/Brython3.2.3-20151122-082712/40423112.js"></script>
+<script type="text/javascript" src="js/Brython3.2.3-20151122-082712/brython.js"></script>
 
 <!-- 啟動 brython() -->
 
@@ -411,7 +411,7 @@ brython(1);
 
 <!-- 以下利用 Brython 程式執行繪圖 -->
 
-<canvas id="plotarea2" width="300" height="200"></canvas>
+<canvas id="plotarea" width="300" height="200"></canvas>
 
 <script type="text/python3">
 # 導入 doc
@@ -420,7 +420,7 @@ from browser import console
 import math
 
 # 準備繪圖畫布
-canvas = doc["plotarea2"]
+canvas = doc["plotarea"]
 ctx = canvas.getContext("2d")
 
 # 開始畫直線
@@ -444,6 +444,94 @@ ctx.moveTo(30,30)
 ctx.lineTo(45, 30)
 ctx.strokeStyle = "#0000ff"
 ctx.stroke() 
+
+ctx.beginPath()
+ctx.lineWidth = 1
+ctx.moveTo(70,30)
+ctx.lineTo(55, 30)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 1
+ctx.moveTo(45,30)
+ctx.lineTo(20, 65)
+ctx.strokeStyle = "#0000ff"
+ctx.stroke() 
+
+ctx.beginPath()
+ctx.lineWidth = 1
+ctx.moveTo(55,30)
+ctx.lineTo(80, 65)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke() 
+
+ctx.beginPath()
+ctx.lineWidth = 1
+ctx.moveTo(20,65)
+ctx.lineTo(40, 65)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke() 
+
+ctx.beginPath()
+ctx.lineWidth = 1
+ctx.moveTo(80,65)
+ctx.lineTo(60, 65)
+ctx.strokeStyle = "#0000ff"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 1
+ctx.moveTo(40,65)
+ctx.lineTo(10, 105)
+ctx.strokeStyle = "#0000ff"
+ctx.stroke() 
+
+ctx.beginPath()
+ctx.lineWidth = 1
+ctx.moveTo(60,65)
+ctx.lineTo(90, 105)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 1
+ctx.moveTo(10,105)
+ctx.lineTo(40, 105)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke() 
+
+ctx.beginPath()
+ctx.lineWidth = 1
+ctx.moveTo(90,105)
+ctx.lineTo(60, 105)
+ctx.strokeStyle = "#0000ff"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 1
+ctx.moveTo(40,105)
+ctx.lineTo(40, 135)
+ctx.strokeStyle = "#FF0000"
+ctx.stroke() 
+
+ctx.beginPath()
+ctx.lineWidth = 1
+ctx.moveTo(60,105)
+ctx.lineTo(60, 135)
+ctx.strokeStyle = "#0000ff"
+ctx.stroke()
+
+ctx.beginPath()
+ctx.lineWidth = 1
+ctx.moveTo(60,135)
+ctx.lineTo(40, 135)
+ctx.strokeStyle = "#000000"
+ctx.stroke()
+
+x = 100
+y = 100
+
 </script>
 
 <div class="highlight"><pre>
@@ -1186,7 +1274,7 @@ ctx2.fill();
 
   <section>
   <h1>Tags</h1>
-    <a href="./tag/jupyter.html">Jupyter</a>,    <a href="./tag/brython.html">Brython</a>,    <a href="./tag/ipython.html">IPython</a>,    <a href="./tag/w16.html">w16</a>,    <a href="./tag/g10.html">G10</a>,    <a href="./tag/w14.html">w14</a>,    <a href="./tag/pelican.html">pelican</a>,    <a href="./tag/qi-mo-ping-fen.html">期末評分</a>,    <a href="./tag/publishing.html">publishing</a>,    <a href="./tag/w15.html">w15</a>,    <a href="./tag/g1.html">G1</a>,    <a href="./tag/g3.html">G3</a>  </section>
+    <a href="./tag/jupyter.html">Jupyter</a>,    <a href="./tag/w15.html">w15</a>,    <a href="./tag/brython.html">Brython</a>,    <a href="./tag/w14.html">w14</a>,    <a href="./tag/publishing.html">publishing</a>,    <a href="./tag/g10.html">G10</a>,    <a href="./tag/pelican.html">pelican</a>,    <a href="./tag/qi-mo-ping-fen.html">期末評分</a>,    <a href="./tag/g1.html">G1</a>,    <a href="./tag/w16.html">w16</a>,    <a href="./tag/ipython.html">IPython</a>,    <a href="./tag/g3.html">G3</a>  </section>
 
 
     <section>
