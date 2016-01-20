@@ -183,6 +183,10 @@ canvas.bind('click', on_canvas_click, False)
 &lt;p&gt;, scite 則為 SciTE 編輯器.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;3.請利用流程圖, 簡要說明近端猜數字遊戲與猜顏色遊戲程式碼如何設計與運作&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://imgur.com/2lAG5oD"&gt;&lt;img src="http://i.imgur.com/2lAG5oD.png" title="source: imgur.com" /&gt;&lt;/p&gt;
+&lt;iframe src="https://player.vimeo.com/video/152389070" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="https://vimeo.com/152389070"&gt;40123227流程圖上傳&lt;/a&gt; from &lt;a href="https://vimeo.com/user28483043"&gt;40123227&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
+
 &lt;p&gt;**4. 請各組員利用 Brython, 分別在各分組的 pelican 網頁文章中, 繪製一個歡慶耶誕的 2D 圖形&lt;/p&gt;
 &lt;p&gt;&lt;/script&gt;
 &lt;a href="http://imgur.com/QMmRhyi"&gt;&lt;img src="http://i.imgur.com/QMmRhyi.png" title="source: imgur.com" /&gt;&lt;/p&gt;
@@ -709,7 +713,10 @@ while 標準答案 != 你猜的數字:
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;※播放須知&lt;/strong&gt;: 由於網頁嵌入式影片畫質較低, 建議直接點案影片視窗右下角前往Vimeo瀏覽!&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第一週</title><link href="http://coursemdetw.github.io/reveal/40123227_hw_w1.html" rel="alternate"></link><updated>2015-09-18T16:00:00+08:00</updated><author><name>40123227</name></author><id>tag:coursemdetw.github.io,2015-09-18:reveal/40123227_hw_w1.html</id><summary type="html">&lt;iframe src="40123227_cp_w1_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;strong&gt;※播放須知&lt;/strong&gt;: 由於網頁嵌入式影片畫質較低, 建議直接點案影片視窗右下角前往Vimeo瀏覽!&lt;/p&gt;
+&lt;iframe src="https://player.vimeo.com/video/152388928" width="500" height="282" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="https://vimeo.com/152388928"&gt;40123227push檔案&lt;/a&gt; from &lt;a href="https://vimeo.com/user28483043"&gt;40123227&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第一週</title><link href="http://coursemdetw.github.io/reveal/40123227_hw_w1.html" rel="alternate"></link><updated>2015-09-18T16:00:00+08:00</updated><author><name>40123227</name></author><id>tag:coursemdetw.github.io,2015-09-18:reveal/40123227_hw_w1.html</id><summary type="html">&lt;iframe src="40123227_cp_w1_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
 &lt;p&gt;&lt;a href="40123227_cp_w1_p.html" target="_blank"&gt;作業一投影片&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
