@@ -38,6 +38,9 @@
 
 
 <ul class="main-navigation">
+      <li >
+        <a href="./category/g3.html">G3</a>
+      </li>
       <li class="active">
         <a href="./category/python.html">Python</a>
       </li>
@@ -52,8 +55,113 @@
 <time datetime="2015-12-25T11:41:00+08:00" pubdate>週五 25 十二月 2015</time>    </p>
 </header>
 
-  <div class="entry-content"><h3>Merry Christmas  &amp;  Happy new year###</h3>
-<h3>40423117</h3>
+  <div class="entry-content"><p>複習12/18上的繪圖架構技巧:</p>
+<iframe src="40423117_cp_w14_p.html" width="500" height="300"></iframe>
+
+<p><a href="40423117_cp_w14_p.html" target="_blank">12/18 html導入brython 投影片</a></p>
+<h1>簡易繪圖程式碼分享</h1>
+<ul>
+<li>導入 brython.js             </li>
+</ul>
+<div class="highlight"><pre><span class="o">&lt;</span><span class="n">script</span> <span class="nb">type</span><span class="o">=</span><span class="s">&quot;text/javascript&quot;</span> <span class="n">src</span><span class="o">=</span><span class="s">&quot;http://brython.info/src/brython_dist.js&quot;</span><span class="o">&gt;&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+</pre></div>
+
+
+<ul>
+<li>啟動 brython</li>
+</ul>
+<div class="highlight"><pre><span class="o">&lt;</span><span class="n">script</span><span class="o">&gt;</span>
+<span class="n">window</span><span class="o">.</span><span class="n">onload</span><span class="o">=</span><span class="n">function</span><span class="p">(){</span>
+<span class="n">brython</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="o">&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+</pre></div>
+
+
+<ul>
+<li>建立畫布名稱"plotarea" 尺寸 500 x 510</li>
+</ul>
+<div class="highlight"><pre><span class="o">&lt;</span><span class="n">canvas</span> <span class="nb">id</span><span class="o">=</span><span class="s">&quot;plotarea&quot;</span> <span class="n">width</span><span class="o">=</span><span class="s">&quot;500&quot;</span> <span class="n">height</span><span class="o">=</span><span class="s">&quot;510&quot;</span><span class="o">&gt;&lt;/</span><span class="n">canvas</span><span class="o">&gt;</span>
+</pre></div>
+
+
+<ul>
+<li>簡易盆栽程式碼</li>
+</ul>
+<div class="highlight"><pre><span class="n">ctx</span><span class="o">.</span><span class="n">beginPath</span><span class="p">()</span>
+<span class="n">ctx</span><span class="o">.</span><span class="n">moveTo</span><span class="p">(</span><span class="mi">195</span><span class="p">,</span> <span class="mi">390</span><span class="p">)</span> <span class="c"># 線條起點</span>
+<span class="n">ctx</span><span class="o">.</span><span class="n">lineTo</span><span class="p">(</span><span class="mi">195</span><span class="p">,</span> <span class="mi">420</span><span class="p">)</span> <span class="c"># 線條終點</span>
+<span class="n">ctx</span><span class="o">.</span><span class="n">moveTo</span><span class="p">(</span><span class="mi">305</span><span class="p">,</span> <span class="mi">405</span><span class="p">)</span>
+<span class="n">ctx</span><span class="o">.</span><span class="n">lineTo</span><span class="p">(</span><span class="mi">305</span><span class="p">,</span> <span class="mi">420</span><span class="p">)</span>
+<span class="n">ctx</span><span class="o">.</span><span class="n">lineWidth</span> <span class="o">=</span> <span class="mi">8</span> <span class="c"># 線條的粗細</span>
+<span class="n">ctx</span><span class="o">.</span><span class="n">strokeStyle</span> <span class="o">=</span> <span class="s">&quot;#381319&quot;</span> <span class="c"># 顏色的選擇 RGB</span>
+<span class="n">ctx</span><span class="o">.</span><span class="n">stroke</span><span class="p">()</span>
+
+<span class="c">#底下為畫布滿矩形的圖形</span>
+<span class="n">ctx</span><span class="o">.</span><span class="n">beginPath</span><span class="p">()</span>
+<span class="n">ctx</span><span class="o">.</span><span class="n">fillStyle</span> <span class="o">=</span> <span class="s">&quot;#5C2230&quot;</span> <span class="c"># 填充矩形 顏色的選擇 RGB</span>
+<span class="n">ctx</span><span class="o">.</span><span class="n">fillRect</span><span class="p">(</span><span class="mi">160</span><span class="p">,</span><span class="mi">420</span><span class="p">,</span><span class="mi">180</span><span class="p">,</span><span class="mi">30</span><span class="p">)</span> <span class="c"># (起點X,起點Y,矩形寬,矩形高)</span>
+<span class="n">ctx</span><span class="o">.</span><span class="n">stroke</span><span class="p">()</span>
+
+<span class="n">ctx</span><span class="o">.</span><span class="n">beginPath</span><span class="p">()</span>
+<span class="n">ctx</span><span class="o">.</span><span class="n">fillStyle</span> <span class="o">=</span> <span class="s">&quot;#381319&quot;</span>
+<span class="n">ctx</span><span class="o">.</span><span class="n">fillRect</span><span class="p">(</span><span class="mi">200</span><span class="p">,</span><span class="mi">420</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span><span class="mi">30</span><span class="p">)</span>
+<span class="n">ctx</span><span class="o">.</span><span class="n">stroke</span><span class="p">()</span>
+
+<span class="n">ctx</span><span class="o">.</span><span class="n">beginPath</span><span class="p">()</span>
+<span class="n">ctx</span><span class="o">.</span><span class="n">fillStyle</span> <span class="o">=</span> <span class="s">&quot;#381319&quot;</span>
+<span class="n">ctx</span><span class="o">.</span><span class="n">fillRect</span><span class="p">(</span><span class="mi">180</span><span class="p">,</span><span class="mi">450</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">20</span><span class="p">)</span>
+<span class="n">ctx</span><span class="o">.</span><span class="n">stroke</span><span class="p">()</span>
+
+<span class="n">ctx</span><span class="o">.</span><span class="n">beginPath</span><span class="p">()</span>
+<span class="n">ctx</span><span class="o">.</span><span class="n">fillStyle</span> <span class="o">=</span> <span class="s">&quot;#5C2230&quot;</span>
+<span class="n">ctx</span><span class="o">.</span><span class="n">fillRect</span><span class="p">(</span><span class="mi">190</span><span class="p">,</span><span class="mi">450</span><span class="p">,</span><span class="mi">40</span><span class="p">,</span><span class="mi">20</span><span class="p">)</span>
+<span class="n">ctx</span><span class="o">.</span><span class="n">stroke</span><span class="p">()</span>
+
+<span class="n">ctx</span><span class="o">.</span><span class="n">beginPath</span><span class="p">()</span>
+<span class="n">ctx</span><span class="o">.</span><span class="n">fillStyle</span> <span class="o">=</span> <span class="s">&quot;#381319&quot;</span>
+<span class="n">ctx</span><span class="o">.</span><span class="n">fillRect</span><span class="p">(</span><span class="mi">230</span><span class="p">,</span><span class="mi">450</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span><span class="mi">20</span><span class="p">)</span>
+<span class="n">ctx</span><span class="o">.</span><span class="n">stroke</span><span class="p">()</span>
+
+<span class="n">ctx</span><span class="o">.</span><span class="n">beginPath</span><span class="p">()</span>
+<span class="n">ctx</span><span class="o">.</span><span class="n">fillStyle</span> <span class="o">=</span> <span class="s">&quot;#5C2230&quot;</span>
+<span class="n">ctx</span><span class="o">.</span><span class="n">fillRect</span><span class="p">(</span><span class="mi">280</span><span class="p">,</span><span class="mi">450</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span><span class="mi">20</span><span class="p">)</span>
+<span class="n">ctx</span><span class="o">.</span><span class="n">stroke</span><span class="p">()</span>
+
+<span class="n">ctx</span><span class="o">.</span><span class="n">beginPath</span><span class="p">()</span>
+<span class="n">ctx</span><span class="o">.</span><span class="n">fillStyle</span> <span class="o">=</span> <span class="s">&quot;#381319&quot;</span>
+<span class="n">ctx</span><span class="o">.</span><span class="n">fillRect</span><span class="p">(</span><span class="mi">180</span><span class="p">,</span><span class="mi">470</span><span class="p">,</span><span class="mi">30</span><span class="p">,</span><span class="mi">20</span><span class="p">)</span>
+<span class="n">ctx</span><span class="o">.</span><span class="n">stroke</span><span class="p">()</span>
+
+<span class="n">ctx</span><span class="o">.</span><span class="n">beginPath</span><span class="p">()</span>
+<span class="n">ctx</span><span class="o">.</span><span class="n">fillStyle</span> <span class="o">=</span> <span class="s">&quot;#5C2230&quot;</span>
+<span class="n">ctx</span><span class="o">.</span><span class="n">fillRect</span><span class="p">(</span><span class="mi">210</span><span class="p">,</span><span class="mi">470</span><span class="p">,</span><span class="mi">40</span><span class="p">,</span><span class="mi">20</span><span class="p">)</span>
+<span class="n">ctx</span><span class="o">.</span><span class="n">stroke</span><span class="p">()</span>
+
+<span class="n">ctx</span><span class="o">.</span><span class="n">beginPath</span><span class="p">()</span>
+<span class="n">ctx</span><span class="o">.</span><span class="n">fillStyle</span> <span class="o">=</span> <span class="s">&quot;#381319&quot;</span>
+<span class="n">ctx</span><span class="o">.</span><span class="n">fillRect</span><span class="p">(</span><span class="mi">250</span><span class="p">,</span><span class="mi">470</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span><span class="mi">20</span><span class="p">)</span>
+<span class="n">ctx</span><span class="o">.</span><span class="n">stroke</span><span class="p">()</span>
+
+<span class="n">ctx</span><span class="o">.</span><span class="n">beginPath</span><span class="p">()</span>
+<span class="n">ctx</span><span class="o">.</span><span class="n">fillStyle</span> <span class="o">=</span> <span class="s">&quot;#5C2230&quot;</span>
+<span class="n">ctx</span><span class="o">.</span><span class="n">fillRect</span><span class="p">(</span><span class="mi">300</span><span class="p">,</span><span class="mi">470</span><span class="p">,</span><span class="mi">30</span><span class="p">,</span><span class="mi">20</span><span class="p">)</span>
+<span class="n">ctx</span><span class="o">.</span><span class="n">stroke</span><span class="p">()</span>
+</pre></div>
+
+
+<ul>
+<li>簡易的字體程式碼</li>
+</ul>
+<div class="highlight"><pre><span class="n">ctx</span><span class="o">.</span><span class="n">beginPath</span><span class="p">()</span>
+<span class="n">ctx</span><span class="o">.</span><span class="n">fillStyle</span> <span class="o">=</span> <span class="s">&quot;#88A85D&quot;</span>
+<span class="n">ctx</span><span class="o">.</span><span class="n">font</span> <span class="o">=</span> <span class="s">&quot;12px ScriptS&quot;</span> <span class="c"># 字體大小 與 字型</span>
+<span class="n">ctx</span><span class="o">.</span><span class="n">fillText</span><span class="p">(</span><span class="s">&quot;40423117&quot;</span><span class="p">,</span><span class="mi">390</span><span class="p">,</span><span class="mi">490</span><span class="p">)</span> <span class="c"># 字體內容,座標</span>
+<span class="n">ctx</span><span class="o">.</span><span class="n">stroke</span><span class="p">()</span>
+</pre></div>
+
+
+<h3>Merry Christmas</h3>
 <!-- 導入 brython.js -->
 
 <script type="text/javascript" src="http://brython.info/src/brython_dist.js"></script>
@@ -325,13 +433,13 @@ brython(1);
           <a href="./2015cp_hw_w15.html">2015 計算機程式 12/25</a>
       </li>
       <li class="post">
+          <a href="./G3_w15_1.html">2015 G3_w15 報告 12/25</a>
+      </li>
+      <li class="post">
           <a href="./2015cp_hw_w14.html">2015 計算機程式 12/18</a>
       </li>
       <li class="post">
           <a href="./2015cp_hw_w13.html">2015 計算機程式 12/11</a>
-      </li>
-      <li class="post">
-          <a href="./2015cp_hw_w12.html">2015 計算機程式 12/04</a>
       </li>
     </ul>
   </section>
@@ -339,6 +447,7 @@ brython(1);
       
     <h1>Categories</h1>
     <ul id="recent_posts">
+        <li><a href="./category/g3.html">G3</a></li>
         <li><a href="./category/python.html">Python</a></li>
     </ul>
   </section>
@@ -346,7 +455,7 @@ brython(1);
 
   <section>
   <h1>Tags</h1>
-    <a href="./tag/publishing.html">publishing</a>,    <a href="./tag/pelican.html">pelican</a>  </section>
+    <a href="./tag/publishing.html">publishing</a>,    <a href="./tag/g3.html">G3</a>,    <a href="./tag/pelican.html">pelican</a>  </section>
 
 
     <section>
@@ -362,8 +471,9 @@ brython(1);
             <li><a href="http://wordpress-2015course.rhcloud.com/" target="_blank">2015課程網頁</a></li>
             <li><a href="http://python.org/" target="_blank">Python</a></li>
             <li><a href="../../" target="_blank">2015作業主頁</a></li>
-            <li><a href="http://40423117.github.io/blog/user/40423117/" target="_blank">40423117 作業倉儲</a></li>
+            <li><a href="http://2015fallhw.github.io/2015fallcpa/category/g3.html" target="_blank">第三組</a></li>
             <li><a href="http://40423117.github.io/blog/user/40423117/2015cp_hw_w17.html" target="_blank">第十七週</a></li>
+            <li><a href="http://40423117.github.io/blog/user/40423117/" target="_blank">40423117 個人網頁</a></li>
         </ul>
     </section>
 

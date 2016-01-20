@@ -8,7 +8,7 @@ from __future__ import unicode_literals
 import os
 
 AUTHOR = '40423113'
-SITENAME = '2015FALL 40423113 cpa 作業'
+SITENAME = '2015FALL 40423113  CPA作業 '
 SITEURL = ''
 
 PATH = 'content'
@@ -26,8 +26,7 @@ AUTHOR_FEED_RSS = None
 
 # Blogroll
 LINKS = (('2015課程網頁', 'http://wordpress-2015course.rhcloud.com/'),
-         ('Python', 'http://python.org/'),('2015作業主頁', '../../'),('40423113作業倉儲', 'https://github.com/40423113'))
-
+         ('Python', 'http://python.org/'),('2015作業主頁', '../../'),('40423113 個人網頁', 'http://40423113.github.io/cpaw1/'))
 # Social widget
 SOCIAL = (('twitter', 'http://twitter.com/ametaireau'),
           ('github', 'http://github.com/ametaireau'),)

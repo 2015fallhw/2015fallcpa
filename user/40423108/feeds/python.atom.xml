@@ -1,5 +1,327 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>2015FALL 40423108 CPA 作業</title><link href="http://coursemdetw.github.io/reveal/" rel="alternate"></link><link href="http://coursemdetw.github.io/reveal/feeds/python.atom.xml" rel="self"></link><id>http://coursemdetw.github.io/reveal/</id><updated>2015-11-27T11:41:00+08:00</updated><entry><title>2015 作業十一 40423108</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w11.html" rel="alternate"></link><updated>2015-11-27T11:41:00+08:00</updated><author><name>coursemdetw</name></author><id>tag:coursemdetw.github.io,2015-11-27:reveal/2015cp_hw_w11.html</id><summary type="html">&lt;p&gt;以下為作業十一內容&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>2015FALL 40423108 CPA 作業</title><link href="http://coursemdetw.github.io/reveal/" rel="alternate"></link><link href="http://coursemdetw.github.io/reveal/feeds/python.atom.xml" rel="self"></link><id>http://coursemdetw.github.io/reveal/</id><updated>2015-12-25T11:41:00+08:00</updated><entry><title>2015 作業十五40423108</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w15.html" rel="alternate"></link><updated>2015-12-25T11:41:00+08:00</updated><author><name>coursemdetw</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/2015cp_hw_w15.html</id><summary type="html">&lt;p&gt;以下為作業十五內容&lt;/p&gt;
+&lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
+&lt;iframe src="40423108_cp_w15_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="40423108_cp_w15_p.html" target="_blank"&gt;作業一投影片&lt;/a&gt;&lt;/p&gt;
+&lt;!-- 導入 brython.js --&gt;
+
+&lt;script type="text/javascript" src="http://brython.info/src/brython_dist.js"&gt;&lt;/script&gt;
+
+&lt;!-- 啟動 brython() --&gt;
+
+&lt;script&gt;
+window.onload=function(){
+brython(1);
+}
+&lt;/script&gt;
+
+&lt;!-- 以下利用 Brython 程式執行繪圖 --&gt;
+
+&lt;canvas id="plotarea" width="600" height="400"&gt;&lt;/canvas&gt;
+
+&lt;script type="text/python3"&gt;
+# 導入 browser 模組中的 document, 並設為 doc 變數
+from browser import document as doc
+# 導入數學模組
+import math
+# 產生各小球的亂數速度用
+import random
+# 導入 browser 中的計時器, 建立動畫用
+import browser.timer
+
+# 準備繪圖畫布
+canvas = doc["plotarea"]
+ctx = canvas.getContext("2d")
+
+# 取畫布的寬與高度
+width = canvas.width
+height = canvas.height
+
+n = 20
+# 已知數列內容個數, 先分別與 None 對應
+x = [None]*n
+y = [None]*n
+vy = [None]*n
+vx = [None]*n
+# 重力加速度, Y 方向向下為正
+g = 0.08
+# 空氣的黏滯阻尼係數
+cor = 0.7 
+# 球的彈力係數
+fr = 1.0
+# 球的半徑
+r = 10
+
+for i in range(n):
+    x[i] = 300
+    y[i] = 100
+    # random.random() 將會產生介於 0 與 1 的浮點亂數
+    vx[i] = 2*(random.random()-.5)
+    vy[i] = 2*(random.random()-.5)
+
+# 更新第 i 球 Y 座標的運算邏輯
+def updateY(i):
+    if ((y[i]+r) &lt; height):
+        #y = height
+        vy[i] += g
+    else:
+        vy[i] = -vy[i]*cor
+        vx[i] *= fr
+    y[i] += vy[i]
+    if ((y[i]+r) &gt; height):
+        y[i] = height-r
+
+# 更新第 i 球 X 座標的運算邏輯
+def updateX(i):
+    if ((x[i]+r) &gt;= width or (x[i]-r) &lt;= 0):
+        vx[i] = -vx[i]*cor
+    x[i] += vx[i]
+    if ((x[i]+r) &gt; width):
+        x[i] = width-r
+    elif ((x[i]-r) &lt; 0):
+        x[i] = r
+
+# 畫圓函式
+def circle(x,y,r):
+    ctx.beginPath()
+    ctx.arc(x, y, r, 0, math.pi*2, True)
+    ctx.fill()
+
+# 寫字函式
+def text(s):
+    ctx.fillStyle = "#ff0000"
+    ctx.font = "30px sans-serif"
+    ctx.textBaseline = "bottom"
+    ctx.fillText(s,0,height)
+
+# 每隔特定時間, 進行動畫繪製
+def animate():
+    # 刷新畫布
+    ctx.clearRect(0, 0, width, height)
+    # 逐一重新繪製小球
+    ctx.fillStyle = "#000000"
+    for i in range(n):
+        updateY(i)
+        updateX(i)
+        circle(x[i],y[i],r)
+
+text("Click me!")
+
+# 畫布點擊後執行的函式
+def on_canvas_click(ev):
+    browser.timer.set_interval(animate,0)
+
+# 只要使用者點擊在畫布上任何地方, 即執行 on_canvas_click 函式
+canvas.bind('click', on_canvas_click, False)
+&lt;/script&gt;
+
+&lt;p&gt;函數程式碼:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;&amp;lt;!-- 導入 brython.js --&amp;gt;&lt;/span&gt;
+
+&lt;span class="nt"&gt;&amp;lt;script &lt;/span&gt;&lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text/javascript&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;src=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;http://brython.info/src/brython_dist.js&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+
+&lt;span class="c"&gt;&amp;lt;!-- 啟動 brython() --&amp;gt;&lt;/span&gt;
+
+&lt;span class="nt"&gt;&amp;lt;script&amp;gt;&lt;/span&gt;
+&lt;span class="nb"&gt;window&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;onload&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;(){&lt;/span&gt;
+&lt;span class="nx"&gt;brython&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+
+&lt;span class="c"&gt;&amp;lt;!-- 以下利用 Brython 程式執行繪圖 --&amp;gt;&lt;/span&gt;
+
+&lt;span class="nt"&gt;&amp;lt;canvas&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;plotarea&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;width=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;600&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;height=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;400&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;/canvas&amp;gt;&lt;/span&gt;
+
+&lt;span class="nt"&gt;&amp;lt;script &lt;/span&gt;&lt;span class="na"&gt;type=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text/python3&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="nx"&gt;導入&lt;/span&gt; &lt;span class="nx"&gt;browser&lt;/span&gt; &lt;span class="nx"&gt;模組中的&lt;/span&gt; &lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;並設為&lt;/span&gt; &lt;span class="nx"&gt;doc&lt;/span&gt; &lt;span class="nx"&gt;變數&lt;/span&gt;
+&lt;span class="nx"&gt;from&lt;/span&gt; &lt;span class="nx"&gt;browser&lt;/span&gt; &lt;span class="kr"&gt;import&lt;/span&gt; &lt;span class="nb"&gt;document&lt;/span&gt; &lt;span class="nx"&gt;as&lt;/span&gt; &lt;span class="nx"&gt;doc&lt;/span&gt;
+&lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="nx"&gt;導入數學模組&lt;/span&gt;
+&lt;span class="kr"&gt;import&lt;/span&gt; &lt;span class="nx"&gt;math&lt;/span&gt;
+&lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="nx"&gt;產生各小球的亂數速度用&lt;/span&gt;
+&lt;span class="kr"&gt;import&lt;/span&gt; &lt;span class="nx"&gt;random&lt;/span&gt;
+&lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="nx"&gt;導入&lt;/span&gt; &lt;span class="nx"&gt;browser&lt;/span&gt; &lt;span class="nx"&gt;中的計時器&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;建立動畫用&lt;/span&gt;
+&lt;span class="kr"&gt;import&lt;/span&gt; &lt;span class="nx"&gt;browser&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;timer&lt;/span&gt;
+
+&lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="nx"&gt;準備繪圖畫布&lt;/span&gt;
+&lt;span class="nx"&gt;canvas&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;doc&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;plotarea&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="nx"&gt;ctx&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;canvas&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;getContext&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;2d&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="nx"&gt;取畫布的寬與高度&lt;/span&gt;
+&lt;span class="nx"&gt;width&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;canvas&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;width&lt;/span&gt;
+&lt;span class="nx"&gt;height&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;canvas&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;height&lt;/span&gt;
+
+&lt;span class="nx"&gt;n&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;20&lt;/span&gt;
+&lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="nx"&gt;已知數列內容個數&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;先分別與&lt;/span&gt; &lt;span class="nx"&gt;None&lt;/span&gt; &lt;span class="nx"&gt;對應&lt;/span&gt;
+&lt;span class="nx"&gt;x&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;None&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="nx"&gt;n&lt;/span&gt;
+&lt;span class="nx"&gt;y&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;None&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="nx"&gt;n&lt;/span&gt;
+&lt;span class="nx"&gt;vy&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;None&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="nx"&gt;n&lt;/span&gt;
+&lt;span class="nx"&gt;vx&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;None&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="nx"&gt;n&lt;/span&gt;
+&lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="nx"&gt;重力加速度&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;Y&lt;/span&gt; &lt;span class="nx"&gt;方向向下為正&lt;/span&gt;
+&lt;span class="nx"&gt;g&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mf"&gt;0.08&lt;/span&gt;
+&lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="nx"&gt;空氣的黏滯阻尼係數&lt;/span&gt;
+&lt;span class="nx"&gt;cor&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mf"&gt;0.7&lt;/span&gt; 
+&lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="nx"&gt;球的彈力係數&lt;/span&gt;
+&lt;span class="nx"&gt;fr&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mf"&gt;1.0&lt;/span&gt;
+&lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="nx"&gt;球的半徑&lt;/span&gt;
+&lt;span class="nx"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;10&lt;/span&gt;
+
+&lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="nx"&gt;i&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt; &lt;span class="nx"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;n&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+    &lt;span class="nx"&gt;x&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;300&lt;/span&gt;
+    &lt;span class="nx"&gt;y&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;100&lt;/span&gt;
+    &lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="nx"&gt;random&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;random&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="nx"&gt;將會產生介於&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt; &lt;span class="nx"&gt;與&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="nx"&gt;的浮點亂數&lt;/span&gt;
+    &lt;span class="nx"&gt;vx&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;random&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;random&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="nx"&gt;vy&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;random&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;random&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="nx"&gt;更新第&lt;/span&gt; &lt;span class="nx"&gt;i&lt;/span&gt; &lt;span class="nx"&gt;球&lt;/span&gt; &lt;span class="nx"&gt;Y&lt;/span&gt; &lt;span class="nx"&gt;座標的運算邏輯&lt;/span&gt;
+&lt;span class="nx"&gt;def&lt;/span&gt; &lt;span class="nx"&gt;updateY&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="nx"&gt;y&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nx"&gt;r&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="nx"&gt;height&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+        &lt;span class="err"&gt;#&lt;/span&gt;&lt;span class="nx"&gt;y&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;height&lt;/span&gt;
+        &lt;span class="nx"&gt;vy&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;+=&lt;/span&gt; &lt;span class="nx"&gt;g&lt;/span&gt;
+    &lt;span class="k"&gt;else&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+        &lt;span class="nx"&gt;vy&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nx"&gt;vy&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="nx"&gt;cor&lt;/span&gt;
+        &lt;span class="nx"&gt;vx&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;*=&lt;/span&gt; &lt;span class="nx"&gt;fr&lt;/span&gt;
+    &lt;span class="nx"&gt;y&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;+=&lt;/span&gt; &lt;span class="nx"&gt;vy&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="nx"&gt;y&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nx"&gt;r&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="nx"&gt;height&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+        &lt;span class="nx"&gt;y&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;height&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nx"&gt;r&lt;/span&gt;
+
+&lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="nx"&gt;更新第&lt;/span&gt; &lt;span class="nx"&gt;i&lt;/span&gt; &lt;span class="nx"&gt;球&lt;/span&gt; &lt;span class="nx"&gt;X&lt;/span&gt; &lt;span class="nx"&gt;座標的運算邏輯&lt;/span&gt;
+&lt;span class="nx"&gt;def&lt;/span&gt; &lt;span class="nx"&gt;updateX&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="nx"&gt;x&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nx"&gt;r&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;=&lt;/span&gt; &lt;span class="nx"&gt;width&lt;/span&gt; &lt;span class="nx"&gt;or&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;x&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nx"&gt;r&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+        &lt;span class="nx"&gt;vx&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nx"&gt;vx&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="nx"&gt;cor&lt;/span&gt;
+    &lt;span class="nx"&gt;x&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;+=&lt;/span&gt; &lt;span class="nx"&gt;vx&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="nx"&gt;x&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="nx"&gt;r&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="nx"&gt;width&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+        &lt;span class="nx"&gt;x&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;width&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nx"&gt;r&lt;/span&gt;
+    &lt;span class="nx"&gt;elif&lt;/span&gt; &lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="nx"&gt;x&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="nx"&gt;r&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+        &lt;span class="nx"&gt;x&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;r&lt;/span&gt;
+
+&lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="nx"&gt;畫圓函式&lt;/span&gt;
+&lt;span class="nx"&gt;def&lt;/span&gt; &lt;span class="nx"&gt;circle&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nx"&gt;y&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nx"&gt;r&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+    &lt;span class="nx"&gt;ctx&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;beginPath&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+    &lt;span class="nx"&gt;ctx&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;arc&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;y&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;r&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;math&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;pi&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;True&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="nx"&gt;ctx&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;fill&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+
+&lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="nx"&gt;寫字函式&lt;/span&gt;
+&lt;span class="nx"&gt;def&lt;/span&gt; &lt;span class="nx"&gt;text&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;s&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+    &lt;span class="nx"&gt;ctx&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;fillStyle&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;#ff0000&amp;quot;&lt;/span&gt;
+    &lt;span class="nx"&gt;ctx&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;font&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;30px sans-serif&amp;quot;&lt;/span&gt;
+    &lt;span class="nx"&gt;ctx&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;textBaseline&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;bottom&amp;quot;&lt;/span&gt;
+    &lt;span class="nx"&gt;ctx&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;fillText&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;s&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nx"&gt;height&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="nx"&gt;每隔特定時間&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;進行動畫繪製&lt;/span&gt;
+&lt;span class="nx"&gt;def&lt;/span&gt; &lt;span class="nx"&gt;animate&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+    &lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="nx"&gt;刷新畫布&lt;/span&gt;
+    &lt;span class="nx"&gt;ctx&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;clearRect&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;width&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;height&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="nx"&gt;逐一重新繪製小球&lt;/span&gt;
+    &lt;span class="nx"&gt;ctx&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;fillStyle&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;#000000&amp;quot;&lt;/span&gt;
+    &lt;span class="k"&gt;for&lt;/span&gt; &lt;span class="nx"&gt;i&lt;/span&gt; &lt;span class="k"&gt;in&lt;/span&gt; &lt;span class="nx"&gt;range&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;n&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+        &lt;span class="nx"&gt;updateY&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+        &lt;span class="nx"&gt;updateX&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+        &lt;span class="nx"&gt;circle&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;x&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;&lt;span class="nx"&gt;y&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt;&lt;span class="nx"&gt;r&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="nx"&gt;text&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Click me!&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="nx"&gt;畫布點擊後執行的函式&lt;/span&gt;
+&lt;span class="nx"&gt;def&lt;/span&gt; &lt;span class="nx"&gt;on_canvas_click&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;ev&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+    &lt;span class="nx"&gt;browser&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;timer&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;set_interval&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;animate&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="err"&gt;#&lt;/span&gt; &lt;span class="nx"&gt;只要使用者點擊在畫布上任何地方&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;即執行&lt;/span&gt; &lt;span class="nx"&gt;on_canvas_click&lt;/span&gt; &lt;span class="nx"&gt;函式&lt;/span&gt;
+&lt;span class="nx"&gt;canvas&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;bind&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;click&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;on_canvas_click&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nx"&gt;False&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 作業十三40423108</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w13.html" rel="alternate"></link><updated>2015-12-11T11:41:00+08:00</updated><author><name>coursemdetw</name></author><id>tag:coursemdetw.github.io,2015-12-11:reveal/2015cp_hw_w13.html</id><summary type="html">&lt;p&gt;以下為作業十三內容&lt;/p&gt;
+&lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
+&lt;iframe src="40423108_cp_w13_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="40423108_cp_w13_p.html" target="_blank"&gt;作業一投影片&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;抽點名程式碼:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;#抽點名程式
+cpa_number = [&amp;#39;40123227&amp;#39;, &amp;#39;40123237&amp;#39;, &amp;#39;40123256&amp;#39;, &amp;#39;40423101&amp;#39;, &amp;#39;40423103&amp;#39;, &amp;#39;40423104&amp;#39;, &amp;#39;40423105&amp;#39;, &amp;#39;40423106&amp;#39;, &amp;#39;40423107&amp;#39;, &amp;#39;40423108&amp;#39;, &amp;#39;40423109&amp;#39;, &amp;#39;40423110&amp;#39;, &amp;#39;40423111&amp;#39;, &amp;#39;40423112&amp;#39;, &amp;#39;40423113&amp;#39;, &amp;#39;40423114&amp;#39;, &amp;#39;40423115&amp;#39;, &amp;#39;40423116&amp;#39;, &amp;#39;40423117&amp;#39;, &amp;#39;40423118&amp;#39;, &amp;#39;40423119&amp;#39;, &amp;#39;40423120&amp;#39;, &amp;#39;40423121&amp;#39;, &amp;#39;40423122&amp;#39;, &amp;#39;40423123&amp;#39;, &amp;#39;40423124&amp;#39;, &amp;#39;40423125&amp;#39;, &amp;#39;40423126&amp;#39;, &amp;#39;40423127&amp;#39;, &amp;#39;40423128&amp;#39;, &amp;#39;40423129&amp;#39;, &amp;#39;40423130&amp;#39;, &amp;#39;40423131&amp;#39;, &amp;#39;40423132&amp;#39;, &amp;#39;40423133&amp;#39;, &amp;#39;40423134&amp;#39;, &amp;#39;40423135&amp;#39;, &amp;#39;40423136&amp;#39;, &amp;#39;40423137&amp;#39;, &amp;#39;40423138&amp;#39;, &amp;#39;40423139&amp;#39;, &amp;#39;40423140&amp;#39;, &amp;#39;40423141&amp;#39;, &amp;#39;40423142&amp;#39;, &amp;#39;40423143&amp;#39;, &amp;#39;40423144&amp;#39;, &amp;#39;40423145&amp;#39;, &amp;#39;40423146&amp;#39;, &amp;#39;40423147&amp;#39;, &amp;#39;40423148&amp;#39;, &amp;#39;40423149&amp;#39;, &amp;#39;40423150&amp;#39;, &amp;#39;40423152&amp;#39;, &amp;#39;40423153&amp;#39;, &amp;#39;40423154&amp;#39;, &amp;#39;40423155&amp;#39;, &amp;#39;40423252&amp;#39;, &amp;#39;40423253&amp;#39;, &amp;#39;40423254&amp;#39;]
+cpa_name = [&amp;#39;紀培俞&amp;#39;, &amp;#39;陳琨揚&amp;#39;, &amp;#39;蘇建瑋&amp;#39;, &amp;#39;曾宜萱&amp;#39;, &amp;#39;劉怡萱&amp;#39;, &amp;#39;顏暄&amp;#39;, &amp;#39;王奕智&amp;#39;, &amp;#39;王翔佑&amp;#39;, &amp;#39;史育澤&amp;#39;, &amp;#39;江心平&amp;#39;, &amp;#39;何宗哲&amp;#39;, &amp;#39;余浩鋼&amp;#39;, &amp;#39;吳承翰&amp;#39;, &amp;#39;吳欣奕&amp;#39;, &amp;#39;吳冠毅&amp;#39;, &amp;#39;李希凡&amp;#39;, &amp;#39;李尚瑋&amp;#39;, &amp;#39;李冠辰&amp;#39;, &amp;#39;李國豪&amp;#39;, &amp;#39;阮柏宗&amp;#39;, &amp;#39;周嘉原&amp;#39;, &amp;#39;林尚漢&amp;#39;, &amp;#39;林秉憲&amp;#39;, &amp;#39;林國蓁&amp;#39;, &amp;#39;林嘉文&amp;#39;, &amp;#39;林濬翔&amp;#39;, &amp;#39;邱弘丞&amp;#39;, &amp;#39;紀鈞瀚&amp;#39;, &amp;#39;范展榕&amp;#39;, &amp;#39;徐聖倫&amp;#39;, &amp;#39;張俊鴻&amp;#39;, &amp;#39;張勝雄&amp;#39;, &amp;#39;許承恩&amp;#39;, &amp;#39;郭力維&amp;#39;, &amp;#39;郭政修&amp;#39;, &amp;#39;陳正凱&amp;#39;, &amp;#39;陳冠錡&amp;#39;, &amp;#39;陳柏維&amp;#39;, &amp;#39;陳慶豪&amp;#39;, &amp;#39;傅仁禹&amp;#39;, &amp;#39;曾繼緯&amp;#39;, &amp;#39;黃子晏&amp;#39;, &amp;#39;黃羿誠&amp;#39;, &amp;#39;黃興煜&amp;#39;, &amp;#39;楊智勝&amp;#39;, &amp;#39;葉宗翰&amp;#39;, &amp;#39;廖先博&amp;#39;, &amp;#39;廖祈安&amp;#39;, &amp;#39;劉孟璋&amp;#39;, &amp;#39;劉祐程&amp;#39;, &amp;#39;蔡悌仁&amp;#39;, &amp;#39;鄭邦宏&amp;#39;, &amp;#39;賴浚珅&amp;#39;, &amp;#39;簡登瑋&amp;#39;, &amp;#39;闕崇晉&amp;#39;, &amp;#39;蘇麒彬&amp;#39;, &amp;#39;謝孟哲&amp;#39;, &amp;#39;簡嘉宏&amp;#39;, &amp;#39;蘇柏丞&amp;#39;]
+
+import random
+
+
+總人數=len(cpa_name)
+print(&amp;quot;總人數:&amp;quot;,總人數)
+抽點人數 = int(input(&amp;quot;請輸入抽點幾位:&amp;quot;))
+
+while  總人數&lt;span class="nt"&gt;&amp;lt;抽點人數:&lt;/span&gt;
+    &lt;span class="na"&gt;print&lt;/span&gt;&lt;span class="err"&gt;(&amp;quot;&lt;/span&gt;&lt;span class="na"&gt;請輸入總人數以內的數字&lt;/span&gt;&lt;span class="err"&gt;&amp;quot;)&lt;/span&gt;
+    &lt;span class="na"&gt;抽點人數 =&lt;/span&gt; &lt;span class="s"&gt;int(input(&amp;quot;請輸入抽點幾位:&amp;quot;))&lt;/span&gt;
+
+
+&lt;span class="na"&gt;名單=&lt;/span&gt;&lt;span class="s"&gt;[]&lt;/span&gt;
+&lt;span class="na"&gt;for&lt;/span&gt; &lt;span class="na"&gt;i&lt;/span&gt; &lt;span class="na"&gt;in&lt;/span&gt; &lt;span class="na"&gt;range&lt;/span&gt;&lt;span class="err"&gt;(&lt;/span&gt;&lt;span class="na"&gt;len&lt;/span&gt;&lt;span class="err"&gt;(&lt;/span&gt;&lt;span class="na"&gt;cpa_name&lt;/span&gt;&lt;span class="err"&gt;))&lt;/span&gt;&lt;span class="na"&gt;:&lt;/span&gt;
+    &lt;span class="na"&gt;名單&lt;/span&gt; &lt;span class="err"&gt;+=[&lt;/span&gt;&lt;span class="na"&gt;cpa_number&lt;/span&gt;&lt;span class="err"&gt;[&lt;/span&gt;&lt;span class="na"&gt;i&lt;/span&gt;&lt;span class="err"&gt;]+&lt;/span&gt;&lt;span class="na"&gt;cpa_name&lt;/span&gt;&lt;span class="err"&gt;[&lt;/span&gt;&lt;span class="na"&gt;i&lt;/span&gt;&lt;span class="err"&gt;]]&lt;/span&gt;
+
+&lt;span class="na"&gt;被抽到的人=&lt;/span&gt;&lt;span class="s"&gt;random.sample(名單,&lt;/span&gt;  &lt;span class="na"&gt;抽點人數&lt;/span&gt;&lt;span class="err"&gt;)&lt;/span&gt;
+&lt;span class="na"&gt;for&lt;/span&gt; &lt;span class="na"&gt;j&lt;/span&gt; &lt;span class="na"&gt;in&lt;/span&gt; &lt;span class="na"&gt;range&lt;/span&gt;&lt;span class="err"&gt;(&lt;/span&gt;&lt;span class="na"&gt;抽點人數&lt;/span&gt;&lt;span class="err"&gt;)&lt;/span&gt;&lt;span class="na"&gt;:&lt;/span&gt;
+    &lt;span class="na"&gt;print&lt;/span&gt;&lt;span class="err"&gt;(&lt;/span&gt;&lt;span class="na"&gt;被抽到的人&lt;/span&gt;&lt;span class="err"&gt;[&lt;/span&gt;&lt;span class="na"&gt;j&lt;/span&gt;&lt;span class="err"&gt;])&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 作業十二40423108</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w12.html" rel="alternate"></link><updated>2015-12-04T11:41:00+08:00</updated><author><name>coursemdetw</name></author><id>tag:coursemdetw.github.io,2015-12-04:reveal/2015cp_hw_w12.html</id><summary type="html">&lt;p&gt;以下為作業十二內容&lt;/p&gt;
+&lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
+&lt;iframe src="40423108_cp_w12_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="40423108_cp_w12_p.html" target="_blank"&gt;作業一投影片&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;猜顏色程式碼:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;import random
+print(&amp;quot;遊戲規則說明:可選的顏色,\nRED紅色,WHITE白色,YELLOW黃色,GREEN綠色,BLUE藍色,PURPLE紫色,\nRWYGBP\nX代表位置與顏色都對,O但表顏色對位置不對&amp;quot;)
+顏色選項=[&amp;quot;R&amp;quot;,&amp;quot;W&amp;quot;,&amp;quot;Y&amp;quot;,&amp;quot;G&amp;quot;,&amp;quot;B&amp;quot;,&amp;quot;P&amp;quot;]
+標準答案=random.sample(顏色選項,4)
+print(標準答案)
+顏色字串=&amp;quot;&amp;quot;
+
+for i in range(len(顏色選項)):
+    顏色字串+=顏色選項[i]
+
+猜測次數=0
+遊戲進行中=True
+
+while 遊戲進行中:
+    猜中顏色字串=&amp;quot;&amp;quot;
+    猜測顏色字串=&amp;quot;&amp;quot;
+    使用者猜測輸入=input(&amp;quot;請從下列顏色中選擇四種顏色,&amp;quot;+顏色字串+&amp;quot;:&amp;quot;).upper()
+    猜測次數+=1
+
+    if len(使用者猜測輸入)!=len(標準答案):
+        print(&amp;quot;\n請猜四種顏色, 請重猜!&amp;quot;)
+        continue
+    for i in range(4):
+        if 使用者猜測輸入[i] not in 顏色選項:
+            print(&amp;quot;\n只能輸入下列顏色!&amp;quot;,顏色選項)
+        continue
+
+    if 猜中顏色字串!=&amp;quot;XXXX&amp;quot;:
+        for i in range(4):
+            if 使用者猜測輸入[i] ==標準答案[i]:
+                猜中顏色字串 +=&amp;quot;X&amp;quot;
+            if 使用者猜測輸入 [i] !=標準答案[i] and 使用者猜測輸入 [i] in 標準答案:
+                猜中顏色字串 +=&amp;quot;O&amp;quot;
+        print(猜中顏色字串 + 猜測顏色字串 + &amp;quot;\n&amp;quot;)
+
+    if 猜中顏色字串 ==&amp;quot;XXXX&amp;quot;:
+        if 猜測次數==1:
+            print(&amp;quot;太神奇了,1 次就猜中了!&amp;quot;)
+        else:
+            print(&amp;quot;還不錯...總共猜了&amp;quot;+str(猜測次數) + &amp;quot;次,終於猜對了!&amp;quot;)
+        遊戲進行中=False
+
+    if 猜測次數 &amp;gt;= 1 and 猜測次數 &lt;span class="nt"&gt;&amp;lt; 9&lt;/span&gt; &lt;span class="na"&gt;and&lt;/span&gt; &lt;span class="na"&gt;猜中顏色字串&lt;/span&gt;&lt;span class="err"&gt;!=(&amp;quot;&lt;/span&gt;&lt;span class="na"&gt;XXXX&lt;/span&gt;&lt;span class="err"&gt;&amp;quot;)&lt;/span&gt;&lt;span class="na"&gt;:&lt;/span&gt;
+        &lt;span class="na"&gt;print&lt;/span&gt; &lt;span class="err"&gt;(&amp;quot;&lt;/span&gt;&lt;span class="na"&gt;可以再猜:&lt;/span&gt;&lt;span class="err"&gt;&amp;quot;)&lt;/span&gt;
+    &lt;span class="na"&gt;elif&lt;/span&gt; &lt;span class="na"&gt;猜測次數&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;=9:
+        print(&amp;quot;很可惜沒猜對!答案是:&amp;quot; + str(標準答案))
+
+    while 遊戲進行中 == False:
+        遊戲結束詢問=  input(&amp;quot;\n要不要再玩  (Y/N)?&amp;quot;).upper()
+        猜測次數=0
+        if 遊戲結束詢問 == &amp;quot;N&amp;quot;:
+            print(&amp;quot;歡迎再次遊玩&amp;quot;)
+
+        elif 遊戲結束詢問 == &amp;quot;Y&amp;quot;:
+            遊戲進行中=True
+            標準答案=random.sample(顏色選項,4)
+            print(標準答案)
+            print(&amp;quot;好!在玩一次!&amp;quot;)
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 作業十一 40423108</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w11.html" rel="alternate"></link><updated>2015-11-27T11:41:00+08:00</updated><author><name>coursemdetw</name></author><id>tag:coursemdetw.github.io,2015-11-27:reveal/2015cp_hw_w11.html</id><summary type="html">&lt;p&gt;以下為作業十一內容&lt;/p&gt;
 &lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
 &lt;iframe src="40423108_cp_w11_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
@@ -12,7 +334,33 @@
 &lt;p&gt;猜數字&lt;/p&gt;
 &lt;iframe src="https://player.vimeo.com/video/147718828" width="500" height="375" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 
-&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/147718828"&gt;W11-2&lt;/a&gt; from &lt;a href="https://vimeo.com/user44878391"&gt;Francis&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 作業七 40423108</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w7.html" rel="alternate"></link><updated>2015-11-06T11:41:00+08:00</updated><author><name>coursemdetw</name></author><id>tag:coursemdetw.github.io,2015-11-06:reveal/2015cp_hw_w7.html</id><summary type="html">&lt;p&gt;以下為作業七內容&lt;/p&gt;
+&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/147718828"&gt;W11-2&lt;/a&gt; from &lt;a href="https://vimeo.com/user44878391"&gt;Francis&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;
+&lt;p&gt;猜數字程式碼:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;#coding: utf-8
+# 猜數字遊戲
+import random
+
+x = int(input(&amp;quot;請輸入下限的整數:&amp;quot;))
+y = int(input(&amp;quot;請輸入上限的整數:&amp;quot;))
+
+標準答案 = random.randint(x,y)
+print(&amp;quot;標準答案:&amp;quot;,標準答案)
+PC猜的數字 = random.randint(x,y)
+print(&amp;quot;PC猜的數字:&amp;quot;,PC猜的數字)
+猜測次數 = 1
+while 標準答案 != PC猜的數字:
+    if 標準答案 &lt;span class="nt"&gt;&amp;lt; PC猜的數字:&lt;/span&gt;
+        &lt;span class="na"&gt;print&lt;/span&gt;&lt;span class="err"&gt;(&amp;quot;&lt;/span&gt;&lt;span class="na"&gt;太大了&lt;/span&gt;&lt;span class="err"&gt;，&lt;/span&gt;&lt;span class="na"&gt;再猜一次&lt;/span&gt; &lt;span class="na"&gt;:&lt;/span&gt;&lt;span class="err"&gt;)&lt;/span&gt;&lt;span class="na"&gt;加油&lt;/span&gt;&lt;span class="err"&gt;&amp;quot;)&lt;/span&gt;
+        &lt;span class="na"&gt;y =&lt;/span&gt; &lt;span class="s"&gt;PC猜的數字-1&lt;/span&gt;
+    &lt;span class="na"&gt;else:&lt;/span&gt;
+        &lt;span class="na"&gt;print&lt;/span&gt;&lt;span class="err"&gt;(&amp;quot;&lt;/span&gt;&lt;span class="na"&gt;太小了&lt;/span&gt;&lt;span class="err"&gt;，&lt;/span&gt;&lt;span class="na"&gt;再猜一次&lt;/span&gt; &lt;span class="na"&gt;:&lt;/span&gt;&lt;span class="err"&gt;)&lt;/span&gt;&lt;span class="na"&gt;加油&lt;/span&gt;&lt;span class="err"&gt;&amp;quot;)&lt;/span&gt;
+        &lt;span class="na"&gt;x =&lt;/span&gt; &lt;span class="s"&gt;PC猜的數字+1&lt;/span&gt;
+    &lt;span class="na"&gt;PC猜的數字=&lt;/span&gt; &lt;span class="s"&gt;random.randint(x,y)&lt;/span&gt;
+    &lt;span class="na"&gt;print&lt;/span&gt;&lt;span class="err"&gt;(&amp;quot;&lt;/span&gt;&lt;span class="na"&gt;PC猜的數字:&lt;/span&gt;&lt;span class="err"&gt;&amp;quot;,&lt;/span&gt;&lt;span class="na"&gt;PC猜的數字&lt;/span&gt;&lt;span class="err"&gt;)&lt;/span&gt;
+    &lt;span class="na"&gt;猜測次數&lt;/span&gt; &lt;span class="err"&gt;+=&lt;/span&gt; &lt;span class="na"&gt;1&lt;/span&gt;
+
+&lt;span class="na"&gt;print&lt;/span&gt;&lt;span class="err"&gt;(&amp;quot;&lt;/span&gt;&lt;span class="na"&gt;猜對了&lt;/span&gt;&lt;span class="err"&gt;！&lt;/span&gt;&lt;span class="na"&gt;總共猜了&lt;/span&gt;&lt;span class="err"&gt;&amp;quot;,&lt;/span&gt; &lt;span class="na"&gt;猜測次數&lt;/span&gt;&lt;span class="err"&gt;,&lt;/span&gt; &lt;span class="err"&gt;&amp;quot;&lt;/span&gt;&lt;span class="na"&gt;次&lt;/span&gt;&lt;span class="err"&gt;&amp;quot;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 作業七 40423108</title><link href="http://coursemdetw.github.io/reveal/2015cp_hw_w7.html" rel="alternate"></link><updated>2015-11-06T11:41:00+08:00</updated><author><name>coursemdetw</name></author><id>tag:coursemdetw.github.io,2015-11-06:reveal/2015cp_hw_w7.html</id><summary type="html">&lt;p&gt;以下為作業七內容&lt;/p&gt;
 &lt;p&gt;利用 iframe 嵌入投影片:&lt;/p&gt;
 &lt;iframe src="40423108_cp_w7_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
 

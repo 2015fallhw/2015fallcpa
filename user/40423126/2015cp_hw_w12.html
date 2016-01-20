@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>2015 計算機程式 W12-作業 &mdash; 2015FALL 40423126 CADPA 作業</title>
+  <meta name="author" content="40423126">
+
+
+
+
+
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link href="./favicon.png" rel="icon">
+
+  <link href="./theme/css/main.css" media="screen, projection"
+        rel="stylesheet" type="text/css">
+
+  <link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic"
+        rel="stylesheet" type="text/css">
+  <link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic"
+        rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <header role="banner"><hgroup>
+  <h1><a href="./">2015FALL 40423126 CADPA 作業</a></h1>
+</hgroup></header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+</ul>
+
+
+<ul class="main-navigation">
+      <li class="active">
+        <a href="./category/python.html">Python</a>
+      </li>
+</ul></nav>
+  <div id="main">
+    <div id="content">
+<div>
+  <article class="hentry" role="article">
+<header>
+      <h1 class="entry-title">2015 計算機程式 W12-作業</h1>
+    <p class="meta">
+<time datetime="2015-09-19T11:41:00+08:00" pubdate>週六 19 九月 2015</time>    </p>
+</header>
+
+  <div class="entry-content"><p>以下為作業一內容</p>
+<p>利用 iframe 嵌入投影片:</p>
+<iframe src="40423126_cp_w12_p.html" width="500" height="300"></iframe>
+
+<p><a href="40423126_cp_w12_p.html" target="_blank">作業一投影片</a></p>
+<p>import random</p>
+
+<p># 產生標準答案</p>
+
+<p># 利用 list 數列資料型別建立顏色選項</p>
+
+<p># Red 紅色, White 白色, Yellow 黃色, Green 綠色, Blue 藍色, Purple 紫色, 假設顏色值不會重複</p>
+
+<p>print('''遊戲規則說明: 可選顏色值, \nRed 紅色, White 白色, Yellow 黃色, Green 綠色, \nBlue 藍色, Purple 紫色, \nRBYGBP, \nX 表示位置與顏色都對, O 表示顏色對, 但是位置不對.</p>
+
+<p>顏色選項 = ["R", "W", "Y", "G", "B", "P"]</p>
+
+<p>標準答案 = random.sample(顏色選項, 4) </p>
+
+<p><p>print (標準答案)</p></p>
+<p>顏色字串 = ""</p>
+
+<p>幾次決勝 = 9</p>
+
+<p>猜測次數 = 0</p>
+
+<p>遊戲進行中 = True</p>
+
+<p><p>程式碼2<p>
+ <p>print ("總共有", 幾次決勝 - 猜測次數, "次機會,可以猜!")</p></p>
+<p>for i in range(len(顏色選項)):</p>
+
+<div class="highlight"><pre><span class="nt">&lt;p&gt;</span>顏色字串 += 顏色選項[i]<span class="nt">&lt;/p&gt;</span>
+</pre></div>
+
+
+<p><p>#print (顏色字串)</p></p>
+<p>while 遊戲進行中:</p>
+
+<p><p> 位置顏色都正確 = ""</p>
+   <p> 顏色對位置錯 = ""</p>
+    <p># 將使用者的輸入轉為大寫英文字母</p>
+    <p>使用者猜測輸入 = input("請從下列顏色值中選四個, "+顏色字串+": ").upper()</p>
+   <p> 猜測次數 += 1</p></p>
+<div class="highlight"><pre><span class="nt">&lt;p&gt;</span># 檢驗是否輸入四個顏色字母<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;</span>if len(使用者猜測輸入) != len(標準答案):<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;p&gt;</span>print (&quot;\n只能猜四個顏色, 請重猜!&quot;)<span class="nt">&lt;/p&gt;</span>
+ <span class="nt">&lt;p&gt;</span>   print (&quot;\n剩下&quot;, 幾次決勝 - 猜測次數, &quot;次機會,可以猜: &quot;)<span class="nt">&lt;/p&gt;</span>
+   <span class="nt">&lt;p&gt;</span> continue<span class="nt">&lt;/p&gt;</span>
+</pre></div>
+
+
+<p><p> # 判斷是否重複選擇相同顏色</p>
+   <p> if len(使用者猜測輸入) &gt; len(set(使用者猜測輸入)):</p>
+       <p> print ("\n顏色值不能重複！")</p>
+        <p>print ("\n剩下", 幾次決勝 - 猜測次數, "次機會,可以猜: ")</p>
+        <p>continue</p>
+        <p> for i in range(4):</p>
+       <p> # 判斷是否從顏色選項輸入</p>
+      <p>  if 使用者猜測輸入[i] not in 顏色選項:</p>
+            <p>print ("\n只能從下列顏色選項中輸入!", 顏色選項)</p>
+            <p>print ("\n剩下", 幾次決勝 - 猜測次數, "次機會,可以猜: ")</p>
+           <p> continue</p></p></div>
+    <footer>
+<p class="meta">
+  <span class="byline author vcard">
+    Posted by <span class="fn">
+        coursemdetw
+    </span>
+  </span>
+<time datetime="2015-09-19T11:41:00+08:00" pubdate>週六 19 九月 2015</time>  <span class="categories">
+    <a class='category' href='./category/python.html'>Python</a>
+  </span>
+  <span class="categories">
+    <a class="category" href="./tag/pelican.html">pelican</a>,    <a class="category" href="./tag/publishing.html">publishing</a>  </span>
+</p><div class="sharing">
+</div>    </footer>
+  </article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+  </section>
+</div>
+<aside class="sidebar">
+  <section>
+    <h1>Recent Posts</h1>
+    <ul id="recent_posts">
+      <li class="post">
+          <a href="./2015cp_note1.html">2015 計算機程式 Jupyter</a>
+      </li>
+      <li class="post">
+          <a href="./2015cp_hw_w1.html">2015 計算機程式 W1-作業</a>
+      </li>
+      <li class="post">
+          <a href="./2015cp_hw_w11.html">2015 計算機程式 W11-作業</a>
+      </li>
+      <li class="post">
+          <a href="./2015cp_hw_w12.html">2015 計算機程式 W12-作業</a>
+      </li>
+      <li class="post">
+          <a href="./2015cp_hw_w14.html">2015 計算機程式 W14-作業</a>
+      </li>
+    </ul>
+  </section>
+  <section>
+      
+    <h1>Categories</h1>
+    <ul id="recent_posts">
+        <li><a href="./category/python.html">Python</a></li>
+    </ul>
+  </section>
+ 
+
+  <section>
+  <h1>Tags</h1>
+    <a href="./tag/ipython.html">IPython</a>,    <a href="./tag/publishing.html">publishing</a>,    <a href="./tag/jupyter.html">Jupyter</a>,    <a href="./tag/pelican.html">pelican</a>  </section>
+
+
+    <section>
+        <h1>Social</h1>
+        <ul>
+            <li><a href="http://twitter.com/ametaireau" target="_blank">twitter</a></li>
+            <li><a href="http://github.com/ametaireau" target="_blank">github</a></li>
+        </ul>
+    </section>
+    <section>
+        <h1>Blogroll</h1>
+        <ul>
+            <li><a href="http://wordpress-2015course.rhcloud.com/" target="_blank">2015課程網頁</a></li>
+            <li><a href="http://python.org/" target="_blank">Python</a></li>
+            <li><a href="http://2015fallhw.github.io/2015fallcpa/category/g6.html" target="_blank">G6</a></li>
+            <li><a href="http://40423126.github.io/last/" target="_blank">40423126 個人網頁</a></li>
+        </ul>
+    </section>
+
+</aside>    </div>
+  </div>
+  <footer role="contentinfo"><p>
+    Copyright &copy;  2015  40423126 &mdash;
+  <span class="credit">Powered by <a href="http://getpelican.com">Pelican</a></span>
+</p></footer>
+  <script src="./theme/js/modernizr-2.0.js"></script>
+  <script src="./theme/js/ender.js"></script>
+  <script src="./theme/js/octopress.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    var disqus_shortname = '2015fall';
+    var disqus_identifier = '/2015cp_hw_w12.html';
+    var disqus_url = './2015cp_hw_w12.html';
+    var disqus_title = '2015 計算機程式 W12-作業';
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = "//" + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+     })();
+  </script>
+</body>
+</html>

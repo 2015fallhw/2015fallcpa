@@ -1,5 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>2015FALL 40423103 CPA 作業</title><link href="http://coursemdetw.github.io/reveal/" rel="alternate"></link><link href="http://coursemdetw.github.io/reveal/feeds/python.atom.xml" rel="self"></link><id>http://coursemdetw.github.io/reveal/</id><updated>2015-12-25T11:41:00+08:00</updated><entry><title>2015 計算機程式 第十五週</title><link href="http://coursemdetw.github.io/reveal/2015cpa_hw_w15.html" rel="alternate"></link><updated>2015-12-25T11:41:00+08:00</updated><author><name>40423103</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/2015cpa_hw_w15.html</id><summary type="html">&lt;h3&gt;Merry Christmas  &amp;amp;  Happy new year&lt;/h3&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>2015FALL 40423103 CPA 作業</title><link href="http://coursemdetw.github.io/reveal/" rel="alternate"></link><link href="http://coursemdetw.github.io/reveal/feeds/python.atom.xml" rel="self"></link><id>http://coursemdetw.github.io/reveal/</id><updated>2016-01-08T10:57:00+08:00</updated><entry><title>2015 計算機程式 第十七週</title><link href="http://coursemdetw.github.io/reveal/2015cpa_hw_w17.html" rel="alternate"></link><updated>2016-01-08T10:57:00+08:00</updated><author><name>40423103</name></author><id>tag:coursemdetw.github.io,2016-01-08:reveal/2015cpa_hw_w17.html</id><summary type="html">&lt;h1&gt;Brython動畫&lt;/h1&gt;
+&lt;!-- 導入 brython.js --&gt;
+
+&lt;script type="text/javascript" src="http://brython.info/src/brython_dist.js"&gt;&lt;/script&gt;
+
+&lt;!-- 啟動 brython() --&gt;
+
+&lt;script&gt;
+window.onload=function(){
+brython(1);
+}
+&lt;/script&gt;
+
+&lt;!-- 以下利用 Brython 程式執行繪圖 --&gt;
+
+&lt;canvas id="plotarea" width="600" height="400"&gt;&lt;/canvas&gt;
+
+&lt;script type="text/python3"&gt;
+# 導入 browser 模組中的 document, 並設為 doc 變數
+from browser import document as doc
+# 導入數學模組
+import math
+# 產生各小球的亂數速度用
+import random
+# 導入 browser 中的計時器, 建立動畫用
+import browser.timer
+
+# 準備繪圖畫布
+canvas = doc["plotarea"]
+ctx = canvas.getContext("2d")
+
+# 取畫布的寬與高度
+width = canvas.width
+height = canvas.height
+
+n = 15
+# 已知數列內容個數, 先分別與 None 對應
+x = [None]*n
+y = [None]*n
+vy = [None]*n
+vx = [None]*n
+# 重力加速度, Y 方向向下為正
+g = 0.05
+# 空氣的黏滯阻尼係數
+cor = 0.7 
+# 球的彈力係數
+fr = 0.95
+# 球的半徑
+r = 6
+
+for i in range(n):
+    x[i] = 300
+    y[i] = 100
+    # random.random() 將會產生介於 0 與 1 的浮點亂數
+    vx[i] = 2*(random.random()-.5)
+    vy[i] = 2*(random.random()-.5)
+
+# 更新第 i 球 Y 座標的運算邏輯
+def updateY(i):
+    if ((y[i]+r) &lt; height):
+        #y = height
+        vy[i] += g
+    else:
+        vy[i] = -vy[i]*cor
+        vx[i] *= fr
+    y[i] += vy[i]
+    if ((y[i]+r) &gt; height):
+        y[i] = height-r
+
+# 更新第 i 球 X 座標的運算邏輯
+def updateX(i):
+    if ((x[i]+r) &gt;= width or (x[i]-r) &lt;= 0):
+        vx[i] = -vx[i]*cor
+    x[i] += vx[i]
+    if ((x[i]+r) &gt; width):
+        x[i] = width-r
+    elif ((x[i]-r) &lt; 0):
+        x[i] = r
+
+# 畫圓函式
+def circle(x,y,r):
+    ctx.beginPath()
+    ctx.arc(x, y, r, 0, math.pi*2, True)
+    ctx.fill()
+
+# 寫字函式
+def text(s):
+    ctx.fillStyle = "#ff0000"
+    ctx.font = "30px sans-serif"
+    ctx.textBaseline = "bottom"
+    ctx.fillText(s,0,height)
+
+# 每隔特定時間, 進行動畫繪製
+def animate():
+    # 刷新畫布
+    ctx.clearRect(0, 0, width, height)
+    # 逐一重新繪製小球
+    ctx.fillStyle = "#000000"
+    for i in range(n):
+        updateY(i)
+        updateX(i)
+        circle(x[i],y[i],r)
+
+text("Click me!")
+
+# 畫布點擊後執行的函式
+def on_canvas_click(ev):
+    browser.timer.set_interval(animate,0)
+
+# 只要使用者點擊在畫布上任何地方, 即執行 on_canvas_click 函式
+canvas.bind('click', on_canvas_click, False)
+&lt;/script&gt;
+
+&lt;h2&gt;心得&lt;/h2&gt;
+&lt;p&gt;函式好難喔，我還在研究~&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第十五週</title><link href="http://coursemdetw.github.io/reveal/2015cpa_hw_w15.html" rel="alternate"></link><updated>2015-12-25T11:41:00+08:00</updated><author><name>40423103</name></author><id>tag:coursemdetw.github.io,2015-12-25:reveal/2015cpa_hw_w15.html</id><summary type="html">&lt;h3&gt;Merry Christmas  &amp;amp;  Happy new year&lt;/h3&gt;
 &lt;!-- 導入 brython.js --&gt;
 
 &lt;script type="text/javascript" src="js/40423103-w15.js"&gt;&lt;/script&gt;
@@ -254,7 +368,39 @@ ctx.stroke()
 window.onload=function(){
 brython(1);
 }
-&lt;/script&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第十四週</title><link href="http://coursemdetw.github.io/reveal/2015cpa_hw_w14.html" rel="alternate"></link><updated>2015-12-24T19:41:00+08:00</updated><author><name>40423103</name></author><id>tag:coursemdetw.github.io,2015-12-24:reveal/2015cpa_hw_w14.html</id><summary type="html">&lt;!-- 導入 brython.js --&gt;
+&lt;/script&gt;
+
+&lt;h3&gt;影片解說&lt;/h3&gt;
+&lt;p&gt;&lt;iframe src="https://player.vimeo.com/video/151152036" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt; &lt;p&gt;&lt;a href="https://vimeo.com/151152036"&gt;畫圖&lt;/a&gt; from &lt;a href="https://vimeo.com/user45467634"&gt;劉怡萱&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;
+&lt;h2&gt;圖片講解&lt;/h2&gt;
+&lt;h3&gt;1.畫布設定&lt;/h3&gt;
+&lt;p&gt;&lt;img src="http://i.imgur.com/Sje2WRF.png" title="source: imgur.com" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;2.座標&lt;/h3&gt;
+&lt;p&gt;&lt;img src="http://i.imgur.com/R3GNM3E.png" title="source: imgur.com" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;3.直線&lt;/h3&gt;
+&lt;p&gt;&lt;img src="http://i.imgur.com/dxyhasC.png" title="source: imgur.com" /&gt;&lt;/a&gt;
+&lt;img src="http://i.imgur.com/kbFd9wt.png" title="source: imgur.com" /&gt;&lt;/a&gt;
+&lt;img src="http://i.imgur.com/KHzOENM.png" title="source: imgur.com" /&gt;&lt;/a&gt;
+&lt;img src="http://i.imgur.com/50QFXXs.png" title="source: imgur.com" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;4.矩形&lt;/h3&gt;
+&lt;p&gt;填充
+&lt;img src="http://i.imgur.com/QQqhTDC.png" title="source: imgur.com" /&gt;&lt;/a&gt;
+&lt;img src="http://i.imgur.com/WrsaO92.png" title="source: imgur.com" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;外框
+&lt;img src="http://i.imgur.com/397UdJC.png" title="source: imgur.com" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;5.圓形&lt;/h3&gt;
+&lt;p&gt;空心
+&lt;img src="http://i.imgur.com/5vogWR4.png" title="source: imgur.com" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;實心
+&lt;img src="http://i.imgur.com/vnG58mv.png" title="source: imgur.com" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;6.漸層&lt;/h3&gt;
+&lt;p&gt;&lt;img src="http://i.imgur.com/yeB40q2.png" title="source: imgur.com" /&gt;&lt;/a&gt;
+&lt;img src="http://i.imgur.com/3g1qBzW.png" title="source: imgur.com" /&gt;&lt;/a&gt;
+&lt;img src="http://i.imgur.com/cUEtsMZ.png" title="source: imgur.com" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;7.文字&lt;/h3&gt;
+&lt;p&gt;&lt;img src="http://i.imgur.com/9aJmfsS.png" title="source: imgur.com" /&gt;&lt;/a&gt;
+ &lt;img src="http://i.imgur.com/KmdmOfm.png" title="source: imgur.com" /&gt;&lt;/a&gt;
+ &lt;img src="http://i.imgur.com/W7bCFpY.png" title="source: imgur.com" /&gt;&lt;/a&gt;&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第十四週</title><link href="http://coursemdetw.github.io/reveal/2015cpa_hw_w14.html" rel="alternate"></link><updated>2015-12-24T19:41:00+08:00</updated><author><name>40423103</name></author><id>tag:coursemdetw.github.io,2015-12-24:reveal/2015cpa_hw_w14.html</id><summary type="html">&lt;!-- 導入 brython.js --&gt;
 
 &lt;script type="text/javascript" src="js/40423103-w14.js"&gt;&lt;/script&gt;
 
@@ -303,7 +449,7 @@ for i in range(11):
 window.onload=function(){
 brython(1);
 }
-&lt;/script&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式作業 第十二週</title><link href="http://coursemdetw.github.io/reveal/2015cpa_hw_w12.html" rel="alternate"></link><updated>2015-12-05T20:45:00+08:00</updated><author><name>劉怡萱</name></author><id>tag:coursemdetw.github.io,2015-12-05:reveal/2015cpa_hw_w12.html</id><summary type="html">&lt;h1&gt;猜數字遊戲&lt;/h1&gt;
+&lt;/script&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第十二週</title><link href="http://coursemdetw.github.io/reveal/2015cpa_hw_w12.html" rel="alternate"></link><updated>2015-12-05T20:45:00+08:00</updated><author><name>40423103</name></author><id>tag:coursemdetw.github.io,2015-12-05:reveal/2015cpa_hw_w12.html</id><summary type="html">&lt;h1&gt;猜數字遊戲&lt;/h1&gt;
 &lt;h3&gt;解析&lt;/h3&gt;
 &lt;p&gt;~投影片不好做直接上圖~
 &lt;a href="http://imgur.com/FxIA2DT"&gt;&lt;img src="http://i.imgur.com/FxIA2DT.jpg" title="source: imgur.com" /&gt;&lt;/a&gt;&lt;/p&gt;
@@ -321,9 +467,9 @@ brython(1);
 &lt;p&gt;這次的影片做的簡單了點~&lt;/p&gt;
 &lt;p&gt;可是好像背景音樂有點吵XD&lt;/p&gt;
 &lt;p&gt;但是就突然想放&lt;/p&gt;
-&lt;p&gt;不過這次有開場特效XD&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式作業 第十一週</title><link href="http://coursemdetw.github.io/reveal/2015cpa_hw_w11.html" rel="alternate"></link><updated>2015-12-02T20:45:00+08:00</updated><author><name>劉怡萱</name></author><id>tag:coursemdetw.github.io,2015-12-02:reveal/2015cpa_hw_w11.html</id><summary type="html">&lt;iframe src="w11.html" width="500" height="300"&gt;&lt;/iframe&gt;
+&lt;p&gt;不過這次有開場特效XD&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第十一週</title><link href="http://coursemdetw.github.io/reveal/2015cpa_hw_w11.html" rel="alternate"></link><updated>2015-12-02T20:45:00+08:00</updated><author><name>40423103</name></author><id>tag:coursemdetw.github.io,2015-12-02:reveal/2015cpa_hw_w11.html</id><summary type="html">&lt;iframe src="40423103_cp_w11_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
-&lt;p&gt;&lt;a href="w11.html" target="_blank"&gt;修正fix_leo-editor安裝_投影片&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="40423103_cp_w11.html" target="_blank"&gt;修正fix_leo-editor安裝_投影片&lt;/a&gt;&lt;/p&gt;
 &lt;h1&gt;修正fix_leo-editor安裝&lt;/h1&gt;
 &lt;ol&gt;
 &lt;li&gt;開啟教學網頁&lt;/li&gt;
@@ -363,66 +509,7 @@ brython(1);
 &lt;h2&gt;自評&lt;/h2&gt;
 &lt;p&gt;自評分數：75&lt;/p&gt;
 &lt;p&gt;我覺得每次的自評都只有影片好難拍好難拍好難拍而已XD&lt;/p&gt;
-&lt;p&gt;不過後製的速度有比較快了啦~&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第一週</title><link href="http://coursemdetw.github.io/reveal/2015cpa_hw_w1.html" rel="alternate"></link><updated>2015-09-19T11:41:00+08:00</updated><author><name>40423103</name></author><id>tag:coursemdetw.github.io,2015-09-19:reveal/2015cpa_hw_w1.html</id><summary type="html">&lt;iframe src="40423103_cp_w1_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;a href="40423103_cp_w1_p.html" target="_blank"&gt;安裝及啟動Anaconda_投影片&lt;/a&gt;&lt;/p&gt;
-&lt;h1&gt;安裝及啟動Anaconda&lt;/h1&gt;
-&lt;ol&gt;
-&lt;li&gt;從教學網站下載"Ana3_lite2.7"及"fix"&lt;/li&gt;
-&lt;li&gt;將兩個檔案進行解壓縮&lt;/li&gt;
-&lt;li&gt;先開啟"fix"料夾&lt;/li&gt;
-&lt;li&gt;點選啟動"fix.bat"，畫面只會閃一下&lt;/li&gt;
-&lt;li&gt;再開啟"Anaconday"資料夾&lt;/li&gt;
-&lt;li&gt;點選"start.bat"&lt;/li&gt;
-&lt;li&gt;成功開啟&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3&gt;影片解說&lt;/h3&gt;
-&lt;iframe src="https://player.vimeo.com/video/145948723" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/145948723"&gt;安裝及啟動&lt;/a&gt; from &lt;a href="https://vimeo.com/user45467634"&gt;劉怡萱&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;
-&lt;h2&gt;心得&lt;/h2&gt;
-&lt;p&gt;老師在課堂上講的內容都是之前沒有接觸過的東西，&lt;/p&gt;
-&lt;p&gt;老師給的一些觀念也都聽不懂，&lt;/p&gt;
-&lt;p&gt;只能一步一步照著老師上課的內容慢慢學習。&lt;/p&gt;
-&lt;h2&gt;自評&lt;/h2&gt;
-&lt;h3&gt;自評分數：&lt;strong&gt;65&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;這週的內容比較難抓重點，只能把基本的安裝記起來，
-給自己一點基本分增加信心~~&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第二週</title><link href="http://coursemdetw.github.io/reveal/2015cpa_hw_w2.html" rel="alternate"></link><updated>2015-09-19T11:41:00+08:00</updated><author><name>40423103</name></author><id>tag:coursemdetw.github.io,2015-09-19:reveal/2015cpa_hw_w2.html</id><summary type="html">&lt;iframe src="40423103_cp_w2_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;a href="40423103_cp_w2_p.html" target="_blank"&gt;建立與刪除倉儲_投影片&lt;/a&gt;&lt;/p&gt;
-&lt;h1&gt;建立與刪除倉儲&lt;/h1&gt;
-&lt;h2&gt;建立倉儲&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;點選右上角的"+"&lt;/li&gt;
-&lt;li&gt;點選"NEW REPOSITORY"&lt;/li&gt;
-&lt;li&gt;輸入欲建立之倉儲名稱&lt;/li&gt;
-&lt;li&gt;勾選"INITIALIZE THIS REPOSITORY WITH A READ ME"&lt;/li&gt;
-&lt;li&gt;點選 "CREATE REPOSITORY"&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3&gt;影片解說&lt;/h3&gt;
-&lt;iframe src="https://player.vimeo.com/video/144982387" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/144982387"&gt;建立倉儲&lt;/a&gt; from &lt;a href="https://vimeo.com/user45467634"&gt;劉怡萱&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;
-&lt;h2&gt;刪除倉儲&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;點選你要刪除的倉儲&lt;/li&gt;
-&lt;li&gt;點選右邊的"SETTING"&lt;/li&gt;
-&lt;li&gt;往下滑&lt;/li&gt;
-&lt;li&gt;點選最後一個"DELETE THIS REPOSITORY"&lt;/li&gt;
-&lt;li&gt;輸入你要刪除的倉儲名稱&lt;/li&gt;
-&lt;li&gt;按下"I UNDERSTAND THE CONSEQUENCES, DELETE THIS REPOSITORY"&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3&gt;影片解說&lt;/h3&gt;
-&lt;iframe src="https://player.vimeo.com/video/144982406" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/144982406"&gt;刪除倉儲&lt;/a&gt; from &lt;a href="https://vimeo.com/user45467634"&gt;劉怡萱&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;
-&lt;h2&gt;心得&lt;/h2&gt;
-&lt;p&gt;上課時老師講的東西依然都是之前沒接觸過的，&lt;/p&gt;
-&lt;p&gt;所以還是聽不懂，不過有比前一堂了解多一點了&lt;/p&gt;
-&lt;p&gt;但是建立與刪除倉儲是目前唯一能理解的...&lt;/p&gt;
-&lt;h2&gt;自評&lt;/h2&gt;
-&lt;h3&gt;自評分數：&lt;strong&gt;70&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;雖然只是簡單的幾個步驟，但是影片製作也花了點時間呀~&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第三週</title><link href="http://coursemdetw.github.io/reveal/2015cpa_hw_w3.html" rel="alternate"></link><updated>2015-09-19T11:41:00+08:00</updated><author><name>40423103</name></author><id>tag:coursemdetw.github.io,2015-09-19:reveal/2015cpa_hw_w3.html</id><summary type="html">&lt;iframe src="40423103_cp_w3_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
+&lt;p&gt;不過後製的速度有比較快了啦~&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第三週</title><link href="http://coursemdetw.github.io/reveal/2015cpa_hw_w3.html" rel="alternate"></link><updated>2015-11-19T11:41:00+08:00</updated><author><name>40423103</name></author><id>tag:coursemdetw.github.io,2015-11-19:reveal/2015cpa_hw_w3.html</id><summary type="html">&lt;iframe src="40423103_cp_w3_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
 
 &lt;p&gt;&lt;a href="40423103_cp_w3_p.html" target="_blank"&gt;建立分支與推送資料_投影片&lt;/a&gt;&lt;/p&gt;
 &lt;h1&gt;建立分支與推送資料&lt;/h1&gt;
@@ -462,4 +549,63 @@ brython(1);
 &lt;p&gt;也越來越跟得上老師的腳步~&lt;/p&gt;
 &lt;h2&gt;自評&lt;/h2&gt;
 &lt;h3&gt;自評分數：&lt;strong&gt;70&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;這個影片拍超多次的~剪輯也花了很多時間&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry></feed>
+&lt;p&gt;這個影片拍超多次的~剪輯也花了很多時間&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第二週</title><link href="http://coursemdetw.github.io/reveal/2015cpa_hw_w2.html" rel="alternate"></link><updated>2015-10-19T11:41:00+08:00</updated><author><name>40423103</name></author><id>tag:coursemdetw.github.io,2015-10-19:reveal/2015cpa_hw_w2.html</id><summary type="html">&lt;iframe src="40423103_cp_w2_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="40423103_cp_w2_p.html" target="_blank"&gt;建立與刪除倉儲_投影片&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;建立與刪除倉儲&lt;/h1&gt;
+&lt;h2&gt;建立倉儲&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;點選右上角的"+"&lt;/li&gt;
+&lt;li&gt;點選"NEW REPOSITORY"&lt;/li&gt;
+&lt;li&gt;輸入欲建立之倉儲名稱&lt;/li&gt;
+&lt;li&gt;勾選"INITIALIZE THIS REPOSITORY WITH A READ ME"&lt;/li&gt;
+&lt;li&gt;點選 "CREATE REPOSITORY"&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;影片解說&lt;/h3&gt;
+&lt;iframe src="https://player.vimeo.com/video/144982387" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/144982387"&gt;建立倉儲&lt;/a&gt; from &lt;a href="https://vimeo.com/user45467634"&gt;劉怡萱&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;
+&lt;h2&gt;刪除倉儲&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;點選你要刪除的倉儲&lt;/li&gt;
+&lt;li&gt;點選右邊的"SETTING"&lt;/li&gt;
+&lt;li&gt;往下滑&lt;/li&gt;
+&lt;li&gt;點選最後一個"DELETE THIS REPOSITORY"&lt;/li&gt;
+&lt;li&gt;輸入你要刪除的倉儲名稱&lt;/li&gt;
+&lt;li&gt;按下"I UNDERSTAND THE CONSEQUENCES, DELETE THIS REPOSITORY"&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;影片解說&lt;/h3&gt;
+&lt;iframe src="https://player.vimeo.com/video/144982406" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/144982406"&gt;刪除倉儲&lt;/a&gt; from &lt;a href="https://vimeo.com/user45467634"&gt;劉怡萱&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;
+&lt;h2&gt;心得&lt;/h2&gt;
+&lt;p&gt;上課時老師講的東西依然都是之前沒接觸過的，&lt;/p&gt;
+&lt;p&gt;所以還是聽不懂，不過有比前一堂了解多一點了&lt;/p&gt;
+&lt;p&gt;但是建立與刪除倉儲是目前唯一能理解的...&lt;/p&gt;
+&lt;h2&gt;自評&lt;/h2&gt;
+&lt;h3&gt;自評分數：&lt;strong&gt;70&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;雖然只是簡單的幾個步驟，但是影片製作也花了點時間呀~&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry><entry><title>2015 計算機程式 第一週</title><link href="http://coursemdetw.github.io/reveal/2015cpa_hw_w1.html" rel="alternate"></link><updated>2015-09-19T11:41:00+08:00</updated><author><name>40423103</name></author><id>tag:coursemdetw.github.io,2015-09-19:reveal/2015cpa_hw_w1.html</id><summary type="html">&lt;iframe src="40423103_cp_w1_p.html" width="500" height="300"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="40423103_cp_w1_p.html" target="_blank"&gt;安裝及啟動Anaconda_投影片&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;安裝及啟動Anaconda&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;從教學網站下載"Ana3_lite2.7"及"fix"&lt;/li&gt;
+&lt;li&gt;將兩個檔案進行解壓縮&lt;/li&gt;
+&lt;li&gt;先開啟"fix"料夾&lt;/li&gt;
+&lt;li&gt;點選啟動"fix.bat"，畫面只會閃一下&lt;/li&gt;
+&lt;li&gt;再開啟"Anaconday"資料夾&lt;/li&gt;
+&lt;li&gt;點選"start.bat"&lt;/li&gt;
+&lt;li&gt;成功開啟&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;影片解說&lt;/h3&gt;
+&lt;iframe src="https://player.vimeo.com/video/145948723" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;p&gt;&lt;a href="https://vimeo.com/145948723"&gt;安裝及啟動&lt;/a&gt; from &lt;a href="https://vimeo.com/user45467634"&gt;劉怡萱&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;
+&lt;h2&gt;心得&lt;/h2&gt;
+&lt;p&gt;老師在課堂上講的內容都是之前沒有接觸過的東西，&lt;/p&gt;
+&lt;p&gt;老師給的一些觀念也都聽不懂，&lt;/p&gt;
+&lt;p&gt;只能一步一步照著老師上課的內容慢慢學習。&lt;/p&gt;
+&lt;h2&gt;自評&lt;/h2&gt;
+&lt;h3&gt;自評分數：&lt;strong&gt;65&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;這週的內容比較難抓重點，只能把基本的安裝記起來，
+給自己一點基本分增加信心~~&lt;/p&gt;</summary><category term="pelican"></category><category term="publishing"></category></entry></feed>

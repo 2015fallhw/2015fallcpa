@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>2015 計算機程式 作業十二 &mdash; 2015FALL 40423134 CPA 作業</title>
+  <meta name="author" content="40423134">
+
+
+
+
+
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link href="./favicon.png" rel="icon">
+
+  <link href="./theme/css/main.css" media="screen, projection"
+        rel="stylesheet" type="text/css">
+
+  <link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic"
+        rel="stylesheet" type="text/css">
+  <link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic"
+        rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <header role="banner"><hgroup>
+  <h1><a href="./">2015FALL 40423134 CPA 作業</a></h1>
+</hgroup></header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+</ul>
+
+
+<ul class="main-navigation">
+      <li class="active">
+        <a href="./category/python.html">Python</a>
+      </li>
+</ul></nav>
+  <div id="main">
+    <div id="content">
+<div>
+  <article class="hentry" role="article">
+<header>
+      <h1 class="entry-title">2015 計算機程式 作業十二</h1>
+    <p class="meta">
+<time datetime="2015-09-19T11:41:00+08:00" pubdate>週六 19 九月 2015</time>    </p>
+</header>
+
+  <div class="entry-content"><p>利用 iframe 嵌入投影片:</p>
+<iframe src="40423134_cp_w12_p.html" width="500" height="300"></iframe>
+
+<p><a href="40423134_cp_w12_p.html" target="_blank">作業十二投影片</a>
+猜顏色:</p>
+<div class="highlight"><pre><span class="c">#coding: utf-8</span>
+<span class="c">#猜數字遊戲</span>
+<span class="kn">import</span> <span class="nn">random</span>
+<span class="err">執行次數</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="err">總猜測次數</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="err">執行次數</span><span class="p">):</span>
+    <span class="err">下限</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="err">上限</span> <span class="o">=</span> <span class="mi">100</span>
+    <span class="err">標準答案</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="err">下限</span><span class="p">,</span> <span class="err">上限</span><span class="p">)</span>
+    <span class="n">pc猜的數字</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="err">下限</span><span class="p">,</span> <span class="err">上限</span><span class="p">)</span>
+    <span class="c">#print(標準答案, pc猜的數字)</span>
+    <span class="c">#integer</span>
+    <span class="c">#string</span>
+    <span class="c">#float</span>
+    <span class="c">#你猜的數字 = int(input(&quot;請輸入您所猜的整數:&quot;))</span>
+    <span class="err">猜測次數</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">while</span> <span class="err">標準答案</span> <span class="o">!=</span> <span class="n">pc猜的數字</span><span class="p">:</span>
+        <span class="k">if</span> <span class="err">標準答案</span> <span class="o">&lt;</span> <span class="n">pc猜的數字</span><span class="p">:</span>
+            <span class="c">#print(&quot;太大了，再猜一次 :)加油&quot;)</span>
+            <span class="c"># 因此已經確定&quot;pc猜的數字&quot;不是答案, 因此 - 1</span>
+            <span class="err">上限</span> <span class="o">=</span> <span class="n">pc猜的數字</span> <span class="o">-</span> <span class="mi">1</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="c">#print(&quot;太小了，再猜一次 :)加油&quot;)</span>
+            <span class="c"># 因此已經確定&quot;pc猜的數字&quot;不是答案, 因此 + 1</span>
+            <span class="err">下限</span> <span class="o">=</span> <span class="n">pc猜的數字</span> <span class="o">+</span> <span class="mi">1</span>
+        <span class="c">#pc猜的數字 = int(input(&quot;請輸入您所猜的整數:&quot;))</span>
+        <span class="n">pc猜的數字</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="err">下限</span><span class="p">,</span> <span class="err">上限</span><span class="p">)</span>
+        <span class="err">猜測次數</span> <span class="o">+=</span> <span class="mi">1</span>
+
+    <span class="c">#print(&quot;猜對了！總共猜了&quot;, 猜測次數, &quot;次&quot;)</span>
+    <span class="err">總猜測次數</span> <span class="o">+=</span> <span class="err">猜測次數</span>
+<span class="err">平均猜測次數</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="err">總猜測次數</span><span class="o">/</span><span class="err">執行次數</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">&quot;平均次數&quot;</span><span class="p">,</span> <span class="err">平均猜測次數</span><span class="p">)</span>
+</pre></div>
+
+
+<iframe src="https://player.vimeo.com/video/147716682" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+<p><p><a href="https://vimeo.com/147716682">猜數字遊戲</a> from <a href="https://vimeo.com/user46450524">40423116</a> on <a href="https://vimeo.com">Vimeo</a>.</p></p></div>
+    <footer>
+<p class="meta">
+  <span class="byline author vcard">
+    Posted by <span class="fn">
+        coursemdetw
+    </span>
+  </span>
+<time datetime="2015-09-19T11:41:00+08:00" pubdate>週六 19 九月 2015</time>  <span class="categories">
+    <a class='category' href='./category/python.html'>Python</a>
+  </span>
+  <span class="categories">
+    <a class="category" href="./tag/pelican.html">pelican</a>,    <a class="category" href="./tag/publishing.html">publishing</a>  </span>
+</p><div class="sharing">
+</div>    </footer>
+  </article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
+  </section>
+</div>
+<aside class="sidebar">
+  <section>
+    <h1>Recent Posts</h1>
+    <ul id="recent_posts">
+      <li class="post">
+          <a href="./2015cp_hw_w1.html">2015 計算機程式 作業一</a>
+      </li>
+      <li class="post">
+          <a href="./2015cp_hw_w11.html">2015 計算機程式 作業十一</a>
+      </li>
+      <li class="post">
+          <a href="./2015cp_hw_w12.html">2015 計算機程式 作業十二</a>
+      </li>
+      <li class="post">
+          <a href="./2015cp_hw_w14.html">2015 計算機程式 作業十四</a>
+      </li>
+      <li class="post">
+          <a href="./2015cp_hw_w15.html">2015 計算機程式 作業十五</a>
+      </li>
+    </ul>
+  </section>
+  <section>
+      
+    <h1>Categories</h1>
+    <ul id="recent_posts">
+        <li><a href="./category/python.html">Python</a></li>
+    </ul>
+  </section>
+ 
+
+  <section>
+  <h1>Tags</h1>
+    <a href="./tag/publishing.html">publishing</a>,    <a href="./tag/pelican.html">pelican</a>  </section>
+
+
+    <section>
+        <h1>Social</h1>
+        <ul>
+            <li><a href="http://twitter.com/ametaireau" target="_blank">twitter</a></li>
+            <li><a href="http://github.com/ametaireau" target="_blank">github</a></li>
+        </ul>
+    </section>
+    <section>
+        <h1>Blogroll</h1>
+        <ul>
+            <li><a href="http://wordpress-2015course.rhcloud.com/" target="_blank">2015課程網頁</a></li>
+            <li><a href="http://python.org/" target="_blank">Python</a></li>
+            <li><a href="../../" target="_blank">2015作業主頁</a></li>
+            <li><a href="http://40423134.github.io/333/" target="_blank">40423134個人網頁</a></li>
+        </ul>
+    </section>
+
+</aside>    </div>
+  </div>
+  <footer role="contentinfo"><p>
+    Copyright &copy;  2015  40423134 &mdash;
+  <span class="credit">Powered by <a href="http://getpelican.com">Pelican</a></span>
+</p></footer>
+  <script src="./theme/js/modernizr-2.0.js"></script>
+  <script src="./theme/js/ender.js"></script>
+  <script src="./theme/js/octopress.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    var disqus_shortname = '2015fall';
+    var disqus_identifier = '/2015cp_hw_w12.html';
+    var disqus_url = './2015cp_hw_w12.html';
+    var disqus_title = '2015 計算機程式 作業十二';
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = "//" + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+     })();
+  </script>
+</body>
+</html>
