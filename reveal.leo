@@ -19,7 +19,7 @@
 <v t="amd.20151007224830.1"><vh>Jupyter 安裝與執行</vh></v>
 <v t="amd.20150919103357.1"><vh>pelican 設定</vh></v>
 </v>
-<v t="amd.20150919113957.1" a="E"><vh>以下為 pelican 文章</vh>
+<v t="amd.20150919113957.1"><vh>以下為 pelican 文章</vh>
 <v t="amd.20151021120245.1"><vh>@button admin pelican</vh></v>
 <v t="amd.20150919124128.1"><vh>@button user pelican</vh></v>
 <v t="amd.20150919114010.1" a="E"><vh>@path pelican</vh>
@@ -30,7 +30,7 @@
 </v>
 </v>
 </v>
-<v t="amd.20150919120205.1" a="E"><vh>以下為 reveal 投影片</vh>
+<v t="amd.20150919120205.1"><vh>以下為 reveal 投影片</vh>
 <v t="amd.20150915211341.1"><vh>@clean simplest.html</vh>
 <v t="amd.20150917085040.1"><vh>檔案說明</vh></v>
 <v t="amd.20150915211351.1" a="E"><vh>html 標註</vh>
@@ -48,7 +48,7 @@
 </v>
 </v>
 <v t="amd.20151021113722.1"><vh>@path plugin</vh></v>
-<v t="amd.20151021113731.1" a="E"><vh>@path liquid_tags</vh>
+<v t="amd.20151021113731.1"><vh>@path liquid_tags</vh>
 <v t="amd.20151021113745.1"><vh>@edit notebook.py</vh></v>
 </v>
 <v t="amd.20151021114454.1" a="E"><vh>@path user</vh>
@@ -1008,7 +1008,7 @@
 </v>
 </v>
 </v>
-<v t="leo.20151026214948.1"><vh>@path 40423119</vh>
+<v t="leo.20151026214948.1" a="E"><vh>@path 40423119</vh>
 <v t="leo.20151026214948.2"><vh>以下為投影片 ------------</vh></v>
 <v t="leo.20151210202115.1"><vh>@edit 40423119_cp_w1_p.html</vh></v>
 <v t="leo.20151210202143.1"><vh>@edit 40423119_cp_w2_p.html</vh></v>
