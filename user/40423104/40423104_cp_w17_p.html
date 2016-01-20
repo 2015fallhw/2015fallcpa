@@ -1,0 +1,104 @@
+<!--
+這個檔案展示了 reveal.js 投影片資料的基本架構
+其中使用 "reveal" class 與 "slides" class 來界定投影片的資料範圍
+而各投影片則以 <section></section> 標示
+且支援平行與垂直的投影片配置方法
+-->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>最簡單的 reveal 超文件</title>
+<link rel="stylesheet" href="css/reveal.min.css">
+	<link rel="stylesheet" href="css/theme/default.css" id="theme">	
+	<!--增加對於 IE 早期版本的支援 -->
+	<!--[if lt IE 9]>
+	<script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+<body>
+<!-- 將整個投影片包在 "reveal" class 中 -->
+<div class="reveal">
+<!-- 將所有投影片包在 "slides" class 中 -->
+<div class="slides">
+<!-- 以下為投影片 -->
+<!-- 每一個 section 都代表一張投影片,  -->
+<!-- section 標註中的多 section 標註, 將往下垂直延伸 -->
+<section>
+    <h1>第17週</h1>
+    <p>學號:40423104</p>
+    <p>姓名:Yan Syuan</p>    	
+</section>
+	
+<section>
+    <h1>內容大綱</h1>
+    <p>執行動態模擬</p>
+    <ul>
+    <li>執行動態模擬</li> 
+    <li>程式語言</li>
+    <li>心得感想</li>
+    <li>自評成績</li>
+    </ul>    			
+</section>
+				
+<section>
+    <h1>程式語言架構</h1>
+    <li>程式網頁 → 直接呼叫在網路上的 javascript ， Brython 其實是透過 javascript ，讓我們可以寫 Python 格式，與許此程式在網路上執行。</li>   
+</section>
+
+<section>
+    <p>以下圖示為利用Python來執行網頁的必要條件<p>
+    <p><a href="http://imgur.com/MRowviB"><img src="http://i.imgur.com/MRowviB.jpg" title="source: imgur.com" /></a></p>  
+</section>
+
+<section>
+    <li>canvas → 需要設定 ID ，屬於 html (也就是超文件)，在後面設定畫佈大小。</li>
+    <li>browser 模組中的 document, 並設為 doc 變數 → Brython特有的</li>
+    <li>導入數學模組(import math)</li>
+    <li>產生各小球的亂數速度用 (import random)→ 讓每一個小球初始速度是亂數</li>
+    <li>導入 browser 中的計時器, 建立動畫用(import browser.timer) → 每隔一個時間，要重新刷新螢幕。</li>   
+</section>
+
+<section>
+    <li>取畫布的寬與高度 → 當作程式兩個變數</li>
+    <li> n = 20 (球的數量)</li>
+    <li>已知數列內容個數, 先分別與 None 對應 → 設定4個數列，分別要放20個球所對應的位置與速度。</li>
+    <li>設定重力加速度, Y 方向向下為正</li>
+    <li>設定空氣的黏滯阻尼係數</li>
+    <li>設定球的彈力係數與半徑</li>  
+</section>
+
+<section>
+    <li>利用迴圈產生初始速度</li>
+    <li>random.random() 將會產生介於 0 與 1 的浮點亂數 → 速度使用此方式設置</li>
+    <li>透過更新第 i 球 Y 座標的運算邏輯 → 進行運算</li>
+    <li>透過更新第 i 球 X 座標的運算邏輯 → 進行運算</li>
+    <li>設定圓的程式</li>
+    <li>每隔特定時間, 進行動畫繪製 → 依我們規定的暫留的特定時間做動畫繪製</li>
+    <li>畫布點擊後執行的函式</li>
+    <li>只要使用者點擊在畫布上任何地方, 即執行 on_canvas_click 函式 → bind為連結 </li>   
+</section>
+
+<section>
+    <h1>心得感想</h1>
+    <p>從這次的課程中，老師教我們如何繪製動態的圖，我覺得有點難了，但也收穫很多，在期中到期末在此課程學習到很多，對於程式語言有了更多的了解，下學期期待有更多不同的程式設計。</p>
+</section>
+
+<section>
+    <h1>自評成績</h1>
+    <p>最後一週作業了 ，雖然沒有做得很好，也沒有做到自己的期望值，單是我相信，之後再努力一點一定可以達成。</p>
+    <p>期中作業給自己的分數:75分</p>
+</section>
+				
+</div>
+</div>
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.min.js"></script>
+<script>
+    // 啟動 Reveal.
+    Reveal.initialize({
+    });
+</script>
+	
+</body>
+

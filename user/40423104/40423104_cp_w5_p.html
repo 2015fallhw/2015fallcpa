@@ -46,7 +46,9 @@
     <ul>
     <li>GitHub使用</li>
     <li>為什麼使用GitHub?</li>
+    <li>建立倉儲與刪除倉儲</li>
     <li>Git基本操作</li>
+    <li>推送檔案</li>
     <li>心得感想</li>
     <li>自評成績</li>
     </ul>
@@ -76,6 +78,36 @@
 
 <section>
 
+    <h1>GitHub建立倉儲</h1>
+    <ul>
+    <li>登入GitHub網站</li>
+    <li>點選右上角 + 中的 New repository </li>
+    <li>在 Repository name 建立所要設定的名稱
+(倉儲名稱請自訂)</li>
+   <li>勾選 lnitialize this repository with a README</li>
+   <li>點選 Create repository</li>
+    </ul>
+
+</section>
+
+<section>
+
+    <h1>GitHub刪除倉儲</h1>
+    <ul>
+    <li>點選右上角的箭頭</li>
+    <li>點選 Your prdfile </li>
+    <li>選擇要刪除的倉儲</li>
+    <li>進入 Stettings</li>
+    <li>點選 Delete this repository</li>
+    <li>輸入將要刪除得倉儲名稱</li>
+    <li>點選 I understand the consequences , delete this repository</li>
+    <li>回到自己的倉儲頁面→確認倉儲是否被刪除</li>
+    </ul>
+
+</section>
+
+<section>
+
     <h1>Git基本操作</h1>
     <ul>
     <li>git  clone 加入倉儲網址=複製倉儲資料</li>
@@ -96,6 +128,53 @@
     <li>git branch 分支名=建立分支</li>
     <li>git branch=查看分支 </li>
     <li>git  reset --hard = 回朔</li>
+    </ul>
+
+</section>
+
+<section>
+
+    <h1>推送檔案</h1>
+    <ul>
+    <li>開啟 Star</li>
+    <li>打開系統管理員 (cmd) →以自動切換 Y 硬碟 </li>
+    <li>輸入 cd tmp → 轉換到 tmp 資料夾</li>
+    <li>在倉儲網頁右上方複製倉儲網頁</li>
+    <li>輸入指令 git clone 加入網址</li>
+    <li>輸入 cd 加入倉儲名稱→切換道下在的倉儲資料夾</li>
+    <li>輸入指令git branch gh-pages </li>
+    <li>輸入指令git checkout gh-pages →切換分支</li>
+    </ul>
+
+</section>
+
+<section>
+
+    <h1>推送檔案</h1>
+    <ul>
+    <li>使用老師提供的倉儲檔案</li>
+    <li>先將倉儲分支切換為 gh-pages </li>
+    <li>下載 gh-pages 中的檔案</li>
+    <li>將檔案內容複製→除了READ.ME檔不複製</li>
+    <li>貼到自己的倉儲檔案</li>
+    <li>回到系統管理員 (cmd)</li>
+    <li>輸入指令 git add -A →拍快照 </li>
+    <li>輸入指令 git commit -m "initail add" </li>
+    </ul>
+
+</section>
+
+<section>
+
+    <h1>推送檔案</h1>
+    <ul>
+    <li>輸入指令 git global --user.email "帳號"</li>
+    <li>輸入指令 git global --user.name "使用者" </li>
+    <li>輸入指令 git commit -m "initail add"</li>
+    <li>輸入指令git push origin gh-pages→推送資料</li>
+    <li>系統會詢問你的GitHub使用者名稱及密碼</li>
+    <li>輸入GitHub使用者名稱及密碼</li>
+    <li>輸入完畢成功推送</li>
     </ul>
 
 </section>

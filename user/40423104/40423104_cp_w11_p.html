@@ -1,0 +1,95 @@
+<!--
+這個檔案展示了 reveal.js 投影片資料的基本架構
+其中使用 "reveal" class 與 "slides" class 來界定投影片的資料範圍
+而各投影片則以 <section></section> 標示
+且支援平行與垂直的投影片配置方法
+-->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>最簡單的 reveal 超文件</title>
+<link rel="stylesheet" href="css/reveal.min.css">
+	<link rel="stylesheet" href="css/theme/default.css" id="theme">	
+	<!--增加對於 IE 早期版本的支援 -->
+	<!--[if lt IE 9]>
+	<script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+</head>
+<body>
+<!-- 將整個投影片包在 "reveal" class 中 -->
+<div class="reveal">
+<!-- 將所有投影片包在 "slides" class 中 -->
+<div class="slides">
+<!-- 以下為投影片 -->
+<!-- 每一個 section 都代表一張投影片,  -->
+<!-- section 標註中的多 section 標註, 將往下垂直延伸 -->
+<section>
+    <h1>第11週</h1>
+    <p>學號:40423104</p>
+    <p>姓名:Yan Syuan</p>   	
+</section>
+	
+<section>
+    <h1>內容大綱</h1>
+    <p>Fix</p>
+    <ul>
+    <li>如何修正 fix?</li>
+    <li>心得感想</li>
+    <li>自評成績</li>
+    </ul>    			
+</section>
+				
+<section>
+    <h1>如何修正 fix?</h1>
+    <li>1.先到老師的教學網站</li>
+    <li>2.點選 2015Fall 課程 </li>
+    <li>3.下載遠端或近端下載 fix 檔案</li>
+    <li>4.將 Fix 檔解壓縮</li>
+    <li>5.上網搜尋 leo editor github</li>
+    <li>6.點選 leo-editor Github</li>
+    <li>7.點選leo-editor</li>
+    <li>8.點選release</li>   
+</section>
+
+<section>
+    <li>9.點選 broke-abbrev</li>
+    <li>10.下載 Source code(zip) </li>
+    <li>11.將leo-editor-broke-abbrev.zip檔放入 Fix 資料夾中</li>
+    <li>12.到 Ana3_2015\data\SciTE 中開啟 SciTe</li>
+    <li>13.使用 SciTe 開啟 fix.bat</li>
+    <li>14.加入指令 copy copy leo-editor-broke-abbrev.zip C:\Ana3_2015\data\</li>
+    <li>15.儲存檔案 (Save)</li>  
+</section>
+
+<section>
+    <li>16.使用 SciTe 開啟 start.bat</li>
+    <li>17.在第35行 pip install 後改成 leo-editor-broke-abbrev.zip </li>
+    <li>18.儲存檔案 (Save)</li>
+    <li>19.開啟 fix.bat</li>
+    <li>20.開啟start.bat</li>
+    <li>21.輸入 leo (可自訂)</li>
+    <p>就修正完成囉</p>   
+</section>
+<section>
+    <h1>心得感想</h1>
+    <p>這堂課在教修正 Fix與安裝Fix，這次我學習在影片中加入字幕，雖然沒有聲音介紹，但加入字幕真的需要花很多時間，拍影片真的不容易，因為如果有一個環節沒做好，可能就需要剪輯來修正影片的清楚性。</p>
+</section>
+<section>
+    <h1>自評成績</h1>
+    <p>雖然可能做到65~70分的成績，但還是會加油的。</p>
+     <p>分數:70分</p>
+</section>
+				
+</div>
+</div>
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.min.js"></script>
+<script>
+    // 啟動 Reveal.
+    Reveal.initialize({
+    });
+</script>
+	
+</body>
+
