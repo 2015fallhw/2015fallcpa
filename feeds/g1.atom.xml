@@ -355,12 +355,13 @@ ctx.moveTo(30,30)
 ctx.lineTo(45, 30)
 ctx.strokeStyle = "#0000ff"
 ctx.stroke() 
+&lt;/script&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;
+&lt;/pre&gt;&lt;/div&gt;
 
 
-
-
-###40423101###
-
+&lt;h3&gt;40423101&lt;/h3&gt;
 &lt;!-- 導入 brython.js --&gt;
 
 &lt;script type="text/javascript" src="http://brython.info/src/brython_dist.js"&gt;&lt;/script&gt;
