@@ -445,92 +445,679 @@ ctx.lineTo(45, 30)
 ctx.strokeStyle = "#0000ff"
 ctx.stroke() 
 
-ctx.beginPath()
-ctx.lineWidth = 1
-ctx.moveTo(70,30)
-ctx.lineTo(55, 30)
-ctx.strokeStyle = "#FF0000"
-ctx.stroke()
 
-ctx.beginPath()
-ctx.lineWidth = 1
-ctx.moveTo(45,30)
-ctx.lineTo(20, 65)
-ctx.strokeStyle = "#0000ff"
-ctx.stroke() 
 
-ctx.beginPath()
-ctx.lineWidth = 1
-ctx.moveTo(55,30)
-ctx.lineTo(80, 65)
-ctx.strokeStyle = "#FF0000"
-ctx.stroke() 
 
-ctx.beginPath()
-ctx.lineWidth = 1
-ctx.moveTo(20,65)
-ctx.lineTo(40, 65)
-ctx.strokeStyle = "#FF0000"
-ctx.stroke() 
+###40423101###
 
-ctx.beginPath()
-ctx.lineWidth = 1
-ctx.moveTo(80,65)
-ctx.lineTo(60, 65)
-ctx.strokeStyle = "#0000ff"
-ctx.stroke()
+<!-- 導入 brython.js -->
 
-ctx.beginPath()
-ctx.lineWidth = 1
-ctx.moveTo(40,65)
-ctx.lineTo(10, 105)
-ctx.strokeStyle = "#0000ff"
-ctx.stroke() 
+<script type="text/javascript" src="http://brython.info/src/brython_dist.js"></script>
 
-ctx.beginPath()
-ctx.lineWidth = 1
-ctx.moveTo(60,65)
-ctx.lineTo(90, 105)
-ctx.strokeStyle = "#FF0000"
-ctx.stroke()
+<!-- 啟動 brython() -->
 
-ctx.beginPath()
-ctx.lineWidth = 1
-ctx.moveTo(10,105)
-ctx.lineTo(40, 105)
-ctx.strokeStyle = "#FF0000"
-ctx.stroke() 
+<script>
+window.onload=function(){
+brython(1);
+}
+</script>
 
-ctx.beginPath()
-ctx.lineWidth = 1
-ctx.moveTo(90,105)
-ctx.lineTo(60, 105)
-ctx.strokeStyle = "#0000ff"
-ctx.stroke()
+<!-- 以下利用 Brython 程式執行繪圖 -->
 
-ctx.beginPath()
-ctx.lineWidth = 1
-ctx.moveTo(40,105)
-ctx.lineTo(40, 135)
-ctx.strokeStyle = "#FF0000"
-ctx.stroke() 
+<canvas id="plotarea2" width="0" height="0"></canvas>
 
-ctx.beginPath()
-ctx.lineWidth = 1
-ctx.moveTo(60,105)
-ctx.lineTo(60, 135)
-ctx.strokeStyle = "#0000ff"
-ctx.stroke()
+<script type="text/python3">
+# 導入 doc
+from browser import document as doc
+from browser import console
+import math
 
-ctx.beginPath()
-ctx.lineWidth = 1
-ctx.moveTo(60,135)
-ctx.lineTo(40, 135)
-ctx.strokeStyle = "#000000"
-ctx.stroke()
+# 準備繪圖畫布
+canvas2 = doc["plotarea2"]
+ctx22 = canvas2.getContext("2d")
 
-x = 100
-y = 100
+
+
+
+</script>
+
+<script>
+window.onload=function(){
+brython(1);
+}
+</script>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<canvas id="myCanvas" width="400" height="400"
+style="border:1px solid #c3c3c3;">
+Your browser does not support the canvas element.
+</canvas>
+
+<script>
+var canvas = document.getElementById("myCanvas");
+var ctx2 = canvas.getContext("2d");
+ctx2.fillStyle = "#9F5000";
+ctx2.fillRect(180,307.5,40,100);
+
+ctx2.beginPath();
+ctx2.lineWidth=5
+ctx2.strokeStyle = "#9AFF02";
+ctx2.moveTo(200,70);
+ctx2.lineTo(100,150);
+ctx2.stroke();
+
+ctx2.beginPath();
+ctx2.moveTo(200,70);
+ctx2.lineTo(300,150);
+ctx2.stroke();
+
+ctx2.beginPath();
+ctx2.moveTo(100,150);
+ctx2.lineTo(300,150);
+ctx2.stroke();
+
+ctx2.beginPath();
+ctx2.moveTo(160,150);
+ctx2.lineTo(80,230);
+ctx2.stroke();
+
+ctx2.beginPath();
+ctx2.moveTo(240,150);
+ctx2.lineTo(320,230);
+ctx2.stroke();
+
+ctx2.beginPath();
+ctx2.moveTo(80,230);
+ctx2.lineTo(320,230);
+ctx2.stroke();
+
+ctx2.beginPath();
+ctx2.moveTo(140,230);
+ctx2.lineTo(60,310);
+ctx2.stroke();
+
+ctx2.beginPath();
+ctx2.moveTo(260,230);
+ctx2.lineTo(340,310);
+ctx2.stroke();
+
+ctx2.beginPath();
+ctx2.moveTo(60,310);
+ctx2.lineTo(340,310);
+ctx2.stroke();
+
+ctx2.beginPath();
+ctx2.lineWidth=6
+ctx2.strokeStyle = "#FFFF37";
+ctx2.moveTo(200,10);
+ctx2.lineTo(180,30);
+ctx2.stroke();
+
+ctx2.beginPath();
+ctx2.moveTo(200,10);
+ctx2.lineTo(220,30);
+ctx2.stroke();
+
+ctx2.beginPath();
+ctx2.moveTo(180,30);
+ctx2.lineTo(160,30);
+ctx2.stroke();
+
+ctx2.beginPath();
+ctx2.moveTo(220,30);
+ctx2.lineTo(240,30);
+ctx2.stroke();
+
+ctx2.beginPath();
+ctx2.moveTo(160,30);
+ctx2.lineTo(180,50);
+ctx2.stroke();
+
+ctx2.beginPath();
+ctx2.moveTo(180,50);
+ctx2.lineTo(170,70);
+ctx2.stroke();
+
+ctx2.beginPath();
+ctx2.moveTo(170,70);
+ctx2.lineTo(200,50);
+ctx2.stroke();
+
+ctx2.beginPath();
+ctx2.moveTo(200,50);
+ctx2.lineTo(230,70);
+ctx2.stroke();
+
+ctx2.beginPath();
+ctx2.moveTo(230,70);
+ctx2.lineTo(220,50);
+ctx2.stroke();
+
+ctx2.beginPath();
+ctx2.moveTo(220,50);
+ctx2.lineTo(240,30);
+ctx2.stroke();
+
+ctx2.beginPath();
+ctx2.lineWidth=4
+ctx2.strokeStyle = "#FF0000";
+ctx2.moveTo(200,70);
+ctx2.lineTo(200,50);
+ctx2.stroke();
+
+
+
+ctx2.beginPath();
+var canvas = document.getElementById("myCanvas");
+var ctx2 = canvas.getContext("2d");
+ctx2.moveTo(0,0);
+ctx2.strokeStyle = "#FFBFFF";
+ctx2.lineTo(400,0);
+ctx2.lineWidth=5
+ctx2.stroke();
+
+
+ctx2.beginPath();
+var canvas = document.getElementById("myCanvas");
+var ctx2 = canvas.getContext("2d");
+ctx2.moveTo(0,0);
+ctx2.strokeStyle = "#FFBFFF";
+ctx2.lineTo(0,400);
+ctx2.lineWidth=5
+ctx2.stroke();
+
+
+ctx2.beginPath();
+var canvas = document.getElementById("myCanvas");
+var ctx2 = canvas.getContext("2d");
+ctx2.moveTo(400,400);
+ctx2.strokeStyle = "#FFBFFF";
+ctx2.lineTo(400,0);
+ctx2.lineWidth=5
+ctx2.stroke();
+
+ctx2.beginPath();
+var canvas = document.getElementById("myCanvas");
+var ctx2 = canvas.getContext("2d");
+ctx2.moveTo(400,400);
+ctx2.strokeStyle = "#FFBFFF";
+ctx2.lineTo(0,400);
+ctx2.lineWidth=5
+ctx2.stroke();
+
+ctx2.beginPath();
+var canvas = document.getElementById("myCanvas");
+var ctx2 = canvas.getContext("2d");
+ctx2.beginPath();
+ctx2.arc(52.5,345,10,0,2*Math.PI);
+ctx2.fillStyle = "#FF0000";
+ctx2.fill();
+
+ctx2.beginPath();
+var canvas = document.getElementById("myCanvas");
+var ctx2 = canvas.getContext("2d");
+ctx2.beginPath();
+ctx2.arc(52.5,375,20,0,2*Math.PI);
+ctx2.fillStyle = "#FF0000";
+ctx2.fill();
+
+ctx2.beginPath();
+var canvas = document.getElementById("myCanvas");
+var ctx2 = canvas.getContext("2d");
+ctx2.fillStyle = "#d3a4ff";
+ctx2.fillRect(45.35,353,12,4);
+
+ctx2.beginPath();
+var canvas = document.getElementById("myCanvas");
+var ctx2 = canvas.getContext("2d");
+ctx2.fillStyle = "#d3a4ff";
+ctx2.fillRect(56,353,4,12);
+
+ctx2.beginPath();
+var canvas = document.getElementById("myCanvas");
+var ctx2 = canvas.getContext("2d");
+ctx2.beginPath();
+ctx2.arc(575,350,180,0,2*Math.PI);
+ctx2.fillStyle = "#d3a4ff";
+ctx2.fill();
+
+ctx2.beginPath();
+var canvas = document.getElementById("myCanvas");
+var ctx2 = canvas.getContext("2d");
+ctx2.beginPath();
+ctx2.arc(575,250,180,0,2*Math.PI);
+ctx2.fillStyle = "#d3a4ff";
+ctx2.fill();
+
+ctx2.beginPath();
+var canvas = document.getElementById("myCanvas");
+var ctx2 = canvas.getContext("2d");
+ctx2.beginPath();
+ctx2.arc(575,150,180,0,2*Math.PI);
+ctx2.fillStyle = "#d3a4ff";
+ctx2.fill();
+
+ctx2.beginPath();
+var canvas = document.getElementById("myCanvas");
+var ctx2 = canvas.getContext("2d");
+ctx2.beginPath();
+ctx2.arc(575,50,180,0,2*Math.PI);
+ctx2.fillStyle = "#d3a4ff";
+ctx2.fill();
+
+ctx2.beginPath();
+var canvas = document.getElementById("myCanvas");
+var ctx2 = canvas.getContext("2d");
+ctx2.beginPath();
+ctx2.arc(50,575,180,0,2*Math.PI);
+ctx2.fillStyle = "#d3a4ff";
+ctx2.fill();
+
+ctx2.beginPath();
+var canvas = document.getElementById("myCanvas");
+var ctx2 = canvas.getContext("2d");
+ctx2.beginPath();
+ctx2.arc(150,575,180,0,2*Math.PI);
+ctx2.fillStyle = "#d3a4ff";
+ctx2.fill();
+
+
+ctx2.beginPath();
+var canvas = document.getElementById("myCanvas");
+var ctx2 = canvas.getContext("2d");
+ctx2.beginPath();
+ctx2.arc(250,575,180,0,2*Math.PI);
+ctx2.fillStyle = "#d3a4ff";
+ctx2.fill();
+
+
+ctx2.beginPath();
+var canvas = document.getElementById("myCanvas");
+var ctx2 = canvas.getContext("2d");
+ctx2.beginPath();
+ctx2.arc(350,575,180,0,2*Math.PI);
+ctx2.fillStyle = "#d3a4ff";
+ctx2.fill();
+
+
+ctx2.beginPath();
+var canvas = document.getElementById("myCanvas");
+var ctx2 = canvas.getContext("2d");
+ctx2.beginPath();
+ctx2.arc(-175,50,180,0,2*Math.PI);
+ctx2.fillStyle = "#d3a4ff";
+ctx2.fill();
+
+ctx2.beginPath();
+var canvas = document.getElementById("myCanvas");
+var ctx2 = canvas.getContext("2d");
+ctx2.beginPath();
+ctx2.arc(-175,150,180,0,2*Math.PI);
+ctx2.fillStyle = "#d3a4ff";
+ctx2.fill();
+
+ctx2.beginPath();
+var canvas = document.getElementById("myCanvas");
+var ctx2 = canvas.getContext("2d");
+ctx2.beginPath();
+ctx2.arc(-175,250,180,0,2*Math.PI);
+ctx2.fillStyle = "#d3a4ff";
+ctx2.fill();
+
+ctx2.beginPath();
+var canvas = document.getElementById("myCanvas");
+var ctx2 = canvas.getContext("2d");
+ctx2.beginPath();
+ctx2.arc(-175,350,180,0,2*Math.PI);
+ctx2.fillStyle = "#d3a4ff";
+ctx2.fill();
+
+ctx2.beginPath();
+var canvas = document.getElementById("myCanvas");
+var ctx2 = canvas.getContext("2d");
+ctx2.beginPath();
+ctx2.arc(50,-175,180,0,2*Math.PI);
+ctx2.fillStyle = "#d3a4ff";
+ctx2.fill();
+
+ctx2.beginPath();
+var canvas = document.getElementById("myCanvas");
+var ctx2 = canvas.getContext("2d");
+ctx2.beginPath();
+ctx2.arc(150,-175,180,0,2*Math.PI);
+ctx2.fillStyle = "#d3a4ff";
+ctx2.fill();
+
+ctx2.beginPath();
+var canvas = document.getElementById("myCanvas");
+var ctx2 = canvas.getContext("2d");
+ctx2.beginPath();
+ctx2.arc(250,-175,180,0,2*Math.PI);
+ctx2.fillStyle = "#d3a4ff";
+ctx2.fill();
+
+ctx2.beginPath();
+var canvas = document.getElementById("myCanvas");
+var ctx2 = canvas.getContext("2d");
+ctx2.beginPath();
+ctx2.arc(350,-175,180,0,2*Math.PI);
+ctx2.fillStyle = "#d3a4ff";
+ctx2.fill();
+
+
+</script>
+
+<h3>40423104</h3>
+<!-- 導入 brython.js -->
+
+<script type="text/javascript" src="http://brython.info/src/brython_dist.js"></script>
+
+<!-- 啟動 brython() -->
+
+<script>
+window.onload=function(){
+brython(1);
+}
+</script>
+
+<!-- 以下利用 Brython 程式執行繪圖 -->
+
+<canvas id="syuan3" width="600" height="600"></canvas>
+
+<script type="text/python3">
+# 導入 doc
+from browser import document as doc
+from browser import console
+import math
+
+# 準備繪圖畫布
+canvas3 = doc["syuan3"]
+ctx2 = canvas3.getContext("2d")
+
+grd = ctx2.createLinearGradient(100, 200,500, 300);
+grd.addColorStop(0,"#B94FFF");
+grd.addColorStop(1,"#66FFFF");
+
+
+ctx2.strokeStyle = grd;
+ctx2.lineWidth = 20;
+ctx2.strokeRect(0, 0, 600, 600);
+
+grd = ctx2.createLinearGradient(20,0,30,500);
+grd.addColorStop(0,"#BBFFEE");
+grd.addColorStop(1,"#E8CCFF");
+
+ctx2.fillStyle = grd;
+ctx2.fillRect(10,10,580,580);
+
+ctx2.fillStyle="#FF8888";
+ctx2.fillRect(380, 508, 80, 60);
+
+ctx2.beginPath();
+ctx2.lineCap="round";
+ctx2.lineWidth = 10;
+ctx2.strokeStyle="#FF0000"
+ctx2.moveTo(420, 508);
+ctx2.lineTo(420, 568);
+ctx2.moveTo(380, 538);
+ctx2.lineTo(460, 538);
+ctx2.moveTo(430, 487);
+ctx2.lineTo(440, 490);
+ctx2.lineTo(440, 500);
+ctx2.lineTo(420, 508);
+ctx2.lineTo(400, 500);
+ctx2.lineTo(400, 490);
+ctx2.lineTo(410, 487);
+ctx2.lineTo(420, 508);
+ctx2.lineTo(430, 487);
+ctx2.stroke();
+
+
+ctx2.fillStyle="#FFAA33";
+ctx2.fillRect(420, 360, 100, 80);
+
+ctx2.beginPath();
+ctx2.lineCap="round";
+ctx2.lineWidth = 10;
+ctx2.strokeStyle="#E63F00"
+ctx2.moveTo(480, 337);
+ctx2.lineTo(490, 340);
+ctx2.lineTo(490, 350);
+ctx2.lineTo(470, 360);
+ctx2.lineTo(450, 350);
+ctx2.lineTo(450, 340);
+ctx2.lineTo(460, 337);
+ctx2.lineTo(470, 360);
+ctx2.lineTo(480, 337);
+ctx2.moveTo(470, 360);
+ctx2.lineTo(470, 440);
+ctx2.moveTo(420, 400);
+ctx2.lineTo(520, 400);
+ctx2.stroke();
+
+
+ctx2.fillStyle="#FF88C2";
+ctx2.fillRect(440, 180, 120, 100);
+
+ctx2.beginPath();
+ctx2.lineCap="round";
+ctx2.lineWidth = 10;
+ctx2.strokeStyle="#BA55D3"
+ctx2.moveTo(510, 153);
+ctx2.lineTo(520, 160);
+ctx2.lineTo(520, 170);
+ctx2.lineTo(500, 180);
+ctx2.lineTo(480, 170);
+ctx2.lineTo(480, 160);
+ctx2.lineTo(490, 153);
+ctx2.lineTo(500, 180);
+ctx2.lineTo(510, 153);
+ctx2.moveTo(500, 180);
+ctx2.lineTo(500, 280);
+ctx2.moveTo(440, 230);
+ctx2.lineTo(560, 230);
+ctx2.stroke();
+
+
+ctx2.fillStyle="    #FF77FF";
+ctx2.fillRect(340, 80, 80, 80);
+
+ctx2.beginPath();
+ctx2.lineCap="round";
+ctx2.lineWidth = 10;
+ctx2.strokeStyle="#C71585"
+ctx2.moveTo(390, 57);
+ctx2.lineTo(400, 60);
+ctx2.lineTo(400, 70);
+ctx2.lineTo(380, 80);
+ctx2.lineTo(360, 70);
+ctx2.lineTo(360, 60);
+ctx2.lineTo(370, 57);
+ctx2.lineTo(380, 80);
+ctx2.lineTo(390, 57);
+ctx2.moveTo(380, 80);
+ctx2.lineTo(380, 160);
+ctx2.moveTo(340, 120);
+ctx2.lineTo(420, 120);
+ctx2.stroke();
+
+
+
+
+
+
+ctx2.beginPath();
+ctx2.lineWidth = 10;
+ctx2.strokeStyle="#BB5500"
+ctx2.lineJoin = "round";
+ctx2.moveTo(200,485);
+ctx2.lineTo(240,485);
+ctx2.lineTo(260,565);
+ctx2.lineTo(180,565);
+ctx2.lineTo(200,485);
+ctx2.lineTo(240,485);
+ctx2.stroke();
+
+ctx2.beginPath();
+ctx2.lineWidth = 10;
+ctx2.strokeStyle="#008866"
+ctx2.lineJoin = "round";
+ctx2.moveTo(140,420);
+ctx2.lineTo(300,410);
+ctx2.lineTo(360,470);
+ctx2.lineTo(80,470);
+ctx2.lineTo(140,420);
+ctx2.lineTo(300,410);
+ctx2.stroke();
+
+ctx2.beginPath();
+ctx2.lineWidth = 10;
+ctx2.strokeStyle="#00DDAA"
+ctx2.lineJoin = "round";
+ctx2.moveTo(160,340);
+ctx2.lineTo(280,350);
+ctx2.lineTo(315,390);
+ctx2.lineTo(120,400);
+ctx2.lineTo(160,340);
+ctx2.lineTo(280,350);
+ctx2.stroke();
+
+ctx2.beginPath();
+ctx2.lineWidth =8;
+ctx2.strokeStyle="#00FF00"
+ctx2.lineJoin = "round";
+ctx2.moveTo(180,280);
+ctx2.lineTo(250,270);
+ctx2.lineTo(308,334);
+ctx2.lineTo(140,320);
+ctx2.lineTo(180,280);
+ctx2.lineTo(250,270);
+ctx2.stroke();
+
+ctx2.beginPath();
+ctx2.lineWidth = 10;
+ctx2.strokeStyle="#00FFCC"
+ctx2.lineJoin = "round";
+ctx2.moveTo(212,195);
+ctx2.lineTo(270,250);
+ctx2.lineTo(170,265);
+ctx2.lineTo(212,195);
+ctx2.lineTo(270,250);
+ctx2.stroke();
+
+ctx2.beginPath();
+ctx2.lineWidth = 10;
+ctx2.strokeStyle="#FFFF00"
+ctx2.lineJoin = "round";
+ctx2.moveTo(210,127);
+ctx2.lineTo(220,155);
+ctx2.lineTo(243,155);
+ctx2.lineTo(223,171);
+ctx2.lineTo(230,195);
+ctx2.lineTo(210,181);
+ctx2.lineTo(190,195);
+ctx2.lineTo(196,171);
+ctx2.lineTo(176,155);
+ctx2.lineTo(201,155);
+ctx2.lineTo(210,127);
+ctx2.lineTo(220,155);
+ctx2.stroke();
+
+
+
+ctx2.beginPath();
+ctx2.lineCap="round";
+ctx2.lineWidth = 5;
+ctx2.strokeStyle="#FFFF00"
+ctx2.moveTo(170, 230);
+ctx2.bezierCurveTo(160, 243, 280, 284, 270, 270);
+ctx2.stroke();
+
+ctx2.beginPath();
+ctx2.lineCap="round";
+ctx2.lineWidth = 5;
+ctx2.moveTo(130, 330);
+ctx2.bezierCurveTo(132, 344, 280, 284, 270, 270);
+ctx2.stroke();
+
+ctx2.beginPath();
+ctx2.lineCap="round";
+ctx2.lineWidth = 5;
+ctx2.moveTo(130, 330);
+ctx2.bezierCurveTo(112, 350, 328, 434, 330, 410);
+ctx2.stroke();
+
+
+ctx2.beginPath();
+ctx2.lineCap="round";
+ctx2.lineWidth = 5;
+ctx2.moveTo(110, 410);
+ctx2.bezierCurveTo(112, 428, 320, 368, 310, 350);
+ctx2.stroke();
+
+ctx2.beginPath();
+ctx2.lineCap="round";
+ctx2.lineWidth = 5;
+ctx2.moveTo(110, 410);
+ctx2.bezierCurveTo(100, 430, 356, 508, 360, 487);
+ctx2.stroke();
+
+
+ctx2.beginPath();
+ctx2.lineCap="round";
+ctx2.lineWidth = 5;
+ctx2.moveTo(73, 485);
+ctx2.bezierCurveTo(76, 511, 340, 430, 330, 410);
+ctx2.stroke();
+
+
+ctx2.beginPath();
+ctx2.arc(170,230,6.5,0,math.pi*2, True);
+ctx2.fillStyle="#FF88C2"
+ctx2.fill();
+
+ctx2.beginPath();
+ctx2.arc(270,270,6.5,0,math.pi*2, True);
+ctx2.fillStyle="#FF88C2"
+ctx2.fill();
+
+ctx2.beginPath();
+ctx2.arc(130,330,6.5,0,math.pi*2, True);
+ctx2.fillStyle="#FF0088"
+ctx2.fill();
+
+ctx2.beginPath();
+ctx2.arc(310,350,6.5,0,math.pi*2, True);
+ctx2.fillStyle="#FF0088"
+ctx2.fill();
+
+ctx2.beginPath();
+ctx2.arc(110,410,6.5,0,math.pi*2, True);
+ctx2.fillStyle="#FF0000"
+ctx2.fill();
+
+ctx2.beginPath();
+ctx2.arc(330,410,6.5,0,math.pi*2, True);
+ctx2.fillStyle="#FF0000"
+ctx2.fill();
+
+ctx2.beginPath();
+ctx2.arc(75,485,6.5,0,math.pi*2, True);
+ctx2.fillStyle="#FF00FF"
+ctx2.fill();
+
+ctx2.beginPath();
+ctx2.arc(360,488,6.5,0,math.pi*2, True);
+ctx2.fillStyle="#FF00FF"
+ctx2.fill();
+
+ctx2.beginPath();
+ctx2.fillStyle="#FF00FF"
+ctx2.fillRect=(380,508,80,60)
+ctx2.fill();
 
 </script></div>
     <footer>
@@ -598,7 +1185,7 @@ y = 100
 
   <section>
   <h1>Tags</h1>
-    <a href="./tag/w15.html">w15</a>,    <a href="./tag/w16.html">w16</a>,    <a href="./tag/g3.html">G3</a>,    <a href="./tag/jupyter.html">Jupyter</a>,    <a href="./tag/pelican.html">pelican</a>,    <a href="./tag/ipython.html">IPython</a>,    <a href="./tag/g10.html">G10</a>,    <a href="./tag/w14.html">w14</a>,    <a href="./tag/g1.html">G1</a>,    <a href="./tag/brython.html">Brython</a>,    <a href="./tag/publishing.html">publishing</a>,    <a href="./tag/qi-mo-ping-fen.html">期末評分</a>  </section>
+    <a href="./tag/g3.html">G3</a>,    <a href="./tag/g1.html">G1</a>,    <a href="./tag/w16.html">w16</a>,    <a href="./tag/pelican.html">pelican</a>,    <a href="./tag/g10.html">G10</a>,    <a href="./tag/brython.html">Brython</a>,    <a href="./tag/w14.html">w14</a>,    <a href="./tag/w15.html">w15</a>,    <a href="./tag/qi-mo-ping-fen.html">期末評分</a>,    <a href="./tag/publishing.html">publishing</a>,    <a href="./tag/jupyter.html">Jupyter</a>,    <a href="./tag/ipython.html">IPython</a>  </section>
 
 
     <section>

@@ -326,9 +326,12 @@ notebook --ip&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nv"&gt;%thisip%
 window.onload=function(){
 brython(1);
 }
-&lt;/script&gt;&lt;!-- 以下利用 Brython 程式執行繪圖 --&gt;
+&lt;/script&gt;
 
-&lt;p&gt;&lt;canvas id="plotarea" width="300" height="200"&gt;&lt;/canvas&gt;&lt;/p&gt;
+&lt;!-- 以下利用 Brython 程式執行繪圖 --&gt;
+
+&lt;canvas id="plotarea" width="300" height="200"&gt;&lt;/canvas&gt;
+
 &lt;script type="text/python3"&gt;
 # 導入 doc
 from browser import document as doc
@@ -407,9 +410,12 @@ ctx.fill()
 window.onload=function(){
 brython(1);
 }
-&lt;/script&gt;&lt;!-- 以下利用 Brython 程式執行繪圖 --&gt;
+&lt;/script&gt;
 
-&lt;p&gt;&lt;canvas id="9903_plotarea" width="600" height="600"&gt;&lt;/canvas&gt;&lt;/p&gt;
+&lt;!-- 以下利用 Brython 程式執行繪圖 --&gt;
+
+&lt;canvas id="9903_plotarea" width="600" height="600"&gt;&lt;/canvas&gt;
+
 &lt;script type="text/python3"&gt;
 import math
 from browser import html, doc
