@@ -24,6 +24,8 @@
 <v t="leo.20151225100743.1"><vh>@edit g99_w15.md</vh></v>
 <v t="amd.20160103211002.1"><vh>@edit g99_w17.md</vh></v>
 <v t="amd.20160110155406.1"><vh>@edit 9999_final.md</vh></v>
+<v t="amd.20160121192312.1"><vh>@edit 9999_final_note.md</vh></v>
+<v t="amd.20160121193026.1"><vh>@edit 2015cpnote7.md</vh></v>
 <v t="amd.20160110161038.1" a="E"><vh>修正用</vh>
 <v t="amd.20160110161052.1"><vh>@edit G10_w15.md</vh></v>
 <v t="amd.20160110161208.1"><vh>@edit G10_期末報告.md</vh></v>

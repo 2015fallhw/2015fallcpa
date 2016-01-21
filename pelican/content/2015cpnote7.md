@@ -8,16 +8,6 @@ Summary: 導入 notebook 內容
 
 以下為 Jupyter notebook 檔案內容:
 
-{% notebook 2015cpb_g99_w7_1.ipynb %}
-
-Group 1 Week 7 Notebook
-
-{% notebook 2015cpb_g1_w7_1.ipynb %}
-
-Group 10 Week 7 Notebook
-
-{% notebook 2015cpb_g10_w7_1.ipynb %}
-
 
 
 

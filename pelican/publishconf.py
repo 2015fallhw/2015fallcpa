@@ -8,7 +8,7 @@ from __future__ import unicode_literals
 import os
 
 AUTHOR = '2015FALLCPA'
-SITENAME = '2015FALL CPA 作業'
+SITENAME = '2015FALL CPA 協同作業主頁面 (課程已經結束)'
 SITEURL = ''
 
 PATH = 'content'
